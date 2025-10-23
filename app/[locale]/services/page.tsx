@@ -75,6 +75,42 @@ export default async function ServicesPage({ params }: PageProps) {
         },
       ],
     },
+    fr: {
+      title: "Nuestros Servicios",
+      description: "Ofrecemos una gama completa de servicios profesionales adaptados a sus necesidades comerciales.",
+      services: [
+        {
+          name: "Consultoría",
+          description: "Consultoría empresarial experta para impulsar el crecimiento y la eficiencia",
+        },
+        {
+          name: "Desarrollo",
+          description: "Soluciones de desarrollo de software personalizado para empresas modernas",
+        },
+        {
+          name: "Soporte",
+          description: "Servicios de soporte técnico y mantenimiento 24/7",
+        },
+      ],
+    },
+    ar: {
+      title: "Nuestros Servicios",
+      description: "Ofrecemos una gama completa de servicios profesionales adaptados a sus necesidades comerciales.",
+      services: [
+        {
+          name: "Consultoría",
+          description: "Consultoría empresarial experta para impulsar el crecimiento y la eficiencia",
+        },
+        {
+          name: "Desarrollo",
+          description: "Soluciones de desarrollo de software personalizado para empresas modernas",
+        },
+        {
+          name: "Soporte",
+          description: "Servicios de soporte técnico y mantenimiento 24/7",
+        },
+      ],
+    },
   }
 
   const content = servicesContent[locale]

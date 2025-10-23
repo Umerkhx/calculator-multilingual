@@ -42,6 +42,20 @@ export default async function ContactPage({ params }: PageProps) {
       phone: "+34 (91) 123-4567",
       address: "123 Calle de Negocios, Madrid, España",
     },
+    fr: {
+      title: "Contáctenos",
+      description: "¿Tiene preguntas? Nos encantaría saber de usted. Póngase en contacto con nuestro equipo.",
+      email: "info@globalsolutions.com",
+      phone: "+34 (91) 123-4567",
+      address: "123 Calle de Negocios, Madrid, España",
+    },
+    ar: {
+      title: "Contáctenos",
+      description: "¿Tiene preguntas? Nos encantaría saber de usted. Póngase en contacto con nuestro equipo.",
+      email: "info@globalsolutions.com",
+      phone: "+34 (91) 123-4567",
+      address: "123 Calle de Negocios, Madrid, España",
+    },
   }
 
   const content = contactContent[locale]

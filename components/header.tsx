@@ -27,7 +27,7 @@ export function Header({ locale }: HeaderProps) {
           <span className="font-bold text-foreground">Global</span>
         </Link>
 
-        <nav className="hidden gap-8 md:flex">
+        <nav className="hidden gap-8 md:flex items-center">
           {Object.entries(t.nav).map(([key, label]) => {
             if (key === "calculators") {
               return (
@@ -47,7 +47,7 @@ export function Header({ locale }: HeaderProps) {
                                   <Link
                                     key={calc.slug}
                                     href={`/${locale}/calculators/${category.id}/${calc.slug}`}
-                                    className="block rounded-md px-3 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+                                    className="block rounded-md px-3 py-2 text-sm text-foreground hover:bg-accent hover:text-foreground"
                                   >
                                     {getTranslation(locale, calc.titleKey)}
                                   </Link>

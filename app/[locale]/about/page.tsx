@@ -33,6 +33,14 @@ export default async function AboutPage({ params }: PageProps) {
       title: "Acerca de Soluciones Globales",
       description: "Somos un equipo de profesionales dedicados comprometidos a entregar excelencia en cada proyecto.",
     },
+    fr: {
+      title: "Acerca de Soluciones Globales",
+      description: "Somos un equipo de profesionales dedicados comprometidos a entregar excelencia en cada proyecto.",
+    },
+    ar: {
+      title: "Acerca de Soluciones Globales",
+      description: "Somos un equipo de profesionales dedicados comprometidos a entregar excelencia en cada proyecto.",
+    },
   }
 
   const content = aboutContent[locale]

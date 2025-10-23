@@ -23,12 +23,24 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params
 
-  return generateSEOMetadata({
-    title: "Global Solutions - Professional Services",
-    description: "Discover our professional services tailored for your business needs",
-    locale,
-    pathname: "/",
-  })
+  return {
+    ...generateSEOMetadata({
+      title: "Global Solutions - Professional Services",
+      description:
+        "Discover our professional services tailored for your business needs",
+      locale,
+      pathname: "/",
+    }),
+    robots: {
+      index: false, 
+      follow: false, 
+      nocache: true, 
+      googleBot: {
+        index: false,
+        follow: false,
+      },
+    },
+  }
 }
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {

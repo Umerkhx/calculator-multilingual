@@ -15,9 +15,15 @@ interface CalculatorSearchProps {
 
 export function CalculatorSearch({ locale }: CalculatorSearchProps) {
   const [searchQuery, setSearchQuery] = useState("")
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [open, setOpen] = useState(false)
 
-  const filteredResults = allCalculatorCategories.flatMap((category) => ({
+  const filteredCategories =
+    selectedCategory === "all"
+      ? allCalculatorCategories
+      : allCalculatorCategories.filter((cat) => cat.id === selectedCategory)
+
+  const filteredResults = filteredCategories.flatMap((category) => ({
     category,
     calculators: category.calculators.filter(
       (calc) =>
@@ -33,13 +39,35 @@ export function CalculatorSearch({ locale }: CalculatorSearchProps) {
       <PopoverTrigger asChild>
         <Button variant="outline" size="sm" className="gap-2 bg-transparent">
           <Search className="h-4 w-4" />
-          <span className="hidden sm:inline">{getTranslation(locale, "calculators.searchPlaceholder")}</span>
+          <span className="hidden sm:inline">{getTranslation(locale, "search.placeholder")}</span>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-80 p-0" align="start">
+      <PopoverContent className="w-96 p-0" align="start">
         <div className="space-y-4 p-4">
+          <div className="flex flex-wrap gap-2">
+            <Button
+              variant={selectedCategory === null ? "default" : "outline"}
+              size="sm"
+              onClick={() => setSelectedCategory(null)}
+              className="text-xs"
+            >
+              {getTranslation(locale, "categories.all")}
+            </Button>
+            {allCalculatorCategories.map((cat) => (
+              <Button
+                key={cat.id}
+                variant={selectedCategory === cat.id ? "default" : "outline"}
+                size="sm"
+                onClick={() => setSelectedCategory(cat.id)}
+                className="text-xs"
+              >
+                {getTranslation(locale, cat.name)}
+              </Button>
+            ))}
+          </div>
+
           <Input
-            placeholder={getTranslation(locale, "calculators.searchPlaceholder")}
+            placeholder={getTranslation(locale, "search.placeholder")}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="h-9"
@@ -65,6 +93,7 @@ export function CalculatorSearch({ locale }: CalculatorSearchProps) {
                               onClick={() => {
                                 setOpen(false)
                                 setSearchQuery("")
+                                setSelectedCategory(null)
                               }}
                             >
                               {getTranslation(locale, calc.titleKey)}
@@ -75,32 +104,38 @@ export function CalculatorSearch({ locale }: CalculatorSearchProps) {
                     ),
                 )
               ) : (
-                <p className="text-sm text-muted-foreground">No calculators found</p>
+                <p className="text-sm text-muted-foreground">{getTranslation(locale, "search.notFound")}</p>
               )}
             </div>
           )}
 
           {!searchQuery && (
             <div className="space-y-3">
-              {allCalculatorCategories.map((category) => (
-                <div key={category.id} className="space-y-2">
-                  <h3 className="text-sm font-semibold text-muted-foreground">
-                    {getTranslation(locale, category.name)}
-                  </h3>
-                  <div className="space-y-1">
-                    {category.calculators.slice(0, 3).map((calc) => (
-                      <Link
-                        key={calc.slug}
-                        href={`/${locale}/calculators/${category.id}/${calc.slug}`}
-                        className="block rounded-md px-3 py-2 text-sm hover:bg-accent"
-                        onClick={() => setOpen(false)}
-                      >
-                        {getTranslation(locale, calc.titleKey)}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ))}
+              {filteredResults.map(
+                (item) =>
+                  item.calculators.length > 0 && (
+                    <div key={item.category.id} className="space-y-2">
+                      <h3 className="text-sm font-semibold text-muted-foreground">
+                        {getTranslation(locale, item.category.name)}
+                      </h3>
+                      <div className="space-y-1">
+                        {item.calculators.slice(0, 5).map((calc) => (
+                          <Link
+                            key={calc.slug}
+                            href={`/${locale}/calculators/${item.category.id}/${calc.slug}`}
+                            className="block rounded-md px-3 py-2 text-sm hover:bg-accent"
+                            onClick={() => {
+                              setOpen(false)
+                              setSelectedCategory(null)
+                            }}
+                          >
+                            {getTranslation(locale, calc.titleKey)}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ),
+              )}
             </div>
           )}
         </div>

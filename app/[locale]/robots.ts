@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/admin",
     },
-    sitemap: "https://example.com/sitemap.xml",
+    sitemap: "https://calculator-multilingual.vercel.app//sitemap.xml",
   }
 }

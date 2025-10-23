@@ -117,8 +117,8 @@ export default async function ServicesPage({ params }: PageProps) {
 
   const organizationSchema = generateSchemaMarkup("Organization", {
     name: "Calyx",
-    url: "https://example.com",
-    logo: "https://example.com/logo.png",
+    url: "https://calculator-multilingual.vercel.app/",
+    logo: "https://calculator-multilingual.vercel.app//logo.png",
     description: "Professional services for global businesses",
     sameAs: ["https://twitter.com/calyx", "https://linkedin.com/company/calyx"],
     areaServed: ["US", "PK", "ES"],

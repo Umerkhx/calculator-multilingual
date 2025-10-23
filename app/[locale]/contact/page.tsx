@@ -66,7 +66,7 @@ export default async function ContactPage({ params }: PageProps) {
     address: content.address,
     telephone: content.phone,
     email: content.email,
-    url: "https://example.com",
+    url: "https://calculator-multilingual.vercel.app/",
   })
 
   return (

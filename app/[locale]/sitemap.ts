@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { locales } from "@/lib/i18n"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://example.com"
+  const baseUrl = "https://calculator-multilingual.vercel.app/"
   const pages = ["", "/about"]
 
   const entries: MetadataRoute.Sitemap = []

@@ -2,12 +2,21 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import { type Locale, locales } from "@/lib/i18n"
 
 const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-manrope",
 });
+
+export async function generateStaticParams() {
+  return locales
+    .filter((locale) => locale !== "en")
+    .map((locale) => ({
+      locale,
+    }))
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://calculator-multilingual.vercel.app"),
@@ -50,7 +59,6 @@ export const metadata: Metadata = {
   },
 };
 
-// ✅ Root layout
 export default function RootLayout({
   children,
 }: {

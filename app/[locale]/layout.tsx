@@ -25,7 +25,7 @@ export async function generateMetadata({
 
   return {
     ...generateSEOMetadata({
-      title: "Global Solutions - Professional Services",
+      title: "Calyx - Professional Services",
       description:
         "Discover our professional services tailored for your business needs",
       locale,

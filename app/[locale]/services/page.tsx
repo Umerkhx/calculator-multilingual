@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params
 
   return generateSEOMetadata({
-    title: "Services - Global Solutions",
+    title: "Services - Calyx",
     description: "Explore our comprehensive range of professional services",
     locale,
     pathname: "/services",
@@ -116,11 +116,11 @@ export default async function ServicesPage({ params }: PageProps) {
   const content = servicesContent[locale]
 
   const organizationSchema = generateSchemaMarkup("Organization", {
-    name: "Global Solutions",
+    name: "Calyx",
     url: "https://example.com",
     logo: "https://example.com/logo.png",
     description: "Professional services for global businesses",
-    sameAs: ["https://twitter.com/globalsolutions", "https://linkedin.com/company/globalsolutions"],
+    sameAs: ["https://twitter.com/calyx", "https://linkedin.com/company/calyx"],
     areaServed: ["US", "PK", "ES"],
   })
 

@@ -13,6 +13,10 @@ export const enTranslations = {
     contact: "Contact",
     calculators: "Calculators",
   },
+  feature:{
+    title:"Our Calculators",
+    description:"Explore our collection of useful calculators"
+  },
   // Categories
   categories: {
     health: "Health",

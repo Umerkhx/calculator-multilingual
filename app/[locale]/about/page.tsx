@@ -10,8 +10,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params
 
   return generateSEOMetadata({
-    title: "About Us - Global Solutions",
-    description: "Learn more about Global Solutions and our mission",
+    title: "About Us - Calyx",
+    description: "Learn more about Calyx and our mission",
     locale,
     pathname: "/about",
   })
@@ -22,7 +22,7 @@ export default async function AboutPage({ params }: PageProps) {
 
   const aboutContent = {
     en: {
-      title: "About Global Solutions",
+      title: "About Calyx",
       description: "We are a team of dedicated professionals committed to delivering excellence in every project.",
     },
     ur: {
@@ -30,15 +30,15 @@ export default async function AboutPage({ params }: PageProps) {
       description: "ہم وقف پروفیشنلز کی ایک ٹیم ہیں جو ہر پروجیکٹ میں بہتری فراہم کرنے کے لیے پرعزم ہیں۔",
     },
     es: {
-      title: "Acerca de Soluciones Globales",
+      title: "Acerca de Soluciones Calyxes",
       description: "Somos un equipo de profesionales dedicados comprometidos a entregar excelencia en cada proyecto.",
     },
     fr: {
-      title: "Acerca de Soluciones Globales",
+      title: "Acerca de Soluciones Calyxes",
       description: "Somos un equipo de profesionales dedicados comprometidos a entregar excelencia en cada proyecto.",
     },
     ar: {
-      title: "Acerca de Soluciones Globales",
+      title: "Acerca de Soluciones Calyxes",
       description: "Somos un equipo de profesionales dedicados comprometidos a entregar excelencia en cada proyecto.",
     },
   }

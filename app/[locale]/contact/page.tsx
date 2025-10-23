@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params
 
   return generateSEOMetadata({
-    title: "Contact Us - Global Solutions",
+    title: "Contact Us - Calyx",
     description: "Get in touch with our team for any inquiries or support",
     locale,
     pathname: "/contact",
@@ -24,35 +24,35 @@ export default async function ContactPage({ params }: PageProps) {
     en: {
       title: "Contact Us",
       description: "Have questions? We'd love to hear from you. Get in touch with our team.",
-      email: "info@globalsolutions.com",
+      email: "info@calyx.com",
       phone: "+1 (555) 123-4567",
       address: "123 Business Street, New York, NY 10001",
     },
     ur: {
       title: "ہمسے رابطہ کریں",
       description: "کیا آپ کے کوئی سوالات ہیں؟ ہم آپ سے سننا پسند کریں گے۔ ہماری ٹیم سے رابطہ کریں۔",
-      email: "info@globalsolutions.com",
+      email: "info@calyx.com",
       phone: "+92 (300) 123-4567",
       address: "123 کاروباری سڑک، کراچی، پاکستان",
     },
     es: {
       title: "Contáctenos",
       description: "¿Tiene preguntas? Nos encantaría saber de usted. Póngase en contacto con nuestro equipo.",
-      email: "info@globalsolutions.com",
+      email: "info@calyx.com",
       phone: "+34 (91) 123-4567",
       address: "123 Calle de Negocios, Madrid, España",
     },
     fr: {
       title: "Contáctenos",
       description: "¿Tiene preguntas? Nos encantaría saber de usted. Póngase en contacto con nuestro equipo.",
-      email: "info@globalsolutions.com",
+      email: "info@calyx.com",
       phone: "+34 (91) 123-4567",
       address: "123 Calle de Negocios, Madrid, España",
     },
     ar: {
       title: "Contáctenos",
       description: "¿Tiene preguntas? Nos encantaría saber de usted. Póngase en contacto con nuestro equipo.",
-      email: "info@globalsolutions.com",
+      email: "info@calyx.com",
       phone: "+34 (91) 123-4567",
       address: "123 Calle de Negocios, Madrid, España",
     },
@@ -61,7 +61,7 @@ export default async function ContactPage({ params }: PageProps) {
   const content = contactContent[locale]
 
   const localBusinessSchema = generateLocalBusinessSchema({
-    name: "Global Solutions",
+    name: "Calyx",
     description: "Professional services for global businesses",
     address: content.address,
     telephone: content.phone,

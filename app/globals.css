@@ -75,8 +75,8 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
+ --font-sans: "Manrope", sans-serif;
+  --font-mono: "Manrope", monospace;
 
   /* Color System */
   --color-primary: #1e3a8a;
@@ -143,6 +143,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: var(--font-sans);
 }
 
 /* Accessibility */

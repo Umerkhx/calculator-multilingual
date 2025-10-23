@@ -1,11 +1,9 @@
 export const enTranslations = {
-  // Hero
   hero: {
     title: "Professional Calculator Tools",
     subtitle: "Calculate anything with our comprehensive suite of health and finance calculators",
     cta: "Explore Calculators",
   },
-  // Navigation
   nav: {
     home: "Home",
     about: "About",
@@ -17,18 +15,15 @@ export const enTranslations = {
     title:"Our Calculators",
     description:"Explore our collection of useful calculators"
   },
-  // Categories
   categories: {
     health: "Health",
     finance: "Finance",
     all: "All Calculators",
   },
-  // Search
   search: {
     placeholder: "Search calculators...",
     notFound: "No calculators found",
   },
-  // Features
   features: {
     title: "Why Choose Our Calculators",
     feature1: "Accurate Calculations",
@@ -296,7 +291,6 @@ export const enTranslations = {
       formulaText: "Uses current exchange rates",
     },
   },
-  // Footer
   footer: {
     copyright: "© 2025 Calculator Hub. All rights reserved.",
     privacy: "Privacy Policy",

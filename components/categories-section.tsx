@@ -24,7 +24,7 @@ export function CategoriesSection({ locale }: CategoriesSectionProps) {
         <div className="grid gap-6 md:grid-cols-2">
           {allCalculatorCategories.map((category) => (
             <Card key={category.id} className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
-              <CardHeader className="bg-gradient-to-r from-primary/10 to-accent/10">
+              <CardHeader className="">
                 <CardTitle className="text-2xl">{getTranslation(locale, category.name)}</CardTitle>
                 <CardDescription>
                   {category.calculators.length} {category.calculators.length === 1 ? "calculator" : "calculators"}

@@ -22,8 +22,6 @@ export function getGeoLocation(request: Request): {
   country?: string
   locale: Locale
 } {
-  // In production, use a GEO API like MaxMind or Cloudflare
-  // For now, we'll use Accept-Language header
   const acceptLanguage = request.headers.get("accept-language") || ""
   const locale = detectLocaleFromHeader(acceptLanguage)
 

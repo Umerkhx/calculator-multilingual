@@ -11,6 +11,10 @@ export const esTranslations = {
     contact: "Contacto",
     calculators: "Calculadoras",
   },
+    feature:{
+    title:"Nuestras calculadoras",
+    description:"Explora nuestra colección de útiles calculadoras."
+  },
   categories: {
     health: "Salud",
     finance: "Finanzas",

@@ -11,6 +11,10 @@ export const urTranslations = {
     contact: "رابطہ",
     calculators: "کیلکولیٹرز",
   },
+    feature:{
+    title:"ہمارے کیلکولیٹر",
+    description:"ہمارے مفید کیلکولیٹروں کا مجموعہ دریافت کریں۔"
+  },
   categories: {
     health: "صحت",
     finance: "مالیات",

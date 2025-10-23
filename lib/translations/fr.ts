@@ -11,6 +11,10 @@ export const frTranslations = {
     contact: "Contact",
     calculators: "Calculatrices",
   },
+    feature:{
+    title:"Nos calculateurs",
+    description:"Découvrez notre collection de calculateurs utiles"
+  },
   categories: {
     health: "Santé",
     finance: "Finance",

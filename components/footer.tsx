@@ -15,7 +15,7 @@ export function Footer({ locale }: FooterProps) {
           <div>
             <div className="flex items-center gap-2">
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary-light to-accent" />
-              <span className="font-bold">Global</span>
+              <span className="font-bold">Calyx</span>
             </div>
             <p className="mt-4 text-sm text-white/60">Professional solutions for global businesses</p>
           </div>

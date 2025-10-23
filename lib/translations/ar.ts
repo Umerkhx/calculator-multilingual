@@ -11,6 +11,10 @@ export const arTranslations = {
     contact: "اتصل",
     calculators: "الآلات الحاسبة",
   },
+    feature:{
+    title:"حاسباتنا",
+    description:"استكشف مجموعتنا من الآلات الحاسبة المفيدة"
+  },
   categories: {
     health: "الصحة",
     finance: "المالية",

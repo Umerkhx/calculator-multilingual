@@ -14,10 +14,10 @@ export function CategoriesSection({ locale }: CategoriesSectionProps) {
       <div className="container mx-auto max-w-7xl px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            {getTranslation(locale, "calculators.title")}
+            {getTranslation(locale, "feature.title")}
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            {getTranslation(locale, "calculators.description") || "Explore our collection of useful calculators"}
+            {getTranslation(locale, "feature.description") || "Explore our collection of useful calculators"}
           </p>
         </div>
 

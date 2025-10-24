@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { type Locale, translations } from "@/lib/i18n"
-import { Facebook, FacebookIcon } from "lucide-react"
 import Image from "next/image"
 
 interface FooterProps {
@@ -51,7 +50,7 @@ export function Footer({ locale }: FooterProps) {
           </div>
 
           <div>
-            {/* <h4 className="font-semibold">Calculator Categories</h4> */}
+            <h4 className="font-semibold">Company</h4>
             <ul className="mt-4 space-y-2 text-sm ">
               <li><Link href={`/${locale}`} className="hover:text-blue-600">Chemistry</Link></li>
               <li><Link href={`/${locale}`} className="hover:text-blue-600">Ecology</Link></li>
@@ -62,7 +61,7 @@ export function Footer({ locale }: FooterProps) {
           </div>
 
           <div>
-            {/* <h4 className="font-semibold">Calculator Categories</h4> */}
+            <h4 className="font-semibold">Legal</h4>
             <ul className="mt-4 space-y-2 text-sm ">
               <li><Link href={`/${locale}`} className="hover:text-blue-600">Everyday life</Link></li>
               <li><Link href={`/${locale}`} className="hover:text-blue-600">Health</Link></li>
@@ -77,5 +76,3 @@ export function Footer({ locale }: FooterProps) {
     </footer>
   
     )}
-  
-

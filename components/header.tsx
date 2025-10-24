@@ -16,22 +16,14 @@ interface HeaderProps {
 }
 
 export function Header({ locale }: HeaderProps) {
-  // ✅ Yahan apne navigation links define karo
   const navLinks = [
     { key: "home", label: "Home" },
     { key: "about", label: "About" },
     { key: "contact", label: "Contact" },
   ];
-
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-
-        {/* ✅ Logo */}
-        <Link href={`/${locale}`} className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent" />
-          <span className="font-bold text-foreground text-lg">Calyx</span>
-        </Link>
+      <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-20">
 
         {/* ✅ Navigation */}
         <nav className="hidden md:flex items-center gap-8">
@@ -59,6 +51,9 @@ export function Header({ locale }: HeaderProps) {
             )
           )}
         </nav>
+
+        {/* ✅ Logo */}
+        <Link href={`/${locale}`}><span className="font-bold text-foreground text-4xl uppercase">Calyx</span></Link>
 
         {/* ✅ Search + Language Switcher */}
         <div className="flex items-center gap-4">

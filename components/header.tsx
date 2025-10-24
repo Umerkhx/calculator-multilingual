@@ -16,13 +16,11 @@ interface HeaderProps {
 }
 
 export function Header({ locale }: HeaderProps) {
-  // ✅ Yahan apne navigation links define karo
   const navLinks = [
     { key: "home", label: "Home" },
     { key: "about", label: "About" },
     { key: "contact", label: "Contact" },
   ];
-
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-20">

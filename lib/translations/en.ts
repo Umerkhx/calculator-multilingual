@@ -1,8 +1,8 @@
 export const enTranslations = {
   hero: {
-    title: "Professional Calculator Tools",
-    subtitle: "Calculate anything with our comprehensive suite of health and finance calculators",
-    cta: "Explore Calculators",
+    title: "Calyx Smart Tools Instant Results",
+    subtitle: "Calyx offers a complete collection of free online calculators for finance, health, education, math, and conversions. Each calculator delivers instant and accurate results with a clean, ad-free experience. Whether you’re a student, professional, or everyday user, Calyx simplifies complex calculations anytime, anywhere — smart, fast, and reliable.",
+    cta: "Explore Categories",
   },
   nav: {
     home: "Home",
@@ -292,7 +292,7 @@ export const enTranslations = {
     },
   },
   footer: {
-    copyright: "© 2025 Calculator Hub. All rights reserved.",
+    copyright: "© 2025 Calyx. All rights reserved.",
     privacy: "Privacy Policy",
     terms: "Terms of Service",
   },

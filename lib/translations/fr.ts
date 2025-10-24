@@ -1,8 +1,9 @@
 export const frTranslations = {
   hero: {
-    title: "Outils de Calculatrice Professionnels",
-    subtitle: "Calculez n'importe quoi avec notre suite complète de calculatrices de santé et de finance",
-    cta: "Explorer les Calculatrices",
+    title: "Outils intelligents Calyx – Résultats instantanés",
+subtitle: "Calyx propose une collection complète de calculatrices en ligne gratuites pour la finance, la santé, l’éducation, les mathématiques et les conversions. Chaque calculatrice fournit des résultats instantanés et précis dans une interface claire, sans publicité. Que vous soyez étudiant, professionnel ou simple utilisateur, Calyx simplifie les calculs complexes à tout moment et en tout lieu — intelligent, rapide et fiable.",
+
+    cta: "Explorer les Catégories",
   },
   nav: {
     home: "Accueil",

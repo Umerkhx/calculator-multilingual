@@ -20,28 +20,57 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function AboutPage({ params }: PageProps) {
   const { locale } = await params
 
-  const aboutContent = {
-    en: {
-      title: "About Calyx",
-      description: "We are a team of dedicated professionals committed to delivering excellence in every project.",
-    },
-    ur: {
-      title: "عالمی حل کے بارے میں",
-      description: "ہم وقف پروفیشنلز کی ایک ٹیم ہیں جو ہر پروجیکٹ میں بہتری فراہم کرنے کے لیے پرعزم ہیں۔",
-    },
-    es: {
-      title: "Acerca de Soluciones Calyxes",
-      description: "Somos un equipo de profesionales dedicados comprometidos a entregar excelencia en cada proyecto.",
-    },
-    fr: {
-      title: "Acerca de Soluciones Calyxes",
-      description: "Somos un equipo de profesionales dedicados comprometidos a entregar excelencia en cada proyecto.",
-    },
-    ar: {
-      title: "Acerca de Soluciones Calyxes",
-      description: "Somos un equipo de profesionales dedicados comprometidos a entregar excelencia en cada proyecto.",
-    },
-  }
+const aboutContent = {
+  en: {
+    title: "About Calyx",
+    description: "We are a team of dedicated professionals committed to delivering excellence in every project.",
+  },
+  ur: {
+    title: "Calyx کے بارے میں",
+    description: "ہم پرعزم ماہرین کی ایک ٹیم ہیں جو ہر منصوبے میں بہترین کارکردگی فراہم کرنے کے لیے وقف ہیں۔",
+  },
+  es: {
+    title: "Acerca de Calyx",
+    description: "Somos un equipo de profesionales dedicados comprometidos con ofrecer excelencia en cada proyecto.",
+  },
+  fr: {
+    title: "À propos de Calyx",
+    description: "Nous sommes une équipe de professionnels dévoués, engagés à offrir l’excellence dans chaque projet.",
+  },
+  ar: {
+    title: "حول Calyx",
+    description: "نحن فريق من المحترفين الملتزمين بتقديم التميز في كل مشروع.",
+  },
+  de: {
+    title: "Über Calyx",
+    description: "Wir sind ein Team engagierter Fachleute, die sich der Exzellenz in jedem Projekt verschrieben haben.",
+  },
+  tr: {
+    title: "Calyx Hakkında",
+    description: "Her projede mükemmellik sunmaya kararlı, adanmış profesyonellerden oluşan bir ekibiz.",
+  },
+  pt: {
+    title: "Sobre a Calyx",
+    description: "Somos uma equipe de profissionais dedicados comprometidos em oferecer excelência em cada projeto.",
+  },
+  zh: {
+    title: "关于 Calyx",
+    description: "我们是一支由敬业专业人士组成的团队，致力于在每个项目中追求卓越。",
+  },
+  hi: {
+    title: "Calyx के बारे में",
+    description: "हम समर्पित पेशेवरों की एक टीम हैं जो हर प्रोजेक्ट में उत्कृष्टता प्रदान करने के लिए प्रतिबद्ध हैं।",
+  },
+  it: {
+    title: "Chi Siamo - Calyx",
+    description: "Siamo un team di professionisti dedicati, impegnati a offrire eccellenza in ogni progetto.",
+  },
+  ru: {
+    title: "О компании Calyx",
+    description: "Мы — команда преданных профессионалов, стремящихся обеспечить высокое качество в каждом проекте.",
+  },
+};
+
 
   const content = aboutContent[locale]
 

@@ -111,6 +111,139 @@ export default async function ServicesPage({ params }: PageProps) {
         },
       ],
     },
+de: {
+  title: "Unsere Dienstleistungen",
+  description: "Wir bieten eine umfassende Palette professioneller Dienstleistungen, die auf Ihre geschäftlichen Bedürfnisse zugeschnitten sind.",
+  services: [
+    {
+      name: "Beratung",
+      description: "Fachkundige Unternehmensberatung zur Förderung von Wachstum und Effizienz",
+    },
+    {
+      name: "Entwicklung",
+      description: "Maßgeschneiderte Softwareentwicklungs­lösungen für moderne Unternehmen",
+    },
+    {
+      name: "Support",
+      description: "Technischer Support und Wartungsdienste rund um die Uhr",
+    },
+  ],
+},
+
+tr: {
+  title: "Hizmetlerimiz",
+  description: "İş ihtiyaçlarınıza uygun profesyonel hizmetlerin kapsamlı bir yelpazesini sunuyoruz.",
+  services: [
+    {
+      name: "Danışmanlık",
+      description: "Büyüme ve verimliliği artırmak için uzman iş danışmanlığı",
+    },
+    {
+      name: "Geliştirme",
+      description: "Modern işletmeler için özel yazılım geliştirme çözümleri",
+    },
+    {
+      name: "Destek",
+      description: "7/24 teknik destek ve bakım hizmetleri",
+    },
+  ],
+},
+
+pt: {
+  title: "Nossos Serviços",
+  description: "Oferecemos uma gama completa de serviços profissionais adaptados às suas necessidades empresariais.",
+  services: [
+    {
+      name: "Consultoria",
+      description: "Consultoria empresarial especializada para impulsionar o crescimento e a eficiência",
+    },
+    {
+      name: "Desenvolvimento",
+      description: "Soluções personalizadas de desenvolvimento de software para empresas modernas",
+    },
+    {
+      name: "Suporte",
+      description: "Serviços de suporte técnico e manutenção 24 horas por dia, 7 dias por semana",
+    },
+  ],
+},
+
+zh: {
+  title: "我们的服务",
+  description: "我们提供全面的专业服务，以满足您的业务需求。",
+  services: [
+    {
+      name: "咨询",
+      description: "专业的商业咨询，助力增长与效率提升",
+    },
+    {
+      name: "开发",
+      description: "为现代企业量身定制的软件开发解决方案",
+    },
+    {
+      name: "支持",
+      description: "全天候技术支持与维护服务",
+    },
+  ],
+},
+
+hi: {
+  title: "हमारी सेवाएँ",
+  description: "हम आपके व्यावसायिक आवश्यकताओं के अनुरूप पेशेवर सेवाओं की एक पूरी श्रृंखला प्रदान करते हैं।",
+  services: [
+    {
+      name: "परामर्श",
+      description: "विकास और दक्षता को बढ़ावा देने के लिए विशेषज्ञ व्यावसायिक परामर्श",
+    },
+    {
+      name: "विकास",
+      description: "आधुनिक व्यवसायों के लिए अनुकूलित सॉफ्टवेयर विकास समाधान",
+    },
+    {
+      name: "सहायता",
+      description: "24/7 तकनीकी सहायता और रखरखाव सेवाएँ",
+    },
+  ],
+},
+
+it: {
+  title: "I Nostri Servizi",
+  description: "Offriamo una gamma completa di servizi professionali su misura per le esigenze della tua azienda.",
+  services: [
+    {
+      name: "Consulenza",
+      description: "Consulenza aziendale esperta per favorire la crescita e l’efficienza",
+    },
+    {
+      name: "Sviluppo",
+      description: "Soluzioni personalizzate di sviluppo software per aziende moderne",
+    },
+    {
+      name: "Supporto",
+      description: "Servizi di supporto tecnico e manutenzione 24 ore su 24, 7 giorni su 7",
+    },
+  ],
+},
+
+ru: {
+  title: "Наши услуги",
+  description: "Мы предлагаем полный спектр профессиональных услуг, адаптированных под ваши бизнес-потребности.",
+  services: [
+    {
+      name: "Консалтинг",
+      description: "Профессиональные консультации для повышения роста и эффективности бизнеса",
+    },
+    {
+      name: "Разработка",
+      description: "Индивидуальные решения по разработке программного обеспечения для современных компаний",
+    },
+    {
+      name: "Поддержка",
+      description: "Круглосуточная техническая поддержка и обслуживание",
+    },
+  ],
+},
+
   }
 
   const content = servicesContent[locale]

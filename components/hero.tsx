@@ -1,5 +1,6 @@
 import { type Locale, translations } from "@/lib/i18n"
 import Link from "next/link"
+
 interface HeroProps {
   locale: Locale
 }
@@ -7,18 +8,36 @@ interface HeroProps {
 export function Hero({ locale }: HeroProps) {
   const t = translations[locale]
 
+  const symbols = ["+","-","×","÷","="]
+
+  const repeatedSymbols = Array(600).fill(symbols).flat()
+
   return (
-    <section className="overflow-hidden inset-0 -z-10 w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] md:py-24">
-      <div className="container mx-auto max-w-7xl px-4">
-        <div className="mx-auto max-w-2xl text-center">
-          <h1 className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">{t.hero.title}</h1>
-          <p className="mt-6 text-sm text-zinc-800 md:text-base">{t.hero.subtitle}</p>
-          <Link href={`/${locale}/categories`}>
-          <button className="mt-8 rounded-lg bg-zinc-800 px-8 py-3 font-semibold text-zinc-50 transition-transform hover:scale-105">
-            {t.hero.cta}
-          </button>
-          </Link>
-        </div>
+    <section className="relative overflow-hidden flex items-center justify-center py-30 bg-zinc-50">
+      
+      {/* Background Grid */}
+      <div
+        className="absolute inset-0 grid w-full h-full text-[24px] md:text-[32px] text-[#2a262767] font-mono leading-none"
+        style={{
+          gridTemplateColumns: "repeat(auto-fill, minmax(40px, 1fr))",
+          gridAutoRows: "40px",
+          opacity: 0.2,
+        }}
+      >
+        {repeatedSymbols.map((symbol, i) => (
+          <span key={i} className="text-center select-none">{symbol}</span>
+        ))}
+      </div>
+
+      {/* Foreground Content */}
+      <div className="relative z-10 container mx-auto max-w-6xl px-4 text-center">
+        <h1 className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl text-zinc-800">
+          {t.hero.title}
+        </h1>
+        <p className="my-6 text-sm text-zinc-500 md:text-base">{t.hero.subtitle}</p>
+        <Link href={`${locale}/categories`} className="mt-4 rounded-lg bg-zinc-800 px-8 py-3 font-semibold text-zinc-50 backdrop-blur-md transition-transform hover:scale-105">
+          {t.hero.cta}
+        </Link>
       </div>
     </section>
   )

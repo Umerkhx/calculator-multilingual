@@ -15,10 +15,17 @@ export const enTranslations = {
     title:"Our Calculators",
     description:"Explore our collection of useful calculators"
   },
+  cards:{
+    title:"Free Online Calculators"
+  },
   categories: {
     health: "Health",
     finance: "Finance",
     all: "All Calculators",
+  },
+  categoriespage:{
+    title:"Explore Calculator Categories",
+    description:"Discover all free online calculator categories — from finance and health to math and conversions. Calyx helps you calculate smarter, faster, and easier in every field."
   },
   search: {
     placeholder: "Search calculators...",

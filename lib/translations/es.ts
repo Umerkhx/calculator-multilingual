@@ -15,11 +15,18 @@ export const esTranslations = {
     title:"Nuestras calculadoras",
     description:"Explora nuestra colección de útiles calculadoras."
   },
+cards: {
+title: "Calculadoras en línea gratuitas"
+},
   categories: {
     health: "Salud",
     finance: "Finanzas",
     all: "Todas las Calculadoras",
   },
+  categoriespage:{
+  title:"Explora las categorías de calculadoras",
+  description:"Descubre todas las categorías de calculadoras gratuitas en línea — desde finanzas y salud hasta matemáticas y conversiones. Calyx te ayuda a calcular de forma más inteligente, rápida y sencilla en cada campo."
+},
   search: {
     placeholder: "Buscar calculadoras...",
     notFound: "No se encontraron calculadoras",

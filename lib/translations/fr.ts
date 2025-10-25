@@ -16,11 +16,18 @@ subtitle: "Calyx propose une collection complète de calculatrices en ligne grat
     title:"Nos calculateurs",
     description:"Découvrez notre collection de calculateurs utiles"
   },
+  cards: {
+  title: "Calculatrices en ligne gratuites"
+},
   categories: {
     health: "Santé",
     finance: "Finance",
     all: "Toutes les Calculatrices",
   },
+  categoriespage:{
+  title:"Explorer les catégories de calculatrices",
+  description:"Découvrez toutes les catégories de calculatrices gratuites en ligne — des finances et de la santé aux mathématiques et conversions. Calyx vous aide à calculer plus intelligemment, plus rapidement et plus facilement dans chaque domaine."
+},
   search: {
     placeholder: "Rechercher des calculatrices...",
     notFound: "Aucune calculatrice trouvée",

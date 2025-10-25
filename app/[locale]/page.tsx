@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import { Hero } from "@/components/hero"
-import { Features } from "@/components/features"
 import { CategoriesSection } from "@/components/categories-section"
 import type { Locale } from "@/lib/i18n"
 import { generateSEOMetadata, generateSchemaMarkup } from "@/lib/seo"
+import CardsSection from "@/components/CardSection"
 
 interface PageProps {
   params: Promise<{ locale: Locale }>
@@ -36,7 +36,8 @@ export default async function HomePage({ params }: PageProps) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <Hero locale={locale} />
-      <Features locale={locale} />
+      {/* <Features locale={locale} /> */}
+      <CardsSection locale={locale} />
       <CategoriesSection locale={locale} />
     </>
   )

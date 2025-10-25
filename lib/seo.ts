@@ -25,8 +25,8 @@ export function generateSEOMetadata({
   return {
     title,
     description,
-    canonical: canonicalUrl,
     alternates: {
+      canonical: canonicalUrl,
       languages: {
         en: `${baseUrl}/en${pathname}`,
         ur: `${baseUrl}/ur${pathname}`,

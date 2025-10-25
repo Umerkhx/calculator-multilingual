@@ -35,7 +35,7 @@ export function CategoriesSection({ locale }: CategoriesSectionProps) {
                   {category.calculators.map((calc) => (
                     <Link
                       key={calc.slug}
-                      href={`/${locale}/calculators/${category.id}/${calc.slug}`}
+                      href={`/${locale}/categories/${category.id}/${calc.slug}`}
                       className="group flex items-center justify-between rounded-lg border border-border p-3 transition-colors hover:bg-accent"
                     >
                       <div>

@@ -45,11 +45,3 @@ export default async function HomePage({ params }: PageProps) {
 
 
 
-
-  // const organizationSchema = generateSchemaMarkup("Organization", {
-  //   name: "Calyx",
-  //   url: "https://calculator-multilingual.vercel.app/",
-  //   logo: "https://calculator-multilingual.vercel.app//logo.png",
-  //   description: "Professional services for global businesses",
-  //   sameAs: ["https://twitter.com/calyx", "https://linkedin.com/company/calyx"],
-  // })

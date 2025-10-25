@@ -1,4 +1,5 @@
 import { type Locale, translations } from "@/lib/i18n"
+import Link from "next/link"
 interface HeroProps {
   locale: Locale
 }
@@ -12,9 +13,11 @@ export function Hero({ locale }: HeroProps) {
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">{t.hero.title}</h1>
           <p className="mt-6 text-sm text-zinc-800 md:text-base">{t.hero.subtitle}</p>
+          <Link href={`/${locale}/categories`}>
           <button className="mt-8 rounded-lg bg-zinc-800 px-8 py-3 font-semibold text-zinc-50 transition-transform hover:scale-105">
             {t.hero.cta}
           </button>
+          </Link>
         </div>
       </div>
     </section>

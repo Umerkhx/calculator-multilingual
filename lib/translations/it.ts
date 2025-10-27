@@ -1,3 +1,5 @@
+import { BookOpen, Globe, Info } from "lucide-react";
+
 export const itTranslations = {
   hero: {
     title: "Calyx Strumenti Intelligenti Risultati Immediati",
@@ -77,6 +79,40 @@ export const itTranslations = {
     value3Desc:
       "Calyx evolve costantemente — offrendo strumenti più intelligenti che fanno lavorare i numeri per te, non contro di te.",
   },
+  contact: {
+  hero: {
+    title: "Contatta Calyx",
+    subtitle:
+      "Apprezziamo ogni messaggio — che sia un feedback, una collaborazione o un semplice saluto. Connettiamoci e creiamo qualcosa di straordinario insieme.",
+    primaryCta: "Inviaci un'email",
+    secondaryCta: "Scopri di più su di noi",
+  },
+  support: {
+    title: "Esplora di più, impara meglio",
+    subtitle:
+      "Hai bisogno di risorse extra, guida o strumenti utili? Abbiamo raccolto tutto per rendere la tua esperienza più fluida e intelligente.",
+    details: [
+      {
+        heading: "Guide utili",
+        content:
+          "Consulta i nostri articoli approfonditi e spiegazioni per una migliore comprensione.",
+        icon: BookOpen,
+      },
+      {
+        heading: "Base di conoscenza",
+        content:
+          "Trova informazioni dettagliate e riferimenti su vari argomenti.",
+        icon: Info,
+      },
+      {
+        heading: "Accesso globale",
+        content:
+          "Tutte le risorse sono semplici, multilingue e accessibili in tutto il mondo.",
+        icon: Globe,
+      },
+    ],
+  },
+},
   // Calcolatori di salute
   health: {
     bodyFat: {

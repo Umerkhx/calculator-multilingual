@@ -1,3 +1,5 @@
+import { BookOpen, Globe, Info } from "lucide-react";
+
 export const itTranslations = {
   hero: {
     title: "Calyx Strumenti Intelligenti Risultati Immediati",
@@ -16,18 +18,18 @@ export const itTranslations = {
     title: "I nostri calcolatori",
     description: "Esplora la nostra raccolta di calcolatori utili",
   },
-cards: {
-title: "Calcolatrici online gratuite"
-},
+  cards: {
+    title: "Calcolatrici online gratuite"
+  },
   categories: {
     health: "Salute",
     finance: "Finanza",
     all: "Tutti i calcolatori",
   },
-  categoriespage:{
-  title:"Esplora le categorie di calcolatrici",
-  description:"Scopri tutte le categorie di calcolatrici online gratuite — dalla finanza e salute alla matematica e alle conversioni. Calyx ti aiuta a calcolare in modo più intelligente, veloce e semplice in ogni campo."
-},
+  categoriespage: {
+    title: "Esplora le categorie di calcolatrici",
+    description: "Scopri tutte le categorie di calcolatrici online gratuite — dalla finanza e salute alla matematica e alle conversioni. Calyx ti aiuta a calcolare in modo più intelligente, veloce e semplice in ogni campo."
+  },
   search: {
     placeholder: "Cerca calcolatori...",
     notFound: "Nessun calcolatore trovato",
@@ -44,7 +46,73 @@ title: "Calcolatrici online gratuite"
     feature3Desc:
       "Interfaccia semplice con risultati immediati e senza passaggi complicati",
   },
-
+  // about content
+  about: {
+    tagline: "Strumenti intelligenti. Matematica semplice. Portata globale.",
+    title: "Informazioni su Calyx",
+    subtitle:
+      "Calyx è una piattaforma di nuova generazione che offre calcolatrici online intelligenti, precise e facili da usare per studenti, professionisti e aziende in tutto il mondo.",
+    missiontitle: "La nostra missione in Calyx",
+    missionsub:
+      "In Calyx crediamo che i calcoli accurati debbano essere semplici, accessibili e potenzianti. La nostra missione è fornire gli strumenti di calcolo più affidabili e intuitivi al mondo — dalla finanza alla salute — affinché gli utenti possano prendere decisioni più intelligenti basate sui dati.",
+    missionsub2:
+      "Con precisione, innovazione e fiducia come valori fondamentali, stiamo plasmando un futuro digitale più intelligente — un calcolo alla volta.",
+    missioncard1: "Precisione",
+    card1sub:
+      "Ogni calcolatrice che sviluppiamo si basa su formule verificate, garantendo risultati coerenti e affidabili in ogni utilizzo.",
+    missioncard2: "Innovazione",
+    card2sub:
+      "Esploriamo continuamente nuovi modi per rendere i dati complessi più facili da comprendere e utilizzare attraverso strumenti moderni e adattivi.",
+    missioncard3: "Accessibilità",
+    card3sub:
+      "Calyx è progettato per tutti, ovunque — multilingue, reattivo e costruito per potenziare gli utenti globali su qualsiasi dispositivo.",
+    valuetitle: "I Nostri Principi Fondamentali",
+    valuesubtitle:
+      "In Calyx, la nostra base si fonda su valori che definiscono come creiamo, innoviamo e supportiamo i nostri utenti ogni giorno.",
+    value1Title: "Chiarezza in ogni calcolo",
+    value1Desc:
+      "Crediamo che i dati non debbano mai confondere — i nostri strumenti semplificano idee complesse in informazioni chiare e utilizzabili.",
+    value2Title: "Impegno per la Precisione",
+    value2Desc:
+      "Ogni formula e risultato è verificato per garantire affidabilità in tutte le nostre calcolatrici.",
+    value3Title: "Innovazione che dà potere",
+    value3Desc:
+      "Calyx evolve costantemente — offrendo strumenti più intelligenti che fanno lavorare i numeri per te, non contro di te.",
+  },
+  contact: {
+  hero: {
+    title: "Contatta Calyx",
+    subtitle:
+      "Apprezziamo ogni messaggio — che sia un feedback, una collaborazione o un semplice saluto. Connettiamoci e creiamo qualcosa di straordinario insieme.",
+    primaryCta: "Inviaci un'email",
+    secondaryCta: "Scopri di più su di noi",
+  },
+  support: {
+    title: "Esplora di più, impara meglio",
+    subtitle:
+      "Hai bisogno di risorse extra, guida o strumenti utili? Abbiamo raccolto tutto per rendere la tua esperienza più fluida e intelligente.",
+    details: [
+      {
+        heading: "Guide utili",
+        content:
+          "Consulta i nostri articoli approfonditi e spiegazioni per una migliore comprensione.",
+        icon: BookOpen,
+      },
+      {
+        heading: "Base di conoscenza",
+        content:
+          "Trova informazioni dettagliate e riferimenti su vari argomenti.",
+        icon: Info,
+      },
+      {
+        heading: "Accesso globale",
+        content:
+          "Tutte le risorse sono semplici, multilingue e accessibili in tutto il mondo.",
+        icon: Globe,
+      },
+    ],
+  },
+},
   // Calcolatori di salute
   health: {
     bodyFat: {

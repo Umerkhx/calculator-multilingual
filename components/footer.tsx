@@ -15,7 +15,7 @@ export function Footer({ locale }: FooterProps) {
           <div className="flex justify-between items-center px-20">
             <div className="flex flex-col gap-2">
               <span className="font-bold text-8xl  text-zinc-800">Calyx</span>
-            <p className="mt-1 md:text-base text-sm  ">Professional solutions for global businesses</p>
+            <p className="mt-1 md:text-base text-sm  ">Calyx – Simplify Math with Free Online Calculators</p>
             </div>
             <div>
             <h4 className="font-bold text-3xl text-zinc-800 mb-3">Social Links</h4>
@@ -39,7 +39,7 @@ export function Footer({ locale }: FooterProps) {
           </div>
 
           <div>
-            <h4 className="font-semibold">Calculator Categories</h4>
+            <h4 className="font-semibold">Our Popular Calculators</h4>
             <ul className="mt-4 space-y-2 text-sm ">
               <li><Link href={`/${locale}`} className="hover:text-blue-600">Biology</Link></li>
               <li><Link href={`/${locale}`} className="hover:text-blue-600">Conversion</Link></li>
@@ -50,7 +50,7 @@ export function Footer({ locale }: FooterProps) {
           </div>
 
           <div>
-            <h4 className="font-semibold">Company</h4>
+            {/* <h4 className="font-semibold">Company</h4> */}
             <ul className="mt-4 space-y-2 text-sm ">
               <li><Link href={`/${locale}`} className="hover:text-blue-600">Chemistry</Link></li>
               <li><Link href={`/${locale}`} className="hover:text-blue-600">Ecology</Link></li>
@@ -61,7 +61,7 @@ export function Footer({ locale }: FooterProps) {
           </div>
 
           <div>
-            <h4 className="font-semibold">Legal</h4>
+            {/* <h4 className="font-semibold">Legal</h4> */}
             <ul className="mt-4 space-y-2 text-sm ">
               <li><Link href={`/${locale}`} className="hover:text-blue-600">Everyday life</Link></li>
               <li><Link href={`/${locale}`} className="hover:text-blue-600">Health</Link></li>

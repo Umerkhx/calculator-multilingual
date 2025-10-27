@@ -1,3 +1,5 @@
+import { BookOpen, Globe, Info } from "lucide-react";
+
 export const ptTranslations = {
   hero: {
     title: "Calyx Ferramentas Inteligentes Resultados Instantâneos",
@@ -21,6 +23,9 @@ export const ptTranslations = {
     finance: "Finanças",
     all: "Todas as Calculadoras",
   },
+      cards: {
+  title: "Calculadoras Online Gratuitas"
+    },
   categoriespage:{
   title:"Explorar Categorias de Calculadoras",
   description:"Descubra todas as categorias de calculadoras online gratuitas — de finanças e saúde a matemática e conversões. O Calyx ajuda você a calcular de forma mais inteligente, rápida e fácil em cada área."
@@ -41,6 +46,74 @@ export const ptTranslations = {
     feature3Desc:
       "Interface simples com resultados instantâneos e sem etapas complicadas",
   },
+  //about content
+  about: {
+  tagline: "Ferramentas inteligentes. Matemática simples. Alcance global.",
+  title: "Sobre a Calyx",
+  subtitle:
+    "A Calyx é uma plataforma de nova geração que oferece calculadoras online inteligentes, precisas e fáceis de usar para estudantes, profissionais e empresas em todo o mundo.",
+  missiontitle: "Nossa missão na Calyx",
+  missionsub:
+    "Na Calyx, acreditamos que cálculos precisos devem ser simples, acessíveis e empoderadores. Nossa missão é fornecer as ferramentas de cálculo mais confiáveis e intuitivas do mundo — desde finanças até saúde — para que os usuários possam tomar decisões mais inteligentes e baseadas em dados.",
+  missionsub2:
+    "Com precisão, inovação e confiança no centro, estamos moldando um futuro digital mais inteligente — um cálculo de cada vez.",
+  missioncard1: "Precisão",
+  card1sub:
+    "Cada calculadora que desenvolvemos é baseada em fórmulas verificadas, garantindo resultados consistentes e confiáveis em cada uso.",
+  missioncard2: "Inovação",
+  card2sub:
+    "Exploramos continuamente novas maneiras de tornar dados complexos mais fáceis de entender e interagir por meio de ferramentas modernas e adaptáveis.",
+  missioncard3: "Acessibilidade",
+  card3sub:
+    "A Calyx é projetada para todos, em qualquer lugar — multilíngue, responsiva e construída para capacitar usuários globais em todos os dispositivos.",
+  valuetitle: "Nossos Princípios Fundamentais",
+  valuesubtitle:
+    "Na Calyx, nossa base é construída sobre valores que definem como criamos, inovamos e apoiamos nossos usuários todos os dias.",
+  value1Title: "Clareza em Cada Cálculo",
+  value1Desc:
+    "Acreditamos que os dados nunca devem confundir — nossas ferramentas simplificam ideias complexas em informações claras e úteis.",
+  value2Title: "Compromisso com a Precisão",
+  value2Desc:
+    "Cada fórmula e resultado é verificado para garantir a confiabilidade em todas as nossas calculadoras.",
+  value3Title: "Inovação que Empodera",
+  value3Desc:
+    "A Calyx está em constante evolução — trazendo ferramentas mais inteligentes que fazem os números trabalharem a seu favor, não contra você.",
+},
+contact: {
+  hero: {
+    title: "Entre em contato com a Calyx",
+    subtitle:
+      "Valorizamos cada mensagem — seja feedback, colaboração ou apenas um olá amigável. Vamos nos conectar e criar coisas incríveis juntos.",
+    primaryCta: "Envie-nos um e-mail",
+    secondaryCta: "Saiba mais sobre nós",
+  },
+  support: {
+    title: "Explore mais, aprenda melhor",
+    subtitle:
+      "Precisa de recursos extras, orientação ou ferramentas úteis? Reunimos tudo para tornar sua experiência mais simples e inteligente.",
+    details: [
+      {
+        heading: "Guias úteis",
+        content:
+          "Explore nossos artigos e explicações detalhadas para uma melhor compreensão.",
+        icon: BookOpen,
+      },
+      {
+        heading: "Base de conhecimento",
+        content:
+          "Encontre informações e referências detalhadas sobre vários tópicos.",
+        icon: Info,
+      },
+      {
+        heading: "Acesso global",
+        content:
+          "Todos os recursos foram projetados para serem simples, multilíngues e acessíveis globalmente.",
+        icon: Globe,
+      },
+    ],
+  },
+},
+
   // Calculadoras de Saúde
   health: {
     bodyFat: {
@@ -257,9 +330,7 @@ export const ptTranslations = {
       formula: "Fórmula",
       formulaText: "ROI = (Lucro / Investimento) × 100",
     },
-    cards: {
-  title: "Calculadoras Online Gratuitas"
-    },
+
     breakeven: {
       title: "Calculadora de Ponto de Equilíbrio",
       desc: "Calcule o ponto de equilíbrio",

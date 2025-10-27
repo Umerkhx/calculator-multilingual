@@ -1,27 +1,25 @@
 "use client";
 
 import Link from "next/link";
-import { type Locale } from "@/lib/i18n";
+import { type Locale, translations } from "@/lib/i18n";
 import { CalculatorSearch } from "@/components/calculator-search";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { MobileSidebar } from "./MobileSidebar";
+import LanguageSelector from "./LanguageSelector";
 
 interface HeaderProps {
   locale: Locale;
 }
 
 export function Header({ locale }: HeaderProps) {
-  const navLinks = [
-    { key: "home", label: "Home" },
-    { key: "about", label: "About" },
-    { key: "contact", label: "Contact" },
-  ];
+  const t = translations[locale].nav;
+
+  const navKeys: (keyof typeof t)[] = ["home", "about", "contact"];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -30,13 +28,13 @@ export function Header({ locale }: HeaderProps) {
           <MobileSidebar locale={locale} />
 
           <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map(({ key, label }) =>
+            {navKeys.map((key) =>
               key === "calculators" ? (
                 <NavigationMenu key={key}>
                   <NavigationMenuList>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger className="text-sm font-medium">
-                        {label}
+                        {t[key]}
                       </NavigationMenuTrigger>
                     </NavigationMenuItem>
                   </NavigationMenuList>
@@ -47,7 +45,7 @@ export function Header({ locale }: HeaderProps) {
                   href={`/${locale}${key === "home" ? "" : `/${key}`}`}
                   className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  {label}
+                  {t[key]}
                 </Link>
               )
             )}
@@ -55,33 +53,16 @@ export function Header({ locale }: HeaderProps) {
         </div>
 
         <Link href={`/${locale}`} className="absolute left-1/2 -translate-x-1/2">
-          <span className="font-bold text-foreground text-2xl sm:text-3xl lg:text-4xl uppercase">Calyx</span>
+          <span className="font-bold text-foreground text-2xl sm:text-3xl lg:text-4xl uppercase">
+            Calyx
+          </span>
         </Link>
 
         <div className="flex items-center gap-2 sm:gap-4">
           <CalculatorSearch locale={locale} />
-
-          <select
-            value={locale}
-            onChange={(e) => {
-              const newLocale = e.target.value as Locale;
-              window.location.href = `/${newLocale}`;
-            }}
-            className="hidden sm:block rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground"
-          >
-            <option value="en">English</option>
-            <option value="ur">اردو</option>
-            <option value="es">Español</option>
-            <option value="fr">Français</option>
-            <option value="de">Deutsch</option>
-            <option value="pt">Português</option>
-            <option value="ru">Русский</option>
-            <option value="it">Italiano</option>
-            <option value="tr">Türkçe</option>
-            <option value="zh">中文</option>
-            <option value="ar">العربية</option>
-            <option value="hi">हिंदी</option>
-          </select>
+          <div className="hidden md:block">
+            <LanguageSelector locale={locale} />
+          </div>
         </div>
       </div>
     </header>

@@ -1,4 +1,5 @@
 import { CategoriesPage } from "@/components/CategoriesPage";
+import FadeIn from "@/components/FadeIn";
 import { Locale } from "@/lib/i18n";
 
 interface PageProps {
@@ -8,5 +9,11 @@ interface PageProps {
 export default async function Page({ params }: PageProps) {
   const { locale } = await params
 
-  return <CategoriesPage locale={locale} />
+  return (
+    <>
+      <FadeIn>
+        <CategoriesPage locale={locale} />
+      </FadeIn>
+    </>
+  )
 }

@@ -18,7 +18,7 @@ export function generateSEOMetadata({
   ogImage = "/og-image.jpg",
   ogType = "website",
 }: SEOProps): Metadata {
-  const baseUrl = "https://calculator-multilingual.vercel.app/"
+  const baseUrl = "https://calyx-mme.vercel.app/"
   const url = `${baseUrl}/${locale}${pathname}`
   const canonicalUrl = `${baseUrl}${pathname}`
 
@@ -122,7 +122,7 @@ export function generateLocalBusinessSchema(data: {
     telephone: data.telephone,
     email: data.email,
     url: data.url,
-    image: data.image || "https://calculator-multilingual.vercel.app//logo.png",
+    image: data.image || "https://calyx-mme.vercel.app/logo.png",
   }
 }
 

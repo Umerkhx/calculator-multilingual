@@ -15,7 +15,6 @@ export function Hero({ locale }: HeroProps) {
   return (
     <section className="relative overflow-hidden flex items-center justify-center py-30 bg-zinc-50">
       
-      {/* Background Grid */}
       <div
         className="absolute inset-0 grid w-full h-full text-[24px] md:text-[32px] text-[#2a262767] font-mono leading-none"
         style={{
@@ -29,7 +28,6 @@ export function Hero({ locale }: HeroProps) {
         ))}
       </div>
 
-      {/* Foreground Content */}
       <div className="relative z-10 container mx-auto max-w-6xl px-4 text-center">
         <h1 className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl text-zinc-800">
           {t.hero.title}

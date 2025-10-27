@@ -1,3 +1,5 @@
+import { BookOpen, Globe, Info } from "lucide-react";
+
 export const enTranslations = {
   hero: {
     title: "Calyx Smart Tools Instant Results",
@@ -11,21 +13,21 @@ export const enTranslations = {
     contact: "Contact",
     calculators: "Calculators",
   },
-  feature:{
-    title:"Our Calculators",
-    description:"Explore our collection of useful calculators"
+  feature: {
+    title: "Our Calculators",
+    description: "Explore our collection of useful calculators"
   },
-  cards:{
-    title:"Free Online Calculators"
+  cards: {
+    title: "Free Online Calculators"
   },
   categories: {
     health: "Health",
     finance: "Finance",
     all: "All Calculators",
   },
-  categoriespage:{
-    title:"Explore Calculator Categories",
-    description:"Discover all free online calculator categories — from finance and health to math and conversions. Calyx helps you calculate smarter, faster, and easier in every field."
+  categoriespage: {
+    title: "Explore Calculator Categories",
+    description: "Discover all free online calculator categories — from finance and health to math and conversions. Calyx helps you calculate smarter, faster, and easier in every field."
   },
   search: {
     placeholder: "Search calculators...",
@@ -39,6 +41,67 @@ export const enTranslations = {
     feature2Desc: "Access health, finance, and more calculator tools in one place",
     feature3: "Fast & Easy",
     feature3Desc: "Simple interface with instant results and no complicated steps",
+  },
+  //About Content
+  about: {
+    tagline: "Smart Tools. Simple Math. Global Reach.",
+    title: "About Calyx",
+    subtitle: "Calyx is a next-generation platform offering intelligent, accurate, and user-friendly online calculators designed for students, professionals, and businesses worldwide.",
+    missiontitle: "Our Mission at Calyx",
+    missionsub: "At Calyx, we believe accurate calculations should be simple,accessible, and empowering. Our mission is to provide the world’s most reliable and intuitive calculator tools — from finance to health — so users everywhere can make smarter, data-driven decisions.",
+    missionsub2: "With precision, innovation, and trust at our core, we’re shaping a smarter digital future — one calculation at a time.",
+    missioncard1: "Accuracy",
+    card1sub: "Every calculator we build is powered by verified formulas, ensuring consistent and trustworthy results across every use.",
+    missioncard2: "Innovation",
+    card2sub: "We continuously explore new ways to make complex data easy to understand and interact with through modern, adaptive tools.",
+    missioncard3: "Accessibility",
+    card3sub: "Calyx is designed for everyone, everywhere — multilingual, responsive, and built to empower global users across all devices.",
+    valuetitle:"Our Core Principles",
+    valuesubtitle:"At Calyx, our foundation is built on values that define how we create, innovate, and support our users every day.",
+    value1Title: "Clarity in Every Calculation",
+    value1Desc:
+      "We believe data should never confuse — our tools are designed to simplify complex ideas into clear, usable insights.",
+    value2Title: "Commitment to Precision",
+    value2Desc:
+      "Each formula and result is verified for accuracy, ensuring reliability across every calculator we offer.",
+    value3Title: "Innovation that Empowers",
+    value3Desc:
+      "Calyx evolves constantly — bringing smarter tools that make numbers work for you, not against you.",
+  },
+  // contact content
+    contact: {
+    hero: {
+      title: "Get in Touch with Calyx",
+      subtitle:
+        "We value every message — whether it’s feedback, collaboration, or just a friendly hello. Let’s connect and make great things happen together.",
+      primaryCta: "Email Us",
+      secondaryCta: "Learn More About Us",
+    },
+         support: {
+          title: "Explore More, Learn Better",
+    subtitle:
+      "Need extra resources, guidance, or helpful tools? We’ve gathered everything to make your experience smoother and smarter.",
+    details: [
+      {
+        heading: "Helpful Guides",
+        content:
+          "Browse through our in-depth articles and explanations for better understanding.",
+        icon: BookOpen,
+      },
+      {
+        heading: "Knowledge Base",
+        content:
+          "Find curated insights and detailed references covering various topics.",
+        icon: Info,
+      },
+      {
+        heading: "Global Access",
+        content:
+          "All resources are designed to be simple, multilingual, and globally accessible.",
+        icon: Globe,
+      },
+    ],
+  },
   },
   // Health Calculators
   health: {

@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
+import FadeIn from "@/components/FadeIn"
 
 interface CategoryPageProps {
   params: Promise<{
@@ -29,6 +30,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   return (
+    <FadeIn>
     <div className="container mx-auto px-4 py-8">
       <div className="mb-6">
         <Link href={`/${locale}/categories`}>
@@ -43,7 +45,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             {getTranslation(locale as Locale, categoryData.name)}
           </h1>
         </div>
-        <p className="text-muted-foreground text-lg">
+        <p className="text-zinc-800 text-lg">
           {getTranslation(locale as Locale, `${categoryData.name}.description`)}
         </p>
       </div>
@@ -57,15 +59,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           >
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>
+                <CardTitle className="text-zinc-950 text-xl font-bold">
                   {getTranslation(locale as Locale, calculator.titleKey)}
                 </CardTitle>
-                <CardDescription>
+                <CardDescription className="text-zinc-900 font-semibold">
                   {getTranslation(locale as Locale, calculator.descriptionKey)}
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-primary">
+                <p className="text-sm text-zinc-800">
                   {getTranslation(locale as Locale, "calculator.clickToOpen")} →
                 </p>
               </CardContent>
@@ -82,5 +84,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </div>
       )}
     </div>
+    </FadeIn>
   )
 }

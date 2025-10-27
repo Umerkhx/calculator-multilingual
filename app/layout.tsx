@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://calculator-multilingual.vercel.app"),
+  metadataBase: new URL("https://calyx-mme.vercel.app"),
   title: {
     default: "Calyx | Multilingual Calculator Platform",
     template: "%s | Calyx",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Calyx | Multilingual Calculator Platform",
     description:
       "A modern multilingual calculator website for accurate and accessible calculations worldwide.",
-    url: "https://calculator-multilingual.vercel.app",
+    url: "https://calyx-mme.vercel.app",
     siteName: "Calyx",
     type: "website",
   },
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   generator: "Calyx App",
   authors: [{ name: "Calyx Team" }],
   alternates: {
-    canonical: "https://calculator-multilingual.vercel.app",
+    canonical: "https://calyx-mme.vercel.app",
   },
 };
 

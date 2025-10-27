@@ -19,7 +19,7 @@ interface HeaderProps {
 export function Header({ locale }: HeaderProps) {
   const t = translations[locale].nav;
 
-  const navKeys: (keyof typeof t)[] = ["home", "about", "contact"];
+  const navKeys: (keyof typeof t)[] = ["home", "about", "contact","catergories"];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -54,7 +54,7 @@ export function Header({ locale }: HeaderProps) {
 
         <Link href={`/${locale}`} className="absolute left-1/2 -translate-x-1/2">
           <span className="font-bold text-foreground text-2xl sm:text-3xl lg:text-4xl uppercase">
-            Calyx
+            {t.name}
           </span>
         </Link>
 

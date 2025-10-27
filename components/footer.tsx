@@ -1,78 +1,122 @@
-import Link from "next/link"
-import { type Locale, translations } from "@/lib/i18n"
-import Image from "next/image"
+"use client"
+
+import { useState } from "react";
+import Link from "next/link";
+import { allCalculatorCategories } from "@/lib/calculators";
+import { getTranslation, type Locale, translations } from "@/lib/i18n";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 interface FooterProps {
-  locale: Locale
+  locale: Locale;
 }
 
 export function Footer({ locale }: FooterProps) {
-  const t = translations[locale]
+  const t = translations[locale];
+  const [selectedCategory, setSelectedCategory] = useState(allCalculatorCategories[0].id);
+
+  const currentCategory = allCalculatorCategories.find(cat => cat.id === selectedCategory);
+  const calculators = currentCategory?.calculators || [];
+
+  const firstThree = calculators.slice(0, 3);
+  const secondThree = calculators.slice(3, 6);
+  const thirdThree = calculators.slice(6, 9);
 
   return (
-     <footer className="border-t border-border bg-zinc-100/20 backdrop-blur-3xl">
+    <footer className="border-t border-border bg-zinc-100/20 backdrop-blur-3xl">
       <div className="container mx-auto max-w-7xl px-4 py-12">
-          <div className="flex justify-between items-center px-20">
-            <div className="flex flex-col gap-2">
-              <span className="font-bold text-8xl  text-zinc-800">Calyx</span>
-            <p className="mt-1 md:text-base text-sm  ">Calyx – Simplify Math with Free Online Calculators</p>
-            </div>
-            <div>
-            <h4 className="font-bold text-3xl text-zinc-800 mb-3">Social Links</h4>
-            <div className="flex items-center gap-2">
-            <Link href={"#"}><Image src={'/facebook.png'} width={40} height={40} alt="facebook"/></Link>
-            <Link href={"#"}><Image src={'/instagram.png'} width={40} height={40} alt="instagram"/></Link>
-            <Link href={"#"}><Image src={'/linkedin.png'} width={40} height={40} alt="linkedin"/></Link>
-            </div>
-            </div>
+        {/* Top section */}
+        <div className="flex flex-col md:flex-row md:justify-between  items-center gap-5 md:px-20 px-5">
+          {/* Name & Description */}
+          <div className="flex flex-col gap-2 md:w-1/2">
+            <span className="font-bold md:text-8xl text-6xl text-zinc-800">Calyx</span>
+            <p className="mt-1 md:text-base text-sm md:mb-0 mb-5">
+              Calyx – Simplify Math with Free Online Calculators
+            </p>
           </div>
-        <div className="grid gap-8 md:grid-cols-4 my-12 mx-auto px-20">
 
+          <div className="flex flex-col items-start md:items-end gap-2">
+            <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+              <SelectTrigger className="w-36 md:w-48">
+                <SelectValue placeholder="Select Category" />
+              </SelectTrigger>
+              <SelectContent>
+                {allCalculatorCategories.map(cat => (
+                  <SelectItem key={cat.id} value={cat.id}>{getTranslation(locale, cat.name)}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+   
+          </div>
+        </div>
+
+        {/* Bottom grids */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:px-20 px-5 my-10">
+          {/* Meet Calyx column */}
           <div>
-            <h4 className="font-semibold">Meet Calyx</h4>
-            <ul className="mt-4 space-y-2 text-sm ">
-              <li>
-                <Link href={`/${locale}`} className="hover:text-blue-600">Home</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">About</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Contact</Link></li>
+            <h4 className="font-semibold text-lg mb-4">Meet Calyx</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href={`/${locale}`} className="hover:text-blue-600">Home</Link></li>
+              <li><Link href={`/${locale}/about`} className="hover:text-blue-600">About</Link></li>
+              <li><Link href={`/${locale}/contact`} className="hover:text-blue-600">Contact</Link></li>
+              <li><Link href={`/${locale}/categories`} className="hover:text-blue-600">Categories</Link></li>
             </ul>
           </div>
 
+          {/* First calculator column */}
           <div>
-            <h4 className="font-semibold">Our Popular Calculators</h4>
-            <ul className="mt-4 space-y-2 text-sm ">
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Biology</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Conversion</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Finance</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Math</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Statistics</Link></li>
+            <h4 className="font-semibold text-lg mb-2">Our Popular Calculators</h4>
+            <ul className="space-y-2 text-sm">
+              {firstThree.map(calc => (
+                <li key={calc.slug}>
+                  <Link href={`/${locale}/categories/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
+                    {getTranslation(locale, calc.titleKey)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Second calculator grid */}
           <div>
-            {/* <h4 className="font-semibold">Company</h4> */}
-            <ul className="mt-4 space-y-2 text-sm ">
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Chemistry</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Ecology</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Food</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Physics</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Construction</Link></li>
+            <ul className="space-y-2 text-sm">
+              {secondThree.map(calc => (
+                <li key={calc.slug}>
+                  <Link href={`/${locale}/categories/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
+                    {getTranslation(locale, calc.titleKey)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Third calculator grid */}
           <div>
-            {/* <h4 className="font-semibold">Legal</h4> */}
-            <ul className="mt-4 space-y-2 text-sm ">
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Everyday life</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Health</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Sports</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Loan Calculator</Link></li>
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Other</Link></li>
+            <ul className="space-y-2 text-sm">
+              {thirdThree.map(calc => (
+                <li key={calc.slug}>
+                  <Link href={`/${locale}/categories/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
+                    {getTranslation(locale, calc.titleKey)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
-        <div className="border-t border-black/10 pt-10 text-center text-sm"><p>{t.footer.copyright}</p></div>
+
+        {/* Copyright */}
+        <div className="border-t border-black/10 pt-10 text-center text-sm">
+        <div className="flex justify-between items-center">
+                 <div className="flex gap-3">
+              <Link href="#"><img src="/facebook.png" alt="facebook" width={40} height={40} /></Link>
+              <Link href="#"><img src="/instagram.png" alt="instagram" width={40} height={40} /></Link>
+              <Link href="#"><img src="/linkedin.png" alt="linkedin" width={40} height={40} /></Link>
+            </div>
+
+          <p>{t.footer.copyright}</p>
+        </div>
+        </div>
       </div>
     </footer>
-  
-    )}
+  );
+}

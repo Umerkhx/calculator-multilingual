@@ -7,27 +7,38 @@ export const trTranslations = {
       "Calyx; finans, sağlık, eğitim, matematik ve dönüşümler için ücretsiz çevrimiçi hesaplayıcıların tam koleksiyonunu sunar. Her hesaplayıcı, reklamsız ve sade bir deneyimle anında ve doğru sonuçlar verir. İster öğrenci, ister profesyonel ya da günlük kullanıcı olun, Calyx karmaşık hesaplamaları her zaman, her yerde kolaylaştırır — akıllı, hızlı ve güvenilir.",
     cta: "Kategorileri Keşfet",
   },
-  nav: {
+nav: {
+    name: "Calyx",
     home: "Ana Sayfa",
     about: "Hakkında",
     services: "Hizmetler",
     contact: "İletişim",
+    catergories: "Kategoriler",
     calculators: "Hesaplayıcılar",
-  },
+},
   feature: {
     title: "Hesaplayıcılarımız",
     description: "Kullanışlı hesaplayıcı koleksiyonumuzu keşfedin",
   },
   categories: {
-    health: "Sağlık",
-    finance: "Finans",
+    health: {
+      name: "Sağlık",
+      description: "Sağlığınızı kolay kullanılabilir araçlarla takip edin. VKİ’den fitness takibine kadar, günlük sağlık ve akıllı yaşam seçimleri için hızlı ve doğru sonuçlar alın."
+    },
+    finance: {
+      name: "Finans",
+      description: "Paranızı daha akıllıca yönetin, basit araçlarla. Bütçelemeden kredi planlamasına kadar, daha iyi finansal kararlar için hızlı ve doğru sonuçlar alın."
+    },
     all: "Tüm Hesaplayıcılar",
   },
-  categoriespage:{
-  title:"Hesap Makinesi Kategorilerini Keşfedin",
-  description:"Finanstan sağlığa, matematikten dönüşümlere kadar tüm ücretsiz çevrimiçi hesap makinesi kategorilerini keşfedin. Calyx her alanda daha akıllı, hızlı ve kolay hesaplamanıza yardımcı olur."
-},
-cards: { title: "Ücretsiz Çevrimiçi Hesaplayıcılar" },
+  categoriespage: {
+    title: "Hesap Makinesi Kategorilerini Keşfedin",
+    description: "Finanstan sağlığa, matematikten dönüşümlere kadar tüm ücretsiz çevrimiçi hesap makinesi kategorilerini keşfedin. Calyx her alanda daha akıllı, hızlı ve kolay hesaplamanıza yardımcı olur."
+  },
+  cards: {
+    title: "Hesaplayıcı Kategorilerimizi Keşfedin",
+    subtitle: "Günlük işleri kolaylaştırmak için tasarlanmış çeşitli kategorileri keşfedin. Sağlık ve wellness’den finansa, tarihlere ve günlük ihtiyaçlara kadar, ihtiyacınız olduğunda hızlı ve doğru sonuçlar veren araçları bulun. Her şey kullanıma hazır, basit ve pratik — zahmetsiz, sadece anında cevaplar."
+  },
   search: {
     placeholder: "Hesaplayıcı ara...",
     notFound: "Hesaplayıcı bulunamadı",
@@ -45,71 +56,71 @@ cards: { title: "Ücretsiz Çevrimiçi Hesaplayıcılar" },
   },
   //about content
   about: {
-  tagline: "Akıllı Araçlar. Basit Matematik. Küresel Erişim.",
-  title: "Calyx Hakkında",
-  subtitle:
-    "Calyx, öğrenciler, profesyoneller ve işletmeler için akıllı, doğru ve kullanıcı dostu çevrimiçi hesap makineleri sunan yeni nesil bir platformdur.",
-  missiontitle: "Calyx'teki Misyonumuz",
-  missionsub:
-    "Calyx olarak, doğru hesaplamaların basit, erişilebilir ve güçlendirici olması gerektiğine inanıyoruz. Misyonumuz, finansmandan sağlığa kadar dünyanın en güvenilir ve sezgisel hesaplama araçlarını sunmaktır — böylece kullanıcılar daha akıllı, veri odaklı kararlar alabilirler.",
-  missionsub2:
-    "Kesinlik, yenilik ve güven temelimizdir — daha akıllı bir dijital geleceği, her seferinde bir hesapla inşa ediyoruz.",
-  missioncard1: "Doğruluk",
-  card1sub:
-    "Geliştirdiğimiz her hesap makinesi doğrulanmış formüllerle desteklenir ve tutarlı, güvenilir sonuçlar sağlar.",
-  missioncard2: "Yenilik",
-  card2sub:
-    "Karmaşık verileri anlamayı ve etkileşimi kolaylaştırmak için sürekli yeni yollar keşfediyoruz.",
-  missioncard3: "Erişilebilirlik",
-  card3sub:
-    "Calyx herkes için, her yerde tasarlanmıştır — çok dilli, duyarlı ve küresel kullanıcıları güçlendirmek için inşa edilmiştir.",
-  valuetitle: "Temel İlkelerimiz",
-  valuesubtitle:
-    "Calyx'te temelimiz, her gün nasıl yarattığımızı, yenilik yaptığımızı ve kullanıcılarımızı desteklediğimizi tanımlayan değerlere dayanır.",
-  value1Title: "Her Hesapta Açıklık",
-  value1Desc:
-    "Verilerin kafa karıştırıcı olmaması gerektiğine inanıyoruz — araçlarımız karmaşık fikirleri açık, kullanılabilir bilgilere dönüştürmek için tasarlanmıştır.",
-  value2Title: "Doğruluğa Bağlılık",
-  value2Desc:
-    "Her formül ve sonuç doğruluk için doğrulanır, bu da güvenilirliği sağlar.",
-  value3Title: "Güçlendiren Yenilik",
-  value3Desc:
-    "Calyx sürekli gelişiyor — sayıları sizin için çalıştıran daha akıllı araçlar getiriyor, size karşı değil.",
-},
-contact: {
-  hero: {
-    title: "Calyx ile İletişime Geçin",
+    tagline: "Akıllı Araçlar. Basit Matematik. Küresel Erişim.",
+    title: "Calyx Hakkında",
     subtitle:
-      "Her mesaj bizim için değerlidir — ister geri bildirim, ister iş birliği ya da sadece dostça bir merhaba olsun. Bağlanalım ve harika şeyler yapalım.",
-    primaryCta: "Bize E-posta Gönderin",
-    secondaryCta: "Hakkımızda Daha Fazla Bilgi Edinin",
+      "Calyx, öğrenciler, profesyoneller ve işletmeler için akıllı, doğru ve kullanıcı dostu çevrimiçi hesap makineleri sunan yeni nesil bir platformdur.",
+    missiontitle: "Calyx'teki Misyonumuz",
+    missionsub:
+      "Calyx olarak, doğru hesaplamaların basit, erişilebilir ve güçlendirici olması gerektiğine inanıyoruz. Misyonumuz, finansmandan sağlığa kadar dünyanın en güvenilir ve sezgisel hesaplama araçlarını sunmaktır — böylece kullanıcılar daha akıllı, veri odaklı kararlar alabilirler.",
+    missionsub2:
+      "Kesinlik, yenilik ve güven temelimizdir — daha akıllı bir dijital geleceği, her seferinde bir hesapla inşa ediyoruz.",
+    missioncard1: "Doğruluk",
+    card1sub:
+      "Geliştirdiğimiz her hesap makinesi doğrulanmış formüllerle desteklenir ve tutarlı, güvenilir sonuçlar sağlar.",
+    missioncard2: "Yenilik",
+    card2sub:
+      "Karmaşık verileri anlamayı ve etkileşimi kolaylaştırmak için sürekli yeni yollar keşfediyoruz.",
+    missioncard3: "Erişilebilirlik",
+    card3sub:
+      "Calyx herkes için, her yerde tasarlanmıştır — çok dilli, duyarlı ve küresel kullanıcıları güçlendirmek için inşa edilmiştir.",
+    valuetitle: "Temel İlkelerimiz",
+    valuesubtitle:
+      "Calyx'te temelimiz, her gün nasıl yarattığımızı, yenilik yaptığımızı ve kullanıcılarımızı desteklediğimizi tanımlayan değerlere dayanır.",
+    value1Title: "Her Hesapta Açıklık",
+    value1Desc:
+      "Verilerin kafa karıştırıcı olmaması gerektiğine inanıyoruz — araçlarımız karmaşık fikirleri açık, kullanılabilir bilgilere dönüştürmek için tasarlanmıştır.",
+    value2Title: "Doğruluğa Bağlılık",
+    value2Desc:
+      "Her formül ve sonuç doğruluk için doğrulanır, bu da güvenilirliği sağlar.",
+    value3Title: "Güçlendiren Yenilik",
+    value3Desc:
+      "Calyx sürekli gelişiyor — sayıları sizin için çalıştıran daha akıllı araçlar getiriyor, size karşı değil.",
   },
-  support: {
-    title: "Daha Fazla Keşfet, Daha İyi Öğren",
-    subtitle:
-      "Ek kaynaklara, rehberliğe veya faydalı araçlara mı ihtiyacınız var? Deneyiminizi daha kolay ve akıllı hale getirmek için her şeyi topladık.",
-    details: [
-      {
-        heading: "Yararlı Kılavuzlar",
-        content:
-          "Daha iyi anlamak için detaylı makalelerimize göz atın.",
-        icon: BookOpen,
-      },
-      {
-        heading: "Bilgi Tabanı",
-        content:
-          "Çeşitli konuları kapsayan detaylı bilgiler ve referanslar bulun.",
-        icon: Info,
-      },
-      {
-        heading: "Küresel Erişim",
-        content:
-          "Tüm kaynaklar basit, çok dilli ve küresel erişime uygundur.",
-        icon: Globe,
-      },
-    ],
+  contact: {
+    hero: {
+      title: "Calyx ile İletişime Geçin",
+      subtitle:
+        "Her mesaj bizim için değerlidir — ister geri bildirim, ister iş birliği ya da sadece dostça bir merhaba olsun. Bağlanalım ve harika şeyler yapalım.",
+      primaryCta: "Bize E-posta Gönderin",
+      secondaryCta: "Hakkımızda Daha Fazla Bilgi Edinin",
+    },
+    support: {
+      title: "Daha Fazla Keşfet, Daha İyi Öğren",
+      subtitle:
+        "Ek kaynaklara, rehberliğe veya faydalı araçlara mı ihtiyacınız var? Deneyiminizi daha kolay ve akıllı hale getirmek için her şeyi topladık.",
+      details: [
+        {
+          heading: "Yararlı Kılavuzlar",
+          content:
+            "Daha iyi anlamak için detaylı makalelerimize göz atın.",
+          icon: BookOpen,
+        },
+        {
+          heading: "Bilgi Tabanı",
+          content:
+            "Çeşitli konuları kapsayan detaylı bilgiler ve referanslar bulun.",
+          icon: Info,
+        },
+        {
+          heading: "Küresel Erişim",
+          content:
+            "Tüm kaynaklar basit, çok dilli ve küresel erişime uygundur.",
+          icon: Globe,
+        },
+      ],
+    },
   },
-},
 
   // Sağlık Hesaplayıcıları
   health: {

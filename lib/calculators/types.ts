@@ -23,6 +23,7 @@ export interface Calculator {
 }
 
 export interface CalculatorCategory {
+  description: string
   id: string
   name: string // translation key like "categories.health"
   calculators: Calculator[]

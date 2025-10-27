@@ -39,6 +39,11 @@ export function CategoriesPage({ locale }: CategoriesPageProps) {
                            
                                 </CardHeader>
                                 <CardContent>
+                                    <p className="text-sm text-zinc-700">
+                                          {getTranslation(locale, category.description)}
+                                    </p>
+                                </CardContent>
+                                <CardContent>
                                     <p className="text-sm text-zinc-400">
                                         {category.calculators.length} 
                                     </p>

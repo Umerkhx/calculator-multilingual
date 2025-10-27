@@ -1,3 +1,5 @@
+import { BookOpen, Globe, Info } from "lucide-react";
+
 export const frTranslations = {
   hero: {
     title: "Outils intelligents Calyx – Résultats instantanés",
@@ -41,6 +43,74 @@ subtitle: "Calyx propose une collection complète de calculatrices en ligne grat
     feature3: "Rapide et Facile",
     feature3Desc: "Interface simple avec résultats instantanés et aucune étape compliquée",
   },
+  //about content
+  about: {
+  tagline: "Outils intelligents. Mathématiques simples. Portée mondiale.",
+  title: "À propos de Calyx",
+  subtitle:
+    "Calyx est une plateforme de nouvelle génération offrant des calculatrices en ligne intelligentes, précises et conviviales pour les étudiants, les professionnels et les entreprises du monde entier.",
+  missiontitle: "Notre mission chez Calyx",
+  missionsub:
+    "Chez Calyx, nous croyons que les calculs précis doivent être simples, accessibles et autonomisants. Notre mission est de fournir les outils de calcul les plus fiables et les plus intuitifs au monde — de la finance à la santé — afin que les utilisateurs partout puissent prendre des décisions plus intelligentes basées sur les données.",
+  missionsub2:
+    "Avec la précision, l’innovation et la confiance au cœur de notre démarche, nous façonnons un avenir numérique plus intelligent — un calcul à la fois.",
+  missioncard1: "Précision",
+  card1sub:
+    "Chaque calculatrice que nous construisons est propulsée par des formules vérifiées, garantissant des résultats cohérents et fiables à chaque utilisation.",
+  missioncard2: "Innovation",
+  card2sub:
+    "Nous explorons continuellement de nouvelles façons de rendre les données complexes faciles à comprendre et à interagir via des outils modernes et adaptatifs.",
+  missioncard3: "Accessibilité",
+  card3sub:
+    "Calyx est conçu pour tous, partout — multilingue, réactif et construit pour autonomiser les utilisateurs mondiaux sur tous les appareils.",
+  valuetitle: "Nos principes fondamentaux",
+  valuesubtitle:
+    "Chez Calyx, notre fondation repose sur des valeurs qui définissent comment nous créons, innovons et soutenons nos utilisateurs chaque jour.",
+  value1Title: "Clarté dans chaque calcul",
+  value1Desc:
+    "Nous pensons que les données ne doivent jamais embrouiller — nos outils sont conçus pour simplifier les idées complexes en informations claires et exploitables.",
+  value2Title: "Engagement envers la précision",
+  value2Desc:
+    "Chaque formule et résultat est vérifié pour garantir la fiabilité à travers chaque calculatrice que nous proposons.",
+  value3Title: "Innovation qui donne du pouvoir",
+  value3Desc:
+    "Calyx évolue constamment — apportant des outils plus intelligents qui font que les chiffres travaillent pour vous, et non contre vous.",
+},
+contact: {
+  hero: {
+    title: "Contactez Calyx",
+    subtitle:
+      "Nous apprécions chaque message — qu’il s’agisse d’un retour, d’une collaboration ou d’un simple bonjour. Connectons-nous et réalisons de grandes choses ensemble.",
+    primaryCta: "Envoyez-nous un e-mail",
+    secondaryCta: "En savoir plus sur nous",
+  },
+  support: {
+    title: "Explorez plus, apprenez mieux",
+    subtitle:
+      "Besoin de ressources supplémentaires, de conseils ou d’outils utiles ? Nous avons tout rassemblé pour rendre votre expérience plus fluide et intelligente.",
+    details: [
+      {
+        heading: "Guides utiles",
+        content:
+          "Parcourez nos articles détaillés et explications pour une meilleure compréhension.",
+        icon: BookOpen,
+      },
+      {
+        heading: "Base de connaissances",
+        content:
+          "Trouvez des informations et des références détaillées sur divers sujets.",
+        icon: Info,
+      },
+      {
+        heading: "Accès mondial",
+        content:
+          "Toutes les ressources sont simples, multilingues et accessibles à l’échelle mondiale.",
+        icon: Globe,
+      },
+    ],
+  },
+},
+
   health: {
     bodyFat: {
       title: "Calculatrice de Graisse Corporelle",

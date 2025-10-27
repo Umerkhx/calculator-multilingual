@@ -6,6 +6,7 @@ import { type Locale } from "@/lib/i18n";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import LanguageSelector from "./LanguageSelector";
 
 interface MobileSidebarProps {
   locale: Locale;
@@ -47,25 +48,11 @@ export function MobileSidebar({ locale }: MobileSidebarProps) {
                   {label}
                 </Link>
               ))}
+              <LanguageSelector locale={locale} />
+
             </div>
           </nav>
 
-          <div className="p-4 border-t">
-            <select
-              value={locale}
-              onChange={(e) => {
-                const newLocale = e.target.value as Locale;
-                window.location.href = `/${newLocale}`;
-              }}
-              className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm"
-            >
-              <option value="en">English</option>
-              <option value="ur">اردو</option>
-              <option value="es">Español</option>
-              <option value="fr">Français</option>
-              <option value="ar">العربية</option>
-            </select>
-          </div>
         </div>
       </SheetContent>
     </Sheet>

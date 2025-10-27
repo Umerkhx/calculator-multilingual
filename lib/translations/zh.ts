@@ -1,3 +1,5 @@
+import { BookOpen, Globe, Info } from "lucide-react";
+
 export const zhTranslations = {
   hero: {
     title: "Calyx 智能工具 即时结果",
@@ -40,6 +42,74 @@ title: "免费在线计算器"
     feature3: "快速简便",
     feature3Desc: "界面简单，结果即时，无需复杂步骤",
   },
+  //about content
+  about: {
+  tagline: "智能工具。简单数学。全球覆盖。",
+  title: "关于 Calyx",
+  subtitle:
+    "Calyx 是一个新一代平台，为全球的学生、专业人士和企业提供智能、精准、易用的在线计算器。",
+  missiontitle: "我们的使命",
+  missionsub:
+    "在 Calyx，我们相信准确的计算应该是简单、可访问并具有赋能性的。我们的使命是提供世界上最可靠、最直观的计算工具——从金融到健康——让全球用户都能做出更聪明、基于数据的决策。",
+  missionsub2:
+    "以精确、创新和信任为核心，我们正在一步步打造更智能的数字未来。",
+  missioncard1: "准确性",
+  card1sub:
+    "我们开发的每一个计算器都基于经过验证的公式，确保每次使用都能获得一致且可信的结果。",
+  missioncard2: "创新",
+  card2sub:
+    "我们不断探索新的方式，通过现代、自适应的工具让复杂数据更易理解与交互。",
+  missioncard3: "可访问性",
+  card3sub:
+    "Calyx 为所有人、在任何地方而设计——多语言、响应式，并致力于赋能全球用户。",
+  valuetitle: "我们的核心原则",
+  valuesubtitle:
+    "在 Calyx，我们的基础建立在价值观之上，这些价值观定义了我们每天如何创造、创新和支持用户。",
+  value1Title: "每次计算的清晰性",
+  value1Desc:
+    "我们相信数据不应令人困惑——我们的工具旨在将复杂的概念简化为清晰、可用的见解。",
+  value2Title: "对准确性的承诺",
+  value2Desc:
+    "每个公式和结果都经过验证，以确保我们所有计算器的可靠性。",
+  value3Title: "赋能的创新",
+  value3Desc:
+    "Calyx 不断发展——带来更智能的工具，让数字为你服务，而不是与你作对。",
+},
+contact: {
+  hero: {
+    title: "联系 Calyx",
+    subtitle:
+      "我们珍视每一条信息——无论是反馈、合作，还是一个友好的问候。让我们联系起来，共同创造精彩。",
+    primaryCta: "给我们发邮件",
+    secondaryCta: "了解更多关于我们",
+  },
+  support: {
+    title: "探索更多，学习更好",
+    subtitle:
+      "需要额外的资源、指导或有用的工具吗？我们已准备好一切，让你的体验更轻松、更智能。",
+    details: [
+      {
+        heading: "实用指南",
+        content:
+          "浏览我们的深入文章和讲解，以获得更好的理解。",
+        icon: BookOpen,
+      },
+      {
+        heading: "知识库",
+        content:
+          "查找涵盖各种主题的详细信息和参考资料。",
+        icon: Info,
+      },
+      {
+        heading: "全球访问",
+        content:
+          "所有资源都设计为简单、多语言且全球可访问。",
+        icon: Globe,
+      },
+    ],
+  },
+},
+
   // 健康计算器
   health: {
     bodyFat: {

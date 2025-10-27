@@ -7,24 +7,33 @@ export const itTranslations = {
       "Calyx offre una collezione completa di calcolatori online gratuiti per finanza, salute, istruzione, matematica e conversioni. Ogni calcolatore fornisce risultati istantanei e accurati con un'esperienza pulita e senza pubblicità. Che tu sia uno studente, un professionista o un utente quotidiano, Calyx semplifica i calcoli complessi ovunque e in qualsiasi momento — intelligente, veloce e affidabile.",
     cta: "Esplora le categorie",
   },
-  nav: {
+nav: {
+    name: "Calyx",
     home: "Home",
     about: "Chi siamo",
     services: "Servizi",
-    contact: "Contatti",
-    calculators: "Calcolatori",
-  },
+    contact: "Contatto",
+    catergories: "Categorie",
+    calculators: "Calcolatrici",
+},
   feature: {
     title: "I nostri calcolatori",
     description: "Esplora la nostra raccolta di calcolatori utili",
   },
   cards: {
-    title: "Calcolatrici online gratuite"
+    title: "Esplora le nostre categorie di calcolatori",
+    subtitle: "Scopri una varietà di categorie progettate per semplificare le attività quotidiane. Dalla salute e benessere alla finanza, date ed elementi essenziali quotidiani, trova strumenti che forniscono risultati rapidi e accurati ogni volta che ne hai bisogno. Tutto pronto all'uso, semplice e pratico — senza problemi, solo risposte immediate."
   },
   categories: {
-    health: "Salute",
-    finance: "Finanza",
-    all: "Tutti i calcolatori",
+    health: {
+      name: "Salute",
+      description: "Mantieniti in salute con strumenti facili da usare. Dal BMI al monitoraggio del fitness, ottieni risultati rapidi e accurati per il benessere quotidiano e scelte di vita intelligenti."
+    },
+    finance: {
+      name: "Finanza",
+      description: "Gestisci i tuoi soldi in modo più intelligente con strumenti semplici. Dal budgeting alla pianificazione dei prestiti, ottieni risultati rapidi e accurati per decisioni finanziarie migliori."
+    },
+    all: "Tutti i Calcolatori",
   },
   categoriespage: {
     title: "Esplora le categorie di calcolatrici",
@@ -80,39 +89,39 @@ export const itTranslations = {
       "Calyx evolve costantemente — offrendo strumenti più intelligenti che fanno lavorare i numeri per te, non contro di te.",
   },
   contact: {
-  hero: {
-    title: "Contatta Calyx",
-    subtitle:
-      "Apprezziamo ogni messaggio — che sia un feedback, una collaborazione o un semplice saluto. Connettiamoci e creiamo qualcosa di straordinario insieme.",
-    primaryCta: "Inviaci un'email",
-    secondaryCta: "Scopri di più su di noi",
+    hero: {
+      title: "Contatta Calyx",
+      subtitle:
+        "Apprezziamo ogni messaggio — che sia un feedback, una collaborazione o un semplice saluto. Connettiamoci e creiamo qualcosa di straordinario insieme.",
+      primaryCta: "Inviaci un'email",
+      secondaryCta: "Scopri di più su di noi",
+    },
+    support: {
+      title: "Esplora di più, impara meglio",
+      subtitle:
+        "Hai bisogno di risorse extra, guida o strumenti utili? Abbiamo raccolto tutto per rendere la tua esperienza più fluida e intelligente.",
+      details: [
+        {
+          heading: "Guide utili",
+          content:
+            "Consulta i nostri articoli approfonditi e spiegazioni per una migliore comprensione.",
+          icon: BookOpen,
+        },
+        {
+          heading: "Base di conoscenza",
+          content:
+            "Trova informazioni dettagliate e riferimenti su vari argomenti.",
+          icon: Info,
+        },
+        {
+          heading: "Accesso globale",
+          content:
+            "Tutte le risorse sono semplici, multilingue e accessibili in tutto il mondo.",
+          icon: Globe,
+        },
+      ],
+    },
   },
-  support: {
-    title: "Esplora di più, impara meglio",
-    subtitle:
-      "Hai bisogno di risorse extra, guida o strumenti utili? Abbiamo raccolto tutto per rendere la tua esperienza più fluida e intelligente.",
-    details: [
-      {
-        heading: "Guide utili",
-        content:
-          "Consulta i nostri articoli approfonditi e spiegazioni per una migliore comprensione.",
-        icon: BookOpen,
-      },
-      {
-        heading: "Base di conoscenza",
-        content:
-          "Trova informazioni dettagliate e riferimenti su vari argomenti.",
-        icon: Info,
-      },
-      {
-        heading: "Accesso globale",
-        content:
-          "Tutte le risorse sono semplici, multilingue e accessibili in tutto il mondo.",
-        icon: Globe,
-      },
-    ],
-  },
-},
   // Calcolatori di salute
   health: {
     bodyFat: {

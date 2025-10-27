@@ -2,8 +2,6 @@ import { allCalculatorCategories, getCalculatorsByCategory } from "@/lib/calcula
 import { getTranslation, type Locale, defaultLocale } from "@/lib/i18n"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowLeft } from "lucide-react"
 import FadeIn from "@/components/FadeIn"
 
 interface CategoryPageProps {
@@ -33,12 +31,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     <FadeIn>
     <div className="container mx-auto px-4 py-8">
       <div className="mb-6">
-        <Link href={`/${locale}/categories`}>
-          <Button variant="ghost" className="mb-4">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            {getTranslation(locale as Locale, "navigation.backToCategories")}
-          </Button>
-        </Link>
+    
         
         <div className="flex items-center gap-3 mb-2">
           <h1 className="text-4xl font-bold">
@@ -46,7 +39,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           </h1>
         </div>
         <p className="text-zinc-800 text-lg">
-          {getTranslation(locale as Locale, `${categoryData.name}.description`)}
+          {getTranslation(locale as Locale, `${categoryData.description}`)}
         </p>
       </div>
 
@@ -66,11 +59,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   {getTranslation(locale as Locale, calculator.descriptionKey)}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                <p className="text-sm text-zinc-800">
-                  {getTranslation(locale as Locale, "calculator.clickToOpen")} →
-                </p>
-              </CardContent>
+
             </Card>
           </Link>
         ))}

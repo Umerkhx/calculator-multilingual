@@ -3,14 +3,16 @@ import { BookOpen, Globe, Info } from "lucide-react";
 export const enTranslations = {
   hero: {
     title: "Calyx Smart Tools Instant Results",
-    subtitle: "Calyx offers a complete collection of free online calculators for finance, health, education, math, and conversions. Each calculator delivers instant and accurate results with a clean, ad-free experience. Whether you’re a student, professional, or everyday user, Calyx simplifies complex calculations anytime, anywhere — smart, fast, and reliable.",
+    subtitle: "Calyx offers a complete collection of our Calculators for finance, health, education, math, and conversions. Each calculator delivers instant and accurate results with a clean, ad-free experience. Whether you’re a student, professional, or everyday user, Calyx simplifies complex calculations anytime, anywhere — smart, fast, and reliable.",
     cta: "Explore Categories",
   },
   nav: {
+    name:"Calyx",
     home: "Home",
     about: "About",
     services: "Services",
     contact: "Contact",
+    catergories: "Categories",
     calculators: "Calculators",
   },
   feature: {
@@ -18,11 +20,18 @@ export const enTranslations = {
     description: "Explore our collection of useful calculators"
   },
   cards: {
-    title: "Free Online Calculators"
+    title: "Explore Our Calculator Categories",
+    subtitle:" Discover a variety of categories designed to make everyday tasks easier. From health and wellness to finance, dates, and daily essentials, find tools that give quick, accurate results whenever you need them. Everything is ready to use, simple, and practical — no hassle, just instant answers."
   },
   categories: {
-    health: "Health",
-    finance: "Finance",
+    health: {
+      name: "Health",
+      description: "Stay on top of your health with easy-to-use tools. From BMI to fitness tracking, get quick, accurate results for daily wellness and smart lifestyle choices."
+    },
+    finance: {
+      name: "Finance",
+      description: "Manage your money smarter with simple tools. From budgeting to loan planning, get quick, accurate results for better financial decisions."
+    },
     all: "All Calculators",
   },
   categoriespage: {
@@ -56,8 +65,8 @@ export const enTranslations = {
     card2sub: "We continuously explore new ways to make complex data easy to understand and interact with through modern, adaptive tools.",
     missioncard3: "Accessibility",
     card3sub: "Calyx is designed for everyone, everywhere — multilingual, responsive, and built to empower global users across all devices.",
-    valuetitle:"Our Core Principles",
-    valuesubtitle:"At Calyx, our foundation is built on values that define how we create, innovate, and support our users every day.",
+    valuetitle: "Our Core Principles",
+    valuesubtitle: "At Calyx, our foundation is built on values that define how we create, innovate, and support our users every day.",
     value1Title: "Clarity in Every Calculation",
     value1Desc:
       "We believe data should never confuse — our tools are designed to simplify complex ideas into clear, usable insights.",
@@ -69,7 +78,7 @@ export const enTranslations = {
       "Calyx evolves constantly — bringing smarter tools that make numbers work for you, not against you.",
   },
   // contact content
-    contact: {
+  contact: {
     hero: {
       title: "Get in Touch with Calyx",
       subtitle:
@@ -77,31 +86,31 @@ export const enTranslations = {
       primaryCta: "Email Us",
       secondaryCta: "Learn More About Us",
     },
-         support: {
-          title: "Explore More, Learn Better",
-    subtitle:
-      "Need extra resources, guidance, or helpful tools? We’ve gathered everything to make your experience smoother and smarter.",
-    details: [
-      {
-        heading: "Helpful Guides",
-        content:
-          "Browse through our in-depth articles and explanations for better understanding.",
-        icon: BookOpen,
-      },
-      {
-        heading: "Knowledge Base",
-        content:
-          "Find curated insights and detailed references covering various topics.",
-        icon: Info,
-      },
-      {
-        heading: "Global Access",
-        content:
-          "All resources are designed to be simple, multilingual, and globally accessible.",
-        icon: Globe,
-      },
-    ],
-  },
+    support: {
+      title: "Explore More, Learn Better",
+      subtitle:
+        "Need extra resources, guidance, or helpful tools? We’ve gathered everything to make your experience smoother and smarter.",
+      details: [
+        {
+          heading: "Helpful Guides",
+          content:
+            "Browse through our in-depth articles and explanations for better understanding.",
+          icon: BookOpen,
+        },
+        {
+          heading: "Knowledge Base",
+          content:
+            "Find curated insights and detailed references covering various topics.",
+          icon: Info,
+        },
+        {
+          heading: "Global Access",
+          content:
+            "All resources are designed to be simple, multilingual, and globally accessible.",
+          icon: Globe,
+        },
+      ],
+    },
   },
   // Health Calculators
   health: {
@@ -362,6 +371,7 @@ export const enTranslations = {
     },
   },
   footer: {
+
     copyright: "© 2025 Calyx. All rights reserved.",
     privacy: "Privacy Policy",
     terms: "Terms of Service",

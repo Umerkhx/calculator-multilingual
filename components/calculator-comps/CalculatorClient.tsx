@@ -47,7 +47,6 @@ export default function CalculatorClient({ calc, locale, formulaId }: Calculator
             result={result}
           />
 
-          {/* Always show result card */}
           <CalculatorResult
             locale={locale}
             inputs={inputs}

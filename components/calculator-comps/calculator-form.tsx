@@ -42,7 +42,7 @@ export function CalculatorForm({ calculator, locale, onCalculate, result }: Calc
             <div key={input.name} className="space-y-2">
               <Label htmlFor={input.name}>
                 {getTranslation(locale, input.label)}
-                {input.unit && <span className="text-muted-foreground ml-1">({input.unit})</span>}
+                {/* {<span className="text-muted-foreground ml-1">({input.unit})</span>} */}
               </Label>
               {input.type === "select" ? (
                 <Select
@@ -76,14 +76,7 @@ export function CalculatorForm({ calculator, locale, onCalculate, result }: Calc
           </Button>
         </form>
 
-        {result !== null && (
-          <Card className="mt-4 bg-accent">
-            <CardContent className="pt-6">
-              <p className="text-sm text-muted-foreground mb-1">{getTranslation(locale, calculator.titleKey)}</p>
-              <p className="text-2xl font-bold">{result}</p>
-            </CardContent>
-          </Card>
-        )}
+
       </CardContent>
     </Card>
   )

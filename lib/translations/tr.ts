@@ -13,7 +13,7 @@ nav: {
     about: "Hakkında",
     services: "Hizmetler",
     contact: "İletişim",
-    catergories: "Kategoriler",
+    categories: "Kategoriler",
     calculators: "Hesaplayıcılar",
 },
   feature: {
@@ -401,9 +401,13 @@ nav: {
       formulaText: "Güncel döviz kurları kullanılır",
     },
   },
-  footer: {
-    copyright: "© 2025 Calyx. Tüm hakları saklıdır.",
-    privacy: "Gizlilik Politikası",
-    terms: "Hizmet Şartları",
-  },
+footer: {
+  subtitle: "Calyx – Ücretsiz Çevrimiçi Hesaplayıcılarla Matematiği Basitleştirin",
+  gridtitle1: "Calyx ile Tanışın",
+  gridtitle2: "Popüler Hesaplayıcılarımız",
+  copyright: "© 2025 Calyx. Tüm hakları saklıdır.",
+  privacy: "Gizlilik Politikası",
+  terms: "Hizmet Şartları",
+}
+
 };

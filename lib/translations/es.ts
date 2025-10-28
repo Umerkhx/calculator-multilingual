@@ -12,7 +12,7 @@ export const esTranslations = {
     about: "Acerca de",
     services: "Servicios",
     contact: "Contacto",
-    catergories: "Categorías",
+    categories: "Categorías",
     calculators: "Calculadoras",
   },
   feature: {
@@ -372,9 +372,13 @@ export const esTranslations = {
       formulaText: "Utiliza tasas de cambio actuales",
     },
   },
-  footer: {
-    copyright: "© 2025 Centro de Calculadoras. Todos los derechos reservados.",
-    privacy: "Política de Privacidad",
-    terms: "Términos de Servicio",
-  },
+footer: {
+  subtitle: "Calyx – Simplifica las matemáticas con calculadoras en línea gratuitas",
+  gridtitle1: "Conoce Calyx",
+  gridtitle2: "Nuestras Calculadoras Populares",
+  copyright: "© 2025 Calyx. Todos los derechos reservados.",
+  privacy: "Política de privacidad",
+  terms: "Términos de servicio",
+}
+
 }

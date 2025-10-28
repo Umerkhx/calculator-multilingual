@@ -12,7 +12,7 @@ nav: {
     about: "ہمارے بارے میں",
     services: "سروسز",
     contact: "رابطہ",
-    catergories: "زمرہ جات",
+    categories: "زمرہ جات",
     calculators: "کیلکولیٹرز",
 },
     feature:{
@@ -372,9 +372,13 @@ contact: {
       formulaText: "موجودہ شرح استعمال کرتا ہے",
     },
   },
-  footer: {
-    copyright: "© 2025 کیلکولیٹر ہب۔ تمام حقوق محفوظ ہیں۔",
-    privacy: "رازداری کی پالیسی",
-    terms: "خدمات کی شرائط",
-  },
+footer: {
+  subtitle: "Calyx – مفت آن لائن کیلکولیٹر کے ذریعے ریاضی کو آسان بنائیں",
+  gridtitle1: "Calyx سے ملیں",
+  gridtitle2: "ہمارے مقبول کیلکولیٹر",
+  copyright: "© 2025 Calyx۔ جملہ حقوق محفوظ ہیں۔",
+  privacy: "پرائیویسی پالیسی",
+  terms: "خدمات کی شرائط",
+}
+
 }

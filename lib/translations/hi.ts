@@ -13,7 +13,7 @@ nav: {
     about: "हमारे बारे में",
     services: "सेवाएँ",
     contact: "संपर्क",
-    catergories: "श्रेणियाँ",
+    categories: "श्रेणियाँ",
     calculators: "कैलकुलेटर",
 },
   feature: {
@@ -397,9 +397,13 @@ nav: {
     },
   },
 
-  footer: {
-    copyright: "© 2025 कैलीक्स. सभी अधिकार सुरक्षित।",
-    privacy: "गोपनीयता नीति",
-    terms: "सेवा की शर्तें",
-  },
+footer: {
+  subtitle: "Calyx – मुफ्त ऑनलाइन कैलकुलेटर के साथ गणित को सरल बनाएं",
+  gridtitle1: "Calyx से मिलें",
+  gridtitle2: "हमारे लोकप्रिय कैलकुलेटर",
+  copyright: "© 2025 Calyx. सर्वाधिकार सुरक्षित।",
+  privacy: "गोपनीयता नीति",
+  terms: "सेवा की शर्तें",
+}
+
 }

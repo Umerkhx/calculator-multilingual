@@ -12,7 +12,7 @@ nav: {
     about: "关于",
     services: "服务",
     contact: "联系",
-    catergories: "类别",
+    categories: "类别",
     calculators: "计算器",
 },
   feature: {
@@ -375,9 +375,13 @@ nav: {
       formulaText: "使用当前汇率",
     },
   },
-  footer: {
-    copyright: "© 2025 Calyx. 版权所有。",
-    privacy: "隐私政策",
-    terms: "服务条款",
-  },
+footer: {
+  subtitle: "Calyx – 使用免费的在线计算器简化数学",
+  gridtitle1: "认识 Calyx",
+  gridtitle2: "我们受欢迎的计算器",
+  copyright: "© 2025 Calyx。版权所有。",
+  privacy: "隐私政策",
+  terms: "服务条款",
+}
+
 }

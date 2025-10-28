@@ -12,7 +12,7 @@ export const enTranslations = {
     about: "About",
     services: "Services",
     contact: "Contact",
-    catergories: "Categories",
+    categories: "Categories",
     calculators: "Calculators",
   },
   feature: {
@@ -140,7 +140,7 @@ export const enTranslations = {
       about: "About BMI",
       aboutText: "BMI is a measure of body fat based on height and weight. It applies to adult men and women.",
       formula: "Formula",
-      formulaText: "BMI = weight (kg) / (height (m))²",
+      formulaText: "The Body Mass Index (BMI) formula helps determine whether a person has a healthy body weight for their height. BMI = weight (kg) / height² (m²). If your BMI is below 18.5, you’re considered underweight; between 18.5 and 24.9 means you’re in a healthy range; 25 to 29.9 indicates overweight; and 30 or above falls in the obese category. BMI doesn’t measure body fat directly — it’s just a quick health indicator for reference.",
     },
     calories: {
       title: "Calorie Calculator",
@@ -371,7 +371,9 @@ export const enTranslations = {
     },
   },
   footer: {
-
+    subtitle:"Calyx – Simplify Math with Free Online Calculators",
+    gridtitle1:"Meet Calyx",
+    gridtitle2:"Our Popular Calculators",
     copyright: "© 2025 Calyx. All rights reserved.",
     privacy: "Privacy Policy",
     terms: "Terms of Service",

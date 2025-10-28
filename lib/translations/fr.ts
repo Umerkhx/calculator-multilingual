@@ -13,7 +13,7 @@ export const frTranslations = {
     about: "À propos",
     services: "Services",
     contact: "Contact",
-    catergories: "Catégories",
+    categories: "Catégories",
     calculators: "Calculatrices",
   },
   feature: {
@@ -376,9 +376,13 @@ export const frTranslations = {
       formulaText: "Utilise les taux de change actuels",
     },
   },
-  footer: {
-    copyright: "© 2025 Centre de Calculatrices. Tous droits réservés.",
-    privacy: "Politique de Confidentialité",
-    terms: "Conditions d'Utilisation",
-  },
+footer: {
+  subtitle: "Calyx – Simplifiez les mathématiques avec des calculatrices en ligne gratuites",
+  gridtitle1: "Rencontrez Calyx",
+  gridtitle2: "Nos Calculatrices Populaires",
+  copyright: "© 2025 Calyx. Tous droits réservés.",
+  privacy: "Politique de confidentialité",
+  terms: "Conditions d'utilisation",
+}
+
 }

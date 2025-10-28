@@ -13,7 +13,7 @@ nav: {
     about: "Chi siamo",
     services: "Servizi",
     contact: "Contatto",
-    catergories: "Categorie",
+    categories: "Categorie",
     calculators: "Calcolatrici",
 },
   feature: {
@@ -403,9 +403,13 @@ nav: {
       formulaText: "Usa i tassi di cambio correnti",
     },
   },
-  footer: {
-    copyright: "© 2025 Calyx. Tutti i diritti riservati.",
-    privacy: "Informativa sulla privacy",
-    terms: "Termini di servizio",
-  },
+footer: {
+  subtitle: "Calyx – Semplifica la matematica con calcolatrici online gratuite",
+  gridtitle1: "Incontra Calyx",
+  gridtitle2: "Le Nostre Calcolatrici Popolari",
+  copyright: "© 2025 Calyx. Tutti i diritti riservati.",
+  privacy: "Politica sulla Privacy",
+  terms: "Termini di Servizio",
+}
+
 };

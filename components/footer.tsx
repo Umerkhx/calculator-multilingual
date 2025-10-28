@@ -24,13 +24,11 @@ export function Footer({ locale }: FooterProps) {
   return (
     <footer className="border-t border-border bg-zinc-100/20 backdrop-blur-3xl">
       <div className="container mx-auto max-w-7xl px-4 py-12">
-        {/* Top section */}
-        <div className="flex flex-col md:flex-row md:justify-between  items-center gap-5 md:px-20 px-5">
-          {/* Name & Description */}
+        <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-5 md:px-20 px-5">
           <div className="flex flex-col gap-2 md:w-1/2">
-            <span className="font-bold md:text-8xl text-6xl text-zinc-800">Calyx</span>
-            <p className="mt-1 md:text-base text-sm md:mb-0 mb-5">
-              Calyx – Simplify Math with Free Online Calculators
+            <span className="font-bold md:text-8xl text-6xl text-zinc-800">{t.nav.name}</span>
+            <p className="mt-2 md:text-base text-sm md:mb-0 mb-5">
+              {t.footer.subtitle}
             </p>
           </div>
 
@@ -50,23 +48,20 @@ export function Footer({ locale }: FooterProps) {
           </div>
         </div>
 
-        {/* Bottom grids */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:px-20 px-5 my-10">
-          {/* Meet Calyx column */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Meet Calyx</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href={`/${locale}`} className="hover:text-blue-600">Home</Link></li>
-              <li><Link href={`/${locale}/about`} className="hover:text-blue-600">About</Link></li>
-              <li><Link href={`/${locale}/contact`} className="hover:text-blue-600">Contact</Link></li>
-              <li><Link href={`/${locale}/categories`} className="hover:text-blue-600">Categories</Link></li>
+            <h4 className="font-semibold text-lg mb-4">{t.footer.gridtitle1}</h4>
+            <ul className="space-y-2 text-base">
+              <li><Link href={`/${locale}`} className="hover:text-blue-600">{t.nav.home}</Link></li>
+              <li><Link href={`/${locale}/about`} className="hover:text-blue-600">{t.nav.about}</Link></li>
+              <li><Link href={`/${locale}/contact`} className="hover:text-blue-600">{t.nav.contact}</Link></li>
+              <li><Link href={`/${locale}/categories`} className="hover:text-blue-600">{t.nav.categories}</Link></li>
             </ul>
           </div>
 
-          {/* First calculator column */}
           <div>
-            <h4 className="font-semibold text-lg mb-2">Our Popular Calculators</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="font-semibold text-lg mb-2">{t.footer.gridtitle2}</h4>
+            <ul className="space-y-2 text-base">
               {firstThree.map(calc => (
                 <li key={calc.slug}>
                   <Link href={`/${locale}/categories/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
@@ -77,9 +72,8 @@ export function Footer({ locale }: FooterProps) {
             </ul>
           </div>
 
-          {/* Second calculator grid */}
           <div>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-base">
               {secondThree.map(calc => (
                 <li key={calc.slug}>
                   <Link href={`/${locale}/categories/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
@@ -90,9 +84,8 @@ export function Footer({ locale }: FooterProps) {
             </ul>
           </div>
 
-          {/* Third calculator grid */}
           <div>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-base">
               {thirdThree.map(calc => (
                 <li key={calc.slug}>
                   <Link href={`/${locale}/categories/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
@@ -104,7 +97,6 @@ export function Footer({ locale }: FooterProps) {
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="border-t border-black/10 pt-10 text-center text-sm">
         <div className="flex justify-between items-center">
                  <div className="flex gap-3">

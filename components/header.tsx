@@ -19,7 +19,7 @@ interface HeaderProps {
 export function Header({ locale }: HeaderProps) {
   const t = translations[locale].nav;
 
-  const navKeys: (keyof typeof t)[] = ["home", "about", "contact","catergories"];
+  const navKeys: (keyof typeof t)[] = ["home", "about", "contact","categories"];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">

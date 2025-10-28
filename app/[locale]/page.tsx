@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
 import { Hero } from "@/components/hero"
-import { CategoriesSection } from "@/components/categories-section"
 import type { Locale } from "@/lib/i18n"
 import { generateSEOMetadata, generateSchemaMarkup } from "@/lib/seo"
 import CardsSection from "@/components/CardSection"
 import FadeIn from "@/components/FadeIn"
+import AboutSection from "@/components/AboutSection"
+import CategoriesSection from "@/components/categories-section"
 
 interface PageProps {
   params: Promise<{ locale: Locale }>
@@ -39,6 +40,7 @@ export default async function HomePage({ params }: PageProps) {
 
       <Hero locale={locale} />
       <CardsSection locale={locale} />
+      <AboutSection locale={locale}/>
       <CategoriesSection locale={locale} />
     </FadeIn>
   )

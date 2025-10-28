@@ -14,7 +14,7 @@ interface CalculatorSectionsProps {
 export function CalculatorSections({ calculator, locale, formulaFunc }: CalculatorSectionsProps) {
   return (
     <Tabs defaultValue={calculator.sections[0]?.id} className="w-full">
-      <TabsList className="grid w-full grid-cols-3">
+      <TabsList className="grid w-full grid-cols-2">
         {calculator.sections.map((section) => (
           <TabsTrigger key={section.id} value={section.id}>
             {getTranslation(locale, section.title)}

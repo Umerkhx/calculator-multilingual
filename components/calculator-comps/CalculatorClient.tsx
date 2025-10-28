@@ -8,7 +8,6 @@ import { financeFormulas } from "@/lib/calculators/formulas/finance-formulas"
 import FadeIn from "@/components/FadeIn"
 import type { Locale } from "@/lib/i18n"
 import { CalculatorResult } from "./CalculatorResult"
-import { CalculatorAbout } from "./CalculatorAbout"
 
 const allFormulas = { ...healthFormulas, ...financeFormulas }
 
@@ -19,8 +18,14 @@ interface CalculatorClientProps {
 }
 
 export default function CalculatorClient({ calc, locale, formulaId }: CalculatorClientProps) {
+  // 🟢 Neutral dummy inputs that work for any calculator
+  const [inputs, setInputs] = useState<Record<string, number | string>>({
+    value1: "—",
+    value2: "—",
+    value3: "—",
+  })
+
   const [result, setResult] = useState<string | number | null>(null)
-  const [inputs, setInputs] = useState<Record<string, number | string>>({})
   const calculatorFunc = allFormulas[formulaId as keyof typeof allFormulas]
 
   const handleCalculate = (userInputs: Record<string, number | string>) => {
@@ -42,19 +47,16 @@ export default function CalculatorClient({ calc, locale, formulaId }: Calculator
             result={result}
           />
 
-          {result !== null && (
-            <CalculatorResult
-              locale={locale}
-              inputs={inputs}
-              result={result}
-              onRecalculate={() => setResult(null)}
-            />
-          )}
+          {/* Always show result card */}
+          <CalculatorResult
+            locale={locale}
+            inputs={inputs}
+            result={result ?? "—"}
+            onRecalculate={() => setResult(null)}
+          />
         </div>
 
         <CalculatorSections calculator={calc} locale={locale} formulaFunc={calculatorFunc} />
-
-        <CalculatorAbout calculator={calc} locale={locale} />
       </div>
     </FadeIn>
   )

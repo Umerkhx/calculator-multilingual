@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,24 +17,26 @@ interface LanguageSelectorProps {
 
 const LanguageSelector = ({ locale }: LanguageSelectorProps) => {
   const languages = [
-    { code: "en", label: "English" },
-    { code: "ur", label: "اردو" },
-    { code: "es", label: "Español" },
-    { code: "fr", label: "Français" },
-    { code: "de", label: "Deutsch" },
-    { code: "pt", label: "Português" },
-    { code: "ru", label: "Русский" },
-    { code: "it", label: "Italiano" },
-    { code: "tr", label: "Türkçe" },
-    { code: "zh", label: "中文" },
-    { code: "ar", label: "العربية" },
-    { code: "hi", label: "हिंदी" },
+    { code: "en", label: "English", flag: "/usa-flag.webp" },
+    { code: "ur", label: "اردو", flag: "/pakistan-flag.webp" },
+    { code: "es", label: "Español", flag: "/spanish-flag.webp" },
+    { code: "fr", label: "Français", flag: "/french-flag.webp" },
+    { code: "de", label: "Deutsch", flag: "/german-flag.webp" },
+    { code: "pt", label: "Português", flag: "/portuguese-flag.webp" },
+    { code: "ru", label: "Русский", flag: "/russia-flag.webp" },
+    { code: "it", label: "Italiano", flag: "/italia-flag.webp" },
+    { code: "tr", label: "Türkçe", flag: "/turkey-flag.webp" },
+    { code: "zh", label: "中文", flag: "/china-flag.webp" },
+    { code: "ar", label: "العربية", flag: "/arabia-flag.webp" },
+    { code: "hi", label: "हिंदी", flag: "/india-flag.webp" },
   ];
 
   const handleChange = (newLocale: string) => {
     if (newLocale === locale) return;
     window.location.href = `/${newLocale}`;
   };
+
+  const currentLang = languages.find((l) => l.code === locale);
 
   return (
     <DropdownMenu>
@@ -43,22 +46,39 @@ const LanguageSelector = ({ locale }: LanguageSelectorProps) => {
           size="sm"
           className="flex items-center gap-2 rounded-md border border-border bg-background text-foreground"
         >
-          <Globe className="h-4 w-4" />
-          <span className="capitalize">
-            {languages.find((l) => l.code === locale)?.label || "Language"}
-          </span>
+         
+          {currentLang && (
+            <div className="flex items-center gap-2">
+              <Image
+                src={currentLang.flag}
+                alt={currentLang.label}
+                width={20}
+                height={14}
+                className="rounded-sm object-cover"
+              />
+              <span className="capitalize">{currentLang.label}</span>
+            </div>
+          )}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-40">
+
+      <DropdownMenuContent align="end" className="w-44">
         {languages.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
             onClick={() => handleChange(lang.code)}
-            className={`cursor-pointer ${
+            className={`flex items-center gap-2 cursor-pointer ${
               locale === lang.code ? "bg-muted font-semibold" : ""
             }`}
           >
-            {lang.label}
+            <Image
+              src={lang.flag}
+              alt={lang.label}
+              width={20}
+              height={14}
+              className="rounded-sm object-cover"
+            />
+            <span>{lang.label}</span>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

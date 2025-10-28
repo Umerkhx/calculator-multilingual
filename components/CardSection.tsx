@@ -18,14 +18,14 @@ export default function CardsSection({ locale}: CardsSectionProps) {
       {getTranslation(locale, 'cards.subtitle')}
       </p>
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-12 justify-center mx-auto">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 lg:gap-20 gap-10 justify-center mx-auto">
         {allCalculatorCategories.map((category) => (
           <Link
             key={category.id}
             href={`/${locale}/categories/${category.id}`}
             className="relative w-[300px] h-[300px] rounded-[14px] overflow-hidden flex flex-col items-center justify-center mx-auto shadow-[10px_10px_20px_#bebebe,-10px_-10px_20px_#ffffff] transition-transform duration-300 hover:scale-105 "
           >
-            <div className="absolute top-[5px] left-[5px] w-[300px] h-[300px] z-[2] bg-white/95 backdrop-blur-[24px] rounded-[10px] overflow-hidden outline outline-2 outline-white"></div>
+            <div className="absolute top-[5px] left-[5px] w-[290px] h-[300px] z-[2] bg-white/95 backdrop-blur-[24px] rounded-[10px] overflow-hidden outline outline-2 outline-white"></div>
 
             <div className="absolute z-[1] top-1/2 left-1/2 w-[220px] h-[220px] rounded-full bg-[#111] opacity-100 blur-[12px] animate-blob-bounce"></div>
 
@@ -36,11 +36,12 @@ export default function CardsSection({ locale}: CardsSectionProps) {
               <p className="text-sm text-zinc-800 font-medium mt-1">
                 {getTranslation(locale, category.description)}
               </p>
-              <p className="text-sm text-zinc-600 mt-1">
+              <div className="text-sm text-zinc-700 mt-4 flex items-center gap-2 mx-auto justify-center">
                 {category.calculators.length}{" "}
                 {getTranslation(locale, "nav.calculators")}
-              </p>
-              <ArrowRight className="h-4 w-4 text-muted-foreground mx-auto mt-2 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="h-4 w-4 text-muted-foreground mt-1 transition-transform group-hover:translate-x-1" />
+              </div>
+              
             </div>
           </Link>
         ))}

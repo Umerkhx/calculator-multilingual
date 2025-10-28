@@ -76,6 +76,7 @@ const LanguageSelector = ({ locale }: LanguageSelectorProps) => {
               alt={lang.label}
               width={20}
               height={14}
+              priority
               className="rounded-sm object-cover"
             />
             <span>{lang.label}</span>

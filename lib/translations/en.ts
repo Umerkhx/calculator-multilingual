@@ -16,8 +16,9 @@ export const enTranslations = {
     calculators: "Calculators",
   },
   feature: {
-    title: "Our Calculators",
-    description: "Explore our collection of useful calculators"
+    title: "Most Popular Calculators",
+    description: "Explore our collection of useful calculators",
+    cta: "Open Calculator"
   },
   cards: {
     title: "Explore Our Calculator Categories",

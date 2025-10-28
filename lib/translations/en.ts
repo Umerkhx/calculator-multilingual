@@ -139,8 +139,8 @@ export const enTranslations = {
       height: "Height (cm)",
       result: "BMI",
       about: "About BMI",
-      aboutText: "BMI is a measure of body fat based on height and weight. It applies to adult men and women.",
-      formula: "Formula",
+      aboutText: "BMI helps you quickly estimate or calculate important values using trusted formulas. It’s built to give accurate,instant results without needing manual math. This calculator is ideal for anyone who wants quick answers — whether for personal, health, or finance",
+      formula: "BMI Formula",
       formulaText: "The Body Mass Index (BMI) formula helps determine whether a person has a healthy body weight for their height. BMI = weight (kg) / height² (m²). If your BMI is below 18.5, you’re considered underweight; between 18.5 and 24.9 means you’re in a healthy range; 25 to 29.9 indicates overweight; and 30 or above falls in the obese category. BMI doesn’t measure body fat directly — it’s just a quick health indicator for reference.",
     },
     calories: {

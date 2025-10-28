@@ -12,6 +12,8 @@ interface CalculatorResultProps {
 }
 
 export function CalculatorResult({ locale, inputs, result, onRecalculate }: CalculatorResultProps) {
+  const isPlaceholder = result === "—"
+
   return (
     <Card className="border-2 border-primary/20 shadow-lg">
       <CardHeader>
@@ -37,17 +39,25 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
 
         <div>
           <p className="font-medium mb-1">Calculated Result:</p>
-          <p className="text-3xl font-bold text-primary">{result}</p>
+          <p
+            className={`text-3xl font-bold ${
+              isPlaceholder ? "text-muted-foreground" : "text-primary"
+            }`}
+          >
+            {isPlaceholder ? "Awaiting calculation..." : result}
+          </p>
         </div>
 
         <Separator />
 
-        <button
-          onClick={onRecalculate}
-          className="mt-3 inline-block w-full rounded-lg bg-primary text-primary-foreground py-2 font-medium transition hover:bg-primary/90"
-        >
-          Recalculate
-        </button>
+        {!isPlaceholder && (
+          <button
+            onClick={onRecalculate}
+            className="mt-3 inline-block w-full rounded-lg bg-primary text-primary-foreground py-2 font-medium transition hover:bg-primary/90"
+          >
+            Recalculate
+          </button>
+        )}
       </CardContent>
     </Card>
   )

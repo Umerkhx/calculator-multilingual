@@ -22,7 +22,7 @@ export default function CardsSection({ locale}: CardsSectionProps) {
         {allCalculatorCategories.map((category) => (
           <Link
             key={category.id}
-            href={`/${locale}/categories/${category.id}`}
+            href={`/${locale}/${category.id}`}
             className="relative w-[300px] h-[300px] rounded-[14px] overflow-hidden flex flex-col items-center justify-center mx-auto shadow-[10px_10px_20px_#bebebe,-10px_-10px_20px_#ffffff] transition-transform duration-300 hover:scale-105 "
           >
             <div className="absolute top-[5px] left-[5px] w-[290px] h-[300px] z-[2] bg-white/95 backdrop-blur-[24px] rounded-[10px] overflow-hidden outline outline-2 outline-white"></div>

@@ -33,7 +33,7 @@ export function Hero({ locale }: HeroProps) {
           {t.hero.title}
         </h1>
         <p className="my-6 text-sm text-zinc-500 md:text-base">{t.hero.subtitle}</p>
-        <Link href={`${locale}/categories`} className="mt-4 rounded-lg bg-zinc-800 px-8 py-3 font-semibold text-zinc-50 backdrop-blur-md transition-transform hover:scale-105">
+        <Link href={`${locale}`} className="mt-4 rounded-lg bg-zinc-800 px-8 py-3 font-semibold text-zinc-50 backdrop-blur-md transition-transform hover:scale-105">
           {t.hero.cta}
         </Link>
       </div>

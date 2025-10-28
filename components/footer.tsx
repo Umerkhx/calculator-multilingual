@@ -26,7 +26,7 @@ export function Footer({ locale }: FooterProps) {
       <div className="container mx-auto max-w-7xl px-4 py-12">
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-5 md:px-20 px-5">
           <div className="flex flex-col gap-2 md:w-1/2">
-            <span className="font-bold md:text-8xl text-6xl text-zinc-800">{t.nav.name}</span>
+            <h2 className="font-bold md:text-8xl text-6xl text-zinc-800">{t.nav.name}</h2>
             <p className="mt-2 md:text-base text-sm md:mb-0 mb-5">
               {t.footer.subtitle}
             </p>
@@ -50,21 +50,20 @@ export function Footer({ locale }: FooterProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:px-20 px-5 my-10">
           <div>
-            <h4 className="font-semibold text-lg mb-4">{t.footer.gridtitle1}</h4>
+            <h3 className="font-semibold text-lg mb-4">{t.footer.gridtitle1}</h3>
             <ul className="space-y-2 text-base">
               <li><Link href={`/${locale}`} className="hover:text-blue-600">{t.nav.home}</Link></li>
               <li><Link href={`/${locale}/about`} className="hover:text-blue-600">{t.nav.about}</Link></li>
               <li><Link href={`/${locale}/contact`} className="hover:text-blue-600">{t.nav.contact}</Link></li>
-              <li><Link href={`/${locale}/categories`} className="hover:text-blue-600">{t.nav.categories}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-2">{t.footer.gridtitle2}</h4>
+            <h3 className="font-semibold text-lg mb-2">{t.footer.gridtitle2}</h3>
             <ul className="space-y-2 text-base">
               {firstThree.map(calc => (
                 <li key={calc.slug}>
-                  <Link href={`/${locale}/categories/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
+                  <Link href={`/${locale}/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
                     {getTranslation(locale, calc.titleKey)}
                   </Link>
                 </li>
@@ -76,7 +75,7 @@ export function Footer({ locale }: FooterProps) {
             <ul className="space-y-2 text-base">
               {secondThree.map(calc => (
                 <li key={calc.slug}>
-                  <Link href={`/${locale}/categories/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
+                  <Link href={`/${locale}/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
                     {getTranslation(locale, calc.titleKey)}
                   </Link>
                 </li>
@@ -88,7 +87,7 @@ export function Footer({ locale }: FooterProps) {
             <ul className="space-y-2 text-base">
               {thirdThree.map(calc => (
                 <li key={calc.slug}>
-                  <Link href={`/${locale}/categories/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
+                  <Link href={`/${locale}/${currentCategory?.id}/${calc.slug}`} className="hover:text-blue-600">
                     {getTranslation(locale, calc.titleKey)}
                   </Link>
                 </li>

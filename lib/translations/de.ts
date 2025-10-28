@@ -13,7 +13,7 @@ export const deTranslations = {
     about: "Über uns",
     services: "Dienstleistungen",
     contact: "Kontakt",
-    catergories: "Kategorien",
+    categories: "Kategorien",
     calculators: "Rechner",
   },
   feature: {
@@ -406,9 +406,13 @@ export const deTranslations = {
       formulaText: "Verwendet aktuelle Wechselkurse",
     },
   },
-  footer: {
-    copyright: "© 2025 Calyx. Alle Rechte vorbehalten.",
-    privacy: "Datenschutzrichtlinie",
-    terms: "Nutzungsbedingungen",
-  },
+footer: {
+  subtitle: "Calyx – Vereinfachen Sie Mathematik mit kostenlosen Online-Rechnern",
+  gridtitle1: "Lernen Sie Calyx kennen",
+  gridtitle2: "Unsere beliebten Rechner",
+  copyright: "© 2025 Calyx. Alle Rechte vorbehalten.",
+  privacy: "Datenschutz-Bestimmungen",
+  terms: "Nutzungsbedingungen",
+}
+
 };

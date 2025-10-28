@@ -12,7 +12,7 @@ export const enTranslations = {
     about: "About",
     services: "Services",
     contact: "Contact",
-    catergories: "Categories",
+    categories: "Categories",
     calculators: "Calculators",
   },
   feature: {
@@ -371,7 +371,9 @@ export const enTranslations = {
     },
   },
   footer: {
-
+    subtitle:"Calyx – Simplify Math with Free Online Calculators",
+    gridtitle1:"Meet Calyx",
+    gridtitle2:"Our Popular Calculators",
     copyright: "© 2025 Calyx. All rights reserved.",
     privacy: "Privacy Policy",
     terms: "Terms of Service",

@@ -12,7 +12,7 @@ export const arTranslations = {
     about: "حول",
     services: "خدمات",
     contact: "اتصال",
-    catergories: "الفئات",
+    categories: "الفئات",
     calculators: "الحاسبات",
   },
   feature: {
@@ -361,9 +361,13 @@ export const arTranslations = {
       formulaText: "يستخدم أسعار الصرف الحالية",
     },
   },
-  footer: {
-    copyright: "© 2025 مركز الآلات الحاسبة. جميع الحقوق محفوظة.",
-    privacy: "سياسة الخصوصية",
-    terms: "شروط الخدمة",
-  },
+footer: {
+  subtitle: "Calyx – بسّط الرياضيات مع الآلات الحاسبة المجانية على الإنترنت",
+  gridtitle1: "تعرف على Calyx",
+  gridtitle2: "آلاتنا الحاسبة الشهيرة",
+  copyright: "© 2025 Calyx. جميع الحقوق محفوظة.",
+  privacy: "سياسة الخصوصية",
+  terms: "شروط الخدمة",
+}
+
 }

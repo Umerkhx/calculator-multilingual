@@ -13,7 +13,7 @@ nav: {
     about: "Sobre",
     services: "Serviços",
     contact: "Contato",
-    catergories: "Categorias",
+    categories: "Categorias",
     calculators: "Calculadoras",
 },
   feature: {
@@ -406,9 +406,13 @@ nav: {
       formulaText: "Usa taxas de câmbio atuais",
     },
   },
-  footer: {
-    copyright: "© 2025 Calyx. Todos os direitos reservados.",
-    privacy: "Política de Privacidade",
-    terms: "Termos de Serviço",
-  },
+footer: {
+  subtitle: "Calyx – Simplifique a matemática com calculadoras online gratuitas",
+  gridtitle1: "Conheça o Calyx",
+  gridtitle2: "Nossas Calculadoras Populares",
+  copyright: "© 2025 Calyx. Todos os direitos reservados.",
+  privacy: "Política de Privacidade",
+  terms: "Termos de Serviço",
+}
+
 };

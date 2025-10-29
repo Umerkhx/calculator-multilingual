@@ -22,16 +22,17 @@ export const healthCalculators: Calculator[] = [
     ],
     formulaId: "body-fat",
     sections: [
-      {
-        id: "intro",
-        title: "health.bodyFat.about",
-        content: "health.bodyFat.aboutText",
-      },
-      {
-        id: "formula",
-        title: "health.bodyFat.formula",
-        content: "health.bodyFat.formulaText",
-      },
+      { id: "intro", titleKey: "health.bodyFat.about", contentKey: "health.bodyFat.aboutText" },
+      { id: "formula", titleKey: "health.bodyFat.formula", contentKey: "health.bodyFat.formulaText" },
+    ],
+    faqTitleKey: "health.bodyFat.faqTitle",
+    faqs: [
+      { qKey: "health.bodyFat.faq.0.q", aKey: "health.bodyFat.faq.0.a" },
+      { qKey: "health.bodyFat.faq.1.q", aKey: "health.bodyFat.faq.1.a" },
+      { qKey: "health.bodyFat.faq.2.q", aKey: "health.bodyFat.faq.2.a" },
+      { qKey: "health.bodyFat.faq.3.q", aKey: "health.bodyFat.faq.3.a" },
+      { qKey: "health.bodyFat.faq.4.q", aKey: "health.bodyFat.faq.4.a" },
+      { qKey: "health.bodyFat.faq.5.q", aKey: "health.bodyFat.faq.5.a" },
     ],
   },
   {
@@ -45,16 +46,17 @@ export const healthCalculators: Calculator[] = [
     ],
     formulaId: "bmi",
     sections: [
-      {
-        id: "intro",
-        title: "health.bmi.about",
-        content: "health.bmi.aboutText",
-      },
-      {
-        id: "formula",
-        title: "health.bmi.formula",
-        content: "health.bmi.formulaText",
-      },
+      { id: "intro", titleKey: "health.bmi.about", contentKey: "health.bmi.aboutText" },
+      { id: "formula", titleKey: "health.bmi.formula", contentKey: "health.bmi.formulaText" },
+    ],
+    faqTitleKey: "health.bmi.faqTitle",
+    faqs: [
+      { qKey: "health.bmi.faq.0.q", aKey: "health.bmi.faq.0.a" },
+      { qKey: "health.bmi.faq.1.q", aKey: "health.bmi.faq.1.a" },
+      { qKey: "health.bmi.faq.2.q", aKey: "health.bmi.faq.2.a" },
+      { qKey: "health.bmi.faq.3.q", aKey: "health.bmi.faq.3.a" },
+      { qKey: "health.bmi.faq.4.q", aKey: "health.bmi.faq.4.a" },
+      { qKey: "health.bmi.faq.5.q", aKey: "health.bmi.faq.5.a" },
     ],
   },
   {
@@ -80,16 +82,17 @@ export const healthCalculators: Calculator[] = [
     ],
     formulaId: "calories",
     sections: [
-      {
-        id: "intro",
-        title: "health.calories.about",
-        content: "health.calories.aboutText",
-      },
-      {
-        id: "formula",
-        title: "health.calories.formula",
-        content: "health.calories.formulaText",
-      },
+      { id: "intro", titleKey: "health.calories.about", contentKey: "health.calories.aboutText" },
+      { id: "formula", titleKey: "health.calories.formula", contentKey: "health.calories.formulaText" },
+    ],
+    faqTitleKey: "health.calories.faqTitle",
+    faqs: [
+      { qKey: "health.calories.faq.0.q", aKey: "health.calories.faq.0.a" },
+      { qKey: "health.calories.faq.1.q", aKey: "health.calories.faq.1.a" },
+      { qKey: "health.calories.faq.2.q", aKey: "health.calories.faq.2.a" },
+      { qKey: "health.calories.faq.3.q", aKey: "health.calories.faq.3.a" },
+      { qKey: "health.calories.faq.4.q", aKey: "health.calories.faq.4.a" },
+      { qKey: "health.calories.faq.5.q", aKey: "health.calories.faq.5.a" },
     ],
   },
   {
@@ -103,16 +106,17 @@ export const healthCalculators: Calculator[] = [
     ],
     formulaId: "water",
     sections: [
-      {
-        id: "intro",
-        title: "health.waterIntake.about",
-        content: "health.waterIntake.aboutText",
-      },
-      {
-        id: "formula",
-        title: "health.waterIntake.formula",
-        content: "health.waterIntake.formulaText",
-      },
+      { id: "intro", titleKey: "health.waterIntake.about", contentKey: "health.waterIntake.aboutText" },
+      { id: "formula", titleKey: "health.waterIntake.formula", contentKey: "health.waterIntake.formulaText" },
+    ],
+    faqTitleKey: "health.waterIntake.faqTitle",
+    faqs: [
+      { qKey: "health.waterIntake.faq.0.q", aKey: "health.waterIntake.faq.0.a" },
+      { qKey: "health.waterIntake.faq.1.q", aKey: "health.waterIntake.faq.1.a" },
+      { qKey: "health.waterIntake.faq.2.q", aKey: "health.waterIntake.faq.2.a" },
+      { qKey: "health.waterIntake.faq.3.q", aKey: "health.waterIntake.faq.3.a" },
+      { qKey: "health.waterIntake.faq.4.q", aKey: "health.waterIntake.faq.4.a" },
+      { qKey: "health.waterIntake.faq.5.q", aKey: "health.waterIntake.faq.5.a" },
     ],
   },
   {
@@ -126,16 +130,17 @@ export const healthCalculators: Calculator[] = [
     ],
     formulaId: "pace",
     sections: [
-      {
-        id: "intro",
-        title: "health.pace.about",
-        content: "health.pace.aboutText",
-      },
-      {
-        id: "formula",
-        title: "health.pace.formula",
-        content: "health.pace.formulaText",
-      },
+      { id: "intro", titleKey: "health.pace.about", contentKey: "health.pace.aboutText" },
+      { id: "formula", titleKey: "health.pace.formula", contentKey: "health.pace.formulaText" },
+    ],
+    faqTitleKey: "health.pace.faqTitle",
+    faqs: [
+      { qKey: "health.pace.faq.0.q", aKey: "health.pace.faq.0.a" },
+      { qKey: "health.pace.faq.1.q", aKey: "health.pace.faq.1.a" },
+      { qKey: "health.pace.faq.2.q", aKey: "health.pace.faq.2.a" },
+      { qKey: "health.pace.faq.3.q", aKey: "health.pace.faq.3.a" },
+      { qKey: "health.pace.faq.4.q", aKey: "health.pace.faq.4.a" },
+      { qKey: "health.pace.faq.5.q", aKey: "health.pace.faq.5.a" },
     ],
   },
   {
@@ -149,16 +154,17 @@ export const healthCalculators: Calculator[] = [
     ],
     formulaId: "heart-rate",
     sections: [
-      {
-        id: "intro",
-        title: "health.heartRate.about",
-        content: "health.heartRate.aboutText",
-      },
-      {
-        id: "formula",
-        title: "health.heartRate.formula",
-        content: "health.heartRate.formulaText",
-      },
+      { id: "intro", titleKey: "health.heartRate.about", contentKey: "health.heartRate.aboutText" },
+      { id: "formula", titleKey: "health.heartRate.formula", contentKey: "health.heartRate.formulaText" },
+    ],
+    faqTitleKey: "health.heartRate.faqTitle",
+    faqs: [
+      { qKey: "health.heartRate.faq.0.q", aKey: "health.heartRate.faq.0.a" },
+      { qKey: "health.heartRate.faq.1.q", aKey: "health.heartRate.faq.1.a" },
+      { qKey: "health.heartRate.faq.2.q", aKey: "health.heartRate.faq.2.a" },
+      { qKey: "health.heartRate.faq.3.q", aKey: "health.heartRate.faq.3.a" },
+      { qKey: "health.heartRate.faq.4.q", aKey: "health.heartRate.faq.4.a" },
+      { qKey: "health.heartRate.faq.5.q", aKey: "health.heartRate.faq.5.a" },
     ],
   },
   {
@@ -181,16 +187,17 @@ export const healthCalculators: Calculator[] = [
     ],
     formulaId: "protein",
     sections: [
-      {
-        id: "intro",
-        title: "health.protein.about",
-        content: "health.protein.aboutText",
-      },
-      {
-        id: "formula",
-        title: "health.protein.formula",
-        content: "health.protein.formulaText",
-      },
+      { id: "intro", titleKey: "health.protein.about", contentKey: "health.protein.aboutText" },
+      { id: "formula", titleKey: "health.protein.formula", contentKey: "health.protein.formulaText" },
+    ],
+    faqTitleKey: "health.protein.faqTitle",
+    faqs: [
+      { qKey: "health.protein.faq.0.q", aKey: "health.protein.faq.0.a" },
+      { qKey: "health.protein.faq.1.q", aKey: "health.protein.faq.1.a" },
+      { qKey: "health.protein.faq.2.q", aKey: "health.protein.faq.2.a" },
+      { qKey: "health.protein.faq.3.q", aKey: "health.protein.faq.3.a" },
+      { qKey: "health.protein.faq.4.q", aKey: "health.protein.faq.4.a" },
+      { qKey: "health.protein.faq.5.q", aKey: "health.protein.faq.5.a" },
     ],
   },
   {
@@ -216,16 +223,17 @@ export const healthCalculators: Calculator[] = [
     ],
     formulaId: "tdee",
     sections: [
-      {
-        id: "intro",
-        title: "health.tdee.about",
-        content: "health.tdee.aboutText",
-      },
-      {
-        id: "formula",
-        title: "health.tdee.formula",
-        content: "health.tdee.formulaText",
-      },
+      { id: "intro", titleKey: "health.tdee.about", contentKey: "health.tdee.aboutText" },
+      { id: "formula", titleKey: "health.tdee.formula", contentKey: "health.tdee.formulaText" },
+    ],
+    faqTitleKey: "health.tdee.faqTitle",
+    faqs: [
+      { qKey: "health.tdee.faq.0.q", aKey: "health.tdee.faq.0.a" },
+      { qKey: "health.tdee.faq.1.q", aKey: "health.tdee.faq.1.a" },
+      { qKey: "health.tdee.faq.2.q", aKey: "health.tdee.faq.2.a" },
+      { qKey: "health.tdee.faq.3.q", aKey: "health.tdee.faq.3.a" },
+      { qKey: "health.tdee.faq.4.q", aKey: "health.tdee.faq.4.a" },
+      { qKey: "health.tdee.faq.5.q", aKey: "health.tdee.faq.5.a" },
     ],
   },
   {
@@ -248,16 +256,17 @@ export const healthCalculators: Calculator[] = [
     ],
     formulaId: "macros",
     sections: [
-      {
-        id: "intro",
-        title: "health.macros.about",
-        content: "health.macros.aboutText",
-      },
-      {
-        id: "formula",
-        title: "health.macros.formula",
-        content: "health.macros.formulaText",
-      },
+      { id: "intro", titleKey: "health.macros.about", contentKey: "health.macros.aboutText" },
+      { id: "formula", titleKey: "health.macros.formula", contentKey: "health.macros.formulaText" },
+    ],
+    faqTitleKey: "health.macros.faqTitle",
+    faqs: [
+      { qKey: "health.macros.faq.0.q", aKey: "health.macros.faq.0.a" },
+      { qKey: "health.macros.faq.1.q", aKey: "health.macros.faq.1.a" },
+      { qKey: "health.macros.faq.2.q", aKey: "health.macros.faq.2.a" },
+      { qKey: "health.macros.faq.3.q", aKey: "health.macros.faq.3.a" },
+      { qKey: "health.macros.faq.4.q", aKey: "health.macros.faq.4.a" },
+      { qKey: "health.macros.faq.5.q", aKey: "health.macros.faq.5.a" },
     ],
   },
   {
@@ -272,16 +281,17 @@ export const healthCalculators: Calculator[] = [
     ],
     formulaId: "bfp",
     sections: [
-      {
-        id: "intro",
-        title: "health.bfp.about",
-        content: "health.bfp.aboutText",
-      },
-      {
-        id: "formula",
-        title: "health.bfp.formula",
-        content: "health.bfp.formulaText",
-      },
+      { id: "intro", titleKey: "health.bfp.about", contentKey: "health.bfp.aboutText" },
+      { id: "formula", titleKey: "health.bfp.formula", contentKey: "health.bfp.formulaText" },
+    ],
+    faqTitleKey: "health.bfp.faqTitle",
+    faqs: [
+      { qKey: "health.bfp.faq.0.q", aKey: "health.bfp.faq.0.a" },
+      { qKey: "health.bfp.faq.1.q", aKey: "health.bfp.faq.1.a" },
+      { qKey: "health.bfp.faq.2.q", aKey: "health.bfp.faq.2.a" },
+      { qKey: "health.bfp.faq.3.q", aKey: "health.bfp.faq.3.a" },
+      { qKey: "health.bfp.faq.4.q", aKey: "health.bfp.faq.4.a" },
+      { qKey: "health.bfp.faq.5.q", aKey: "health.bfp.faq.5.a" },
     ],
   },
 ]

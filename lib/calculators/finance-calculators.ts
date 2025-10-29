@@ -13,16 +13,17 @@ export const financeCalculators: Calculator[] = [
     ],
     formulaId: "loan",
     sections: [
-      {
-        id: "intro",
-        title: "finance.loan.about",
-        content: "finance.loan.aboutText",
-      },
-      {
-        id: "formula",
-        title: "finance.loan.formula",
-        content: "finance.loan.formulaText",
-      },
+      { id: "intro", titleKey: "finance.loan.about", contentKey: "finance.loan.aboutText" },
+      { id: "formula", titleKey: "finance.loan.formula", contentKey: "finance.loan.formulaText" },
+    ],
+    faqTitleKey: "finance.loan.faqTitle",
+    faqs: [
+      { qKey: "finance.loan.faq.0.q", aKey: "finance.loan.faq.0.a" },
+      { qKey: "finance.loan.faq.1.q", aKey: "finance.loan.faq.1.a" },
+      { qKey: "finance.loan.faq.2.q", aKey: "finance.loan.faq.2.a" },
+      { qKey: "finance.loan.faq.3.q", aKey: "finance.loan.faq.3.a" },
+      { qKey: "finance.loan.faq.4.q", aKey: "finance.loan.faq.4.a" },
+      { qKey: "finance.loan.faq.5.q", aKey: "finance.loan.faq.5.a" },
     ],
   },
   {
@@ -38,16 +39,17 @@ export const financeCalculators: Calculator[] = [
     ],
     formulaId: "compound",
     sections: [
-      {
-        id: "intro",
-        title: "finance.compound.about",
-        content: "finance.compound.aboutText",
-      },
-      {
-        id: "formula",
-        title: "finance.compound.formula",
-        content: "finance.compound.formulaText",
-      },
+      { id: "intro", titleKey: "finance.compound.about", contentKey: "finance.compound.aboutText" },
+      { id: "formula", titleKey: "finance.compound.formula", contentKey: "finance.compound.formulaText" },
+    ],
+    faqTitleKey: "finance.compound.faqTitle",
+    faqs: [
+      { qKey: "finance.compound.faq.0.q", aKey: "finance.compound.faq.0.a" },
+      { qKey: "finance.compound.faq.1.q", aKey: "finance.compound.faq.1.a" },
+      { qKey: "finance.compound.faq.2.q", aKey: "finance.compound.faq.2.a" },
+      { qKey: "finance.compound.faq.3.q", aKey: "finance.compound.faq.3.a" },
+      { qKey: "finance.compound.faq.4.q", aKey: "finance.compound.faq.4.a" },
+      { qKey: "finance.compound.faq.5.q", aKey: "finance.compound.faq.5.a" },
     ],
   },
   {
@@ -63,16 +65,17 @@ export const financeCalculators: Calculator[] = [
     ],
     formulaId: "savings",
     sections: [
-      {
-        id: "intro",
-        title: "finance.savings.about",
-        content: "finance.savings.aboutText",
-      },
-      {
-        id: "formula",
-        title: "finance.savings.formula",
-        content: "finance.savings.formulaText",
-      },
+      { id: "intro", titleKey: "finance.savings.about", contentKey: "finance.savings.aboutText" },
+      { id: "formula", titleKey: "finance.savings.formula", contentKey: "finance.savings.formulaText" },
+    ],
+    faqTitleKey: "finance.savings.faqTitle",
+    faqs: [
+      { qKey: "finance.savings.faq.0.q", aKey: "finance.savings.faq.0.a" },
+      { qKey: "finance.savings.faq.1.q", aKey: "finance.savings.faq.1.a" },
+      { qKey: "finance.savings.faq.2.q", aKey: "finance.savings.faq.2.a" },
+      { qKey: "finance.savings.faq.3.q", aKey: "finance.savings.faq.3.a" },
+      { qKey: "finance.savings.faq.4.q", aKey: "finance.savings.faq.4.a" },
+      { qKey: "finance.savings.faq.5.q", aKey: "finance.savings.faq.5.a" },
     ],
   },
   {
@@ -88,16 +91,17 @@ export const financeCalculators: Calculator[] = [
     ],
     formulaId: "mortgage",
     sections: [
-      {
-        id: "intro",
-        title: "finance.mortgage.about",
-        content: "finance.mortgage.aboutText",
-      },
-      {
-        id: "formula",
-        title: "finance.mortgage.formula",
-        content: "finance.mortgage.formulaText",
-      },
+      { id: "intro", titleKey: "finance.mortgage.about", contentKey: "finance.mortgage.aboutText" },
+      { id: "formula", titleKey: "finance.mortgage.formula", contentKey: "finance.mortgage.formulaText" },
+    ],
+    faqTitleKey: "finance.mortgage.faqTitle",
+    faqs: [
+      { qKey: "finance.mortgage.faq.0.q", aKey: "finance.mortgage.faq.0.a" },
+      { qKey: "finance.mortgage.faq.1.q", aKey: "finance.mortgage.faq.1.a" },
+      { qKey: "finance.mortgage.faq.2.q", aKey: "finance.mortgage.faq.2.a" },
+      { qKey: "finance.mortgage.faq.3.q", aKey: "finance.mortgage.faq.3.a" },
+      { qKey: "finance.mortgage.faq.4.q", aKey: "finance.mortgage.faq.4.a" },
+      { qKey: "finance.mortgage.faq.5.q", aKey: "finance.mortgage.faq.5.a" },
     ],
   },
   {
@@ -111,16 +115,17 @@ export const financeCalculators: Calculator[] = [
     ],
     formulaId: "roi",
     sections: [
-      {
-        id: "intro",
-        title: "finance.roi.about",
-        content: "finance.roi.aboutText",
-      },
-      {
-        id: "formula",
-        title: "finance.roi.formula",
-        content: "finance.roi.formulaText",
-      },
+      { id: "intro", titleKey: "finance.roi.about", contentKey: "finance.roi.aboutText" },
+      { id: "formula", titleKey: "finance.roi.formula", contentKey: "finance.roi.formulaText" },
+    ],
+    faqTitleKey: "finance.roi.faqTitle",
+    faqs: [
+      { qKey: "finance.roi.faq.0.q", aKey: "finance.roi.faq.0.a" },
+      { qKey: "finance.roi.faq.1.q", aKey: "finance.roi.faq.1.a" },
+      { qKey: "finance.roi.faq.2.q", aKey: "finance.roi.faq.2.a" },
+      { qKey: "finance.roi.faq.3.q", aKey: "finance.roi.faq.3.a" },
+      { qKey: "finance.roi.faq.4.q", aKey: "finance.roi.faq.4.a" },
+      { qKey: "finance.roi.faq.5.q", aKey: "finance.roi.faq.5.a" },
     ],
   },
   {
@@ -135,16 +140,17 @@ export const financeCalculators: Calculator[] = [
     ],
     formulaId: "breakeven",
     sections: [
-      {
-        id: "intro",
-        title: "finance.breakeven.about",
-        content: "finance.breakeven.aboutText",
-      },
-      {
-        id: "formula",
-        title: "finance.breakeven.formula",
-        content: "finance.breakeven.formulaText",
-      },
+      { id: "intro", titleKey: "finance.breakeven.about", contentKey: "finance.breakeven.aboutText" },
+      { id: "formula", titleKey: "finance.breakeven.formula", contentKey: "finance.breakeven.formulaText" },
+    ],
+    faqTitleKey: "finance.breakeven.faqTitle",
+    faqs: [
+      { qKey: "finance.breakeven.faq.0.q", aKey: "finance.breakeven.faq.0.a" },
+      { qKey: "finance.breakeven.faq.1.q", aKey: "finance.breakeven.faq.1.a" },
+      { qKey: "finance.breakeven.faq.2.q", aKey: "finance.breakeven.faq.2.a" },
+      { qKey: "finance.breakeven.faq.3.q", aKey: "finance.breakeven.faq.3.a" },
+      { qKey: "finance.breakeven.faq.4.q", aKey: "finance.breakeven.faq.4.a" },
+      { qKey: "finance.breakeven.faq.5.q", aKey: "finance.breakeven.faq.5.a" },
     ],
   },
   {
@@ -158,16 +164,17 @@ export const financeCalculators: Calculator[] = [
     ],
     formulaId: "discount",
     sections: [
-      {
-        id: "intro",
-        title: "finance.discount.about",
-        content: "finance.discount.aboutText",
-      },
-      {
-        id: "formula",
-        title: "finance.discount.formula",
-        content: "finance.discount.formulaText",
-      },
+      { id: "intro", titleKey: "finance.discount.about", contentKey: "finance.discount.aboutText" },
+      { id: "formula", titleKey: "finance.discount.formula", contentKey: "finance.discount.formulaText" },
+    ],
+    faqTitleKey: "finance.discount.faqTitle",
+    faqs: [
+      { qKey: "finance.discount.faq.0.q", aKey: "finance.discount.faq.0.a" },
+      { qKey: "finance.discount.faq.1.q", aKey: "finance.discount.faq.1.a" },
+      { qKey: "finance.discount.faq.2.q", aKey: "finance.discount.faq.2.a" },
+      { qKey: "finance.discount.faq.3.q", aKey: "finance.discount.faq.3.a" },
+      { qKey: "finance.discount.faq.4.q", aKey: "finance.discount.faq.4.a" },
+      { qKey: "finance.discount.faq.5.q", aKey: "finance.discount.faq.5.a" },
     ],
   },
   {
@@ -182,16 +189,17 @@ export const financeCalculators: Calculator[] = [
     ],
     formulaId: "tip",
     sections: [
-      {
-        id: "intro",
-        title: "finance.tip.about",
-        content: "finance.tip.aboutText",
-      },
-      {
-        id: "formula",
-        title: "finance.tip.formula",
-        content: "finance.tip.formulaText",
-      },
+      { id: "intro", titleKey: "finance.tip.about", contentKey: "finance.tip.aboutText" },
+      { id: "formula", titleKey: "finance.tip.formula", contentKey: "finance.tip.formulaText" },
+    ],
+    faqTitleKey: "finance.tip.faqTitle",
+    faqs: [
+      { qKey: "finance.tip.faq.0.q", aKey: "finance.tip.faq.0.a" },
+      { qKey: "finance.tip.faq.1.q", aKey: "finance.tip.faq.1.a" },
+      { qKey: "finance.tip.faq.2.q", aKey: "finance.tip.faq.2.a" },
+      { qKey: "finance.tip.faq.3.q", aKey: "finance.tip.faq.3.a" },
+      { qKey: "finance.tip.faq.4.q", aKey: "finance.tip.faq.4.a" },
+      { qKey: "finance.tip.faq.5.q", aKey: "finance.tip.faq.5.a" },
     ],
   },
   {
@@ -206,16 +214,17 @@ export const financeCalculators: Calculator[] = [
     ],
     formulaId: "inflation",
     sections: [
-      {
-        id: "intro",
-        title: "finance.inflation.about",
-        content: "finance.inflation.aboutText",
-      },
-      {
-        id: "formula",
-        title: "finance.inflation.formula",
-        content: "finance.inflation.formulaText",
-      },
+      { id: "intro", titleKey: "finance.inflation.about", contentKey: "finance.inflation.aboutText" },
+      { id: "formula", titleKey: "finance.inflation.formula", contentKey: "finance.inflation.formulaText" },
+    ],
+    faqTitleKey: "finance.inflation.faqTitle",
+    faqs: [
+      { qKey: "finance.inflation.faq.0.q", aKey: "finance.inflation.faq.0.a" },
+      { qKey: "finance.inflation.faq.1.q", aKey: "finance.inflation.faq.1.a" },
+      { qKey: "finance.inflation.faq.2.q", aKey: "finance.inflation.faq.2.a" },
+      { qKey: "finance.inflation.faq.3.q", aKey: "finance.inflation.faq.3.a" },
+      { qKey: "finance.inflation.faq.4.q", aKey: "finance.inflation.faq.4.a" },
+      { qKey: "finance.inflation.faq.5.q", aKey: "finance.inflation.faq.5.a" },
     ],
   },
   {
@@ -230,16 +239,17 @@ export const financeCalculators: Calculator[] = [
     ],
     formulaId: "currency",
     sections: [
-      {
-        id: "intro",
-        title: "finance.currency.about",
-        content: "finance.currency.aboutText",
-      },
-      {
-        id: "formula",
-        title: "finance.currency.formula",
-        content: "finance.currency.formulaText",
-      },
+      { id: "intro", titleKey: "finance.currency.about", contentKey: "finance.currency.aboutText" },
+      { id: "formula", titleKey: "finance.currency.formula", contentKey: "finance.currency.formulaText" },
+    ],
+    faqTitleKey: "finance.currency.faqTitle",
+    faqs: [
+      { qKey: "finance.currency.faq.0.q", aKey: "finance.currency.faq.0.a" },
+      { qKey: "finance.currency.faq.1.q", aKey: "finance.currency.faq.1.a" },
+      { qKey: "finance.currency.faq.2.q", aKey: "finance.currency.faq.2.a" },
+      { qKey: "finance.currency.faq.3.q", aKey: "finance.currency.faq.3.a" },
+      { qKey: "finance.currency.faq.4.q", aKey: "finance.currency.faq.4.a" },
+      { qKey: "finance.currency.faq.5.q", aKey: "finance.currency.faq.5.a" },
     ],
   },
 ]

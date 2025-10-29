@@ -42,7 +42,6 @@ export function CalculatorForm({ calculator, locale, onCalculate, result }: Calc
             <div key={input.name} className="space-y-2">
               <Label htmlFor={input.name}>
                 {getTranslation(locale, input.label)}
-                {/* {<span className="text-muted-foreground ml-1">({input.unit})</span>} */}
               </Label>
               {input.type === "select" ? (
                 <Select

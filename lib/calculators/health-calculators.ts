@@ -3,6 +3,8 @@ import type { Calculator } from "./types"
 export const healthCalculators: Calculator[] = [
   {
     slug: "body-fat-calculator",
+    metaTitleKey: "health.bodyFat.metaTitle",
+    metaDescriptionKey: "health.bodyFat.metaDescription",
     titleKey: "health.bodyFat.title",
     category: "Health",
     descriptionKey: "health.bodyFat.desc",
@@ -37,6 +39,8 @@ export const healthCalculators: Calculator[] = [
   },
   {
     slug: "bmi-calculator",
+    metaTitleKey: "health.bmi.metaTitle",
+    metaDescriptionKey: "health.bmi.metaDescription",
     titleKey: "health.bmi.title",
     category: "Health",
     descriptionKey: "health.bmi.desc",
@@ -61,6 +65,8 @@ export const healthCalculators: Calculator[] = [
   },
   {
     slug: "calorie-calculator",
+    metaTitleKey: "health.calories.metaTitle",
+    metaDescriptionKey: "health.calories.metaDescription",
     titleKey: "health.calories.title",
     category: "Health",
     descriptionKey: "health.calories.desc",
@@ -97,6 +103,8 @@ export const healthCalculators: Calculator[] = [
   },
   {
     slug: "water-intake-calculator",
+    metaTitleKey: "health.waterIntake.metaTitle",
+    metaDescriptionKey: "health.waterIntake.metaDescription",
     titleKey: "health.waterIntake.title",
     category: "Health",
     descriptionKey: "health.waterIntake.desc",
@@ -121,6 +129,8 @@ export const healthCalculators: Calculator[] = [
   },
   {
     slug: "running-pace-calculator",
+    metaTitleKey: "health.pace.metaTitle",
+    metaDescriptionKey: "health.pace.metaDescription",
     titleKey: "health.pace.title",
     category: "Health",
     descriptionKey: "health.pace.desc",
@@ -145,6 +155,8 @@ export const healthCalculators: Calculator[] = [
   },
   {
     slug: "heart-rate-calculator",
+    metaTitleKey: "health.heartRate.metaTitle",
+    metaDescriptionKey: "health.heartRate.metaDescription",
     titleKey: "health.heartRate.title",
     category: "Health",
     descriptionKey: "health.heartRate.desc",
@@ -169,6 +181,8 @@ export const healthCalculators: Calculator[] = [
   },
   {
     slug: "protein-calculator",
+    metaTitleKey: "health.protein.metaTitle",
+    metaDescriptionKey: "health.protein.metaDescription",
     titleKey: "health.protein.title",
     category: "Health",
     descriptionKey: "health.protein.desc",
@@ -202,6 +216,8 @@ export const healthCalculators: Calculator[] = [
   },
   {
     slug: "tdee-calculator",
+    metaTitleKey: "health.tdee.metaTitle",
+    metaDescriptionKey: "health.tdee.metaDescription",
     titleKey: "health.tdee.title",
     category: "Health",
     descriptionKey: "health.tdee.desc",
@@ -238,6 +254,8 @@ export const healthCalculators: Calculator[] = [
   },
   {
     slug: "macro-calculator",
+    metaTitleKey: "health.macros.metaTitle",
+    metaDescriptionKey: "health.macros.metaDescription",
     titleKey: "health.macros.title",
     category: "Health",
     descriptionKey: "health.macros.desc",
@@ -271,6 +289,8 @@ export const healthCalculators: Calculator[] = [
   },
   {
     slug: "body-fat-percentage",
+    metaTitleKey: "health.bfp.metaTitle",
+    metaDescriptionKey: "health.bfp.metaDescription",
     titleKey: "health.bfp.title",
     category: "Health",
     descriptionKey: "health.bfp.desc",

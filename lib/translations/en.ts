@@ -114,8 +114,10 @@ export const enTranslations = {
     },
   },
   // Health Calculators
-  health: {
+health: {
     bodyFat: {
+      metaTitle: "Body Fat Calculator - Estimate Your Body Fat Percentage",
+      metaDescription: "Calculate your body fat percentage using the U.S. Navy method. Accurate body composition estimates based on measurements.",
       title: "Body Fat Calculator",
       desc: "Estimate your body fat percentage",
       waist: "Waist (cm)",
@@ -129,57 +131,42 @@ export const enTranslations = {
       aboutText: "Body fat percentage shows how much of your body is fat tissue. It's a better indicator of fitness than BMI.",
       formula: "Formula",
       formulaText: "Uses U.S. Navy method: BF% = 495 / (1.0324 - 0.19077 * log10(waist - neck) + 0.15456 * log10(height)) - 450",
-
       faqTitle: "Body Fat Calculator FAQs",
       faq: [
         { q: "What is a healthy body fat percentage?", a: "For men, 10–20% is generally considered healthy, while for women, 18–28% is normal depending on activity level." },
         { q: "Is body fat percentage better than BMI?", a: "Yes. Body fat percentage directly measures fat mass, while BMI only relates weight to height without considering muscle mass." },
         { q: "Can I use this calculator without a tape measure?", a: "Not really. Waist, neck, and height measurements are essential for an accurate estimate using the U.S. Navy formula." },
         { q: "Does body fat percentage change quickly?", a: "Body fat levels change gradually. Consistent diet and exercise can shift it over weeks, not days." },
-        { q: "Is it accurate for athletes?", a: "It’s decently accurate but can underestimate body fat for very muscular individuals. Professional body scans are more precise." },
-        { q: "What’s the easiest way to lower body fat?", a: "A mix of strength training, cardio, and a calorie deficit diet helps reduce body fat effectively and sustainably." }
+        { q: "Is it accurate for athletes?", a: "It's decently accurate but can underestimate body fat for very muscular individuals. Professional body scans are more precise." },
+        { q: "What's the easiest way to lower body fat?", a: "A mix of strength training, cardio, and a calorie deficit diet helps reduce body fat effectively and sustainably." }
       ]
     },
-
     bmi: {
+      metaTitle: "BMI Calculator - Calculate Your Body Mass Index",
+      metaDescription: "Free BMI calculator to determine if your body weight is healthy for your height. Get instant results with our accurate tool.",
       title: "BMI Calculator",
       desc: "Calculate your Body Mass Index",
       weight: "Weight (kg)",
       height: "Height (cm)",
       result: "BMI",
       about: "About BMI",
-      aboutText: "BMI helps you quickly estimate or calculate important values using trusted formulas. It’s built to give accurate,instant results without needing manual math. This calculator is ideal for anyone who wants quick answers — whether for personal, health, or finance",
+      aboutText: "BMI helps you quickly estimate or calculate important values using trusted formulas. It's built to give accurate,instant results without needing manual math. This calculator is ideal for anyone who wants quick answers — whether for personal, health, or finance",
       formula: "BMI Formula",
-      formulaText: "The Body Mass Index (BMI) formula helps determine whether a person has a healthy body weight for their height. BMI = weight (kg) / height² (m²). If your BMI is below 18.5, you’re considered underweight; between 18.5 and 24.9 means you’re in a healthy range; 25 to 29.9 indicates overweight; and 30 or above falls in the obese category. BMI doesn’t measure body fat directly — it’s just a quick health indicator for reference.",
+      formulaText: "The Body Mass Index (BMI) formula helps determine whether a person has a healthy body weight for their height. BMI = weight (kg) / height² (m²). If your BMI is below 18.5, you're considered underweight; between 18.5 and 24.9 means you're in a healthy range; 25 to 29.9 indicates overweight; and 30 or above falls in the obese category. BMI doesn't measure body fat directly — it's just a quick health indicator for reference.",
       faqTitle: "BMI Calculator FAQs",
       faq: [
-        {
-          q: "What is a healthy BMI range?",
-          a: "A healthy BMI is between 18.5 and 24.9 — this range suggests a normal body weight for your height."
-        },
-        {
-          q: "Is BMI accurate for everyone?",
-          a: "Not really. BMI doesn’t differentiate between muscle and fat, so athletes or muscular people may show as overweight even if they’re fit."
-        },
-        {
-          q: "How often should I check my BMI?",
-          a: "Checking once a month or every few weeks is enough unless you're actively tracking a fitness or weight loss goal."
-        },
-        {
-          q: "Can BMI be used for children?",
-          a: "For kids and teens, BMI is interpreted differently — it’s based on age and sex percentile charts rather than adult cutoffs."
-        },
-        {
-          q: "Does BMI indicate health risks?",
-          a: "High or low BMI values can be linked to increased risk of diseases, but it should always be used with other health indicators."
-        },
-        {
-          q: "What should I do if my BMI is high?",
-          a: "If your BMI is above 25, try adjusting diet, exercise, and lifestyle habits. Consult a healthcare professional for tailored advice."
-        }
+        { q: "What is a healthy BMI range?", a: "A healthy BMI is between 18.5 and 24.9 — this range suggests a normal body weight for your height." },
+        { q: "Is BMI accurate for everyone?", a: "Not really. BMI doesn't differentiate between muscle and fat, so athletes or muscular people may show as overweight even if they're fit." },
+        { q: "How often should I check my BMI?", a: "Checking once a month or every few weeks is enough unless you're actively tracking a fitness or weight loss goal." },
+        { q: "Can BMI be used for children?", a: "For kids and teens, BMI is interpreted differently — it's based on age and sex percentile charts rather than adult cutoffs." },
+        { q: "Does BMI indicate health risks?", a: "High or low BMI values can be linked to increased risk of diseases, but it should always be used with other health indicators." },
+        { q: "What should I do if my BMI is high?", a: "If your BMI is above 25, try adjusting diet, exercise, and lifestyle habits. Consult a healthcare professional for tailored advice." }
       ]
     },
+
     calories: {
+      metaTitle: "Calorie Calculator - Calculate Daily Calorie Needs",
+      metaDescription: "Find your daily calorie requirements based on age, weight, height, and activity level. Plan your diet with precision.",
       title: "Calorie Calculator",
       desc: "Calculate daily calorie needs",
       age: "Age (years)",
@@ -195,19 +182,20 @@ export const enTranslations = {
       aboutText: "Calculates your daily caloric needs based on age, weight, height, and activity level.",
       formula: "Formula",
       formulaText: "Uses Mifflin-St Jeor equation with activity multiplier",
-
       faqTitle: "Calorie Calculator FAQs",
       faq: [
-        { q: "What is a calorie deficit?", a: "It’s when you consume fewer calories than your body burns, leading to weight loss." },
+        { q: "What is a calorie deficit?", a: "It's when you consume fewer calories than your body burns, leading to weight loss." },
         { q: "How many calories should I eat to lose weight?", a: "A safe deficit is around 500 calories below your maintenance level — enough for about 0.5 kg of weight loss per week." },
         { q: "Does activity level really affect calorie needs?", a: "Absolutely. More movement means your body burns more calories, even at rest." },
-        { q: "Can I trust online calorie calculators?", a: "They’re great for estimates. For precision, track your progress and adjust intake based on real results." },
+        { q: "Can I trust online calorie calculators?", a: "They're great for estimates. For precision, track your progress and adjust intake based on real results." },
         { q: "Do different foods burn different calories?", a: "Yes. Protein burns more energy during digestion compared to fats or carbs — this is called the thermic effect." },
         { q: "Should I eat the same calories every day?", a: "Not necessarily. Some people benefit from calorie cycling depending on activity days or training intensity." }
       ]
     },
 
     waterIntake: {
+      metaTitle: "Water Intake Calculator - Daily Hydration Guide",
+      metaDescription: "Calculate your recommended daily water intake based on weight and activity level. Stay hydrated and healthy.",
       title: "Water Intake Calculator",
       desc: "Calculate recommended daily water intake",
       weight: "Weight (kg)",
@@ -217,19 +205,20 @@ export const enTranslations = {
       aboutText: "General recommendation is 8 glasses per day, but needs vary by weight and activity.",
       formula: "Formula",
       formulaText: "Base: weight (kg) × 0.033 liters + activity adjustment",
-
       faqTitle: "Water Intake Calculator FAQs",
       faq: [
         { q: "How much water should I drink daily?", a: "Roughly 2–3 liters for most adults, but it varies based on body weight and activity level." },
         { q: "Does coffee or tea count as water?", a: "Yes, partially — but they can have a mild diuretic effect, so pure water is still best." },
         { q: "Can I drink too much water?", a: "Yes, overhydration (hyponatremia) can dilute sodium levels in your blood and cause issues." },
         { q: "Does drinking more water help weight loss?", a: "It can help by boosting metabolism slightly and reducing appetite when taken before meals." },
-        { q: "Should I adjust intake on hot days?", a: "Definitely. You lose more water through sweat, so add 0.5–1 liter more when it’s hot or humid." },
-        { q: "What’s the best way to track hydration?", a: "Check urine color — pale yellow usually means you’re well-hydrated." }
+        { q: "Should I adjust intake on hot days?", a: "Definitely. You lose more water through sweat, so add 0.5–1 liter more when it's hot or humid." },
+        { q: "What's the best way to track hydration?", a: "Check urine color — pale yellow usually means you're well-hydrated." }
       ]
     },
 
     pace: {
+      metaTitle: "Running Pace Calculator - Calculate Your Running Speed",
+      metaDescription: "Determine your running pace (min/km) based on distance and time. Track your fitness progress accurately.",
       title: "Running Pace Calculator",
       desc: "Calculate your running pace",
       distance: "Distance (km)",
@@ -239,7 +228,6 @@ export const enTranslations = {
       aboutText: "Calculates your average running pace based on distance and time.",
       formula: "Formula",
       formulaText: "Pace = Time / Distance",
-
       faqTitle: "Running Pace Calculator FAQs",
       faq: [
         { q: "What is a good running pace?", a: "For casual runners, 6–7 min/km is average. Advanced runners can go under 5 min/km." },
@@ -247,11 +235,13 @@ export const enTranslations = {
         { q: "Should pace stay consistent during a run?", a: "Ideally yes, but beginners may start slower and speed up as endurance builds." },
         { q: "Does terrain affect running pace?", a: "Yes, hills, sand, or uneven surfaces can significantly slow your pace." },
         { q: "How do I improve my running pace?", a: "Try interval training, better form, and consistent cardio work to increase speed." },
-        { q: "Is running pace different from speed?", a: "They’re related — pace is minutes per km, while speed is km per hour. One is just the inverse of the other." }
+        { q: "Is running pace different from speed?", a: "They're related — pace is minutes per km, while speed is km per hour. One is just the inverse of the other." }
       ]
     },
 
     heartRate: {
+      metaTitle: "Heart Rate Zone Calculator - Training Zones Guide",
+      metaDescription: "Calculate your heart rate training zones using the Karvonen formula. Optimize your workout intensity.",
       title: "Heart Rate Zone Calculator",
       desc: "Calculate your heart rate training zones",
       age: "Age (years)",
@@ -261,10 +251,9 @@ export const enTranslations = {
       aboutText: "Different heart rate zones correspond to different training intensities.",
       formula: "Formula",
       formulaText: "Uses Karvonen formula: Target HR = (Max HR - Resting HR) × Intensity + Resting HR",
-
       faqTitle: "Heart Rate Zone Calculator FAQs",
       faq: [
-        { q: "What are heart rate zones?", a: "They’re intensity levels based on your heart rate — from light activity to max effort." },
+        { q: "What are heart rate zones?", a: "They're intensity levels based on your heart rate — from light activity to max effort." },
         { q: "How do I find my max heart rate?", a: "A common estimate is 220 minus your age, though actual max can vary by fitness level." },
         { q: "Which heart rate zone burns the most fat?", a: "Zone 2 (60–70% of max HR) is the best range for burning fat efficiently." },
         { q: "Can I train only in my max zone?", a: "No, sustained max effort can cause fatigue and injury — balance across all zones." },
@@ -274,6 +263,8 @@ export const enTranslations = {
     },
 
     protein: {
+      metaTitle: "Protein Calculator - Daily Protein Requirements",
+      metaDescription: "Calculate your daily protein intake based on weight and fitness goals. Build muscle or lose weight effectively.",
       title: "Protein Calculator",
       desc: "Calculate daily protein needs",
       weight: "Weight (kg)",
@@ -286,7 +277,6 @@ export const enTranslations = {
       aboutText: "Protein needs vary based on your fitness goals and body weight.",
       formula: "Formula",
       formulaText: "Maintenance: 0.8g/kg, Muscle: 1.6-2.2g/kg, Loss: 1.2-1.6g/kg",
-
       faqTitle: "Protein Calculator FAQs",
       faq: [
         { q: "How much protein do I really need daily?", a: "Most people need around 0.8–1g per kg for maintenance, more if building or losing weight." },
@@ -297,7 +287,10 @@ export const enTranslations = {
         { q: "Does protein help with fat loss?", a: "Yes. It keeps you full longer and preserves muscle while in a calorie deficit." }
       ]
     },
+
     tdee: {
+      metaTitle: "TDEE Calculator - Total Daily Energy Expenditure",
+      metaDescription: "Calculate your TDEE to understand your daily calorie burn. Perfect for weight loss and muscle gain planning.",
       title: "TDEE Calculator",
       desc: "Calculate Total Daily Energy Expenditure",
       age: "Age (years)",
@@ -309,18 +302,20 @@ export const enTranslations = {
       aboutText: "TDEE is the total number of calories your body burns daily.",
       formula: "Formula",
       formulaText: "Uses Mifflin-St Jeor equation with activity multiplier",
-
       faqTitle: "TDEE Calculator FAQs",
       faq: [
         { q: "What does TDEE mean?", a: "TDEE stands for Total Daily Energy Expenditure — the total calories you burn each day." },
-        { q: "How accurate is TDEE?", a: "It’s an estimate. Actual burn varies by genetics, stress, sleep, and muscle mass." },
+        { q: "How accurate is TDEE?", a: "It's an estimate. Actual burn varies by genetics, stress, sleep, and muscle mass." },
         { q: "Should I eat below or above my TDEE?", a: "Eat below to lose weight, above to gain muscle or mass." },
         { q: "Does TDEE include exercise?", a: "Yes, if you select the correct activity level, exercise is already factored in." },
         { q: "How often should I recalculate TDEE?", a: "Every few months or whenever your weight, lifestyle, or goals change." },
         { q: "Can I use TDEE for muscle gain?", a: "Yes — just add a surplus of 200–500 calories above your TDEE for lean muscle growth." }
       ]
     },
+
     macros: {
+      metaTitle: "Macro Calculator - Macronutrient Breakdown Guide",
+      metaDescription: "Calculate your daily macronutrient needs (proteins, carbs, fats). Optimize your diet for your goals.",
       title: "Macro Calculator",
       desc: "Calculate macronutrient breakdown",
       calories: "Daily Calories",
@@ -333,18 +328,20 @@ export const enTranslations = {
       aboutText: "Macronutrients are proteins, carbs, and fats that make up your diet.",
       formula: "Formula",
       formulaText: "Balanced: 40C/30P/30F, Low Carb: 30C/35P/35F, High Protein: 35C/40P/25F",
-
       faqTitle: "Macro Calculator FAQs",
       faq: [
         { q: "What are macros?", a: "Macros are the main nutrients that provide calories — protein, carbohydrates, and fats." },
         { q: "Why should I track macros?", a: "Tracking macros helps optimize energy, performance, and body composition goals." },
         { q: "Do macros matter more than calories?", a: "Calories control weight change, but macros control how your body looks and feels." },
         { q: "Can I lose fat without tracking macros?", a: "Yes, but tracking them makes it easier to stay consistent and avoid nutrient imbalances." },
-        { q: "Which macro ratio is best?", a: "There’s no one-size-fits-all — it depends on your goals, metabolism, and diet style." },
-        { q: "Do cheat meals ruin macro goals?", a: "One cheat meal won’t kill progress — just get back on track the next day and stay consistent." }
+        { q: "Which macro ratio is best?", a: "There's no one-size-fits-all — it depends on your goals, metabolism, and diet style." },
+        { q: "Do cheat meals ruin macro goals?", a: "One cheat meal won't kill progress — just get back on track the next day and stay consistent." }
       ]
     },
+
     bfp: {
+      metaTitle: "Body Fat Percentage Calculator - Measure Body Composition",
+      metaDescription: "Calculate body fat percentage from measurements. Better than BMI for assessing fitness and health.",
       title: "Body Fat Percentage",
       desc: "Estimate body fat from measurements",
       waist: "Waist (cm)",
@@ -355,15 +352,14 @@ export const enTranslations = {
       aboutText: "Body fat percentage is a better measure of fitness than weight alone.",
       formula: "Formula",
       formulaText: "Uses circumference measurements for estimation",
-
       faqTitle: "Body Fat Percentage FAQs",
       faq: [
-        { q: "What’s the ideal body fat percentage?", a: "Men: 10–20%, Women: 18–28%. Athletes often sit below these ranges." },
+        { q: "What's the ideal body fat percentage?", a: "Men: 10–20%, Women: 18–28%. Athletes often sit below these ranges." },
         { q: "Is body fat the same as BMI?", a: "No. BMI measures body weight for height, not actual fat content." },
         { q: "Can I measure body fat at home?", a: "Yes, with a tape measure or body fat scales — though accuracy varies." },
         { q: "How often should I check my body fat?", a: "Every 4–6 weeks is good for tracking progress without obsessing." },
         { q: "Does body fat affect metabolism?", a: "Yes. More muscle and less fat typically mean a higher metabolic rate." },
-        { q: "What’s the fastest way to reduce body fat?", a: "Combine resistance training, a slight calorie deficit, and enough protein." }
+        { q: "What's the fastest way to reduce body fat?", a: "Combine resistance training, a slight calorie deficit, and enough protein." }
       ]
     },
 

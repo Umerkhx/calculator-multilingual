@@ -19,6 +19,8 @@ export interface CalculatorFAQ {
 
 export interface Calculator {
   slug: string
+  metaTitleKey: string
+  metaDescriptionKey: string
   titleKey: string
   category: string
   descriptionKey: string

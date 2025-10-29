@@ -1,30 +1,37 @@
 export interface CalculatorInput {
-  label: string // translation key like "inputs.waist"
+  label: string 
   name: string
   type: "number" | "select" | "text"
   unit?: string
-  options?: Array<{ value: string; label: string }> // for select inputs
+  options?: Array<{ value: string; label: string }> 
 }
 
 export interface CalculatorSection {
   id: string
-  title: string // translation key like "sections.intro.title"
-  content: string // translation key like "sections.intro.content"
+  titleKey: string 
+  contentKey?: string 
+}
+
+export interface CalculatorFAQ {
+  qKey: string 
+  aKey: string 
 }
 
 export interface Calculator {
   slug: string
-  titleKey: string // translation key like "calculators.bodyFat.title"
+  titleKey: string
   category: string
-  descriptionKey: string // translation key like "calculators.bodyFat.description"
+  descriptionKey: string
   inputs: CalculatorInput[]
   formulaId: string
   sections: CalculatorSection[]
+  faqTitleKey?: any 
+  faqs?: CalculatorFAQ[]
 }
 
 export interface CalculatorCategory {
   description: string
   id: string
-  name: string // translation key like "categories.health"
+  name: string 
   calculators: Calculator[]
 }

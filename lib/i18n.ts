@@ -32,12 +32,49 @@ export const translations = {
 }
 
 export function getTranslation(locale: Locale, key: string): string {
-  const keys = key.split(".")
-  let value: any = translations[locale]
+  try {
+    if (!locale || !key) {
+      console.warn(`Invalid translation parameters: locale="${locale}", key="${key}"`)
+      return key
+    }
 
-  for (const k of keys) {
-    value = value?.[k]
+    const trans = translations[locale]
+
+    if (!trans) {
+      console.warn(`Locale not found: ${locale}`)
+      return key
+    }
+
+    const keys = key.split(".")
+    let value: any = trans
+
+    for (let i = 0; i < keys.length; i++) {
+      const k = keys[i]
+      
+      if (value === null || value === undefined) {
+        console.warn(`Translation path broken at "${keys.slice(0, i).join(".")}" - cannot access "${k}" on null/undefined`)
+        return key
+      }
+
+      if (!(k in value)) {
+        console.warn(`Translation key not found: ${key} (failed at: ${keys.slice(0, i + 1).join(".")})`)
+        return key
+      }
+
+      value = value[k]
+    }
+
+    if (typeof value === "string") {
+      return value
+    } else if (value === null || value === undefined) {
+      console.warn(`Translation value is null/undefined for key: ${key}`)
+      return key
+    } else {
+      console.warn(`Translation value is not a string for key: ${key}`, typeof value)
+      return key
+    }
+  } catch (error) {
+    console.error(`Error getting translation for key: ${key}`, error)
+    return key
   }
-
-  return value || key
 }

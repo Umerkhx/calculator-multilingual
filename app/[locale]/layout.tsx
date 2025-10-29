@@ -46,11 +46,34 @@ export async function generateMetadata({
 export default async function LocaleLayout({ children, params }: LayoutProps) {
   const { locale } = await params
 
+  const langMap: Record<string, string> = {
+    en: "en",
+    ur: "ur",
+    es: "es",
+    fr: "fr",
+    ar: "ar",
+    de: "de",
+    pt: "pt",
+    ru: "ru",
+    it: "it",
+    zh: "zh",
+    tr: "tr",
+    hi: "hi",
+  }
+
+  const htmlLang = langMap[locale] || "en"
+  
+  const isRTL = ["ar", "ur"].includes(locale)
+
   return (
-    <div className="flex min-h-screen flex-col">
-      <Header locale={locale} />
-      <main className="flex-1">{children}</main>
-      <Footer locale={locale} />
-    </div>
+    <html lang={htmlLang} dir={isRTL ? "rtl" : "ltr"} suppressHydrationWarning>
+      <body>
+        <div className="flex min-h-screen flex-col">
+          <Header locale={locale} />
+          <main className="flex-1">{children}</main>
+          <Footer locale={locale} />
+        </div>
+      </body>
+    </html>
   )
 }

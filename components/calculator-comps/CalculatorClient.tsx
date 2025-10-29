@@ -18,7 +18,6 @@ interface CalculatorClientProps {
 }
 
 export default function CalculatorClient({ calc, locale, formulaId }: CalculatorClientProps) {
-  // 🟢 Neutral dummy inputs that work for any calculator
   const [inputs, setInputs] = useState<Record<string, number | string>>({
     value1: "—",
     value2: "—",
@@ -38,6 +37,8 @@ export default function CalculatorClient({ calc, locale, formulaId }: Calculator
 
   return (
     <FadeIn>
+
+      
       <div className="container mx-auto px-4 py-10 space-y-10">
         <div className="grid gap-8 md:grid-cols-2">
           <CalculatorForm

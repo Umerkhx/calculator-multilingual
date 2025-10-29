@@ -1,6 +1,6 @@
 "use client";
-
 import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,13 +9,16 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Locale } from "@/lib/i18n";
+import { Locale, locales } from "@/lib/i18n";
 
 interface LanguageSelectorProps {
   locale: Locale;
 }
 
 const LanguageSelector = ({ locale }: LanguageSelectorProps) => {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const languages = [
     { code: "en", label: "English", flag: "/usa-flag.webp" },
     { code: "ur", label: "اردو", flag: "/pakistan-flag.webp" },
@@ -31,10 +34,19 @@ const LanguageSelector = ({ locale }: LanguageSelectorProps) => {
     { code: "hi", label: "हिंदी", flag: "/india-flag.webp" },
   ];
 
-  const handleChange = (newLocale: string) => {
-    if (newLocale === locale) return;
-    window.location.href = `/${newLocale}`;
-  };
+const handleChange = (newLocale: string) => {
+  if (newLocale === locale) return;
+
+  const pathSegments = window.location.pathname.split("/").filter(Boolean);
+
+  if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
+    pathSegments.shift();
+  }
+
+  const newPath = `/${newLocale}/${pathSegments.join("/")}`;
+
+  window.location.href = newPath;
+};
 
   const currentLang = languages.find((l) => l.code === locale);
 
@@ -46,7 +58,6 @@ const LanguageSelector = ({ locale }: LanguageSelectorProps) => {
           size="sm"
           className="flex items-center gap-2 rounded-md border border-border bg-background text-foreground"
         >
-         
           {currentLang && (
             <div className="flex items-center gap-2">
               <Image
@@ -61,7 +72,6 @@ const LanguageSelector = ({ locale }: LanguageSelectorProps) => {
           )}
         </Button>
       </DropdownMenuTrigger>
-
       <DropdownMenuContent align="end" className="w-44">
         {languages.map((lang) => (
           <DropdownMenuItem

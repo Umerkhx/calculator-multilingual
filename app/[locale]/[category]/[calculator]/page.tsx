@@ -5,12 +5,14 @@ import { getTranslation, type Locale, defaultLocale, locales } from "@/lib/i18n"
 export async function generateStaticParams() {
   const paths: { locale: string; category: string; calculator: string }[] = [];
 
-  allCalculatorCategories.forEach(category => {
-    category.calculators.forEach(calc => {
-      paths.push({
-        locale: defaultLocale, 
-        category: category.id,
-        calculator: calc.slug,
+  locales.forEach((locale) => {
+    allCalculatorCategories.forEach((category) => {
+      category.calculators.forEach((calc) => {
+        paths.push({
+          locale,
+          category: category.id,
+          calculator: calc.slug,
+        });
       });
     });
   });
@@ -37,7 +39,6 @@ export default async function CalculatorPage({ params }: CalculatorPageProps) {
   }
 
   return (
-
-      <CalculatorClient calc={calc} locale={validLocale} formulaId={calc.formulaId} />
+    <CalculatorClient calc={calc} locale={validLocale} formulaId={calc.formulaId} />
   );
 }

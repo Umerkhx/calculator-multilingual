@@ -48,7 +48,7 @@ export default function ContactHero({ locale }: ContactHeroProps) {
           className="mt-10 flex flex-wrap justify-center gap-4"
         >
           <Link
-            href="mailto:support@calyx.com"
+            href="mailto:support@vastcalculators.com"
             className="rounded-2xl bg-primary text-primary-foreground font-semibold px-8 py-3 text-base shadow-sm hover:opacity-90 transition"
           >
             {t.primaryCta}

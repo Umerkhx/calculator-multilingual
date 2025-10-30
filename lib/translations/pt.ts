@@ -1,14 +1,14 @@
 import { BookOpen, Globe, Info } from "lucide-react";
 
 export const ptTranslations = {
-  hero: {
-    title: "Calyx Ferramentas Inteligentes Resultados Instantâneos",
-    subtitle:
-      "A Calyx oferece uma coleção completa de calculadoras online gratuitas para finanças, saúde, educação, matemática e conversões. Cada calculadora fornece resultados instantâneos e precisos com uma experiência limpa e sem anúncios. Seja você um estudante, profissional ou usuário comum, a Calyx simplifica cálculos complexos a qualquer hora e em qualquer lugar — inteligente, rápida e confiável.",
-    cta: "Explorar Categorias",
-  },
+hero: {
+  title: "Calculadorasonline gratuita para resultados inteligentes, instantâneos e precisos",
+  subtitle: "A VastCalculator oferece uma suíte completa de ferramentas de Calculadorasonline que abrangem finanças, saúde, educação e conversões matemáticas do dia a dia. Cada Calculadorasfornece resultados instantâneos, precisos e sem anúncios, ajudando estudantes, profissionais e usuários diários a simplificar cálculos complexos.",
+  cta: "Explorar categorias",
+},
+
 nav: {
-    name: "Calyx",
+    name: "Calculadoras Vast",
     home: "Início",
     about: "Sobre",
     services: "Serviços",
@@ -19,12 +19,20 @@ nav: {
   feature: {
     title: "Nossas Calculadoras",
     description: "Explore nossa coleção de calculadoras úteis",
+    cta: "Abrir calculadora"
   },
+      aboutsection: {
+  title: "Sobre o Calculadoras Vast",
+  description: "Os números impulsionam todas as decisões, e o VastCalculator torna esses números mais fáceis de entender. De conversões matemáticas simples a análises financeiras complexas, nossas ferramentas de Calculadorasonline gratuitas transformam fórmulas em resultados precisos e instantâneos. Criado para acessibilidade, confiabilidade e simplicidade, o VastCalculator garante que cada cálculo seja sem esforço.",
+  quote: "Na Calculadoras Vast, projetamos ferramentas inteligentes para tornar cada cálculo acessível e sem esforço.",
+  cta: "Saiba mais sobre nós"
+},
   categories: {
     health: {
       name: "Saúde",
       description: "Mantenha-se em dia com sua saúde usando ferramentas fáceis de usar. Do IMC ao acompanhamento de fitness, obtenha resultados rápidos e precisos para o bem-estar diário e escolhas de vida inteligentes."
     },
+
     finance: {
       name: "Finanças",
       description: "Gerencie seu dinheiro de forma mais inteligente com ferramentas simples. Do orçamento ao planejamento de empréstimos, obtenha resultados rápidos e precisos para melhores decisões financeiras."
@@ -37,11 +45,11 @@ nav: {
   },
   categoriespage: {
     title: "Explorar Categorias de Calculadoras",
-    description: "Descubra todas as categorias de calculadoras online gratuitas — de finanças e saúde a matemática e conversões. O Calyx ajuda você a calcular de forma mais inteligente, rápida e fácil em cada área."
+    description: "Descubra todas as categorias de calculadoras online gratuitas — de finanças e saúde a matemática e conversões. O Calculadoras Vast ajuda você a calcular de forma mais inteligente, rápida e fácil em cada área."
   },
   search: {
     placeholder: "Procurar calculadoras...",
-    notFound: "Nenhuma calculadora encontrada",
+    notFound: "Nenhuma Calculadorasencontrada",
   },
   features: {
     title: "Por Que Escolher Nossas Calculadoras",
@@ -50,73 +58,63 @@ nav: {
       "Obtenha resultados exatos usando fórmulas e algoritmos padrão da indústria",
     feature2: "Múltiplas Categorias",
     feature2Desc:
-      "Acesse ferramentas de calculadora de saúde, finanças e muito mais em um só lugar",
+      "Acesse ferramentas de Calculadorasde saúde, finanças e muito mais em um só lugar",
     feature3: "Rápido e Fácil",
     feature3Desc:
       "Interface simples com resultados instantâneos e sem etapas complicadas",
   },
   //about content
-  about: {
-    tagline: "Ferramentas inteligentes. Matemática simples. Alcance global.",
-    title: "Sobre a Calyx",
-    subtitle:
-      "A Calyx é uma plataforma de nova geração que oferece calculadoras online inteligentes, precisas e fáceis de usar para estudantes, profissionais e empresas em todo o mundo.",
-    missiontitle: "Nossa missão na Calyx",
-    missionsub:
-      "Na Calyx, acreditamos que cálculos precisos devem ser simples, acessíveis e empoderadores. Nossa missão é fornecer as ferramentas de cálculo mais confiáveis e intuitivas do mundo — desde finanças até saúde — para que os usuários possam tomar decisões mais inteligentes e baseadas em dados.",
-    missionsub2:
-      "Com precisão, inovação e confiança no centro, estamos moldando um futuro digital mais inteligente — um cálculo de cada vez.",
-    missioncard1: "Precisão",
-    card1sub:
-      "Cada calculadora que desenvolvemos é baseada em fórmulas verificadas, garantindo resultados consistentes e confiáveis em cada uso.",
-    missioncard2: "Inovação",
-    card2sub:
-      "Exploramos continuamente novas maneiras de tornar dados complexos mais fáceis de entender e interagir por meio de ferramentas modernas e adaptáveis.",
-    missioncard3: "Acessibilidade",
-    card3sub:
-      "A Calyx é projetada para todos, em qualquer lugar — multilíngue, responsiva e construída para capacitar usuários globais em todos os dispositivos.",
-    valuetitle: "Nossos Princípios Fundamentais",
-    valuesubtitle:
-      "Na Calyx, nossa base é construída sobre valores que definem como criamos, inovamos e apoiamos nossos usuários todos os dias.",
-    value1Title: "Clareza em Cada Cálculo",
-    value1Desc:
-      "Acreditamos que os dados nunca devem confundir — nossas ferramentas simplificam ideias complexas em informações claras e úteis.",
-    value2Title: "Compromisso com a Precisão",
-    value2Desc:
-      "Cada fórmula e resultado é verificado para garantir a confiabilidade em todas as nossas calculadoras.",
-    value3Title: "Inovação que Empodera",
-    value3Desc:
-      "A Calyx está em constante evolução — trazendo ferramentas mais inteligentes que fazem os números trabalharem a seu favor, não contra você.",
-  },
+about: {
+  tagline: "Ferramentas inteligentes. Matemática simples. Alcance global.",
+  title: "Sobre o Calculadoras Vast",
+  subtitle: "No Calculadoras Vast, tornamos a matemática do dia a dia simples, inteligente e acessível. De saúde e fitness a finanças e conversões rápidas, nossas calculadoras online gratuitas economizam tempo e garantem precisão confiável.",
+  missiontitle: "Nossa missão: tornar os números fáceis",
+  missionsub: "Acreditamos que cálculos nunca devem atrasar você. Seja estudante, profissional ou entusiasta de fitness, Calculadoras Vast coloca a precisão nas suas mãos. Cada ferramenta é baseada em fórmulas verificadas e modelos testados para resultados confiáveis sempre.",
+  missioncard1: "Ferramentas inteligentes para todas as necessidades",
+  card1sub: "De calculadoras de IMC, calorias e hidratação a ferramentas de hipoteca, empréstimo e câmbio — oferecemos uma ampla variedade para ajudar em saúde, educação e finanças.",
+  missioncard2: "Baseado em precisão e simplicidade",
+  card2sub: "Cada Calculadoras segue fórmulas reconhecidas globalmente, revisadas e atualizadas regularmente. A interface é simples e compatível com dispositivos móveis, fácil para todos.",
+  missioncard3: "Projetado para todos",
+  card3sub: "Nosso objetivo é criar um espaço digital onde aprendizado e conveniência se encontram. Calculadoras Vast é totalmente gratuito, acessível globalmente e em constante expansão.",
+  valuetitle: "Inovação, precisão e confiança",
+  valuesubtitle: "Por trás de cada Calculadoras há uma combinação de tecnologia, pesquisa e paixão por simplificar a vida. Usamos algoritmos atualizados e fontes de dados confiáveis para garantir precisão em todas as categorias.",
+  value1Title: "Resultados confiáveis em que você pode confiar",
+  value1Desc: "Nossas calculadoras oferecem precisão consistente. Melhoramos continuamente nossos recursos para garantir números e percentuais corretos.",
+  value2Title: "Em constante evolução",
+  value2Desc: "Estamos comprometidos com a inovação. Adicionamos novas ferramentas e aprimoramos as existentes para atender às necessidades modernas.",
+  value3Title: "Capacitando decisões mais inteligentes",
+  value3Desc: "Nossas calculadoras não apenas mostram resultados — ajudam você a tomar decisões informadas e alcançar seus objetivos com confiança.",
+},
+// Contact Content
   contact: {
-    hero: {
-      title: "Entre em contato com a Calyx",
+       hero: {
+      title: "Conecte-se com Calculadoras Vast",
       subtitle:
-        "Valorizamos cada mensagem — seja feedback, colaboração ou apenas um olá amigável. Vamos nos conectar e criar coisas incríveis juntos.",
-      primaryCta: "Envie-nos um e-mail",
+        "Estamos aqui para ajudar! Seja uma dúvida, sugestão ou algo que precise de melhoria, a equipe Calculadoras Vast está a apenas uma mensagem de distância. Valorizamos seu feedback — ele nos ajuda a tornar nossas ferramentas mais inteligentes, rápidas e precisas para todos.",
+      primaryCta: "Envie um e-mail",
       secondaryCta: "Saiba mais sobre nós",
     },
     support: {
-      title: "Explore mais, aprenda melhor",
+      title: "Adoraríamos ouvir você",
       subtitle:
-        "Precisa de recursos extras, orientação ou ferramentas úteis? Reunimos tudo para tornar sua experiência mais simples e inteligente.",
+        "Nossos usuários estão no centro de tudo o que fazemos. De fitness e finanças a educação e uso diário, Calculadoras Vast foi criado para simplificar a vida. Se quiser compartilhar uma ideia, relatar um erro ou solicitar uma nova calculadora, estamos sempre ouvindo.",
       details: [
         {
-          heading: "Guias úteis",
+          heading: "Suporte geral",
           content:
-            "Explore nossos artigos e explicações detalhadas para uma melhor compreensão.",
+            "Para dúvidas sobre o funcionamento das calculadoras, precisão das fórmulas ou orientações de uso, entre em contato com support@vastcalculators.com. Daremos respostas claras e úteis.",
           icon: BookOpen,
         },
         {
-          heading: "Base de conhecimento",
+          heading: "Feedback e sugestões",
           content:
-            "Encontre informações e referências detalhadas sobre vários tópicos.",
+            "Estamos constantemente aprimorando nossas ferramentas com base no feedback dos usuários. Se você acredita que um novo recurso ou categoria pode melhorar o site, conte-nos! Sua opinião molda o futuro do Calculadoras Vast.",
           icon: Info,
         },
         {
-          heading: "Acesso global",
+          heading: "Garantia de resposta rápida",
           content:
-            "Todos os recursos foram projetados para serem simples, multilíngues e acessíveis globalmente.",
+            "Respondemos a todas as mensagens em até 24 horas. Seja um problema técnico ou uma dúvida geral, nossa equipe garantirá uma resposta rápida e profissional.",
           icon: Globe,
         },
       ],
@@ -126,7 +124,7 @@ nav: {
   // Calculadoras de Saúde
   health: {
     bodyFat: {
-      title: "Calculadora de Gordura Corporal",
+      title: "Calculadorasde Gordura Corporal",
       desc: "Estime sua porcentagem de gordura corporal",
       waist: "Cintura (cm)",
       neck: "Pescoço (cm)",
@@ -143,7 +141,7 @@ nav: {
         "Usa o método da Marinha dos EUA: %GC = 495 / (1.0324 - 0.19077 * log10(cintura - pescoço) + 0.15456 * log10(altura)) - 450",
     },
     bmi: {
-      title: "Calculadora de IMC",
+      title: "Calculadorasde IMC",
       desc: "Calcule seu Índice de Massa Corporal",
       weight: "Peso (kg)",
       height: "Altura (cm)",
@@ -155,7 +153,7 @@ nav: {
       formulaText: "IMC = peso (kg) / (altura (m))²",
     },
     calories: {
-      title: "Calculadora de Calorias",
+      title: "Calculadorasde Calorias",
       desc: "Calcule suas necessidades calóricas diárias",
       age: "Idade (anos)",
       weight: "Peso (kg)",
@@ -173,7 +171,7 @@ nav: {
       formulaText: "Usa a equação Mifflin-St Jeor com multiplicador de atividade",
     },
     waterIntake: {
-      title: "Calculadora de Ingestão de Água",
+      title: "Calculadorasde Ingestão de Água",
       desc: "Calcule a ingestão diária recomendada de água",
       weight: "Peso (kg)",
       activity: "Nível de Atividade (0–2)",
@@ -185,7 +183,7 @@ nav: {
       formulaText: "Base: peso (kg) × 0,033 litros + ajuste de atividade",
     },
     pace: {
-      title: "Calculadora de Ritmo de Corrida",
+      title: "Calculadorasde Ritmo de Corrida",
       desc: "Calcule seu ritmo de corrida",
       distance: "Distância (km)",
       time: "Tempo (minutos)",
@@ -197,7 +195,7 @@ nav: {
       formulaText: "Ritmo = Tempo / Distância",
     },
     heartRate: {
-      title: "Calculadora de Zona de Frequência Cardíaca",
+      title: "Calculadorasde Zona de Frequência Cardíaca",
       desc: "Calcule suas zonas de treino de frequência cardíaca",
       age: "Idade (anos)",
       restingHR: "Frequência Cardíaca em Repouso (bpm)",
@@ -210,7 +208,7 @@ nav: {
         "Usa a fórmula de Karvonen: FC Alvo = (FC Máx - FC Repouso) × Intensidade + FC Repouso",
     },
     protein: {
-      title: "Calculadora de Proteína",
+      title: "Calculadorasde Proteína",
       desc: "Calcule suas necessidades diárias de proteína",
       weight: "Peso (kg)",
       goal: "Objetivo",
@@ -226,7 +224,7 @@ nav: {
         "Manutenção: 0,8g/kg, Músculo: 1,6–2,2g/kg, Perda: 1,2–1,6g/kg",
     },
     tdee: {
-      title: "Calculadora de TDEE",
+      title: "Calculadorasde TDEE",
       desc: "Calcule o Gasto Energético Diário Total",
       age: "Idade (anos)",
       weight: "Peso (kg)",
@@ -240,7 +238,7 @@ nav: {
       formulaText: "Usa a equação Mifflin-St Jeor com multiplicador de atividade",
     },
     macros: {
-      title: "Calculadora de Macronutrientes",
+      title: "Calculadorasde Macronutrientes",
       desc: "Calcule a divisão dos macronutrientes",
       calories: "Calorias Diárias",
       diet: "Tipo de Dieta",
@@ -273,7 +271,7 @@ nav: {
   // Calculadoras de Finanças
   finance: {
     loan: {
-      title: "Calculadora de Empréstimo",
+      title: "Calculadorasde Empréstimo",
       desc: "Calcule pagamentos e juros de empréstimos",
       principal: "Valor do Empréstimo ($)",
       rate: "Taxa de Juros Anual (%)",
@@ -286,7 +284,7 @@ nav: {
       formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
     },
     compound: {
-      title: "Calculadora de Juros Compostos",
+      title: "Calculadorasde Juros Compostos",
       desc: "Calcule o crescimento com juros compostos",
       principal: "Principal ($)",
       rate: "Taxa Anual (%)",
@@ -299,7 +297,7 @@ nav: {
       formulaText: "A = P(1 + r/n)^(nt)",
     },
     savings: {
-      title: "Calculadora de Poupança",
+      title: "Calculadorasde Poupança",
       desc: "Calcule o crescimento da poupança ao longo do tempo",
       initial: "Valor Inicial ($)",
       monthly: "Poupança Mensal ($)",
@@ -314,7 +312,7 @@ nav: {
         "Calcula o valor futuro com depósitos regulares",
     },
     mortgage: {
-      title: "Calculadora de Hipoteca",
+      title: "Calculadorasde Hipoteca",
       desc: "Calcule pagamentos de hipoteca",
       homePrice: "Preço da Casa ($)",
       downPayment: "Entrada ($)",
@@ -328,7 +326,7 @@ nav: {
       formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
     },
     roi: {
-      title: "Calculadora de ROI",
+      title: "Calculadorasde ROI",
       desc: "Calcule o retorno sobre investimento",
       investment: "Investimento ($)",
       gain: "Lucro ($)",
@@ -341,7 +339,7 @@ nav: {
     },
 
     breakeven: {
-      title: "Calculadora de Ponto de Equilíbrio",
+      title: "Calculadorasde Ponto de Equilíbrio",
       desc: "Calcule o ponto de equilíbrio",
       fixedCosts: "Custos Fixos ($)",
       variableCost: "Custo Variável por Unidade ($)",
@@ -355,7 +353,7 @@ nav: {
         "Equilíbrio = Custos Fixos / (Preço - Custo Variável)",
     },
     discount: {
-      title: "Calculadora de Desconto",
+      title: "Calculadorasde Desconto",
       desc: "Calcule descontos e preço final",
       originalPrice: "Preço Original ($)",
       discountPercent: "Desconto (%)",
@@ -367,7 +365,7 @@ nav: {
       formulaText: "Preço Final = Original × (1 - Desconto%)",
     },
     tip: {
-      title: "Calculadora de Gorjeta",
+      title: "Calculadorasde Gorjeta",
       desc: "Calcule gorjeta e total da conta",
       billAmount: "Valor da Conta ($)",
       tipPercent: "Gorjeta (%)",
@@ -380,7 +378,7 @@ nav: {
       formulaText: "Gorjeta = Conta × %, Por Pessoa = Total / Pessoas",
     },
     inflation: {
-      title: "Calculadora de Inflação",
+      title: "Calculadorasde Inflação",
       desc: "Calcule o impacto da inflação",
       amount: "Valor ($)",
       years: "Anos",
@@ -407,10 +405,10 @@ nav: {
     },
   },
 footer: {
-  subtitle: "Calyx – Simplifique a matemática com calculadoras online gratuitas",
-  gridtitle1: "Conheça o Calyx",
+  subtitle: "Calculadoras Vast – Simplifique a matemática com calculadoras online gratuitas",
+  gridtitle1: "Conheça o Calculadoras Vast",
   gridtitle2: "Nossas Calculadoras Populares",
-  copyright: "© 2025 Calyx. Todos os direitos reservados.",
+  copyright: "© 2025 Calculadoras Vast. Todos os direitos reservados.",
   privacy: "Política de Privacidade",
   terms: "Termos de Serviço",
 }

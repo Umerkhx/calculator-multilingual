@@ -1,14 +1,14 @@
 import { BookOpen, Globe, Info } from "lucide-react";
 
 export const trTranslations = {
-  hero: {
-    title: "Calyx Akıllı Araçlar Anında Sonuçlar",
-    subtitle:
-      "Calyx; finans, sağlık, eğitim, matematik ve dönüşümler için ücretsiz çevrimiçi hesaplayıcıların tam koleksiyonunu sunar. Her hesaplayıcı, reklamsız ve sade bir deneyimle anında ve doğru sonuçlar verir. İster öğrenci, ister profesyonel ya da günlük kullanıcı olun, Calyx karmaşık hesaplamaları her zaman, her yerde kolaylaştırır — akıllı, hızlı ve güvenilir.",
-    cta: "Kategorileri Keşfet",
-  },
+hero: {
+  title: "Akıllı, anlık ve doğru sonuçlar için ücretsiz çevrimiçi hesap makinesi",
+  subtitle: "VastCalculator; finans, sağlık, eğitim ve günlük matematiksel dönüşümleri kapsayan eksiksiz bir çevrimiçi hesap makinesi araç seti sunar. Her hesap makinesi anında, doğru ve reklamsız sonuçlar verir, öğrencilerin, profesyonellerin ve günlük kullanıcıların karmaşık hesaplamaları basitleştirmesine yardımcı olur.",
+  cta: "Kategorileri keşfet",
+},
+
 nav: {
-    name: "Calyx",
+    name: "Vast Hesap Makinesi",
     home: "Ana Sayfa",
     about: "Hakkında",
     services: "Hizmetler",
@@ -19,12 +19,20 @@ nav: {
   feature: {
     title: "Hesaplayıcılarımız",
     description: "Kullanışlı hesaplayıcı koleksiyonumuzu keşfedin",
+    cta: "Hesap makinesini aç"
   },
+      aboutsection: {
+  title: "Vast Hesap Makinesi Hakkında",
+  description: "Rakamlar her kararı yönlendirir ve VastCalculator bu rakamları anlamayı kolaylaştırır. Basit matematiksel dönüşümlerden karmaşık finansal analizlere kadar, ücretsiz çevrimiçi hesap makinesi araçlarımız formülleri doğru ve anında sonuçlara dönüştürür. Erişilebilirlik, güvenilirlik ve sadelik için tasarlanan VastCalculator, her hesaplamayı zahmetsiz hale getirir.",
+  quote: "Vast Hesap Makinesi’da her hesaplamayı erişilebilir ve zahmetsiz hale getiren akıllı araçlar tasarlıyoruz.",
+  cta: "Hakkımızda daha fazla bilgi edinin"
+},
   categories: {
     health: {
       name: "Sağlık",
       description: "Sağlığınızı kolay kullanılabilir araçlarla takip edin. VKİ’den fitness takibine kadar, günlük sağlık ve akıllı yaşam seçimleri için hızlı ve doğru sonuçlar alın."
     },
+
     finance: {
       name: "Finans",
       description: "Paranızı daha akıllıca yönetin, basit araçlarla. Bütçelemeden kredi planlamasına kadar, daha iyi finansal kararlar için hızlı ve doğru sonuçlar alın."
@@ -33,7 +41,7 @@ nav: {
   },
   categoriespage: {
     title: "Hesap Makinesi Kategorilerini Keşfedin",
-    description: "Finanstan sağlığa, matematikten dönüşümlere kadar tüm ücretsiz çevrimiçi hesap makinesi kategorilerini keşfedin. Calyx her alanda daha akıllı, hızlı ve kolay hesaplamanıza yardımcı olur."
+    description: "Finanstan sağlığa, matematikten dönüşümlere kadar tüm ücretsiz çevrimiçi hesap makinesi kategorilerini keşfedin. Vast Hesap Makinesi her alanda daha akıllı, hızlı ve kolay hesaplamanıza yardımcı olur."
   },
   cards: {
     title: "Hesaplayıcı Kategorilerimizi Keşfedin",
@@ -55,67 +63,57 @@ nav: {
       "Basit arayüz, anında sonuçlar ve karmaşık adımlar olmadan kullanım",
   },
   //about content
-  about: {
-    tagline: "Akıllı Araçlar. Basit Matematik. Küresel Erişim.",
-    title: "Calyx Hakkında",
-    subtitle:
-      "Calyx, öğrenciler, profesyoneller ve işletmeler için akıllı, doğru ve kullanıcı dostu çevrimiçi hesap makineleri sunan yeni nesil bir platformdur.",
-    missiontitle: "Calyx'teki Misyonumuz",
-    missionsub:
-      "Calyx olarak, doğru hesaplamaların basit, erişilebilir ve güçlendirici olması gerektiğine inanıyoruz. Misyonumuz, finansmandan sağlığa kadar dünyanın en güvenilir ve sezgisel hesaplama araçlarını sunmaktır — böylece kullanıcılar daha akıllı, veri odaklı kararlar alabilirler.",
-    missionsub2:
-      "Kesinlik, yenilik ve güven temelimizdir — daha akıllı bir dijital geleceği, her seferinde bir hesapla inşa ediyoruz.",
-    missioncard1: "Doğruluk",
-    card1sub:
-      "Geliştirdiğimiz her hesap makinesi doğrulanmış formüllerle desteklenir ve tutarlı, güvenilir sonuçlar sağlar.",
-    missioncard2: "Yenilik",
-    card2sub:
-      "Karmaşık verileri anlamayı ve etkileşimi kolaylaştırmak için sürekli yeni yollar keşfediyoruz.",
-    missioncard3: "Erişilebilirlik",
-    card3sub:
-      "Calyx herkes için, her yerde tasarlanmıştır — çok dilli, duyarlı ve küresel kullanıcıları güçlendirmek için inşa edilmiştir.",
-    valuetitle: "Temel İlkelerimiz",
-    valuesubtitle:
-      "Calyx'te temelimiz, her gün nasıl yarattığımızı, yenilik yaptığımızı ve kullanıcılarımızı desteklediğimizi tanımlayan değerlere dayanır.",
-    value1Title: "Her Hesapta Açıklık",
-    value1Desc:
-      "Verilerin kafa karıştırıcı olmaması gerektiğine inanıyoruz — araçlarımız karmaşık fikirleri açık, kullanılabilir bilgilere dönüştürmek için tasarlanmıştır.",
-    value2Title: "Doğruluğa Bağlılık",
-    value2Desc:
-      "Her formül ve sonuç doğruluk için doğrulanır, bu da güvenilirliği sağlar.",
-    value3Title: "Güçlendiren Yenilik",
-    value3Desc:
-      "Calyx sürekli gelişiyor — sayıları sizin için çalıştıran daha akıllı araçlar getiriyor, size karşı değil.",
-  },
+about: {
+  tagline: "Akıllı Araçlar. Basit Matematik. Küresel Erişim.",
+  title: "Vast Hesap Makinesi Hakkında",
+  subtitle: "Vast Hesap Makinesi olarak günlük matematiği basit, akıllı ve erişilebilir hale getiriyoruz. Sağlık hedeflerinizi takip etmekten finans planlamasına veya hızlı birim dönüşümlerine kadar, ücretsiz çevrimiçi hesap makinelerimiz zaman kazandırmak ve güvenilir doğruluk sunmak için tasarlandı.",
+  missiontitle: "Misyonumuz: Sayıları zahmetsiz hale getirmek",
+  missionsub: "Hesaplamaların sizi asla yavaşlatmaması gerektiğine inanıyoruz. Öğrenci, profesyonel veya fitness hedefi takip eden biri olun, Vast Hesap Makinesi doğruluğu parmaklarınızın ucuna getiriyor. Her araç, güvenilir sonuçlar sağlamak için test edilmiş formüllerle oluşturulmuştur.",
+  missioncard1: "Her ihtiyaca uygun akıllı araçlar",
+  card1sub: "BMI, kalori ve su alımı hesaplayıcılarından mortgage, kredi ve döviz araçlarına kadar — geniş yelpazedeki çevrimiçi hesap makinelerimiz sağlık, eğitim ve finansı kolaylaştırır.",
+  missioncard2: "Doğruluk ve sadelik üzerine kurulu",
+  card2sub: "Her hesap makinesi, küresel olarak kabul edilen formülleri takip eder ve düzenli olarak gözden geçirilir. Arayüz basit ve mobil uyumludur, bu sayede her yaş grubundan kullanıcı kolayca hesaplama yapabilir.",
+  missioncard3: "Herkes için tasarlandı",
+  card3sub: "Amacımız, öğrenme ile pratikliğin buluştuğu dijital bir alan oluşturmaktır. Vast Hesap Makinesi tamamen ücretsizdir, dünya genelinde erişilebilirdir ve kullanıcı taleplerine göre sürekli büyümektedir.",
+  valuetitle: "Yenilik, doğruluk ve güven",
+  valuesubtitle: "Her hesap makinesinin arkasında teknoloji, araştırma ve hayatı kolaylaştırma tutkusu vardır. Güncel algoritmalar ve güvenilir veri kaynaklarıyla tüm kategorilerde doğruluk sağlıyoruz.",
+  value1Title: "Güvenebileceğiniz doğru sonuçlar",
+  value1Desc: "Hesap makinelerimiz, tutarlı ve doğru sonuçlar üretmek için geliştirilmiştir. Her oran ve yüzde için doğruluğu korumak adına araçlarımızı sürekli geliştiriyoruz.",
+  value2Title: "Sürekli gelişim",
+  value2Desc: "Yeniliğe bağlıyız. Yeni araçlar düzenli olarak eklenir ve mevcut olanlar modern kullanıcı ihtiyaçlarına göre geliştirilir.",
+  value3Title: "Daha akıllı kararlar için güçlendirme",
+  value3Desc: "Hesap makinelerimiz yalnızca sonuç sunmakla kalmaz, aynı zamanda bilinçli kararlar almanıza, zamandan tasarruf etmenize ve hedeflerinize güvenle ulaşmanıza yardımcı olur.",
+},
+// Contact Content
   contact: {
     hero: {
-      title: "Calyx ile İletişime Geçin",
+      title: "Vast Hesap Makinesi ile iletişime geçin",
       subtitle:
-        "Her mesaj bizim için değerlidir — ister geri bildirim, ister iş birliği ya da sadece dostça bir merhaba olsun. Bağlanalım ve harika şeyler yapalım.",
-      primaryCta: "Bize E-posta Gönderin",
-      secondaryCta: "Hakkımızda Daha Fazla Bilgi Edinin",
+        "Yardım etmek için buradayız! Bir sorunuz, öneriniz veya geliştirilmesi gereken bir şey fark ettiyseniz, Vast Hesap Makinesi ekibi sadece bir mesaj uzağınızda. Geri bildiriminiz araçlarımızı herkes için daha akıllı, daha hızlı ve daha doğru hale getirmemize yardımcı olur.",
+      primaryCta: "Bize e-posta gönderin",
+      secondaryCta: "Hakkımızda daha fazla bilgi edinin",
     },
     support: {
-      title: "Daha Fazla Keşfet, Daha İyi Öğren",
+      title: "Sizden haber almak isteriz",
       subtitle:
-        "Ek kaynaklara, rehberliğe veya faydalı araçlara mı ihtiyacınız var? Deneyiminizi daha kolay ve akıllı hale getirmek için her şeyi topladık.",
+        "Kullanıcılarımız yaptığımız her şeyin merkezindedir. Fitness ve finansmandan eğitime ve günlük kullanıma kadar Vast Hesap Makinesi hayatı basitleştirmek için tasarlanmıştır. Bir fikir paylaşmak, hata bildirmek veya yeni bir hesap makinesi talep etmek isterseniz her zaman dinliyoruz.",
       details: [
         {
-          heading: "Yararlı Kılavuzlar",
+          heading: "Genel Destek",
           content:
-            "Daha iyi anlamak için detaylı makalelerimize göz atın.",
+            "Hesap makinelerimizin nasıl çalıştığı, formül doğruluğu veya kullanım kılavuzu hakkında sorularınız için istediğiniz zaman support@vastcalculators.com adresine ulaşabilirsiniz. Net ve faydalı yanıtlar almanızı sağlarız.",
           icon: BookOpen,
         },
         {
-          heading: "Bilgi Tabanı",
+          heading: "Geri Bildirim ve Öneriler",
           content:
-            "Çeşitli konuları kapsayan detaylı bilgiler ve referanslar bulun.",
+            "Araçlarımızı kullanıcı geri bildirimlerine göre sürekli geliştiriyoruz. Yeni bir özellik, hesap makinesi veya kategori sitemizi daha iyi hale getirebilir diye düşünüyorsanız bize bildirin! Geri bildiriminiz Vast Hesap Makinesi’un geleceğini şekillendirir.",
           icon: Info,
         },
         {
-          heading: "Küresel Erişim",
+          heading: "Hızlı Yanıt Garantisi",
           content:
-            "Tüm kaynaklar basit, çok dilli ve küresel erişime uygundur.",
+            "Her mesaja 24 saat içinde yanıt veriyoruz. Teknik bir sorun veya genel bir soru fark etmez, ekibimiz hızlı ve profesyonel bir şekilde ilgilenir.",
           icon: Globe,
         },
       ],
@@ -402,10 +400,10 @@ nav: {
     },
   },
 footer: {
-  subtitle: "Calyx – Ücretsiz Çevrimiçi Hesaplayıcılarla Matematiği Basitleştirin",
-  gridtitle1: "Calyx ile Tanışın",
+  subtitle: "Vast Hesap Makinesi – Ücretsiz Çevrimiçi Hesaplayıcılarla Matematiği Basitleştirin",
+  gridtitle1: "Vast Hesap Makinesi ile Tanışın",
   gridtitle2: "Popüler Hesaplayıcılarımız",
-  copyright: "© 2025 Calyx. Tüm hakları saklıdır.",
+  copyright: "© 2025 Vast Hesap Makinesi. Tüm hakları saklıdır.",
   privacy: "Gizlilik Politikası",
   terms: "Hizmet Şartları",
 }

@@ -34,12 +34,12 @@ export async function generateMetadata({
       pathname: "/",
     }),
     robots: {
-      index: true, 
-      follow: true, 
-      nocache: true, 
+      index: false, 
+      follow: false, 
+      nocache: false, 
       googleBot: {
-        index: true,
-        follow: true,
+        index: false,
+        follow: false,
       },
     },
   }

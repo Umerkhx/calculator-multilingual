@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { Locale } from "@/lib/i18n";
+import { locales, type Locale } from "@/lib/i18n";
 import { generateSEOMetadata } from "@/lib/seo";
 import FadeIn from "@/components/FadeIn";
 import ContactHero from "@/components/contact-comps/ContactHero";
@@ -7,11 +7,15 @@ import ContactSupport from "@/components/contact-comps/ContactSupport";
 
 
 interface PageProps {
-  params: Promise<{ locale: Locale }>;
+ params: { locale: Locale };
+}
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { locale } = await params;
+  const { locale } = params;
 
   return generateSEOMetadata({
     title: "Contact Calyx – We're Here to Help",

@@ -5,6 +5,8 @@ import { Footer } from "@/components/footer"
 import { type Locale, locales } from "@/lib/i18n"
 import { generateSEOMetadata } from "@/lib/seo"
 
+export const dynamic = "force-static";
+
 interface LayoutProps {
   children: React.ReactNode
   params: Promise<{ locale: Locale }>
@@ -32,12 +34,12 @@ export async function generateMetadata({
       pathname: "/",
     }),
     robots: {
-      index: false, 
-      follow: false, 
+      index: true, 
+      follow: true, 
       nocache: true, 
       googleBot: {
-        index: false,
-        follow: false,
+        index: true,
+        follow: true,
       },
     },
   }

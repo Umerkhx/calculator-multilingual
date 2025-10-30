@@ -7,7 +7,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Locale, locales } from "@/lib/i18n";
 
@@ -34,19 +33,27 @@ const LanguageSelector = ({ locale }: LanguageSelectorProps) => {
     { code: "hi", label: "हिंदी", flag: "/india-flag.webp" },
   ];
 
-const handleChange = (newLocale: string) => {
-  if (newLocale === locale) return;
+  const handleChange = (newLocale: string) => {
+    if (newLocale === locale) return;
 
-  const pathSegments = window.location.pathname.split("/").filter(Boolean);
+    const pathSegments = pathname.split("/").filter(Boolean);
 
-  if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
-    pathSegments.shift();
-  }
+    if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
+      pathSegments.shift();
+    }
 
-  const newPath = `/${newLocale}/${pathSegments.join("/")}`;
+    let newPath = "";
 
-  window.location.href = newPath;
-};
+    if (newLocale === "en") {
+      newPath = `/${pathSegments.join("/")}`;
+    } else {
+      newPath = `/${newLocale}/${pathSegments.join("/")}`;
+    }
+
+    newPath = newPath.replace(/\/+/g, "/");
+
+    window.location.href = newPath === "/" ? "/" : newPath;
+  };
 
   const currentLang = languages.find((l) => l.code === locale);
 

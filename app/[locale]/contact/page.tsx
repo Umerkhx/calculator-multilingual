@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { locales, type Locale } from "@/lib/i18n";
+import { locales, defaultLocale, type Locale } from "@/lib/i18n";
 import { generateSEOMetadata } from "@/lib/seo";
 import FadeIn from "@/components/FadeIn";
 import ContactHero from "@/components/contact-comps/ContactHero";
 import ContactSupport from "@/components/contact-comps/ContactSupport";
 
-
 interface PageProps {
- params: { locale: Locale };
+  params: { locale: Locale };
 }
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return locales
+    .filter((locale) => locale !== defaultLocale)
+    .map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = params;
-
   return generateSEOMetadata({
     title: "Contact Calyx – We're Here to Help",
     description:
@@ -27,8 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function ContactPage({ params }: PageProps) {
-  const { locale } = await params;
-
+  const { locale } = params;
   return (
     <FadeIn>
       <ContactHero locale={locale} />

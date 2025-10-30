@@ -58,7 +58,13 @@ export default function CategoryPage({ locale, category, categoryData, calculato
           description={getTranslation(locale, categoryData.description)}
         />
 
-        <SearchAndFilter onSearch={setSearchQuery} onFilterLetter={setFilterLetter} />
+        <SearchAndFilter
+          onSearch={setSearchQuery}
+          onFilterLetter={setFilterLetter}
+          calculatorNames={calculators.map((calc) =>
+            getTranslation(locale, calc.titleKey)
+          )}
+        />
 
         <CalculatorGrid calculators={filteredCalculators} locale={locale} category={category} />
       </div>

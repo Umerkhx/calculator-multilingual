@@ -12,14 +12,16 @@ interface PageProps {
 export async function generateStaticParams() {
   const paths: { locale: string; category: string }[] = [];
 
-  allCalculatorCategories.forEach((category) => {
-    locales.forEach((locale) => {
-      paths.push({
-        locale,
-        category: category.id,
+  locales
+    .filter((locale) => locale !== defaultLocale)
+    .forEach((locale) => {
+      allCalculatorCategories.forEach((category) => {
+        paths.push({
+          locale,
+          category: category.id,
+        });
       });
     });
-  });
 
   return paths;
 }

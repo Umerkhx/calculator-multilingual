@@ -284,7 +284,7 @@ export function CalculatorSearch({ locale }: CalculatorSearchProps) {
                               {item.calculators.map((calc) => (
                                 <Link
                                   key={calc.slug}
-                                  href={`/${locale}/calculators/${item.category.id}/${calc.slug}`}
+                                  href={locale === "en" ? `/${item.category.id}/${calc.slug}` : `/${locale}/${item.category.id}/${calc.slug}`}
                                   className="flex items-center justify-between group rounded-lg px-4 py-3 hover:bg-accent transition-all"
                                   onClick={() => {
                                     setOpen(false);

@@ -5,17 +5,19 @@ import { getTranslation, type Locale, defaultLocale, locales } from "@/lib/i18n"
 export async function generateStaticParams() {
   const paths: { locale: string; category: string; calculator: string }[] = [];
 
-  locales.forEach((locale) => {
-    allCalculatorCategories.forEach((category) => {
-      category.calculators.forEach((calc) => {
-        paths.push({
-          locale,
-          category: category.id,
-          calculator: calc.slug,
+  locales
+    .filter((locale) => locale !== defaultLocale)
+    .forEach((locale) => {
+      allCalculatorCategories.forEach((category) => {
+        category.calculators.forEach((calc) => {
+          paths.push({
+            locale,
+            category: category.id,
+            calculator: calc.slug,
+          });
         });
       });
     });
-  });
 
   return paths;
 }

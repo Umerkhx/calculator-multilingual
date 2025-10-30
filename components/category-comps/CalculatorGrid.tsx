@@ -20,7 +20,7 @@ export function CalculatorGrid({ calculators, locale, category }: CalculatorGrid
       {calculators.map((calc) => (
         <Link
           key={calc.slug}
-          href={`/${locale}/${category}/${calc.slug}`}
+         href={locale === "en" ? `/${category}/${calc.slug}` : `/${locale}/${category}/${calc.slug}`}
           className="group transition-transform hover:-translate-y-1"
         >
           <Card className="h-full border border-zinc-200 shadow-sm hover:shadow-md transition-shadow duration-300">

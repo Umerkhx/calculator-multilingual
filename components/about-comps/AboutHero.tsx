@@ -62,7 +62,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({ locale }) => {
           </Link>
 
           <Link
-            href={`/${locale}/contact`}
+            href={locale === "en" ? "/contact" : `/${locale}/contact`}
             className="rounded-2xl border border-border text-foreground font-semibold px-8 py-3 text-base hover:bg-accent hover:text-accent-foreground transition"
           >
              {t.nav.contact}

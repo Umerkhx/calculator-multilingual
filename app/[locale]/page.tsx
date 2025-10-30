@@ -13,12 +13,13 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return locales
+    .filter((locale) => locale !== defaultLocale)
+    .map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = params;
-
   return generateSEOMetadata({
     title: "Calyx - Professional Services",
     description: "Discover our professional services tailored for your business needs",
@@ -30,7 +31,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function HomePage({ params }: PageProps) {
   const { locale } = params;
-
   const organizationSchema = generateSchemaMarkup("Organization", {
     name: "Calyx",
     url: "https://calyx-mme.vercel.app/",
@@ -45,7 +45,6 @@ export default async function HomePage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-
       <Hero locale={locale} />
       <CardsSection locale={locale} />
       <AboutSection locale={locale} />

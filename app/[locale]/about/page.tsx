@@ -8,18 +8,19 @@ import FadeIn from "@/components/FadeIn";
 import AboutValues from "@/components/about-comps/AboutValues";
 
 interface PageProps {
-  params: Promise<{ locale: Locale }>;
+  params: { locale: Locale };
 }
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({
-    locale,
-  }));
+  return locales
+    .filter((locale) => locale !== defaultLocale)
+    .map((locale) => ({
+      locale,
+    }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { locale } = await params;
-
+  const { locale } = params;
   return generateSEOMetadata({
     title: "About Calyx – Free Online Calculators",
     description: "Learn more about Calyx — the global hub for smart, accurate, and free online calculators.",
@@ -29,8 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function AboutPage({ params }: PageProps) {
-  const { locale } = await params;
-
+  const { locale } = params;
   return (
     <FadeIn>
       <AboutHero locale={locale} />

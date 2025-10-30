@@ -5,12 +5,24 @@ import { useState } from "react"
 interface SearchAndFilterProps {
   onSearch: (query: string) => void
   onFilterLetter: (letter: string) => void
+  calculatorNames: string[] // <-- Add this prop
 }
 
-export function SearchAndFilter({ onSearch, onFilterLetter }: SearchAndFilterProps) {
+export function SearchAndFilter({
+  onSearch,
+  onFilterLetter,
+  calculatorNames,
+}: SearchAndFilterProps) {
   const [activeLetter, setActiveLetter] = useState<string>("")
 
-  const letters = Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+  // ✅ Extract only first letters from available calculators
+  const availableLetters = Array.from(
+    new Set(
+      calculatorNames
+        .map((name) => name.charAt(0).toUpperCase())
+        .filter((char) => /[A-Z]/.test(char))
+    )
+  ).sort()
 
   const handleLetterClick = (letter: string) => {
     if (activeLetter === letter) {
@@ -24,6 +36,7 @@ export function SearchAndFilter({ onSearch, onFilterLetter }: SearchAndFilterPro
 
   return (
     <div className="mb-8 space-y-4">
+      {/* 🔍 Search Input */}
       <input
         type="text"
         placeholder="Search calculators..."
@@ -32,13 +45,15 @@ export function SearchAndFilter({ onSearch, onFilterLetter }: SearchAndFilterPro
       />
 
       <div className="flex flex-wrap justify-center sm:justify-start gap-1 pt-2">
-        {letters.map((letter) => (
+        {availableLetters.map((letter) => (
           <button
             key={letter}
             className={`px-2 py-1 text-sm rounded-md transition-all duration-200 
-              ${activeLetter === letter
-                ? "bg-blue-600 text-white"
-                : "text-zinc-500 hover:text-blue-600 hover:bg-zinc-100"}`}
+              ${
+                activeLetter === letter
+                  ? "bg-blue-600 text-white"
+                  : "text-zinc-500 hover:text-blue-600 hover:bg-zinc-100"
+              }`}
             onClick={() => handleLetterClick(letter)}
           >
             {letter}

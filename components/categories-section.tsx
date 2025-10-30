@@ -18,12 +18,18 @@ export default function CategoriesSection({ locale }: CalculatorsGridSectionProp
   const currentCategory = allCalculatorCategories.find(cat => cat.id === selectedCategory)
   const calculators = currentCategory?.calculators || []
 
+  const calculatorLinks = calculators.map(calc => ({
+    slug: calc.slug,
+    href: locale === "en"
+      ? `/${currentCategory?.id}/${calc.slug}`
+      : `/${locale}/${currentCategory?.id}/${calc.slug}`,
+  }))
+
   const firstNine = calculators.slice(0, 9)
 
   return (
     <section className="w-full py-12 md:py-16 lg:py-20">
       <div className="container mx-auto max-w-7xl px-4">
-        {/* Header + Select Menu */}
         <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
@@ -53,18 +59,36 @@ export default function CategoriesSection({ locale }: CalculatorsGridSectionProp
 
         {/* Calculators Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {firstNine.map(calc => (
-            <Card key={calc.slug} className="group flex flex-col justify-between overflow-hidden border border-border transition-all hover:shadow-lg hover:-translate-y-1">
-              <CardHeader>
-                <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">{getTranslation(locale, calc.titleKey)}</CardTitle>
-                <CardDescription className="text-muted-foreground">{getTranslation(locale, calc.descriptionKey)}</CardDescription>
-              </CardHeader>
+          {firstNine.map(calc => {
+            const calcHref =
+              calculatorLinks.find(link => link.slug === calc.slug)?.href || "#"
 
-              <CardContent className="mt-auto flex items-center justify-between pt-4">
-                <Link href={`/${locale}/categories/${currentCategory?.id}/${calc.slug}`}className="inline-flex items-center font-medium text-sm text-primary hover:underline">{getTranslation(locale, "feature.cta") || "Open Calculator"}<ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" /></Link>
-              </CardContent>
-            </Card>
-          ))}
+            return (
+              <Card
+                key={calc.slug}
+                className="group flex flex-col justify-between overflow-hidden border border-border transition-all hover:shadow-lg hover:-translate-y-1"
+              >
+                <CardHeader>
+                  <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                    {getTranslation(locale, calc.titleKey)}
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground">
+                    {getTranslation(locale, calc.descriptionKey)}
+                  </CardDescription>
+                </CardHeader>
+
+                <CardContent className="mt-auto flex items-center justify-between pt-4">
+                  <Link
+                    href={calcHref}
+                    className="inline-flex items-center font-medium text-sm text-primary hover:underline"
+                  >
+                    {getTranslation(locale, "feature.cta") || "Open Calculator"}
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </CardContent>
+              </Card>
+            )
+          })}
         </div>
       </div>
     </section>

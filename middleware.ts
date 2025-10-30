@@ -25,7 +25,7 @@ export function middleware(request: NextRequest) {
 
   if (pathname.startsWith("/en/") || pathname === "/en") {
     const newPathname = pathname.replace(/^\/en/, "") || "/"
-    return NextResponse.redirect(new URL(newPathname, request.url))
+    return NextResponse.rewrite(new URL(newPathname, request.url))
   }
 
   const hasLocale = locales.some(

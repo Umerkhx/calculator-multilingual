@@ -7,7 +7,7 @@ import { CalculatorSearch } from "@/components/calculator-search";
 import { allCalculatorCategories } from "@/lib/calculators";
 import { MobileSidebar } from "./MobileSidebar";
 import LanguageSelector from "./LanguageSelector";
-import { ChevronDown } from "lucide-react"; // 👈 arrow icon
+import { ChevronDown } from "lucide-react";
 
 interface HeaderProps {
   locale: Locale;
@@ -26,15 +26,26 @@ export function Header({ locale }: HeaderProps) {
           <MobileSidebar locale={locale} />
 
           <nav className="hidden md:flex items-center gap-8 relative">
-            {navKeys.map((key) => (
-              <Link
-                key={key}
-                href={`/${locale}${key === "home" ? "" : `/${key}`}`}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t[key]}
-              </Link>
-            ))}
+            {navKeys.map((key) => {
+              const href =
+                locale === "en"
+                  ? key === "home"
+                    ? "/"
+                    : `/${key}`
+                  : key === "home"
+                    ? `/${locale}`
+                    : `/${locale}/${key}`;
+
+              return (
+                <Link
+                  key={key}
+                  href={href}
+                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {t[key]}
+                </Link>
+              );
+            })}
 
             <div
               className="relative group"
@@ -52,7 +63,6 @@ export function Header({ locale }: HeaderProps) {
                 />
               </button>
 
-              {/* Invisible hover buffer */}
               <div className="absolute left-0 top-full h-2 w-full"></div>
 
               <div
@@ -63,7 +73,7 @@ export function Header({ locale }: HeaderProps) {
                 {allCalculatorCategories.map((cat) => (
                   <Link
                     key={cat.id}
-                    href={`/${locale}/${cat.id}`}
+                    href={locale === "en" ? `/${cat.id}` : `/${locale}/${cat.id}`}
                     className="block text-sm text-zinc-700 hover:text-blue-600 hover:bg-zinc-50 rounded-md px-2 py-2 transition-colors"
                   >
                     {getTranslation(locale, cat.name)}
@@ -74,14 +84,12 @@ export function Header({ locale }: HeaderProps) {
           </nav>
         </div>
 
-        {/* Center Logo */}
-        <Link href={`/${locale}`} className="absolute left-1/2 -translate-x-1/2">
+        <Link href={locale === "en" ? "/" : `/${locale}`} className="absolute left-1/2 -translate-x-1/2">
           <span className="font-bold text-foreground text-2xl sm:text-3xl lg:text-4xl uppercase">
             {t.name}
           </span>
         </Link>
 
-        {/* Right Section */}
         <div className="flex items-center gap-2 sm:gap-4">
           <CalculatorSearch locale={locale} />
           <div className="hidden md:block">

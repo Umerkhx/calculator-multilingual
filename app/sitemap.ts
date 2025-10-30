@@ -13,11 +13,10 @@ const staticPages = ["", "/about", "/contact"];
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
 
-  // Static pages with language alternates
   staticPages.forEach((page) => {
     locales.forEach((locale) => {
       const isDefault = locale === defaultLocale;
-      const pageUrl = isDefault ? `${BASE_URL}/en${page}` : `${BASE_URL}/${locale}${page}`;
+      const pageUrl = isDefault ? `${BASE_URL}${page}` : `${BASE_URL}/${locale}${page}`;
 
       urls.push({
         url: pageUrl,
@@ -28,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           languages: Object.fromEntries(
             locales.map((l) => [
               l,
-              l === defaultLocale ? `${BASE_URL}/en${page}` : `${BASE_URL}/${l}${page}`,
+              l === defaultLocale ? `${BASE_URL}${page}` : `${BASE_URL}/${l}${page}`,
             ])
           ),
         },
@@ -40,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     locales.forEach((locale) => {
       const isDefault = locale === defaultLocale;
       const categoryUrl = isDefault
-        ? `${BASE_URL}/en/${category.id}`
+        ? `${BASE_URL}/${category.id}`
         : `${BASE_URL}/${locale}/${category.id}`;
 
       urls.push({
@@ -53,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             locales.map((l) => [
               l,
               l === defaultLocale
-                ? `${BASE_URL}/en/${category.id}`
+                ? `${BASE_URL}/${category.id}`
                 : `${BASE_URL}/${l}/${category.id}`,
             ])
           ),
@@ -62,13 +61,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // Dynamic calculator pages
   allCalculatorCategories.forEach((category) => {
     category.calculators.forEach((calculator) => {
       locales.forEach((locale) => {
         const isDefault = locale === defaultLocale;
         const calcUrl = isDefault
-          ? `${BASE_URL}/en/${category.id}/${calculator.slug}`
+          ? `${BASE_URL}/${category.id}/${calculator.slug}`
           : `${BASE_URL}/${locale}/${category.id}/${calculator.slug}`;
 
         urls.push({
@@ -81,7 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
               locales.map((l) => [
                 l,
                 l === defaultLocale
-                  ? `${BASE_URL}/en/${category.id}/${calculator.slug}`
+                  ? `${BASE_URL}/${category.id}/${calculator.slug}`
                   : `${BASE_URL}/${l}/${category.id}/${calculator.slug}`,
               ])
             ),

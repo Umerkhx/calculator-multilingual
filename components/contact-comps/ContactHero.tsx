@@ -55,7 +55,7 @@ export default function ContactHero({ locale }: ContactHeroProps) {
           </Link>
 
           <Link
-            href={`/${locale}/about`}
+            href={locale === "en" ? "/about" : `/${locale}/about`}
             className="rounded-2xl border border-border text-zinc-50 bg-zinc-900 font-semibold px-8 py-3 text-base hover:bg-zinc-900/95 transition"
           >
             {t.secondaryCta}

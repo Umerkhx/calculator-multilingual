@@ -6,6 +6,8 @@ interface AboutSectionProps {
     locale: Locale;
 }
 function AboutSection({ locale }: AboutSectionProps) {
+
+    const aboutHref = locale === "en" ? "/about" : `/${locale}/about`
     return (
         <section className='my-10 px-5'>
             <div >
@@ -16,7 +18,7 @@ function AboutSection({ locale }: AboutSectionProps) {
   <span className="text-6xl ml-2 text-red-500 align-middle">”</span></p>
 
                 <div className='flex justify-center items-center mt-2'>
-                    <Link href={`${locale}/about`} className="mt-4 rounded-lg bg-transparent 
+                    <Link href={`${aboutHref}`} className="mt-4 rounded-lg bg-transparent 
                     border-black border px-8 py-3 font-semibold text-zinc-950 hover:bg-zinc-900 hover:text-zinc-50  duration-200 backdrop-blur-md transition ease-in hover:scale-105">Learn More About Us</Link>
                 </div>
             </div>

@@ -1,14 +1,14 @@
 import { allCalculatorCategories } from "@/lib/calculators";
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://calyx-mme.vercel.app";
 
 const locales = [
   "en", "es", "ar", "fr", "de", "it", "pt", "ru", "zh", "ur", "hi", "tr"
 ];
 const defaultLocale = "en";
 
-const staticPages = ["", "/about"];
+const staticPages = ["", "/about", "/contact"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];

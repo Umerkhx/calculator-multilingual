@@ -1,13 +1,14 @@
 import { BookOpen, Globe, Info } from "lucide-react";
 
 export const esTranslations = {
-  hero: {
-    title: "Calyx Herramientas Inteligentes Resultados Instantáneos",
-    subtitle: "Calyx ofrece una colección completa de calculadoras en línea gratuitas para finanzas, salud, educación, matemáticas y conversiones. Cada calculadora ofrece resultados instantáneos y precisos con una experiencia limpia y sin anuncios. Ya sea estudiante, profesional o usuario cotidiano, Calyx simplifica los cálculos complejos en cualquier momento y lugar — inteligente, rápido y confiable.",
-    cta: "Explorar Categorías",
-  },
+hero: {
+  title: "Calculadora en línea gratuita para resultados inteligentes, instantáneos y precisos",
+  subtitle: "VastCalculator ofrece una completa gama de herramientas de calculadora en línea que cubren finanzas, salud, educación y conversiones matemáticas diarias. Cada calculadora proporciona resultados instantáneos, precisos y sin publicidad, ayudando a estudiantes, profesionales y usuarios cotidianos a simplificar cálculos complejos.",
+  cta: "Explorar categorías",
+},
+
   nav: {
-    name: "Calyx",
+    name: "Calculadora Vast",
     home: "Inicio",
     about: "Acerca de",
     services: "Servicios",
@@ -17,12 +18,19 @@ export const esTranslations = {
   },
   feature: {
     title: "Nuestras calculadoras",
-    description: "Explora nuestra colección de útiles calculadoras."
+    description: "Explora nuestra colección de útiles calculadoras.",
+    cta: "Abrir calculadora"
   },
   cards: {
     title: "Explora nuestras categorías de calculadoras",
     subtitle: "Descubre una variedad de categorías diseñadas para facilitar las tareas diarias. Desde salud y bienestar hasta finanzas, fechas y elementos esenciales diarios, encuentra herramientas que brindan resultados rápidos y precisos cuando los necesites. Todo está listo para usar, simple y práctico — sin complicaciones, solo respuestas instantáneas."
   },
+      aboutsection: {
+  title: "Acerca de Calculadora Vast",
+  description: "Los números impulsan cada decisión, y VastCalculator hace que esos números sean más fáciles de entender. Desde conversiones matemáticas simples hasta análisis financieros complejos, nuestras herramientas de calculadora gratuitas en línea convierten las fórmulas en resultados precisos e instantáneos. Diseñado para la accesibilidad, la fiabilidad y la simplicidad, VastCalculator garantiza que cada cálculo sea sin esfuerzo.",
+  quote: "En Calculadora Vast, diseñamos herramientas inteligentes para que cada cálculo sea accesible y sin esfuerzo.",
+  cta: "Aprende más sobre nosotros"
+},
   categories: {
     health: {
       name: "Salud",
@@ -36,7 +44,7 @@ export const esTranslations = {
   },
   categoriespage: {
     title: "Explora las categorías de calculadoras",
-    description: "Descubre todas las categorías de calculadoras gratuitas en línea — desde finanzas y salud hasta matemáticas y conversiones. Calyx te ayuda a calcular de forma más inteligente, rápida y sencilla en cada campo."
+    description: "Descubre todas las categorías de calculadoras gratuitas en línea — desde finanzas y salud hasta matemáticas y conversiones. Calculadora Vast te ayuda a calcular de forma más inteligente, rápida y sencilla en cada campo."
   },
   search: {
     placeholder: "Buscar calculadoras...",
@@ -52,67 +60,57 @@ export const esTranslations = {
     feature3Desc: "Interfaz simple con resultados instantáneos y sin pasos complicados",
   },
   //about content
-  about: {
-    tagline: "Herramientas inteligentes. Matemáticas simples. Alcance global.",
-    title: "Acerca de Calyx",
-    subtitle:
-      "Calyx es una plataforma de nueva generación que ofrece calculadoras en línea inteligentes, precisas y fáciles de usar para estudiantes, profesionales y empresas en todo el mundo.",
-    missiontitle: "Nuestra misión en Calyx",
-    missionsub:
-      "En Calyx creemos que los cálculos precisos deben ser simples, accesibles y empoderadores. Nuestra misión es proporcionar las herramientas de cálculo más fiables e intuitivas del mundo — desde finanzas hasta salud — para que los usuarios de todo el mundo tomen decisiones más inteligentes basadas en datos.",
-    missionsub2:
-      "Con precisión, innovación y confianza en nuestro núcleo, estamos moldeando un futuro digital más inteligente — un cálculo a la vez.",
-    missioncard1: "Precisión",
-    card1sub:
-      "Cada calculadora que construimos está impulsada por fórmulas verificadas, garantizando resultados consistentes y confiables en cada uso.",
-    missioncard2: "Innovación",
-    card2sub:
-      "Exploramos continuamente nuevas formas de hacer que los datos complejos sean fáciles de entender e interactuar mediante herramientas modernas y adaptativas.",
-    missioncard3: "Accesibilidad",
-    card3sub:
-      "Calyx está diseñado para todos, en todas partes — multilingüe, receptivo y creado para empoderar a los usuarios globales en todos los dispositivos.",
-    valuetitle: "Nuestros principios fundamentales",
-    valuesubtitle:
-      "En Calyx, nuestra base se construye sobre valores que definen cómo creamos, innovamos y apoyamos a nuestros usuarios todos los días.",
-    value1Title: "Claridad en cada cálculo",
-    value1Desc:
-      "Creemos que los datos nunca deben confundir — nuestras herramientas están diseñadas para simplificar ideas complejas en información clara y útil.",
-    value2Title: "Compromiso con la precisión",
-    value2Desc:
-      "Cada fórmula y resultado se verifica para garantizar la confiabilidad en todas las calculadoras que ofrecemos.",
-    value3Title: "Innovación que empodera",
-    value3Desc:
-      "Calyx evoluciona constantemente — aportando herramientas más inteligentes que hacen que los números trabajen para ti, no contra ti.",
-  },
+about: {
+  tagline: "Herramientas inteligentes. Matemáticas simples. Alcance global.",
+  title: "Acerca de Calculadoras Vast",
+  subtitle: "En Calculadoras Vast, hacemos que las matemáticas diarias sean simples, inteligentes y accesibles. Desde seguir tus objetivos de salud y estado físico hasta planificar tus finanzas o convertir unidades rápidamente, nuestras calculadoras en línea gratuitas están diseñadas para ahorrar tiempo y ofrecer precisión en la que puedes confiar. Sin descargas, sin complicaciones, solo herramientas rápidas y confiables creadas para todos.",
+  missiontitle: "Nuestra misión: hacer que los números sean sencillos",
+  missionsub: "Creemos que los cálculos nunca deberían frenarte. Ya seas un estudiante verificando tu GPA, un profesional administrando gastos o alguien siguiendo metas de acondicionamiento físico, Calculadoras Vast te brinda precisión al alcance de tu mano. Cada herramienta está construida con fórmulas verificadas y modelos probados para garantizar resultados confiables en todo momento.",
+  missioncard1: "Herramientas inteligentes para cada necesidad",
+  card1sub: "Desde calculadoras de IMC, calorías e ingesta de agua hasta herramientas de hipoteca, préstamo y divisas, nuestra amplia gama de calculadoras en línea te ayuda a manejar salud, educación y finanzas sin esfuerzo.",
+  missioncard2: "Basado en precisión y simplicidad",
+  card2sub: "Cada calculadora sigue fórmulas globalmente aceptadas, revisadas y actualizadas regularmente para mantener la precisión. La interfaz es simple y compatible con dispositivos móviles, para que usuarios de todas las edades puedan realizar cálculos rápidos sin confusión.",
+  missioncard3: "Diseñado para todos",
+  card3sub: "Nuestro objetivo es crear un espacio digital donde el aprendizaje y la resolución de problemas se unan a la comodidad. Por eso, Calculadoras Vast es completamente gratuito, accesible en todo el mundo y en constante crecimiento con nuevas herramientas solicitadas por nuestros usuarios.",
+  valuetitle: "Innovación, precisión y confianza",
+  valuesubtitle: "Detrás de cada calculadora hay una combinación de tecnología, investigación y pasión por simplificar la vida. Utilizamos algoritmos actualizados y fuentes de datos confiables para garantizar la precisión en todas las categorías: académica, fitness o financiera.",
+  value1Title: "Resultados confiables en los que puedes confiar",
+  value1Desc: "Nuestras calculadoras están diseñadas para ofrecer una precisión en la que puedes confiar. Refinamos continuamente nuestras herramientas para garantizar que cada número, porcentaje o proporción sea coherente y correcto.",
+  value2Title: "En constante evolución",
+  value2Desc: "Estamos comprometidos con la innovación. Con nuevas herramientas agregadas regularmente y las existentes mejoradas, Calculadoras Vast siempre está evolucionando para satisfacer las necesidades de los usuarios modernos.",
+  value3Title: "Empoderando decisiones más inteligentes",
+  value3Desc: "Nuestras calculadoras no solo dan resultados, te ayudan a tomar decisiones informadas, ahorrar tiempo y alcanzar tus objetivos con confianza.",
+},
+// contact
   contact: {
-    hero: {
-      title: "Ponte en contacto con Calyx",
+     hero: {
+      title: "Conéctate con Calculadora Vast",
       subtitle:
-        "Valoramos cada mensaje — ya sea una opinión, colaboración o un saludo amistoso. Conectemos y hagamos grandes cosas juntos.",
+        "¡Estamos aquí para ayudarte! Ya sea que tengas una pregunta, una sugerencia o hayas notado algo que deba mejorarse, el equipo de Calculadora Vast está a solo un mensaje de distancia. Valoramos tus comentarios porque nos ayudan a hacer nuestras herramientas más inteligentes, rápidas y precisas para todos.",
       primaryCta: "Envíanos un correo",
       secondaryCta: "Conoce más sobre nosotros",
     },
     support: {
-      title: "Explora más, aprende mejor",
+      title: "Nos encantaría saber de ti",
       subtitle:
-        "¿Necesitas recursos adicionales, orientación o herramientas útiles? Hemos reunido todo para hacer tu experiencia más fácil e inteligente.",
+        "Nuestros usuarios están en el corazón de todo lo que hacemos. Desde fitness y finanzas hasta educación y uso diario, Calculadora Vast está diseñado para simplificar la vida. Si deseas compartir una idea, informar un error o solicitar una nueva calculadora, siempre estamos escuchando.",
       details: [
         {
-          heading: "Guías útiles",
+          heading: "Soporte general",
           content:
-            "Explora nuestros artículos y explicaciones detalladas para una mejor comprensión.",
+            "Para preguntas sobre cómo funcionan nuestras calculadoras, precisión de fórmulas o guía de uso, comunícate con support@vastcalculators.com. Te daremos respuestas claras y útiles.",
           icon: BookOpen,
         },
         {
-          heading: "Base de conocimiento",
+          heading: "Comentarios y sugerencias",
           content:
-            "Encuentra información detallada y referencias sobre varios temas.",
+            "Mejoramos constantemente nuestras herramientas basándonos en los comentarios de los usuarios. Si crees que una nueva función, calculadora o categoría podría mejorar nuestro sitio, ¡cuéntanos! Tu opinión da forma al futuro de Calculadora Vast.",
           icon: Info,
         },
         {
-          heading: "Acceso global",
+          heading: "Garantía de respuesta rápida",
           content:
-            "Todos los recursos están diseñados para ser simples, multilingües y accesibles globalmente.",
+            "Respondemos a cada mensaje en menos de 24 horas. Ya sea un problema técnico o una consulta general, nuestro equipo se asegurará de atenderte rápidamente y con profesionalismo.",
           icon: Globe,
         },
       ],
@@ -665,10 +663,10 @@ export const esTranslations = {
     },
   },
   footer: {
-    subtitle: "Calyx – Simplifica las matemáticas con calculadoras en línea gratuitas",
-    gridtitle1: "Conoce Calyx",
+    subtitle: "Calculadora Vast – Simplifica las matemáticas con calculadoras en línea gratuitas",
+    gridtitle1: "Conoce Calculadora Vast",
     gridtitle2: "Nuestras Calculadoras Populares",
-    copyright: "© 2025 Calyx. Todos los derechos reservados.",
+    copyright: "© 2025 Calculadora Vast. Todos los derechos reservados.",
     privacy: "Política de privacidad",
     terms: "Términos de servicio",
   }

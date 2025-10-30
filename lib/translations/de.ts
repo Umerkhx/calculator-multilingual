@@ -1,14 +1,14 @@
 import { BookOpen, Globe, Info } from "lucide-react";
 
 export const deTranslations = {
-  hero: {
-    title: "Calyx Smart Tools – Sofortige Ergebnisse",
-    subtitle:
-      "Calyx bietet eine umfassende Sammlung kostenloser Online-Rechner für Finanzen, Gesundheit, Bildung, Mathematik und Umrechnungen. Jeder Rechner liefert sofortige und genaue Ergebnisse mit einer klaren, werbefreien Benutzererfahrung. Egal ob Student, Profi oder Alltagsnutzer – Calyx vereinfacht komplexe Berechnungen jederzeit und überall – intelligent, schnell und zuverlässig.",
-    cta: "Kategorien erkunden",
-  },
+hero: {
+  title: "Kostenloser Online-Rechner für intelligente, sofortige und präzise Ergebnisse",
+  subtitle: "VastCalculator bietet eine vollständige Suite von Online-Rechnern für Finanzen, Gesundheit, Bildung und tägliche mathematische Umrechnungen. Jeder Rechner liefert sofortige, genaue und werbefreie Ergebnisse und hilft Studenten, Fachleuten und alltäglichen Nutzern, komplexe Berechnungen zu vereinfachen.",
+  cta: "Kategorien erkunden",
+},
+
   nav: {
-    name: "Calyx",
+    name: "Vast Rechner",
     home: "Startseite",
     about: "Über uns",
     services: "Dienstleistungen",
@@ -19,16 +19,24 @@ export const deTranslations = {
   feature: {
     title: "Unsere Rechner",
     description: "Entdecken Sie unsere Sammlung nützlicher Rechner",
+    cta: "Rechner öffnen"
   },
   cards: {
     title: "Esplora le nostre categorie di calcolatori",
     subtitle: "Scopri una varietà di categorie progettate per semplificare le attività quotidiane. Dalla salute e benessere alla finanza, date ed elementi essenziali quotidiani, trova strumenti che forniscono risultati rapidi e accurati ogni volta che ne hai bisogno. Tutto pronto all'uso, semplice e pratico — senza problemi, solo risposte immediate."
   },
+      aboutsection: {
+  title: "Über Vast Rechner",
+  description: "Zahlen bestimmen jede Entscheidung, und VastCalculator macht es einfacher, sie zu verstehen. Von einfachen mathematischen Umrechnungen bis hin zu komplexen Finanzanalysen verwandeln unsere kostenlosen Online-Rechner Formeln in präzise, sofortige Ergebnisse. VastCalculator ist auf Zugänglichkeit, Zuverlässigkeit und Einfachheit ausgelegt – damit jede Berechnung mühelos wird.",
+  quote: "Bei Vast Rechner entwickeln wir intelligente Tools, um jede Berechnung mühelos und zugänglich zu machen.",
+  cta: "Erfahren Sie mehr über uns"
+},
   categories: {
     health: {
       name: "Gesundheit",
       description: "Behalte deine Gesundheit mit einfach zu bedienenden Tools im Blick. Vom BMI bis zum Fitnesstracking, schnelle und genaue Ergebnisse für tägliches Wohlbefinden und kluge Lebensentscheidungen."
     },
+
     finance: {
       name: "Finanzen",
       description: "Verwalte dein Geld intelligenter mit einfachen Tools. Von Budgetplanung bis zur Kreditplanung, schnelle und genaue Ergebnisse für bessere finanzielle Entscheidungen."
@@ -37,7 +45,7 @@ export const deTranslations = {
   },
   categoriespage: {
     title: "Entdecken Sie Rechnerkategorien",
-    description: "Entdecken Sie alle kostenlosen Online-Rechnerkategorien – von Finanzen und Gesundheit bis hin zu Mathematik und Umrechnungen. Calyx hilft Ihnen, in jedem Bereich intelligenter, schneller und einfacher zu rechnen."
+    description: "Entdecken Sie alle kostenlosen Online-Rechnerkategorien – von Finanzen und Gesundheit bis hin zu Mathematik und Umrechnungen. Vast Rechner hilft Ihnen, in jedem Bereich intelligenter, schneller und einfacher zu rechnen."
   },
   search: {
     placeholder: "Rechner suchen...",
@@ -56,67 +64,59 @@ export const deTranslations = {
       "Einfache Benutzeroberfläche mit sofortigen Ergebnissen – keine komplizierten Schritte",
   },
   //about content
-  about: {
-    tagline: "Intelligente Tools. Einfache Mathematik. Globale Reichweite.",
-    title: "Über Calyx",
-    subtitle:
-      "Calyx ist eine Next-Generation-Plattform, die intelligente, präzise und benutzerfreundliche Online-Rechner für Studierende, Fachleute und Unternehmen weltweit anbietet.",
-    missiontitle: "Unsere Mission bei Calyx",
-    missionsub:
-      "Bei Calyx glauben wir, dass genaue Berechnungen einfach, zugänglich und stärkend sein sollten. Unsere Mission ist es, die zuverlässigsten und intuitivsten Rechenwerkzeuge der Welt bereitzustellen — von Finanzen bis Gesundheit — damit Benutzer überall intelligentere, datenbasierte Entscheidungen treffen können.",
-    missionsub2:
-      "Mit Präzision, Innovation und Vertrauen im Kern gestalten wir eine intelligentere digitale Zukunft — eine Berechnung nach der anderen.",
-    missioncard1: "Genauigkeit",
-    card1sub:
-      "Jeder unserer Rechner basiert auf überprüften Formeln und liefert konsistente und vertrauenswürdige Ergebnisse bei jeder Nutzung.",
-    missioncard2: "Innovation",
-    card2sub:
-      "Wir erforschen ständig neue Wege, um komplexe Daten durch moderne, adaptive Tools verständlicher und interaktiver zu machen.",
-    missioncard3: "Zugänglichkeit",
-    card3sub:
-      "Calyx ist für alle, überall konzipiert — mehrsprachig, reaktionsfähig und darauf ausgelegt, globale Nutzer auf allen Geräten zu stärken.",
-    valuetitle: "Unsere Grundprinzipien",
-    valuesubtitle:
-      "Bei Calyx basiert unser Fundament auf Werten, die definieren, wie wir jeden Tag erschaffen, innovieren und unsere Nutzer unterstützen.",
-    value1Title: "Klarheit in jeder Berechnung",
-    value1Desc:
-      "Wir glauben, dass Daten nicht verwirren sollten — unsere Tools vereinfachen komplexe Ideen zu klaren, nützlichen Erkenntnissen.",
-    value2Title: "Engagement für Präzision",
-    value2Desc:
-      "Jede Formel und jedes Ergebnis wird überprüft, um Zuverlässigkeit in all unseren Rechnern zu gewährleisten.",
-    value3Title: "Innovation, die stärkt",
-    value3Desc:
-      "Calyx entwickelt sich ständig weiter — bringt intelligentere Tools, die Zahlen für dich arbeiten lassen, nicht gegen dich.",
-  },
+about: {
+  tagline: "Intelligente Tools. Einfache Mathematik. Weltweite Reichweite.",
+  title: "Über Vast-Rechner",
+  subtitle: "Bei Vast-Rechner machen wir alltägliche Mathematik einfach, smart und zugänglich. Vom Verfolgen deiner Gesundheits- und Fitnessziele bis hin zur Finanzplanung oder schnellen Umrechnungen – unsere kostenlosen Online-Rechner sind darauf ausgelegt, Zeit zu sparen und zuverlässige Genauigkeit zu liefern. Keine Downloads, keine Komplexität – nur schnelle, verlässliche Tools für alle.",
+  missiontitle: "Unsere Mission: Zahlen mühelos machen",
+  missionsub: "Wir glauben, dass Berechnungen dich niemals aufhalten sollten. Ob du ein Student bist, der seinen Notendurchschnitt überprüft, ein Profi, der Ausgaben verwaltet, oder jemand, der Fitnessziele verfolgt – Vast-Rechner bringt Präzision an deine Fingerspitzen. Jedes Tool basiert auf geprüften Formeln und getesteten Modellen, um jederzeit verlässliche Ergebnisse zu gewährleisten.",
+  missioncard1: "Intelligente Tools für jeden Bedarf",
+  card1sub: "Von BMI-, Kalorien- und Wasseraufnahme-Rechnern bis hin zu Hypotheken-, Kredit- und Währungsrechnern – unsere breite Auswahl an Online-Rechnern hilft dir, Gesundheit, Bildung und Finanzen mühelos zu bewältigen. Was auch immer dein Ziel ist, wir haben den passenden Rechner dafür.",
+  missioncard2: "Auf Präzision und Einfachheit aufgebaut",
+  card2sub: "Jeder Rechner folgt international anerkannten Formeln, die regelmäßig überprüft und aktualisiert werden, um Genauigkeit zu gewährleisten. Die Benutzeroberfläche ist einfach und mobilfreundlich, sodass Benutzer jeden Alters schnell und ohne Verwirrung rechnen können.",
+  missioncard3: "Für alle entworfen",
+  card3sub: "Unser Ziel ist es, einen digitalen Raum zu schaffen, in dem Lernen und Problemlösung auf Bequemlichkeit treffen. Deshalb ist Vast-Rechner völlig kostenlos, weltweit zugänglich und wächst ständig mit neuen Tools, die von unseren Nutzern angefordert werden.",
+  valuetitle: "Innovation, Genauigkeit und Vertrauen",
+  valuesubtitle: "Hinter jedem Rechner steckt eine Kombination aus Technologie, Forschung und der Leidenschaft, das Leben zu vereinfachen. Wir verwenden aktuelle Algorithmen und zuverlässige Datenquellen, um Genauigkeit in jeder Kategorie sicherzustellen – ob akademisch, Fitness oder Finanzen.",
+  value1Title: "Zuverlässige Ergebnisse, auf die du zählen kannst",
+  value1Desc:
+    "Unsere Rechner sind darauf ausgelegt, Präzision zu liefern, auf die du dich verlassen kannst. Wir verbessern unsere Tools kontinuierlich, um sicherzustellen, dass jede Zahl, jeder Prozentsatz oder jedes Verhältnis konsistent und korrekt bleibt.",
+  value2Title: "Ständige Weiterentwicklung",
+  value2Desc:
+    "Wir verpflichten uns zur Innovation. Mit regelmäßig hinzugefügten neuen Tools und verbesserten bestehenden entwickelt sich Vast-Rechner ständig weiter, um die Bedürfnisse moderner Nutzer zu erfüllen.",
+  value3Title: "Intelligentere Entscheidungen ermöglichen",
+  value3Desc:
+    "Unsere Rechner liefern nicht nur Ergebnisse, sondern helfen dir auch, fundierte Entscheidungen zu treffen, Zeit zu sparen und deine Ziele mit Zuversicht zu erreichen.",
+},
   contact: {
-    hero: {
-      title: "Kontaktieren Sie Calyx",
+   hero: {
+      title: "Kontaktieren Sie Vast Rechner",
       subtitle:
-        "Wir schätzen jede Nachricht — ob Feedback, Zusammenarbeit oder einfach nur ein freundliches Hallo. Lassen Sie uns verbinden und gemeinsam Großes schaffen.",
+        "Wir sind hier, um zu helfen! Egal, ob Sie eine Frage, einen Vorschlag haben oder etwas bemerkt haben, das verbessert werden muss – das Team von Vast Rechner ist nur eine Nachricht entfernt. Ihr Feedback hilft uns, unsere Tools intelligenter, schneller und genauer zu machen.",
       primaryCta: "E-Mail senden",
-      secondaryCta: "Mehr über uns erfahren",
+      secondaryCta: "Erfahren Sie mehr über uns",
     },
     support: {
-      title: "Mehr entdecken, besser lernen",
+      title: "Wir würden gerne von Ihnen hören",
       subtitle:
-        "Benötigen Sie zusätzliche Ressourcen, Anleitungen oder hilfreiche Tools? Wir haben alles gesammelt, um Ihre Erfahrung einfacher und intelligenter zu machen.",
+        "Unsere Nutzer stehen im Mittelpunkt von allem, was wir tun. Von Fitness und Finanzen bis Bildung und Alltag – Vast Rechner wurde entwickelt, um das Leben einfacher zu machen. Wenn Sie eine Idee teilen, einen Fehler melden oder einen neuen Rechner vorschlagen möchten, hören wir Ihnen zu.",
       details: [
         {
-          heading: "Hilfreiche Leitfäden",
+          heading: "Allgemeiner Support",
           content:
-            "Lesen Sie unsere detaillierten Artikel und Erklärungen für ein besseres Verständnis.",
+            "Bei Fragen zur Funktionsweise unserer Rechner, zur Genauigkeit der Formeln oder zur Nutzung wenden Sie sich jederzeit an support@vastcalculators.com. Wir geben Ihnen klare und hilfreiche Antworten.",
           icon: BookOpen,
         },
         {
-          heading: "Wissensdatenbank",
+          heading: "Feedback & Vorschläge",
           content:
-            "Finden Sie kuratierte Einblicke und detaillierte Referenzen zu verschiedenen Themen.",
+            "Wir verbessern unsere Tools ständig basierend auf Benutzerfeedback. Wenn Sie denken, dass eine neue Funktion, ein Rechner oder eine Kategorie unsere Seite verbessern könnte, sagen Sie es uns! Ihr Input gestaltet die Zukunft von Vast Rechner.",
           icon: Info,
         },
         {
-          heading: "Globaler Zugang",
+          heading: "Schnelle Antwortgarantie",
           content:
-            "Alle Ressourcen sind einfach, mehrsprachig und weltweit zugänglich.",
+            "Wir beantworten jede Nachricht innerhalb von 24 Stunden. Egal, ob technisches Problem oder allgemeine Anfrage – unser engagiertes Team kümmert sich schnell und professionell darum.",
           icon: Globe,
         },
       ],
@@ -407,10 +407,10 @@ export const deTranslations = {
     },
   },
 footer: {
-  subtitle: "Calyx – Vereinfachen Sie Mathematik mit kostenlosen Online-Rechnern",
-  gridtitle1: "Lernen Sie Calyx kennen",
+  subtitle: "Vast Rechner – Vereinfachen Sie Mathematik mit kostenlosen Online-Rechnern",
+  gridtitle1: "Lernen Sie Vast Rechner kennen",
   gridtitle2: "Unsere beliebten Rechner",
-  copyright: "© 2025 Calyx. Alle Rechte vorbehalten.",
+  copyright: "© 2025 Vast Rechner. Alle Rechte vorbehalten.",
   privacy: "Datenschutz-Bestimmungen",
   terms: "Nutzungsbedingungen",
 }

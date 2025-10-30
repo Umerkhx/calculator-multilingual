@@ -18,9 +18,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = params;
   return generateSEOMetadata({
-    title: "Contact Calyx – We're Here to Help",
+    title: "Contact Vast Calculators | Get Support or Share Feedback",
     description:
-      "Have a question, suggestion, or partnership idea? Get in touch with Calyx — we're always happy to hear from you.",
+      "Need help or have a suggestion? Contact Vast Calculators for support, bug reports, or feature requests. Our team responds within 24 hours to keep your experience smooth and accurate.",
     locale,
     pathname: "/contact",
   });

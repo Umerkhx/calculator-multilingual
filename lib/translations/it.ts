@@ -1,14 +1,14 @@
 import { BookOpen, Globe, Info } from "lucide-react";
 
 export const itTranslations = {
-  hero: {
-    title: "Calyx Strumenti Intelligenti Risultati Immediati",
-    subtitle:
-      "Calyx offre una collezione completa di calcolatori online gratuiti per finanza, salute, istruzione, matematica e conversioni. Ogni calcolatore fornisce risultati istantanei e accurati con un'esperienza pulita e senza pubblicità. Che tu sia uno studente, un professionista o un utente quotidiano, Calyx semplifica i calcoli complessi ovunque e in qualsiasi momento — intelligente, veloce e affidabile.",
-    cta: "Esplora le categorie",
-  },
+hero: {
+  title: "Calcolatrice online gratuita per risultati intelligenti, immediati e accurati",
+  subtitle: "VastCalculator offre una suite completa di strumenti di calcolo online che coprono finanza, salute, istruzione e conversioni matematiche quotidiane. Ogni calcolatrice fornisce risultati istantanei, precisi e senza pubblicità, aiutando studenti, professionisti e utenti quotidiani a semplificare calcoli complessi.",
+  cta: "Esplora categorie",
+},
+
 nav: {
-    name: "Calyx",
+    name: "Calcolatori Vast",
     home: "Home",
     about: "Chi siamo",
     services: "Servizi",
@@ -19,16 +19,24 @@ nav: {
   feature: {
     title: "I nostri calcolatori",
     description: "Esplora la nostra raccolta di calcolatori utili",
+    cta: "Apri calcolatrice"
   },
   cards: {
     title: "Esplora le nostre categorie di calcolatori",
     subtitle: "Scopri una varietà di categorie progettate per semplificare le attività quotidiane. Dalla salute e benessere alla finanza, date ed elementi essenziali quotidiani, trova strumenti che forniscono risultati rapidi e accurati ogni volta che ne hai bisogno. Tutto pronto all'uso, semplice e pratico — senza problemi, solo risposte immediate."
   },
+      aboutsection: {
+  title: "Informazioni su Calcolatori Vast",
+  description: "I numeri guidano ogni decisione e VastCalculator rende quei numeri più facili da comprendere. Dalle semplici conversioni matematiche alle complesse analisi finanziarie, i nostri strumenti di calcolo online gratuiti trasformano le formule in risultati precisi e immediati. Progettato per l'accessibilità, l'affidabilità e la semplicità, VastCalculator rende ogni calcolo senza sforzo.",
+  quote: "In Calcolatori Vast progettiamo strumenti intelligenti per rendere ogni calcolo accessibile e senza sforzo.",
+  cta: "Scopri di più su di noi"
+},
   categories: {
     health: {
       name: "Salute",
       description: "Mantieniti in salute con strumenti facili da usare. Dal BMI al monitoraggio del fitness, ottieni risultati rapidi e accurati per il benessere quotidiano e scelte di vita intelligenti."
     },
+
     finance: {
       name: "Finanza",
       description: "Gestisci i tuoi soldi in modo più intelligente con strumenti semplici. Dal budgeting alla pianificazione dei prestiti, ottieni risultati rapidi e accurati per decisioni finanziarie migliori."
@@ -37,7 +45,7 @@ nav: {
   },
   categoriespage: {
     title: "Esplora le categorie di calcolatrici",
-    description: "Scopri tutte le categorie di calcolatrici online gratuite — dalla finanza e salute alla matematica e alle conversioni. Calyx ti aiuta a calcolare in modo più intelligente, veloce e semplice in ogni campo."
+    description: "Scopri tutte le categorie di calcolatrici online gratuite — dalla finanza e salute alla matematica e alle conversioni. Calcolatori Vast ti aiuta a calcolare in modo più intelligente, veloce e semplice in ogni campo."
   },
   search: {
     placeholder: "Cerca calcolatori...",
@@ -56,67 +64,57 @@ nav: {
       "Interfaccia semplice con risultati immediati e senza passaggi complicati",
   },
   // about content
-  about: {
-    tagline: "Strumenti intelligenti. Matematica semplice. Portata globale.",
-    title: "Informazioni su Calyx",
-    subtitle:
-      "Calyx è una piattaforma di nuova generazione che offre calcolatrici online intelligenti, precise e facili da usare per studenti, professionisti e aziende in tutto il mondo.",
-    missiontitle: "La nostra missione in Calyx",
-    missionsub:
-      "In Calyx crediamo che i calcoli accurati debbano essere semplici, accessibili e potenzianti. La nostra missione è fornire gli strumenti di calcolo più affidabili e intuitivi al mondo — dalla finanza alla salute — affinché gli utenti possano prendere decisioni più intelligenti basate sui dati.",
-    missionsub2:
-      "Con precisione, innovazione e fiducia come valori fondamentali, stiamo plasmando un futuro digitale più intelligente — un calcolo alla volta.",
-    missioncard1: "Precisione",
-    card1sub:
-      "Ogni calcolatrice che sviluppiamo si basa su formule verificate, garantendo risultati coerenti e affidabili in ogni utilizzo.",
-    missioncard2: "Innovazione",
-    card2sub:
-      "Esploriamo continuamente nuovi modi per rendere i dati complessi più facili da comprendere e utilizzare attraverso strumenti moderni e adattivi.",
-    missioncard3: "Accessibilità",
-    card3sub:
-      "Calyx è progettato per tutti, ovunque — multilingue, reattivo e costruito per potenziare gli utenti globali su qualsiasi dispositivo.",
-    valuetitle: "I Nostri Principi Fondamentali",
-    valuesubtitle:
-      "In Calyx, la nostra base si fonda su valori che definiscono come creiamo, innoviamo e supportiamo i nostri utenti ogni giorno.",
-    value1Title: "Chiarezza in ogni calcolo",
-    value1Desc:
-      "Crediamo che i dati non debbano mai confondere — i nostri strumenti semplificano idee complesse in informazioni chiare e utilizzabili.",
-    value2Title: "Impegno per la Precisione",
-    value2Desc:
-      "Ogni formula e risultato è verificato per garantire affidabilità in tutte le nostre calcolatrici.",
-    value3Title: "Innovazione che dà potere",
-    value3Desc:
-      "Calyx evolve costantemente — offrendo strumenti più intelligenti che fanno lavorare i numeri per te, non contro di te.",
-  },
+about: {
+  tagline: "Strumenti intelligenti. Matematica semplice. Portata globale.",
+  title: "Informazioni su Calcolatori Vast",
+  subtitle: "In Calcolatori Vast rendiamo la matematica quotidiana semplice, intelligente e accessibile. Dalla salute alle finanze fino alle conversioni rapide, le nostre calcolatrici online gratuite sono progettate per risparmiare tempo e fornire risultati accurati e affidabili.",
+  missiontitle: "La nostra missione: rendere i numeri facili",
+  missionsub: "Crediamo che i calcoli non debbano mai rallentarti. Che tu sia uno studente, un professionista o una persona attenta alla forma fisica, Calcolatori Vast porta la precisione a portata di mano. Ogni strumento è costruito su formule verificate e modelli testati per garantire risultati affidabili ogni volta.",
+  missioncard1: "Strumenti intelligenti per ogni esigenza",
+  card1sub: "Dalle calcolatrici per BMI, calorie e idratazione agli strumenti per mutui, prestiti e valute — la nostra vasta gamma di calcolatrici online ti aiuta a gestire salute, istruzione e finanza senza sforzo.",
+  missioncard2: "Basato su precisione e semplicità",
+  card2sub: "Ogni calcolatrice segue formule riconosciute a livello globale, riviste e aggiornate regolarmente. L’interfaccia è semplice e adatta ai dispositivi mobili, così chiunque può calcolare facilmente.",
+  missioncard3: "Progettato per tutti",
+  card3sub: "Il nostro obiettivo è creare uno spazio digitale dove apprendimento e praticità si incontrano. Calcolatori Vast è completamente gratuito, accessibile ovunque e in continua crescita con nuovi strumenti richiesti dagli utenti.",
+  valuetitle: "Innovazione, precisione e fiducia",
+  valuesubtitle: "Dietro ogni calcolatrice c’è una combinazione di tecnologia, ricerca e passione per semplificare la vita. Utilizziamo algoritmi aggiornati e fonti di dati affidabili per garantire accuratezza in ogni categoria.",
+  value1Title: "Risultati affidabili su cui contare",
+  value1Desc: "Le nostre calcolatrici offrono precisione costante e affidabile. Aggiorniamo continuamente i nostri strumenti per garantire risultati coerenti e corretti.",
+  value2Title: "In continua evoluzione",
+  value2Desc: "Ci impegniamo costantemente nell’innovazione. Aggiungiamo nuovi strumenti e miglioriamo quelli esistenti per soddisfare le esigenze degli utenti moderni.",
+  value3Title: "Favorire decisioni più intelligenti",
+  value3Desc: "Le nostre calcolatrici non forniscono solo risultati, ma aiutano a prendere decisioni consapevoli e a raggiungere i propri obiettivi con fiducia.",
+},
+// Contact Content
   contact: {
-    hero: {
-      title: "Contatta Calyx",
+       hero: {
+      title: "Connettiti con Calcolatori Vast",
       subtitle:
-        "Apprezziamo ogni messaggio — che sia un feedback, una collaborazione o un semplice saluto. Connettiamoci e creiamo qualcosa di straordinario insieme.",
-      primaryCta: "Inviaci un'email",
+        "Siamo qui per aiutarti! Che tu abbia una domanda, un suggerimento o abbia notato qualcosa da migliorare, il team di Calcolatori Vast è a un messaggio di distanza. Apprezziamo i tuoi feedback: ci aiutano a rendere i nostri strumenti più intelligenti, veloci e precisi per tutti.",
+      primaryCta: "Scrivici un'email",
       secondaryCta: "Scopri di più su di noi",
     },
     support: {
-      title: "Esplora di più, impara meglio",
+      title: "Ci piacerebbe sentirti",
       subtitle:
-        "Hai bisogno di risorse extra, guida o strumenti utili? Abbiamo raccolto tutto per rendere la tua esperienza più fluida e intelligente.",
+        "I nostri utenti sono al centro di tutto ciò che facciamo. Dal fitness e finanza all’istruzione e all’uso quotidiano, Calcolatori Vast è progettato per semplificare la vita. Se vuoi condividere un’idea, segnalare un bug o richiedere una nuova calcolatrice, siamo qui per ascoltarti.",
       details: [
         {
-          heading: "Guide utili",
+          heading: "Supporto generale",
           content:
-            "Consulta i nostri articoli approfonditi e spiegazioni per una migliore comprensione.",
+            "Per domande sul funzionamento delle nostre calcolatrici, accuratezza delle formule o guida all’uso, contatta il nostro team a support@vastcalculators.com. Ti daremo risposte chiare e utili.",
           icon: BookOpen,
         },
         {
-          heading: "Base di conoscenza",
+          heading: "Feedback e suggerimenti",
           content:
-            "Trova informazioni dettagliate e riferimenti su vari argomenti.",
+            "Miglioriamo costantemente i nostri strumenti in base alle opinioni degli utenti. Se pensi che una nuova funzione o categoria possa migliorare il nostro sito, faccelo sapere! Il tuo contributo plasma il futuro di Calcolatori Vast.",
           icon: Info,
         },
         {
-          heading: "Accesso globale",
+          heading: "Garanzia di risposta rapida",
           content:
-            "Tutte le risorse sono semplici, multilingue e accessibili in tutto il mondo.",
+            "Rispondiamo a ogni messaggio entro 24 ore. Che si tratti di un problema tecnico o di una semplice domanda, il nostro team gestirà la tua richiesta in modo rapido e professionale.",
           icon: Globe,
         },
       ],
@@ -404,10 +402,10 @@ nav: {
     },
   },
 footer: {
-  subtitle: "Calyx – Semplifica la matematica con calcolatrici online gratuite",
-  gridtitle1: "Incontra Calyx",
+  subtitle: "Calcolatori Vast – Semplifica la matematica con calcolatrici online gratuite",
+  gridtitle1: "Incontra Calcolatori Vast",
   gridtitle2: "Le Nostre Calcolatrici Popolari",
-  copyright: "© 2025 Calyx. Tutti i diritti riservati.",
+  copyright: "© 2025 Calcolatori Vast. Tutti i diritti riservati.",
   privacy: "Politica sulla Privacy",
   terms: "Termini di Servizio",
 }

@@ -85,7 +85,7 @@ export function Header({ locale }: HeaderProps) {
         </div>
 
         <Link href={locale === "en" ? "/" : `/${locale}`} className="absolute left-1/2 -translate-x-1/2">
-          <span className="font-bold text-foreground text-2xl sm:text-3xl lg:text-4xl uppercase">
+          <span className="font-bold text-foreground text-2xl sm:text-3xl  uppercase">
             {t.name}
           </span>
         </Link>

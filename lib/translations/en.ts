@@ -35,7 +35,7 @@ export const enTranslations = {
     },
     all: "All Calculators",
   },
-  aboutsection:{
+  aboutsection: {
     title: "About Vast Calculator",
     description: "Numbers drive every decision, and VastCalculator makes those numbers easier to understand. From simple math conversions to complex finance analysis, our online free calculator tools turn formulas into precise, instant results. Built for accessibility, reliability, and simplicity, VastCalculator ensures every calculation feels effortless.",
     quote: "At Vast Calculator, we’re designing intelligent tools to make every calculation effortless and accessible.",
@@ -118,6 +118,7 @@ export const enTranslations = {
       ],
     },
   },
+
   // Health Calculators
   health: {
     bodyFat: {
@@ -126,61 +127,132 @@ export const enTranslations = {
       waist: "Waist (cm)",
       neck: "Neck (cm)",
       height: "Height (cm)",
+      hip: "Hip (cm)",
       gender: "Gender",
       male: "Male",
       female: "Female",
       result: "Body Fat Percentage",
-      about: "About Body Fat",
-      aboutText: "Body fat percentage shows how much of your body is fat tissue. It's a better indicator of fitness than BMI.",
-      formula: "Formula",
-      formulaText: "Uses U.S. Navy method: BF% = 495 / (1.0324 - 0.19077 * log10(waist - neck) + 0.15456 * log10(height)) - 450",
+
+      about: "About Body Fat Percentage",
+      abouttitle: "Estimate Your Body Fat Percentage Accurately",
+      aboutText: "Knowing your body fat percentage is one of the best ways to understand your overall fitness and health. The Body Fat Calculator by VastCalculator helps you measure your body fat percentage using key body metrics like weight, height, age, and gender. Unlike BMI, which only considers height and weight, this calculator provides a deeper look at your body composition, giving you a clearer picture of your muscle versus fat ratio. For a complete health comparison, compare your body fat percentage with your BMI for full analysis.",
+
+      formula: "Body Fat Percentage Formula",
+      formulatitle: "How Your Body Fat Percentage Is Calculated",
+      formulaText: "Your body fat percentage shows how much of your total body weight is made up of fat. The Body Fat Calculator by VastCalculator uses widely recognized methods to estimate this value accurately using measurements such as height, waist, neck, and hip size (for women).",
+
+      navyMethodTitle: "U.S. Navy Method",
+      navyMethodText: "The U.S. Navy formula is one of the most accurate ways to estimate body fat using circumference measurements.",
+      navyMethodMen: "For Men: The formula uses your height, neck, and waist size to calculate the difference between body size and fat mass.",
+      navyMethodWomen: "For Women: It includes height, neck, waist, and hip measurements for a more precise estimate, as women naturally have higher essential fat levels.",
+      navyMethodNote: "This method provides a good balance of accuracy and simplicity, making it ideal for everyday fitness tracking.",
+
+      bmiMethodTitle: "BMI-Based Estimation Method",
+      bmiMethodText: "If body measurements are unavailable, your body fat percentage can also be estimated using your BMI, age, and gender. This approach offers a general idea of your fat levels and is helpful when you only know your BMI score.",
+      bmiSimplifiedText: "Simplified Explanation: Higher BMI values usually indicate a higher percentage of body fat, but this method is less precise for athletes or people with higher muscle mass.",
+
+      interpretationTitle: "How to Interpret Your Result",
+      interpretationText: "Lower body fat percentages are standard in athletes or individuals with active lifestyles. Moderate percentages represent balanced fitness levels and good health. Higher percentages may indicate excess fat storage, which can increase health risks. Knowing your body fat percentage helps you track fitness progress more effectively than weight or BMI alone. It also gives you a clear baseline to plan nutrition and training goals.",
 
       faqTitle: "Body Fat Calculator FAQs",
       faq: [
-        { q: "What is a healthy body fat percentage?", a: "For men, 10–20% is generally considered healthy, while for women, 18–28% is normal depending on activity level." },
-        { q: "Is body fat percentage better than BMI?", a: "Yes. Body fat percentage directly measures fat mass, while BMI only relates weight to height without considering muscle mass." },
-        { q: "Can I use this calculator without a tape measure?", a: "Not really. Waist, neck, and height measurements are essential for an accurate estimate using the U.S. Navy formula." },
-        { q: "Does body fat percentage change quickly?", a: "Body fat levels change gradually. Consistent diet and exercise can shift it over weeks, not days." },
-        { q: "Is it accurate for athletes?", a: "It’s decently accurate but can underestimate body fat for very muscular individuals. Professional body scans are more precise." },
-        { q: "What’s the easiest way to lower body fat?", a: "A mix of strength training, cardio, and a calorie deficit diet helps reduce body fat effectively and sustainably." }
+        {
+          q: "What does a Body Fat Calculator do?",
+          a: "A Body Fat Calculator estimates the percentage of fat in your body using measurements like height, weight, age, and waist size."
+        },
+        {
+          q: "How is body fat percentage calculated?",
+          a: "It's calculated using either the U.S. Navy method or a BMI-based formula that considers your body size and gender to estimate fat levels."
+        },
+        {
+          q: "What is a healthy body fat percentage?",
+          a: "For most men, a healthy range is around 10% to 20%. For women, it's typically 18% to 28%, depending on age and activity level."
+        },
+        {
+          q: "Is body fat percentage more accurate than BMI?",
+          a: "Yes. Body fat percentage provides a clearer picture of fitness since it measures fat directly, while BMI only compares weight and height."
+        },
+        {
+          q: "How often should I measure my body fat?",
+          a: "Check your body fat percentage every few weeks to track progress, especially if you're following a workout or nutrition plan."
+        },
+        {
+          q: "Can I lower my body fat without losing weight?",
+          a: "Yes. You can reduce fat while maintaining weight by increasing protein intake, building muscle, and maintaining a slight calorie deficit."
+        }
       ]
     },
 
     bmi: {
       title: "BMI Calculator",
-      desc: "Calculate your Body Mass Index",
+      desc: "Find your Body Mass Index instantly online.",
       weight: "Weight (kg)",
       height: "Height (cm)",
       result: "BMI",
-      about: "About BMI",
-      aboutText: "BMI helps you quickly estimate or calculate important values using trusted formulas. It’s built to give accurate,instant results without needing manual math. This calculator is ideal for anyone who wants quick answers — whether for personal, health, or finance",
-      formula: "BMI Formula",
-      formulaText: "The Body Mass Index (BMI) formula helps determine whether a person has a healthy body weight for their height. BMI = weight (kg) / height² (m²). If your BMI is below 18.5, you’re considered underweight; between 18.5 and 24.9 means you’re in a healthy range; 25 to 29.9 indicates overweight; and 30 or above falls in the obese category. BMI doesn’t measure body fat directly — it’s just a quick health indicator for reference.",
+
+      about: "About BMI Calculator",
+      aboutText: "Understanding your Body Mass Index (BMI) is the first step toward maintaining a balanced and healthy lifestyle. The BMI Calculator by VastCalculator lets you calculate your BMI instantly online by entering your height and weight. This tool evaluates your weight category based on global medical standards, helping you determine whether you’re underweight, healthy, overweight, or obese. For those seeking a more detailed body composition overview, you can also try our Body Fat Calculator for accurate fat percentage insights.",
+      
+
+      highlightsTitle: "Highlights",
+      highlights: [
+        {
+          point: "Supports both metric (centimeters, kilograms) and imperial (inches, pounds) units.",
+        },
+        {
+          point: "Works perfectly for men, women, and teens.",
+        },
+        {
+          point: "Free to use and compatible with all devices.",
+        },
+        {
+          point: "Fast, accurate, and simple to use for quick health checks.",
+        },
+      ],
+
+      formula1: "BMI Formula",
+      formulaText: "The BMI formula is a globally accepted method to estimate body fat levels using your height and weight. It helps you check whether your current weight falls within a healthy range. VastCalculator automatically applies the correct version — metric or imperial — based on your chosen units.",
+      formulaimage: "/bmi-image.png",
+
+      FormulaTitle1: "Metric BMI Formula",
+      Formula2: "BMI = Weight (kg) / [Height (m)]²",
+      Example1: "Example: If your weight is 70 kg and your height is 1.75 m, then BMI = 70 ÷ (1.75 × 1.75) = 22.86. This falls within the healthy weight range.",
+
+      FormulaTitle2: "Imperial BMI Formula",
+      Formula3: "BMI = 703 × Weight (lbs) / [Height (in)]²",
+      Example2: "Example: If your weight is 154 lbs and your height is 68 in, then BMI = (703 × 154) ÷ (68 × 68) = 23.4. This indicates a normal weight range.",
+
+      understandingTitle: "Understanding Your BMI Result",
+      understandingText: "Once you calculate your BMI using VastCalculator, your result falls into one of the following WHO-based categories. A BMI below 18.5 means underweight, between 18.5 and 24.9 is healthy, between 25 and 29.9 is overweight, and 30 or above is obese. These ranges help you understand your current health status and make informed lifestyle adjustments.",
+
+      whyTitle: "Why BMI Matters",
+      whyText: "BMI acts as a simple indicator of body health and helps detect early signs of health risks like diabetes, hypertension, and heart disease. Regularly checking your BMI keeps you aware of your wellness progress and supports your long-term fitness goals.",
+
       faqTitle: "BMI Calculator FAQs",
       faq: [
         {
+          q: "What does a BMI Calculator do?",
+          a: "It measures your Body Mass Index using height and weight to determine if you're underweight, healthy, overweight, or obese."
+        },
+        {
+          q: "How is BMI calculated?",
+          a: "BMI = weight ÷ (height × height). You can use either metric (kg, m) or imperial (lbs, in) units for accurate results."
+        },
+        {
           q: "What is a healthy BMI range?",
-          a: "A healthy BMI is between 18.5 and 24.9 — this range suggests a normal body weight for your height."
+          a: "A BMI between 18.5 and 24.9 is healthy. Below 18.5 is underweight, while above 25 is overweight or obese."
+        },
+        {
+          q: "Why is BMI important?",
+          a: "It helps identify potential health risks such as heart disease, diabetes, and high blood pressure."
         },
         {
           q: "Is BMI accurate for everyone?",
-          a: "Not really. BMI doesn’t differentiate between muscle and fat, so athletes or muscular people may show as overweight even if they’re fit."
+          a: "Not always. BMI may not accurately reflect body composition in athletes, children, or older adults."
         },
         {
           q: "How often should I check my BMI?",
-          a: "Checking once a month or every few weeks is enough unless you're actively tracking a fitness or weight loss goal."
-        },
-        {
-          q: "Can BMI be used for children?",
-          a: "For kids and teens, BMI is interpreted differently — it’s based on age and sex percentile charts rather than adult cutoffs."
-        },
-        {
-          q: "Does BMI indicate health risks?",
-          a: "High or low BMI values can be linked to increased risk of diseases, but it should always be used with other health indicators."
-        },
-        {
-          q: "What should I do if my BMI is high?",
-          a: "If your BMI is above 25, try adjusting diet, exercise, and lifestyle habits. Consult a healthcare professional for tailored advice."
+          a: "Check your BMI every few months or whenever your weight changes to monitor your overall health."
         }
       ]
     },
@@ -373,7 +445,7 @@ export const enTranslations = {
     },
 
   },
-    // Finance Calculators
+  // Finance Calculators
   finance: {
     loan: {
       title: "Loan Calculator",
@@ -597,7 +669,7 @@ export const enTranslations = {
 
   },
   footer: {
-  subtitle: "Vast Calculator – Simplify Math with Free Online Calculators",
+    subtitle: "Vast Calculator – Simplify Math with Free Online Calculators",
     gridtitle1: "Meet Vast Calculator",
     gridtitle2: "Our Popular Calculators",
     copyright: "© 2025 Vast Calculator. All rights reserved.",

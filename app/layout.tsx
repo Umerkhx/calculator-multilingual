@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://calyx-mme.vercel.app"),
   title: {
     default: "Calyx | Multilingual Calculator Platform",
-    template: "%s | Calyx",
+    template: "%s ",
   },
   description:
     "Calyx is a professional multilingual calculator platform offering scientific, financial, and conversion tools for global users.",

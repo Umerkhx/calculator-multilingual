@@ -14,7 +14,7 @@ const allFormulas = { ...healthFormulas, ...financeFormulas }
 interface CalculatorClientProps {
   calc: any
   locale: Locale
-  formulaId: string
+  formulaId: any
 }
 
 export default function CalculatorClient({ calc, locale, formulaId }: CalculatorClientProps) {

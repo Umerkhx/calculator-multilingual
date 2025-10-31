@@ -2,12 +2,16 @@ import type { Metadata } from "next"
 import type { Locale } from "./i18n"
 
 interface SEOProps {
-  title: string
-  description: string
-  locale: Locale
-  pathname: string
-  ogImage?: string
-  ogType?: string
+  title: string;
+  description: string;
+  locale: string;
+  pathname: string;
+  ogType?: string;
+  ogImage?: string;
+  alternates?: {
+    canonical: string;
+    languages: Record<string, string>;
+  };
 }
 
 export function generateSEOMetadata({
@@ -18,7 +22,7 @@ export function generateSEOMetadata({
   ogImage = "/og-image.jpg",
   ogType = "website",
 }: SEOProps): Metadata {
-  const baseUrl = "https://calyx-mme.vercel.app/"
+  const baseUrl = "https://calyx-mme.vercel.app"
   const url = `${baseUrl}/${locale}${pathname}`
   const canonicalUrl = `${baseUrl}${pathname}`
 

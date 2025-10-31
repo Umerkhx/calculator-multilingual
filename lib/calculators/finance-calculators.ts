@@ -3,6 +3,8 @@ import type { Calculator } from "./types"
 export const financeCalculators: Calculator[] = [
   {
     slug: "loan-calculator",
+    metaTitleKey: "finance.loan.metaTitle",
+    metaDescriptionKey: "finance.loan.metaDescription",
     titleKey: "finance.loan.title",
     category: "Finance",
     descriptionKey: "finance.loan.desc",
@@ -28,6 +30,8 @@ export const financeCalculators: Calculator[] = [
   },
   {
     slug: "compound-interest-calculator",
+    metaTitleKey: "finance.compound.metaTitle",
+    metaDescriptionKey: "finance.compound.metaDescription",
     titleKey: "finance.compound.title",
     category: "Finance",
     descriptionKey: "finance.compound.desc",
@@ -54,6 +58,8 @@ export const financeCalculators: Calculator[] = [
   },
   {
     slug: "savings-calculator",
+    metaTitleKey: "finance.savings.metaTitle",
+    metaDescriptionKey: "finance.savings.metaDescription",
     titleKey: "finance.savings.title",
     category: "Finance",
     descriptionKey: "finance.savings.desc",
@@ -80,6 +86,8 @@ export const financeCalculators: Calculator[] = [
   },
   {
     slug: "mortgage-calculator",
+    metaTitleKey: "finance.mortgage.metaTitle",
+    metaDescriptionKey: "finance.mortgage.metaDescription",
     titleKey: "finance.mortgage.title",
     category: "Finance",
     descriptionKey: "finance.mortgage.desc",
@@ -106,6 +114,8 @@ export const financeCalculators: Calculator[] = [
   },
   {
     slug: "roi-calculator",
+    metaTitleKey: "finance.roi.metaTitle",
+    metaDescriptionKey: "finance.roi.metaDescription",
     titleKey: "finance.roi.title",
     category: "Finance",
     descriptionKey: "finance.roi.desc",
@@ -130,6 +140,8 @@ export const financeCalculators: Calculator[] = [
   },
   {
     slug: "breakeven-calculator",
+    metaTitleKey: "finance.breakeven.metaTitle",
+    metaDescriptionKey: "finance.breakeven.metaDescription",
     titleKey: "finance.breakeven.title",
     category: "Finance",
     descriptionKey: "finance.breakeven.desc",
@@ -155,6 +167,8 @@ export const financeCalculators: Calculator[] = [
   },
   {
     slug: "discount-calculator",
+    metaTitleKey: "finance.discount.metaTitle",
+    metaDescriptionKey: "finance.discount.metaDescription",
     titleKey: "finance.discount.title",
     category: "Finance",
     descriptionKey: "finance.discount.desc",
@@ -179,6 +193,8 @@ export const financeCalculators: Calculator[] = [
   },
   {
     slug: "tip-calculator",
+    metaTitleKey: "finance.tip.metaTitle",
+    metaDescriptionKey: "finance.tip.metaDescription",
     titleKey: "finance.tip.title",
     category: "Finance",
     descriptionKey: "finance.tip.desc",
@@ -204,6 +220,8 @@ export const financeCalculators: Calculator[] = [
   },
   {
     slug: "inflation-calculator",
+    metaTitleKey: "finance.inflation.metaTitle",
+    metaDescriptionKey: "finance.inflation.metaDescription",
     titleKey: "finance.inflation.title",
     category: "Finance",
     descriptionKey: "finance.inflation.desc",
@@ -229,6 +247,8 @@ export const financeCalculators: Calculator[] = [
   },
   {
     slug: "currency-converter",
+    metaTitleKey: "finance.currency.metaTitle",
+    metaDescriptionKey: "finance.currency.metaDescription",
     titleKey: "finance.currency.title",
     category: "Finance",
     descriptionKey: "finance.currency.desc",

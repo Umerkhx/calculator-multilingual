@@ -3,30 +3,68 @@ import type { Calculator } from "./types"
 export const healthCalculators: Calculator[] = [
   {
     slug: "body-fat-calculator",
-    metaTitleKey: "health.bodyFat.metaTitle",
-    metaDescriptionKey: "health.bodyFat.metaDescription",
+    metaTitleKey: "health.bodyFat.title",
+    metaDescriptionKey: "health.bodyFat.desc",
     titleKey: "health.bodyFat.title",
     category: "Health",
     descriptionKey: "health.bodyFat.desc",
+    formulaId: "body-fat",
+
     inputs: [
-      { label: "health.bodyFat.waist", name: "waist", type: "number", unit: "cm" },
-      { label: "health.bodyFat.neck", name: "neck", type: "number", unit: "cm" },
-      { label: "health.bodyFat.height", name: "height", type: "number", unit: "cm" },
       {
-        label: "health.bodyFat.gender",
-        name: "gender",
-        type: "select",
-        options: [
+        label: "health.bodyFat.gender", name: "gender", type: "select", options: [
           { value: "male", label: "health.bodyFat.male" },
           { value: "female", label: "health.bodyFat.female" },
+        ]
+      },
+      { label: "health.bodyFat.waist", name: "waist", type: "number", unit: "cm" },
+      { label: "health.bodyFat.neck", name: "neck", type: "number", unit: "cm" },
+      { label: "health.bodyFat.hip", name: "hip", type: "number", unit: "cm" },
+      { label: "health.bodyFat.height", name: "height", type: "number", unit: "cm" },
+    ],
+    sections: [
+      {
+        id: "about",
+        titleKey: "health.bodyFat.about",
+        titleKey2: "health.bodyFat.abouttitle",
+        contentKey: "health.bodyFat.aboutText",
+      },
+      {
+        id: "formula",
+        titleKey: "health.bodyFat.formula",
+        titleKey2: "health.bodyFat.formulatitle",
+        subsections: [
+          {
+            id: "formula-overview",
+            contentKey: "health.bodyFat.formulaText",
+          },
+          {
+            id: "navy-method",
+            titleKey: "health.bodyFat.navyMethodTitle",
+            contentKey: "health.bodyFat.navyMethodText",
+            subsections: [
+              { id: "navy-men", contentKey: "health.bodyFat.navyMethodMen" },
+              { id: "navy-women", contentKey: "health.bodyFat.navyMethodWomen" },
+              { id: "navy-note", contentKey: "health.bodyFat.navyMethodNote" },
+            ],
+          },
+          {
+            id: "bmi-method",
+            titleKey: "health.bodyFat.bmiMethodTitle",
+            contentKey: "health.bodyFat.bmiMethodText",
+            subsections: [
+              { id: "bmi-simplified", contentKey: "health.bodyFat.bmiSimplifiedText" },
+            ],
+          },
+          {
+            id: "interpretation",
+            titleKey: "health.bodyFat.interpretationTitle",
+            contentKey: "health.bodyFat.interpretationText",
+          },
         ],
       },
     ],
-    formulaId: "body-fat",
-    sections: [
-      { id: "intro", titleKey: "health.bodyFat.about", contentKey: "health.bodyFat.aboutText" },
-      { id: "formula", titleKey: "health.bodyFat.formula", contentKey: "health.bodyFat.formulaText" },
-    ],
+
     faqTitleKey: "health.bodyFat.faqTitle",
     faqs: [
       { qKey: "health.bodyFat.faq.0.q", aKey: "health.bodyFat.faq.0.a" },
@@ -37,32 +75,76 @@ export const healthCalculators: Calculator[] = [
       { qKey: "health.bodyFat.faq.5.q", aKey: "health.bodyFat.faq.5.a" },
     ],
   },
-  {
-    slug: "bmi-calculator",
-    metaTitleKey: "health.bmi.metaTitle",
-    metaDescriptionKey: "health.bmi.metaDescription",
-    titleKey: "health.bmi.title",
-    category: "Health",
-    descriptionKey: "health.bmi.desc",
-    inputs: [
-      { label: "health.bmi.weight", name: "weight", type: "number", unit: "kg" },
-      { label: "health.bmi.height", name: "height", type: "number", unit: "cm" },
-    ],
-    formulaId: "bmi",
-    sections: [
-      { id: "intro", titleKey: "health.bmi.about", contentKey: "health.bmi.aboutText" },
-      { id: "formula", titleKey: "health.bmi.formula", contentKey: "health.bmi.formulaText" },
-    ],
-    faqTitleKey: "health.bmi.faqTitle",
-    faqs: [
-      { qKey: "health.bmi.faq.0.q", aKey: "health.bmi.faq.0.a" },
-      { qKey: "health.bmi.faq.1.q", aKey: "health.bmi.faq.1.a" },
-      { qKey: "health.bmi.faq.2.q", aKey: "health.bmi.faq.2.a" },
-      { qKey: "health.bmi.faq.3.q", aKey: "health.bmi.faq.3.a" },
-      { qKey: "health.bmi.faq.4.q", aKey: "health.bmi.faq.4.a" },
-      { qKey: "health.bmi.faq.5.q", aKey: "health.bmi.faq.5.a" },
-    ],
-  },
+ {
+  slug: "bmi-calculator",
+  metaTitleKey: "health.bmi.title",
+  metaDescriptionKey: "health.bmi.desc",
+  titleKey: "health.bmi.title",
+  category: "Health",
+  descriptionKey: "health.bmi.desc",
+  formulaId: "bmi",
+
+  inputs: [
+    { label: "health.bmi.weight", name: "weight", type: "number", unit: "kg" },
+    { label: "health.bmi.height", name: "height", type: "number", unit: "cm" },
+  ],
+
+  highlightsTitleKey: "health.bmi.highlightsTitle",
+  highlights: [
+    { key: "health.bmi.highlights.0.point" },
+    { key: "health.bmi.highlights.1.point" },
+    { key: "health.bmi.highlights.2.point" },
+    { key: "health.bmi.highlights.3.point" },
+  ],
+
+  sections: [
+    {
+      id: "about",
+      titleKey: "health.bmi.about",
+      contentKey: "health.bmi.aboutText",
+    },
+    {
+      id: "formula",
+      titleKey: "health.bmi.formula1",
+      contentKey: "health.bmi.formulaText",
+      imageKey: "health.bmi.formulaimage",
+      subsections: [
+        {
+          id: "metric-formula",
+          titleKey: "health.bmi.FormulaTitle1",
+          formulaKey: "health.bmi.Formula2",
+          exampleKey: "health.bmi.Example1",
+        },
+        {
+          id: "imperial-formula",
+          titleKey: "health.bmi.FormulaTitle2",
+          formulaKey: "health.bmi.Formula3",
+          exampleKey: "health.bmi.Example2",
+        },
+        {
+          id: "understanding",
+          titleKey: "health.bmi.understandingTitle",
+          contentKey: "health.bmi.understandingText",
+        },
+        {
+          id: "why-matters",
+          titleKey: "health.bmi.whyTitle",
+          contentKey: "health.bmi.whyText",
+        },
+      ],
+    },
+  ],
+
+  faqTitleKey: "health.bmi.faqTitle",
+  faqs: [
+    { qKey: "health.bmi.faq.0.q", aKey: "health.bmi.faq.0.a" },
+    { qKey: "health.bmi.faq.1.q", aKey: "health.bmi.faq.1.a" },
+    { qKey: "health.bmi.faq.2.q", aKey: "health.bmi.faq.2.a" },
+    { qKey: "health.bmi.faq.3.q", aKey: "health.bmi.faq.3.a" },
+    { qKey: "health.bmi.faq.4.q", aKey: "health.bmi.faq.4.a" },
+    { qKey: "health.bmi.faq.5.q", aKey: "health.bmi.faq.5.a" },
+  ],
+},
   {
     slug: "calorie-calculator",
     metaTitleKey: "health.calories.metaTitle",

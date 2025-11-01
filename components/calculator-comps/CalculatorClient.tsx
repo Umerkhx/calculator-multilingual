@@ -14,10 +14,11 @@ const allFormulas = { ...healthFormulas, ...financeFormulas }
 interface CalculatorClientProps {
   calc: any
   locale: Locale
+  category: string
   formulaId: any
 }
 
-export default function CalculatorClient({ calc, locale, formulaId }: CalculatorClientProps) {
+export default function CalculatorClient({ calc, locale, formulaId, category }: CalculatorClientProps) {
   const [inputs, setInputs] = useState<Record<string, number | string>>({
     value1: "—",
     value2: "—",
@@ -68,6 +69,7 @@ export default function CalculatorClient({ calc, locale, formulaId }: Calculator
         </div>
 
         <CalculatorSections
+          category={category}
           calculator={calc}
           locale={locale}
           formulaFunc={calculatorFunc}

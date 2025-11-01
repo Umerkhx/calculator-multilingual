@@ -41,6 +41,6 @@ export default async function CalculatorPage({ params }: CalculatorPageProps) {
   }
 
   return (
-    <CalculatorClient calc={calc} locale={validLocale} formulaId={calc.formulaId} />
+    <CalculatorClient calc={calc} locale={validLocale} formulaId={calc.formulaId} category={category} />
   );
 }

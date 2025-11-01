@@ -2,19 +2,20 @@ import { Card, CardContent } from "@/components/ui/card"
 import { useRouter } from "next/navigation"
 import { getTranslation, type Locale } from "@/lib/i18n"
 import type { Calculator, CalculatorSection } from "@/lib/calculators/types"
+import Link from "next/link"
 
 interface CalculatorSectionsProps {
   calculator: Calculator
+  category: string
   locale: Locale
   formulaFunc?: Function
 }
 
-export function CalculatorSections({ calculator, locale }: CalculatorSectionsProps) {
+export function CalculatorSections({ calculator, locale, category }: CalculatorSectionsProps) {
   const router = useRouter()
   const sections = calculator.sections || []
 
   const renderList = (listKey: string) => {
-    if (!listKey) return null
     const list = getTranslation(locale, listKey)
 
     if (!Array.isArray(list)) return null
@@ -33,7 +34,6 @@ export function CalculatorSections({ calculator, locale }: CalculatorSectionsPro
 
 
   const renderPoints = (pointsKey: string) => {
-    if (!pointsKey) return null
     const points = getTranslation(locale, pointsKey)
 
     if (!Array.isArray(points)) return null
@@ -54,7 +54,6 @@ export function CalculatorSections({ calculator, locale }: CalculatorSectionsPro
 
     return (
       <div key={subsection.id} className={`space-y-4 ${paddingClass}`}>
-        {/* Title */}
         {subsection.titleKey && (
           <div className="scroll-mt-20" id={subsection.id}>
             <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-4">
@@ -63,12 +62,21 @@ export function CalculatorSections({ calculator, locale }: CalculatorSectionsPro
           </div>
         )}
 
-        {/* Intro */}
         {subsection.introKey && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.introKey)}
           </p>
         )}
+
+        {subsection.linkparacontent && subsection.linkparaKey && subsection.linkparaslug && (
+          <p className="text-gray-600 leading-relaxed">
+            {getTranslation(locale, subsection.linkparacontent)}{" "}
+            <Link href={`/${subsection.linkparaslug}`}>
+              {getTranslation(locale, subsection.linkparaKey)}
+            </Link>
+          </p>
+        )}
+
 
         {subsection.imageKey && (
           <div className="my-6 flex lg:justify-start justify-center">
@@ -83,14 +91,12 @@ export function CalculatorSections({ calculator, locale }: CalculatorSectionsPro
           </div>
         )}
 
-        {/* Content/Text */}
         {subsection.contentKey && !subsection.type && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.contentKey)}
           </p>
         )}
 
-        {/* Text (different from content) */}
         {subsection.textKey && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.textKey)}
@@ -140,7 +146,7 @@ export function CalculatorSections({ calculator, locale }: CalculatorSectionsPro
           </p>
         )}
 
-     
+
 
         {/* Nested Subsections */}
         {subsection.subsections && subsection.subsections.length > 0 && (
@@ -173,6 +179,18 @@ export function CalculatorSections({ calculator, locale }: CalculatorSectionsPro
         {section.contentKey && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, section.contentKey)}
+          </p>
+        )}
+
+        {section.linkparacontent && section.linkparaKey && section.linkparaslug && (
+          <p className="text-gray-600 leading-relaxed">
+            {getTranslation(locale, section.linkparacontent)}{" "}
+            <Link className="text-blue-500 font-medium"
+              target="_blank"
+              href={locale === "en" ? `/${category}/${section.linkparaslug}` : `/${locale}/${category}/${section.linkparaslug}`}
+            >
+              {getTranslation(locale, section.linkparaKey)}
+            </Link>
           </p>
         )}
 
@@ -228,11 +246,10 @@ export function CalculatorSections({ calculator, locale }: CalculatorSectionsPro
                           e.preventDefault()
                           scrollToSection(item.id)
                         }}
-                        className={`block text-sm py-2 px-3 rounded-md transition-colors ${
-                          isActive
-                            ? "bg-blue-100 text-blue-900 font-medium"
-                            : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                        }`}
+                        className={`block text-sm py-2 px-3 rounded-md transition-colors ${isActive
+                          ? "bg-blue-100 text-blue-900 font-medium"
+                          : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                          }`}
                       >
                         {getTranslation(locale, item.labelKey)}
                       </a>
@@ -250,7 +267,6 @@ export function CalculatorSections({ calculator, locale }: CalculatorSectionsPro
         <main className="lg:col-span-3">
           <Card className="border-0 shadow-none bg-transparent">
             <CardContent className="p-0 space-y-8">
-              {/* Render Main Sections */}
               {sections.map((section) => renderSection(section))}
 
               {/* Render FAQs */}

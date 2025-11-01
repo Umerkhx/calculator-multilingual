@@ -3,6 +3,7 @@ import { getTranslation, Locale } from "@/lib/i18n"
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 
 interface Calculator {
+  heading: string
   slug: string
   titleKey: string
   descriptionKey: string
@@ -26,7 +27,7 @@ export function CalculatorGrid({ calculators, locale, category }: CalculatorGrid
           <Card className="h-full border border-zinc-200 shadow-sm hover:shadow-md transition-shadow duration-300">
             <CardHeader>
               <CardTitle className="text-zinc-900 text-lg font-semibold group-hover:text-blue-600 transition-colors">
-                {getTranslation(locale, calc.titleKey)}
+                {getTranslation(locale, calc.heading)}
               </CardTitle>
               <CardDescription className="text-zinc-600 text-sm">
                 {getTranslation(locale, calc.descriptionKey)}

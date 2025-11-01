@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { type Locale, locales } from "@/lib/i18n"
-import { generateSEOMetadata } from "@/lib/seo"
 
 export const dynamic = "force-static";
 
@@ -23,20 +22,15 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
-  const { locale } = await params
+  await params
 
   return {
-    ...generateSEOMetadata({
-      title: "Calyx - Professional Services",
-      description:
-        "Discover our professional services tailored for your business needs",
-      locale,
-      pathname: "/",
-    }),
+    title: "Calyx - Professional Services",
+    description: "Discover our professional services tailored for your business needs",
     robots: {
-      index: false, 
-      follow: false, 
-      nocache: false, 
+      index: false,
+      follow: false,
+      nocache: false,
       googleBot: {
         index: false,
         follow: false,

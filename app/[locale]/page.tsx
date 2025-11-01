@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/hero";
 import type { Locale } from "@/lib/i18n";
-import { generateSEOMetadata, generateSchemaMarkup } from "@/lib/seo";
 import CardsSection from "@/components/CardSection";
 import FadeIn from "@/components/FadeIn";
 import AboutSection from "@/components/AboutSection";
@@ -101,35 +100,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     )
   );
 
-  return generateSEOMetadata({
+  return {
     title: selectedMeta.title,
     description: selectedMeta.description,
-    locale,
-    pathname: locale === defaultLocale ? "/" : `/${locale}`,
-    ogType: "website",
     alternates: {
       canonical,
       languages,
     },
-  });
+    openGraph: {
+      title: selectedMeta.title,
+      description: selectedMeta.description,
+      url: canonical,
+      type: "website",
+    },
+  };
 }
 
 export default async function HomePage({ params }: PageProps) {
   const { locale } = params;
-  const organizationSchema = generateSchemaMarkup("Organization", {
-    name: "Calyx",
-    url: "https://calyx-mme.vercel.app",
-    logo: "https://calyx-mme.vercel.app/logo.png",
-    description: "Professional services for global businesses",
-    sameAs: ["https://twitter.com/calyx", "https://linkedin.com/company/calyx"],
-  });
+
 
   return (
     <FadeIn>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
+
       <Hero locale={locale} />
       <CardsSection locale={locale} />
       <AboutSection locale={locale} />

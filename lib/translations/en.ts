@@ -211,6 +211,9 @@ export const enTranslations = {
 
       section1Title: "About BMI Calculator",
       section1Content: "The BMI Calculator on Vast Calculators is a quick and reliable tool that helps users calculate their Body Mass Index (BMI) within seconds. BMI is a standard measure that indicates whether your weight is in a healthy range based on your height. This online BMI calculator follows globally recognized formulas used by medical professionals and health organizations.",
+      section1ExtraText: "For understanding of your body composition beyond BMI, check your results with our",
+      section1ExtraLinkText: "Body Fat Calculator",
+
 
       section1Sub1Title: "Why You Should Use a BMI Calculator",
       section1Sub1Intro: "Your BMI score helps you understand your current health category: underweight, healthy, overweight, or obese. It's one of the simplest ways to monitor your body's overall balance between weight and height.",

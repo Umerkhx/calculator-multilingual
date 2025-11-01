@@ -116,6 +116,9 @@ export const healthCalculators: Calculator[] = [
       id: "about",
       titleKey: "health.bmi.section1Title",
       contentKey: "health.bmi.section1Content",
+      linkparacontent:"health.bmi.section1ExtraText",
+      linkparaKey:"health.bmi.section1ExtraLinkText",
+      linkparaslug: "body-fat-calculator",
       subsections: [
         {
           id: "why-use",

@@ -33,12 +33,12 @@ export function CalculatorForm({ calculator, locale, onCalculate, result }: Calc
   return (
     <Card>
       <CardHeader>
-        <CardTitle>{getTranslation(locale, calculator.titleKey)}</CardTitle>
+        <CardTitle>{getTranslation(locale, calculator.heading)}</CardTitle>
         <CardDescription>{getTranslation(locale, calculator.descriptionKey)}</CardDescription>
       </CardHeader>
       <CardContent>
         <form className="space-y-4" onSubmit={handleSubmit}>
-          {calculator.inputs.map((input) => (
+          {(calculator.inputs ?? []).map((input) => (
             <div key={input.name} className="space-y-2">
               <Label htmlFor={input.name}>
                 {getTranslation(locale, input.label)}

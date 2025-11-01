@@ -133,6 +133,15 @@ export const enTranslations = {
       female: "Female",
       result: "Body Fat Percentage",
 
+      tocTitle: "Table of Contents",
+      tocAbout: "Estimate Your Body Fat Percentage Accurately",
+      tocFormula: "How Your Body Fat Percentage Is Calculated",
+      tocnavymethod: "U.S. Navy Method",
+      tocbmimethod: "BMI-Based Estimation Method",
+      tocinterpretation: "How to Interpret Your Result",
+      tocFaqs: "Body Fat Calculator FAQs",
+
+      heading: "Body Fat Calculator",
       about: "About Body Fat Percentage",
       abouttitle: "Estimate Your Body Fat Percentage Accurately",
       aboutText: "Knowing your body fat percentage is one of the best ways to understand your overall fitness and health. The Body Fat Calculator by VastCalculator helps you measure your body fat percentage using key body metrics like weight, height, age, and gender. Unlike BMI, which only considers height and weight, this calculator provides a deeper look at your body composition, giving you a clearer picture of your muscle versus fat ratio. For a complete health comparison, compare your body fat percentage with your BMI for full analysis.",
@@ -184,78 +193,114 @@ export const enTranslations = {
     },
 
     bmi: {
-      title: "BMI Calculator",
-      desc: "Find your Body Mass Index instantly online.",
+      title: "BMI Calculator Free: Find Your Body Mass Index Instantly Online",
+      desc: "Calculate your Body Mass Index (BMI) to assess potential health risks like diabetes & heart disease. Track your fitness goals with our free online calculator.",
+      heading: "BMI Calculator",
+
       weight: "Weight (kg)",
       height: "Height (cm)",
       result: "BMI",
 
-      about: "About BMI Calculator",
-      aboutText: "Understanding your Body Mass Index (BMI) is the first step toward maintaining a balanced and healthy lifestyle. The BMI Calculator by VastCalculator lets you calculate your BMI instantly online by entering your height and weight. This tool evaluates your weight category based on global medical standards, helping you determine whether you’re underweight, healthy, overweight, or obese. For those seeking a more detailed body composition overview, you can also try our Body Fat Calculator for accurate fat percentage insights.",
-      
+      tocTitle: "Table of Contents",
+      tocwhy: "Why You Should Use a BMI Calculator",
+      tochowitworks: "How the Online BMI Calculator Works",
+      tocwhybmi: "Why BMI Matters",
+      tocUnderstanding: "Understanding the BMI Formula",
+      tocexample: "Example of BMI Calculation",
+      toccategories: "BMI Categories and Interpretation",
 
-      highlightsTitle: "Highlights",
-      highlights: [
-        {
-          point: "Supports both metric (centimeters, kilograms) and imperial (inches, pounds) units.",
-        },
-        {
-          point: "Works perfectly for men, women, and teens.",
-        },
-        {
-          point: "Free to use and compatible with all devices.",
-        },
-        {
-          point: "Fast, accurate, and simple to use for quick health checks.",
-        },
+      section1Title: "About BMI Calculator",
+      section1Content: "The BMI Calculator on Vast Calculators is a quick and reliable tool that helps users calculate their Body Mass Index (BMI) within seconds. BMI is a standard measure that indicates whether your weight is in a healthy range based on your height. This online BMI calculator follows globally recognized formulas used by medical professionals and health organizations.",
+
+      section1Sub1Title: "Why You Should Use a BMI Calculator",
+      section1Sub1Intro: "Your BMI score helps you understand your current health category: underweight, healthy, overweight, or obese. It's one of the simplest ways to monitor your body's overall balance between weight and height.",
+      section1Sub1Text: "This Body Mass Index Calculator is especially helpful for individuals who are:",
+      section1Sub1List: [
+        "Tracking their fitness journey",
+        "Starting a new diet or workout routine",
+        "Monitoring potential health risks related to weight"
+      ],
+      section1Sub1End: "BMI provides a clear picture of your current health status, helping you take informed steps toward a healthier lifestyle.",
+
+      section1Sub2Title: "How the Online BMI Calculator Works",
+      section1Sub2Intro: "Using this calculator is easy and straightforward. You just enter:",
+      section1Sub2List: [
+        "Your height (in centimetres or inches)",
+        "Your weight (in kilograms or pounds)"
+      ],
+      section1Sub2Text: "Once you click \"Calculate\", the result appears instantly, showing your BMI value and the corresponding weight status.",
+      section1Sub2End: "Unlike most online tools, Vast Calculators offers a clean interface, instant results, and accurate calculations across both metric and imperial systems.",
+
+      section1Sub3Title: "Why BMI Matters",
+      section1Sub3Intro: "Your BMI can indicate potential health risks. A high BMI may point toward issues such as heart disease, diabetes, or joint stress, while a very low BMI might reflect nutritional deficiencies. Monitoring this number regularly helps you stay within a healthy range. For a more detailed measure of your body composition, check our Body Fat Calculator.",
+      section1Sub3End: "Vast Calculators ensure that every tool is built on precise algorithms and up-to-date standards, providing accurate results and a better understanding for users focused on fitness, health, or wellness.",
+
+      section2Title: "BMI Calculator Formula",
+      section2Intro: "The BMI Calculator on Vast Calculators uses the official Body Mass Index formula recognised by global health institutions like the World Health Organization (WHO) and Centers for Disease Control and Prevention (CDC).",
+      section2Text: "The formula remains consistent across all platforms and looks like this:",
+      section2MetricFormula: "BMI = weight (kg) ÷ [height (m)]²",
+      section2ImperialIntro: "If you're using imperial units, it adjusts slightly to maintain accuracy:",
+      section2ImperialFormula: "BMI = 703 × weight (lbs) ÷ [height (in)]²",
+      section2End: "These formulas allow users to find out whether their current weight falls within a healthy range.",
+
+      section2Sub1Title: "Understanding the BMI Formula",
+      section2Sub1Image: "/BMI-calculator.jpg",
+      section2Sub1ImageAlt: "BMI Calculator - Body Mass Index Calculator",
+      section2Sub1Intro: "BMI is based on a simple mathematical principle: it compares your weight to your height squared. This ratio determines whether your weight is proportionate to your body size.",
+      section2Sub1Text: "Here's a quick explanation:",
+      section2Sub1Points: [
+        "Weight shows how much mass your body carries.",
+        "Height squared adjusts that weight to your body's frame size.",
+        "The final value gives your Body Mass Index, which helps classify your health category."
       ],
 
-      formula1: "BMI Formula",
-      formulaText: "The BMI formula is a globally accepted method to estimate body fat levels using your height and weight. It helps you check whether your current weight falls within a healthy range. VastCalculator automatically applies the correct version — metric or imperial — based on your chosen units.",
-      formulaimage: "/bmi-image.png",
+      section2Sub2Title: "Example of BMI Calculation",
+      section2Sub2Intro: "Let's go through an example for better clarity.",
+      section2Sub2MetricLabel: "Example (Metric Units):",
+      section2Sub2MetricText: "If a person weighs 68 kilograms and is 1.70 meters tall, the calculation will be:",
+      section2Sub2MetricFormula: "BMI = 68 ÷ (1.70 × 1.70)  BMI = 68 ÷ 2.89 = 23.5",
+      section2Sub2MetricResult: "The BMI value is 23.5, which falls into the Healthy Weight range.",
+      section2Sub2ImperialLabel: "Example (Imperial Units):",
+      section2Sub2ImperialText: "If a person weighs 150 pounds and is 65 inches tall:",
+      section2Sub2ImperialFormula: "BMI = 703 × 150 ÷ (65 × 65)  BMI = 105450 ÷ 4225 = 24.9",
+      section2Sub2ImperialResult: "The BMI value is 24.9, also classified as Healthy Weight.",
 
-      FormulaTitle1: "Metric BMI Formula",
-      Formula2: "BMI = Weight (kg) / [Height (m)]²",
-      Example1: "Example: If your weight is 70 kg and your height is 1.75 m, then BMI = 70 ÷ (1.75 × 1.75) = 22.86. This falls within the healthy weight range.",
+      section2Sub3Title: "BMI Categories and Interpretation",
+      section2Sub3Intro: "The calculated BMI result fits into one of the following standard categories:",
+      section2Sub3Image: "/BMI-calculator-table-image.jpg",
+      section2Sub3ImageAlt: "Bmi Calculated Results",
+      section2Sub3End1: "Each range serves as a general guideline. Individual health can also depend on factors like muscle mass, bone density, and age.",
+      section2Sub3End2: "Vast Calculators encourages users to use their BMI result as a starting point for better lifestyle choices and to consult healthcare professionals for detailed assessments.",
 
-      FormulaTitle2: "Imperial BMI Formula",
-      Formula3: "BMI = 703 × Weight (lbs) / [Height (in)]²",
-      Example2: "Example: If your weight is 154 lbs and your height is 68 in, then BMI = (703 × 154) ÷ (68 × 68) = 23.4. This indicates a normal weight range.",
-
-      understandingTitle: "Understanding Your BMI Result",
-      understandingText: "Once you calculate your BMI using VastCalculator, your result falls into one of the following WHO-based categories. A BMI below 18.5 means underweight, between 18.5 and 24.9 is healthy, between 25 and 29.9 is overweight, and 30 or above is obese. These ranges help you understand your current health status and make informed lifestyle adjustments.",
-
-      whyTitle: "Why BMI Matters",
-      whyText: "BMI acts as a simple indicator of body health and helps detect early signs of health risks like diabetes, hypertension, and heart disease. Regularly checking your BMI keeps you aware of your wellness progress and supports your long-term fitness goals.",
-
-      faqTitle: "BMI Calculator FAQs",
+      faqTitle: "Frequently Asked Questions (FAQs)",
       faq: [
         {
-          q: "What does a BMI Calculator do?",
-          a: "It measures your Body Mass Index using height and weight to determine if you're underweight, healthy, overweight, or obese."
+          q: "What does the BMI Calculator on Vast Calculators do?",
+          a: "The BMI Calculator on Vast Calculators quickly estimates your Body Mass Index using your height and weight. It shows whether you are underweight, at a healthy weight, overweight, or obese. The tool follows the official BMI formula used by global health organizations."
         },
         {
-          q: "How is BMI calculated?",
-          a: "BMI = weight ÷ (height × height). You can use either metric (kg, m) or imperial (lbs, in) units for accurate results."
+          q: "How can I use the BMI Calculator?",
+          a: "Enter your height (in centimetres or inches) and weight (in kilograms or pounds) into the fields provided, then click Calculate. The result will appear instantly, showing your BMI value and your weight category. No sign-up or additional steps are needed."
+        },
+        {
+          q: "What is the formula behind BMI?",
+          a: "The formula is simple and standard: BMI = weight (kg) ÷ [height (m)]² For users who prefer imperial units, the adjusted version is: BMI = 703 × weight (lbs) ÷ [height (in)]² Both versions deliver accurate results for quick health analysis."
         },
         {
           q: "What is a healthy BMI range?",
-          a: "A BMI between 18.5 and 24.9 is healthy. Below 18.5 is underweight, while above 25 is overweight or obese."
+          a: "A healthy BMI range typically falls between 18.5 and 24.9. Values below 18.5 are considered underweight, while values above 25 suggest overweight or obesity. This range helps users determine whether their weight is proportionate to their height."
         },
         {
-          q: "Why is BMI important?",
-          a: "It helps identify potential health risks such as heart disease, diabetes, and high blood pressure."
-        },
-        {
-          q: "Is BMI accurate for everyone?",
-          a: "Not always. BMI may not accurately reflect body composition in athletes, children, or older adults."
+          q: "Does BMI accurately reflect overall health?",
+          a: "BMI is a reliable screening tool, not a medical diagnosis. It gives a general indication of body fat based on height and weight. However, it doesn't account for factors such as muscle mass, age, or body composition. For deeper insight into body fat percentage, check out the Body Fat Calculator on Vast Calculators."
         },
         {
           q: "How often should I check my BMI?",
-          a: "Check your BMI every few months or whenever your weight changes to monitor your overall health."
+          a: "It's best to check your BMI every few months, especially if your diet, exercise, or lifestyle has changed. Regular tracking helps you monitor your progress and stay aware of shifts in your weight range over time."
         }
       ]
     },
+
     calories: {
       title: "Calorie Calculator",
       desc: "Calculate daily calorie needs",

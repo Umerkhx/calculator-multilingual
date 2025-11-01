@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { CalculatorForm } from "@/components/calculator-comps/calculator-form"
 import { CalculatorSections } from "@/components/calculator-comps/calculator-sections"
 import { healthFormulas } from "@/lib/calculators/formulas/health-formulas"
@@ -35,10 +35,21 @@ export default function CalculatorClient({ calc, locale, formulaId }: Calculator
     }
   }
 
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const pathSegments = window.location.pathname.split('/').filter(Boolean)
+      if (pathSegments.length > 1) {
+        window.location.href = '/' + pathSegments.slice(0, -1).join('/')
+      }
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
+
   return (
     <FadeIn>
-
-      
       <div className="container mx-auto px-4 py-10 space-y-10">
         <div className="grid gap-8 md:grid-cols-2">
           <CalculatorForm
@@ -56,7 +67,11 @@ export default function CalculatorClient({ calc, locale, formulaId }: Calculator
           />
         </div>
 
-        <CalculatorSections calculator={calc} locale={locale} formulaFunc={calculatorFunc} />
+        <CalculatorSections
+          calculator={calc}
+          locale={locale}
+          formulaFunc={calculatorFunc}
+        />
       </div>
     </FadeIn>
   )

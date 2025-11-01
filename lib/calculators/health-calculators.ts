@@ -22,6 +22,15 @@ export const healthCalculators: Calculator[] = [
       { label: "health.bodyFat.hip", name: "hip", type: "number", unit: "cm" },
       { label: "health.bodyFat.height", name: "height", type: "number", unit: "cm" },
     ],
+    toc: [
+      { id: "about", labelKey: "health.bodyFat.tocAbout" },
+      { id: "formula", labelKey: "health.bodyFat.tocFormula" },
+      { id: "navy-method", labelKey: "health.bodyFat.tocnavymethod" },
+      { id: "bmi-method", labelKey: "health.bodyFat.tocbmimethod" },
+      { id: "interpretation", labelKey: "health.bodyFat.tocinterpretation" },
+      { id: "faqs", labelKey: "health.bodyFat.tocFaqs" },
+    ],
+    heading:"health.bodyFat.heading",
     sections: [
       {
         id: "about",
@@ -75,7 +84,8 @@ export const healthCalculators: Calculator[] = [
       { qKey: "health.bodyFat.faq.5.q", aKey: "health.bodyFat.faq.5.a" },
     ],
   },
- {
+
+{
   slug: "bmi-calculator",
   metaTitleKey: "health.bmi.title",
   metaDescriptionKey: "health.bmi.desc",
@@ -84,52 +94,112 @@ export const healthCalculators: Calculator[] = [
   descriptionKey: "health.bmi.desc",
   formulaId: "bmi",
 
+  toc: [
+    { id: "why-use", labelKey: "health.bmi.tocwhy" },
+    { id: "how-works", labelKey: "health.bmi.tochowitworks" },
+    { id: "why-matters", labelKey: "health.bmi.tocwhybmi" },
+    { id: "understanding", labelKey: "health.bmi.tocUnderstanding" },
+    { id: "examples", labelKey: "health.bmi.tocexample" },
+    { id: "categories", labelKey: "health.bmi.toccategories" },
+
+  ],
+
   inputs: [
     { label: "health.bmi.weight", name: "weight", type: "number", unit: "kg" },
     { label: "health.bmi.height", name: "height", type: "number", unit: "cm" },
   ],
 
-  highlightsTitleKey: "health.bmi.highlightsTitle",
-  highlights: [
-    { key: "health.bmi.highlights.0.point" },
-    { key: "health.bmi.highlights.1.point" },
-    { key: "health.bmi.highlights.2.point" },
-    { key: "health.bmi.highlights.3.point" },
-  ],
+  heading: "health.bmi.heading",
 
   sections: [
     {
       id: "about",
-      titleKey: "health.bmi.about",
-      contentKey: "health.bmi.aboutText",
-    },
-    {
-      id: "formula",
-      titleKey: "health.bmi.formula1",
-      contentKey: "health.bmi.formulaText",
-      imageKey: "health.bmi.formulaimage",
+      titleKey: "health.bmi.section1Title",
+      contentKey: "health.bmi.section1Content",
       subsections: [
         {
-          id: "metric-formula",
-          titleKey: "health.bmi.FormulaTitle1",
-          formulaKey: "health.bmi.Formula2",
-          exampleKey: "health.bmi.Example1",
+          id: "why-use",
+          titleKey: "health.bmi.section1Sub1Title",
+          introKey: "health.bmi.section1Sub1Intro",
+          contentKey: "health.bmi.section1Sub1Text",
+          listKey: "health.bmi.section1Sub1List",
+          endKey: "health.bmi.section1Sub1End",
         },
         {
-          id: "imperial-formula",
-          titleKey: "health.bmi.FormulaTitle2",
-          formulaKey: "health.bmi.Formula3",
-          exampleKey: "health.bmi.Example2",
-        },
-        {
-          id: "understanding",
-          titleKey: "health.bmi.understandingTitle",
-          contentKey: "health.bmi.understandingText",
+          id: "how-works",
+          titleKey: "health.bmi.section1Sub2Title",
+          introKey: "health.bmi.section1Sub2Intro",
+          listKey: "health.bmi.section1Sub2List",
+          contentKey: "health.bmi.section1Sub2Text",
+          endKey: "health.bmi.section1Sub2End",
         },
         {
           id: "why-matters",
-          titleKey: "health.bmi.whyTitle",
-          contentKey: "health.bmi.whyText",
+          titleKey: "health.bmi.section1Sub3Title",
+          contentKey: "health.bmi.section1Sub3Intro",
+          endKey: "health.bmi.section1Sub3End",
+        },
+      ],
+    },
+    {
+      id: "formula",
+      titleKey: "health.bmi.section2Title",
+      introKey: "health.bmi.section2Intro",
+      contentKey: "health.bmi.section2Text",
+      subsections: [
+        {
+          id: "metric-formula",
+          contentKey: "health.bmi.section2MetricFormula",
+          type: "formula",
+        },
+        {
+          id: "imperial-formula",
+          introKey: "health.bmi.section2ImperialIntro",
+          contentKey: "health.bmi.section2ImperialFormula",
+          type: "formula",
+        },
+        {
+          id: "formula-end",
+          contentKey: "health.bmi.section2End",
+        },
+        {
+          id: "understanding",
+          titleKey: "health.bmi.section2Sub1Title",
+          imageKey: "health.bmi.section2Sub1Image",
+          imageAltKey: "health.bmi.section2Sub1ImageAlt",
+          contentKey: "health.bmi.section2Sub1Intro",
+          textKey: "health.bmi.section2Sub1Text",
+          pointsKey: "health.bmi.section2Sub1Points",
+        },
+        {
+          id: "examples",
+          titleKey: "health.bmi.section2Sub2Title",
+          introKey: "health.bmi.section2Sub2Intro",
+          subsections: [
+            {
+              id: "metric-example",
+              labelKey: "health.bmi.section2Sub2MetricLabel",
+              contentKey: "health.bmi.section2Sub2MetricText",
+              formulaKey: "health.bmi.section2Sub2MetricFormula",
+              resultKey: "health.bmi.section2Sub2MetricResult",
+            },
+            {
+              id: "imperial-example",
+              labelKey: "health.bmi.section2Sub2ImperialLabel",
+              contentKey: "health.bmi.section2Sub2ImperialText",
+              formulaKey: "health.bmi.section2Sub2ImperialFormula",
+              resultKey: "health.bmi.section2Sub2ImperialResult",
+            },
+          ],
+        },
+        {
+          id: "categories",
+          titleKey: "health.bmi.section2Sub3Title",
+          contentKey: "health.bmi.section2Sub3Intro",
+          imageKey: "health.bmi.section2Sub3Image",
+          imageAltKey: "health.bmi.section2Sub3ImageAlt",
+          endKey: "health.bmi.section2Sub3End1",
+          end2Key: "health.bmi.section2Sub3End2",
         },
       ],
     },

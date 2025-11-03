@@ -3,7 +3,7 @@ import { BookOpen, Globe, Info } from "lucide-react";
 export const frTranslations = {
 hero: {
   title: "Calculatrice en ligne gratuite pour des résultats intelligents, instantanés et précis",
-  subtitle: "VastCalculator propose une suite complète d’outils de calculatrice en ligne couvrant la finance, la santé, l’éducation et les conversions mathématiques quotidiennes. Chaque calculatrice fournit des résultats instantanés, précis et sans publicité, aidant les étudiants, les professionnels et les utilisateurs quotidiens à simplifier les calculs complexes.",
+  subtitle: "Vastes calculatrices propose une suite complète d’outils de calculatrice en ligne couvrant la finance, la santé, l’éducation et les conversions mathématiques quotidiennes. Chaque calculatrice fournit des résultats instantanés, précis et sans publicité, aidant les étudiants, les professionnels et les utilisateurs quotidiens à simplifier les calculs complexes.",
   cta: "Explorer les catégories",
 },
 
@@ -27,7 +27,7 @@ hero: {
   },
       aboutsection: {
   title: "À propos de Vastes calculatrices",
-  description: "Les chiffres guident chaque décision, et VastCalculator rend ces chiffres plus faciles à comprendre. Des conversions mathématiques simples aux analyses financières complexes, nos outils de calculatrice en ligne gratuits transforment les formules en résultats précis et instantanés. Conçu pour l'accessibilité, la fiabilité et la simplicité, VastCalculator rend chaque calcul sans effort.",
+  description: "Les chiffres guident chaque décision, et Vastes calculatrices rend ces chiffres plus faciles à comprendre. Des conversions mathématiques simples aux analyses financières complexes, nos outils de calculatrice en ligne gratuits transforment les formules en résultats précis et instantanés. Conçu pour l'accessibilité, la fiabilité et la simplicité, Vastes calculatrices rend chaque calcul sans effort.",
   quote: "Chez Vastes calculatrices, nous concevons des outils intelligents pour rendre chaque calcul accessible et sans effort.",
   cta: "En savoir plus sur nous"
 },
@@ -118,6 +118,20 @@ about: {
     },
   },
 
+  result: {
+    title: "Résumé des résultats",
+    noresulttitle: "Aucun résultat pour le moment",
+    noresultssub: "Entrez vos informations et cliquez sur « Calculer » pour voir vos résultats.",
+    calresult: "Calcul de votre résultat...",
+    inputstext: "Vos entrées :",
+    calculateresult: "Résultat calculé :",
+    recalculate: "Recalculer"
+  },
+
+calculatorform: {
+  btn: "Calculer"
+},  
+
   health: {
     bodyFat: {
       title: "Calculatrice de Graisse Corporelle",
@@ -134,17 +148,116 @@ about: {
       formula: "Formule",
       formulaText: "Utilise la méthode de la Marine américaine",
     },
-    bmi: {
-      title: "Calculatrice d'IMC",
-      desc: "Calculez votre Indice de Masse Corporelle",
-      weight: "Poids (kg)",
-      height: "Hauteur (cm)",
-      result: "IMC",
-      about: "À propos de l'IMC",
-      aboutText: "L'IMC est une mesure de la graisse corporelle basée sur la taille et le poids.",
-      formula: "Formule",
-      formulaText: "IMC = poids (kg) / taille (m)²",
+bmi: {
+  title: "Calculateur d’IMC Gratuit : Trouvez instantanément votre indice de masse corporelle en ligne",
+  desc: "Calculez votre indice de masse corporelle (IMC) pour évaluer les risques potentiels pour la santé tels que le diabète et les maladies cardiaques. Suivez vos objectifs de remise en forme avec notre calculateur gratuit en ligne.",
+  heading: "Calculateur d’IMC",
+
+  weight: "Poids (kg)",
+  height: "Taille (cm)",
+  result: "IMC",
+
+  tocTitle: "Table des matières",
+  tocwhy: "Pourquoi utiliser un calculateur d’IMC",
+  tochowitworks: "Comment fonctionne le calculateur d’IMC en ligne",
+  tocwhybmi: "Pourquoi l’IMC est important",
+  tocUnderstanding: "Comprendre la formule de l’IMC",
+  tocexample: "Exemple de calcul d’IMC",
+  toccategories: "Catégories et interprétation de l’IMC",
+
+  section1Title: "À propos du calculateur d’IMC",
+  section1Content: "Le calculateur d’IMC de Vastes calculatrices est un outil rapide et fiable qui aide les utilisateurs à calculer leur indice de masse corporelle (IMC) en quelques secondes. L’IMC est une mesure standard indiquant si votre poids se situe dans une plage saine selon votre taille. Ce calculateur d’IMC en ligne suit les formules reconnues à l’échelle mondiale utilisées par les professionnels de la santé et les organisations médicales.",
+  section1ExtraText: "Pour mieux comprendre votre composition corporelle au-delà de l’IMC, consultez vos résultats avec notre",
+  section1ExtraLinkText: "Calculateur de masse grasse",
+
+  section1Sub1Title: "Pourquoi utiliser un calculateur d’IMC",
+  section1Sub1Intro: "Votre score d’IMC vous aide à comprendre votre catégorie de santé actuelle : insuffisance pondérale, poids sain, surpoids ou obésité. C’est l’un des moyens les plus simples de surveiller l’équilibre entre votre poids et votre taille.",
+  section1Sub1Text: "Ce calculateur d’indice de masse corporelle est particulièrement utile pour les personnes qui :",
+  section1Sub1List: [
+    "Suivent leur parcours de remise en forme",
+    "Commencent un nouveau régime ou programme d’entraînement",
+    "Surveillent les risques potentiels pour la santé liés au poids"
+  ],
+  section1Sub1End: "L’IMC offre une image claire de votre état de santé actuel, vous aidant à prendre des décisions éclairées pour un mode de vie plus sain.",
+
+  section1Sub2Title: "Comment fonctionne le calculateur d’IMC en ligne",
+  section1Sub2Intro: "L’utilisation de ce calculateur est simple et directe. Vous devez simplement entrer :",
+  section1Sub2List: [
+    "Votre taille (en centimètres ou en pouces)",
+    "Votre poids (en kilogrammes ou en livres)"
+  ],
+  section1Sub2Text: "Une fois que vous cliquez sur « Calculer », le résultat apparaît instantanément, affichant votre valeur d’IMC et la catégorie de poids correspondante.",
+  section1Sub2End: "Contrairement à la plupart des outils en ligne, Vastes calculatrices offre une interface épurée, des résultats instantanés et des calculs précis dans les systèmes métrique et impérial.",
+
+  section1Sub3Title: "Pourquoi l’IMC est important",
+  section1Sub3Intro: "Votre IMC peut indiquer des risques potentiels pour la santé. Un IMC élevé peut signaler des problèmes tels que les maladies cardiaques, le diabète ou le stress articulaire, tandis qu’un IMC très bas peut refléter des carences nutritionnelles. Surveiller régulièrement ce nombre vous aide à rester dans une plage saine. Pour une mesure plus détaillée de votre composition corporelle, consultez notre calculateur de masse grasse.",
+  section1Sub3End: "Vastes calculatrices garantit que chaque outil repose sur des algorithmes précis et des normes à jour, offrant des résultats exacts et une meilleure compréhension aux utilisateurs axés sur la forme physique, la santé ou le bien-être.",
+
+  section2Title: "Formule du calculateur d’IMC",
+  section2Intro: "Le calculateur d’IMC de Vastes calculatrices utilise la formule officielle de l’indice de masse corporelle reconnue par des institutions mondiales de santé telles que l’Organisation mondiale de la santé (OMS) et les Centers for Disease Control and Prevention (CDC).",
+  section2Text: "La formule reste la même sur toutes les plateformes et se présente comme suit :",
+  section2MetricFormula: "IMC = poids (kg) ÷ [taille (m)]²",
+  section2ImperialIntro: "Si vous utilisez des unités impériales, elle s’ajuste légèrement pour maintenir la précision :",
+  section2ImperialFormula: "IMC = 703 × poids (lbs) ÷ [taille (in)]²",
+  section2End: "Ces formules permettent aux utilisateurs de déterminer si leur poids actuel se situe dans une plage saine.",
+
+  section2Sub1Title: "Comprendre la formule de l’IMC",
+  section2Sub1Image: "/BMI-calculator.jpg",
+  section2Sub1ImageAlt: "BMI Calculator - Body Mass Index Calculator",
+  section2Sub1Intro: "L’IMC repose sur un principe mathématique simple : il compare votre poids à votre taille au carré. Ce ratio détermine si votre poids est proportionnel à votre taille.",
+  section2Sub1Text: "Voici une explication rapide :",
+  section2Sub1Points: [
+    "Le poids indique la masse corporelle totale.",
+    "La taille au carré ajuste ce poids à la taille du corps.",
+    "La valeur finale donne votre indice de masse corporelle, qui aide à classifier votre catégorie de santé."
+  ],
+
+  section2Sub2Title: "Exemple de calcul d’IMC",
+  section2Sub2Intro: "Voyons un exemple pour plus de clarté.",
+  section2Sub2MetricLabel: "Exemple (unités métriques) :",
+  section2Sub2MetricText: "Si une personne pèse 68 kilogrammes et mesure 1,70 mètre, le calcul sera :",
+  section2Sub2MetricFormula: "IMC = 68 ÷ (1,70 × 1,70)  IMC = 68 ÷ 2,89 = 23,5",
+  section2Sub2MetricResult: "La valeur de l’IMC est de 23,5, ce qui correspond à la catégorie Poids sain.",
+  section2Sub2ImperialLabel: "Exemple (unités impériales) :",
+  section2Sub2ImperialText: "Si une personne pèse 150 livres et mesure 65 pouces :",
+  section2Sub2ImperialFormula: "IMC = 703 × 150 ÷ (65 × 65)  IMC = 105450 ÷ 4225 = 24,9",
+  section2Sub2ImperialResult: "La valeur de l’IMC est de 24,9, également classée comme Poids sain.",
+
+  section2Sub3Title: "Catégories et interprétation de l’IMC",
+  section2Sub3Intro: "Le résultat calculé de l’IMC entre dans l’une des catégories standard suivantes :",
+  section2Sub3Image: "/BMI-calculator-table-image.jpg",
+  section2Sub3ImageAlt: "Bmi Calculated Results",
+  section2Sub3End1: "Chaque plage sert de guide général. La santé individuelle dépend aussi de facteurs comme la masse musculaire, la densité osseuse et l’âge.",
+  section2Sub3End2: "Vastes calculatrices encourage les utilisateurs à considérer leur résultat d’IMC comme un point de départ pour adopter de meilleures habitudes de vie et à consulter des professionnels de santé pour des évaluations détaillées.",
+
+  faqTitle: "Foire aux questions (FAQ)",
+  faq: [
+    {
+      q: "Que fait le calculateur d’IMC de Vastes calculatrices ?",
+      a: "Le calculateur d’IMC de Vastes calculatrices estime rapidement votre indice de masse corporelle à partir de votre taille et de votre poids. Il indique si vous êtes en insuffisance pondérale, à un poids sain, en surpoids ou obèse. L’outil suit la formule officielle de l’IMC utilisée par les organisations mondiales de santé."
     },
+    {
+      q: "Comment utiliser le calculateur d’IMC ?",
+      a: "Entrez votre taille (en centimètres ou en pouces) et votre poids (en kilogrammes ou en livres) dans les champs prévus, puis cliquez sur Calculer. Le résultat apparaîtra instantanément avec votre valeur d’IMC et votre catégorie de poids. Aucun compte ni inscription n’est nécessaire."
+    },
+    {
+      q: "Quelle est la formule de l’IMC ?",
+      a: "La formule est simple et standard : IMC = poids (kg) ÷ [taille (m)]². Pour les unités impériales : IMC = 703 × poids (lbs) ÷ [taille (in)]². Les deux versions fournissent des résultats précis pour une analyse rapide de la santé."
+    },
+    {
+      q: "Quelle est la plage d’un IMC sain ?",
+      a: "Une plage d’IMC saine se situe généralement entre 18,5 et 24,9. Les valeurs inférieures à 18,5 sont considérées comme insuffisance pondérale, tandis que celles supérieures à 25 indiquent un surpoids ou une obésité."
+    },
+    {
+      q: "L’IMC reflète-t-il fidèlement la santé globale ?",
+      a: "L’IMC est un outil de dépistage fiable, mais pas un diagnostic médical. Il donne une indication générale de la masse corporelle par rapport à la taille. Cependant, il ne prend pas en compte la masse musculaire, l’âge ou la composition corporelle. Pour une évaluation plus précise, consultez le calculateur de masse grasse sur Vastes calculatrices."
+    },
+    {
+      q: "À quelle fréquence devrais-je vérifier mon IMC ?",
+      a: "Il est recommandé de vérifier votre IMC tous les quelques mois, surtout si votre régime, votre exercice ou votre mode de vie a changé. Un suivi régulier aide à surveiller votre progression et à rester conscient des changements de poids au fil du temps."
+    }
+  ]
+},
     calories: {
       title: "Calculatrice de Calories",
       desc: "Calculez vos besoins caloriques quotidiens",

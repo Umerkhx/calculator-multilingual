@@ -3,7 +3,7 @@ import { BookOpen, Globe, Info } from "lucide-react";
 export const deTranslations = {
 hero: {
   title: "Kostenloser Online-Rechner für intelligente, sofortige und präzise Ergebnisse",
-  subtitle: "VastCalculator bietet eine vollständige Suite von Online-Rechnern für Finanzen, Gesundheit, Bildung und tägliche mathematische Umrechnungen. Jeder Rechner liefert sofortige, genaue und werbefreie Ergebnisse und hilft Studenten, Fachleuten und alltäglichen Nutzern, komplexe Berechnungen zu vereinfachen.",
+  subtitle: "Vast Rechner bietet eine vollständige Suite von Online-Rechnern für Finanzen, Gesundheit, Bildung und tägliche mathematische Umrechnungen. Jeder Rechner liefert sofortige, genaue und werbefreie Ergebnisse und hilft Studenten, Fachleuten und alltäglichen Nutzern, komplexe Berechnungen zu vereinfachen.",
   cta: "Kategorien erkunden",
 },
 
@@ -27,7 +27,7 @@ hero: {
   },
       aboutsection: {
   title: "Über Vast Rechner",
-  description: "Zahlen bestimmen jede Entscheidung, und VastCalculator macht es einfacher, sie zu verstehen. Von einfachen mathematischen Umrechnungen bis hin zu komplexen Finanzanalysen verwandeln unsere kostenlosen Online-Rechner Formeln in präzise, sofortige Ergebnisse. VastCalculator ist auf Zugänglichkeit, Zuverlässigkeit und Einfachheit ausgelegt – damit jede Berechnung mühelos wird.",
+  description: "Zahlen bestimmen jede Entscheidung, und Vast Rechner macht es einfacher, sie zu verstehen. Von einfachen mathematischen Umrechnungen bis hin zu komplexen Finanzanalysen verwandeln unsere kostenlosen Online-Rechner Formeln in präzise, sofortige Ergebnisse. Vast Rechner ist auf Zugänglichkeit, Zuverlässigkeit und Einfachheit ausgelegt – damit jede Berechnung mühelos wird.",
   quote: "Bei Vast Rechner entwickeln wir intelligente Tools, um jede Berechnung mühelos und zugänglich zu machen.",
   cta: "Erfahren Sie mehr über uns"
 },
@@ -122,6 +122,19 @@ about: {
       ],
     },
   },
+  result: {
+    title: "Ergebnisübersicht",
+    noresulttitle: "Noch keine Ergebnisse",
+    noresultssub: "Geben Sie Ihre Daten ein und klicken Sie auf „Berechnen“, um die Ergebnisse zu sehen.",
+    calresult: "Ergebnis wird berechnet...",
+    inputstext: "Ihre Eingaben:",
+    calculateresult: "Berechnetes Ergebnis:",
+    recalculate: "Neu berechnen"
+  },
+
+calculatorform: {
+  btn: "Berechnen"
+},
 
   // Gesundheitsrechner
   health: {
@@ -142,18 +155,116 @@ about: {
       formulaText:
         "Verwendet die US Navy-Methode: KF% = 495 / (1.0324 - 0.19077 * log10(Taille - Hals) + 0.15456 * log10(Größe)) - 450",
     },
-    bmi: {
-      title: "BMI-Rechner",
-      desc: "Berechnen Sie Ihren Body-Mass-Index",
-      weight: "Gewicht (kg)",
-      height: "Größe (cm)",
-      result: "BMI",
-      about: "Über BMI",
-      aboutText:
-        "Der BMI misst den Körperfettanteil anhand von Größe und Gewicht und gilt für erwachsene Männer und Frauen.",
-      formula: "Formel",
-      formulaText: "BMI = Gewicht (kg) / (Größe (m))²",
+bmi: {
+  title: "Kostenloser BMI-Rechner: Ermitteln Sie sofort Ihren Body-Mass-Index online",
+  desc: "Berechnen Sie Ihren Body-Mass-Index (BMI), um mögliche Gesundheitsrisiken wie Diabetes und Herzkrankheiten zu bewerten. Verfolgen Sie Ihre Fitnessziele mit unserem kostenlosen Online-Rechner.",
+  heading: "BMI-Rechner",
+
+  weight: "Gewicht (kg)",
+  height: "Größe (cm)",
+  result: "BMI",
+
+  tocTitle: "Inhaltsverzeichnis",
+  tocwhy: "Warum Sie einen BMI-Rechner verwenden sollten",
+  tochowitworks: "Wie der Online-BMI-Rechner funktioniert",
+  tocwhybmi: "Warum der BMI wichtig ist",
+  tocUnderstanding: "Verständnis der BMI-Formel",
+  tocexample: "Beispiel für die BMI-Berechnung",
+  toccategories: "BMI-Kategorien und Interpretation",
+
+  section1Title: "Über den BMI-Rechner",
+  section1Content: "Der BMI-Rechner von Vast Rechner ist ein schnelles und zuverlässiges Tool, das Benutzern hilft, ihren Body-Mass-Index (BMI) in wenigen Sekunden zu berechnen. Der BMI ist ein Standardmaß, das anzeigt, ob Ihr Gewicht im Verhältnis zu Ihrer Körpergröße gesund ist. Dieser Online-BMI-Rechner verwendet weltweit anerkannte Formeln, die von medizinischen Fachkräften und Gesundheitsorganisationen verwendet werden.",
+  section1ExtraText: "Um Ihre Körperzusammensetzung über den BMI hinaus besser zu verstehen, überprüfen Sie Ihre Ergebnisse mit unserem",
+  section1ExtraLinkText: "Körperfett-Rechner",
+
+  section1Sub1Title: "Warum Sie einen BMI-Rechner verwenden sollten",
+  section1Sub1Intro: "Ihr BMI-Wert hilft Ihnen, Ihre aktuelle Gesundheitskategorie zu verstehen: untergewichtig, normalgewichtig, übergewichtig oder fettleibig. Es ist eine der einfachsten Methoden, um das Gleichgewicht zwischen Ihrem Gewicht und Ihrer Größe zu überwachen.",
+  section1Sub1Text: "Dieser Body-Mass-Index-Rechner ist besonders hilfreich für Personen, die:",
+  section1Sub1List: [
+    "ihre Fitnessreise verfolgen",
+    "eine neue Diät oder ein Trainingsprogramm beginnen",
+    "mögliche gewichtsbedingte Gesundheitsrisiken überwachen"
+  ],
+  section1Sub1End: "Der BMI bietet ein klares Bild Ihres aktuellen Gesundheitszustands und hilft Ihnen, fundierte Entscheidungen für einen gesünderen Lebensstil zu treffen.",
+
+  section1Sub2Title: "Wie der Online-BMI-Rechner funktioniert",
+  section1Sub2Intro: "Die Verwendung dieses Rechners ist einfach und unkompliziert. Sie müssen nur eingeben:",
+  section1Sub2List: [
+    "Ihre Größe (in Zentimetern oder Zoll)",
+    "Ihr Gewicht (in Kilogramm oder Pfund)"
+  ],
+  section1Sub2Text: "Sobald Sie auf „Berechnen“ klicken, erscheint das Ergebnis sofort und zeigt Ihren BMI-Wert und die entsprechende Gewichtskategorie.",
+  section1Sub2End: "Im Gegensatz zu den meisten Online-Tools bietet Vast Rechner eine saubere Benutzeroberfläche, sofortige Ergebnisse und genaue Berechnungen sowohl im metrischen als auch im imperialen System.",
+
+  section1Sub3Title: "Warum der BMI wichtig ist",
+  section1Sub3Intro: "Ihr BMI kann auf mögliche Gesundheitsrisiken hinweisen. Ein hoher BMI kann auf Probleme wie Herzkrankheiten, Diabetes oder Gelenkbelastung hindeuten, während ein sehr niedriger BMI auf Nährstoffmängel hinweisen kann. Die regelmäßige Überwachung hilft Ihnen, in einem gesunden Bereich zu bleiben. Für eine genauere Analyse Ihrer Körperzusammensetzung nutzen Sie unseren Körperfett-Rechner.",
+  section1Sub3End: "Vast Rechner stellt sicher, dass jedes Tool auf präzisen Algorithmen und aktuellen Standards basiert und genaue Ergebnisse sowie ein besseres Verständnis für Nutzer liefert, die sich auf Fitness, Gesundheit oder Wohlbefinden konzentrieren.",
+
+  section2Title: "BMI-Rechner-Formel",
+  section2Intro: "Der BMI-Rechner von Vast Rechner verwendet die offizielle Body-Mass-Index-Formel, die von globalen Gesundheitsinstitutionen wie der Weltgesundheitsorganisation (WHO) und den Centers for Disease Control and Prevention (CDC) anerkannt ist.",
+  section2Text: "Die Formel bleibt auf allen Plattformen gleich und lautet:",
+  section2MetricFormula: "BMI = Gewicht (kg) ÷ [Größe (m)]²",
+  section2ImperialIntro: "Wenn Sie imperiale Einheiten verwenden, wird sie leicht angepasst, um die Genauigkeit zu gewährleisten:",
+  section2ImperialFormula: "BMI = 703 × Gewicht (lbs) ÷ [Größe (in)]²",
+  section2End: "Diese Formeln ermöglichen es den Benutzern, festzustellen, ob ihr aktuelles Gewicht in einem gesunden Bereich liegt.",
+
+  section2Sub1Title: "Verständnis der BMI-Formel",
+  section2Sub1Image: "/BMI-calculator.jpg",
+  section2Sub1ImageAlt: "BMI Calculator - Body Mass Index Calculator",
+  section2Sub1Intro: "Der BMI basiert auf einem einfachen mathematischen Prinzip: Er vergleicht Ihr Gewicht mit Ihrer Körpergröße im Quadrat. Dieses Verhältnis zeigt, ob Ihr Gewicht im Verhältnis zu Ihrer Körpergröße angemessen ist.",
+  section2Sub1Text: "Hier eine kurze Erklärung:",
+  section2Sub1Points: [
+    "Das Gewicht zeigt, wie viel Masse Ihr Körper hat.",
+    "Die Größe im Quadrat passt das Gewicht an Ihre Körperstruktur an.",
+    "Der Endwert ergibt Ihren Body-Mass-Index, der hilft, Ihre Gesundheitskategorie zu bestimmen."
+  ],
+
+  section2Sub2Title: "Beispiel für die BMI-Berechnung",
+  section2Sub2Intro: "Gehen wir ein Beispiel zur Verdeutlichung durch.",
+  section2Sub2MetricLabel: "Beispiel (metrische Einheiten):",
+  section2Sub2MetricText: "Wenn eine Person 68 Kilogramm wiegt und 1,70 Meter groß ist, lautet die Berechnung:",
+  section2Sub2MetricFormula: "BMI = 68 ÷ (1,70 × 1,70)  BMI = 68 ÷ 2,89 = 23,5",
+  section2Sub2MetricResult: "Der BMI-Wert beträgt 23,5, was in die Kategorie Normalgewicht fällt.",
+  section2Sub2ImperialLabel: "Beispiel (imperiale Einheiten):",
+  section2Sub2ImperialText: "Wenn eine Person 150 Pfund wiegt und 65 Zoll groß ist:",
+  section2Sub2ImperialFormula: "BMI = 703 × 150 ÷ (65 × 65)  BMI = 105450 ÷ 4225 = 24,9",
+  section2Sub2ImperialResult: "Der BMI-Wert beträgt 24,9, ebenfalls in der Kategorie Normalgewicht.",
+
+  section2Sub3Title: "BMI-Kategorien und Interpretation",
+  section2Sub3Intro: "Das berechnete BMI-Ergebnis fällt in eine der folgenden Standardkategorien:",
+  section2Sub3Image: "/BMI-calculator-table-image.jpg",
+  section2Sub3ImageAlt: "Bmi Calculated Results",
+  section2Sub3End1: "Jeder Bereich dient als allgemeine Richtlinie. Die individuelle Gesundheit hängt auch von Faktoren wie Muskelmasse, Knochendichte und Alter ab.",
+  section2Sub3End2: "Vast Rechner empfiehlt, das BMI-Ergebnis als Ausgangspunkt für bessere Lebensgewohnheiten zu verwenden und für eine detaillierte Bewertung medizinische Fachkräfte zu konsultieren.",
+
+  faqTitle: "Häufig gestellte Fragen (FAQ)",
+  faq: [
+    {
+      q: "Was macht der BMI-Rechner von Vast Rechner?",
+      a: "Der BMI-Rechner von Vast Rechner schätzt schnell Ihren Body-Mass-Index anhand Ihrer Größe und Ihres Gewichts. Er zeigt, ob Sie untergewichtig, normalgewichtig, übergewichtig oder fettleibig sind. Das Tool folgt der offiziellen BMI-Formel, die von globalen Gesundheitsorganisationen verwendet wird."
     },
+    {
+      q: "Wie benutze ich den BMI-Rechner?",
+      a: "Geben Sie Ihre Größe (in Zentimetern oder Zoll) und Ihr Gewicht (in Kilogramm oder Pfund) in die vorgesehenen Felder ein und klicken Sie auf Berechnen. Das Ergebnis wird sofort angezeigt, mit Ihrem BMI-Wert und der entsprechenden Gewichtskategorie. Keine Anmeldung erforderlich."
+    },
+    {
+      q: "Wie lautet die Formel hinter dem BMI?",
+      a: "Die Formel ist einfach und standardisiert: BMI = Gewicht (kg) ÷ [Größe (m)]². Für imperiale Einheiten: BMI = 703 × Gewicht (lbs) ÷ [Größe (in)]². Beide Versionen liefern genaue Ergebnisse für eine schnelle Gesundheitsanalyse."
+    },
+    {
+      q: "Was ist ein gesunder BMI-Bereich?",
+      a: "Ein gesunder BMI-Bereich liegt typischerweise zwischen 18,5 und 24,9. Werte unter 18,5 gelten als untergewichtig, während Werte über 25 auf Übergewicht oder Fettleibigkeit hindeuten."
+    },
+    {
+      q: "Spiegelt der BMI die allgemeine Gesundheit genau wider?",
+      a: "Der BMI ist ein zuverlässiges Screening-Tool, aber keine medizinische Diagnose. Er gibt einen allgemeinen Hinweis auf den Körperfettanteil im Verhältnis zu Größe und Gewicht, berücksichtigt jedoch keine Muskelmasse, das Alter oder die Körperzusammensetzung. Für eine genauere Einschätzung nutzen Sie den Körperfett-Rechner von Vast Rechner."
+    },
+    {
+      q: "Wie oft sollte ich meinen BMI überprüfen?",
+      a: "Es ist am besten, Ihren BMI alle paar Monate zu überprüfen, insbesondere wenn sich Ihre Ernährung, Ihr Training oder Ihr Lebensstil geändert haben. Regelmäßige Kontrollen helfen Ihnen, Ihren Fortschritt zu verfolgen und Gewichtsschwankungen im Laufe der Zeit zu erkennen."
+    }
+  ]
+},
     calories: {
       title: "Kalorienrechner",
       desc: "Berechnen Sie Ihren täglichen Kalorienbedarf",

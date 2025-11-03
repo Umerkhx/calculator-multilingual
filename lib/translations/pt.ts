@@ -3,7 +3,7 @@ import { BookOpen, Globe, Info } from "lucide-react";
 export const ptTranslations = {
 hero: {
   title: "Calculadorasonline gratuita para resultados inteligentes, instantâneos e precisos",
-  subtitle: "A VastCalculator oferece uma suíte completa de ferramentas de Calculadorasonline que abrangem finanças, saúde, educação e conversões matemáticas do dia a dia. Cada Calculadorasfornece resultados instantâneos, precisos e sem anúncios, ajudando estudantes, profissionais e usuários diários a simplificar cálculos complexos.",
+  subtitle: "A Calculadoras Vast oferece uma suíte completa de ferramentas de Calculadorasonline que abrangem finanças, saúde, educação e conversões matemáticas do dia a dia. Cada Calculadorasfornece resultados instantâneos, precisos e sem anúncios, ajudando estudantes, profissionais e usuários diários a simplificar cálculos complexos.",
   cta: "Explorar categorias",
 },
 
@@ -23,7 +23,7 @@ nav: {
   },
       aboutsection: {
   title: "Sobre o Calculadoras Vast",
-  description: "Os números impulsionam todas as decisões, e o VastCalculator torna esses números mais fáceis de entender. De conversões matemáticas simples a análises financeiras complexas, nossas ferramentas de Calculadorasonline gratuitas transformam fórmulas em resultados precisos e instantâneos. Criado para acessibilidade, confiabilidade e simplicidade, o VastCalculator garante que cada cálculo seja sem esforço.",
+  description: "Os números impulsionam todas as decisões, e o Calculadoras Vast torna esses números mais fáceis de entender. De conversões matemáticas simples a análises financeiras complexas, nossas ferramentas de Calculadorasonline gratuitas transformam fórmulas em resultados precisos e instantâneos. Criado para acessibilidade, confiabilidade e simplicidade, o Calculadoras Vast garante que cada cálculo seja sem esforço.",
   quote: "Na Calculadoras Vast, projetamos ferramentas inteligentes para tornar cada cálculo acessível e sem esforço.",
   cta: "Saiba mais sobre nós"
 },
@@ -121,6 +121,20 @@ about: {
     },
   },
 
+  result: {
+    title: "Resumo do resultado",
+    noresulttitle: "Nenhum resultado ainda",
+    noresultssub: "Insira seus dados e clique em “Calcular” para ver os resultados.",
+    calresult: "Calculando seu resultado...",
+    inputstext: "Seus dados:",
+    calculateresult: "Resultado calculado:",
+    recalculate: "Recalcular"
+  },
+
+calculatorform: {
+  btn: "Calcular"
+},  
+
   // Calculadoras de Saúde
   health: {
     bodyFat: {
@@ -140,18 +154,116 @@ about: {
       formulaText:
         "Usa o método da Marinha dos EUA: %GC = 495 / (1.0324 - 0.19077 * log10(cintura - pescoço) + 0.15456 * log10(altura)) - 450",
     },
-    bmi: {
-      title: "Calculadorasde IMC",
-      desc: "Calcule seu Índice de Massa Corporal",
-      weight: "Peso (kg)",
-      height: "Altura (cm)",
-      result: "IMC",
-      about: "Sobre o IMC",
-      aboutText:
-        "O IMC é uma medida de gordura corporal baseada na altura e no peso. Aplica-se a homens e mulheres adultos.",
-      formula: "Fórmula",
-      formulaText: "IMC = peso (kg) / (altura (m))²",
+bmi: {
+  title: "Calculadora de IMC Grátis: Descubra instantaneamente o seu Índice de Massa Corporal online",
+  desc: "Calcule o seu Índice de Massa Corporal (IMC) para avaliar possíveis riscos de saúde como diabetes e doenças cardíacas. Acompanhe suas metas de condicionamento físico com nossa calculadora online gratuita.",
+  heading: "Calculadora de IMC",
+
+  weight: "Peso (kg)",
+  height: "Altura (cm)",
+  result: "IMC",
+
+  tocTitle: "Índice de Conteúdo",
+  tocwhy: "Por que você deve usar uma calculadora de IMC",
+  tochowitworks: "Como funciona a calculadora de IMC online",
+  tocwhybmi: "Por que o IMC é importante",
+  tocUnderstanding: "Entendendo a fórmula do IMC",
+  tocexample: "Exemplo de cálculo do IMC",
+  toccategories: "Categorias e interpretação do IMC",
+
+  section1Title: "Sobre a Calculadora de IMC",
+  section1Content: "A Calculadora de IMC da Calculadoras Vast é uma ferramenta rápida e confiável que ajuda os usuários a calcular seu Índice de Massa Corporal (IMC) em segundos. O IMC é uma medida padrão que indica se o seu peso está dentro de uma faixa saudável com base na sua altura. Esta calculadora online de IMC utiliza fórmulas reconhecidas globalmente por profissionais e organizações de saúde.",
+  section1ExtraText: "Para entender melhor sua composição corporal além do IMC, verifique seus resultados com nossa",
+  section1ExtraLinkText: "Calculadora de Gordura Corporal",
+
+  section1Sub1Title: "Por que você deve usar uma calculadora de IMC",
+  section1Sub1Intro: "Seu valor de IMC ajuda a entender sua categoria de saúde atual: abaixo do peso, peso saudável, sobrepeso ou obesidade. É uma das maneiras mais simples de monitorar o equilíbrio entre peso e altura.",
+  section1Sub1Text: "Esta Calculadora de Índice de Massa Corporal é especialmente útil para pessoas que:",
+  section1Sub1List: [
+    "Estão acompanhando sua jornada fitness",
+    "Estão iniciando uma nova dieta ou rotina de exercícios",
+    "Estão monitorando riscos potenciais de saúde relacionados ao peso"
+  ],
+  section1Sub1End: "O IMC oferece uma visão clara da sua condição de saúde atual, ajudando você a tomar decisões informadas para um estilo de vida mais saudável.",
+
+  section1Sub2Title: "Como funciona a calculadora de IMC online",
+  section1Sub2Intro: "Usar esta calculadora é simples e direto. Basta inserir:",
+  section1Sub2List: [
+    "Sua altura (em centímetros ou polegadas)",
+    "Seu peso (em quilogramas ou libras)"
+  ],
+  section1Sub2Text: "Depois de clicar em “Calcular”, o resultado aparecerá instantaneamente, mostrando seu valor de IMC e a categoria de peso correspondente.",
+  section1Sub2End: "Ao contrário da maioria das ferramentas online, a Calculadoras Vast oferece uma interface limpa, resultados instantâneos e cálculos precisos nos sistemas métrico e imperial.",
+
+  section1Sub3Title: "Por que o IMC é importante",
+  section1Sub3Intro: "Seu IMC pode indicar possíveis riscos à saúde. Um IMC alto pode apontar para problemas como doenças cardíacas, diabetes ou sobrecarga nas articulações, enquanto um IMC muito baixo pode refletir deficiências nutricionais. Monitorar regularmente esse número ajuda você a manter-se dentro de uma faixa saudável. Para uma análise mais detalhada da composição corporal, consulte nossa Calculadora de Gordura Corporal.",
+  section1Sub3End: "A Calculadoras Vast garante que todas as ferramentas sejam baseadas em algoritmos precisos e padrões atualizados, fornecendo resultados exatos e uma melhor compreensão para usuários focados em saúde, bem-estar ou condicionamento físico.",
+
+  section2Title: "Fórmula da Calculadora de IMC",
+  section2Intro: "A Calculadora de IMC da Calculadoras Vast utiliza a fórmula oficial do Índice de Massa Corporal reconhecida por instituições globais de saúde como a Organização Mundial da Saúde (OMS) e os Centros de Controle e Prevenção de Doenças (CDC).",
+  section2Text: "A fórmula é consistente em todas as plataformas e é apresentada da seguinte forma:",
+  section2MetricFormula: "IMC = peso (kg) ÷ [altura (m)]²",
+  section2ImperialIntro: "Se você estiver usando unidades imperiais, ela é ajustada ligeiramente para manter a precisão:",
+  section2ImperialFormula: "IMC = 703 × peso (lbs) ÷ [altura (in)]²",
+  section2End: "Essas fórmulas permitem aos usuários descobrir se o peso atual está dentro de uma faixa saudável.",
+
+  section2Sub1Title: "Entendendo a fórmula do IMC",
+  section2Sub1Image: "/BMI-calculator.jpg",
+  section2Sub1ImageAlt: "BMI Calculator - Body Mass Index Calculator",
+  section2Sub1Intro: "O IMC baseia-se em um princípio matemático simples: compara seu peso com o quadrado da sua altura. Essa proporção determina se o seu peso é proporcional ao seu tamanho corporal.",
+  section2Sub1Text: "Aqui está uma explicação rápida:",
+  section2Sub1Points: [
+    "O peso mostra quanta massa o seu corpo carrega.",
+    "A altura ao quadrado ajusta esse peso ao tamanho do corpo.",
+    "O valor final fornece seu Índice de Massa Corporal, que ajuda a classificar sua categoria de saúde."
+  ],
+
+  section2Sub2Title: "Exemplo de cálculo de IMC",
+  section2Sub2Intro: "Vamos ver um exemplo para maior clareza.",
+  section2Sub2MetricLabel: "Exemplo (Unidades Métricas):",
+  section2Sub2MetricText: "Se uma pessoa pesa 68 quilogramas e tem 1,70 metros de altura, o cálculo será:",
+  section2Sub2MetricFormula: "IMC = 68 ÷ (1,70 × 1,70)  IMC = 68 ÷ 2,89 = 23,5",
+  section2Sub2MetricResult: "O valor do IMC é 23,5, o que se enquadra na faixa de Peso Saudável.",
+  section2Sub2ImperialLabel: "Exemplo (Unidades Imperiais):",
+  section2Sub2ImperialText: "Se uma pessoa pesa 150 libras e tem 65 polegadas de altura:",
+  section2Sub2ImperialFormula: "IMC = 703 × 150 ÷ (65 × 65)  IMC = 105450 ÷ 4225 = 24,9",
+  section2Sub2ImperialResult: "O valor do IMC é 24,9, também classificado como Peso Saudável.",
+
+  section2Sub3Title: "Categorias e Interpretação do IMC",
+  section2Sub3Intro: "O resultado do IMC calculado se encaixa em uma das seguintes categorias padrão:",
+  section2Sub3Image: "/BMI-calculator-table-image.jpg",
+  section2Sub3ImageAlt: "Bmi Calculated Results",
+  section2Sub3End1: "Cada faixa serve como um guia geral. A saúde individual também depende de fatores como massa muscular, densidade óssea e idade.",
+  section2Sub3End2: "A Calculadoras Vast incentiva os usuários a usar o resultado do IMC como ponto de partida para escolhas de estilo de vida mais saudáveis e a consultar profissionais de saúde para avaliações detalhadas.",
+
+  faqTitle: "Perguntas Frequentes (FAQs)",
+  faq: [
+    {
+      q: "O que a Calculadora de IMC da Calculadoras Vast faz?",
+      a: "A Calculadora de IMC da Calculadoras Vast estima rapidamente seu Índice de Massa Corporal usando sua altura e peso. Mostra se você está abaixo do peso, em peso saudável, com sobrepeso ou obeso. A ferramenta segue a fórmula oficial do IMC usada por organizações de saúde globais."
     },
+    {
+      q: "Como posso usar a Calculadora de IMC?",
+      a: "Insira sua altura (em centímetros ou polegadas) e seu peso (em quilogramas ou libras) nos campos fornecidos e clique em Calcular. O resultado aparecerá instantaneamente, mostrando seu valor de IMC e categoria de peso. Não é necessário cadastro ou login."
+    },
+    {
+      q: "Qual é a fórmula do IMC?",
+      a: "A fórmula é simples e padrão: IMC = peso (kg) ÷ [altura (m)]². Para unidades imperiais: IMC = 703 × peso (lbs) ÷ [altura (in)]². Ambas as versões fornecem resultados precisos para uma análise rápida da saúde."
+    },
+    {
+      q: "Qual é a faixa de IMC saudável?",
+      a: "Uma faixa de IMC saudável geralmente varia entre 18,5 e 24,9. Valores abaixo de 18,5 são considerados abaixo do peso, enquanto valores acima de 25 indicam sobrepeso ou obesidade."
+    },
+    {
+      q: "O IMC reflete com precisão a saúde geral?",
+      a: "O IMC é uma ferramenta de triagem confiável, mas não um diagnóstico médico. Ele fornece uma estimativa geral da gordura corporal com base na altura e peso, mas não considera massa muscular, idade ou composição corporal. Para uma visão mais detalhada, consulte a Calculadora de Gordura Corporal da Calculadoras Vast."
+    },
+    {
+      q: "Com que frequência devo verificar meu IMC?",
+      a: "O ideal é verificar seu IMC a cada poucos meses, especialmente se sua dieta, exercícios ou estilo de vida mudaram. O acompanhamento regular ajuda a monitorar o progresso e manter o controle das mudanças no peso ao longo do tempo."
+    }
+  ]
+},
     calories: {
       title: "Calculadorasde Calorias",
       desc: "Calcule suas necessidades calóricas diárias",

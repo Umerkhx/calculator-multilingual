@@ -218,44 +218,142 @@ export const healthCalculators: Calculator[] = [
     { qKey: "health.bmi.faq.5.q", aKey: "health.bmi.faq.5.a" },
   ],
 },
-  {
-    slug: "calorie-calculator",
-    metaTitleKey: "health.calories.metaTitle",
-    metaDescriptionKey: "health.calories.metaDescription",
-    titleKey: "health.calories.title",
-    category: "Health",
-    descriptionKey: "health.calories.desc",
-    inputs: [
-      { label: "health.calories.age", name: "age", type: "number", unit: "years" },
-      { label: "health.calories.weight", name: "weight", type: "number", unit: "kg" },
-      { label: "health.calories.height", name: "height", type: "number", unit: "cm" },
-      {
-        label: "health.calories.activity",
-        name: "activity",
-        type: "select",
-        options: [
-          { value: "1.2", label: "health.calories.sedentary" },
-          { value: "1.375", label: "health.calories.light" },
-          { value: "1.55", label: "health.calories.moderate" },
-          { value: "1.725", label: "health.calories.active" },
-        ],
-      },
-    ],
-    formulaId: "calories",
-    sections: [
-      { id: "intro", titleKey: "health.calories.about", contentKey: "health.calories.aboutText" },
-      { id: "formula", titleKey: "health.calories.formula", contentKey: "health.calories.formulaText" },
-    ],
-    faqTitleKey: "health.calories.faqTitle",
-    faqs: [
-      { qKey: "health.calories.faq.0.q", aKey: "health.calories.faq.0.a" },
-      { qKey: "health.calories.faq.1.q", aKey: "health.calories.faq.1.a" },
-      { qKey: "health.calories.faq.2.q", aKey: "health.calories.faq.2.a" },
-      { qKey: "health.calories.faq.3.q", aKey: "health.calories.faq.3.a" },
-      { qKey: "health.calories.faq.4.q", aKey: "health.calories.faq.4.a" },
-      { qKey: "health.calories.faq.5.q", aKey: "health.calories.faq.5.a" },
-    ],
-  },
+ {
+  slug: "calorie-calculator",
+  metaTitleKey: "health.calories.title",
+  metaDescriptionKey: "health.calories.desc",
+  titleKey: "health.calories.title",
+  category: "Health",
+  descriptionKey: "health.calories.desc",
+  formulaId: "calories",
+
+  toc: [
+    { id: "why-use", labelKey: "health.calories.tocwhy" },
+    { id: "how-works", labelKey: "health.calories.tochowitworks" },
+    { id: "why-matters", labelKey: "health.calories.tocwhymatters" },
+    { id: "activity-factor", labelKey: "health.calories.tocactivity" },
+    { id: "understanding", labelKey: "health.calories.tocunderstanding" },
+    { id: "examples", labelKey: "health.calories.tocexample" },
+    { id: "result", labelKey: "health.calories.tocresult" },
+    { id: "reliable", labelKey: "health.calories.tocreliable" },
+  ],
+
+  inputs: [
+    { label: "health.calories.age", name: "age", type: "number", unit: "years" },
+    { label: "health.calories.weight", name: "weight", type: "number", unit: "kg" },
+    { label: "health.calories.height", name: "height", type: "number", unit: "cm" },
+    { label: "health.calories.gender", name: "gender", type: "select", options: [
+      { value: "male", label: "health.calories.male" },
+      { value: "female", label: "health.calories.female" },
+    ] },
+    { label: "health.calories.activity", name: "activity", type: "select" },
+  ],
+
+  heading: "health.calories.heading",
+
+  sections: [
+    {
+      id: "about",
+      titleKey: "health.calories.section1Title",
+      contentKey: "health.calories.section1Content",
+      linkparacontent:"health.calories.section1ExtraText",
+      linkparaKey:"health.calories.section1ExtraLinkText",
+      linkparaslug: "macro-calculator",
+      subsections: [
+        {
+          id: "why-use",
+          titleKey: "health.calories.section1Sub1Title",
+          introKey: "health.calories.section1Sub1Intro",
+          contentKey: "health.calories.section1Sub1Text",
+        },
+        {
+          id: "how-works",
+          titleKey: "health.calories.section1Sub2Title",
+          introKey: "health.calories.section1Sub2Intro",
+          listKey: "health.calories.section1Sub2List",
+          contentKey: "health.calories.section1Sub2Text",
+          endKey: "health.calories.section1Sub2End",
+        },
+        {
+          id: "why-matters",
+          titleKey: "health.calories.section1Sub3Title",
+          contentKey: "health.calories.section1Sub3Intro",
+          endKey: "health.calories.section1Sub3End",
+        },
+      ],
+    },
+
+    {
+      id: "formula",
+      titleKey: "health.calories.section2Title",
+      introKey: "health.calories.section2Intro",
+      subsections: [
+        {
+          id: "metric-formula-male",
+          formulaKey: "health.calories.section2MetricFormulaMale",
+          type: "formula",
+        },
+        {
+          id: "metric-formula-female",
+          formulaKey: "health.calories.section2MetricFormulaFemale",
+          type: "formula",
+        },
+        {
+          id: "formula-end",
+          contentKey: "health.calories.section2End",
+        },
+        {
+          id: "activity-factor",
+          titleKey: "health.calories.section2Sub1Title",
+          imageKey: "health.calories.section2Sub1Image",
+          imageAltKey: "health.calories.section2Sub1ImageAlt",
+          endKey: "health.calories.section2Sub1End",
+        },
+        {
+          id: "understanding",
+          titleKey: "health.calories.section2Sub2Title",
+          contentKey: "health.calories.section2Sub2Intro",
+        },
+        {
+          id: "examples",
+          titleKey: "health.calories.section2Sub3Title",
+          introKey: "health.calories.section2Sub3ExampleText",
+          subsections: [
+            {
+              id: "male-example",
+              listKey: "health.calories.section2Sub3List",
+              formulaKey: "health.calories.section2Sub3Formula1",
+              formulaKey1: "health.calories.section2Sub3Formula2",
+              formulaKey2: "health.calories.section2Sub3Formula3",
+              endKey: "health.calories.section2Sub3End",
+            },
+          ],
+        },
+        {
+          id: "result",
+          titleKey: "health.calories.section2Sub4Title",
+          contentKey: "health.calories.section2Sub4Intro",
+        },
+        {
+          id: "reliable",
+          titleKey: "health.calories.section2Sub5Title",
+          contentKey: "health.calories.section2Sub5Intro",
+        },
+      ],
+    },
+  ],
+
+  faqTitleKey: "health.calories.faqTitle",
+  faqs: [
+    { qKey: "health.calories.faq.0.q", aKey: "health.calories.faq.0.a" },
+    { qKey: "health.calories.faq.1.q", aKey: "health.calories.faq.1.a" },
+    { qKey: "health.calories.faq.2.q", aKey: "health.calories.faq.2.a" },
+    { qKey: "health.calories.faq.3.q", aKey: "health.calories.faq.3.a" },
+    { qKey: "health.calories.faq.4.q", aKey: "health.calories.faq.4.a" },
+    { qKey: "health.calories.faq.5.q", aKey: "health.calories.faq.5.a" },
+  ],
+},
+
   {
     slug: "water-intake-calculator",
     metaTitleKey: "health.waterIntake.metaTitle",

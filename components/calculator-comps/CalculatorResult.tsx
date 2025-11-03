@@ -30,7 +30,7 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
     <Card className="border-2 border-primary/20 shadow-lg transition-all duration-300 hover:shadow-xl">
       <CardHeader>
         <CardTitle className="text-xl font-semibold flex items-center gap-2">
-          {getTranslation(locale, "Result Summary")}
+          {getTranslation(locale, "result.title")}
         </CardTitle>
       </CardHeader>
 
@@ -38,8 +38,8 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
         {/* 🧘 Neutral state */}
         {isPlaceholder && !isLoading && (
           <div className="text-center text-muted-foreground py-8 space-y-2">
-            <p className="text-lg font-medium">No results yet</p>
-            <p className="text-sm">Enter your details and hit “Calculate” to see your results.</p>
+            <p className="text-lg font-medium">{getTranslation(locale, "result.noresulttitle")}</p>
+            <p className="text-sm">{getTranslation(locale, "result.noresultssub")}</p>
           </div>
         )}
 
@@ -47,7 +47,7 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
         {isLoading && (
           <div className="flex flex-col items-center justify-center py-10 space-y-3 animate-pulse">
             <Loader2 className="h-8 w-8 text-primary animate-spin" />
-            <p className="text-sm text-muted-foreground">Calculating your result...</p>
+            <p className="text-sm text-muted-foreground">{getTranslation(locale, "result.calresult")}</p>
           </div>
         )}
 
@@ -55,7 +55,7 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
         {!isPlaceholder && !isLoading && (
           <>
             <div>
-              <p className="font-medium mb-2 text-foreground">Your Inputs:</p>
+              <p className="font-medium mb-2 text-foreground">{getTranslation(locale, "result.inputstext")}</p>
               <ul className="space-y-1 text-sm text-muted-foreground">
                 {Object.entries(inputs).map(([key, value]) => (
                   <li key={key}>
@@ -69,7 +69,7 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
             <Separator />
 
             <div>
-              <p className="font-medium mb-1 text-foreground">Calculated Result:</p>
+              <p className="font-medium mb-1 text-foreground">{getTranslation(locale, "result.calculateresult")}</p>
               <p className="text-3xl font-bold text-primary">{result}</p>
             </div>
 
@@ -79,7 +79,7 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
               onClick={onRecalculate}
               className="mt-3 inline-block w-full rounded-lg bg-primary text-primary-foreground py-2 font-medium transition hover:bg-primary/90"
             >
-              Recalculate
+              {getTranslation(locale, "result.recalculate")}
             </button>
           </>
         )}

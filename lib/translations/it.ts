@@ -3,7 +3,7 @@ import { BookOpen, Globe, Info } from "lucide-react";
 export const itTranslations = {
 hero: {
   title: "Calcolatrice online gratuita per risultati intelligenti, immediati e accurati",
-  subtitle: "VastCalculator offre una suite completa di strumenti di calcolo online che coprono finanza, salute, istruzione e conversioni matematiche quotidiane. Ogni calcolatrice fornisce risultati istantanei, precisi e senza pubblicità, aiutando studenti, professionisti e utenti quotidiani a semplificare calcoli complessi.",
+  subtitle: "Calcolatori Vast offre una suite completa di strumenti di calcolo online che coprono finanza, salute, istruzione e conversioni matematiche quotidiane. Ogni calcolatrice fornisce risultati istantanei, precisi e senza pubblicità, aiutando studenti, professionisti e utenti quotidiani a semplificare calcoli complessi.",
   cta: "Esplora categorie",
 },
 
@@ -27,7 +27,7 @@ nav: {
   },
       aboutsection: {
   title: "Informazioni su Calcolatori Vast",
-  description: "I numeri guidano ogni decisione e VastCalculator rende quei numeri più facili da comprendere. Dalle semplici conversioni matematiche alle complesse analisi finanziarie, i nostri strumenti di calcolo online gratuiti trasformano le formule in risultati precisi e immediati. Progettato per l'accessibilità, l'affidabilità e la semplicità, VastCalculator rende ogni calcolo senza sforzo.",
+  description: "I numeri guidano ogni decisione e Calcolatori Vast rende quei numeri più facili da comprendere. Dalle semplici conversioni matematiche alle complesse analisi finanziarie, i nostri strumenti di calcolo online gratuiti trasformano le formule in risultati precisi e immediati. Progettato per l'accessibilità, l'affidabilità e la semplicità, Calcolatori Vast rende ogni calcolo senza sforzo.",
   quote: "In Calcolatori Vast progettiamo strumenti intelligenti per rendere ogni calcolo accessibile e senza sforzo.",
   cta: "Scopri di più su di noi"
 },
@@ -120,6 +120,22 @@ about: {
       ],
     },
   },
+
+  result: {
+    title: "Riepilogo dei risultati",
+    noresulttitle: "Nessun risultato ancora",
+    noresultssub: "Inserisci i tuoi dati e premi “Calcola” per vedere i risultati.",
+    calresult: "Calcolo del risultato in corso...",
+    inputstext: "I tuoi dati:",
+    calculateresult: "Risultato calcolato:",
+    recalculate: "Ricalcola"
+  },
+
+calculatorform: {
+  btn: "Calcola"
+},  
+
+
   // Calcolatori di salute
   health: {
     bodyFat: {
@@ -139,18 +155,116 @@ about: {
       formulaText:
         "Usa il metodo della Marina USA: BF% = 495 / (1.0324 - 0.19077 × log10(vita - collo) + 0.15456 × log10(altezza)) - 450",
     },
-    bmi: {
-      title: "Calcolatore BMI",
-      desc: "Calcola il tuo Indice di Massa Corporea",
-      weight: "Peso (kg)",
-      height: "Altezza (cm)",
-      result: "BMI",
-      about: "Informazioni sul BMI",
-      aboutText:
-        "Il BMI è una misura del grasso corporeo basata su altezza e peso. Si applica a uomini e donne adulti.",
-      formula: "Formula",
-      formulaText: "BMI = peso (kg) / (altezza (m))²",
+bmi: {
+  title: "Calcolatore BMI gratuito: scopri immediatamente il tuo indice di massa corporea online",
+  desc: "Calcola il tuo Indice di Massa Corporea (BMI) per valutare potenziali rischi per la salute come diabete e malattie cardiache. Monitora i tuoi obiettivi di fitness con il nostro calcolatore online gratuito.",
+  heading: "Calcolatore BMI",
+
+  weight: "Peso (kg)",
+  height: "Altezza (cm)",
+  result: "BMI",
+
+  tocTitle: "Indice dei contenuti",
+  tocwhy: "Perché dovresti usare un calcolatore BMI",
+  tochowitworks: "Come funziona il calcolatore BMI online",
+  tocwhybmi: "Perché il BMI è importante",
+  tocUnderstanding: "Comprendere la formula del BMI",
+  tocexample: "Esempio di calcolo BMI",
+  toccategories: "Categorie BMI e interpretazione",
+
+  section1Title: "Informazioni sul Calcolatore BMI",
+  section1Content: "Il Calcolatore BMI su Calcolatori Vast è uno strumento rapido e affidabile che aiuta gli utenti a calcolare il proprio Indice di Massa Corporea (BMI) in pochi secondi. Il BMI è una misura standard che indica se il tuo peso è nella fascia salutare in base alla tua altezza. Questo calcolatore online segue formule riconosciute a livello globale utilizzate da professionisti sanitari e organizzazioni mediche.",
+  section1ExtraText: "Per comprendere meglio la composizione corporea oltre al BMI, controlla i tuoi risultati con il nostro",
+  section1ExtraLinkText: "Calcolatore del grasso corporeo",
+
+  section1Sub1Title: "Perché dovresti usare un calcolatore BMI",
+  section1Sub1Intro: "Il tuo punteggio BMI ti aiuta a capire la tua categoria di salute attuale: sottopeso, sano, sovrappeso o obeso. È uno dei modi più semplici per monitorare l’equilibrio tra peso e altezza.",
+  section1Sub1Text: "Questo Calcolatore dell’Indice di Massa Corporea è particolarmente utile per chi:",
+  section1Sub1List: [
+    "Segue un percorso di fitness",
+    "Inizia una nuova dieta o routine di allenamento",
+    "Monitora potenziali rischi di salute legati al peso"
+  ],
+  section1Sub1End: "Il BMI fornisce un quadro chiaro del tuo stato di salute attuale, aiutandoti a fare scelte consapevoli per uno stile di vita più sano.",
+
+  section1Sub2Title: "Come funziona il Calcolatore BMI online",
+  section1Sub2Intro: "Usare questo calcolatore è semplice. Devi solo inserire:",
+  section1Sub2List: [
+    "La tua altezza (in centimetri o pollici)",
+    "Il tuo peso (in chilogrammi o libbre)"
+  ],
+  section1Sub2Text: "Una volta cliccato su \"Calcola\", il risultato apparirà immediatamente mostrando il valore del tuo BMI e la categoria di peso corrispondente.",
+  section1Sub2End: "A differenza di molti strumenti online, Calcolatori Vast offre un’interfaccia pulita, risultati istantanei e calcoli accurati sia nel sistema metrico che imperiale.",
+
+  section1Sub3Title: "Perché il BMI è importante",
+  section1Sub3Intro: "Il tuo BMI può indicare potenziali rischi per la salute. Un BMI alto può suggerire problemi come malattie cardiache, diabete o stress articolare, mentre un BMI molto basso può riflettere carenze nutrizionali. Monitorarlo regolarmente ti aiuta a mantenerti in una fascia salutare. Per una misura più dettagliata, prova il nostro Calcolatore del grasso corporeo.",
+  section1Sub3End: "Calcolatori Vast garantisce strumenti basati su algoritmi precisi e standard aggiornati, fornendo risultati accurati per chi si concentra su salute, fitness o benessere.",
+
+  section2Title: "Formula del Calcolatore BMI",
+  section2Intro: "Il Calcolatore BMI di Calcolatori Vast utilizza la formula ufficiale dell’Indice di Massa Corporea riconosciuta da organizzazioni globali come l’OMS e il CDC.",
+  section2Text: "La formula è costante su tutte le piattaforme e appare così:",
+  section2MetricFormula: "BMI = peso (kg) ÷ [altezza (m)]²",
+  section2ImperialIntro: "Se usi unità imperiali, si adatta leggermente per mantenere l’accuratezza:",
+  section2ImperialFormula: "BMI = 703 × peso (lbs) ÷ [altezza (in)]²",
+  section2End: "Queste formule permettono di scoprire se il tuo peso rientra nella fascia salutare.",
+
+  section2Sub1Title: "Comprendere la formula del BMI",
+  section2Sub1Image: "/BMI-calculator.jpg",
+  section2Sub1ImageAlt: "BMI Calculator - Body Mass Index Calculator",
+  section2Sub1Intro: "Il BMI si basa su un principio matematico semplice: confronta il tuo peso con il quadrato della tua altezza. Questo rapporto determina se il tuo peso è proporzionato alla tua corporatura.",
+  section2Sub1Text: "Ecco una spiegazione rapida:",
+  section2Sub1Points: [
+    "Il peso mostra quanta massa corporea hai.",
+    "L’altezza al quadrato adatta il peso alla tua struttura.",
+    "Il valore finale indica il tuo Indice di Massa Corporea e la tua categoria di salute."
+  ],
+
+  section2Sub2Title: "Esempio di calcolo BMI",
+  section2Sub2Intro: "Vediamo un esempio per chiarezza.",
+  section2Sub2MetricLabel: "Esempio (Unità metriche):",
+  section2Sub2MetricText: "Se una persona pesa 68 kg ed è alta 1,70 m, il calcolo sarà:",
+  section2Sub2MetricFormula: "BMI = 68 ÷ (1.70 × 1.70)  BMI = 68 ÷ 2.89 = 23.5",
+  section2Sub2MetricResult: "Il valore BMI è 23.5, che rientra nella categoria Peso sano.",
+  section2Sub2ImperialLabel: "Esempio (Unità imperiali):",
+  section2Sub2ImperialText: "Se una persona pesa 150 libbre ed è alta 65 pollici:",
+  section2Sub2ImperialFormula: "BMI = 703 × 150 ÷ (65 × 65)  BMI = 105450 ÷ 4225 = 24.9",
+  section2Sub2ImperialResult: "Il valore BMI è 24.9, anch’esso classificato come Peso sano.",
+
+  section2Sub3Title: "Categorie BMI e interpretazione",
+  section2Sub3Intro: "Il risultato calcolato rientra in una delle seguenti categorie standard:",
+  section2Sub3Image: "/BMI-calculator-table-image.jpg",
+  section2Sub3ImageAlt: "Bmi Calculated Results",
+  section2Sub3End1: "Ogni intervallo serve come linea guida generale. La salute individuale dipende anche da massa muscolare, densità ossea e età.",
+  section2Sub3End2: "Calcolatori Vast incoraggia gli utenti a usare il risultato BMI come punto di partenza per scelte di vita più sane e a consultare professionisti sanitari per valutazioni dettagliate.",
+
+  faqTitle: "Domande frequenti (FAQ)",
+  faq: [
+    {
+      q: "Cosa fa il Calcolatore BMI su Calcolatori Vast?",
+      a: "Il Calcolatore BMI su Calcolatori Vast stima rapidamente il tuo Indice di Massa Corporea usando altezza e peso, indicando se sei sottopeso, normopeso, sovrappeso o obeso."
     },
+    {
+      q: "Come posso usare il Calcolatore BMI?",
+      a: "Inserisci altezza (in cm o pollici) e peso (in kg o libbre) nei campi indicati, poi clicca su Calcola. Il risultato apparirà subito con il tuo valore BMI e la categoria di peso."
+    },
+    {
+      q: "Qual è la formula del BMI?",
+      a: "BMI = peso (kg) ÷ [altezza (m)]² oppure BMI = 703 × peso (lbs) ÷ [altezza (in)]², entrambe forniscono risultati precisi."
+    },
+    {
+      q: "Qual è l’intervallo di un BMI sano?",
+      a: "Un BMI tra 18.5 e 24.9 è considerato sano. Sotto 18.5 è sottopeso, sopra 25 è sovrappeso o obeso."
+    },
+    {
+      q: "Il BMI riflette accuratamente la salute generale?",
+      a: "Il BMI è uno strumento di screening affidabile, ma non un test medico. Non tiene conto di muscolatura, età o composizione corporea."
+    },
+    {
+      q: "Ogni quanto dovrei controllare il mio BMI?",
+      a: "È consigliabile controllare il BMI ogni pochi mesi, soprattutto se cambi dieta o routine di esercizio."
+    }
+  ]
+},
     calories: {
       title: "Calcolatore delle Calorie",
       desc: "Calcola il fabbisogno calorico giornaliero",

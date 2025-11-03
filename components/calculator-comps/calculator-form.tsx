@@ -71,7 +71,7 @@ export function CalculatorForm({ calculator, locale, onCalculate, result }: Calc
             </div>
           ))}
           <Button onClick={handleSubmit} className="w-full">
-            Calculate
+            {getTranslation(locale, "calculatorform.btn")}
           </Button>
         </form>
 

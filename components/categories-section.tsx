@@ -70,7 +70,7 @@ export default function CategoriesSection({ locale }: CalculatorsGridSectionProp
               >
                 <CardHeader>
                   <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {getTranslation(locale, calc.titleKey)}
+                    {getTranslation(locale, calc.heading)}
                   </CardTitle>
                   <CardDescription className="text-muted-foreground">
                     {getTranslation(locale, calc.descriptionKey)}

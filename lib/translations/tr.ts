@@ -3,7 +3,7 @@ import { BookOpen, Globe, Info } from "lucide-react";
 export const trTranslations = {
 hero: {
   title: "Akıllı, anlık ve doğru sonuçlar için ücretsiz çevrimiçi hesap makinesi",
-  subtitle: "VastCalculator; finans, sağlık, eğitim ve günlük matematiksel dönüşümleri kapsayan eksiksiz bir çevrimiçi hesap makinesi araç seti sunar. Her hesap makinesi anında, doğru ve reklamsız sonuçlar verir, öğrencilerin, profesyonellerin ve günlük kullanıcıların karmaşık hesaplamaları basitleştirmesine yardımcı olur.",
+  subtitle: "Vast Hesap Makinesi; finans, sağlık, eğitim ve günlük matematiksel dönüşümleri kapsayan eksiksiz bir çevrimiçi hesap makinesi araç seti sunar. Her hesap makinesi anında, doğru ve reklamsız sonuçlar verir, öğrencilerin, profesyonellerin ve günlük kullanıcıların karmaşık hesaplamaları basitleştirmesine yardımcı olur.",
   cta: "Kategorileri keşfet",
 },
 
@@ -23,7 +23,7 @@ nav: {
   },
       aboutsection: {
   title: "Vast Hesap Makinesi Hakkında",
-  description: "Rakamlar her kararı yönlendirir ve VastCalculator bu rakamları anlamayı kolaylaştırır. Basit matematiksel dönüşümlerden karmaşık finansal analizlere kadar, ücretsiz çevrimiçi hesap makinesi araçlarımız formülleri doğru ve anında sonuçlara dönüştürür. Erişilebilirlik, güvenilirlik ve sadelik için tasarlanan VastCalculator, her hesaplamayı zahmetsiz hale getirir.",
+  description: "Rakamlar her kararı yönlendirir ve Vast Hesap Makinesi bu rakamları anlamayı kolaylaştırır. Basit matematiksel dönüşümlerden karmaşık finansal analizlere kadar, ücretsiz çevrimiçi hesap makinesi araçlarımız formülleri doğru ve anında sonuçlara dönüştürür. Erişilebilirlik, güvenilirlik ve sadelik için tasarlanan Vast Hesap Makinesi, her hesaplamayı zahmetsiz hale getirir.",
   quote: "Vast Hesap Makinesi’da her hesaplamayı erişilebilir ve zahmetsiz hale getiren akıllı araçlar tasarlıyoruz.",
   cta: "Hakkımızda daha fazla bilgi edinin"
 },
@@ -120,6 +120,20 @@ about: {
     },
   },
 
+  result: {
+    title: "Sonuç Özeti",
+    noresulttitle: "Henüz sonuç yok",
+    noresultssub: "Sonuçları görmek için bilgilerinizi girin ve “Hesapla”ya tıklayın.",
+    calresult: "Sonucunuz hesaplanıyor...",
+    inputstext: "Girdileriniz:",
+    calculateresult: "Hesaplanan Sonuç:",
+    recalculate: "Yeniden Hesapla"
+  },
+
+calculatorform: {
+  btn: "Hesapla"
+},  
+
   // Sağlık Hesaplayıcıları
   health: {
     bodyFat: {
@@ -139,18 +153,116 @@ about: {
       formulaText:
         "ABD Donanması yöntemi: YAĞ% = 495 / (1.0324 - 0.19077 * log10(bel - boyun) + 0.15456 * log10(boy)) - 450",
     },
-    bmi: {
-      title: "BMI Hesaplayıcı",
-      desc: "Vücut Kitle İndeksinizi hesaplayın",
-      weight: "Kilo (kg)",
-      height: "Boy (cm)",
-      result: "BMI",
-      about: "BMI Hakkında",
-      aboutText:
-        "BMI, boy ve kiloya göre vücut yağ oranını ölçer. Yetişkin erkek ve kadınlar için geçerlidir.",
-      formula: "Formül",
-      formulaText: "BMI = kilo (kg) / (boy (m))²",
+bmi: {
+  title: "Ücretsiz BMI Hesaplayıcı: Vücut Kitle İndeksinizi Anında Çevrimiçi Öğrenin",
+  desc: "Vücut Kitle İndeksinizi (BMI) hesaplayarak diyabet ve kalp hastalığı gibi potansiyel sağlık risklerini değerlendirin. Ücretsiz çevrimiçi hesaplayıcımızla fitness hedeflerinizi takip edin.",
+  heading: "BMI Hesaplayıcı",
+
+  weight: "Ağırlık (kg)",
+  height: "Boy (cm)",
+  result: "BMI",
+
+  tocTitle: "İçindekiler",
+  tocwhy: "Neden BMI Hesaplayıcı Kullanmalısınız",
+  tochowitworks: "Çevrimiçi BMI Hesaplayıcı Nasıl Çalışır",
+  tocwhybmi: "BMI Neden Önemlidir",
+  tocUnderstanding: "BMI Formülünü Anlamak",
+  tocexample: "BMI Hesaplama Örneği",
+  toccategories: "BMI Kategorileri ve Yorumlama",
+
+  section1Title: "BMI Hesaplayıcı Hakkında",
+  section1Content: "Vast Hesap Makinesi üzerindeki BMI Hesaplayıcı, kullanıcıların Vücut Kitle İndeksini (BMI) saniyeler içinde hesaplamasına yardımcı olan hızlı ve güvenilir bir araçtır. BMI, boyunuza göre kilonuzun sağlıklı bir aralıkta olup olmadığını gösteren standart bir ölçümdür. Bu çevrimiçi BMI hesaplayıcı, sağlık uzmanları ve kuruluşları tarafından kullanılan küresel olarak tanınmış formülleri uygular.",
+  section1ExtraText: "BMI’nin ötesinde vücut yapınızı daha iyi anlamak için sonuçlarınızı",
+  section1ExtraLinkText: "Vücut Yağ Oranı Hesaplayıcısı",
+  
+  section1Sub1Title: "Neden BMI Hesaplayıcı Kullanmalısınız",
+  section1Sub1Intro: "BMI skorunuz, mevcut sağlık kategorinizi anlamanıza yardımcı olur: zayıf, sağlıklı, kilolu veya obez. Kilo ile boy arasındaki genel dengeyi izlemek için en basit yollardan biridir.",
+  section1Sub1Text: "Bu Vücut Kitle İndeksi Hesaplayıcısı özellikle şu kişiler için faydalıdır:",
+  section1Sub1List: [
+    "Fitness yolculuğunu takip edenler",
+    "Yeni bir diyet veya egzersiz rutini başlatanlar",
+    "Kilo ile ilgili potansiyel sağlık risklerini izleyenler"
+  ],
+  section1Sub1End: "BMI, mevcut sağlık durumunuzun net bir resmini sunar ve daha sağlıklı bir yaşam tarzına doğru bilinçli adımlar atmanıza yardımcı olur.",
+
+  section1Sub2Title: "Çevrimiçi BMI Hesaplayıcı Nasıl Çalışır",
+  section1Sub2Intro: "Bu hesaplayıcıyı kullanmak kolay ve basittir. Sadece şunları girmeniz yeterlidir:",
+  section1Sub2List: [
+    "Boyunuz (santimetre veya inç cinsinden)",
+    "Kilonuz (kilogram veya pound cinsinden)"
+  ],
+  section1Sub2Text: "\"Hesapla\" butonuna tıkladığınızda, sonuç anında görünür ve BMI değerinizi ve karşılık gelen kilo durumunuzu gösterir.",
+  section1Sub2End: "Vast Hesap Makinesi, sade bir arayüz, anında sonuçlar ve hem metrik hem de emperyal sistemlerde doğru hesaplamalar sunar.",
+
+  section1Sub3Title: "BMI Neden Önemlidir",
+  section1Sub3Intro: "BMI’niz olası sağlık risklerini gösterebilir. Yüksek BMI kalp hastalığı, diyabet veya eklem stresi gibi sorunlara işaret edebilirken, çok düşük BMI beslenme yetersizliklerini gösterebilir. Bu değeri düzenli olarak takip etmek sağlıklı bir aralıkta kalmanıza yardımcı olur. Vücut bileşiminizi daha ayrıntılı öğrenmek için Vücut Yağ Oranı Hesaplayıcımızı kullanabilirsiniz.",
+  section1Sub3End: "Vast Hesap Makinesi, her aracın doğru algoritmalara ve güncel standartlara dayalı olmasını sağlar, böylece sağlık, fitness veya yaşam tarzına odaklanan kullanıcılar için güvenilir sonuçlar sunar.",
+
+  section2Title: "BMI Hesaplama Formülü",
+  section2Intro: "Vast Hesap Makinesi üzerindeki BMI Hesaplayıcı, Dünya Sağlık Örgütü (WHO) ve Hastalık Kontrol ve Önleme Merkezleri (CDC) gibi kurumlar tarafından tanınan resmi Vücut Kitle İndeksi formülünü kullanır.",
+  section2Text: "Formül tüm platformlarda aynı kalır ve şu şekildedir:",
+  section2MetricFormula: "BMI = ağırlık (kg) ÷ [boy (m)]²",
+  section2ImperialIntro: "Eğer emperyal birim kullanıyorsanız, doğruluğu korumak için biraz farklı hesaplanır:",
+  section2ImperialFormula: "BMI = 703 × ağırlık (lbs) ÷ [boy (in)]²",
+  section2End: "Bu formüller, mevcut kilonuzun sağlıklı bir aralıkta olup olmadığını belirlemenize yardımcı olur.",
+
+  section2Sub1Title: "BMI Formülünü Anlamak",
+  section2Sub1Image: "/BMI-calculator.jpg",
+  section2Sub1ImageAlt: "BMI Calculator - Body Mass Index Calculator",
+  section2Sub1Intro: "BMI, basit bir matematiksel prensibe dayanır: kilonuzu boyunuzun karesiyle karşılaştırır. Bu oran, kilonuzun vücut yapınıza uygun olup olmadığını belirler.",
+  section2Sub1Text: "Kısa bir açıklama:",
+  section2Sub1Points: [
+    "Kilo, vücudunuzun taşıdığı toplam kütleyi gösterir.",
+    "Boyun karesi, kiloyu vücut çerçevenize göre ayarlar.",
+    "Son değer Vücut Kitle İndeksinizi verir ve sağlık kategorinizi belirlemeye yardımcı olur."
+  ],
+
+  section2Sub2Title: "BMI Hesaplama Örneği",
+  section2Sub2Intro: "Daha iyi anlamak için bir örnek üzerinden gidelim.",
+  section2Sub2MetricLabel: "Örnek (Metrik Birimler):",
+  section2Sub2MetricText: "Bir kişi 68 kilogram ağırlığında ve 1.70 metre boyundaysa, hesaplama şu şekilde olur:",
+  section2Sub2MetricFormula: "BMI = 68 ÷ (1.70 × 1.70)  BMI = 68 ÷ 2.89 = 23.5",
+  section2Sub2MetricResult: "BMI değeri 23.5’tir ve bu Değer Sağlıklı Kilo aralığına girer.",
+  section2Sub2ImperialLabel: "Örnek (Emperyal Birimler):",
+  section2Sub2ImperialText: "Bir kişi 150 pound ağırlığında ve 65 inç boyundaysa:",
+  section2Sub2ImperialFormula: "BMI = 703 × 150 ÷ (65 × 65)  BMI = 105450 ÷ 4225 = 24.9",
+  section2Sub2ImperialResult: "BMI değeri 24.9’dur ve bu da Sağlıklı Kilo kategorisindedir.",
+
+  section2Sub3Title: "BMI Kategorileri ve Yorumlama",
+  section2Sub3Intro: "Hesaplanan BMI sonucu aşağıdaki standart kategorilerden birine girer:",
+  section2Sub3Image: "/BMI-calculator-table-image.jpg",
+  section2Sub3ImageAlt: "Bmi Calculated Results",
+  section2Sub3End1: "Her aralık genel bir rehber olarak hizmet eder. Kas kütlesi, kemik yoğunluğu ve yaş gibi bireysel faktörler de sağlığı etkileyebilir.",
+  section2Sub3End2: "Vast Hesap Makinesi, kullanıcıları BMI sonuçlarını daha iyi yaşam tarzı seçimleri için başlangıç noktası olarak kullanmaya ve detaylı değerlendirmeler için sağlık profesyonellerine danışmaya teşvik eder.",
+
+  faqTitle: "Sıkça Sorulan Sorular (SSS)",
+  faq: [
+    {
+      q: "Vast Hesap Makinesi üzerindeki BMI Hesaplayıcı ne yapar?",
+      a: "Vast Hesap Makinesi üzerindeki BMI Hesaplayıcı, boyunuzu ve kilonuzu kullanarak Vücut Kitle İndeksinizi hızlı bir şekilde tahmin eder. Zayıf, sağlıklı, kilolu veya obez olup olmadığınızı gösterir. Araç, küresel sağlık kuruluşlarının kullandığı resmi BMI formülünü uygular."
     },
+    {
+      q: "BMI Hesaplayıcıyı nasıl kullanabilirim?",
+      a: "Boyunuzu (santimetre veya inç cinsinden) ve kilonuzu (kilogram veya pound cinsinden) girin, ardından Hesapla düğmesine tıklayın. Sonuç anında görünür ve BMI değerinizi ve kilo kategorinizi gösterir. Kayıt olmanıza veya ek adımlar atmanıza gerek yoktur."
+    },
+    {
+      q: "BMI’nin arkasındaki formül nedir?",
+      a: "Formül basit ve standarttır: BMI = ağırlık (kg) ÷ [boy (m)]² Emperyal birimler için uyarlanmış versiyonu ise: BMI = 703 × ağırlık (lbs) ÷ [boy (in)]² Her iki versiyon da hızlı sağlık analizi için doğru sonuçlar verir."
+    },
+    {
+      q: "Sağlıklı bir BMI aralığı nedir?",
+      a: "Sağlıklı bir BMI aralığı genellikle 18.5 ile 24.9 arasındadır. 18.5’in altındaki değerler zayıf, 25’in üzerindeki değerler ise kilolu veya obez kabul edilir. Bu aralık, kilonuzun boyunuza orantılı olup olmadığını belirlemenize yardımcı olur."
+    },
+    {
+      q: "BMI genel sağlığı doğru şekilde yansıtır mı?",
+      a: "BMI, bir tıbbi teşhis değil, güvenilir bir tarama aracıdır. Boy ve kiloya göre vücut yağ oranı hakkında genel bir fikir verir. Ancak kas kütlesi, yaş veya vücut bileşimi gibi faktörleri hesaba katmaz. Vücut yağ yüzdesi hakkında daha fazla bilgi için Vast Hesap Makinesi üzerindeki Vücut Yağ Oranı Hesaplayıcısını kullanabilirsiniz."
+    },
+    {
+      q: "BMI’mi ne sıklıkla kontrol etmeliyim?",
+      a: "Diyet, egzersiz veya yaşam tarzınız değiştiğinde birkaç ayda bir BMI’nizi kontrol etmeniz en iyisidir. Düzenli takip, ilerlemenizi izlemenize ve zaman içinde kilo aralığınızda meydana gelen değişikliklerin farkında olmanıza yardımcı olur."
+    }
+  ]
+},
     calories: {
       title: "Kalori Hesaplayıcı",
       desc: "Günlük kalori ihtiyacınızı hesaplayın",

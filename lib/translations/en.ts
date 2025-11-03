@@ -118,6 +118,19 @@ export const enTranslations = {
       ],
     },
   },
+  result: {
+    title: "Result Summary",
+    noresulttitle: "No results yet",
+    noresultssub: "Enter your details and hit “Calculate” to see your results.",
+    calresult: "Calculating your result...",
+    inputstext: "Your Inputs:",
+    calculateresult: "Calculated Result:",
+    recalculate: "Recalculate"
+  },
+
+calculatorform: {
+  btn: "Calculate"
+},
 
   // Health Calculators
   health: {
@@ -304,31 +317,127 @@ export const enTranslations = {
       ]
     },
 
-    calories: {
-      title: "Calorie Calculator",
-      desc: "Calculate daily calorie needs",
+calories: {
+      title: "Calorie Calculator – Calculate Your Daily Calorie Needs",
+      desc: "Use the Calorie Calculator on Vastcalculators.com to find out how many calories you need daily to maintain, lose, or gain weight based on your activity level.",
+      heading: "Calorie Calculator",
+
       age: "Age (years)",
       weight: "Weight (kg)",
       height: "Height (cm)",
+      gender: "Gender",
+      male: "Male",
+      female: "Female",
       activity: "Activity Level",
       sedentary: "Sedentary",
       light: "Light",
       moderate: "Moderate",
       active: "Active",
+      veryActive: "Very Active",
       result: "Daily Calories",
-      about: "About Calories",
-      aboutText: "Calculates your daily caloric needs based on age, weight, height, and activity level.",
-      formula: "Formula",
-      formulaText: "Uses Mifflin-St Jeor equation with activity multiplier",
 
-      faqTitle: "Calorie Calculator FAQs",
+      tocTitle: "Table of Contents",
+      tocwhy: "Why Knowing Your Daily Calorie Intake Matters",
+      tochowitworks: "How the Online Calorie Calculator Works",
+      tocwhymatters: "Why Use Vastcalculators.com Calorie Calculator",
+      tocactivity: "Activity Factor Chart",
+      tocunderstanding: "Understanding the Formula",
+      tocexample: "Example of Calorie Calculation",
+      tocresult: "How to Use the Result",
+      tocreliable: "Why This Formula Is Reliable",
+
+      section1Title: "About Calorie Calculator",
+      section1Content: "The Calorie Calculator on Vast Calculators helps you estimate how many calories your body needs each day. It considers your age, gender, height, weight, and activity level to calculate your daily calorie intake for maintaining, losing, or gaining weight. This online calories calculator uses scientifically approved equations to provide accurate, personalized results. It's ideal for people who want to manage their diet effectively or track fitness progress without guesswork.",
+      section1ExtraText: "Once you know your calorie needs, break them down into carbs, protein, and fat with our",
+      section1ExtraLinkText: "Macro Calculator.",
+
+      section1Sub1Title: "Why Knowing Your Daily Calorie Intake Matters",
+      section1Sub1Intro: "Calories are the energy units your body uses to perform all functions, from breathing to exercising. Consuming more calories than you burn leads to weight gain, while eating fewer helps you lose weight.",
+      section1Sub1Text: "The Calorie Calculator provides the recommended daily calorie intake based on your lifestyle and body composition. This helps you plan balanced meals, improve energy levels, and maintain a healthier body weight",
+
+
+      section1Sub2Title: "How the Online Calories Calculator Works",
+      section1Sub2Intro: "The process is simple. You just need to:",
+      section1Sub2List: [
+        "Enter your age, gender, height, and weight.",
+        "Select your activity level (sedentary, moderate, or active).",
+        "Choose your goal, maintain, lose, or gain weight.",
+      ],
+      section1Sub2Text: "Once you hit Calculate, the tool instantly provides your daily calorie requirement and the breakdown for your goal.",
+      section1Sub2End: "Every result on Vast Calculators is generated using reliable mathematical formulas based on real health data. Whether you're a fitness enthusiast, an athlete, or someone working to improve your daily nutrition, this calculator makes calorie planning simple and effective.",
+
+      section1Sub3Title: "Why Use Vastcalculators.com Calorie Calculator",
+      section1Sub3Intro: "Unlike many online tools, this calculator gives results that reflect your true daily needs, not generic averages. It helps you:",
+      section1Sub3List: [
+        "Understand how many calories you burn daily",
+        "Adjust food portions to fit your health goals",
+        "Maintain long-term consistency in your diet plan",
+      ],
+      section1Sub3End: "Each result is easy to interpret and comes with clear guidance, so you can make smarter decisions about your nutrition and energy intake.",
+
+      section2Title: "Calorie Calculator Formula",
+      section2Image: "/Calorie-Calculator.jpg",
+      section2ImageAlt: "Calorie Calculator",
+      section2Intro: "The Calorie Calculator on Vastcalculators uses the Mifflin-St Jeor Equation, one of the most trusted formulas for estimating Basal Metabolic Rate (BMR) — the number of calories your body burns at rest.This equation then adjusts for activity level to estimate Total Daily Energy Expenditure (TDEE), which represents the total number of calories you need each day.",
+      section2SubTitle: "Mifflin-St Jeor Equation",
+      section2MetricFormulaMale: "For Men: BMR = 10 × weight (kg) + 6.25 × height (cm) – 5 × age (years) + 5",
+      section2MetricFormulaFemale: "For Women: BMR = 10 × weight (kg) + 6.25 × height (cm) – 5 × age (years) – 161",
+      section2End: "Once BMR is calculated, it is multiplied by an Activity Factor to estimate your daily calorie intake.",
+
+      section2Sub1Title: "Activity Factor Chart",
+      section2Sub1Image: "/Calories-calculator-table-image.jpg",
+      section2Sub1ImageAlt: "Activity Factor Chart",
+      section2Sub1End: "Your Total Daily Energy Expenditure (TDEE) = BMR × Activity Factor",
+
+
+      section2Sub2Title: "Understanding the Formula",
+      section2Sub2Intro: "The Mifflin-St Jeor equation is used because it provides the most accurate estimate of calorie needs for both men and women.It helps you determine how many calories you should consume to maintain your current weight or adjust it according to your goal.This calculation takes into account your body composition, metabolism, and lifestyle to provide realistic calorie estimates.",
+      section2Sub3Title: "Example of Calorie Calculation",
+      section2Sub3ExampleText: "Let’s take an example to make this clear",
+      section2Sub3ExampleText2: "Example for a 30-year-old male:",
+      section2Sub3List: [
+        "Weight: 70 kg",
+        "Height: 175 cm",
+        "Activity level: Moderately Active"
+      ],
+      section2Sub3ExampleText3: "Step 1 – Calculate BMR:",
+      section2Sub3Formula1: " BMR = 10 × 70 + 6.25 × 175 – 5 × 30 + 5",
+      section2Sub3Formula2: "BMR = 700 + 1093.75 – 150 + 5 = 1648.75 kcal/day",
+      section2Sub3ExampleText4: "Step 2 – Adjust for activity:",
+      section2Sub3Formula3: "TDEE = 1648.75 × 1.55 = 2555 kcal/day",
+      section2Sub3End: "So, this person needs about 2555 calories daily to maintain his weight.If he wants to lose weight, he can eat about 500 calories less (≈ 2050 kcal/day).If he wants to gain weight, he can eat about 500 calories more (≈ 3050 kcal/day).",
+
+      section2Sub4Title: "How to Use the Result",
+      section2Sub4Intro: "Once you know your daily calorie needs, you can plan meals accordingly.Keep your calorie intake slightly below your maintenance level for weight loss or slightly above it for healthy muscle gain.",
+      section2Sub5Title: "Why This Formula Is Reliable",
+      section2Sub5Intro: "The Calorie Calculator on Vastcalculators uses modern equations recognized by nutritionists and health experts. It provides accurate data without unnecessary complexity, enabling users of all backgrounds to understand their daily calorie intake easily.",
+
+      faqTitle: "Frequently Asked Questions (FAQs)",
       faq: [
-        { q: "What is a calorie deficit?", a: "It’s when you consume fewer calories than your body burns, leading to weight loss." },
-        { q: "How many calories should I eat to lose weight?", a: "A safe deficit is around 500 calories below your maintenance level — enough for about 0.5 kg of weight loss per week." },
-        { q: "Does activity level really affect calorie needs?", a: "Absolutely. More movement means your body burns more calories, even at rest." },
-        { q: "Can I trust online calorie calculators?", a: "They’re great for estimates. For precision, track your progress and adjust intake based on real results." },
-        { q: "Do different foods burn different calories?", a: "Yes. Protein burns more energy during digestion compared to fats or carbs — this is called the thermic effect." },
-        { q: "Should I eat the same calories every day?", a: "Not necessarily. Some people benefit from calorie cycling depending on activity days or training intensity." }
+        {
+          q: "What does the Calorie Calculator on Vast Calculators do?",
+          a: "The Calorie Calculator on Vastcalculators helps estimate the number of calories your body needs daily. It uses your age, gender, height, weight, and activity level to calculate your daily calorie intake for maintaining, losing, or gaining weight. The result helps you plan your meals with better accuracy."
+        },
+        {
+          q: "How does the Calorie Calculator work?",
+          a: "This online calories calculator follows the Mifflin-St. Jeor Equation to determine your Basal Metabolic Rate (BMR). It then multiplies that number by an activity factor to determine your Total Daily Energy Expenditure (TDEE), which represents the total calories you burn each day. This gives a clear picture of your energy needs."
+        },
+        {
+          q: "Why should I know my daily calorie intake?",
+          a: "Knowing your daily calorie intake helps you make informed decisions about your nutrition. It allows you to manage your weight, improve your diet, and maintain consistent energy levels. Whether you’re trying to lose fat, gain muscle, or stay fit, calorie awareness is the foundation of progress"
+        },
+        {
+          q: "Can this calculator help with weight loss or weight gain?",
+          a: "Yes. The Calorie Calculator tells you exactly how many calories you should eat to maintain your current weight To lose weight, eat around 500 fewer calories per day. To gain weight, add about 500 extra calories daily. This steady adjustment helps you reach your goals safely and effectively."
+        },
+        {
+          q: "How accurate is the Calorie Calculator?",
+          a: "The Calorie Calculator on Vastcalculators uses evidence-based formulas trusted by fitness professionals and dietitians. While results may vary slightly depending on metabolism and genetics, the calculator provides a close estimate that works well for most users. "
+        },
+        {
+          q: "What should I do after calculating my calories?",
+          a: "After finding your daily calorie needs, plan balanced meals that match your goal. Track your food intake and monitor progress weekly."
+        }
       ]
     },
 

@@ -66,7 +66,7 @@ export function Header({ locale }: HeaderProps) {
               <div className="absolute left-0 top-full h-2 w-full"></div>
 
               <div
-                className={`absolute left-0 top-[calc(100%+8px)] w-[300px] bg-white shadow-lg rounded-md border border-border p-2 grid grid-cols-2 gap-2 z-50
+                className={`absolute left-0 top-[calc(100%+8px)] w-[330px] bg-white shadow-lg rounded-md border border-border p-2 grid grid-cols-2 gap-2 z-50
                 transition-all duration-200 ease-out origin-top
                 ${isHovered ? "opacity-100 scale-100 translate-y-0 visible" : "opacity-0 scale-95 -translate-y-2 invisible"}`}
               >

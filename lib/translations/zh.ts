@@ -3,7 +3,7 @@ import { BookOpen, Globe, Info } from "lucide-react";
 export const zhTranslations = {
 hero: {
   title: "智能、即时且精准结果的在线免费计算器",
-  subtitle: "VastCalculator 提供完整的在线计算器工具套件，涵盖金融、健康、教育和日常数学转换。每个计算器都能提供即时、精准且无广告的结果，帮助学生、专业人士和日常用户简化复杂计算。",
+  subtitle: "广阔计算器  提供完整的在线计算器工具套件，涵盖金融、健康、教育和日常数学转换。每个计算器都能提供即时、精准且无广告的结果，帮助学生、专业人士和日常用户简化复杂计算。",
   cta: "探索类别",
 },
 
@@ -27,7 +27,7 @@ nav: {
   },
       aboutsection: {
   title: "关于 广阔计算器",
-  description: "数字驱动每一个决策，而 VastCalculator 让这些数字更容易理解。从简单的数学换算到复杂的财务分析，我们的免费在线计算器工具将公式转化为精确且即时的结果。VastCalculator 以可访问性、可靠性和简洁性为核心，确保每次计算都轻松无比。",
+  description: "数字驱动每一个决策，而 广阔计算器  让这些数字更容易理解。从简单的数学换算到复杂的财务分析，我们的免费在线计算器工具将公式转化为精确且即时的结果。广阔计算器  以可访问性、可靠性和简洁性为核心，确保每次计算都轻松无比。",
   quote: "在 广阔计算器，我们致力于设计智能工具，让每次计算都轻松且人人可用。",
   cta: "了解更多关于我们"
 },
@@ -118,6 +118,20 @@ about: {
     },
   },
 
+  result: {
+    title: "结果摘要",
+    noresulttitle: "暂无结果",
+    noresultssub: "输入您的信息并点击“计算”以查看结果。",
+    calresult: "正在计算结果...",
+    inputstext: "您的输入：",
+    calculateresult: "计算结果：",
+    recalculate: "重新计算"
+  },
+
+calculatorform: {
+  btn: "计算"
+},  
+
   // 健康计算器
   health: {
    bodyFat: {
@@ -144,25 +158,116 @@ about: {
       { q: "降低体脂最简单的方法是什么？", a: "结合力量训练、有氧运动和热量赤字饮食有助于有效且可持续地减少体脂。" }
     ]
   },
-  bmi: {
-    title: "BMI 计算器",
-    desc: "计算您的体重指数",
-    weight: "体重（公斤）",
-    height: "身高（厘米）",
-    result: "BMI",
-    about: "关于 BMI",
-    aboutText: "BMI 帮助您快速估算或计算重要值 —— 使用可信公式。它旨在提供准确、即时的结果，而无需手动计算。该计算器非常适合想要快速答案的人 —— 无论是个人、健康还是财务用途。",
-    formula: "BMI 公式",
-    formulaText: "体重指数 (BMI) = 体重（公斤） ÷ 身高²（米²）。如果您的 BMI 低于 18.5，则为偏瘦；18.5–24.9 表示正常范围；25–29.9 提示超重；30 或以上属于肥胖。BMI 并不直接测量体脂 —— 它只是一个快速的健康参考指标。",
-    faqTitle: "BMI 计算器常见问题",
-    faq: [
-      { q: "健康的 BMI 范围是多少？", a: "健康的 BMI 在 18.5 到 24.9 之间 —— 此范围表明您的体重与身高匹配。" },
-      { q: "BMI 对所有人都准确吗？", a: "不完全是。BMI 无法区分肌肉与脂肪，因此运动员或肌肉型人可能显示为超重，即使他们很健康。" },
-      { q: "我应该多久检查一次 BMI？", a: "除非您积极跟踪健身或减重目标，否则每月或每几周检查一次就可以。" },
-      { q: "BMI 能指示健康风险吗？", a: "高或低的 BMI 值可能与疾病风险增高有关，但它应与其他健康指标一起使用。" },
-      { q: "如果我的 BMI 较高该怎么办？", a: "如果您的 BMI 超过 25，请尝试调整饮食、运动及生活习惯。请咨询医疗专业人士获取定制建议。" }
-    ]
-  },
+bmi: {
+  title: "免费BMI计算器：即时在线测量身体质量指数",
+  desc: "计算您的身体质量指数 (BMI)，以评估潜在的健康风险，如糖尿病和心脏病。使用我们的免费在线计算器跟踪您的健身目标。",
+  heading: "BMI计算器",
+
+  weight: "体重 (kg)",
+  height: "身高 (cm)",
+  result: "BMI",
+
+  tocTitle: "目录",
+  tocwhy: "为什么要使用BMI计算器",
+  tochowitworks: "在线BMI计算器的工作原理",
+  tocwhybmi: "BMI的重要性",
+  tocUnderstanding: "理解BMI公式",
+  tocexample: "BMI计算示例",
+  toccategories: "BMI类别与解释",
+
+  section1Title: "关于BMI计算器",
+  section1Content: "广阔计算器 的BMI计算器是一个快速可靠的工具，可帮助用户在几秒钟内计算身体质量指数 (BMI)。BMI是一个标准指标，用于显示您的体重是否在健康范围内。该在线BMI计算器遵循全球医疗机构和卫生组织认可的公式。",
+  section1ExtraText: "想更深入了解您的身体组成，请查看我们的",
+  section1ExtraLinkText: "体脂计算器",
+
+  section1Sub1Title: "为什么要使用BMI计算器",
+  section1Sub1Intro: "您的BMI分数可帮助您了解当前健康类别：体重过轻、健康、超重或肥胖。这是监测身高与体重平衡最简单的方法之一。",
+  section1Sub1Text: "该身体质量指数计算器特别适合以下人群：",
+  section1Sub1List: [
+    "正在跟踪健身过程的人",
+    "开始新的饮食或锻炼计划的人",
+    "监控与体重相关潜在健康风险的人"
+  ],
+  section1Sub1End: "BMI提供了您当前健康状况的清晰概况，帮助您采取明智的步骤迈向更健康的生活方式。",
+
+  section1Sub2Title: "在线BMI计算器的工作原理",
+  section1Sub2Intro: "使用此计算器既简单又直接。您只需输入：",
+  section1Sub2List: [
+    "您的身高（厘米或英寸）",
+    "您的体重（千克或磅）"
+  ],
+  section1Sub2Text: "点击“计算”后，结果将立即显示，展示您的BMI值及对应的体重状态。",
+  section1Sub2End: "与大多数在线工具不同，广阔计算器 提供干净的界面、即时结果以及公制和英制系统的精确计算。",
+
+  section1Sub3Title: "BMI的重要性",
+  section1Sub3Intro: "您的BMI可反映潜在的健康风险。过高的BMI可能与心脏病、糖尿病或关节压力等问题相关，而过低的BMI可能表示营养不良。定期监测此数值有助于保持健康范围。若想了解更详细的身体成分，请查看我们的体脂计算器。",
+  section1Sub3End: "广阔计算器 确保每个工具都基于精确算法和最新标准构建，为专注于健身、健康或保健的用户提供准确的结果和更好的理解。",
+
+  section2Title: "BMI计算公式",
+  section2Intro: "广阔计算器 的BMI计算器使用世界卫生组织 (WHO) 和美国疾病控制与预防中心 (CDC) 认可的官方身体质量指数公式。",
+  section2Text: "该公式在所有平台上保持一致，形式如下：",
+  section2MetricFormula: "BMI = 体重 (kg) ÷ [身高 (m)]²",
+  section2ImperialIntro: "如果使用英制单位，为保持准确性，公式会略有调整：",
+  section2ImperialFormula: "BMI = 703 × 体重 (lbs) ÷ [身高 (in)]²",
+  section2End: "这些公式帮助用户判断当前体重是否在健康范围内。",
+
+  section2Sub1Title: "理解BMI公式",
+  section2Sub1Image: "/BMI-calculator.jpg",
+  section2Sub1ImageAlt: "BMI Calculator - Body Mass Index Calculator",
+  section2Sub1Intro: "BMI基于一个简单的数学原理：将体重与身高的平方进行比较。这个比例决定了您的体重是否与身材相称。",
+  section2Sub1Text: "快速说明如下：",
+  section2Sub1Points: [
+    "体重反映身体质量。",
+    "身高平方调整体重以匹配体型。",
+    "最终值即身体质量指数，用于分类健康状况。"
+  ],
+
+  section2Sub2Title: "BMI计算示例",
+  section2Sub2Intro: "以下是一个更清晰的计算示例。",
+  section2Sub2MetricLabel: "示例（公制单位）：",
+  section2Sub2MetricText: "如果一个人体重68千克，身高1.70米，计算如下：",
+  section2Sub2MetricFormula: "BMI = 68 ÷ (1.70 × 1.70)  BMI = 68 ÷ 2.89 = 23.5",
+  section2Sub2MetricResult: "BMI值为23.5，属于健康体重范围。",
+  section2Sub2ImperialLabel: "示例（英制单位）：",
+  section2Sub2ImperialText: "如果一个人体重150磅，身高65英寸：",
+  section2Sub2ImperialFormula: "BMI = 703 × 150 ÷ (65 × 65)  BMI = 105450 ÷ 4225 = 24.9",
+  section2Sub2ImperialResult: "BMI值为24.9，同样属于健康体重范围。",
+
+  section2Sub3Title: "BMI类别与解释",
+  section2Sub3Intro: "计算出的BMI结果属于以下标准类别之一：",
+  section2Sub3Image: "/BMI-calculator-table-image.jpg",
+  section2Sub3ImageAlt: "Bmi Calculated Results",
+  section2Sub3End1: "每个范围仅作为一般指导。个人健康还取决于肌肉质量、骨密度和年龄等因素。",
+  section2Sub3End2: "广阔计算器 建议用户将BMI结果作为改善生活方式的起点，并咨询医疗专业人员进行详细评估。",
+
+  faqTitle: "常见问题 (FAQs)",
+  faq: [
+    {
+      q: "广阔计算器 的BMI计算器有什么作用？",
+      a: "广阔计算器 的BMI计算器根据身高和体重快速估算身体质量指数，显示您是否属于体重过轻、正常、超重或肥胖。该工具采用全球卫生组织使用的标准公式。"
+    },
+    {
+      q: "如何使用BMI计算器？",
+      a: "输入您的身高（厘米或英寸）和体重（千克或磅），然后点击计算。结果将立即显示，包括您的BMI值和体重类别。无需注册或额外步骤。"
+    },
+    {
+      q: "BMI的计算公式是什么？",
+      a: "公式很简单：BMI = 体重 (kg) ÷ [身高 (m)]² 使用英制单位的公式为：BMI = 703 × 体重 (lbs) ÷ [身高 (in)]²。两种公式都可快速获得准确结果。"
+    },
+    {
+      q: "健康的BMI范围是多少？",
+      a: "健康的BMI范围通常在18.5到24.9之间。低于18.5为体重过轻，高于25为超重或肥胖。该范围帮助您判断体重是否与身高匹配。"
+    },
+    {
+      q: "BMI能准确反映整体健康吗？",
+      a: "BMI是一个可靠的筛查工具，但不是医学诊断。它提供基于身高和体重的体脂总体指示，但不考虑肌肉量、年龄或身体组成。如需更深入分析，请查看广阔计算器 的体脂计算器。"
+    },
+    {
+      q: "我应该多久检查一次BMI？",
+      a: "建议每隔几个月检查一次BMI，尤其当饮食、锻炼或生活方式改变时。定期跟踪有助于监控体重变化和健康趋势。"
+    }
+  ]
+},
   calories: {
     title: "热量计算器",
     desc: "计算每日所需热量",

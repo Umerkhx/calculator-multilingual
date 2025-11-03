@@ -16,36 +16,116 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
   const sections = calculator.sections || []
 
   const renderList = (listKey: string) => {
+    if (!listKey) return null
     const list = getTranslation(locale, listKey)
 
-    if (!Array.isArray(list)) return null
+    if (!Array.isArray(list) || list.length === 0) {
+      return null
+    }
 
     return (
       <ul className="space-y-2 list-disc pl-6 text-gray-600 my-4">
         {list.map((item: any, index: number) => (
-          <li key={index}>
-            {typeof item === 'string' ? item : item}
+          <li key={index} className="text-gray-600">
+            {typeof item === 'string' ? item : JSON.stringify(item)}
           </li>
         ))}
       </ul>
     )
   }
 
+  const renderMultipleLists = (listKeys: string[]) => {
+    if (!listKeys || !Array.isArray(listKeys) || listKeys.length === 0) return null
 
+    return (
+      <>
+        {listKeys.map((listKey: string, index: number) => (
+          <div key={`list-${index}`}>
+            {renderList(listKey)}
+          </div>
+        ))}
+      </>
+    )
+  }
 
   const renderPoints = (pointsKey: string) => {
+    if (!pointsKey) return null
     const points = getTranslation(locale, pointsKey)
 
-    if (!Array.isArray(points)) return null
+    if (!Array.isArray(points) || points.length === 0) {
+      return null
+    }
 
     return (
       <ul className="space-y-2 list-disc pl-6 text-gray-600 my-4">
         {points.map((point: any, index: number) => (
-          <li key={index}>
-            {typeof point === 'string' ? point : point}
+          <li key={index} className="text-gray-600">
+            {typeof point === 'string' ? point : JSON.stringify(point)}
           </li>
         ))}
       </ul>
+    )
+  }
+
+  const renderMultiplePoints = (pointsKeys: string[]) => {
+    if (!pointsKeys || !Array.isArray(pointsKeys) || pointsKeys.length === 0) return null
+
+    return (
+      <>
+        {pointsKeys.map((pointsKey: string, index: number) => (
+          <div key={`points-${index}`}>
+            {renderPoints(pointsKey)}
+          </div>
+        ))}
+      </>
+    )
+  }
+
+  const renderFormula = (formulaKey: string) => {
+    if (!formulaKey) return null
+    const formula = getTranslation(locale, formulaKey)
+
+    return (
+      <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 my-6">
+        <p className="text-gray-700 font-mono text-sm whitespace-pre-wrap">
+          {formula}
+        </p>
+      </div>
+    )
+  }
+
+  const renderMultipleFormulas = (formulaKeys: string[]) => {
+    if (!formulaKeys || !Array.isArray(formulaKeys) || formulaKeys.length === 0) return null
+
+    return (
+      <>
+        {formulaKeys.map((formulaKey: string, index: number) => (
+          <div key={`formula-${index}`}>
+            {renderFormula(formulaKey)}
+          </div>
+        ))}
+      </>
+    )
+  }
+
+  const renderLinks = (links: Array<{ content: string; key: string; slug: string }>, type: string = "subsection") => {
+    if (!links || !Array.isArray(links) || links.length === 0) return null
+
+    return (
+      <>
+        {links.map((link, index) => (
+          <p key={`link-${index}`} className="text-gray-600 leading-relaxed">
+            {getTranslation(locale, link.content)}{" "}
+            <Link
+              className="text-blue-500 font-medium"
+              target="_blank"
+              href={locale === "en" ? `/${category}/${link.slug}` : `/${locale}/${category}/${link.slug}`}
+            >
+              {getTranslation(locale, link.key)}
+            </Link>
+          </p>
+        ))}
+      </>
     )
   }
 
@@ -54,6 +134,7 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
 
     return (
       <div key={subsection.id} className={`space-y-4 ${paddingClass}`}>
+        {/* Title */}
         {subsection.titleKey && (
           <div className="scroll-mt-20" id={subsection.id}>
             <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-4">
@@ -62,6 +143,14 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
           </div>
         )}
 
+        {/* Subtitle */}
+        {subsection.subtitleKey && (
+          <p className="text-md font-semibold text-gray-800">
+            {getTranslation(locale, subsection.subtitleKey)}
+          </p>
+        )}
+
+        {/* Intro */}
         {subsection.introKey && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.introKey)}
@@ -71,12 +160,22 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
         {subsection.linkparacontent && subsection.linkparaKey && subsection.linkparaslug && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.linkparacontent)}{" "}
-            <Link href={`/${subsection.linkparaslug}`}>
+            <Link className="text-blue-500 font-medium"
+               target="_blank"
+              href={locale === "en" ? `/${category}/${subsection.linkparaslug}` : `/${locale}/${category}/${subsection.linkparaslug}`}
+             >
               {getTranslation(locale, subsection.linkparaKey)}
             </Link>
           </p>
         )}
 
+        {subsection.links && renderLinks(subsection.links, "subsection")}
+
+             {subsection.beforeimagecontentKey && !subsection.type && (
+          <p className="text-gray-600 leading-relaxed">
+            {getTranslation(locale, subsection.beforeimagecontentKey)}
+          </p>
+        )}
 
         {subsection.imageKey && (
           <div className="my-6 flex lg:justify-start justify-center">
@@ -96,59 +195,50 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
             {getTranslation(locale, subsection.contentKey)}
           </p>
         )}
+   
 
         {subsection.textKey && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.textKey)}
           </p>
         )}
-
-        {/* List */}
+  
         {subsection.listKey && renderList(subsection.listKey)}
 
-        {/* Points */}
+        {subsection.lists && renderMultipleLists(subsection.lists)}
+
         {subsection.pointsKey && renderPoints(subsection.pointsKey)}
 
-        {/* Formula */}
-        {subsection.formulaKey && (
-          <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 my-6">
-            <p className="text-gray-700 font-mono text-sm whitespace-pre-wrap">
-              {getTranslation(locale, subsection.formulaKey)}
-            </p>
-          </div>
-        )}
+        {subsection.points && renderMultiplePoints(subsection.points)}
 
-        {/* Result */}
+        {subsection.formulaKey && renderFormula(subsection.formulaKey)}
+
+        {subsection.formulas && renderMultipleFormulas(subsection.formulas)}
+
         {subsection.resultKey && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.resultKey)}
           </p>
         )}
 
-        {/* Label */}
         {subsection.labelKey && (
           <p className="text-gray-700 font-semibold">
             {getTranslation(locale, subsection.labelKey)}
           </p>
         )}
 
-        {/* End */}
         {subsection.endKey && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.endKey)}
           </p>
         )}
 
-        {/* End2 */}
-        {subsection.end2Key && (
+        {subsection.endKey2 && (
           <p className="text-gray-600 leading-relaxed">
-            {getTranslation(locale, subsection.end2Key)}
+            {getTranslation(locale, subsection.endKey2)}
           </p>
         )}
 
-
-
-        {/* Nested Subsections */}
         {subsection.subsections && subsection.subsections.length > 0 && (
           <div className="space-y-6 mt-6">
             {subsection.subsections.map((sub) => renderSubsection(sub, depth + 1))}
@@ -182,10 +272,17 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
           </p>
         )}
 
+        {section.textKey && (
+          <p className="text-gray-600 leading-relaxed">
+            {getTranslation(locale, section.textKey)}
+          </p>
+        )}
+
         {section.linkparacontent && section.linkparaKey && section.linkparaslug && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, section.linkparacontent)}{" "}
-            <Link className="text-blue-500 font-medium"
+            <Link
+              className="text-blue-500 font-medium"
               target="_blank"
               href={locale === "en" ? `/${category}/${section.linkparaslug}` : `/${locale}/${category}/${section.linkparaslug}`}
             >
@@ -194,6 +291,13 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
           </p>
         )}
 
+        {section.links && renderLinks(section.links, "section")}
+
+        {section.listKey && renderList(section.listKey)}
+
+        {section.lists && renderMultipleLists(section.lists)}
+
+        {/* Section Subsections */}
         {section.subsections && section.subsections.length > 0 && (
           <div className="space-y-8 mt-8">
             {section.subsections.map((subsection) => renderSubsection(subsection))}
@@ -246,10 +350,11 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
                           e.preventDefault()
                           scrollToSection(item.id)
                         }}
-                        className={`block text-sm py-2 px-3 rounded-md transition-colors ${isActive
-                          ? "bg-blue-100 text-blue-900 font-medium"
-                          : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                          }`}
+                        className={`block text-sm py-2 px-3 rounded-md transition-colors ${
+                          isActive
+                            ? "bg-blue-100 text-blue-900 font-medium"
+                            : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                        }`}
                       >
                         {getTranslation(locale, item.labelKey)}
                       </a>
@@ -267,6 +372,7 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
         <main className="lg:col-span-3">
           <Card className="border-0 shadow-none bg-transparent">
             <CardContent className="p-0 space-y-8">
+              {/* Render Main Sections */}
               {sections.map((section) => renderSection(section))}
 
               {/* Render FAQs */}

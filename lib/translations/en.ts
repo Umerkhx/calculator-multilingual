@@ -128,9 +128,9 @@ export const enTranslations = {
     recalculate: "Recalculate"
   },
 
-calculatorform: {
-  btn: "Calculate"
-},
+  calculatorform: {
+    btn: "Calculate"
+  },
 
   // Health Calculators
   health: {
@@ -147,22 +147,99 @@ calculatorform: {
       result: "Body Fat Percentage",
 
       tocTitle: "Table of Contents",
-      tocAbout: "Estimate Your Body Fat Percentage Accurately",
-      tocFormula: "How Your Body Fat Percentage Is Calculated",
+      tocAbout: "Why Knowing Your Body Fat Percentage Matters",
+      tochow: "How the Online Body Fat Calculator Works",
       tocnavymethod: "U.S. Navy Method",
       tocbmimethod: "BMI-Based Estimation Method",
       tocinterpretation: "How to Interpret Your Result",
       tocFaqs: "Body Fat Calculator FAQs",
 
       heading: "Body Fat Calculator",
-      about: "About Body Fat Percentage",
-      abouttitle: "Estimate Your Body Fat Percentage Accurately",
-      aboutText: "Knowing your body fat percentage is one of the best ways to understand your overall fitness and health. The Body Fat Calculator by VastCalculator helps you measure your body fat percentage using key body metrics like weight, height, age, and gender. Unlike BMI, which only considers height and weight, this calculator provides a deeper look at your body composition, giving you a clearer picture of your muscle versus fat ratio. For a complete health comparison, compare your body fat percentage with your BMI for full analysis.",
+      section1Title: "About Body Fat Calculator",
+      section1Content:
+        "The Body Fat Calculator helps you find out how much of your body weight comes from fat compared to lean tissue. It provides your body fat percentage, lean body mass (LBM), and fat mass using simple measurements, such as height, weight, waist circumference, and neck circumference. This online Body Fat Calculator provides a quick and accurate assessment of your fitness metrics, helping you understand your current health index. It's a valuable tool for people tracking progress in fitness, weight loss, or body composition improvement.",
+      section1ExtraText:
+        "After checking your body fat percentage, see how many calories you burn daily with our ",
+      section1Link: "TDEE Calculator",
 
-      formula: "Body Fat Percentage Formula",
-      formulatitle: "How Your Body Fat Percentage Is Calculated",
-      formulaText: "Your body fat percentage shows how much of your total body weight is made up of fat. The Body Fat Calculator by VastCalculator uses widely recognized methods to estimate this value accurately using measurements such as height, waist, neck, and hip size (for women).",
+      section1Sub1Title: "Why Use a Body Fat Calculator?",
+      section1Sub1Intro:
+        "Tracking your body fat is essential for understanding your overall health. Unlike weight, which only tells part of the story, your body fat ratio provides insights into your fitness and health status. Two individuals of the same weight can have drastically different body fat percentages, which means their health and fitness levels may vary.",
+      section1Sub1List: [
+        "Monitor the impact of your diet or training routine",
+        "Track progress in fat loss or muscle gain",
+        "Set realistic and achievable fitness goals",
+      ],
+      section1Sub1Text:
+        "Our body fat calculator helps you measure your body fat, track changes, and understand how your efforts are impacting your health.",
 
+      section1Sub2Title: "How the Body Fat Calculator Works",
+      section1Sub2Intro:
+        "The body fat calculator uses your body measurements to estimate your body fat percentage through scientifically validated formulas. It's quick and simple to use! Just enter the following details:",
+      section1Sub2List: [
+        "Gender",
+        "Height",
+        "Weight",
+        "Waist and neck measurements (and hip measurements for women)",
+      ],
+      section1Sub2Text:
+        "Once you hit Calculate, you'll get an instant breakdown of:",
+      section1Sub2EndList: [
+        "Your body fat percentage",
+        "Your lean body mass",
+        "Your fat mass",
+      ],
+      section1Sub2End:
+        "This helps you understand the proportion of your body weight that is fat versus lean tissue (like muscles and bones).",
+
+      section1Sub3Title: "Why Track Body Fat Instead of Just Weight?",
+      section1Sub3Intro:
+        "Weight alone doesn't give a complete picture of your health. The body fat calculator offers a more detailed insight into your body composition. By knowing your body fat percentage and lean body mass, you can:",
+      section1Sub3List: [
+        "Better tailor your workouts",
+        "Adjust your nutrition and calorie goals",
+        "Make smarter, data-driven health decisions",
+      ],
+      section1Sub3End:
+        "With this tool, you don't need complex testing or professional equipment to gain valuable insights into your fitness journey. Use the calculator to track your progress and adjust your routine for optimal results!",
+
+
+      formulatitle: "Body Fat Calculator Formula",
+      formulaText: "The Body Fat Calculator uses proven formulas from the U.S. Navy and other fitness research studies to estimate your body fat percentage. It works by comparing your body measurements with height and gender to find your fat mass and lean body mass (LBM). These formulas are widely recognized for their reliability in calculating body composition without the need for professional tools.",
+      formulasubtitle1: "U.S. Navy Body Fat Formula",
+      formulaMale: "For Men: Body Fat % = 86.010 × log₁₀(Waist - Neck) – 70.041 × log₁₀(Height) + 36.76",
+      formulaFemale: "For Women: Body Fat % = 163.205 × log₁₀(Waist + Hip - Neck) – 97.684 × log₁₀(Height) – 78.387",
+      formulasubend: "All measurements are in centimetres (cm).",
+      formulasubtitle2: "Understanding the Formula",
+      formulasub2Image: "/Body-Fat-Calculator.jpg",
+      formulasub2ImageAlt: "Body Fat calculator",
+      formulasub2text: "These equations estimate fat ratio by comparing the difference between total body size and core circumference areas.",
+      formulasub2List: [
+        "Waist and neck (for men) or waist, hip, and neck (for women) are used to gauge fat distribution.",
+        "Height helps adjust the results for proportional accuracy.",
+      ],
+      formulasub2end: "Once calculated, the online Body Fat Calculator uses your body fat percentage to display:",
+      formulasub2List2: [
+        "Fat Mass (FM) = Total Weight × (Body Fat % ÷ 100)",
+        "Lean Body Mass (LBM) = Total Weight – Fat Mass",
+      ],
+      formulasub2end2: "These values help determine how much of your weight is lean tissue (muscle, bones, organs) versus stored fat.",
+      formulasub3title: "Example of Body Fat Calculation",
+      formulasub3line: "Let’s see a simple example for better clarity:",
+      formulasub3line2: "Example (Male):",
+      formulasub3List: [
+        "Height: 175 cm",
+        "Waist: 85 cm",
+        "Neck: 38 cm",
+        "Weight: 70 kg",
+      ],
+      formulasteptitle: "Step 1: Apply the formula",
+      formulastep1: " Body Fat % = 86.010 × log₁₀(85 – 38) – 70.041 × log₁₀(175) + 36.76 = 86.010 × log₁₀(47) – 70.041 × log₁₀(175) + 36.76 = 86.010 × 1.672 – 70.041 × 2.243 + 36.76 = 143.79 – 157.59 + 36.76 = 22.96% (approx. 23%)",
+      formulasteptitle2: "Step 2: Calculate Fat Mass and Lean Body Mass",
+      formulastepList: [
+        "Fat Mass = 70 × 0.23 = 16.1 kg",
+        "Lean Body Mass = 70 – 16.1 = 53.9 kg",
+      ],
       navyMethodTitle: "U.S. Navy Method",
       navyMethodText: "The U.S. Navy formula is one of the most accurate ways to estimate body fat using circumference measurements.",
       navyMethodMen: "For Men: The formula uses your height, neck, and waist size to calculate the difference between body size and fat mass.",
@@ -317,7 +394,7 @@ calculatorform: {
       ]
     },
 
-calories: {
+    calories: {
       title: "Calorie Calculator – Calculate Your Daily Calorie Needs",
       desc: "Use the Calorie Calculator on Vastcalculators.com to find out how many calories you need daily to maintain, lose, or gain weight based on your activity level.",
       heading: "Calorie Calculator",
@@ -442,25 +519,96 @@ calories: {
     },
 
     waterIntake: {
-      title: "Water Intake Calculator",
-      desc: "Calculate recommended daily water intake",
+      title: " Water Intake Calculator | Daily Hydration by VastCalculator",
+      desc: " Calculate how much water your body needs daily with VastCalculator. Stay hydrated based on your weight, activity, and lifestyle.",
       weight: "Weight (kg)",
       activity: "Activity Level (0-2)",
       result: "Daily Water (liters)",
-      about: "About Water Intake",
-      aboutText: "General recommendation is 8 glasses per day, but needs vary by weight and activity.",
-      formula: "Formula",
-      formulaText: "Base: weight (kg) × 0.033 liters + activity adjustment",
+      heading: "Water Intake Calculator",
 
-      faqTitle: "Water Intake Calculator FAQs",
+      tocTitle: "Table of Contents",
+      tocwhy: "Why Daily Water Needs Are Important",
+      tochowitworks: "How the Online Water Intake Calculator Works",
+      tocwhyuse: "Why You Should Use a Water Calculator",
+      tocExample: "Example of Water Calculation",
+      tocResultUnderstanding: "Understanding the Result",
+
+      section1Title: "About Water Intake Calculator",
+      section1Content: "The Water Intake Calculator helps determine how much water your body needs daily based on weight, activity level, and climate. Hydration is essential for energy, digestion, focus, and overall body performance. This calculator gives an instant estimate of your ideal daily water goal.",
+      section1ExtraText: "For accurate hydration planning, match your intake with daily energy usage using the .",
+      section1Link: "TDEE Calculator",
+
+      section1Sub1Title: "Why Daily Water Needs Are Important",
+      section1Sub1Intro: "Water supports every function in the body. It helps transport nutrients, regulate temperature, and flush out toxins. Even mild dehydration can affect mood, energy, and performance. By using a hydration calculator, you can learn exactly how much water your body needs to function at its best. Staying hydrated improves skin health, supports metabolism, and prevents fatigue throughout the day.",
+
+
+      section1Sub2Title: "How the Online Water Intake Calculator Works",
+      section1Sub2Intro: "The calculator uses your weight, activity level, and climate to determine your recommended fluid intake.",
+      section1Sub2List: [
+        "Enter your weight",
+        "Choose your activity level (sedentary, moderate, or active)",
+        "Select your environment (normal or hot climate).",
+        "Click Calculate to get your daily water goal."
+      ],
+      section1Sub2Text: "The result shows how many litres or ounces of water you should drink each day to maintain a healthy hydration level.",
+
+      section1Sub3Title: "Why You Should Use a Water Calculator",
+      section1Sub3Intro: "Many people underestimate their daily fluid needs. The drink water calculator helps you plan a consistent hydration routine that fits your lifestyle. Whether you're tracking fitness progress, improving focus, or preventing dehydration, this tool gives practical, data-based guidance. It also reminds users that hydration isn't only about water; it includes all fluids, including tea, milk, and fruits with high water content.",
+
+
+      section2Title: "Water Intake Calculator Formula",
+      section2Intro: "The Water Intake Calculator utilizes scientific guidelines to estimate the daily water intake your body requires. The formula takes into account weight, activity level, and climate, providing a precise measure of your daily water needs. The general rule most experts recommend is:",
+      section2Formula: "Water Intake (litres/day) = Body Weight (kg) × 0.033",
+      section2end: "This formula gives an estimate for people with a normal activity level in a moderate climate. However, it needs adjustment for individuals who exercise regularly or live in hot regions.",
+      section2AdjustmentTitle: "Adjusting for Activity Level and Climate",
+      section2AdjustmentText: "Hydration needs change based on lifestyle and environment. Here’s how your fluid intake may vary:",
+      section2AdjustmentImage: "/water-intake-table-image.png",
+      section2AdjustmentImageAlt: "fluid intake chart",
+
+      section2Sub1Title: "Example of Water Calculation",
+      section2Sub1Intro: "Example:",
+      section2Sub1Step1: "Step 1 – Apply formula: 70 × 0.033 = 2.31 litres/day",
+      section2Sub1Step2: "Step 2 – Add 0.5 litres for moderate activity: Add 0.5 litres for moderate activity = 2.81 litres/day",
+      section2Sub1Result: "So this person needs about 2.8 litres (≈ 95 ounces) daily. In hot climate or daily exercise: around 3.3 litres/day.",
+      section2Sub1Result2: "If the person lived in a hot climate or exercised daily, adding 1 litre would raise the total to 3.3 litres/day.",
+
+      section3Title: "Understanding the Result",
+      section3Image: "/Water-Intake-Calculator.jpg",
+      section3ImageAlt: "Water Intake Calculator",
+      section3Text: "Your result is the minimum fluids your body needs daily. Spread hydration through the day. Keep a bottle, sip consistently, and listen to your body.",
+
+      section4Title: "Why the Formula Works",
+      section4Text: "Water makes around 60% of the human body. Even small drops in water reduce focus, energy, and metabolism efficiency. The calculator uses standard scientific recommendations to give a precise hydration target without complex tracking. Vastcalculators.com delivers instant, accurate hydration goals to keep health simple and practical.",
+
+
+      faqTitle: "Frequently Asked Questions",
       faq: [
-        { q: "How much water should I drink daily?", a: "Roughly 2–3 liters for most adults, but it varies based on body weight and activity level." },
-        { q: "Does coffee or tea count as water?", a: "Yes, partially — but they can have a mild diuretic effect, so pure water is still best." },
-        { q: "Can I drink too much water?", a: "Yes, overhydration (hyponatremia) can dilute sodium levels in your blood and cause issues." },
-        { q: "Does drinking more water help weight loss?", a: "It can help by boosting metabolism slightly and reducing appetite when taken before meals." },
-        { q: "Should I adjust intake on hot days?", a: "Definitely. You lose more water through sweat, so add 0.5–1 liter more when it’s hot or humid." },
-        { q: "What’s the best way to track hydration?", a: "Check urine color — pale yellow usually means you’re well-hydrated." }
+        {
+          q: "What does the Water Intake Calculator do?",
+          a: "The Water Intake Calculator estimates the daily water intake your body needs to stay hydrated. It uses your weight, activity level, and climate to calculate your daily water needs, helping you maintain proper hydration and balance your energy levels."
+        },
+        {
+          q: "How does the Water Intake Calculator work?",
+          a: "This hydration calculator uses a simple formula: your body weight multiplied by a set factor (0.033). The result gives the number of litres you should drink daily. The calculator then adjusts that number based on your level of activity and the temperature of your environment."
+        },
+        {
+          q: "How much water should I drink daily?",
+          a: "Most people should drink between 2 and 3 litres of water daily. However, your exact amount depends on your body size, activity level, and weather conditions. The calculator provides a personalized recommendation tailored to your specific fluid intake needs, ensuring your hydration level remains balanced throughout the day"
+        },
+        {
+          q: "Does exercise increase my water requirement?",
+          a: "Yes. Physical activity raises your water goal because you lose fluids through sweat. If you exercise regularly, you should add 0.5 to 1 litre of water per day."
+        },
+        {
+          q: "Can I count other drinks toward my daily water needs?",
+          a: "Yes. All fluids, including tea, milk, and fruit juices, contribute to your daily water needs. Foods with high water content, such as cucumber, watermelon, and oranges, also help. However, plain water should remain your main source of hydration."
+        },
+        {
+          q: "What happens if I don't drink enough water?",
+          a: "Not drinking enough water can lead to dehydration, resulting in fatigue, headaches, and reduced mental focus. Chronic dehydration may also affect digestion and skin health. Staying hydrated improves metabolism, supports organ function, and helps maintain steady energy levels throughout the day."
+        }
       ]
+
     },
 
     pace: {
@@ -531,53 +679,269 @@ calories: {
         { q: "Does protein help with fat loss?", a: "Yes. It keeps you full longer and preserves muscle while in a calorie deficit." }
       ]
     },
+
     tdee: {
-      title: "TDEE Calculator",
-      desc: "Calculate Total Daily Energy Expenditure",
+      title: "TDEE Calculator – Find Your Daily Calorie Needs Online",
+      desc: "Use our TDEE Calculator to know how many calories you burn daily. Plan your diet, fitness, or weight goals with accurate calorie and activity insights.",
       age: "Age (years)",
       weight: "Weight (kg)",
       height: "Height (cm)",
       activity: "Activity Level",
       result: "TDEE (calories)",
-      about: "About TDEE",
-      aboutText: "TDEE is the total number of calories your body burns daily.",
-      formula: "Formula",
-      formulaText: "Uses Mifflin-St Jeor equation with activity multiplier",
+      heading: "TDEE Calculator",
 
-      faqTitle: "TDEE Calculator FAQs",
+      tocTitle: "Table of Contents",
+      tocwhy: "Why Knowing Your TDEE Is Important",
+      tochowitworks: "How the Online TDEE Calculator Works",
+      tocwhyuse: "Why Use a TDEE Calculator",
+      tocExample: "Example of TDEE Calculation",
+      tochowtouse: "How to Use Your TDEE",
+
+      section1Title: "About TDEE Calculator",
+      section1Content: "The TDEE Calculator estimates the number of calories your body burns each day through all activities, from sleeping to exercising. TDEE stands for Total Daily Energy Expenditure, a measure of your total energy output in 24 hours.\n\nThis online TDEE Calculator combines your Basal Metabolic Rate (BMR) with your activity level energy usage to show your maintenance calories, the exact number you need to maintain your current weight.",
+
+      section1Sub1Title: "Why Knowing Your TDEE Is Important",
+      section1Sub1Intro: "Your TDEE is the foundation of smart nutrition planning. It helps you:",
+      section1Sub1List: [
+        "Determine your daily calorie needs",
+        "Create a calorie deficit for fat loss.",
+        "Build a surplus for muscle gain.",
+        "Maintain energy and performance levels."
+      ],
+      section1Sub1Text: "By understanding your caloric burn estimation, you can adjust your diet to match your goals and avoid guesswork.",
+
+      section1Sub2Title: "How the Online TDEE Calculator Works",
+      section1Sub2Intro: "The calculator first estimates your BMR (Basal Metabolic Rate), the number of calories your body burns at rest, using the Mifflin-St. Jeor Equation. Then it multiplies that by your activity multiplier to account for exercise and lifestyle.You'll need to input:",
+      section1Sub2List: [
+        "Age, gender, height, and weight",
+        "Activity level from sedentary to very active",
+        "Goal: maintain, lose, or gain weight."
+      ],
+      section1Sub2Text: "In seconds, the total daily energy expenditure calculator shows how many calories your body needs daily to stay at your current weight or move toward your target.",
+
+      section1Sub3Title: "Why Use a TDEE Calculator",
+      section1Sub3Intro: "This energy expenditure calculator helps you make precise dietary choices. Instead of following generic calorie numbers, you'll know exactly how much your body burns every day.",
+      section1Sub3Text: "It's ideal for athletes, gym-goers, or anyone seeking to enhance their body composition. The TDEE Calculator provides a science-backed approach to balancing food intake, optimizing workouts, and maintaining a healthy weight.",
+
+      section2Title: "TDEE Calculator Formula",
+      section2Intro: "The TDEE Calculator estimates your total daily energy expenditure (TDEE) by combining two components: your Basal Metabolic Rate (BMR) and your activity multiplier. The base equation used is the Mifflin-St. Jeor Formula, which calculates your metabolic rate, or the number of calories your body burns at rest",
+      section2Step1: "Step 1: Calculate Basal Metabolic Rate (BMR)",
+      section2Step1MaleFormula: "For Men: BMR = 10 × weight (kg) + 6.25 × height (cm) – 5 × age (years) + 5",
+      section2Step1FemaleFormula: "For Women: BMR = 10 × weight (kg) + 6.25 × height (cm) – 5 × age (years) – 161 This number shows your metabolism calculator output — how many calories your body needs function at rest.",
+      section2Step2: "Step 2: Apply Activity Level Multiplier",
+      section2Step2Text: "Next, the calculator multiplies your BMR by an activity factor to account for activity level energy usage throughout the day.",
+      ActivityText: "Activity Levels and Multipliers",
+      section2List: [
+        "If your lifestyle is Sedentary, meaning you get little or no exercise, your multiplier is 1.2",
+        "For a Lightly Active lifestyle, involving light exercise about 1 to 3 days per week, use a multiplier of 1.375.",
+        "If you are Moderately Active and engage in moderate exercise 3 to 5 days per week, your multiplier is 1.55.",
+        "For those who are Very Active, performing hard exercise 6 to 7 days per week, the appropriate multiplier is 1.725.",
+        "Finally, if you are Extra Active, doing intense training or having a physically demanding job, your multiplier should be 1.9.",
+      ],
+      resulttext: "The result gives your Total Daily Energy Expenditure (TDEE), or total maintenance calories.",
+      section2Step3: "Step 3: Formula Summary",
+      section2Step3Formula: "TDEE = BMR × Activity Level Multiplier",
+      section2Step3Text: "This equation estimates your total caloric burn, how many calories you burn daily through all physical and non-physical activities.",
+
+      section2Sub1Title: "Example of TDEE Calculation",
+      section2Sub1Image: "/TDEE-Calculator.jpg",
+      section2Sub1ImageAlt: "Online TDEE Calculator",
+      section2Sub1Example: "Let's look at an example for better understanding:",
+      section2Sub1ExampleMale: "Example (Male):",
+      section2Sub1List: [
+        "Age: 30",
+        "Height: 175 cm",
+        "Weight: 70 kg",
+        "Activity Level: Moderate (1.55)",
+      ],
+      section2Step1Intro: "Step 1:",
+      section2Step1Formula: "BMR = (10 × 70) + (6.25 × 175) – (5 × 30) + 5",
+      section2Step1Formula2: "BMR = 700 + 1093.75 – 150 + 5 = 1648.75 kcal/day",
+      section2Step2Intro: "Step 2:",
+      section2Step2Formula: "TDEE = 1648.75 × 1.55 = 2555 kcal/day",
+      section2Step2End: "So, this person burns about 2555 calories per day.",
+
+      section2Sub2Title: "How to Use Your TDEE",
+      section2Sub2Intro: "Once you know your TDEE, you can adjust your calorie intake based on your goal:",
+      section2Sub2List: [
+        "Eat below TDEE to lose weight",
+        "Eat equal to TDEE to maintain weight.",
+        "Eat above TDEE to gain weight.",
+      ],
+      section2Sub2Extra: "This creates a clear calorie balance that supports your fitness and nutrition goals without guesswork. Use your TDEE to calculate the ideal macronutrient ratio in the",
+      section2Sub2ExtraLink: "Macro Calculator.",
+
+      section2Sub3Title: "Why This Formula Works",
+      section2Sub3Intro: "The Mifflin-St. Jeor Equation is one of the most accurate methods for estimating metabolic rate and energy expenditure. It adapts easily to different body types, activity levels, and goals.The online TDEE Calculator employs a data-driven approach to provide personalized results for everyone, from beginners to athletes. It helps you plan nutrition and training with precision, ensuring your daily calorie needs match your lifestyle. The calculator on Vastcalculators.com provides quick, reliable, and science-based calculations for effective energy management and better fitness outcomes.",
+
+      faqTitle: "Frequently Asked Questions",
       faq: [
-        { q: "What does TDEE mean?", a: "TDEE stands for Total Daily Energy Expenditure — the total calories you burn each day." },
-        { q: "How accurate is TDEE?", a: "It’s an estimate. Actual burn varies by genetics, stress, sleep, and muscle mass." },
-        { q: "Should I eat below or above my TDEE?", a: "Eat below to lose weight, above to gain muscle or mass." },
-        { q: "Does TDEE include exercise?", a: "Yes, if you select the correct activity level, exercise is already factored in." },
-        { q: "How often should I recalculate TDEE?", a: "Every few months or whenever your weight, lifestyle, or goals change." },
-        { q: "Can I use TDEE for muscle gain?", a: "Yes — just add a surplus of 200–500 calories above your TDEE for lean muscle growth." }
+        {
+          q: "What does TDEE mean?",
+          a: "TDEE stands for Total Daily Energy Expenditure. It shows how many calories your body burns in a day, including all activities, from resting to exercising."
+        },
+        {
+          q: "How is TDEE calculated?",
+          a: "Your TDEE is calculated by multiplying your Basal Metabolic Rate (BMR) by your activity level multiplier. This gives a daily calorie estimate that matches your energy use."
+        },
+        {
+          q: "Why should I know my TDEE?",
+          a: "Knowing your TDEE helps you plan your diet and fitness goals. It tells you how many calories to eat to lose, gain, or maintain weight effectively."
+        },
+        {
+          q: "What is the difference between BMR and TDEE?",
+          a: "BMR shows the calories your body needs at rest, while TDEE includes the calories burned through movement, workouts, and daily activities."
+        },
+        {
+          q: "How can I use my TDEE for better results?",
+          a: "Once you know your Total Daily Energy Expenditure (TDEE), you can adjust your calorie intake accordingly. To promote fat loss, consume fewer calories than your TDEE. On the other hand, if your goal is muscle gain, eat more calories than your TDEE to support growth and recovery."
+        },
+        {
+          q: "How often should I recalculate my TDEE?",
+          a: "Recalculate your TDEE every 4–6 weeks or after any major change in weight, activity level, or fitness goal to keep your calorie plan accurate."
+        }
       ]
     },
+
     macros: {
-      title: "Macro Calculator",
-      desc: "Calculate macronutrient breakdown",
+      title: "Macro Calculator | Calculate Your Ideal Macronutrient Ratio",
+      desc: "Use our Macro Calculator to find your perfect balance of protein, carbs, and fats. Plan your nutrition with accurate macro ratios for your fitness goals.",
+      heading: "Macro Calculator",
       calories: "Daily Calories",
       diet: "Diet Type",
       balanced: "Balanced",
       lowCarb: "Low Carb",
       highProtein: "High Protein",
       result: "Macronutrients",
-      about: "About Macros",
-      aboutText: "Macronutrients are proteins, carbs, and fats that make up your diet.",
-      formula: "Formula",
-      formulaText: "Balanced: 40C/30P/30F, Low Carb: 30C/35P/35F, High Protein: 35C/40P/25F",
 
-      faqTitle: "Macro Calculator FAQs",
+      tocTitle: "Table of Contents",
+      tocwhy: "Why Tracking Macros Matters",
+      tochowitworks: "How the Online Macro Calculator Works",
+      tocwhyuse: "Why Use a Macro Calculator",
+      tocMacro: "Example of Macro Calculation",
+      tocresult: "How to Use the Result",
+      tocformula: "Why This Formula Works",
+
+      section1Title: "About Macro Calculator",
+      section1Content: "The Macro Calculator helps you find the right balance of macronutrients, protein, carbs, and fats your body needs every day. It ensures that your nutrition supports your goals, whether you're trying to lose fat, gain muscle, or maintain your weight. This online Macro Calculator uses your age, gender, height, weight, and activity level to estimate your daily macro intake. It then breaks your calories into a clear macro distribution, showing exactly how much protein, fat, and carbohydrates you should consume.",
+
+      section1Sub1Title: "Why Tracking Macros Matters",
+      section1Sub1Intro: "Macros are the foundation of every meal plan. Each one plays a specific role:",
+      section1Sub1List: [
+        "Protein builds and repairs muscle.",
+        "Carbohydrates provide energy.",
+        "Fats support hormones and cell function.",
+      ],
+      section1Sub1Text: "Balancing these nutrients enhances performance, boosts energy levels, and promotes overall health. Monitoring macro ratios helps you understand what fuels your body best and keeps your diet consistent with your goals. ",
+
+
+      section1Sub2Title: "How the Online Calories Calculator Works",
+      section1Sub2Intro: "The calculator first determines your daily calorie needs, then divides those calories into macronutrient categories based on your chosen goal.",
+      section1Sub2List: [
+        "Age, gender, height, and weight",
+        "Activity level (sedentary to active).",
+        "Goal (fat loss, maintenance, or muscle gain).",
+      ],
+      section1Sub2Text: "It instantly gives you a detailed macro nutrient breakdown showing:",
+      section1Sub2List1: [
+        "Daily grams of protein, carbs, and fat",
+        "Their percentage in your diet.",
+        "Total calorie contribution from each nutrient.",
+      ],
+
+      section1Sub3Title: "Why Use a Macro Calculator",
+      section1Sub3Intro: "Unlike calorie-only tools, this nutrition calculator focuses on the quality of your intake, not just the quantity. It ensures a proper calorie and macro balance to support fat loss, muscle gain, or improved energy without restrictive dieting. This diet planning tool helps you build sustainable habits by showing the right nutrient mix for your specific goals. It’s ideal for athletes, fitness enthusiasts, or anyone looking to eat smarter and perform better.",
+
+      section2Title: "Macro Calculator Formula",
+      section2Intro: "The Macro Calculator calculates your daily macro intake based on your calorie needs and nutrition goal. It uses calorie values for each macronutrient and applies goal-based percentages to create a personalized macro distribution.",
+      section2Intro2: "The general calorie values for each macronutrient are:",
+      section2List: [
+        "Protein: 4 calories per gram",
+        "Carbohydrates: 4 calories per gram",
+        "Fats: 9 calories per gram",
+      ],
+      section2ExtraText: "You can calculate your total calorie needs first using our",
+      section2ExtraLink: "calorie calculator",
+      section2StepsTitle: "Step 1: Find Total Daily Calorie Needs",
+      section2StepsText: "Your total calorie goal is the foundation for your macro ratio. This can come from a Calorie or a known target such as:",
+      section2StepList1: [
+        "Fat loss: Slight calorie deficit",
+        "Maintenance: Balanced intake",
+        "Muscle gain: Calorie surplus",
+      ],
+      section2StepTextend: "Once your daily calories are known, the calculator divides them among protein, carbs, and fats using preset percentages based on your fitness goal.",
+      section2StepsTitle2: "Step 2: Set Macro Distribution by Goal",
+      section2StepsTitle3: "Macronutrient Breakdown by Goal",
+      section2StepList2: [
+        "If your goal is Fat Loss, your daily intake should ideally consist of 40% protein, 30% carbohydrates, and 30% fats.",
+        "For those aiming for Maintenance, the recommended balance is 30% protein, 45% carbohydrates, and 25% fats.",
+        "If your goal is Muscle Gain, you should target around 25% protein, 55% carbohydrates, and 20% fats to support muscle recovery and growth.",
+      ],
+      section2StepTextend2: "These ranges maintain proper calorie and macro balance while supporting different objectives.",
+      section2StepsTitle4: "Step 3: Apply Formula for Each Macronutrient",
+      section2StepsExample: "The formula for each macronutrient is:",
+
+      section2Macroformula: " Macronutrient (g) = (Total Calories × Macro %) ÷ Calorie Value per Gram",
+      section2StepsExample2: "For example, for protein:",
+      section2Proteinformula: " Protein (g) = (Calories × Protein %) ÷ 4",
+      section2StepTextend3: "Repeat this for carbs and fats using their respective calorie values (4 for carbs, 9 for fats).",
+
+      section2Sub1Title: "Example of Macro Calculation",
+      section2Sub1Image: "/Macro-Calculator.jpg",
+      section2Sub1ImageAlt: "Online Macro Calculator",
+      section2Sub1Example: "Example:",
+      section2Sub1ExampleText: "A person wants to maintain weight on 2,000 calories/day. From the macro ratio table for maintenance",
+      section2Sub1List: [
+        "Protein = 30%",
+        "Carbs = 45%",
+        "Fats = 25%",
+      ],
+      section2Sub1Calculate: "Now calculate:",
+      section2Sub1Formula1: "Protein: (2000 × 0.30) ÷ 4 = 150 g",
+      section2Sub1Formula2: "Carbs: (2000 × 0.45) ÷ 4 = 225 g",
+      section2Sub1Formula3: "Fats: (2000 × 0.25) ÷ 9 = 55 g",
+      section2Sub1DailyText: "So, this user’s daily macro intake is:",
+      section2Sub1DailyList: [
+        "Protein: 150 g",
+        "Carbs: 225 g",
+        "Fats: 55 g",
+      ],
+      section2Sub1DailyEnd: "This breakdown ensures proper energy balance and supports consistent progress toward body goals.",
+
+      section2Sub2Title: "How to Use the Results",
+      section2Sub2Intro: "Once you know your macros, use them to guide meal planning and macro tracking.Divide your total daily grams across 3–5 meals to maintain steady energy and support recovery.Tracking your macros helps fine-tune your nutrition, ensuring you eat enough to fuel workouts while staying aligned with your goal.",
+      section2Sub3Title: "Why This Formula Works",
+      section2Sub3Intro: "This method is science-based and flexible. It adjusts for calorie goals, training intensity, and body composition. Unlike restrictive diets, it focuses on balance between calories and macronutrients, allowing for variety and sustainability. The online Macro Calculator simplifies complex nutritional calculations into quick and accurate results. It's an essential diet planning tool for anyone serious about optimizing nutrition, improving performance, or maintaining a healthy lifestyle. The calculator on Vastcalculators.com delivers these insights instantly, making macro tracking and balanced eating easy for everyone.",
+
+      faqTitle: "Frequently Asked Questions",
       faq: [
-        { q: "What are macros?", a: "Macros are the main nutrients that provide calories — protein, carbohydrates, and fats." },
-        { q: "Why should I track macros?", a: "Tracking macros helps optimize energy, performance, and body composition goals." },
-        { q: "Do macros matter more than calories?", a: "Calories control weight change, but macros control how your body looks and feels." },
-        { q: "Can I lose fat without tracking macros?", a: "Yes, but tracking them makes it easier to stay consistent and avoid nutrient imbalances." },
-        { q: "Which macro ratio is best?", a: "There’s no one-size-fits-all — it depends on your goals, metabolism, and diet style." },
-        { q: "Do cheat meals ruin macro goals?", a: "One cheat meal won’t kill progress — just get back on track the next day and stay consistent." }
+        {
+          q: "What does the Macro Calculator do?",
+          a: "The Macro Calculator helps you find the right amount of protein, carbohydrates, and fats you should eat each day based on your calorie goal and fitness target."
+        },
+        {
+          q: "How do I calculate my macros?",
+          a: "Start by knowing your daily calorie goal using the TDEE Calculator. Then divide those calories into macros using standard ratios, such as 40% carbs, 30% protein, and 30% fat."
+        },
+        {
+          q: "Why are macros necessary?",
+          a: "Macros control how your body uses energy. The right balance helps you build muscle, lose fat, and improve performance while keeping your nutrition steady."
+        },
+        {
+          q: "Can I use the Macro Calculator for weight loss?",
+          a: "Yes. Choose a calorie deficit (eating fewer calories than your TDEE), and the calculator will give you a lower macro target that supports fat loss without losing muscle."
+        },
+        {
+          q: "How can I use the Macro Calculator with other tools?",
+          a: "Use your calorie goal from the Calorie Calculator or TDEE Calculator to plan your macros. Plan your macros according to your calorie goal with our Calorie Calculator for the most accurate results "
+        },
+        {
+          q: "How often should I change my macro plan?",
+          a: "Update your macros every 4–6 weeks or when your weight, workout routine, or goal changes. Regular tracking helps keep your results on target."
+        }
       ]
     },
+
     bfp: {
       title: "Body Fat Percentage",
       desc: "Estimate body fat from measurements",

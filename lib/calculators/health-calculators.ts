@@ -1,89 +1,89 @@
 import type { Calculator } from "./types"
 
 export const healthCalculators: Calculator[] = [
-  {
-    slug: "body-fat-calculator",
-    metaTitleKey: "health.bodyFat.title",
-    metaDescriptionKey: "health.bodyFat.desc",
-    titleKey: "health.bodyFat.title",
-    category: "Health",
-    descriptionKey: "health.bodyFat.desc",
-    formulaId: "body-fat",
+  // {
+  //   slug: "body-fat-calculator",
+  //   metaTitleKey: "health.bodyFat.title",
+  //   metaDescriptionKey: "health.bodyFat.desc",
+  //   titleKey: "health.bodyFat.title",
+  //   category: "Health",
+  //   descriptionKey: "health.bodyFat.desc",
+  //   formulaId: "body-fat",
 
-    inputs: [
-      {
-        label: "health.bodyFat.gender", name: "gender", type: "select", options: [
-          { value: "male", label: "health.bodyFat.male" },
-          { value: "female", label: "health.bodyFat.female" },
-        ]
-      },
-      { label: "health.bodyFat.waist", name: "waist", type: "number", unit: "cm" },
-      { label: "health.bodyFat.neck", name: "neck", type: "number", unit: "cm" },
-      { label: "health.bodyFat.hip", name: "hip", type: "number", unit: "cm" },
-      { label: "health.bodyFat.height", name: "height", type: "number", unit: "cm" },
-    ],
-    toc: [
-      { id: "about", labelKey: "health.bodyFat.tocAbout" },
-      { id: "formula", labelKey: "health.bodyFat.tocFormula" },
-      { id: "navy-method", labelKey: "health.bodyFat.tocnavymethod" },
-      { id: "bmi-method", labelKey: "health.bodyFat.tocbmimethod" },
-      { id: "interpretation", labelKey: "health.bodyFat.tocinterpretation" },
-      { id: "faqs", labelKey: "health.bodyFat.tocFaqs" },
-    ],
-    heading:"health.bodyFat.heading",
-    sections: [
-      {
-        id: "about",
-        titleKey: "health.bodyFat.about",
-        titleKey2: "health.bodyFat.abouttitle",
-        contentKey: "health.bodyFat.aboutText",
-      },
-      {
-        id: "formula",
-        titleKey: "health.bodyFat.formula",
-        titleKey2: "health.bodyFat.formulatitle",
-        subsections: [
-          {
-            id: "formula-overview",
-            contentKey: "health.bodyFat.formulaText",
-          },
-          {
-            id: "navy-method",
-            titleKey: "health.bodyFat.navyMethodTitle",
-            contentKey: "health.bodyFat.navyMethodText",
-            subsections: [
-              { id: "navy-men", contentKey: "health.bodyFat.navyMethodMen" },
-              { id: "navy-women", contentKey: "health.bodyFat.navyMethodWomen" },
-              { id: "navy-note", contentKey: "health.bodyFat.navyMethodNote" },
-            ],
-          },
-          {
-            id: "bmi-method",
-            titleKey: "health.bodyFat.bmiMethodTitle",
-            contentKey: "health.bodyFat.bmiMethodText",
-            subsections: [
-              { id: "bmi-simplified", contentKey: "health.bodyFat.bmiSimplifiedText" },
-            ],
-          },
-          {
-            id: "interpretation",
-            titleKey: "health.bodyFat.interpretationTitle",
-            contentKey: "health.bodyFat.interpretationText",
-          },
-        ],
-      },
-    ],
+  //   inputs: [
+  //     {
+  //       label: "health.bodyFat.gender", name: "gender", type: "select", options: [
+  //         { value: "male", label: "health.bodyFat.male" },
+  //         { value: "female", label: "health.bodyFat.female" },
+  //       ]
+  //     },
+  //     { label: "health.bodyFat.waist", name: "waist", type: "number", unit: "cm" },
+  //     { label: "health.bodyFat.neck", name: "neck", type: "number", unit: "cm" },
+  //     { label: "health.bodyFat.hip", name: "hip", type: "number", unit: "cm" },
+  //     { label: "health.bodyFat.height", name: "height", type: "number", unit: "cm" },
+  //   ],
+  //   toc: [
+  //     { id: "about", labelKey: "health.bodyFat.tocAbout" },
+  //     { id: "formula", labelKey: "health.bodyFat.tocFormula" },
+  //     { id: "navy-method", labelKey: "health.bodyFat.tocnavymethod" },
+  //     { id: "bmi-method", labelKey: "health.bodyFat.tocbmimethod" },
+  //     { id: "interpretation", labelKey: "health.bodyFat.tocinterpretation" },
+  //     { id: "faqs", labelKey: "health.bodyFat.tocFaqs" },
+  //   ],
+  //   heading: "health.bodyFat.heading",
+  //   sections: [
+  //     {
+  //       id: "about",
+  //       titleKey: "health.bodyFat.about",
+  //       titleKey2: "health.bodyFat.abouttitle",
+  //       contentKey: "health.bodyFat.aboutText",
+  //     },
+  //     {
+  //       id: "formula",
+  //       titleKey: "health.bodyFat.formula",
+  //       titleKey2: "health.bodyFat.formulatitle",
+  //       subsections: [
+  //         {
+  //           id: "formula-overview",
+  //           contentKey: "health.bodyFat.formulaText",
+  //         },
+  //         {
+  //           id: "navy-method",
+  //           titleKey: "health.bodyFat.navyMethodTitle",
+  //           contentKey: "health.bodyFat.navyMethodText",
+  //           subsections: [
+  //             { id: "navy-men", contentKey: "health.bodyFat.navyMethodMen" },
+  //             { id: "navy-women", contentKey: "health.bodyFat.navyMethodWomen" },
+  //             { id: "navy-note", contentKey: "health.bodyFat.navyMethodNote" },
+  //           ],
+  //         },
+  //         {
+  //           id: "bmi-method",
+  //           titleKey: "health.bodyFat.bmiMethodTitle",
+  //           contentKey: "health.bodyFat.bmiMethodText",
+  //           subsections: [
+  //             { id: "bmi-simplified", contentKey: "health.bodyFat.bmiSimplifiedText" },
+  //           ],
+  //         },
+  //         {
+  //           id: "interpretation",
+  //           titleKey: "health.bodyFat.interpretationTitle",
+  //           contentKey: "health.bodyFat.interpretationText",
+  //         },
+  //       ],
+  //     },
+  //   ],
 
-    faqTitleKey: "health.bodyFat.faqTitle",
-    faqs: [
-      { qKey: "health.bodyFat.faq.0.q", aKey: "health.bodyFat.faq.0.a" },
-      { qKey: "health.bodyFat.faq.1.q", aKey: "health.bodyFat.faq.1.a" },
-      { qKey: "health.bodyFat.faq.2.q", aKey: "health.bodyFat.faq.2.a" },
-      { qKey: "health.bodyFat.faq.3.q", aKey: "health.bodyFat.faq.3.a" },
-      { qKey: "health.bodyFat.faq.4.q", aKey: "health.bodyFat.faq.4.a" },
-      { qKey: "health.bodyFat.faq.5.q", aKey: "health.bodyFat.faq.5.a" },
-    ],
-  },
+  //   faqTitleKey: "health.bodyFat.faqTitle",
+  //   faqs: [
+  //     { qKey: "health.bodyFat.faq.0.q", aKey: "health.bodyFat.faq.0.a" },
+  //     { qKey: "health.bodyFat.faq.1.q", aKey: "health.bodyFat.faq.1.a" },
+  //     { qKey: "health.bodyFat.faq.2.q", aKey: "health.bodyFat.faq.2.a" },
+  //     { qKey: "health.bodyFat.faq.3.q", aKey: "health.bodyFat.faq.3.a" },
+  //     { qKey: "health.bodyFat.faq.4.q", aKey: "health.bodyFat.faq.4.a" },
+  //     { qKey: "health.bodyFat.faq.5.q", aKey: "health.bodyFat.faq.5.a" },
+  //   ],
+  // },
 
 {
   slug: "bmi-calculator",
@@ -101,7 +101,6 @@ export const healthCalculators: Calculator[] = [
     { id: "understanding", labelKey: "health.bmi.tocUnderstanding" },
     { id: "examples", labelKey: "health.bmi.tocexample" },
     { id: "categories", labelKey: "health.bmi.toccategories" },
-
   ],
 
   inputs: [
@@ -116,8 +115,8 @@ export const healthCalculators: Calculator[] = [
       id: "about",
       titleKey: "health.bmi.section1Title",
       contentKey: "health.bmi.section1Content",
-      linkparacontent:"health.bmi.section1ExtraText",
-      linkparaKey:"health.bmi.section1ExtraLinkText",
+      linkparacontent: "health.bmi.section1ExtraText",
+      linkparaKey: "health.bmi.section1ExtraLinkText",
       linkparaslug: "body-fat-calculator",
       subsections: [
         {
@@ -152,13 +151,13 @@ export const healthCalculators: Calculator[] = [
       subsections: [
         {
           id: "metric-formula",
-          contentKey: "health.bmi.section2MetricFormula",
+          formulaKey: "health.bmi.section2MetricFormula",
           type: "formula",
         },
         {
           id: "imperial-formula",
           introKey: "health.bmi.section2ImperialIntro",
-          contentKey: "health.bmi.section2ImperialFormula",
+          formulaKey: "health.bmi.section2ImperialFormula",
           type: "formula",
         },
         {
@@ -218,7 +217,7 @@ export const healthCalculators: Calculator[] = [
     { qKey: "health.bmi.faq.5.q", aKey: "health.bmi.faq.5.a" },
   ],
 },
- {
+{
   slug: "calorie-calculator",
   metaTitleKey: "health.calories.title",
   metaDescriptionKey: "health.calories.desc",
@@ -242,10 +241,12 @@ export const healthCalculators: Calculator[] = [
     { label: "health.calories.age", name: "age", type: "number", unit: "years" },
     { label: "health.calories.weight", name: "weight", type: "number", unit: "kg" },
     { label: "health.calories.height", name: "height", type: "number", unit: "cm" },
-    { label: "health.calories.gender", name: "gender", type: "select", options: [
-      { value: "male", label: "health.calories.male" },
-      { value: "female", label: "health.calories.female" },
-    ] },
+    {
+      label: "health.calories.gender", name: "gender", type: "select", options: [
+        { value: "male", label: "health.calories.male" },
+        { value: "female", label: "health.calories.female" },
+      ]
+    },
     { label: "health.calories.activity", name: "activity", type: "select" },
   ],
 
@@ -256,8 +257,8 @@ export const healthCalculators: Calculator[] = [
       id: "about",
       titleKey: "health.calories.section1Title",
       contentKey: "health.calories.section1Content",
-      linkparacontent:"health.calories.section1ExtraText",
-      linkparaKey:"health.calories.section1ExtraLinkText",
+      linkparacontent: "health.calories.section1ExtraText",
+      linkparaKey: "health.calories.section1ExtraLinkText",
       linkparaslug: "macro-calculator",
       subsections: [
         {
@@ -322,9 +323,11 @@ export const healthCalculators: Calculator[] = [
             {
               id: "male-example",
               listKey: "health.calories.section2Sub3List",
-              formulaKey: "health.calories.section2Sub3Formula1",
-              formulaKey1: "health.calories.section2Sub3Formula2",
-              formulaKey2: "health.calories.section2Sub3Formula3",
+              formulas: [
+                "health.calories.section2Sub3Formula1",
+                "health.calories.section2Sub3Formula2",
+                "health.calories.section2Sub3Formula3"
+              ],
               endKey: "health.calories.section2Sub3End",
             },
           ],
@@ -354,182 +357,368 @@ export const healthCalculators: Calculator[] = [
   ],
 },
 
-  {
-    slug: "water-intake-calculator",
-    metaTitleKey: "health.waterIntake.metaTitle",
-    metaDescriptionKey: "health.waterIntake.metaDescription",
-    titleKey: "health.waterIntake.title",
-    category: "Health",
-    descriptionKey: "health.waterIntake.desc",
-    inputs: [
-      { label: "health.waterIntake.weight", name: "weight", type: "number", unit: "kg" },
-      { label: "health.waterIntake.activity", name: "activity", type: "number", unit: "0-2" },
-    ],
-    formulaId: "water",
-    sections: [
-      { id: "intro", titleKey: "health.waterIntake.about", contentKey: "health.waterIntake.aboutText" },
-      { id: "formula", titleKey: "health.waterIntake.formula", contentKey: "health.waterIntake.formulaText" },
-    ],
-    faqTitleKey: "health.waterIntake.faqTitle",
-    faqs: [
-      { qKey: "health.waterIntake.faq.0.q", aKey: "health.waterIntake.faq.0.a" },
-      { qKey: "health.waterIntake.faq.1.q", aKey: "health.waterIntake.faq.1.a" },
-      { qKey: "health.waterIntake.faq.2.q", aKey: "health.waterIntake.faq.2.a" },
-      { qKey: "health.waterIntake.faq.3.q", aKey: "health.waterIntake.faq.3.a" },
-      { qKey: "health.waterIntake.faq.4.q", aKey: "health.waterIntake.faq.4.a" },
-      { qKey: "health.waterIntake.faq.5.q", aKey: "health.waterIntake.faq.5.a" },
-    ],
-  },
-  {
-    slug: "running-pace-calculator",
-    metaTitleKey: "health.pace.metaTitle",
-    metaDescriptionKey: "health.pace.metaDescription",
-    titleKey: "health.pace.title",
-    category: "Health",
-    descriptionKey: "health.pace.desc",
-    inputs: [
-      { label: "health.pace.distance", name: "distance", type: "number", unit: "km" },
-      { label: "health.pace.time", name: "time", type: "number", unit: "minutes" },
-    ],
-    formulaId: "pace",
-    sections: [
-      { id: "intro", titleKey: "health.pace.about", contentKey: "health.pace.aboutText" },
-      { id: "formula", titleKey: "health.pace.formula", contentKey: "health.pace.formulaText" },
-    ],
-    faqTitleKey: "health.pace.faqTitle",
-    faqs: [
-      { qKey: "health.pace.faq.0.q", aKey: "health.pace.faq.0.a" },
-      { qKey: "health.pace.faq.1.q", aKey: "health.pace.faq.1.a" },
-      { qKey: "health.pace.faq.2.q", aKey: "health.pace.faq.2.a" },
-      { qKey: "health.pace.faq.3.q", aKey: "health.pace.faq.3.a" },
-      { qKey: "health.pace.faq.4.q", aKey: "health.pace.faq.4.a" },
-      { qKey: "health.pace.faq.5.q", aKey: "health.pace.faq.5.a" },
-    ],
-  },
-  {
-    slug: "heart-rate-calculator",
-    metaTitleKey: "health.heartRate.metaTitle",
-    metaDescriptionKey: "health.heartRate.metaDescription",
-    titleKey: "health.heartRate.title",
-    category: "Health",
-    descriptionKey: "health.heartRate.desc",
-    inputs: [
-      { label: "health.heartRate.age", name: "age", type: "number", unit: "years" },
-      { label: "health.heartRate.restingHR", name: "restingHR", type: "number", unit: "bpm" },
-    ],
-    formulaId: "heart-rate",
-    sections: [
-      { id: "intro", titleKey: "health.heartRate.about", contentKey: "health.heartRate.aboutText" },
-      { id: "formula", titleKey: "health.heartRate.formula", contentKey: "health.heartRate.formulaText" },
-    ],
-    faqTitleKey: "health.heartRate.faqTitle",
-    faqs: [
-      { qKey: "health.heartRate.faq.0.q", aKey: "health.heartRate.faq.0.a" },
-      { qKey: "health.heartRate.faq.1.q", aKey: "health.heartRate.faq.1.a" },
-      { qKey: "health.heartRate.faq.2.q", aKey: "health.heartRate.faq.2.a" },
-      { qKey: "health.heartRate.faq.3.q", aKey: "health.heartRate.faq.3.a" },
-      { qKey: "health.heartRate.faq.4.q", aKey: "health.heartRate.faq.4.a" },
-      { qKey: "health.heartRate.faq.5.q", aKey: "health.heartRate.faq.5.a" },
-    ],
-  },
-  {
-    slug: "protein-calculator",
-    metaTitleKey: "health.protein.metaTitle",
-    metaDescriptionKey: "health.protein.metaDescription",
-    titleKey: "health.protein.title",
-    category: "Health",
-    descriptionKey: "health.protein.desc",
-    inputs: [
-      { label: "health.protein.weight", name: "weight", type: "number", unit: "kg" },
-      {
-        label: "health.protein.goal",
-        name: "goal",
-        type: "select",
-        options: [
-          { value: "0.8", label: "health.protein.maintenance" },
-          { value: "1.9", label: "health.protein.muscle" },
-          { value: "1.4", label: "health.protein.loss" },
-        ],
-      },
-    ],
-    formulaId: "protein",
-    sections: [
-      { id: "intro", titleKey: "health.protein.about", contentKey: "health.protein.aboutText" },
-      { id: "formula", titleKey: "health.protein.formula", contentKey: "health.protein.formulaText" },
-    ],
-    faqTitleKey: "health.protein.faqTitle",
-    faqs: [
-      { qKey: "health.protein.faq.0.q", aKey: "health.protein.faq.0.a" },
-      { qKey: "health.protein.faq.1.q", aKey: "health.protein.faq.1.a" },
-      { qKey: "health.protein.faq.2.q", aKey: "health.protein.faq.2.a" },
-      { qKey: "health.protein.faq.3.q", aKey: "health.protein.faq.3.a" },
-      { qKey: "health.protein.faq.4.q", aKey: "health.protein.faq.4.a" },
-      { qKey: "health.protein.faq.5.q", aKey: "health.protein.faq.5.a" },
-    ],
-  },
-  {
-    slug: "tdee-calculator",
-    metaTitleKey: "health.tdee.metaTitle",
-    metaDescriptionKey: "health.tdee.metaDescription",
-    titleKey: "health.tdee.title",
-    category: "Health",
-    descriptionKey: "health.tdee.desc",
-    inputs: [
-      { label: "health.tdee.age", name: "age", type: "number", unit: "years" },
-      { label: "health.tdee.weight", name: "weight", type: "number", unit: "kg" },
-      { label: "health.tdee.height", name: "height", type: "number", unit: "cm" },
-      {
-        label: "health.tdee.activity",
-        name: "activity",
-        type: "select",
-        options: [
-          { value: "1.2", label: "health.tdee.sedentary" },
-          { value: "1.375", label: "health.tdee.light" },
-          { value: "1.55", label: "health.tdee.moderate" },
-          { value: "1.725", label: "health.tdee.active" },
-        ],
-      },
-    ],
-    formulaId: "tdee",
-    sections: [
-      { id: "intro", titleKey: "health.tdee.about", contentKey: "health.tdee.aboutText" },
-      { id: "formula", titleKey: "health.tdee.formula", contentKey: "health.tdee.formulaText" },
-    ],
-    faqTitleKey: "health.tdee.faqTitle",
-    faqs: [
-      { qKey: "health.tdee.faq.0.q", aKey: "health.tdee.faq.0.a" },
-      { qKey: "health.tdee.faq.1.q", aKey: "health.tdee.faq.1.a" },
-      { qKey: "health.tdee.faq.2.q", aKey: "health.tdee.faq.2.a" },
-      { qKey: "health.tdee.faq.3.q", aKey: "health.tdee.faq.3.a" },
-      { qKey: "health.tdee.faq.4.q", aKey: "health.tdee.faq.4.a" },
-      { qKey: "health.tdee.faq.5.q", aKey: "health.tdee.faq.5.a" },
-    ],
-  },
+ {
+  slug: "water-intake-calculator",
+  metaTitleKey: "health.waterIntake.title",
+  metaDescriptionKey: "health.waterIntake.desc",
+  titleKey: "health.waterIntake.heading",
+  category: "Health",
+  descriptionKey: "health.waterIntake.desc",
+  heading:"health.waterIntake.heading",
+  formulaId: "water",
+
+  inputs: [
+    { label: "health.waterIntake.weight", name: "weight", type: "number", unit: "kg" },
+    { label: "health.waterIntake.activity", name: "activity", type: "number", unit: "0-2" },
+  ],
+
+  toc: [
+    { id: "why-use", labelKey: "health.waterIntake.tocwhy" },
+    { id: "how-works", labelKey: "health.waterIntake.tochowitworks" },
+    { id: "why-matters", labelKey: "health.waterIntake.tocwhyuse" },
+    { id: "examples", labelKey: "health.waterIntake.tocExample" },
+    { id: "understanding", labelKey: "health.waterIntake.tocResultUnderstanding" }
+  ],
+
+  sections: [
+    {
+      id: "intro",
+      titleKey: "health.waterIntake.section1Title",
+      contentKey: "health.waterIntake.section1Content",
+      linkparacontent: "health.waterIntake.section1ExtraText",
+      linkparaKey: "health.waterIntake.section1Link",
+      linkparaslug: "tdee-calculator",
+      subsections: [
+        {
+          id: "why-use",
+          titleKey: "health.waterIntake.section1Sub1Title",
+          introKey: "health.waterIntake.section1Sub1Intro",
+        },
+        {
+          id: "how-works",
+          titleKey: "health.waterIntake.section1Sub2Title",
+          introKey: "health.waterIntake.section1Sub2Intro",
+          listKey: "health.waterIntake.section1Sub2List",
+          endKey: "health.waterIntake.section1Sub2Text",
+        },
+        {
+          id: "why-matters",
+          titleKey: "health.waterIntake.section1Sub3Title",
+          introKey: "health.waterIntake.section1Sub3Intro",
+        },
+      ]
+    },
+
+    {
+      id: "formula",
+      titleKey: "health.waterIntake.section2Title",
+      introKey: "health.waterIntake.section2Intro",
+      subsections: [
+        {
+          id: "main-formula",
+          formulaKey: "health.waterIntake.section2Formula",
+          type: "formula",
+          endKey:"health.waterIntake.section2end"
+        },
+        {
+          id: "adjustment",
+          titleKey: "health.waterIntake.section2AdjustmentTitle",
+          beforeimagecontentKey: "health.waterIntake.section2AdjustmentText",
+          imageKey: "health.waterIntake.section2AdjustmentImage",
+          imageAltKey: "health.waterIntake.section2AdjustmentImageAlt",
+        },
+        {
+          id: "examples",
+          titleKey: "health.waterIntake.section2Sub1Title",
+          introKey: "health.waterIntake.section2Sub1Intro",
+          formulas: [
+            "health.waterIntake.section2Sub1Step1",
+            "health.waterIntake.section2Sub1Step2"
+          ],
+          endKey: "health.waterIntake.section2Sub1Result",
+          endKey2: "health.waterIntake.section2Sub1Result2",
+        },
+        {
+          id: "understanding",
+          titleKey: "health.waterIntake.section3Title",
+          imageKey: "health.waterIntake.section3Image",
+          imageAltKey: "health.waterIntake.section3ImageAlt",
+          contentKey: "health.waterIntake.section3Text",
+        },
+        {
+          id: "why-formula-works",
+          titleKey: "health.waterIntake.section4Title",
+          contentKey: "health.waterIntake.section4Text",
+        }
+      ]
+    },
+  ],
+
+  faqTitleKey: "health.waterIntake.faqTitle",
+  faqs: [
+    { qKey: "health.waterIntake.faq.0.q", aKey: "health.waterIntake.faq.0.a" },
+    { qKey: "health.waterIntake.faq.1.q", aKey: "health.waterIntake.faq.1.a" },
+    { qKey: "health.waterIntake.faq.2.q", aKey: "health.waterIntake.faq.2.a" },
+    { qKey: "health.waterIntake.faq.3.q", aKey: "health.waterIntake.faq.3.a" },
+    { qKey: "health.waterIntake.faq.4.q", aKey: "health.waterIntake.faq.4.a" },
+    { qKey: "health.waterIntake.faq.5.q", aKey: "health.waterIntake.faq.5.a" },
+  ]
+},
+
+{
+  slug: "tdee-calculator",
+  metaTitleKey: "health.tdee.title",
+  metaDescriptionKey: "health.tdee.desc",
+  titleKey: "health.tdee.title",
+  category: "Health",
+  descriptionKey: "health.tdee.desc",
+  formulaId: "tdee",
+
+  toc: [
+    { id: "why-important", labelKey: "health.tdee.tocwhy" },
+    { id: "how-it-works", labelKey: "health.tdee.tochowitworks" },
+    { id: "why-use", labelKey: "health.tdee.tocwhyuse" },
+    { id: "example", labelKey: "health.tdee.tocExample" },
+    { id: "use-result", labelKey: "health.tdee.tochowtouse" },
+  ],
+
+  inputs: [
+    { label: "health.tdee.age", name: "age", type: "number", unit: "years" },
+    { label: "health.tdee.weight", name: "weight", type: "number", unit: "kg" },
+    { label: "health.tdee.height", name: "height", type: "number", unit: "cm" },
+    {
+      label: "health.tdee.activity",
+      name: "activity",
+      type: "select",
+      options: [
+        { label: "health.tdee.sedentary", value: "sedentary" },
+        { label: "health.tdee.light", value: "light" },
+        { label: "health.tdee.moderate", value: "moderate" },
+        { label: "health.tdee.very", value: "very" },
+        { label: "health.tdee.extra", value: "extra" },
+      ]
+    },
+  ],
+
+  heading: "health.tdee.heading",
+
+  sections: [
+    {
+      id: "about",
+      titleKey: "health.tdee.section1Title",
+      contentKey: "health.tdee.section1Content",
+      subsections: [
+        {
+          id: "why-important",
+          titleKey: "health.tdee.section1Sub1Title",
+          introKey: "health.tdee.section1Sub1Intro",
+          lists: ["health.tdee.section1Sub1List"],
+          contentKey: "health.tdee.section1Sub1Text"
+        },
+        {
+          id: "how-it-works",
+          titleKey: "health.tdee.section1Sub2Title",
+          introKey: "health.tdee.section1Sub2Intro",
+          lists: ["health.tdee.section1Sub2List"],
+          contentKey: "health.tdee.section1Sub2Text"
+        },
+        {
+          id: "why-use",
+          titleKey: "health.tdee.section1Sub3Title",
+          contentKey: "health.tdee.section1Sub3Intro"
+        }
+      ]
+    },
+
+    {
+      id: "formula",
+      titleKey: "health.tdee.section2Title",
+      introKey: "health.tdee.section2Intro",
+      lists: ["health.tdee.section2List"],
+      subsections: [
+        {
+          id:"bmr-step",
+          titleKey:"health.tdee.section2Step1",
+          formulas:[
+            "health.tdee.section2Step1MaleFormula",
+            "health.tdee.section2Step1FemaleFormula"
+          ],
+        },
+        {
+          id:"activity-step",
+          titleKey:"health.tdee.section2Step2",
+          contentKey:"health.tdee.section2Step2Text",
+        },
+        {
+          id:"formula-summary",
+          titleKey:"health.tdee.section2Step3",
+          formulas:["health.tdee.section2Step3Formula"],
+          contentKey:"health.tdee.section2Step3Text"
+        },
+        {
+          id:"example",
+          titleKey:"health.tdee.section2Sub1Title",
+          imageKey:"health.tdee.section2Sub1Image",
+          imageAltKey:"health.tdee.section2Sub1ImageAlt",
+          introKey:"health.tdee.section2Sub1Example",
+          contentKey:"health.tdee.section2Sub1ExampleMale",
+          lists:["health.tdee.section2Sub1List"],
+          formulas:[
+            "health.tdee.section2Step1Formula",
+            "health.tdee.section2Step1Formula2",
+            "health.tdee.section2Step2Formula",
+          ],
+          endKey:"health.tdee.section2Step2End"
+        },
+        {
+          id:"use-result",
+          titleKey:"health.tdee.section2Sub2Title",
+          introKey:"health.tdee.section2Sub2Intro",
+          lists:["health.tdee.section2Sub2List"],
+          linkparacontent:"health.tdee.section2Sub2Extra",
+          linkparaKey:"health.tdee.section2Sub2ExtraLink",
+          linkparaslug:"macro-calculator"
+        },
+        {
+          id:"why-this-works",
+          titleKey:"health.tdee.section2Sub3Title",
+          contentKey:"health.tdee.section2Sub3Intro"
+        }
+      ]
+    }
+  ],
+
+  faqTitleKey: "health.tdee.faqTitle",
+  faqs: [
+    { qKey: "health.tdee.faq.0.q", aKey: "health.tdee.faq.0.a" },
+    { qKey: "health.tdee.faq.1.q", aKey: "health.tdee.faq.1.a" },
+    { qKey: "health.tdee.faq.2.q", aKey: "health.tdee.faq.2.a" },
+    { qKey: "health.tdee.faq.3.q", aKey: "health.tdee.faq.3.a" },
+    { qKey: "health.tdee.faq.4.q", aKey: "health.tdee.faq.4.a" },
+    { qKey: "health.tdee.faq.5.q", aKey: "health.tdee.faq.5.a" },
+  ]
+},
   {
     slug: "macro-calculator",
-    metaTitleKey: "health.macros.metaTitle",
-    metaDescriptionKey: "health.macros.metaDescription",
+    metaTitleKey: "health.macros.title",
+    metaDescriptionKey: "health.macros.desc",
     titleKey: "health.macros.title",
     category: "Health",
     descriptionKey: "health.macros.desc",
+    formulaId: "macros",
+
+    toc: [
+      { id: "why-tracking", labelKey: "health.macros.tocwhy" },
+      { id: "how-it-works", labelKey: "health.macros.tochowitworks" },
+      { id: "why-use", labelKey: "health.macros.tocwhyuse" },
+      { id: "macro-example", labelKey: "health.macros.tocMacro" },
+      { id: "use-result", labelKey: "health.macros.tocresult" },
+      { id: "formula", labelKey: "health.macros.tocformula" },
+    ],
+
     inputs: [
       { label: "health.macros.calories", name: "calories", type: "number", unit: "kcal" },
       {
-        label: "health.macros.diet",
-        name: "diet",
-        type: "select",
-        options: [
-          { value: "balanced", label: "health.macros.balanced" },
-          { value: "lowcarb", label: "health.macros.lowCarb" },
-          { value: "highprotein", label: "health.macros.highProtein" },
-        ],
+        label: "health.macros.diet", name: "diet", type: "select", options: [
+          { label: "health.macros.balanced", value: "balanced" },
+          { label: "health.macros.lowCarb", value: "lowCarb" },
+          { label: "health.macros.highProtein", value: "highProtein" },
+        ]
       },
     ],
-    formulaId: "macros",
+
+    heading: "health.macros.heading",
+
     sections: [
-      { id: "intro", titleKey: "health.macros.about", contentKey: "health.macros.aboutText" },
-      { id: "formula", titleKey: "health.macros.formula", contentKey: "health.macros.formulaText" },
+      {
+        id: "about",
+        titleKey: "health.macros.section1Title",
+        contentKey: "health.macros.section1Content",
+        subsections: [
+          {
+            id: "why-tracking",
+            titleKey: "health.macros.section1Sub1Title",
+            introKey: "health.macros.section1Sub1Intro",
+            lists: ["health.macros.section1Sub1List"],
+            contentKey: "health.macros.section1Sub1Text",
+          },
+          {
+            id: "how-it-works",
+            titleKey: "health.macros.section1Sub2Title",
+            introKey: "health.macros.section1Sub2Intro",
+            lists: [
+              "health.macros.section1Sub2List",
+              "health.macros.section1Sub2List1"
+            ],
+            contentKey: "health.macros.section1Sub2Text",
+          },
+          {
+            id: "why-use",
+            titleKey: "health.macros.section1Sub3Title",
+            contentKey: "health.macros.section1Sub3Intro",
+          }
+        ]
+      },
+      {
+        id: "formula",
+        titleKey: "health.macros.section2Title",
+        introKey: "health.macros.section2Intro",
+        textKey: "health.macros.section2Intro2",
+        lists: ["health.macros.section2List"],
+        linkparacontent:"health.macros.section2ExtraText",
+        linkparaKey:"health.macros.section2ExtraLink",
+        linkparaslug:"/calorie-calculator",
+        subsections: [
+          {
+            id: "calorie-step",
+            titleKey: "health.macros.section2StepsTitle",
+            introKey: "health.macros.section2StepsText",
+            lists: ["health.macros.section2StepList1"],
+            endKey: "health.macros.section2StepTextend",
+          },
+          {
+            id: "distribution-goals",
+            titleKey: "health.macros.section2StepsTitle2",
+            subtitleKey: "health.macros.section2StepsTitle3",
+            lists: ["health.macros.section2StepList2"],
+            endKey: "health.macros.section2StepTextend2",
+          },
+          {
+            id: "macro-formula",
+            titleKey: "health.macros.section2StepsTitle4",
+            textKey: "health.macros.section2StepsExample",
+            formulas: [
+              "health.macros.section2Macroformula",
+              "health.macros.section2Proteinformula"
+            ],
+            endKey: "health.macros.section2StepTextend3",
+          },
+          {
+            id: "example",
+            titleKey: "health.macros.section2Sub1Title",
+            imageKey: "health.macros.section2Sub1Image",
+            imageAltKey: "health.macros.section2Sub1ImageAlt",
+            introKey: "health.macros.section2Sub1ExampleText",
+            lists: [
+              "health.macros.section2Sub1List",
+              "health.macros.section2Sub1DailyList"
+            ],
+            endKey: "health.macros.section2Sub1DailyEnd"
+          },
+          {
+            id: "use-result",
+            titleKey: "health.macros.section2Sub2Title",
+            contentKey: "health.macros.section2Sub2Intro",
+          },
+          {
+            id: "why-this-works",
+            titleKey: "health.macros.section2Sub3Title",
+            contentKey: "health.macros.section2Sub3Intro",
+          }
+        ]
+      }
     ],
+
     faqTitleKey: "health.macros.faqTitle",
     faqs: [
       { qKey: "health.macros.faq.0.q", aKey: "health.macros.faq.0.a" },
@@ -538,33 +727,122 @@ export const healthCalculators: Calculator[] = [
       { qKey: "health.macros.faq.3.q", aKey: "health.macros.faq.3.a" },
       { qKey: "health.macros.faq.4.q", aKey: "health.macros.faq.4.a" },
       { qKey: "health.macros.faq.5.q", aKey: "health.macros.faq.5.a" },
-    ],
+    ]
   },
-  {
-    slug: "body-fat-percentage",
-    metaTitleKey: "health.bfp.metaTitle",
-    metaDescriptionKey: "health.bfp.metaDescription",
-    titleKey: "health.bfp.title",
-    category: "Health",
-    descriptionKey: "health.bfp.desc",
-    inputs: [
-      { label: "health.bfp.waist", name: "waist", type: "number", unit: "cm" },
-      { label: "health.bfp.hip", name: "hip", type: "number", unit: "cm" },
-      { label: "health.bfp.neck", name: "neck", type: "number", unit: "cm" },
-    ],
-    formulaId: "bfp",
-    sections: [
-      { id: "intro", titleKey: "health.bfp.about", contentKey: "health.bfp.aboutText" },
-      { id: "formula", titleKey: "health.bfp.formula", contentKey: "health.bfp.formulaText" },
-    ],
-    faqTitleKey: "health.bfp.faqTitle",
-    faqs: [
-      { qKey: "health.bfp.faq.0.q", aKey: "health.bfp.faq.0.a" },
-      { qKey: "health.bfp.faq.1.q", aKey: "health.bfp.faq.1.a" },
-      { qKey: "health.bfp.faq.2.q", aKey: "health.bfp.faq.2.a" },
-      { qKey: "health.bfp.faq.3.q", aKey: "health.bfp.faq.3.a" },
-      { qKey: "health.bfp.faq.4.q", aKey: "health.bfp.faq.4.a" },
-      { qKey: "health.bfp.faq.5.q", aKey: "health.bfp.faq.5.a" },
-    ],
-  },
+
+    // {
+  //   slug: "running-pace-calculator",
+  //   metaTitleKey: "health.pace.metaTitle",
+  //   metaDescriptionKey: "health.pace.metaDescription",
+  //   titleKey: "health.pace.title",
+  //   category: "Health",
+  //   descriptionKey: "health.pace.desc",
+  //   inputs: [
+  //     { label: "health.pace.distance", name: "distance", type: "number", unit: "km" },
+  //     { label: "health.pace.time", name: "time", type: "number", unit: "minutes" },
+  //   ],
+  //   formulaId: "pace",
+  //   sections: [
+  //     { id: "intro", titleKey: "health.pace.about", contentKey: "health.pace.aboutText" },
+  //     { id: "formula", titleKey: "health.pace.formula", contentKey: "health.pace.formulaText" },
+  //   ],
+  //   faqTitleKey: "health.pace.faqTitle",
+  //   faqs: [
+  //     { qKey: "health.pace.faq.0.q", aKey: "health.pace.faq.0.a" },
+  //     { qKey: "health.pace.faq.1.q", aKey: "health.pace.faq.1.a" },
+  //     { qKey: "health.pace.faq.2.q", aKey: "health.pace.faq.2.a" },
+  //     { qKey: "health.pace.faq.3.q", aKey: "health.pace.faq.3.a" },
+  //     { qKey: "health.pace.faq.4.q", aKey: "health.pace.faq.4.a" },
+  //     { qKey: "health.pace.faq.5.q", aKey: "health.pace.faq.5.a" },
+  //   ],
+  // },
+  // {
+  //   slug: "heart-rate-calculator",
+  //   metaTitleKey: "health.heartRate.metaTitle",
+  //   metaDescriptionKey: "health.heartRate.metaDescription",
+  //   titleKey: "health.heartRate.title",
+  //   category: "Health",
+  //   descriptionKey: "health.heartRate.desc",
+  //   inputs: [
+  //     { label: "health.heartRate.age", name: "age", type: "number", unit: "years" },
+  //     { label: "health.heartRate.restingHR", name: "restingHR", type: "number", unit: "bpm" },
+  //   ],
+  //   formulaId: "heart-rate",
+  //   sections: [
+  //     { id: "intro", titleKey: "health.heartRate.about", contentKey: "health.heartRate.aboutText" },
+  //     { id: "formula", titleKey: "health.heartRate.formula", contentKey: "health.heartRate.formulaText" },
+  //   ],
+  //   faqTitleKey: "health.heartRate.faqTitle",
+  //   faqs: [
+  //     { qKey: "health.heartRate.faq.0.q", aKey: "health.heartRate.faq.0.a" },
+  //     { qKey: "health.heartRate.faq.1.q", aKey: "health.heartRate.faq.1.a" },
+  //     { qKey: "health.heartRate.faq.2.q", aKey: "health.heartRate.faq.2.a" },
+  //     { qKey: "health.heartRate.faq.3.q", aKey: "health.heartRate.faq.3.a" },
+  //     { qKey: "health.heartRate.faq.4.q", aKey: "health.heartRate.faq.4.a" },
+  //     { qKey: "health.heartRate.faq.5.q", aKey: "health.heartRate.faq.5.a" },
+  //   ],
+  // },
+  // {
+  //   slug: "protein-calculator",
+  //   metaTitleKey: "health.protein.metaTitle",
+  //   metaDescriptionKey: "health.protein.metaDescription",
+  //   titleKey: "health.protein.title",
+  //   category: "Health",
+  //   descriptionKey: "health.protein.desc",
+  //   inputs: [
+  //     { label: "health.protein.weight", name: "weight", type: "number", unit: "kg" },
+  //     {
+  //       label: "health.protein.goal",
+  //       name: "goal",
+  //       type: "select",
+  //       options: [
+  //         { value: "0.8", label: "health.protein.maintenance" },
+  //         { value: "1.9", label: "health.protein.muscle" },
+  //         { value: "1.4", label: "health.protein.loss" },
+  //       ],
+  //     },
+  //   ],
+  //   formulaId: "protein",
+  //   sections: [
+  //     { id: "intro", titleKey: "health.protein.about", contentKey: "health.protein.aboutText" },
+  //     { id: "formula", titleKey: "health.protein.formula", contentKey: "health.protein.formulaText" },
+  //   ],
+  //   faqTitleKey: "health.protein.faqTitle",
+  //   faqs: [
+  //     { qKey: "health.protein.faq.0.q", aKey: "health.protein.faq.0.a" },
+  //     { qKey: "health.protein.faq.1.q", aKey: "health.protein.faq.1.a" },
+  //     { qKey: "health.protein.faq.2.q", aKey: "health.protein.faq.2.a" },
+  //     { qKey: "health.protein.faq.3.q", aKey: "health.protein.faq.3.a" },
+  //     { qKey: "health.protein.faq.4.q", aKey: "health.protein.faq.4.a" },
+  //     { qKey: "health.protein.faq.5.q", aKey: "health.protein.faq.5.a" },
+  //   ],
+  // },
+
+  // {
+  //   slug: "body-fat-percentage",
+  //   metaTitleKey: "health.bfp.metaTitle",
+  //   metaDescriptionKey: "health.bfp.metaDescription",
+  //   titleKey: "health.bfp.title",
+  //   category: "Health",
+  //   descriptionKey: "health.bfp.desc",
+  //   inputs: [
+  //     { label: "health.bfp.waist", name: "waist", type: "number", unit: "cm" },
+  //     { label: "health.bfp.hip", name: "hip", type: "number", unit: "cm" },
+  //     { label: "health.bfp.neck", name: "neck", type: "number", unit: "cm" },
+  //   ],
+  //   formulaId: "bfp",
+  //   sections: [
+  //     { id: "intro", titleKey: "health.bfp.about", contentKey: "health.bfp.aboutText" },
+  //     { id: "formula", titleKey: "health.bfp.formula", contentKey: "health.bfp.formulaText" },
+  //   ],
+  //   faqTitleKey: "health.bfp.faqTitle",
+  //   faqs: [
+  //     { qKey: "health.bfp.faq.0.q", aKey: "health.bfp.faq.0.a" },
+  //     { qKey: "health.bfp.faq.1.q", aKey: "health.bfp.faq.1.a" },
+  //     { qKey: "health.bfp.faq.2.q", aKey: "health.bfp.faq.2.a" },
+  //     { qKey: "health.bfp.faq.3.q", aKey: "health.bfp.faq.3.a" },
+  //     { qKey: "health.bfp.faq.4.q", aKey: "health.bfp.faq.4.a" },
+  //     { qKey: "health.bfp.faq.5.q", aKey: "health.bfp.faq.5.a" },
+  //   ],
+  // },
 ]

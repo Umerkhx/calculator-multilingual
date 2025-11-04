@@ -67,7 +67,7 @@ export function Footer({ locale }: FooterProps) {
         </div>
 
         {/* Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:px-20 px-5 my-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:px-20 px-5 my-10">
           {/* Column 1 — Static links (no locale) */}
           <div>
             <h3 className="font-semibold text-lg mb-4">{t.footer.gridtitle1}</h3>
@@ -99,7 +99,7 @@ export function Footer({ locale }: FooterProps) {
                 return (
                   <li key={calc.slug}>
                     <Link href={href} className="hover:text-blue-600">
-                      {getTranslation(locale, calc.titleKey)}
+                      {getTranslation(locale, calc.heading)}
                     </Link>
                   </li>
                 )
@@ -115,7 +115,7 @@ export function Footer({ locale }: FooterProps) {
                 return (
                   <li key={calc.slug}>
                     <Link href={href} className="hover:text-blue-600">
-                      {getTranslation(locale, calc.titleKey)}
+                      {getTranslation(locale, calc.heading)}
                     </Link>
                   </li>
                 )
@@ -132,7 +132,7 @@ export function Footer({ locale }: FooterProps) {
                 return (
                   <li key={calc.slug}>
                     <Link href={href} className="hover:text-blue-600">
-                      {getTranslation(locale, calc.titleKey)}
+                      {getTranslation(locale, calc.heading)}
                     </Link>
                   </li>
                 )

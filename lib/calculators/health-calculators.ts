@@ -3,9 +3,9 @@ import type { Calculator } from "./types"
 export const healthCalculators: Calculator[] = [
  {
   slug: "body-fat-calculator",
-  metaTitleKey: "health.bodyFat.title",
+  metaTitleKey: "health.bodyFat.metaTitle",
   metaDescriptionKey: "health.bodyFat.desc",
-  titleKey: "health.bodyFat.title",
+  titleKey: "health.bodyFat.metaTitle",
   category: "Health",
   descriptionKey: "health.bodyFat.desc",
   formulaId: "bodyFat",
@@ -147,9 +147,9 @@ export const healthCalculators: Calculator[] = [
 
 {
   slug: "bmi-calculator",
-  metaTitleKey: "health.bmi.title",
+  metaTitleKey: "health.bmi.metaTitle",
   metaDescriptionKey: "health.bmi.desc",
-  titleKey: "health.bmi.title",
+  titleKey: "health.bmi.metaTitle",
   category: "Health",
   descriptionKey: "health.bmi.desc",
   formulaId: "bmi",
@@ -279,9 +279,9 @@ export const healthCalculators: Calculator[] = [
 },
 {
   slug: "calorie-calculator",
-  metaTitleKey: "health.calories.title",
+  metaTitleKey: "health.calories.metaTitle",
   metaDescriptionKey: "health.calories.desc",
-  titleKey: "health.calories.title",
+  titleKey: "health.calories.metaTitle",
   category: "Health",
   descriptionKey: "health.calories.desc",
   formulaId: "calories",
@@ -419,7 +419,7 @@ export const healthCalculators: Calculator[] = [
 
  {
   slug: "water-intake-calculator",
-  metaTitleKey: "health.waterIntake.title",
+  metaTitleKey: "health.waterIntake.metaTitle",
   metaDescriptionKey: "health.waterIntake.desc",
   titleKey: "health.waterIntake.heading",
   category: "Health",
@@ -527,9 +527,9 @@ export const healthCalculators: Calculator[] = [
 
 {
   slug: "tdee-calculator",
-  metaTitleKey: "health.tdee.title",
+  metaTitleKey: "health.tdee.metaTitle",
   metaDescriptionKey: "health.tdee.desc",
-  titleKey: "health.tdee.title",
+  titleKey: "health.tdee.metaTitle",
   category: "Health",
   descriptionKey: "health.tdee.desc",
   formulaId: "tdee",
@@ -660,9 +660,9 @@ export const healthCalculators: Calculator[] = [
 },
   {
     slug: "macro-calculator",
-    metaTitleKey: "health.macros.title",
+    metaTitleKey: "health.macros.metaTitle",
     metaDescriptionKey: "health.macros.desc",
-    titleKey: "health.macros.title",
+    titleKey: "health.macros.metaTitle",
     category: "Health",
     descriptionKey: "health.macros.desc",
     formulaId: "macros",
@@ -794,7 +794,7 @@ export const healthCalculators: Calculator[] = [
   //   slug: "running-pace-calculator",
   //   metaTitleKey: "health.pace.metaTitle",
   //   metaDescriptionKey: "health.pace.metaDescription",
-  //   titleKey: "health.pace.title",
+  //   titleKey: "health.pace.metaTitle",
   //   category: "Health",
   //   descriptionKey: "health.pace.desc",
   //   inputs: [
@@ -820,7 +820,7 @@ export const healthCalculators: Calculator[] = [
   //   slug: "heart-rate-calculator",
   //   metaTitleKey: "health.heartRate.metaTitle",
   //   metaDescriptionKey: "health.heartRate.metaDescription",
-  //   titleKey: "health.heartRate.title",
+  //   titleKey: "health.heartRate.metaTitle",
   //   category: "Health",
   //   descriptionKey: "health.heartRate.desc",
   //   inputs: [
@@ -846,7 +846,7 @@ export const healthCalculators: Calculator[] = [
   //   slug: "protein-calculator",
   //   metaTitleKey: "health.protein.metaTitle",
   //   metaDescriptionKey: "health.protein.metaDescription",
-  //   titleKey: "health.protein.title",
+  //   titleKey: "health.protein.metaTitle",
   //   category: "Health",
   //   descriptionKey: "health.protein.desc",
   //   inputs: [
@@ -882,7 +882,7 @@ export const healthCalculators: Calculator[] = [
   //   slug: "body-fat-percentage",
   //   metaTitleKey: "health.bfp.metaTitle",
   //   metaDescriptionKey: "health.bfp.metaDescription",
-  //   titleKey: "health.bfp.title",
+  //   titleKey: "health.bfp.metaTitle",
   //   category: "Health",
   //   descriptionKey: "health.bfp.desc",
   //   inputs: [

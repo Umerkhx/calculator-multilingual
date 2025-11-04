@@ -11,7 +11,7 @@ interface PageProps {
   params: { locale: Locale };
 }
 
-const baseUrl = "https://calyx-mme.vercel.app";
+const baseUrl = "https://vastcalculators.com";
 
 export async function generateStaticParams() {
   return locales
@@ -21,7 +21,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = params;
-
+  
   const metaData = {
     en: {
       title: "Online Free Calculator Tools - Vastcalculator",
@@ -95,8 +95,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const languages = Object.fromEntries(
     locales.map((l) =>
       l === defaultLocale
-        ? [l, `${baseUrl}`]
-        : [l, `${baseUrl}/${l}`]
+        ? [l, `${baseUrl}`]  
+        : [l, `${baseUrl}/${l}`]  
     )
   );
 
@@ -118,11 +118,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function HomePage({ params }: PageProps) {
   const { locale } = params;
-
-
+  
   return (
     <FadeIn>
-
       <Hero locale={locale} />
       <CardsSection locale={locale} />
       <AboutSection locale={locale} />

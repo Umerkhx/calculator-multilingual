@@ -1,6 +1,9 @@
+import type { Metadata } from "next";
 import CalculatorClient from "@/components/calculator-comps/CalculatorClient";
 import { allCalculatorCategories, getCalculatorBySlug } from "@/lib/calculators";
 import { getTranslation, type Locale, defaultLocale, locales } from "@/lib/i18n";
+
+const baseUrl = "https://vastcalculators.com";
 
 export async function generateStaticParams() {
   const paths: { locale: string; category: string; calculator: string }[] = [];
@@ -24,6 +27,52 @@ export async function generateStaticParams() {
 
 interface CalculatorPageProps {
   params: { locale?: string; category: string; calculator: string };
+}
+
+export async function generateMetadata({ params }: CalculatorPageProps): Promise<Metadata> {
+  const { locale = defaultLocale, category, calculator } = params;
+  const validLocale = (locales.includes(locale as Locale) ? locale : defaultLocale) as Locale;
+  const calc = getCalculatorBySlug(category, calculator);
+
+  if (!calc) {
+    return {
+      title: "Calculator Not Found",
+      description: "The calculator you're looking for could not be found.",
+    };
+  }
+
+  const title = getTranslation(validLocale, calc.metaTitleKey);
+  const description = getTranslation(validLocale, calc.metaDescriptionKey);
+
+  const canonical =
+    locale === defaultLocale || !locale
+      ? `${baseUrl}/${category}/${calculator}`
+      : `${baseUrl}/${locale}/${category}/${calculator}`;
+
+  const languages = Object.fromEntries(
+    locales.map((l) => {
+      const url =
+        l === defaultLocale
+          ? `${baseUrl}/${category}/${calculator}`
+          : `${baseUrl}/${l}/${category}/${calculator}`;
+      return [l, url];
+    })
+  );
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical,
+      languages,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+  };
 }
 
 export default async function CalculatorPage({ params }: CalculatorPageProps) {

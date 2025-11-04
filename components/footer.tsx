@@ -11,6 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import Image from "next/image"
 
 interface FooterProps {
   locale: Locale
@@ -42,9 +43,10 @@ export function Footer({ locale }: FooterProps) {
         {/* Header Row */}
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-5 md:px-20 px-5">
           <div className="flex flex-col gap-2 md:w-1/2">
-            <h2 className="font-bold md:text-8xl text-6xl text-zinc-800">
+            {/* <h2 className="font-bold md:text-8xl text-6xl text-zinc-800">
               {t.nav.name}
-            </h2>
+            </h2> */}
+            <Image src={'/vast-logo.png'}width={270} height={270} alt="logo" fetchPriority="high"></Image>
             <p className="mt-2 md:text-base text-sm md:mb-0 mb-5">
               {t.footer.subtitle}
             </p>

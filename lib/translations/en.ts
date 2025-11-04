@@ -135,8 +135,8 @@ export const enTranslations = {
   // Health Calculators
   health: {
     bodyFat: {
-      title: "Body Fat Calculator",
-      desc: "Estimate your body fat percentage",
+      title: "Body Fat Calculator | Estimate Your Body Fat Percentage Online",
+      desc: " Use our Body Fat Calculator to find your body fat percentage. Track fat loss, muscle gain, and fitness progress using accurate measurement formulas.",
       waist: "Waist (cm)",
       neck: "Neck (cm)",
       height: "Height (cm)",
@@ -147,20 +147,21 @@ export const enTranslations = {
       result: "Body Fat Percentage",
 
       tocTitle: "Table of Contents",
-      tocAbout: "Why Knowing Your Body Fat Percentage Matters",
-      tochow: "How the Online Body Fat Calculator Works",
-      tocnavymethod: "U.S. Navy Method",
-      tocbmimethod: "BMI-Based Estimation Method",
-      tocinterpretation: "How to Interpret Your Result",
-      tocFaqs: "Body Fat Calculator FAQs",
+      tocAbout: "Why Use a Body Fat Calculator?",
+      tochow: "How the Body Fat Calculator Works",
+      toctrack: "Why Track Body Fat Instead of Just Weight?",
+      tocnavy: "U.S. Navy Body Fat Formula",
+      tocunderstanding: "Understanding the Formula",
+      tocexample: "Example of Body Fat Calculation",
+      tocinterpret: "How to Interpret the Result",
+      tocreliable: "Why This Formula Is Reliable",
 
       heading: "Body Fat Calculator",
       section1Title: "About Body Fat Calculator",
-      section1Content:
-        "The Body Fat Calculator helps you find out how much of your body weight comes from fat compared to lean tissue. It provides your body fat percentage, lean body mass (LBM), and fat mass using simple measurements, such as height, weight, waist circumference, and neck circumference. This online Body Fat Calculator provides a quick and accurate assessment of your fitness metrics, helping you understand your current health index. It's a valuable tool for people tracking progress in fitness, weight loss, or body composition improvement.",
-      section1ExtraText:
-        "After checking your body fat percentage, see how many calories you burn daily with our ",
+      section1Content: "The Body Fat Calculator helps you find out how much of your body weight comes from fat compared to lean tissue. It provides your body fat percentage, lean body mass (LBM), and fat mass using simple measurements, such as height, weight, waist circumference, and neck circumference. This online Body Fat Calculator provides a quick and accurate assessment of your fitness metrics, helping you understand your current health index. It's a valuable tool for people tracking progress in fitness, weight loss, or body composition improvement.",
+      section1ExtraText: "After checking your body fat percentage, see how many calories you burn daily with our ",
       section1Link: "TDEE Calculator",
+
 
       section1Sub1Title: "Why Use a Body Fat Calculator?",
       section1Sub1Intro:
@@ -205,26 +206,25 @@ export const enTranslations = {
 
 
       formulatitle: "Body Fat Calculator Formula",
-      formulaText: "The Body Fat Calculator uses proven formulas from the U.S. Navy and other fitness research studies to estimate your body fat percentage. It works by comparing your body measurements with height and gender to find your fat mass and lean body mass (LBM). These formulas are widely recognized for their reliability in calculating body composition without the need for professional tools.",
+      formulaText: "The Body Fat Calculator uses scientifically proven formulas, such as the U.S. Navy Body Fat Formula, to estimate your body fat percentage. It works by comparing your body measurements, like waist, neck, and, for women, hip measurements, with your height and gender to determine your fat mass and lean body mass (LBM). These formulas are widely recognized for their reliability in calculating body composition without the need for professional tools or equipment.",
       formulasubtitle1: "U.S. Navy Body Fat Formula",
-      formulaMale: "For Men: Body Fat % = 86.010 × log₁₀(Waist - Neck) – 70.041 × log₁₀(Height) + 36.76",
-      formulaFemale: "For Women: Body Fat % = 163.205 × log₁₀(Waist + Hip - Neck) – 97.684 × log₁₀(Height) – 78.387",
-      formulasubend: "All measurements are in centimetres (cm).",
+      formulaMale: "For Men:Body Fat %=86.010×log⁡10(Waist−Neck)−70.041×log⁡10(Height)+36.76\text{Body Fat \%} = 86.010 \times \log_{10}(\text{Waist} - \text{Neck}) - 70.041 \times \log_{10}(\text{Height}) + 36.76Body Fat %=86.010×log10​(Waist−Neck)−70.041×log10​(Height)+36.76",
+      formulaFemale: "For Women:Body Fat %=163.205×log⁡10(Waist+Hip−Neck)−97.684×log⁡10(Height)−78.387\text{Body Fat \%} = 163.205 \times \log_{10}(\text{Waist} + \text{Hip} - \text{Neck}) - 97.684 \times \log_{10}(\text{Height}) - 78.387Body Fat %=163.205×log10​(Waist+Hip−Neck)−97.684×log10​(Height)−78.387",
       formulasubtitle2: "Understanding the Formula",
       formulasub2Image: "/Body-Fat-Calculator.jpg",
       formulasub2ImageAlt: "Body Fat calculator",
-      formulasub2text: "These equations estimate fat ratio by comparing the difference between total body size and core circumference areas.",
+      formulasub2text: "These equations estimate your fat ratio by comparing the difference between your total body size and the core circumference areas.",
       formulasub2List: [
         "Waist and neck (for men) or waist, hip, and neck (for women) are used to gauge fat distribution.",
         "Height helps adjust the results for proportional accuracy.",
       ],
       formulasub2end: "Once calculated, the online Body Fat Calculator uses your body fat percentage to display:",
       formulasub2List2: [
-        "Fat Mass (FM) = Total Weight × (Body Fat % ÷ 100)",
-        "Lean Body Mass (LBM) = Total Weight – Fat Mass",
+        "Fat Mass (FM) = FM=Total Weight×(Body Fat %100)\text{FM} = \text{Total Weight} \times \left( \frac{\text{Body Fat \%}}{100} \right)FM=Total Weight×(100Body Fat %​)",
+        "Lean Body Mass (LBM) = LBM=Total Weight−Fat Mass\text{LBM} = \text{Total Weight} - \text{Fat Mass}LBM=Total Weight−Fat Mass",
       ],
-      formulasub2end2: "These values help determine how much of your weight is lean tissue (muscle, bones, organs) versus stored fat.",
-      formulasub3title: "Example of Body Fat Calculation",
+      formulasub2end2: "These values help you understand how much of your weight is lean tissue (muscle, bones, organs) versus stored fat.",
+      formulasub3title: " Example of Body Fat Calculation",
       formulasub3line: "Let’s see a simple example for better clarity:",
       formulasub3line2: "Example (Male):",
       formulasub3List: [
@@ -234,50 +234,45 @@ export const enTranslations = {
         "Weight: 70 kg",
       ],
       formulasteptitle: "Step 1: Apply the formula",
-      formulastep1: " Body Fat % = 86.010 × log₁₀(85 – 38) – 70.041 × log₁₀(175) + 36.76 = 86.010 × log₁₀(47) – 70.041 × log₁₀(175) + 36.76 = 86.010 × 1.672 – 70.041 × 2.243 + 36.76 = 143.79 – 157.59 + 36.76 = 22.96% (approx. 23%)",
+      formulastep1: " %=86.010×log⁡10(85−38)−70.041×log⁡10(175)+36.76=86.010×log⁡10(47)−70.041×log⁡10(175)+36.76=86.010 (≈23%)\text{Body Fat \%} = 86.010 \times \log_{10}(85 - 38) - 70.041 \times \log_{10}(175) + 36.76 = 86.010 \times \log_{10}(47) - 70.041 \times \log_{10}(175) + 36.76 = 86.010 \times 1.672 - 70.041 \times 2.243 + 36.76 = 143.79 - 157.59 + 36.76 = 22.96\% \ (\approx 23\%) Body Fat %=86.010×log10​(85−38)−70.041×log10​(175)+36.76=86.010×log10​(47)−70.041×log10​(175)+36.76=86.010×1.672−70.041×2.243+36.76=143.79−157.59+36.76=22.96% (≈23%)",
       formulasteptitle2: "Step 2: Calculate Fat Mass and Lean Body Mass",
       formulastepList: [
-        "Fat Mass = 70 × 0.23 = 16.1 kg",
-        "Lean Body Mass = 70 – 16.1 = 53.9 kg",
+        "Fat Mass = 70×0.23=16.1 kg70 \times 0.23 = 16.1 \, \text{kg}70×0.23=16.1kg",
+        "Lean Body Mass = 70−16.1=53.9 kg70 - 16.1 = 53.9 \, \text{kg}70−16.1=53.9kg",
       ],
-      navyMethodTitle: "U.S. Navy Method",
-      navyMethodText: "The U.S. Navy formula is one of the most accurate ways to estimate body fat using circumference measurements.",
-      navyMethodMen: "For Men: The formula uses your height, neck, and waist size to calculate the difference between body size and fat mass.",
-      navyMethodWomen: "For Women: It includes height, neck, waist, and hip measurements for a more precise estimate, as women naturally have higher essential fat levels.",
-      navyMethodNote: "This method provides a good balance of accuracy and simplicity, making it ideal for everyday fitness tracking.",
+      resulttext: "Result: This individual has 23% body fat, with 16.1 kg of fat mass and 53.9 kg of lean body mass (LBM).",
+      formulasub4title: "How to Interpret the Result",
+      formulasub4Image: "/body-fat-table-image-1.png",
+      formulasub4ImageAlt: "Body fat result chart",
+      formulasub4content: "A lower body fat percentage generally indicates better fitness, muscle tone, and overall health. Higher body fat levels, on the other hand, may increase the risk of various health issues.",
+      formulasub5title: "Why This Formula Is Reliable",
+      formulasub5content: "The U.S. Navy method is highly trusted for its simplicity and accuracy. It provides realistic estimates for individuals who may not have access to advanced body composition tools such as DEXA scans. This body measurement calculator offers fast, data-backed insights into your fitness metrics and health index, allowing you to track your progress and make more informed decisions about your training and nutrition. The Body Fat Calculator on Vast calculators uses these same reliable formulas to deliver instant, accurate results that reflect your true physical composition.",
 
-      bmiMethodTitle: "BMI-Based Estimation Method",
-      bmiMethodText: "If body measurements are unavailable, your body fat percentage can also be estimated using your BMI, age, and gender. This approach offers a general idea of your fat levels and is helpful when you only know your BMI score.",
-      bmiSimplifiedText: "Simplified Explanation: Higher BMI values usually indicate a higher percentage of body fat, but this method is less precise for athletes or people with higher muscle mass.",
-
-      interpretationTitle: "How to Interpret Your Result",
-      interpretationText: "Lower body fat percentages are standard in athletes or individuals with active lifestyles. Moderate percentages represent balanced fitness levels and good health. Higher percentages may indicate excess fat storage, which can increase health risks. Knowing your body fat percentage helps you track fitness progress more effectively than weight or BMI alone. It also gives you a clear baseline to plan nutrition and training goals.",
-
-      faqTitle: "Body Fat Calculator FAQs",
+      faqTitle: "Frequently Asked Questions",
       faq: [
         {
-          q: "What does a Body Fat Calculator do?",
-          a: "A Body Fat Calculator estimates the percentage of fat in your body using measurements like height, weight, age, and waist size."
+          q: "What is body fat percentage?",
+          a: "Body fat percentage is the proportion of fat to your total body weight. It shows how much of your weight is made up of fat compared to lean mass, like muscles, bones, and organs. This is an important metric for assessing overall health and fitness, as it gives a clearer picture than just your weight alone."
         },
         {
-          q: "How is body fat percentage calculated?",
-          a: "It's calculated using either the U.S. Navy method or a BMI-based formula that considers your body size and gender to estimate fat levels."
+          q: "How accurate is the body fat calculator?",
+          a: "The body fat calculator provides a reliable estimate based on scientifically validated formulas, such as the U.S. Navy method. However, it's essential to note that the results are estimates and may not be as precise as more advanced methods, such as DEXA scans or hydrostatic weighing."
         },
         {
-          q: "What is a healthy body fat percentage?",
-          a: "For most men, a healthy range is around 10% to 20%. For women, it's typically 18% to 28%, depending on age and activity level."
+          q: "Can the body fat calculator be used by both men and women?",
+          a: "Yes, the body fat calculator works for both men and women, but different formulas are used for each gender. The calculator takes into account gender-specific differences in body composition to provide a more accurate estimate."
         },
         {
-          q: "Is body fat percentage more accurate than BMI?",
-          a: "Yes. Body fat percentage provides a clearer picture of fitness since it measures fat directly, while BMI only compares weight and height."
+          q: "Do I need any special equipment to use the body fat calculator?",
+          a: "No, the body fat calculator only requires basic body measurements like waist, neck, and hip (for women), along with height and weight. These measurements can be taken with a standard tape measure, making the calculator easy and accessible for anyone to use at home."
         },
         {
-          q: "How often should I measure my body fat?",
-          a: "Check your body fat percentage every few weeks to track progress, especially if you're following a workout or nutrition plan."
+          q: "How often should I use the body fat calculator?",
+          a: "You can use the body fat calculator as often as you'd like to track your progress. Many people use it monthly or after completing specific fitness goals, such as weight loss or muscle gain, to monitor changes in body composition."
         },
         {
-          q: "Can I lower my body fat without losing weight?",
-          a: "Yes. You can reduce fat while maintaining weight by increasing protein intake, building muscle, and maintaining a slight calorie deficit."
+          q: "What is considered a healthy body fat percentage?",
+          a: "Healthy body fat percentages vary based on age and gender. Generally, for men, a healthy range is between 10-20%, while for women, it's between 20-30%. However, it's important to consult with a healthcare or fitness professional to determine what's healthiest for your individual goals."
         }
       ]
     },
@@ -969,24 +964,73 @@ export const enTranslations = {
   // Finance Calculators
   finance: {
     loan: {
-      title: "Loan Calculator",
-      desc: "Calculate loan payments and interest",
+      title: "Online Loan Calculator – Estimate Monthly Loan Payments",
+      desc: "Use our Loan Calculator to estimate your monthly payments, interest costs, and total repayment amount. Plan personal, car, or home loans smartly",
       principal: "Loan Amount ($)",
       rate: "Annual Interest Rate (%)",
       years: "Loan Term (years)",
       result: "Monthly Payment",
-      about: "About Loans",
-      aboutText: "Calculate your monthly loan payment based on principal, rate, and term.",
-      formula: "Formula",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
-      faqTitle: "Loan Calculator FAQs",
+      heading: "Loan Calculator",
+
+      tocTitle: "Table of Contents",
+      tocabout: "About the Loan Calculator",
+      tocformula: "Loan Calculator Formula",
+      tocloan: "Loan Payment Formula",
+      tocexample: "Example Calculation",
+      tocwhy: "Why It Matters",
+
+      aboutsection: "About the Loan Calculator",
+      aboutcontent: "The Loan Calculator helps you estimate your monthly payments, total interest, and overall loan cost before you borrow. Whether you are planning for a personal loan, car loan, or home loan, this tool shows how different loan terms, interest rates, and repayment periods affect your budget.It simplifies financial planning by helping you compare repayment options and choose the most affordable plan. For detailed home loan estimates, you can calculate your repayment terms to make smarter borrowing decisions with confidence",
+
+      formulatitle: "Loan Calculator Formula",
+      formulacontent: "The Loan Calculator uses a standard loan amortization formula to calculate your monthly payment (EMI), total interest, and overall loan amount over time. It considers three key factors: the loan amount, interest rate, and repayment term.",
+      formulaImage: "/loan-calculator.jpg",
+      formulaImageAlt: "Loan Calculator",
+      formulaSubtitle: "Loan Payment Formula",
+      formula1: "EMI = [P × r × (1 + r)ⁿ] ÷ [(1 + r)ⁿ – 1]",
+      formulaList: [
+        "EMI = Monthly loan payment",
+        "P = Principal loan amount",
+        "r = Monthly interest rate (annual rate ÷ 12 ÷ 100)",
+        "n = Total number of monthly payments",
+      ],
+      formulaSubtitle2: "Example Calculation",
+      formulaSubcontent2: "If you take a $10,000 loan at an 8% annual interest rate for 3 years (36 months),Then your monthly interest rate is:",
+      formula2: "r = 0.08 ÷ 12 = 0.0067",
+      formula2endcontent: "Now plug these values into the formula:",
+      formula3: "EMI = [10,000 × 0.0067 × (1 + 0.0067)³⁶] ÷ [(1 + 0.0067)³⁶ – 1]",
+      formula3endcontent: "Your monthly payment will be around $313, and your total repayment will be approximately $11,268. That means you'll pay about $1,268 in interest over 3 years",
+      formulasubtitle3: "Why It Matters",
+      formulasubcontent3: "Understanding your monthly loan payment helps you budget effectively and avoid over-borrowing. You can experiment with different combinations of loan amounts, interest rates, and repayment periods to find the one that best fits your financial goals.",
+      formulasub3extratext: "If you are calculating home loan or property payments, use our tool to get precise, mortgage-specific repayment results with the",
+      formulasub3interlink: "Mortgage Calculator",
+
+      faqTitle: "Frequently Asked Question",
       faq: [
-        { q: "How do I calculate my monthly loan payment?", a: "Use the standard loan formula: M = P × [r(1+r)^n] / [(1+r)^n - 1], where P is principal, r is monthly interest, and n is total months." },
-        { q: "What’s included in my monthly payment?", a: "It includes principal and interest only. Taxes or insurance aren’t part of this calculation." },
-        { q: "How can I reduce my loan interest?", a: "You can pay off early, refinance for a lower rate, or choose a shorter term." },
-        { q: "Can I use this for car or personal loans?", a: "Yes, this calculator works for any fixed-rate loan." },
-        { q: "Does paying extra monthly help?", a: "Yes, extra payments reduce your principal faster and save interest over time." },
-        { q: "What happens if I miss a payment?", a: "You may be charged late fees and it can affect your credit score, so avoid skipping payments." },
+        {
+          q: "What does the Loan Calculator do?",
+          a: "The Loan Calculator helps you estimate monthly payments, total interest, and overall repayment for personal, car, or home loans. It gives a clear picture of how much your loan will cost over time."
+        },
+        {
+          q: " How does the Loan Calculator work?",
+          a: "It uses the loan amortization formula to calculate your monthly payment. Enter your loan amount, interest rate, and repayment term, and it instantly shows your payment schedule and total cost."
+        },
+        {
+          q: "Why is using a Loan Calculator important?",
+          a: "A Loan Calculator helps you make smarter borrowing decisions. It lets you compare different loan options, plan budgets, and understand how varying rates or terms affect your payments."
+        },
+        {
+          q: "What factors affect my loan repayment amount?",
+          a: "Your repayment amount is influenced by three main factors: the principal amount, which is the total sum you borrow; the interest rate, which represents the cost of borrowing that money; and the loan tenure, which is the length of time you take to repay the loan. Together, these elements determine how much you’ll pay each month and the total amount repaid over the life of the loan."
+        },
+        {
+          q: "Can I use this calculator for different loan types?",
+          a: "Yes. You can calculate payments for personal, education, auto, or home loans. Each follows the same calculation logic, but rates and terms may vary."
+        },
+        {
+          q: "Does the Loan Calculator show how much interest I’ll pay overall?",
+          a: "Yes. The Loan Calculator provides a detailed breakdown of your total interest over the loan term. It helps you see how much of your payment goes toward interest versus the principal, allowing you to plan for faster repayments or compare lenders effectively."
+        },
       ],
     },
 
@@ -1037,68 +1081,374 @@ export const enTranslations = {
     },
 
     mortgage: {
-      title: "Mortgage Calculator",
-      desc: "Calculate mortgage payments",
+      title: "Mortgage Calculator: Estimate Monthly Home Loan Payments Instantly",
+      desc: "Use our Mortgage Calculator to estimate your monthly home loan payments based on interest rate & term. Easily plan your budget before you buy.",
       homePrice: "Home Price ($)",
       downPayment: "Down Payment ($)",
       rate: "Interest Rate (%)",
       years: "Loan Term (years)",
       result: "Monthly Payment",
-      about: "About Mortgages",
-      aboutText: "Calculate your monthly mortgage payment and total interest.",
-      formula: "Formula",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
-      faqTitle: "Mortgage Calculator FAQs",
+      heading: "Mortgage Calculator",
+      tocTitle: "Table of Contents",
+      tocwhy: "Why a Mortgage Calculator Is Important",
+      tochowmortage: "How the Online Mortgage Calculator Works",
+      tocwhyuse: "Why Use a Mortgage Calculator",
+      tocmortageformula: "Mortgage Calculator Formula",
+      tocformulastep1: "Step 1: Identify Key Inputs",
+      tocformulastep2: "Step 2: Example of Mortgage Calculation",
+      tocformulastep3: "Step 3: Breakdown of Principal and Interest",
+      tocformulahowto: "How to Use the Results",
+      tocformulawhy: "Why This Formula Works",
+
+      aboutH2: "About Mortgage Calculator",
+      aboutContent: "The Mortgage Calculator helps you estimate your monthly home loan payments with ease. It calculates the monthly payment amount, including both principal and interest, based on your loan amount, interest rate, and loan term. This online Mortgage Calculator gives a clear view of your mortgage affordability before you apply for a loan. It also shows how long it will take to repay your mortgage in full and how much total interest you'll pay over time.",
+
+      whyTitle: "Why a Mortgage Calculator Is Important",
+      whyIntro: "Understanding your loan payments helps you plan better and avoid financial surprises. With this tool, you can:",
+      whyList: [
+        "Estimate your monthly instalments accurately",
+        "Compare loan offers and rates",
+        "Plan your home purchase budget",
+        "Visualise your amortisation schedule"
+      ],
+      whyEnd: "The home loan calculator makes it easier to see how your payment changes with different loan amounts or interest rates.",
+
+      howWorksTitle: "How the Online Mortgage Calculator Works",
+      howWorksContent: "The calculator uses your loan amount, interest rate, and loan term to calculate fixed monthly payments. It applies the standard loan repayment formula, providing a detailed breakdown of how much goes toward interest and how much reduces the principal.",
+      howWorksInputTitle: "You’ll need to enter:",
+      howWorksInputList: [
+        "Loan amount ($)",
+        "Interest rate (%)",
+        "Loan term (years)"
+      ],
+      howWorksResulttext: "It instantly displays:",
+      howWorksResultList: [
+        "Monthly payment",
+        "Total interest paid",
+        "Total payment amount",
+        "Amortisation table (optional view)"
+      ],
+      howWorksEnd: "This helps you track your mortgage repayment schedule and manage your long-term finances effectively.",
+
+      whyUseTitle: "Why Use a Mortgage Calculator",
+      whyUseContent: "This home financing tool gives you control over your loan planning. You can test different loan terms and interest rates to find the most affordable option. By adjusting inputs, you can see how small changes in rate or term affect your overall cost, making the mortgage rate estimator a crucial part of informed financial decision-making. The Mortgage Calculator helps you borrow confidently, knowing exactly what your repayment plan looks like from day one.",
+
+      formulaMainTitle: "Mortgage Calculator Formula",
+      formulaMainIntro: "The Mortgage Calculator uses a simple compound interest formula to estimate your monthly installment. It calculates how much you need to pay each month to fully repay your loan principal and interest within your chosen loan term.",
+      formulaSubIntro: "The main formula is:",
+      formulaMain: "M = P × [ r(1 + r)ⁿ ] ÷ [ (1 + r)ⁿ – 1 ]",
+
+      formulaDefinitionList: [
+        "M = Monthly mortgage payment",
+        "P = Loan principal (amount borrowed)",
+        "r = Monthly interest rate (annual rate ÷ 12)",
+        "n = Total number of payments (loan term in years × 12)"
+      ],
+
+      formulaEndText: "This formula helps determine how your principal and interest are divided over time.",
+
+      formulaImage: "/Mortgage-Calculator.jpg",
+      formulaImageAlt: "Mortgage Calculator",
+
+      step1Title: "Step 1: Identify Key Inputs",
+      step1List: [
+        "Loan Amount (P) — total borrowed amount",
+        "Interest Rate (r) — annual rate divided by 12",
+        "Loan Term (n) — years multiplied by 12 months"
+      ],
+      step1End: "The home loan calculator then computes your fixed monthly repayment using these inputs.",
+
+      step2Title: "Step 2: Example of Mortgage Calculation",
+      step2ExampleList: [
+        "Loan Amount = $250,000",
+        "Annual Interest Rate = 5%",
+        "Loan Term = 30 years"
+      ],
+
+      step2CalcStep1: "Convert annual rate to monthly: r = 5 ÷ 100 ÷ 12 = 0.004167  n = 30 × 12 = 360 months",
+      step2CalcStep2: "Apply formula: M = 250,000 × [0.004167 × (1 + 0.004167)³⁶⁰] ÷ [(1 + 0.004167)³⁶⁰ – 1] M = $1,342.05 per month",
+
+      step2ResultMeaning: "This means you’ll pay $1,342.05 monthly for 30 years to fully repay the mortgage.",
+
+      step3Title: "Step 3: Breakdown of Principal and Interest",
+      step3Content: "Each payment you make includes both interest and principal. At the beginning of your loan, most of the payment goes toward interest, and over time, more goes toward principal. This schedule is called an amortisation schedule. It helps you see how your loan balance decreases month by month until it is fully paid off.",
+
+      totalExampleTitle: "Example: Total Loan Cost",
+      totalExampleList: [
+        "Monthly Payment: $1,342.05",
+        "Total Payments (360 months): $1,342.05 × 360 = $483,138",
+        "Total Interest Paid: $483,138 – $250,000 = $233,138"
+      ],
+      totalExampleEnd: "So, over 30 years, you’ll pay about $233,138 in interest on a $250,000 loan. This helps you understand the real cost of your mortgage and how interest rates affect your mortgage affordability.",
+
+      howToUseTitle: "How to Use the Results",
+      howToUseList: [
+        "Compare loan offers from lenders",
+        "Decide if you can afford a shorter or longer term",
+        "Adjust your budget to match your home financing goals",
+        "Plan early repayment or refinancing if possible"
+      ],
+      howToUseEnd: "Estimate your monthly repayments more precisely with our",
+      interlink: "Loan Calculator",
+
+      whyWorksTitle: "Why This Formula Works",
+      whyWorksContent: "The mortgage payment formula is based on compound interest, ensuring consistent monthly instalments across the loan term. It's trusted by banks and financial planners worldwide to calculate accurate loan repayment schedules. The online Mortgage Calculator simplifies this complex math, letting you test different rates and loan periods in seconds. It's the easiest way to explore your mortgage affordability and long-term financial commitments. The tool on Vastcalculators.com uses this exact formula to provide clear, reliable, and real-time mortgage estimates for smarter home-buying decisions.",
+
+
+      faqTitle: "Frequently Asked Questions",
       faq: [
-        { q: "What’s included in a mortgage payment?", a: "Usually principal and interest. Taxes, insurance, and HOA fees are separate costs." },
-        { q: "How much should I put as a down payment?", a: "Ideally 20% to avoid PMI (Private Mortgage Insurance), but some loans allow less." },
-        { q: "What’s the best mortgage term?", a: "Shorter terms like 15 years save interest but increase monthly payments; 30 years is more affordable monthly." },
-        { q: "Can I pay off my mortgage early?", a: "Yes, making extra payments on principal can significantly reduce your total interest." },
-        { q: "What affects my mortgage rate?", a: "Your credit score, loan type, and market conditions influence your rate." },
-        { q: "Should I choose fixed or variable rate?", a: "Fixed rates are stable long-term; variable rates can start lower but fluctuate over time." },
+        {
+          q: "What does a Mortgage Calculator do?",
+          a: "A Mortgage Calculator estimates your monthly home loan payments based on your loan amount, interest rate, and repayment term."
+        },
+        {
+          q: "How are mortgage payments calculated?",
+          a: "Your monthly payment is calculated using the principal, interest rate, and loan term. The formula accounts for how interest compounds monthly over the repayment period"
+        },
+        {
+          q: "What information do I need to use the calculator?",
+          a: "You'll need your loan amount, annual interest rate, and loan term in years. The calculator will automatically estimate your monthly payment."
+        },
+        {
+          q: "Does the Mortgage Calculator include taxes and insurance?",
+          a: "No. It estimates your loan's principal and interest payment only. Taxes, insurance, and other costs must be added separately for a full budget."
+        },
+        {
+          q: "Can I use the Mortgage Calculator for refinancing?",
+          a: "Yes. Please enter your new loan amount, term, and interest rate to estimate new payments and compare them to your current mortgage."
+        },
+        {
+          q: "How can I lower my monthly mortgage payment?",
+          a: "You can lower payments by extending the loan term, reducing the interest rate, or making a larger down payment to borrow less."
+        },
       ],
     },
 
     roi: {
-      title: "ROI Calculator",
-      desc: "Calculate return on investment",
+      title: "Online ROI Calculator | Calculate Return on Investment Online",
+      desc: "Find your return on investment (ROI) quickly and accurately. Use our ROI Calculator to track profit, compare projects, and improve financial performance.",
       investment: "Investment ($)",
       gain: "Gain ($)",
       result: "ROI %",
-      about: "About ROI",
-      aboutText: "ROI measures the profitability of an investment.",
-      formula: "Formula",
-      formulaText: "ROI = (Gain / Investment) × 100",
-      faqTitle: "ROI Calculator FAQs",
+      heading: "ROI Calculator",
+      tocabout: "About the ROI Calculator",
+      tochow: "How the Online ROI Calculator Works",
+      tocformula: "ROI Calculator Formula",
+      tocwhy: "Why ROI Calculation Matters",
+      tocexample: "Example Calculations",
+      tocresult: "How to Use the ROI Results",
+
+      aboutsection: "About ROI Calculator",
+      aboutcontent: "The ROI Calculator helps you measure how profitable an investment is compared to its cost. ROI stands for Return on Investment, showing how efficiently money is being used to generate profit. This online ROI Calculator instantly determines your return percentage, letting you see if an investment performed well or underdelivered. It’s ideal for businesses, investors, and entrepreneurs evaluating cost vs return accurately.",
+
+      whytitle: "Why ROI Calculation Matters",
+      whycontent: "ROI provides a clear snapshot of how well an investment performs. Whether analysing a marketing campaign, a product launch, or business expansion — ROI shows profit or loss percentage relative to total cost.",
+      whylist: [
+        "Evaluate financial performance quickly",
+        "Compare multiple investments",
+        "Identify which projects generate higher returns",
+        "Support data-driven decision-making"
+      ],
+      whyextratext: "Find your profit threshold using the",
+      whyinterlink: "Break Even Calculator",
+
+      howworkstitle: "How the Online ROI Calculator Works",
+      howworksIntro: "The Return on Investment Calculator uses a simple percentage formula. You only need two numbers:",
+      howworkslist: [
+        "Total Gain from Investment ($)",
+        "Total Cost of Investment ($)"
+      ],
+      howworksresultlist: [
+        "ROI percentage",
+        "Total profit or loss amount"
+      ],
+
+      whyusetitle: "Why Use an ROI Calculator",
+      whyusecontent: "The investment return calculator simplifies financial analysis into clear results. It’s perfect for business owners, marketers, and investors who want to track results without manual math. This tool highlights where profits come from and where performance can improve — ensuring every dollar spent contributes efficiently toward long-term growth.",
+
+      formulatitle: "ROI Calculator Formula",
+      formulamain: "ROI (%) = [(Net Profit) ÷ (Cost of Investment)] × 100",
+      formula2: "ROI (%) = [(Final Value – Initial Cost) ÷ Initial Cost] × 100",
+
+      stepTitle: "Step 1: Identify Key Values",
+      stepList: [
+        "Initial Cost (Investment): The total money spent",
+        "Final Value (Return): The total amount earned from that investment"
+      ],
+      stepEndText: "Subtract the initial cost from the final value to find your net profit. Then divide by the initial cost and multiply by 100 to get the ROI percentage. This method gives a clear view of cost vs return, making it one of the most used profit margin formulas in finance.",
+
+      formulaImage: "/ROI-Calculator.jpg",
+      formulaImageAlt: "ROI Calculator",
+
+      exampleTitle: "Example of ROI Calculation",
+      exampleValues: [
+        "Initial Cost = $5,000",
+        "Final Value = $6,200"
+      ],
+      exampleStep1: "Net Profit = 6,200 – 5,000 = $1,200",
+      exampleStep2: "ROI (%) = (1,200 ÷ 5,000) × 100 = 24%",
+      exampleEnd: "So, your Return on Investment is 24%, This means the project earned 24% profit compared to the money you invested.",
+
+      example2Title: "Example: Comparing Two Investments",
+      exampleA: [
+        "Cost = $10,000",
+        "Return = $12,000",
+        "ROI = (2,000 ÷ 10,000) × 100 = 20%"
+      ],
+      exampleB: [
+        "Cost = $15,000",
+        "Return = $18,750",
+        "ROI = (3,750 ÷ 15,000) × 100 = 25%"
+      ],
+      example2End: "Even though Investment B required more money, it produced a higher return rate.",
+
+      resultTitle: "How to Use the ROI Results",
+      resultList: [
+        "Measure investment performance across different projects",
+        "Evaluate business campaigns or launches",
+        "Identify high-return opportunities",
+        "Analyse profitability trends over time"
+      ],
+
+      whysformulaTitle: "Why This Formula Works",
+      whysformulaContent: "The ROI formula gives a clear and universal way to track financial efficiency. It applies across industries, from business operations to stock trading and marketing analysis. It’s simple, fast, and accurate, showing how much profit you earned relative to your investment. The online ROI Calculator helps investors and business owners track financial success without spreadsheets or complex math. It’s one of the most practical tools for anyone managing costs and returns. The calculator on Vastcalculators.com delivers precise ROI percentage results instantly, making it a trusted business ROI tool for decision-makers and professionals.",
+
+      faqTitle: "Frequently Asked Questions",
       faq: [
-        { q: "What is ROI?", a: "Return on Investment (ROI) measures how much profit or loss you made relative to your initial investment." },
-        { q: "Is ROI the same as profit margin?", a: "No, ROI measures overall return, while profit margin compares profit to revenue." },
-        { q: "Can ROI be negative?", a: "Yes, if your investment loses value, your ROI will be negative." },
-        { q: "What’s a good ROI?", a: "It depends on the investment type — 7–10% annually is solid for stocks, while others may vary." },
-        { q: "Does ROI account for time?", a: "No, it only shows total return, not how long it took — use annualized ROI for that." },
-        { q: "How can I improve ROI?", a: "Cut costs, reinvest profits smartly, and diversify your investments to reduce risk." },
+        {
+          q: "What does the ROI Calculator do?",
+          a: "The ROI Calculator measures the return on an investment by comparing profit to the initial amount spent, giving results in percentage form."
+        },
+        {
+          q: "How does the ROI formula work?",
+          a: "It divides your net profit by your investment cost and multiplies it by 100 to find the ROI percentage."
+        },
+        {
+          q: "What is a good ROI?",
+          a: "It depends on the industry. Generally, an ROI of 10–30% is considered solid for most investments."
+        },
+        {
+          q: "Can ROI be negative?",
+          a: "Yes. A negative ROI means your Investment lost money compared to what you spent."
+        },
+        {
+          q: "How often should I calculate ROI?",
+          a: "You should measure ROI after each major Investment or project to track ongoing performance and improvement."
+        },
+        {
+          q: " What’s the difference between ROI and Break-Even Point?",
+          a: "ROI shows profit or loss, while the Break-Even Calculator helps you find the point where total costs equal total revenue, showing when profit begins."
+        },
       ],
     },
 
     breakeven: {
-      title: "Break-Even Calculator",
-      desc: "Calculate break-even point",
+      title: "Break Even Calculator – Find Your Profit Break Point ",
+      desc: " Use our Break Even Calculator to see when your business covers costs and starts making profit. Simple, fast, and accurate analysis.",
       fixedCosts: "Fixed Costs ($)",
       variableCost: "Variable Cost per Unit ($)",
       price: "Price per Unit ($)",
       result: "Break-Even Units",
-      about: "About Break-Even",
-      aboutText: "Break-even is when total revenue equals total costs — no profit, no loss.",
-      formula: "Formula",
-      formulaText: "Break-Even = Fixed Costs / (Price - Variable Cost)",
-      faqTitle: "Break-Even Calculator FAQs",
+      heading: "Break Even Calculator",
+
+      tocabout: "About Break Even Calculator",
+      tocwhy: "Why a Break-Even Analysis Matters",
+      tochowitworks: "How the Online Break Even Calculator Works",
+      tocwhyuse: "Why Use a Break Even Calculator",
+
+      aboutTitle: "About Break Even Calculator",
+      aboutContent: "The Break-Even Calculator helps you find the point where total revenue equals total costs, where your business neither makes a profit nor a loss. This tool uses fixed costs, variable costs, and selling price to calculate your break-even revenue or required sales volume. It's a fast way to measure financial health and plan better pricing strategies.",
+
+      whyTitle: "Why a Break-Even Analysis Matters",
+      whyIntro: "A break-even analysis shows how many units you must sell or how much revenue you need to generate to cover all expenses.",
+      whyList: [
+        "Plan pricing and cost structure",
+        "Identify profit and loss balance points",
+        "Manage investments and expenses",
+        "Evaluate product viability and risk"
+      ],
+      whyEnd: "Understanding your financial threshold ensures that your operations stay profitable and sustainable.",
+
+      interlinkExtraText: "After finding your break-even point, check your overall return with our",
+      interlinkSlugText: "ROI Calculator",
+
+      howWorksTitle: "How the Online Break Even Calculator Works",
+      howWorksIntro: "The calculator applies the cost-volume-profit analysis method to estimate your break-even revenue.",
+      howWorksListTitle: "You’ll enter three key details:",
+      howWorksList: [
+        "Fixed costs – expenses that don’t change with sales volume (rent, salaries)",
+        "Variable costs – expenses that increase per unit sold (materials, packaging)",
+        "Selling price per unit"
+      ],
+      howWorksResultTitle: "Once entered, the calculator instantly shows:",
+      howWorksResultList: [
+        "Break-even point (in units)",
+        "Break-even point (in revenue)"
+      ],
+      howWorksEnd: "This helps you determine the exact sales quantity required to recover your startup costs and start earning profit.",
+
+      whyUseTitle: "Why Use a Break Even Calculator",
+      whyUseContent: "This business profitability tool gives clarity on cost management and profit forecasting. It helps businesses evaluate financial viability by understanding unit economics, expansion potential, and investment decisions. The Break Even Calculator simplifies planning and gives reliable insight for balancing costs and profits effectively.",
+      formulatitle: "Break-Even Calculator Formula",
+      formulaintro: "The Break Even Calculator uses a simple financial formula that compares costs and sales to identify when your business starts earning profit.",
+      mainFormulaText: "The main formula is:",
+      formula: "Break-Even Point (Units) = Fixed Costs ÷ (Selling Price per Unit – Variable Cost per Unit)",
+      afterFormulaDesc: "This equation shows how many units you need to sell to cover all expenses. Any sales beyond that point represent profit.",
+      step1Title: "Step 1: Understand the Formula Components",
+      step1List: [
+        "Fixed Costs: Expenses that remain constant regardless of sales, such as rent, salaries, and insurance.",
+        "Variable Costs: Expenses that change with production, such as materials, packaging, and shipping.",
+        "Selling Price per Unit: The amount you charge for one unit of your product or service."
+      ],
+      cvpLine: "This cost-volume-profit analysis formula helps you measure the balance between cost, volume, and profit — a key element of financial management.",
+      step2Title: "Step 2: Break-Even Revenue Formula",
+      step2Formula: "Break-Even Revenue = Break-Even Units × Selling Price per Unit",
+      step2Desc: "Once the number of units is known, you can calculate Break-Even Revenue using:",
+      step2Explain: "This shows how much total income your business must earn before reaching profit.",
+      imageUrl: "/Break-Even-Calculator.jpg",
+      imageAlt: "Break-Even Calculator",
+      exampleTitle: "Example of Break-Even Calculation",
+      exampleList: [
+        "Fixed Costs = $10,000",
+        "Variable Cost per Unit = $20",
+        "Selling Price per Unit = $50"
+      ],
+      exampleStep1: "Step 1: Break-Even Point (Units) = 10,000 ÷ (50 – 20) = 10,000 ÷ 30 = 334 units (rounded)",
+      exampleStep2: "Step 2: Break-Even Revenue = 334 × 50 = $16,700",
+      exampleExplain: "This means your business must generate $16,700 in sales or sell 334 units to cover all fixed and variable costs. After that, every additional unit contributes directly to profit.",
+      interpretingTitle: "Interpreting the Result",
+      interpretingList: [
+        "Selling below break-even = loss",
+        "Selling at break-even = no profit, no loss",
+        "Selling above break-even = profit"
+      ],
+      interpretDesc: "Understanding this helps business owners manage pricing, evaluate risk, and achieve startup cost recovery faster.",
+      whyWorksTitle: "Why This Formula Works",
+      whyWorksDesc: "The break-even formula is one of the simplest yet most powerful financial tools. It helps you visualize the relationship between costs, revenue, and volume, giving a clear picture of profitability. This business profitability tool helps startups and established companies alike manage calorie-like balance in their finances — where revenue fuels operations and profit sustains growth. The online Break Even Calculator on Vastcalculators.com applies this formula instantly, offering clear insights for quick decision-making and long-term business success.",
+
+      faqTitle: "Frequently Asked Questions",
       faq: [
-        { q: "What is the break-even point?", a: "It’s the number of units or sales you need to cover all your costs before making profit." },
-        { q: "Why is break-even analysis important?", a: "It helps businesses know when they’ll start profiting and set realistic sales goals." },
-        { q: "Can I use this for services?", a: "Yes, just treat each service sold as a ‘unit’ with its cost and selling price." },
-        { q: "What happens if my price is too low?", a: "You’ll need to sell more units to break even, which can strain operations." },
-        { q: "Does it include taxes or interest?", a: "No, this calculation focuses purely on operating costs and revenue." },
-        { q: "How can I lower my break-even point?", a: "You can reduce fixed costs, increase selling price, or lower variable expenses." },
+        {
+          q: "What does a Break-Even Calculator do?",
+          a: "A Break-Even Calculator helps you find the exact point where your total revenue equals your total costs, showing when your business starts making a profit."
+        },
+        {
+          q: "How is the break-even point calculated?",
+          a: "It's calculated by dividing your fixed costs by the difference between the selling price per unit and the variable cost per unit. The result tells you how many units you need to sell to break even."
+        },
+        {
+          q: "Why is the break-even point important?",
+          a: "Knowing your break-even point helps you understand how sales, pricing, and costs affect profit. It's a key step in planning, budgeting, and pricing strategies."
+        },
+        {
+          q: "What are fixed and variable costs?",
+          a: "Fixed costs are expenses that stay the same each month, like rent or salaries. Variable costs change with production or sales volume, such as materials or shipping."
+        },
+        {
+          q: "Can the Break-Even Calculator be used for services?",
+          a: "Yes. You can use it for both products and services by entering your total fixed and variable costs along with your average selling price per unit or per project."
+        },
+        { q: "How often should I calculate my break-even point?", a: "Recalculate your break-even point whenever your costs, pricing, or sales strategies change to ensure your business stays profitable." },
       ],
     },
 
@@ -1145,46 +1495,219 @@ export const enTranslations = {
       ],
     },
     inflation: {
-      title: "Inflation Calculator",
-      desc: "Calculate inflation impact",
+      title: "Online Inflation Calculator – Track Money Value Over Time",
+      desc: " Use our Inflation Calculator to measure how inflation affects your money’s value and purchasing power across different years.",
       amount: "Amount ($)",
       years: "Years",
       rate: "Inflation Rate (%)",
       result: "Future Value",
-      about: "About Inflation",
-      aboutText: "See how inflation reduces the purchasing power of your money over time.",
-      formula: "Formula",
-      formulaText: "Future Value = Amount × (1 + Rate)^Years",
-      faqTitle: "Inflation Calculator FAQs",
+      heading: "Inflation Calculator ",
+
+      tocwhy: "Why Understanding Inflation Matters",
+      tochowitworks: "How the Online Inflation Calculator Works",
+      tocwhyuse: "Why Use an Inflation Calculator",
+      tocsteps1: "Step 1: Identify the Variables",
+      tocsteps2: "Step 2: Calculate the Inflation Rate",
+      tocresults: "How to Use the Results",
+      tocwhyformula: "Why This Formula Works",
+
+
+      aboutTitle: "About Inflation Calculator",
+      aboutDesc: "The Inflation Calculator helps you measure how the value of money changes over time due to inflation. It shows how much goods or services that cost a certain amount in the past would cost today or vice versa.This online Inflation Calculator uses historical inflation data, such as the Consumer Price Index (CPI), to calculate the adjusted for inflation value of money. It’s ideal for comparing prices, estimating purchasing power, and analysing long-term financial trends.",
+
+      whyTitle: "Why Understanding Inflation Matters",
+      whyDesc: "Inflation reduces the purchasing power of money over time. What you could buy with $100 a decade ago costs more today. Tracking inflation helps individuals and businesses make smarter financial decisions.",
+      whyPoints: [
+        "Compare the real value of money across different years",
+        "Plan investments that outpace inflation",
+        "Understand changes in the cost of living",
+        "Measure price change over time"
+      ],
+
+      howTitle: "How the Online Inflation Calculator Works",
+      howDesc: "The inflation rate calculator applies official inflation data to estimate how much money has gained or lost value across years.",
+      howNeed: [
+        "Initial amount ($)",
+        "Start year",
+        "End year"
+      ],
+      howResult: [
+        "The current equivalent value of past money",
+        "The inflation rate over the selected years",
+        "The percentage change in purchasing power"
+      ],
+
+      whyUseTitle: "Why Use an Inflation Calculator",
+      whyUseDesc: "The value over time calculator helps you understand the real impact of inflation on your finances. It’s perfect for analysing savings, investments, salaries, and property values over long periods. It also serves as a currency depreciation calculator, showing how much money has weakened or strengthened across decades. With this cost of living calculator, you can plan better for the future, set realistic financial goals, and protect your wealth from inflation’s effects. The Inflation Calculator is a practical money value comparison tool that helps you see the true worth of money through time.",
+
+      formulatitle: "Inflation Calculator Formula",
+      formulaintro: "The Inflation Calculator measures how much the value of money has changed between two dates. It uses the Consumer Price Index (CPI) — a standard indicator of inflation that tracks changes in the average price of goods and services.",
+      formula1: "Adjusted Amount = Original Amount × (CPI in Target Year ÷ CPI in Base Year)",
+      formula1endtext: "This gives you the adjusted for inflation value, showing how much a past amount would be worth today (or vice versa).",
+      formulaImage: "/Inflation-Calculator.jpg",
+      formulaImageAlt: "Inflation Calculator",
+      steps1title: "Step 1: Identify the Variables",
+      steps1intro: "Each part of the formula represents a key economic value:",
+      steps1list: [
+        "Original Amount: The past or present value you want to adjust.",
+        "CPI in Base Year: The Consumer Price Index for the original year.",
+        "CPI in Target Year: The Consumer Price Index for the comparison year"
+      ],
+      steps1endtext: "The value over time calculator uses these data points to determine how the purchasing power of money has shifted.",
+      steps2title: "Step 2: Calculate the Inflation Rate",
+      steps2intro: "To see the rate of inflation between two years, the formula is:",
+      steps2formula: "Inflation Rate (%) = [(CPI in Target Year – CPI in Base Year) ÷ CPI in Base Year] × 100",
+      steps2endtext: "This shows the percentage increase in prices or the currency depreciation that occurred during the period.",
+      exampletitle: "Example of Inflation Calculation",
+      exampleintro: "Let’s understand it with a simple example:",
+      example1list: [
+        "Original Amount = $1,000",
+        "CPI in Base Year (2010) = 218.1",
+        "CPI in Target Year (2024) = 310.0"
+      ],
+      examplestep1: "Step 1: Apply the formula:",
+      examplelist: [
+        "Original Amount = $1,000 Adjusted Amount = 1,000 × (310.0 ÷ 218.1)",
+        "Adjusted Amount = 1,000 × 1.4219",
+        "Adjusted Amount = $1,421.90"
+      ],
+      example2end: "So, $1,000 in 2010 has the same purchasing power as $1,421.90 in 2024. This means prices have increased by roughly 42% over that period, showing how inflation reduces the real value of money.",
+      exampletitle2: "Example: Finding the Inflation Rate",
+      example2intro: "Using the second formula:",
+      example2list: [
+        "Inflation Rate = [(310.0 – 218.1) ÷ 218.1] × 100",
+        "Inflation Rate = (91.9 ÷ 218.1) × 100",
+        "Inflation Rate = 42.15%"
+      ],
+      example2endtext: "This tells us that overall prices rose by about 42% between 2010 and 2024",
+      howtotitle: "How to Use the Results",
+      howtointro: "You can use the inflation rate calculator to:",
+      howtolist: [
+        "Compare the real value of money across different years",
+        "Measure price change over time for goods or services",
+        "Adjust investments or savings to maintain purchasing power",
+        "Estimate future values using inflation trends"
+      ],
+      howtoendtext: "Use your compound interest results to plan long-term savings with our",
+      howtoInterLink: "ROI Calculator",
+      whyformulaworkstitle: "Why This Formula Works",
+      whyformulaworkscontent: "Inflation reflects how the cost of goods and services changes over time. The Consumer Price Index (CPI) is the most reliable measure for tracking this shift. By comparing CPI values, this money value comparison tool shows how much the dollar’s real value has eroded or appreciated. The online Inflation Calculator delivers quick, accurate, and up-to-date results, making it essential for anyone tracking financial trends, business pricing, or long-term savings. The calculator on Vastcalculators.com applies official CPI data to provide precise, real-world comparisons, helping users understand the true impact of inflation on their finances.",
+
+
+
+
+      faqTitle: " Frequently Asked Question",
       faq: [
-        { q: "What does inflation mean?", a: "Inflation is the rise in prices over time, meaning your money buys less in the future." },
-        { q: "How do I use this calculator?", a: "Enter the amount, number of years, and average inflation rate to see how value changes." },
-        { q: "What’s a normal inflation rate?", a: "Typically around 2–3% per year in most stable economies." },
-        { q: "Can inflation ever be negative?", a: "Yes, that’s called deflation — when prices actually fall over time." },
-        { q: "How does inflation affect savings?", a: "It reduces real returns unless your savings grow faster than the inflation rate." },
-        { q: "Why is inflation important to track?", a: "It helps you plan smarter for investments, savings, and long-term financial goals." },
+        {
+          q: "What does an Inflation Calculator do?",
+          a: "An Inflation Calculator shows how the value of money changes over time by adjusting for inflation, helping you understand the real worth of past or future amounts."
+        },
+        {
+          q: "How is inflation calculated?",
+          a: "Inflation is calculated by comparing price index values from two years. The index shows how much prices have increased or decreased over time."
+        },
+        {
+          q: "What is the inflation rate?",
+          a: "The inflation rate is the percentage increase in the average price of goods and services over a specific period, usually measured annually."
+        },
+        {
+          q: "How can I find the real value of money over time?",
+          a: "Multiply the original amount by the target year's price index and divide by the base year's index. This shows how much an amount from one year is worth in another year's dollars."
+        },
+        {
+          q: "Why does inflation matter for savings and investments?",
+          a: "Inflation reduces the future value of money, meaning savings lose purchasing power if they do not grow at a rate higher than inflation"
+        },
+        {
+          q: "How can I compare returns after inflation?",
+          a: "Use your inflation-adjusted values to find your real rate of return. You can easily compare this by using the ROI Calculator to measure true profit after inflation."
+        },
       ],
     },
 
     currency: {
-      title: "Currency Converter",
-      desc: "Convert between currencies",
+      title: "Currency Converter Calculator | Real-Time Exchange Rate Conversion",
+      desc: "Convert any currency in seconds with our online currency converter calculator. Get accurate, real-time exchange rates and compare global currency values easily.",
       amount: "Amount",
       fromCurrency: "From Currency",
       toCurrency: "To Currency",
       result: "Converted Amount",
-      about: "About Currency Conversion",
-      aboutText: "Convert between different currencies using live exchange rates.",
-      formula: "Formula",
-      formulaText: "Converted Amount = Amount × Exchange Rate",
-      faqTitle: "Currency Converter FAQs",
+      heading: "Currency Converter Calculator",
+
+      tocabout: "About Our Currency Convert Calculator Online",
+      tocconversion: "Real-Time Conversion for Smarter Global Decisions",
+      tocformula: "Currency Conversion Formula",
+      tocexample: "Example Calculation",
+      tocaccurateconversion: "Why Accurate Conversion Matters",
+      tocresults: "How to Use the Results",
+      tocwhyformula: "Why This Formula Works",
+
+      aboutTitle: "About Our Currency Convert Calculator Online",
+      aboutDesc: "The Currency Converter Calculator by Vast Calculator makes it easy to see how much your money is worth in another currency in real time. Whether you are planning a trip, comparing international prices, or managing global transactions, this tool delivers fast and accurate conversions using the latest exchange rates. It helps you stay financially aware by showing live conversions for major world currencies like USD, EUR, GBP, JPY, and more, updated regularly to reflect the most current rates.",
+      aboutExtratext: "If you want to see how inflation affects your currency’s real value, use the",
+      aboutInterLink: "Inflation Calculator.",
+      conversionTitle: "Real-Time Conversion for Smarter Global Decisions",
+      conversioncontent: "The Currency Converter Calculator simplifies international money management. By entering the Amount and choosing your currencies, you can instantly convert values between multiple global currencies. Whether you are a traveler, a business owner, or someone investing abroad, this calculator saves time and ensures accurate calculations, so you never have to guess currency differences again.",
+      keyhighlight: "Key Highlights:",
+      keyhighlightList: [
+        "Uses live exchange rates from trusted financial sources",
+        "Works for over 160 currencies worldwide.",
+        "Free to use, fast, and mobile-friendly.",
+        "Provides instant results with every update",
+      ],
+      keyhighlightsendtext: "It is designed to give you clarity before making international payments or travel decisions, ensuring your money retains value across borders.",
+      formulatitle: "Currency Conversion Formula",
+      formulasubtitle: "How the Currency Converter Works",
+      formulasubintro: "The Currency Converter uses a simple formula that multiplies the base currency by the current exchange rate to find the target currency value.",
+      formula1: "Formula: Converted Amount = Base Amount × Exchange Rate",
+      formula1list: [
+        "Base Amount = The Amount you have in your original currency",
+        "Exchange Rate = The current rate between the two currencies",
+        "Converted Amount = The value after conversion",
+      ],
+      formulaImage: "/Currency-Converter-Calculator.jpg",
+      formulaImageAlt: "Currency Converter Calculator",
+      exampletitle: "Example Calculation",
+      exampleintro: "If you have 100 USD and the exchange rate for USD to EUR is 0.92, then:",
+      exampleformula: "Converted Amount = 100 × 0.92 = 92 EUR",
+      exampleendtext: "This means $100 equals €92 at that specific exchange rate. Since exchange rates fluctuate daily, it is smart to recheck values regularly.",
+      accuratetitle: "Why Accurate Conversion Matters",
+      accuratesubtitle: "Stay Informed Before You Spend",
+      accuratesubcontent: "Currency rates shift constantly due to market trends, inflation, and global trade activity. A real-time conversion helps you make smarter choices when:",
+      accuratesublist: [
+        "Traveling or shopping internationally.",
+        "Sending or receiving money abroad.",
+        "Comparing product prices in different countries",
+        "Managing investments across currencies.",
+      ],
+      accuratesubend: "By knowing the exact value before a transaction, you can avoid losses from outdated or incorrect exchange rates.",
+
+      faqTitle: "Frequently Asked Questions",
       faq: [
-        { q: "How does currency conversion work?", a: "It multiplies your amount by the latest exchange rate between two currencies." },
-        { q: "Are exchange rates updated automatically?", a: "Yes, most online converters use live or daily updated rates from reliable sources." },
-        { q: "Does this include transaction fees?", a: "No, the calculator shows pure exchange value — your bank may charge extra fees." },
-        { q: "Can I convert multiple currencies at once?", a: "You can do it manually one by one, or use advanced APIs for batch conversions." },
-        { q: "Why do rates vary between platforms?", a: "Banks, apps, and money exchanges add different margins to profit from transactions." },
-        { q: "What’s the best time to exchange currency?", a: "When your home currency is stronger — usually during stable market conditions." },
+        {
+          q: "What does the Currency Converter Calculator do?",
+          a: "It converts any amount from one currency to another using live exchange rates, giving accurate results instantly."
+        },
+        {
+          q: "Are exchange rates updated automatically?",
+          a: "Yes. The rates are refreshed regularly to match the latest data from reliable global financial sources."
+        },
+        {
+          q: "Can I use it for any currency?",
+          a: "Yes. The calculator supports over 160 currencies, including major and minor ones."
+        },
+        {
+          q: "Is this tool free to use?",
+          a: "Yes. The Currency Converter Calculator on VastCalculator is completely free and works instantly online."
+        },
+        {
+          q: "Why are exchange rates different every day?",
+          a: "Rates change due to supply and demand, inflation, interest rates, and international economic policies."
+        },
+        {
+          q: "How is this different from an inflation calculator?",
+          a: "The Currency Converter shows the current exchange rate between two currencies, while the Inflation Calculator shows how the value of money changes over time."
+        },
       ],
     },
 

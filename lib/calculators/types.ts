@@ -58,6 +58,8 @@ export interface Calculator {
 // CATEGORY WRAPPER
 export interface CalculatorCategory {
   id: string
+  metaTitle:string,
+  metaDescription: string,
   name: string
   description: string
   calculators: Calculator[]

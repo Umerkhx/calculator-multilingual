@@ -8,6 +8,7 @@ import { allCalculatorCategories } from "@/lib/calculators";
 import { MobileSidebar } from "./MobileSidebar";
 import LanguageSelector from "./LanguageSelector";
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 interface HeaderProps {
   locale: Locale;
@@ -20,7 +21,7 @@ export function Header({ locale }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-20">
+      <div className="container mx-auto flex py-5 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-20">
         
         <div className="flex items-center gap-3">
           <MobileSidebar locale={locale} />
@@ -85,9 +86,11 @@ export function Header({ locale }: HeaderProps) {
         </div>
 
         <Link href={locale === "en" ? "/" : `/${locale}`} className="absolute left-1/2 -translate-x-1/2">
-          <span className="font-bold text-foreground text-2xl sm:text-3xl  uppercase">
+          {/* <span className="font-bold text-foreground text-2xl sm:text-3xl  uppercase">
             {t.name}
-          </span>
+          </span> */}
+
+          <Image src={'/vast-logo.png'}width={150} height={150} alt="logo" fetchPriority="high"></Image>
         </Link>
 
         <div className="flex items-center gap-2 sm:gap-4">

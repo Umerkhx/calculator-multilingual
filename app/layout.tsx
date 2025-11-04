@@ -19,44 +19,21 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://calyx-mme.vercel.app"),
+  metadataBase: new URL("https://vastcalculators.com"),
   title: {
-    default: "Calyx | Multilingual Calculator Platform",
+    default: "Vast Calculators",
     template: "%s ",
   },
   description:
-    "Calyx is a professional multilingual calculator platform offering scientific, financial, and conversion tools for global users.",
+    "Vast Calculators is a professional multilingual calculator platform offering scientific, financial, and conversion tools for global users.",
   keywords: [
-    "Calyx",
+    "Vast Calculators",
     "multilingual calculator",
     "online calculator",
     "scientific calculator",
     "financial calculator",
     "unit converter",
   ],
-  openGraph: {
-    title: "Calyx | Multilingual Calculator Platform",
-    description:
-      "A modern multilingual calculator website for accurate and accessible calculations worldwide.",
-    url: "https://calyx-mme.vercel.app",
-    siteName: "Calyx",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Calyx | Multilingual Calculator Platform",
-    description:
-      "Perform accurate calculations in any language with Calyx — your all-in-one multilingual calculator.",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
-  generator: "Calyx App",
-  authors: [{ name: "Calyx Team" }],
-  alternates: {
-    canonical: "https://calyx-mme.vercel.app",
-  },
 };
 
 export default function RootLayout({

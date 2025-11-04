@@ -7,12 +7,16 @@ export type { Calculator, CalculatorInput, CalculatorSection } from "./types"
 export const allCalculatorCategories: CalculatorCategory[] = [
   {
     id: "health",
+    metaTitle: "categories.health.metaTitle",
+    metaDescription: "categories.health.metaDescription",
     name: "categories.health.name",
     calculators: healthCalculators,
     description: "categories.health.description"
   },
   {
     id: "finance",
+    metaTitle: "categories.finance.metaTitle",
+    metaDescription: "categories.finance.metaDescription",
     name: "categories.finance.name",
     calculators: financeCalculators,
     description: "categories.finance.description"

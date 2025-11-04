@@ -1,7 +1,7 @@
 import { allCalculatorCategories } from "@/lib/calculators";
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://calyx-mme.vercel.app";
+const BASE_URL = "https://vastcalculators.com";
 
 const locales = [
   "en", "es", "ar", "fr", "de", "it", "pt", "ru", "zh", "ur", "hi", "tr"

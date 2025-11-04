@@ -26,6 +26,49 @@ export async function generateStaticParams() {
   return paths;
 }
 
+export async function generateMetadata({ params }: PageProps) {
+  const { locale = defaultLocale, category } = params;
+  const validLocale = (locales.includes(locale as Locale) ? locale : defaultLocale) as Locale;
+
+  const categoryData = allCalculatorCategories.find((c) => c.id === category.toLowerCase());
+
+  if (!categoryData) return {};
+
+  const title = getTranslation(validLocale, categoryData.metaTitle);
+  const description = getTranslation(validLocale, categoryData.metaDescription);
+
+  const baseUrl = "https://vastcalculators.com";
+
+  const canonical =
+    validLocale === defaultLocale
+      ? `${baseUrl}/${category}`
+      : `${baseUrl}/${validLocale}/${category}`;
+
+  const languages = Object.fromEntries(
+    locales.map((l) =>
+      l === defaultLocale
+        ? [l, `${baseUrl}/${category}`]
+        : [l, `${baseUrl}/${l}/${category}`]
+    )
+  );
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical,
+      languages,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+  };
+}
+
+
 export default async function Page({ params }: PageProps) {
   const { locale = defaultLocale, category } = params;
   const validLocale = (locales.includes(locale as Locale) ? locale : defaultLocale) as Locale;

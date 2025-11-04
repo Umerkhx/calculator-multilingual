@@ -26,12 +26,16 @@ export const enTranslations = {
   },
   categories: {
     health: {
+      metaTitle:"Health Calculators | Accurate Online Tools for Fitness & Wellness",
       name: "Health Calculators",
-      description: "Track your wellness easily using our BMI calculator, calorie calculator, and water intake calculator. These tools are designed to support balanced living and accurate self-assessment."
+      description: "Track your wellness easily using our BMI calculator, calorie calculator, and water intake calculator. These tools are designed to support balanced living and accurate self-assessment.",
+      metaDescription:"Explore free online health calculators for BMI, calories, body fat, heart rate, and more. Track fitness and stay healthy easily."
     },
     finance: {
+      metaTitle:"Finance Calculators | Smart Online Tools for Money & Savings",
       name: "Finance Calculators",
-      description: "Plan your budget better using our loan calculator, EMI calculator, and compound interest calculator. Whether it's daily expenses or long-term savings, VastCalculator brings clarity to your financial decisions."
+      description: "Plan your budget better using our loan calculator, EMI calculator, and compound interest calculator. Whether it's daily expenses or long-term savings, VastCalculator brings clarity to your financial decisions.",
+      metaDescription:"Use free online finance calculators for loans, ROI, savings, and investments. Make smarter financial decisions in seconds."
     },
     all: "All Calculators",
   },
@@ -135,7 +139,7 @@ export const enTranslations = {
   // Health Calculators
   health: {
     bodyFat: {
-      title: "Body Fat Calculator | Estimate Your Body Fat Percentage Online",
+      metaTitle: "Body Fat Calculator | Estimate Your Body Fat Percentage Online",
       desc: " Use our Body Fat Calculator to find your body fat percentage. Track fat loss, muscle gain, and fitness progress using accurate measurement formulas.",
       waist: "Waist (cm)",
       neck: "Neck (cm)",
@@ -278,7 +282,7 @@ export const enTranslations = {
     },
 
     bmi: {
-      title: "BMI Calculator Free: Find Your Body Mass Index Instantly Online",
+      metaTitle: "BMI Calculator Free: Find Your Body Mass Index Instantly Online",
       desc: "Calculate your Body Mass Index (BMI) to assess potential health risks like diabetes & heart disease. Track your fitness goals with our free online calculator.",
       heading: "BMI Calculator",
 
@@ -390,7 +394,7 @@ export const enTranslations = {
     },
 
     calories: {
-      title: "Calorie Calculator – Calculate Your Daily Calorie Needs",
+      metaTitle: "Calorie Calculator – Calculate Your Daily Calorie Needs",
       desc: "Use the Calorie Calculator on Vastcalculators.com to find out how many calories you need daily to maintain, lose, or gain weight based on your activity level.",
       heading: "Calorie Calculator",
 
@@ -514,7 +518,7 @@ export const enTranslations = {
     },
 
     waterIntake: {
-      title: " Water Intake Calculator | Daily Hydration by VastCalculator",
+      metaTitle: " Water Intake Calculator | Daily Hydration by VastCalculator",
       desc: " Calculate how much water your body needs daily with VastCalculator. Stay hydrated based on your weight, activity, and lifestyle.",
       weight: "Weight (kg)",
       activity: "Activity Level (0-2)",
@@ -676,7 +680,7 @@ export const enTranslations = {
     },
 
     tdee: {
-      title: "TDEE Calculator – Find Your Daily Calorie Needs Online",
+      metaTitle: "TDEE Calculator – Find Your Daily Calorie Needs Online",
       desc: "Use our TDEE Calculator to know how many calories you burn daily. Plan your diet, fitness, or weight goals with accurate calorie and activity insights.",
       age: "Age (years)",
       weight: "Weight (kg)",
@@ -799,7 +803,7 @@ export const enTranslations = {
     },
 
     macros: {
-      title: "Macro Calculator | Calculate Your Ideal Macronutrient Ratio",
+      metaTitle: "Macro Calculator | Calculate Your Ideal Macronutrient Ratio",
       desc: "Use our Macro Calculator to find your perfect balance of protein, carbs, and fats. Plan your nutrition with accurate macro ratios for your fitness goals.",
       heading: "Macro Calculator",
       calories: "Daily Calories",
@@ -964,7 +968,7 @@ export const enTranslations = {
   // Finance Calculators
   finance: {
     loan: {
-      title: "Online Loan Calculator – Estimate Monthly Loan Payments",
+      metaTitle: "Online Loan Calculator – Estimate Monthly Loan Payments",
       desc: "Use our Loan Calculator to estimate your monthly payments, interest costs, and total repayment amount. Plan personal, car, or home loans smartly",
       principal: "Loan Amount ($)",
       rate: "Annual Interest Rate (%)",
@@ -1081,7 +1085,7 @@ export const enTranslations = {
     },
 
     mortgage: {
-      title: "Mortgage Calculator: Estimate Monthly Home Loan Payments Instantly",
+      metaTitle: "Mortgage Calculator: Estimate Monthly Home Loan Payments Instantly",
       desc: "Use our Mortgage Calculator to estimate your monthly home loan payments based on interest rate & term. Easily plan your budget before you buy.",
       homePrice: "Home Price ($)",
       downPayment: "Down Payment ($)",
@@ -1225,7 +1229,7 @@ export const enTranslations = {
     },
 
     roi: {
-      title: "Online ROI Calculator | Calculate Return on Investment Online",
+      metaTitle: "Online ROI Calculator | Calculate Return on Investment Online",
       desc: "Find your return on investment (ROI) quickly and accurately. Use our ROI Calculator to track profit, compare projects, and improve financial performance.",
       investment: "Investment ($)",
       gain: "Gain ($)",
@@ -1343,7 +1347,7 @@ export const enTranslations = {
     },
 
     breakeven: {
-      title: "Break Even Calculator – Find Your Profit Break Point ",
+      metaTitle: "Break Even Calculator – Find Your Profit Break Point ",
       desc: " Use our Break Even Calculator to see when your business covers costs and starts making profit. Simple, fast, and accurate analysis.",
       fixedCosts: "Fixed Costs ($)",
       variableCost: "Variable Cost per Unit ($)",
@@ -1495,7 +1499,7 @@ export const enTranslations = {
       ],
     },
     inflation: {
-      title: "Online Inflation Calculator – Track Money Value Over Time",
+      metaTitle: "Online Inflation Calculator – Track Money Value Over Time",
       desc: " Use our Inflation Calculator to measure how inflation affects your money’s value and purchasing power across different years.",
       amount: "Amount ($)",
       years: "Years",
@@ -1626,7 +1630,7 @@ export const enTranslations = {
     },
 
     currency: {
-      title: "Currency Converter Calculator | Real-Time Exchange Rate Conversion",
+      metaTitle: "Currency Converter Calculator | Real-Time Exchange Rate Conversion",
       desc: "Convert any currency in seconds with our online currency converter calculator. Get accurate, real-time exchange rates and compare global currency values easily.",
       amount: "Amount",
       fromCurrency: "From Currency",

@@ -87,7 +87,7 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
 
     return (
       <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 my-6">
-        <p className="text-gray-700 font-mono text-sm whitespace-pre-wrap">
+        <p className="text-gray-800 font-mono text-sm whitespace-pre-wrap">
           {formula}
         </p>
       </div>
@@ -134,7 +134,6 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
 
     return (
       <div key={subsection.id} className={`space-y-4 ${paddingClass}`}>
-        {/* Title */}
         {subsection.titleKey && (
           <div className="scroll-mt-20" id={subsection.id}>
             <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-4">
@@ -143,14 +142,12 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
           </div>
         )}
 
-        {/* Subtitle */}
         {subsection.subtitleKey && (
           <p className="text-md font-semibold text-gray-800">
             {getTranslation(locale, subsection.subtitleKey)}
           </p>
         )}
 
-        {/* Intro */}
         {subsection.introKey && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.introKey)}
@@ -161,9 +158,9 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.linkparacontent)}{" "}
             <Link className="text-blue-500 font-medium"
-               target="_blank"
+              target="_blank"
               href={locale === "en" ? `/${category}/${subsection.linkparaslug}` : `/${locale}/${category}/${subsection.linkparaslug}`}
-             >
+            >
               {getTranslation(locale, subsection.linkparaKey)}
             </Link>
           </p>
@@ -171,7 +168,7 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
 
         {subsection.links && renderLinks(subsection.links, "subsection")}
 
-             {subsection.beforeimagecontentKey && !subsection.type && (
+        {subsection.beforeimagecontentKey && !subsection.type && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.beforeimagecontentKey)}
           </p>
@@ -195,14 +192,14 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
             {getTranslation(locale, subsection.contentKey)}
           </p>
         )}
-   
+
 
         {subsection.textKey && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, subsection.textKey)}
           </p>
         )}
-  
+        {subsection.formulaKey && renderFormula(subsection.formulaKey)}
         {subsection.listKey && renderList(subsection.listKey)}
 
         {subsection.lists && renderMultipleLists(subsection.lists)}
@@ -210,8 +207,6 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
         {subsection.pointsKey && renderPoints(subsection.pointsKey)}
 
         {subsection.points && renderMultiplePoints(subsection.points)}
-
-        {subsection.formulaKey && renderFormula(subsection.formulaKey)}
 
         {subsection.formulas && renderMultipleFormulas(subsection.formulas)}
 
@@ -251,7 +246,6 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
   const renderSection = (section: CalculatorSection) => {
     return (
       <div key={section.id} className="space-y-4">
-        {/* Section Title */}
         {section.titleKey && (
           <div className="scroll-mt-20" id={section.id}>
             <h2 className="text-2xl font-semibold text-gray-900 mt-12 mb-6">
@@ -272,6 +266,19 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
           </p>
         )}
 
+
+        {section.imageKey && (
+          <div className="my-6 flex lg:justify-start justify-center">
+            <img
+              className="max-w-full h-auto rounded-lg"
+              src={getTranslation(locale, section.imageKey)}
+              width={600}
+              height={400}
+              fetchPriority="high"
+              alt={section.imageAltKey ? getTranslation(locale, section.imageAltKey) : ""}
+            />
+          </div>
+        )}
         {section.textKey && (
           <p className="text-gray-600 leading-relaxed">
             {getTranslation(locale, section.textKey)}
@@ -297,7 +304,6 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
 
         {section.lists && renderMultipleLists(section.lists)}
 
-        {/* Section Subsections */}
         {section.subsections && section.subsections.length > 0 && (
           <div className="space-y-8 mt-8">
             {section.subsections.map((subsection) => renderSubsection(subsection))}
@@ -350,11 +356,10 @@ export function CalculatorSections({ calculator, locale, category }: CalculatorS
                           e.preventDefault()
                           scrollToSection(item.id)
                         }}
-                        className={`block text-sm py-2 px-3 rounded-md transition-colors ${
-                          isActive
+                        className={`block text-sm py-2 px-3 rounded-md transition-colors ${isActive
                             ? "bg-blue-100 text-blue-900 font-medium"
                             : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                        }`}
+                          }`}
                       >
                         {getTranslation(locale, item.labelKey)}
                       </a>

@@ -1,89 +1,149 @@
 import type { Calculator } from "./types"
 
 export const healthCalculators: Calculator[] = [
-  // {
-  //   slug: "body-fat-calculator",
-  //   metaTitleKey: "health.bodyFat.title",
-  //   metaDescriptionKey: "health.bodyFat.desc",
-  //   titleKey: "health.bodyFat.title",
-  //   category: "Health",
-  //   descriptionKey: "health.bodyFat.desc",
-  //   formulaId: "body-fat",
+ {
+  slug: "body-fat-calculator",
+  metaTitleKey: "health.bodyFat.title",
+  metaDescriptionKey: "health.bodyFat.desc",
+  titleKey: "health.bodyFat.title",
+  category: "Health",
+  descriptionKey: "health.bodyFat.desc",
+  formulaId: "bodyFat",
 
-  //   inputs: [
-  //     {
-  //       label: "health.bodyFat.gender", name: "gender", type: "select", options: [
-  //         { value: "male", label: "health.bodyFat.male" },
-  //         { value: "female", label: "health.bodyFat.female" },
-  //       ]
-  //     },
-  //     { label: "health.bodyFat.waist", name: "waist", type: "number", unit: "cm" },
-  //     { label: "health.bodyFat.neck", name: "neck", type: "number", unit: "cm" },
-  //     { label: "health.bodyFat.hip", name: "hip", type: "number", unit: "cm" },
-  //     { label: "health.bodyFat.height", name: "height", type: "number", unit: "cm" },
-  //   ],
-  //   toc: [
-  //     { id: "about", labelKey: "health.bodyFat.tocAbout" },
-  //     { id: "formula", labelKey: "health.bodyFat.tocFormula" },
-  //     { id: "navy-method", labelKey: "health.bodyFat.tocnavymethod" },
-  //     { id: "bmi-method", labelKey: "health.bodyFat.tocbmimethod" },
-  //     { id: "interpretation", labelKey: "health.bodyFat.tocinterpretation" },
-  //     { id: "faqs", labelKey: "health.bodyFat.tocFaqs" },
-  //   ],
-  //   heading: "health.bodyFat.heading",
-  //   sections: [
-  //     {
-  //       id: "about",
-  //       titleKey: "health.bodyFat.about",
-  //       titleKey2: "health.bodyFat.abouttitle",
-  //       contentKey: "health.bodyFat.aboutText",
-  //     },
-  //     {
-  //       id: "formula",
-  //       titleKey: "health.bodyFat.formula",
-  //       titleKey2: "health.bodyFat.formulatitle",
-  //       subsections: [
-  //         {
-  //           id: "formula-overview",
-  //           contentKey: "health.bodyFat.formulaText",
-  //         },
-  //         {
-  //           id: "navy-method",
-  //           titleKey: "health.bodyFat.navyMethodTitle",
-  //           contentKey: "health.bodyFat.navyMethodText",
-  //           subsections: [
-  //             { id: "navy-men", contentKey: "health.bodyFat.navyMethodMen" },
-  //             { id: "navy-women", contentKey: "health.bodyFat.navyMethodWomen" },
-  //             { id: "navy-note", contentKey: "health.bodyFat.navyMethodNote" },
-  //           ],
-  //         },
-  //         {
-  //           id: "bmi-method",
-  //           titleKey: "health.bodyFat.bmiMethodTitle",
-  //           contentKey: "health.bodyFat.bmiMethodText",
-  //           subsections: [
-  //             { id: "bmi-simplified", contentKey: "health.bodyFat.bmiSimplifiedText" },
-  //           ],
-  //         },
-  //         {
-  //           id: "interpretation",
-  //           titleKey: "health.bodyFat.interpretationTitle",
-  //           contentKey: "health.bodyFat.interpretationText",
-  //         },
-  //       ],
-  //     },
-  //   ],
+  toc: [
+    { id: "why-use", labelKey: "health.bodyFat.tocAbout" },
+    { id: "how-works", labelKey: "health.bodyFat.tochow" },
+    { id: "why-track", labelKey: "health.bodyFat.toctrack" },
+    { id: "understanding", labelKey: "health.bodyFat.tocunderstanding" },
+    { id: "examples", labelKey: "health.bodyFat.tocexample" },
+    { id: "interpret", labelKey: "health.bodyFat.tocinterpret" },
+    { id: "reliable", labelKey: "health.bodyFat.tocreliable" },
+  ],
 
-  //   faqTitleKey: "health.bodyFat.faqTitle",
-  //   faqs: [
-  //     { qKey: "health.bodyFat.faq.0.q", aKey: "health.bodyFat.faq.0.a" },
-  //     { qKey: "health.bodyFat.faq.1.q", aKey: "health.bodyFat.faq.1.a" },
-  //     { qKey: "health.bodyFat.faq.2.q", aKey: "health.bodyFat.faq.2.a" },
-  //     { qKey: "health.bodyFat.faq.3.q", aKey: "health.bodyFat.faq.3.a" },
-  //     { qKey: "health.bodyFat.faq.4.q", aKey: "health.bodyFat.faq.4.a" },
-  //     { qKey: "health.bodyFat.faq.5.q", aKey: "health.bodyFat.faq.5.a" },
-  //   ],
-  // },
+  inputs: [
+    { label: "health.bodyFat.gender", name: "gender", type: "select", options: [
+      { value: "male", label: "health.bodyFat.male" },
+      { value: "female", label: "health.bodyFat.female" },
+    ]},
+    { label: "health.bodyFat.height", name: "height", type: "number", unit: "cm" },
+    { label: "health.bodyFat.weight", name: "weight", type: "number", unit: "kg" },
+    { label: "health.bodyFat.waist", name: "waist", type: "number", unit: "cm" },
+    { label: "health.bodyFat.neck", name: "neck", type: "number", unit: "cm" },
+    { label: "health.bodyFat.hip", name: "hip", type: "number", unit: "cm" },
+  ],
+
+  heading: "health.bodyFat.heading",
+
+  sections: [
+    {
+      id: "about",
+      titleKey: "health.bodyFat.section1Title",
+      contentKey: "health.bodyFat.section1Content",
+      linkparacontent: "health.bodyFat.section1ExtraText",
+      linkparaKey: "health.bodyFat.section1Link",
+      linkparaslug: "tdee-calculator",
+      subsections: [
+        {
+          id: "why-use",
+          titleKey: "health.bodyFat.section1Sub1Title",
+          introKey: "health.bodyFat.section1Sub1Intro",
+          listKey: "health.bodyFat.section1Sub1List",
+          contentKey: "health.bodyFat.section1Sub1Text",
+        },
+        {
+          id: "how-works",
+          titleKey: "health.bodyFat.section1Sub2Title",
+          introKey: "health.bodyFat.section1Sub2Intro",
+          listKey: "health.bodyFat.section1Sub2List",
+          contentKey: "health.bodyFat.section1Sub2Text",
+          lists: ["health.bodyFat.section1Sub2EndList"],
+          endKey: "health.bodyFat.section1Sub2End",
+        },
+        {
+          id: "why-track",
+          titleKey: "health.bodyFat.section1Sub3Title",
+          introKey: "health.bodyFat.section1Sub3Intro",
+          listKey: "health.bodyFat.section1Sub3List",
+          endKey: "health.bodyFat.section1Sub3End",
+        },
+      ],
+    },
+    {
+      id: "formula",
+      titleKey: "health.bodyFat.formulatitle",
+      contentKey: "health.bodyFat.formulaText",
+      subsections: [
+        {
+          id: "navy-formula",
+          titleKey: "health.bodyFat.formulasubtitle1",
+          formulas: [
+            "health.bodyFat.formulaMale",
+            "health.bodyFat.formulaFemale"
+          ],
+          type: "formula",
+        },
+        {
+          id: "understanding",
+          titleKey: "health.bodyFat.formulasubtitle2",
+          imageKey: "health.bodyFat.formulasub2Image",
+          imageAltKey: "health.bodyFat.formulasub2ImageAlt",
+          contentKey: "health.bodyFat.formulasub2text",
+          listKey: "health.bodyFat.formulasub2List",
+          textKey: "health.bodyFat.formulasub2end",
+          lists: ["health.bodyFat.formulasub2List2"],
+          endKey: "health.bodyFat.formulasub2end2",
+        },
+        {
+          id: "examples",
+          titleKey: "health.bodyFat.formulasub3title",
+          introKey: "health.bodyFat.formulasub3line",
+          subsections: [
+            {
+              id: "male-example",
+              labelKey: "health.bodyFat.formulasub3line2",
+              listKey: "health.bodyFat.formulasub3List",
+              subsections: [
+                {
+                  id: "step-1",
+                  titleKey: "health.bodyFat.formulasteptitle",
+                  formulaKey: "health.bodyFat.formulastep1",
+                },
+                {
+                  id: "step-2",
+                  titleKey: "health.bodyFat.formulasteptitle2",
+                  lists: ["health.bodyFat.formulastepList"],
+                  resultKey: "health.bodyFat.resulttext",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: "interpret",
+          titleKey: "health.bodyFat.formulasub4title",
+          imageKey: "health.bodyFat.formulasub4Image",
+          imageAltKey: "health.bodyFat.formulasub4ImageAlt",
+          contentKey: "health.bodyFat.formulasub4content",
+        },
+        {
+          id: "reliable",
+          titleKey: "health.bodyFat.formulasub5title",
+          contentKey: "health.bodyFat.formulasub5content",
+        },
+      ],
+    },
+  ],
+
+  faqTitleKey: "health.bodyFat.faqTitle",
+  faqs: [
+    { qKey: "health.bodyFat.faq.0.q", aKey: "health.bodyFat.faq.0.a" },
+    { qKey: "health.bodyFat.faq.1.q", aKey: "health.bodyFat.faq.1.a" },
+    { qKey: "health.bodyFat.faq.2.q", aKey: "health.bodyFat.faq.2.a" },
+    { qKey: "health.bodyFat.faq.3.q", aKey: "health.bodyFat.faq.3.a" },
+    { qKey: "health.bodyFat.faq.4.q", aKey: "health.bodyFat.faq.4.a" },
+    { qKey: "health.bodyFat.faq.5.q", aKey: "health.bodyFat.faq.5.a" },
+  ],
+},
 
 {
   slug: "bmi-calculator",

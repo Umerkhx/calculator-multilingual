@@ -30,29 +30,30 @@ export function MobileSidebar({ locale }: MobileSidebarProps) {
 
       <SheetContent side="left" className="w-64 p-0">
         <div className="flex flex-col h-full">
-          {/* Header */}
           <div className="flex items-center justify-between p-4 border-b">
-            <Link href={`/${locale}`} onClick={() => setOpen(false)}>
-              <span className="font-bold text-2xl uppercase">{t.name}</span>
+            <Link href={locale === "en" ? "/" : `/${locale}`} onClick={() => setOpen(false)}>
+              <span className="font-bold text-xl uppercase">{t.name}</span>
             </Link>
           </div>
 
-          {/* Navigation */}
           <nav className="flex-1 overflow-y-auto py-4">
             <div className="space-y-1 px-3">
-              {/* Normal translated links */}
-              {navKeys.map((key) => (
-                <Link
-                  key={key}
-                  href={`/${locale}${key === "home" ? "" : `/${key}`}`}
-                  onClick={() => setOpen(false)}
-                  className="flex items-center px-3 py-2 text-sm font-medium rounded-md hover:bg-accent transition-colors"
-                >
-                  {t[key]}
-                </Link>
-              ))}
+              {navKeys.map((key) => {
+                const href = locale === "en" 
+                  ? key === "home" ? "/" : `/${key}` 
+                  : key === "home" ? `/${locale}` : `/${locale}/${key}`;
+                return (
+                  <Link
+                    key={key}
+                    href={href}
+                    onClick={() => setOpen(false)}
+                    className="flex items-center px-3 py-2 text-sm font-medium rounded-md hover:bg-accent transition-colors"
+                  >
+                    {t[key as keyof typeof t]}
+                  </Link>
+                );
+              })}
 
-              {/* Expandable Calculators Section */}
               <div className="flex flex-col">
                 <button
                   onClick={() => setCalcOpen(!calcOpen)}
@@ -66,7 +67,6 @@ export function MobileSidebar({ locale }: MobileSidebarProps) {
                   />
                 </button>
 
-                {/* Dropdown with smooth expand animation */}
                 <div
                   className={`overflow-hidden transition-all duration-300 ${
                     calcOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
@@ -76,7 +76,7 @@ export function MobileSidebar({ locale }: MobileSidebarProps) {
                     {allCalculatorCategories.map((cat) => (
                       <Link
                         key={cat.id}
-                        href={`/${locale}/${cat.id}`}
+                         href={locale === "en" ? `/${cat.id}` : `/${locale}/${cat.id}`}
                         onClick={() => setOpen(false)}
                         className="block px-2 py-1 text-sm text-muted-foreground hover:text-foreground hover:bg-zinc-100 rounded-md transition-colors"
                       >

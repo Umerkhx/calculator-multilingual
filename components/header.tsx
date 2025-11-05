@@ -28,14 +28,7 @@ export function Header({ locale }: HeaderProps) {
 
           <nav className="hidden md:flex items-center gap-8 relative">
             {navKeys.map((key) => {
-              const href =
-                locale === "en"
-                  ? key === "home"
-                    ? "/"
-                    : `/${key}`
-                  : key === "home"
-                    ? `/${locale}`
-                    : `/${locale}/${key}`;
+              const href = locale === "en" ? key === "home" ? "/" : `/${key}` : key === "home" ? `/${locale}`: `/${locale}/${key}`;
 
               return (
                 <Link
@@ -86,11 +79,9 @@ export function Header({ locale }: HeaderProps) {
         </div>
 
         <Link href={locale === "en" ? "/" : `/${locale}`} className="absolute left-1/2 -translate-x-1/2">
-          {/* <span className="font-bold text-foreground text-2xl sm:text-3xl  uppercase">
-            {t.name}
-          </span> */}
+     
 
-          <Image src={'/vast-logo.png'}width={150} height={150} alt="logo" fetchPriority="high"></Image>
+          <Image src={'/VastCalculators.com-Logo.png'}width={150} height={150} alt="logo" fetchPriority="high"></Image>
         </Link>
 
         <div className="flex items-center gap-2 sm:gap-4">

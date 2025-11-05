@@ -1,7 +1,7 @@
 import { healthCalculators } from "@/lib/calculators/health-calculators";
 
 export async function GET() {
-  const baseUrl = 'https://calyx-mme.vercel.app';
+  const baseUrl = 'https://vastcalculators.com';
   const lastmod = new Date().toISOString().split('T')[0];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

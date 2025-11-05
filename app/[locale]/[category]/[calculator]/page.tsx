@@ -3,7 +3,7 @@ import CalculatorClient from "@/components/calculator-comps/CalculatorClient";
 import { allCalculatorCategories, getCalculatorBySlug } from "@/lib/calculators";
 import { getTranslation, type Locale, defaultLocale, locales } from "@/lib/i18n";
 
-const baseUrl = "https://calyx-mme.vercel.app";
+const baseUrl = "https://vastcalculators.com";
 
 const categoryMap: Record<string, string> = {
   health: "Health Calculators",

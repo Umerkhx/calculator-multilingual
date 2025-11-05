@@ -5,6 +5,11 @@ import { getTranslation, type Locale, defaultLocale, locales } from "@/lib/i18n"
 
 const baseUrl = "https://vastcalculators.com";
 
+const categoryMap: Record<string, string> = {
+  health: "Health Calculators",
+  finance: "Finance Calculators",
+};
+
 export async function generateStaticParams() {
   const paths: { locale: string; category: string; calculator: string }[] = [];
 
@@ -89,7 +94,76 @@ export default async function CalculatorPage({ params }: CalculatorPageProps) {
     );
   }
 
+  const enTitle = getTranslation("en", calc.heading);
+  const enDescription = getTranslation("en", calc.metaDescriptionKey);
+
+  const url =
+    locale === defaultLocale
+      ? `${baseUrl}/${category}/${calculator}`
+      : `${baseUrl}/${locale}/${category}/${calculator}`;
+
+  // FAQ SCHEMA BUILD
+  let faqSchema = null;
+  if (calc.faqs && calc.faqs.length > 0) {
+    const faqEntities = calc.faqs.map((f) => ({
+      "@type": "Question",
+      name: getTranslation("en", f.qKey),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: getTranslation("en", f.aKey),
+      },
+    }));
+
+    faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqEntities,
+    };
+  }
+
+  const appSchema = {
+    "@context": "https://schema.org",
+    "@type": ["SoftwareApplication", "WebApplication"],
+    name: enTitle,
+    description: enDescription,
+    url,
+    operatingSystem: "Web",
+    applicationCategory: categoryMap[category] ?? category,
+    applicationSubCategory: enTitle,
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
+    offers: {
+      "@type": "Offer",
+      price: 0,
+      priceCurrency: "USD",
+      availability: "https://schema.org/OnlineOnly",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "VastCalculator",
+      url: baseUrl,
+    },
+  };
+
   return (
-    <CalculatorClient calc={calc} locale={validLocale} formulaId={calc.formulaId} category={category} />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
+      />
+
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
+      <CalculatorClient calc={calc} locale={validLocale} formulaId={calc.formulaId} category={category} />
+    </>
   );
 }

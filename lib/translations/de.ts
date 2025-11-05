@@ -31,18 +31,21 @@ hero: {
   quote: "Bei Vast Rechner entwickeln wir intelligente Tools, um jede Berechnung mühelos und zugänglich zu machen.",
   cta: "Erfahren Sie mehr über uns"
 },
-  categories: {
-    health: {
-      name: "Gesundheit",
-      description: "Behalte deine Gesundheit mit einfach zu bedienenden Tools im Blick. Vom BMI bis zum Fitnesstracking, schnelle und genaue Ergebnisse für tägliches Wohlbefinden und kluge Lebensentscheidungen."
-    },
-
-    finance: {
-      name: "Finanzen",
-      description: "Verwalte dein Geld intelligenter mit einfachen Tools. Von Budgetplanung bis zur Kreditplanung, schnelle und genaue Ergebnisse für bessere finanzielle Entscheidungen."
-    },
-    all: "Alle Rechner",
+categories: {
+  health: {
+    metaTitle: "Gesundheitsrechner | Präzise Online-Tools für Fitness & Wohlbefinden",
+    name: "Gesundheitsrechner",
+    description: "Verfolge dein Wohlbefinden ganz einfach mit unserem BMI-, Kalorien- und Wasseraufnahme-Rechner. Diese Tools unterstützen ein ausgewogenes Leben und genaue Selbstbewertung.",
+    metaDescription: "Kostenlose Online-Gesundheitsrechner für BMI, Kalorien, Körperfett, Herzfrequenz und mehr. Bleibe fit und gesund mit Leichtigkeit."
   },
+  finance: {
+    metaTitle: "Finanzrechner | Intelligente Online-Tools für Geld & Ersparnisse",
+    name: "Finanzrechner",
+    description: "Plane dein Budget besser mit unserem Kredit-, EMI- und Zinseszinsrechner. Egal ob tägliche Ausgaben oder langfristige Ersparnisse – VastCalculator bringt Klarheit in deine Finanzentscheidungen.",
+    metaDescription: "Kostenlose Online-Finanzrechner für Kredite, ROI, Ersparnisse und Investitionen. Triff klügere Finanzentscheidungen in Sekunden."
+  },
+  all: "Alle Rechner"
+},
   categoriespage: {
     title: "Entdecken Sie Rechnerkategorien",
     description: "Entdecken Sie alle kostenlosen Online-Rechnerkategorien – von Finanzen und Gesundheit bis hin zu Mathematik und Umrechnungen. Vast Rechner hilft Ihnen, in jedem Bereich intelligenter, schneller und einfacher zu rechnen."
@@ -138,26 +141,149 @@ calculatorform: {
 
   // Gesundheitsrechner
   health: {
-    bodyFat: {
-      title: "Körperfett-Rechner",
-      desc: "Schätzen Sie Ihren Körperfettanteil",
-      waist: "Taille (cm)",
-      neck: "Hals (cm)",
-      height: "Größe (cm)",
-      gender: "Geschlecht",
-      male: "Männlich",
-      female: "Weiblich",
-      result: "Körperfettanteil (%)",
-      about: "Über Körperfett",
-      aboutText:
-        "Der Körperfettanteil zeigt, wie viel Ihres Körpers aus Fettgewebe besteht. Er ist ein besserer Fitnessindikator als der BMI.",
-      formula: "Formel",
-      formulaText:
-        "Verwendet die US Navy-Methode: KF% = 495 / (1.0324 - 0.19077 * log10(Taille - Hals) + 0.15456 * log10(Größe)) - 450",
+bodyFat: {
+  metaTitle: "Körperfett Rechner | Schätzen Sie Ihren Körperfettanteil Online",
+  desc: "Verwenden Sie unseren Körperfett-Rechner, um Ihren Körperfettanteil zu ermitteln. Verfolgen Sie Fettabbau, Muskelaufbau und Fitnessfortschritte mit präzisen Messformeln.",
+  waist: "Taille (cm)",
+  neck: "Hals (cm)",
+  height: "Größe (cm)",
+  hip: "Hüfte (cm)",
+  gender: "Geschlecht",
+  male: "Männlich",
+  female: "Weiblich",
+  result: "Körperfettanteil (%)",
+
+  tocTitle: "Inhaltsverzeichnis",
+  tocAbout: "Warum einen Körperfett-Rechner verwenden?",
+  tochow: "Wie der Körperfett-Rechner funktioniert",
+  toctrack: "Warum Körperfett statt nur Gewicht verfolgen?",
+  tocnavy: "U.S. Navy Körperfett-Formel",
+  tocunderstanding: "Verständnis der Formel",
+  tocexample: "Beispiel für die Körperfettrechnung",
+  tocinterpret: "Wie das Ergebnis zu interpretieren ist",
+  tocreliable: "Warum diese Formel zuverlässig ist",
+
+  heading: "Körperfett Rechner",
+  section1Title: "Über den Körperfett-Rechner",
+  section1Content: "Der Körperfett-Rechner hilft Ihnen herauszufinden, wie viel Ihres Körpergewichts aus Fett im Vergleich zu fettfreier Masse besteht. Er liefert Ihren Körperfettanteil, die fettfreie Körpermasse (LBM) und die Fettmasse anhand einfacher Messungen wie Größe, Gewicht, Taillen- und Halsumfang. Dieser Online-Körperfett-Rechner bietet eine schnelle und genaue Einschätzung Ihrer Fitnesswerte und hilft Ihnen, Ihren aktuellen Gesundheitszustand zu verstehen. Ein wertvolles Tool für alle, die Fortschritte bei Fitness, Gewichtsverlust oder Körperzusammensetzung verfolgen möchten.",
+  section1ExtraText: "Nachdem Sie Ihren Körperfettanteil überprüft haben, sehen Sie, wie viele Kalorien Sie täglich verbrennen mit unserem ",
+  section1Link: "TDEE Rechner",
+
+  section1Sub1Title: "Warum einen Körperfett-Rechner verwenden?",
+  section1Sub1Intro:
+    "Die Verfolgung Ihres Körperfettanteils ist entscheidend, um Ihre allgemeine Gesundheit zu verstehen. Im Gegensatz zum Gewicht, das nur einen Teil des Bildes zeigt, liefert Ihr Körperfettanteil tiefere Einblicke in Ihren Fitness- und Gesundheitsstatus. Zwei Personen mit demselben Gewicht können sehr unterschiedliche Körperfettanteile haben – und damit auch unterschiedliche Fitnessniveaus.",
+  section1Sub1List: [
+    "Überwachen Sie die Auswirkungen Ihrer Ernährung oder Ihres Trainingsplans",
+    "Verfolgen Sie Fortschritte beim Fettabbau oder Muskelaufbau",
+    "Setzen Sie realistische und erreichbare Fitnessziele"
+  ],
+  section1Sub1Text:
+    "Unser Körperfett-Rechner hilft Ihnen, Ihren Körperfettanteil zu messen, Veränderungen zu verfolgen und zu verstehen, wie Ihre Bemühungen Ihre Gesundheit beeinflussen.",
+
+  section1Sub2Title: "Wie der Körperfett-Rechner funktioniert",
+  section1Sub2Intro:
+    "Der Körperfett-Rechner verwendet Ihre Körpermaße, um Ihren Körperfettanteil mithilfe wissenschaftlich validierter Formeln zu schätzen. Er ist schnell und einfach zu bedienen! Geben Sie einfach die folgenden Details ein:",
+  section1Sub2List: [
+    "Geschlecht",
+    "Größe",
+    "Gewicht",
+    "Taille- und Halsumfang (und Hüftumfang für Frauen)"
+  ],
+  section1Sub2Text:
+    "Sobald Sie auf Berechnen klicken, erhalten Sie eine sofortige Aufschlüsselung von:",
+  section1Sub2EndList: [
+    "Ihrem Körperfettanteil",
+    "Ihrer fettfreien Körpermasse",
+    "Ihrer Fettmasse"
+  ],
+  section1Sub2End:
+    "Dies hilft Ihnen zu verstehen, welcher Anteil Ihres Körpergewichts aus Fett im Vergleich zu fettfreier Masse (z. B. Muskeln und Knochen) besteht.",
+
+  section1Sub3Title: "Warum Körperfett statt nur Gewicht verfolgen?",
+  section1Sub3Intro:
+    "Das Gewicht allein liefert kein vollständiges Bild Ihrer Gesundheit. Der Körperfett-Rechner bietet detailliertere Einblicke in Ihre Körperzusammensetzung. Wenn Sie Ihren Körperfettanteil und Ihre fettfreie Masse kennen, können Sie:",
+  section1Sub3List: [
+    "Ihr Training besser anpassen",
+    "Ihre Ernährung und Kalorienziele optimieren",
+    "Gesundheitsentscheidungen auf Grundlage von Daten treffen"
+  ],
+  section1Sub3End:
+    "Mit diesem Tool benötigen Sie keine komplizierten Tests oder professionelle Geräte, um wertvolle Erkenntnisse über Ihre Fitnessreise zu gewinnen. Verwenden Sie den Rechner, um Ihre Fortschritte zu verfolgen und Ihre Routine für optimale Ergebnisse anzupassen!",
+
+  formulatitle: "Körperfett-Formel",
+  formulaText: "Der Körperfett-Rechner verwendet wissenschaftlich erprobte Formeln wie die U.S. Navy Körperfett-Formel, um Ihren Körperfettanteil zu schätzen. Er arbeitet, indem er Ihre Körpermaße – wie Taille, Hals und bei Frauen auch Hüfte – mit Ihrer Größe und Ihrem Geschlecht vergleicht, um Ihre Fettmasse und fettfreie Körpermasse (LBM) zu bestimmen. Diese Formeln sind weithin anerkannt und zuverlässig, um die Körperzusammensetzung ohne professionelle Geräte zu berechnen.",
+  formulasubtitle1: "U.S. Navy Körperfett-Formel",
+  formulaMale: "Für Männer: Körperfett % = 86.010 × log10(Taille − Hals) − 70.041 × log10(Größe) + 36.76",
+  formulaFemale: "Für Frauen: Körperfett % = 163.205 × log10(Taille + Hüfte − Hals) − 97.684 × log10(Größe) − 78.387",
+  formulasubtitle2: "Verständnis der Formel",
+  formulasub2Image: "/Body-Fat-Calculator.jpg",
+  formulasub2ImageAlt: "Body Fat calculator",
+  formulasub2text: "Diese Gleichungen schätzen Ihr Fettverhältnis, indem sie den Unterschied zwischen Ihrer gesamten Körpergröße und den Umfängen der Kernbereiche vergleichen.",
+  formulasub2List: [
+    "Taille und Hals (bei Männern) oder Taille, Hüfte und Hals (bei Frauen) werden verwendet, um die Fettverteilung zu bestimmen.",
+    "Die Größe hilft, die Ergebnisse proportional anzupassen."
+  ],
+  formulasub2end: "Nach der Berechnung zeigt der Online-Körperfett-Rechner Folgendes an:",
+  formulasub2List2: [
+    "Fettmasse (FM) = Gesamtgewicht × (Körperfett % / 100)",
+    "Fettfreie Körpermasse (LBM) = Gesamtgewicht − Fettmasse"
+  ],
+  formulasub2end2: "Diese Werte helfen Ihnen zu verstehen, wie viel Ihres Gewichts aus fettfreier Masse (Muskeln, Knochen, Organe) im Vergleich zu gespeichertem Fett besteht.",
+  formulasub3title: "Beispiel für eine Körperfettrechnung",
+  formulasub3line: "Sehen wir uns ein einfaches Beispiel zur besseren Veranschaulichung an:",
+  formulasub3line2: "Beispiel (Mann):",
+  formulasub3List: [
+    "Größe: 175 cm",
+    "Taille: 85 cm",
+    "Hals: 38 cm",
+    "Gewicht: 70 kg"
+  ],
+  formulasteptitle: "Schritt 1: Formel anwenden",
+  formulastep1: "Körperfett % = 86.010 × log10(85 − 38) − 70.041 × log10(175) + 36.76 = 22.96% (≈ 23%)",
+  formulasteptitle2: "Schritt 2: Fettmasse und fettfreie Körpermasse berechnen",
+  formulastepList: [
+    "Fettmasse = 70 × 0.23 = 16.1 kg",
+    "Fettfreie Körpermasse = 70 − 16.1 = 53.9 kg"
+  ],
+  resulttext: "Ergebnis: Diese Person hat 23% Körperfett, mit 16.1 kg Fettmasse und 53.9 kg fettfreier Körpermasse (LBM).",
+  formulasub4title: "Wie das Ergebnis zu interpretieren ist",
+  formulasub4Image: "/body-fat-table-image-1.png",
+  formulasub4ImageAlt: "Body fat result chart",
+  formulasub4content: "Ein niedrigerer Körperfettanteil zeigt in der Regel eine bessere Fitness, Muskeldefinition und allgemeine Gesundheit an. Ein höherer Anteil kann hingegen das Risiko für verschiedene Gesundheitsprobleme erhöhen.",
+  formulasub5title: "Warum diese Formel zuverlässig ist",
+  formulasub5content: "Die U.S. Navy Methode ist für ihre Einfachheit und Genauigkeit bekannt. Sie bietet realistische Schätzungen für Personen, die keinen Zugang zu fortgeschrittenen Körperanalyse-Tools wie DEXA-Scans haben. Dieser Körpermessungsrechner bietet schnelle, datenbasierte Einblicke in Ihre Fitness- und Gesundheitswerte und hilft Ihnen, fundierte Entscheidungen über Training und Ernährung zu treffen. Der Körperfett-Rechner auf Vast Calculators verwendet diese zuverlässigen Formeln, um sofortige und genaue Ergebnisse zu liefern, die Ihre wahre Körperzusammensetzung widerspiegeln.",
+
+  faqTitle: "Häufig gestellte Fragen",
+  faq: [
+    {
+      q: "Was ist der Körperfettanteil?",
+      a: "Der Körperfettanteil ist das Verhältnis von Fett zu Ihrem gesamten Körpergewicht. Er zeigt, wie viel Ihres Gewichts aus Fett im Vergleich zu fettfreier Masse wie Muskeln, Knochen und Organen besteht. Dies ist eine wichtige Kennzahl zur Bewertung von Gesundheit und Fitness, da sie ein klareres Bild liefert als nur das Gewicht."
     },
+    {
+      q: "Wie genau ist der Körperfett-Rechner?",
+      a: "Der Körperfett-Rechner liefert eine zuverlässige Schätzung auf Grundlage wissenschaftlich validierter Formeln wie der U.S. Navy Methode. Die Ergebnisse sind jedoch Schätzungen und können von präziseren Methoden wie DEXA-Scans oder hydrostatischem Wiegen abweichen."
+    },
+    {
+      q: "Kann der Körperfett-Rechner von Männern und Frauen verwendet werden?",
+      a: "Ja, der Körperfett-Rechner funktioniert für Männer und Frauen, verwendet jedoch unterschiedliche Formeln für jedes Geschlecht. Der Rechner berücksichtigt geschlechtsspezifische Unterschiede in der Körperzusammensetzung, um genauere Ergebnisse zu liefern."
+    },
+    {
+      q: "Brauche ich spezielles Equipment, um den Körperfett-Rechner zu nutzen?",
+      a: "Nein, der Körperfett-Rechner benötigt nur grundlegende Körpermaße wie Taille, Hals und (bei Frauen) Hüfte sowie Größe und Gewicht. Diese Messungen können mit einem einfachen Maßband vorgenommen werden, was den Rechner leicht und für jeden zugänglich macht."
+    },
+    {
+      q: "Wie oft sollte ich den Körperfett-Rechner verwenden?",
+      a: "Sie können den Körperfett-Rechner so oft verwenden, wie Sie möchten, um Ihre Fortschritte zu verfolgen. Viele nutzen ihn monatlich oder nach Abschluss bestimmter Fitnessziele, um Veränderungen in der Körperzusammensetzung zu beobachten."
+    },
+    {
+      q: "Was gilt als gesunder Körperfettanteil?",
+      a: "Gesunde Körperfettbereiche variieren je nach Alter und Geschlecht. Im Allgemeinen liegt der gesunde Bereich für Männer zwischen 10–20 %, für Frauen zwischen 20–30 %. Es ist jedoch ratsam, sich von einem Arzt oder Fitnessexperten beraten zu lassen, um den für Sie idealen Bereich zu bestimmen."
+    }
+  ]
+},
 bmi: {
-  title: "Kostenloser BMI-Rechner: Ermitteln Sie sofort Ihren Body-Mass-Index online",
-  desc: "Berechnen Sie Ihren Body-Mass-Index (BMI), um mögliche Gesundheitsrisiken wie Diabetes und Herzkrankheiten zu bewerten. Verfolgen Sie Ihre Fitnessziele mit unserem kostenlosen Online-Rechner.",
+  metaTitle: "BMI-Rechner Kostenlos: Berechne Deinen Body-Mass-Index Sofort Online",
+  desc: "Berechne Deinen Body-Mass-Index (BMI), um mögliche Gesundheitsrisiken wie Diabetes und Herzkrankheiten einzuschätzen. Verfolge Deine Fitnessziele mit unserem kostenlosen Online-Rechner.",
   heading: "BMI-Rechner",
 
   weight: "Gewicht (kg)",
@@ -165,136 +291,316 @@ bmi: {
   result: "BMI",
 
   tocTitle: "Inhaltsverzeichnis",
-  tocwhy: "Warum Sie einen BMI-Rechner verwenden sollten",
+  tocwhy: "Warum Du einen BMI-Rechner verwenden solltest",
   tochowitworks: "Wie der Online-BMI-Rechner funktioniert",
   tocwhybmi: "Warum der BMI wichtig ist",
-  tocUnderstanding: "Verständnis der BMI-Formel",
-  tocexample: "Beispiel für die BMI-Berechnung",
+  tocUnderstanding: "Das BMI-Formel-Verständnis",
+  tocexample: "Beispiel zur BMI-Berechnung",
   toccategories: "BMI-Kategorien und Interpretation",
 
   section1Title: "Über den BMI-Rechner",
-  section1Content: "Der BMI-Rechner von Vast Rechner ist ein schnelles und zuverlässiges Tool, das Benutzern hilft, ihren Body-Mass-Index (BMI) in wenigen Sekunden zu berechnen. Der BMI ist ein Standardmaß, das anzeigt, ob Ihr Gewicht im Verhältnis zu Ihrer Körpergröße gesund ist. Dieser Online-BMI-Rechner verwendet weltweit anerkannte Formeln, die von medizinischen Fachkräften und Gesundheitsorganisationen verwendet werden.",
-  section1ExtraText: "Um Ihre Körperzusammensetzung über den BMI hinaus besser zu verstehen, überprüfen Sie Ihre Ergebnisse mit unserem",
+  section1Content: "Der BMI-Rechner auf Vast Calculators ist ein schnelles und zuverlässiges Tool, mit dem Benutzer ihren Body-Mass-Index (BMI) in Sekundenschnelle berechnen können. Der BMI ist ein Standardmaß, das zeigt, ob Dein Gewicht im Verhältnis zu Deiner Größe im gesunden Bereich liegt. Dieser Online-BMI-Rechner verwendet weltweit anerkannte Formeln, die von Ärzten und Gesundheitsorganisationen genutzt werden.",
+  section1ExtraText: "Um Dein Körperverhältnis über den BMI hinaus besser zu verstehen, überprüfe Deine Ergebnisse mit unserem",
   section1ExtraLinkText: "Körperfett-Rechner",
 
-  section1Sub1Title: "Warum Sie einen BMI-Rechner verwenden sollten",
-  section1Sub1Intro: "Ihr BMI-Wert hilft Ihnen, Ihre aktuelle Gesundheitskategorie zu verstehen: untergewichtig, normalgewichtig, übergewichtig oder fettleibig. Es ist eine der einfachsten Methoden, um das Gleichgewicht zwischen Ihrem Gewicht und Ihrer Größe zu überwachen.",
-  section1Sub1Text: "Dieser Body-Mass-Index-Rechner ist besonders hilfreich für Personen, die:",
+  section1Sub1Title: "Warum Du einen BMI-Rechner verwenden solltest",
+  section1Sub1Intro: "Dein BMI-Wert hilft Dir, Deine aktuelle Gesundheitskategorie zu verstehen: untergewichtig, normalgewichtig, übergewichtig oder fettleibig. Es ist eine der einfachsten Methoden, um das Verhältnis von Gewicht zu Größe zu überwachen.",
+  section1Sub1Text: "Dieser Body-Mass-Index-Rechner ist besonders nützlich für Personen, die:",
   section1Sub1List: [
     "ihre Fitnessreise verfolgen",
     "eine neue Diät oder ein Trainingsprogramm beginnen",
     "mögliche gewichtsbedingte Gesundheitsrisiken überwachen"
   ],
-  section1Sub1End: "Der BMI bietet ein klares Bild Ihres aktuellen Gesundheitszustands und hilft Ihnen, fundierte Entscheidungen für einen gesünderen Lebensstil zu treffen.",
+  section1Sub1End: "Der BMI bietet ein klares Bild Deines aktuellen Gesundheitszustands und hilft Dir, fundierte Schritte in Richtung eines gesünderen Lebensstils zu unternehmen.",
 
   section1Sub2Title: "Wie der Online-BMI-Rechner funktioniert",
-  section1Sub2Intro: "Die Verwendung dieses Rechners ist einfach und unkompliziert. Sie müssen nur eingeben:",
+  section1Sub2Intro: "Die Nutzung dieses Rechners ist einfach und unkompliziert. Du gibst einfach ein:",
   section1Sub2List: [
-    "Ihre Größe (in Zentimetern oder Zoll)",
-    "Ihr Gewicht (in Kilogramm oder Pfund)"
+    "Deine Größe (in Zentimetern oder Zoll)",
+    "Dein Gewicht (in Kilogramm oder Pfund)"
   ],
-  section1Sub2Text: "Sobald Sie auf „Berechnen“ klicken, erscheint das Ergebnis sofort und zeigt Ihren BMI-Wert und die entsprechende Gewichtskategorie.",
-  section1Sub2End: "Im Gegensatz zu den meisten Online-Tools bietet Vast Rechner eine saubere Benutzeroberfläche, sofortige Ergebnisse und genaue Berechnungen sowohl im metrischen als auch im imperialen System.",
+  section1Sub2Text: "Sobald Du auf „Berechnen“ klickst, erscheint das Ergebnis sofort und zeigt Deinen BMI-Wert und den entsprechenden Gewichtsstatus.",
+  section1Sub2End: "Im Gegensatz zu vielen anderen Online-Tools bietet Vast Calculators eine klare Benutzeroberfläche, sofortige Ergebnisse und präzise Berechnungen sowohl im metrischen als auch im imperialen System.",
 
   section1Sub3Title: "Warum der BMI wichtig ist",
-  section1Sub3Intro: "Ihr BMI kann auf mögliche Gesundheitsrisiken hinweisen. Ein hoher BMI kann auf Probleme wie Herzkrankheiten, Diabetes oder Gelenkbelastung hindeuten, während ein sehr niedriger BMI auf Nährstoffmängel hinweisen kann. Die regelmäßige Überwachung hilft Ihnen, in einem gesunden Bereich zu bleiben. Für eine genauere Analyse Ihrer Körperzusammensetzung nutzen Sie unseren Körperfett-Rechner.",
-  section1Sub3End: "Vast Rechner stellt sicher, dass jedes Tool auf präzisen Algorithmen und aktuellen Standards basiert und genaue Ergebnisse sowie ein besseres Verständnis für Nutzer liefert, die sich auf Fitness, Gesundheit oder Wohlbefinden konzentrieren.",
+  section1Sub3Intro: "Dein BMI kann auf potenzielle Gesundheitsrisiken hinweisen. Ein hoher BMI kann auf Probleme wie Herzkrankheiten, Diabetes oder Gelenkbelastung hindeuten, während ein sehr niedriger BMI auf Nährstoffmangel hinweisen könnte. Eine regelmäßige Überwachung hilft Dir, im gesunden Bereich zu bleiben. Für eine genauere Analyse Deiner Körperzusammensetzung nutze unseren Körperfett-Rechner.",
+  section1Sub3End: "Vast Calculators stellt sicher, dass jedes Tool auf präzisen Algorithmen und aktuellen Standards basiert, um genaue Ergebnisse und ein besseres Verständnis für Nutzer zu gewährleisten, die sich auf Fitness, Gesundheit oder Wohlbefinden konzentrieren.",
 
-  section2Title: "BMI-Rechner-Formel",
-  section2Intro: "Der BMI-Rechner von Vast Rechner verwendet die offizielle Body-Mass-Index-Formel, die von globalen Gesundheitsinstitutionen wie der Weltgesundheitsorganisation (WHO) und den Centers for Disease Control and Prevention (CDC) anerkannt ist.",
+  section2Title: "BMI-Rechner Formel",
+  section2Intro: "Der BMI-Rechner auf Vast Calculators verwendet die offizielle Body-Mass-Index-Formel, die von globalen Gesundheitsinstitutionen wie der Weltgesundheitsorganisation (WHO) und den Centers for Disease Control and Prevention (CDC) anerkannt ist.",
   section2Text: "Die Formel bleibt auf allen Plattformen gleich und lautet:",
   section2MetricFormula: "BMI = Gewicht (kg) ÷ [Größe (m)]²",
-  section2ImperialIntro: "Wenn Sie imperiale Einheiten verwenden, wird sie leicht angepasst, um die Genauigkeit zu gewährleisten:",
+  section2ImperialIntro: "Wenn Du das imperiale System verwendest, wird sie leicht angepasst, um die Genauigkeit zu gewährleisten:",
   section2ImperialFormula: "BMI = 703 × Gewicht (lbs) ÷ [Größe (in)]²",
-  section2End: "Diese Formeln ermöglichen es den Benutzern, festzustellen, ob ihr aktuelles Gewicht in einem gesunden Bereich liegt.",
+  section2End: "Diese Formeln helfen Benutzern zu bestimmen, ob ihr aktuelles Gewicht im gesunden Bereich liegt.",
 
-  section2Sub1Title: "Verständnis der BMI-Formel",
+  section2Sub1Title: "Das BMI-Formel-Verständnis",
   section2Sub1Image: "/BMI-calculator.jpg",
   section2Sub1ImageAlt: "BMI Calculator - Body Mass Index Calculator",
-  section2Sub1Intro: "Der BMI basiert auf einem einfachen mathematischen Prinzip: Er vergleicht Ihr Gewicht mit Ihrer Körpergröße im Quadrat. Dieses Verhältnis zeigt, ob Ihr Gewicht im Verhältnis zu Ihrer Körpergröße angemessen ist.",
+  section2Sub1Intro: "Der BMI basiert auf einem einfachen mathematischen Prinzip: Er vergleicht Dein Gewicht mit Deiner Körpergröße im Quadrat. Dieses Verhältnis zeigt, ob Dein Gewicht im Verhältnis zu Deiner Körpergröße angemessen ist.",
   section2Sub1Text: "Hier eine kurze Erklärung:",
   section2Sub1Points: [
-    "Das Gewicht zeigt, wie viel Masse Ihr Körper hat.",
-    "Die Größe im Quadrat passt das Gewicht an Ihre Körperstruktur an.",
-    "Der Endwert ergibt Ihren Body-Mass-Index, der hilft, Ihre Gesundheitskategorie zu bestimmen."
+    "Das Gewicht zeigt, wie viel Masse Dein Körper trägt.",
+    "Die Körpergröße im Quadrat passt das Gewicht an Deine Körperstruktur an.",
+    "Der endgültige Wert ergibt Deinen Body-Mass-Index, der Deine Gesundheitskategorie bestimmt."
   ],
 
-  section2Sub2Title: "Beispiel für die BMI-Berechnung",
-  section2Sub2Intro: "Gehen wir ein Beispiel zur Verdeutlichung durch.",
+  section2Sub2Title: "Beispiel zur BMI-Berechnung",
+  section2Sub2Intro: "Gehen wir ein Beispiel zur besseren Verständlichkeit durch.",
   section2Sub2MetricLabel: "Beispiel (metrische Einheiten):",
   section2Sub2MetricText: "Wenn eine Person 68 Kilogramm wiegt und 1,70 Meter groß ist, lautet die Berechnung:",
   section2Sub2MetricFormula: "BMI = 68 ÷ (1,70 × 1,70)  BMI = 68 ÷ 2,89 = 23,5",
-  section2Sub2MetricResult: "Der BMI-Wert beträgt 23,5, was in die Kategorie Normalgewicht fällt.",
+  section2Sub2MetricResult: "Der BMI-Wert beträgt 23,5, was in die Kategorie „Normalgewicht“ fällt.",
   section2Sub2ImperialLabel: "Beispiel (imperiale Einheiten):",
   section2Sub2ImperialText: "Wenn eine Person 150 Pfund wiegt und 65 Zoll groß ist:",
   section2Sub2ImperialFormula: "BMI = 703 × 150 ÷ (65 × 65)  BMI = 105450 ÷ 4225 = 24,9",
-  section2Sub2ImperialResult: "Der BMI-Wert beträgt 24,9, ebenfalls in der Kategorie Normalgewicht.",
+  section2Sub2ImperialResult: "Der BMI-Wert beträgt 24,9, ebenfalls in der Kategorie „Normalgewicht“.",
 
   section2Sub3Title: "BMI-Kategorien und Interpretation",
   section2Sub3Intro: "Das berechnete BMI-Ergebnis fällt in eine der folgenden Standardkategorien:",
   section2Sub3Image: "/BMI-calculator-table-image.jpg",
   section2Sub3ImageAlt: "Bmi Calculated Results",
-  section2Sub3End1: "Jeder Bereich dient als allgemeine Richtlinie. Die individuelle Gesundheit hängt auch von Faktoren wie Muskelmasse, Knochendichte und Alter ab.",
-  section2Sub3End2: "Vast Rechner empfiehlt, das BMI-Ergebnis als Ausgangspunkt für bessere Lebensgewohnheiten zu verwenden und für eine detaillierte Bewertung medizinische Fachkräfte zu konsultieren.",
+  section2Sub3End1: "Jeder Bereich dient als allgemeine Richtlinie. Die individuelle Gesundheit hängt jedoch auch von Faktoren wie Muskelmasse, Knochendichte und Alter ab.",
+  section2Sub3End2: "Vast Calculators empfiehlt, den BMI-Wert als Ausgangspunkt für bessere Lebensgewohnheiten zu verwenden und bei Bedarf Gesundheitsfachkräfte zu konsultieren.",
 
-  faqTitle: "Häufig gestellte Fragen (FAQ)",
+  faqTitle: "Häufig gestellte Fragen (FAQs)",
   faq: [
     {
-      q: "Was macht der BMI-Rechner von Vast Rechner?",
-      a: "Der BMI-Rechner von Vast Rechner schätzt schnell Ihren Body-Mass-Index anhand Ihrer Größe und Ihres Gewichts. Er zeigt, ob Sie untergewichtig, normalgewichtig, übergewichtig oder fettleibig sind. Das Tool folgt der offiziellen BMI-Formel, die von globalen Gesundheitsorganisationen verwendet wird."
+      q: "Was macht der BMI-Rechner auf Vast Calculators?",
+      a: "Der BMI-Rechner auf Vast Calculators berechnet schnell Deinen Body-Mass-Index anhand Deiner Größe und Deines Gewichts. Er zeigt, ob Du untergewichtig, normalgewichtig, übergewichtig oder fettleibig bist. Das Tool verwendet die offizielle BMI-Formel, die von globalen Gesundheitsorganisationen anerkannt ist."
     },
     {
       q: "Wie benutze ich den BMI-Rechner?",
-      a: "Geben Sie Ihre Größe (in Zentimetern oder Zoll) und Ihr Gewicht (in Kilogramm oder Pfund) in die vorgesehenen Felder ein und klicken Sie auf Berechnen. Das Ergebnis wird sofort angezeigt, mit Ihrem BMI-Wert und der entsprechenden Gewichtskategorie. Keine Anmeldung erforderlich."
+      a: "Gib Deine Größe (in Zentimetern oder Zoll) und Dein Gewicht (in Kilogramm oder Pfund) in die entsprechenden Felder ein und klicke dann auf Berechnen. Das Ergebnis erscheint sofort und zeigt Deinen BMI-Wert und Deine Gewichtskategorie. Keine Anmeldung oder zusätzlichen Schritte erforderlich."
     },
     {
-      q: "Wie lautet die Formel hinter dem BMI?",
-      a: "Die Formel ist einfach und standardisiert: BMI = Gewicht (kg) ÷ [Größe (m)]². Für imperiale Einheiten: BMI = 703 × Gewicht (lbs) ÷ [Größe (in)]². Beide Versionen liefern genaue Ergebnisse für eine schnelle Gesundheitsanalyse."
+      q: "Was ist die Formel hinter dem BMI?",
+      a: "Die Formel ist einfach und standardisiert: BMI = Gewicht (kg) ÷ [Größe (m)]² Für Benutzer, die das imperiale System bevorzugen, lautet die angepasste Version: BMI = 703 × Gewicht (lbs) ÷ [Größe (in)]² Beide Versionen liefern genaue Ergebnisse für eine schnelle Gesundheitsanalyse."
     },
     {
       q: "Was ist ein gesunder BMI-Bereich?",
-      a: "Ein gesunder BMI-Bereich liegt typischerweise zwischen 18,5 und 24,9. Werte unter 18,5 gelten als untergewichtig, während Werte über 25 auf Übergewicht oder Fettleibigkeit hindeuten."
+      a: "Ein gesunder BMI-Bereich liegt typischerweise zwischen 18,5 und 24,9. Werte unter 18,5 gelten als untergewichtig, während Werte über 25 auf Übergewicht oder Fettleibigkeit hinweisen. Dieser Bereich hilft, festzustellen, ob Dein Gewicht im Verhältnis zu Deiner Größe gesund ist."
     },
     {
       q: "Spiegelt der BMI die allgemeine Gesundheit genau wider?",
-      a: "Der BMI ist ein zuverlässiges Screening-Tool, aber keine medizinische Diagnose. Er gibt einen allgemeinen Hinweis auf den Körperfettanteil im Verhältnis zu Größe und Gewicht, berücksichtigt jedoch keine Muskelmasse, das Alter oder die Körperzusammensetzung. Für eine genauere Einschätzung nutzen Sie den Körperfett-Rechner von Vast Rechner."
+      a: "Der BMI ist ein zuverlässiges Screening-Instrument, aber keine medizinische Diagnose. Er bietet eine allgemeine Einschätzung des Körperfetts basierend auf Größe und Gewicht. Faktoren wie Muskelmasse, Alter oder Körperzusammensetzung werden jedoch nicht berücksichtigt. Für tiefere Einblicke in den Körperfettanteil nutze den Körperfett-Rechner auf Vast Calculators."
     },
     {
       q: "Wie oft sollte ich meinen BMI überprüfen?",
-      a: "Es ist am besten, Ihren BMI alle paar Monate zu überprüfen, insbesondere wenn sich Ihre Ernährung, Ihr Training oder Ihr Lebensstil geändert haben. Regelmäßige Kontrollen helfen Ihnen, Ihren Fortschritt zu verfolgen und Gewichtsschwankungen im Laufe der Zeit zu erkennen."
+      a: "Am besten überprüfst Du Deinen BMI alle paar Monate, insbesondere wenn sich Deine Ernährung, Dein Trainingsplan oder Lebensstil geändert haben. Regelmäßiges Tracking hilft Dir, Fortschritte zu überwachen und Gewichtsschwankungen rechtzeitig zu erkennen."
     }
   ]
 },
-    calories: {
-      title: "Kalorienrechner",
-      desc: "Berechnen Sie Ihren täglichen Kalorienbedarf",
-      age: "Alter (Jahre)",
-      weight: "Gewicht (kg)",
-      height: "Größe (cm)",
-      activity: "Aktivitätsniveau",
-      sedentary: "Sitzend",
-      light: "Leicht aktiv",
-      moderate: "Mäßig aktiv",
-      active: "Aktiv",
-      result: "Tägliche Kalorien",
-      about: "Über Kalorien",
-      aboutText:
-        "Berechnet Ihren täglichen Kalorienbedarf basierend auf Alter, Gewicht, Größe und Aktivität.",
-      formula: "Formel",
-      formulaText: "Verwendet die Mifflin-St Jeor-Gleichung mit Aktivitätsfaktor",
+
+calories: {
+  metaTitle: "Kalorienrechner – Berechnen Sie Ihren täglichen Kalorienbedarf",
+  desc: "Verwenden Sie den Kalorienrechner auf Vastcalculators.com, um herauszufinden, wie viele Kalorien Sie täglich benötigen, um Ihr Gewicht zu halten, abzunehmen oder zuzunehmen – basierend auf Ihrem Aktivitätsniveau.",
+  heading: "Kalorienrechner",
+
+  age: "Alter (Jahre)",
+  weight: "Gewicht (kg)",
+  height: "Größe (cm)",
+  gender: "Geschlecht",
+  male: "Männlich",
+  female: "Weiblich",
+  activity: "Aktivitätsniveau",
+  sedentary: "Sitzend",
+  light: "Leicht aktiv",
+  moderate: "Mäßig aktiv",
+  active: "Aktiv",
+  veryActive: "Sehr aktiv",
+  result: "Tägliche Kalorien",
+
+  tocTitle: "Inhaltsverzeichnis",
+  tocwhy: "Warum Ihr täglicher Kalorienbedarf wichtig ist",
+  tochowitworks: "Wie der Online-Kalorienrechner funktioniert",
+  tocwhymatters: "Warum Sie den Kalorienrechner von Vastcalculators.com verwenden sollten",
+  tocactivity: "Aktivitätsfaktor-Tabelle",
+  tocunderstanding: "Verständnis der Formel",
+  tocexample: "Beispiel für eine Kalorienberechnung",
+  tocresult: "Wie man das Ergebnis verwendet",
+  tocreliable: "Warum diese Formel zuverlässig ist",
+
+  section1Title: "Über den Kalorienrechner",
+  section1Content: "Der Kalorienrechner auf Vast Calculators hilft Ihnen, abzuschätzen, wie viele Kalorien Ihr Körper täglich benötigt. Er berücksichtigt Ihr Alter, Geschlecht, Ihre Größe, Ihr Gewicht und Ihr Aktivitätsniveau, um Ihren täglichen Kalorienbedarf für das Halten, Abnehmen oder Zunehmen von Gewicht zu berechnen. Dieser Online-Kalorienrechner verwendet wissenschaftlich anerkannte Gleichungen, um genaue, personalisierte Ergebnisse zu liefern. Er ist ideal für Menschen, die ihre Ernährung effektiv steuern oder ihren Fitnessfortschritt ohne Schätzarbeit verfolgen möchten.",
+  section1ExtraText: "Sobald Sie Ihren Kalorienbedarf kennen, können Sie ihn in Kohlenhydrate, Proteine und Fette aufteilen mit unserem",
+  section1ExtraLinkText: "Makro-Rechner.",
+
+  section1Sub1Title: "Warum Ihr täglicher Kalorienbedarf wichtig ist",
+  section1Sub1Intro: "Kalorien sind die Energieeinheiten, die Ihr Körper verwendet, um alle Funktionen auszuführen – vom Atmen bis zum Trainieren. Wenn Sie mehr Kalorien zu sich nehmen, als Sie verbrennen, nehmen Sie zu; wenn Sie weniger essen, nehmen Sie ab.",
+  section1Sub1Text: "Der Kalorienrechner liefert den empfohlenen täglichen Kalorienbedarf basierend auf Ihrem Lebensstil und Ihrer Körperzusammensetzung. Dies hilft Ihnen, ausgewogene Mahlzeiten zu planen, Ihre Energie zu verbessern und ein gesünderes Körpergewicht zu halten.",
+
+  section1Sub2Title: "Wie der Online-Kalorienrechner funktioniert",
+  section1Sub2Intro: "Der Vorgang ist einfach. Sie müssen nur:",
+  section1Sub2List: [
+    "Geben Sie Ihr Alter, Geschlecht, Ihre Größe und Ihr Gewicht ein.",
+    "Wählen Sie Ihr Aktivitätsniveau (sitzend, mäßig oder aktiv).",
+    "Wählen Sie Ihr Ziel: halten, abnehmen oder zunehmen."
+  ],
+  section1Sub2Text: "Sobald Sie auf Berechnen klicken, zeigt das Tool sofort Ihren täglichen Kalorienbedarf und die Aufschlüsselung für Ihr Ziel an.",
+  section1Sub2End: "Jedes Ergebnis auf Vast Calculators basiert auf zuverlässigen mathematischen Formeln, die auf realen Gesundheitsdaten beruhen. Egal, ob Sie Fitness-Enthusiast, Athlet oder jemand sind, der seine tägliche Ernährung verbessern möchte – dieser Rechner macht Kalorienplanung einfach und effektiv.",
+
+  section1Sub3Title: "Warum den Kalorienrechner von Vastcalculators.com verwenden",
+  section1Sub3Intro: "Im Gegensatz zu vielen Online-Tools liefert dieser Rechner Ergebnisse, die Ihren tatsächlichen täglichen Bedarf widerspiegeln, nicht allgemeine Durchschnittswerte. Er hilft Ihnen dabei:",
+  section1Sub3List: [
+    "Zu verstehen, wie viele Kalorien Sie täglich verbrennen",
+    "Portionsgrößen an Ihre Gesundheitsziele anzupassen",
+    "Langfristige Konsistenz in Ihrem Ernährungsplan zu wahren"
+  ],
+  section1Sub3End: "Jedes Ergebnis ist leicht zu interpretieren und wird mit klaren Anleitungen geliefert, damit Sie intelligentere Entscheidungen über Ihre Ernährung und Energieaufnahme treffen können.",
+
+  section2Title: "Kalorienrechner-Formel",
+  section2Image: "/Calorie-Calculator.jpg",
+  section2ImageAlt: "Calorie Calculator",
+  section2Intro: "Der Kalorienrechner auf Vastcalculators verwendet die Mifflin-St-Jeor-Gleichung, eine der zuverlässigsten Formeln zur Schätzung des Grundumsatzes (BMR) – also der Kalorien, die Ihr Körper in Ruhe verbrennt. Diese Gleichung wird dann mit einem Aktivitätsfaktor multipliziert, um den Gesamtenergieverbrauch (TDEE) zu berechnen, also die gesamte Kalorienmenge, die Sie täglich benötigen.",
+  section2SubTitle: "Mifflin-St-Jeor-Gleichung",
+  section2MetricFormulaMale: "Für Männer: BMR = 10 × Gewicht (kg) + 6,25 × Größe (cm) – 5 × Alter (Jahre) + 5",
+  section2MetricFormulaFemale: "Für Frauen: BMR = 10 × Gewicht (kg) + 6,25 × Größe (cm) – 5 × Alter (Jahre) – 161",
+  section2End: "Sobald der BMR berechnet ist, wird er mit einem Aktivitätsfaktor multipliziert, um den täglichen Kalorienbedarf zu schätzen.",
+
+  section2Sub1Title: "Aktivitätsfaktor-Tabelle",
+  section2Sub1Image: "/Calories-calculator-table-image.jpg",
+  section2Sub1ImageAlt: "Activity Factor Chart",
+  section2Sub1End: "Ihr Gesamtenergieverbrauch (TDEE) = BMR × Aktivitätsfaktor",
+
+  section2Sub2Title: "Verständnis der Formel",
+  section2Sub2Intro: "Die Mifflin-St-Jeor-Gleichung wird verwendet, weil sie die genaueste Schätzung des Kalorienbedarfs für Männer und Frauen liefert. Sie hilft Ihnen zu bestimmen, wie viele Kalorien Sie konsumieren sollten, um Ihr aktuelles Gewicht zu halten oder es an Ihr Ziel anzupassen. Diese Berechnung berücksichtigt Ihre Körperzusammensetzung, Ihren Stoffwechsel und Ihren Lebensstil, um realistische Kalorienwerte zu liefern.",
+  section2Sub3Title: "Beispiel einer Kalorienberechnung",
+  section2Sub3ExampleText: "Lassen Sie uns ein Beispiel zur Verdeutlichung ansehen:",
+  section2Sub3ExampleText2: "Beispiel für einen 30-jährigen Mann:",
+  section2Sub3List: [
+    "Gewicht: 70 kg",
+    "Größe: 175 cm",
+    "Aktivitätsniveau: Mäßig aktiv"
+  ],
+  section2Sub3ExampleText3: "Schritt 1 – BMR berechnen:",
+  section2Sub3Formula1: "BMR = 10 × 70 + 6,25 × 175 – 5 × 30 + 5",
+  section2Sub3Formula2: "BMR = 700 + 1093,75 – 150 + 5 = 1648,75 kcal/Tag",
+  section2Sub3ExampleText4: "Schritt 2 – Für Aktivität anpassen:",
+  section2Sub3Formula3: "TDEE = 1648,75 × 1,55 = 2555 kcal/Tag",
+  section2Sub3End: "Diese Person benötigt also etwa 2555 Kalorien pro Tag, um ihr Gewicht zu halten. Wenn er abnehmen möchte, kann er etwa 500 Kalorien weniger essen (≈ 2050 kcal/Tag). Wenn er zunehmen möchte, kann er etwa 500 Kalorien mehr essen (≈ 3050 kcal/Tag).",
+
+  section2Sub4Title: "Wie man das Ergebnis verwendet",
+  section2Sub4Intro: "Sobald Sie Ihren täglichen Kalorienbedarf kennen, können Sie Ihre Mahlzeiten entsprechend planen. Halten Sie Ihre Kalorienaufnahme leicht unter Ihrem Erhaltungsniveau, um Gewicht zu verlieren, oder leicht darüber, um Muskelmasse aufzubauen.",
+  section2Sub5Title: "Warum diese Formel zuverlässig ist",
+  section2Sub5Intro: "Der Kalorienrechner auf Vastcalculators verwendet moderne Gleichungen, die von Ernährungswissenschaftlern und Gesundheitsexperten anerkannt sind. Er liefert genaue Daten ohne unnötige Komplexität und ermöglicht es Nutzern aller Hintergründe, ihren täglichen Kalorienbedarf leicht zu verstehen.",
+
+  faqTitle: "Häufig gestellte Fragen (FAQs)",
+  faq: [
+    {
+      q: "Was macht der Kalorienrechner auf Vast Calculators?",
+      a: "Der Kalorienrechner auf Vastcalculators hilft Ihnen, die Anzahl der Kalorien zu schätzen, die Ihr Körper täglich benötigt. Er verwendet Ihr Alter, Geschlecht, Ihre Größe, Ihr Gewicht und Ihr Aktivitätsniveau, um Ihren täglichen Kalorienbedarf für das Halten, Abnehmen oder Zunehmen von Gewicht zu berechnen. Das Ergebnis hilft Ihnen, Ihre Mahlzeiten präziser zu planen."
     },
-    waterIntake: {
-      title: "Wasserbedarf-Rechner",
-      desc: "Berechnen Sie Ihre empfohlene tägliche Wasseraufnahme",
-      weight: "Gewicht (kg)",
-      activity: "Aktivitätsniveau (0–2)",
-      result: "Tägliches Wasser (Liter)",
-      about: "Über Wasseraufnahme",
-      aboutText:
-        "Empfohlen werden 8 Gläser pro Tag, der Bedarf variiert jedoch je nach Gewicht und Aktivität.",
-      formula: "Formel",
-      formulaText: "Basis: Gewicht (kg) × 0,033 Liter + Aktivitätszuschlag",
+    {
+      q: "Wie funktioniert der Kalorienrechner?",
+      a: "Dieser Online-Kalorienrechner verwendet die Mifflin-St-Jeor-Gleichung, um Ihren Grundumsatz (BMR) zu bestimmen. Diese Zahl wird dann mit einem Aktivitätsfaktor multipliziert, um Ihren Gesamtenergieverbrauch (TDEE) zu berechnen, also die Gesamtzahl der Kalorien, die Sie täglich verbrennen. Das ergibt ein klares Bild Ihres Energiebedarfs."
     },
+    {
+      q: "Warum sollte ich meinen täglichen Kalorienbedarf kennen?",
+      a: "Wenn Sie Ihren täglichen Kalorienbedarf kennen, können Sie fundierte Entscheidungen über Ihre Ernährung treffen. Sie können Ihr Gewicht steuern, Ihre Ernährung verbessern und gleichmäßige Energielevels aufrechterhalten. Egal, ob Sie Fett verlieren, Muskeln aufbauen oder einfach fit bleiben möchten – Kalorienbewusstsein ist die Grundlage des Fortschritts."
+    },
+    {
+      q: "Kann dieser Rechner beim Ab- oder Zunehmen helfen?",
+      a: "Ja. Der Kalorienrechner zeigt Ihnen genau, wie viele Kalorien Sie essen sollten, um Ihr aktuelles Gewicht zu halten. Um abzunehmen, essen Sie etwa 500 Kalorien weniger pro Tag. Um zuzunehmen, fügen Sie etwa 500 zusätzliche Kalorien täglich hinzu. Diese schrittweise Anpassung hilft Ihnen, Ihre Ziele sicher und effektiv zu erreichen."
+    },
+    {
+      q: "Wie genau ist der Kalorienrechner?",
+      a: "Der Kalorienrechner auf Vastcalculators verwendet wissenschaftlich fundierte Formeln, denen Fitnessprofis und Ernährungsberater vertrauen. Obwohl die Ergebnisse je nach Stoffwechsel und Genetik leicht variieren können, liefert der Rechner eine sehr genaue Schätzung, die für die meisten Nutzer zuverlässig ist."
+    },
+    {
+      q: "Was sollte ich nach der Berechnung meiner Kalorien tun?",
+      a: "Nachdem Sie Ihren täglichen Kalorienbedarf ermittelt haben, planen Sie ausgewogene Mahlzeiten, die zu Ihrem Ziel passen. Verfolgen Sie Ihre Nahrungsaufnahme und überprüfen Sie Ihren Fortschritt wöchentlich."
+    }
+  ]
+},
+waterIntake: {
+  metaTitle: "Wasseraufnahme-Rechner | Tägliche Hydration von VastCalculator",
+  desc: "Berechnen Sie, wie viel Wasser Ihr Körper täglich benötigt – mit VastCalculator. Bleiben Sie hydratisiert, basierend auf Ihrem Gewicht, Ihrer Aktivität und Ihrem Lebensstil.",
+  weight: "Gewicht (kg)",
+  activity: "Aktivitätsniveau (0-2)",
+  result: "Täglicher Wasserbedarf (Liter)",
+  heading: "Wasseraufnahme-Rechner",
+
+  tocTitle: "Inhaltsverzeichnis",
+  tocwhy: "Warum täglicher Wasserbedarf wichtig ist",
+  tochowitworks: "Wie der Online-Wasseraufnahme-Rechner funktioniert",
+  tocwhyuse: "Warum Sie einen Wasserrechner verwenden sollten",
+  tocExample: "Beispiel für eine Wasserberechnung",
+  tocResultUnderstanding: "Das Ergebnis verstehen",
+
+  section1Title: "Über den Wasseraufnahme-Rechner",
+  section1Content: "Der Wasseraufnahme-Rechner hilft dabei, zu bestimmen, wie viel Wasser Ihr Körper täglich benötigt – basierend auf Gewicht, Aktivitätsniveau und Klima. Hydration ist entscheidend für Energie, Verdauung, Konzentration und die allgemeine Körperleistung. Dieser Rechner liefert eine sofortige Schätzung Ihres idealen täglichen Wasserkonsums.",
+  section1ExtraText: "Für eine genaue Hydrationsplanung stimmen Sie Ihre Aufnahme auf Ihren täglichen Energieverbrauch ab, indem Sie den ",
+  section1Link: "TDEE-Rechner",
+
+  section1Sub1Title: "Warum täglicher Wasserbedarf wichtig ist",
+  section1Sub1Intro: "Wasser unterstützt jede Funktion im Körper. Es hilft, Nährstoffe zu transportieren, die Temperatur zu regulieren und Giftstoffe auszuschwemmen. Schon leichte Dehydrierung kann Stimmung, Energie und Leistung beeinträchtigen. Mit einem Hydrationsrechner erfahren Sie genau, wie viel Wasser Ihr Körper benötigt, um optimal zu funktionieren. Ausreichende Flüssigkeitszufuhr verbessert die Hautgesundheit, unterstützt den Stoffwechsel und beugt Müdigkeit während des Tages vor.",
+
+  section1Sub2Title: "Wie der Online-Wasseraufnahme-Rechner funktioniert",
+  section1Sub2Intro: "Der Rechner verwendet Ihr Gewicht, Aktivitätsniveau und Klima, um Ihre empfohlene Flüssigkeitsaufnahme zu bestimmen.",
+  section1Sub2List: [
+    "Geben Sie Ihr Gewicht ein",
+    "Wählen Sie Ihr Aktivitätsniveau (sitzend, moderat oder aktiv)",
+    "Wählen Sie Ihr Umfeld (normales oder heißes Klima)",
+    "Klicken Sie auf Berechnen, um Ihr tägliches Wassersoll zu erhalten."
+  ],
+  section1Sub2Text: "Das Ergebnis zeigt, wie viele Liter oder Unzen Wasser Sie täglich trinken sollten, um ein gesundes Hydrationsniveau zu halten.",
+
+  section1Sub3Title: "Warum Sie einen Wasserrechner verwenden sollten",
+  section1Sub3Intro: "Viele Menschen unterschätzen ihren täglichen Flüssigkeitsbedarf. Der Trinkwasserrechner hilft Ihnen, eine konsequente Hydrationsroutine zu planen, die zu Ihrem Lebensstil passt. Ob Sie Ihre Fitness verfolgen, Ihre Konzentration verbessern oder Dehydrierung vermeiden möchten – dieses Tool bietet praktische, datenbasierte Empfehlungen. Es erinnert auch daran, dass Hydration nicht nur aus Wasser besteht, sondern auch alle Flüssigkeiten wie Tee, Milch und wasserreiches Obst einschließt.",
+
+  section2Title: "Formel des Wasseraufnahme-Rechners",
+  section2Intro: "Der Wasseraufnahme-Rechner verwendet wissenschaftliche Richtlinien, um den täglichen Wasserbedarf Ihres Körpers zu schätzen. Die Formel berücksichtigt Gewicht, Aktivitätsniveau und Klima und liefert eine genaue Berechnung Ihres täglichen Wasserbedarfs. Die allgemeine Faustregel, die die meisten Experten empfehlen, lautet:",
+  section2Formula: "Wasseraufnahme (Liter/Tag) = Körpergewicht (kg) × 0,033",
+  section2end: "Diese Formel liefert eine Schätzung für Personen mit normalem Aktivitätsniveau in gemäßigtem Klima. Sie sollte jedoch für Personen angepasst werden, die regelmäßig Sport treiben oder in heißen Regionen leben.",
+  section2AdjustmentTitle: "Anpassung an Aktivitätsniveau und Klima",
+  section2AdjustmentText: "Der Flüssigkeitsbedarf ändert sich je nach Lebensstil und Umgebung. So kann Ihre Flüssigkeitsaufnahme variieren:",
+  section2AdjustmentImage: "/water-intake-table-image.png",
+  section2AdjustmentImageAlt: "fluid intake chart",
+
+  section2Sub1Title: "Beispiel einer Wasserberechnung",
+  section2Sub1Intro: "Beispiel:",
+  section2Sub1Step1: "Schritt 1 – Formel anwenden: 70 × 0,033 = 2,31 Liter/Tag",
+  section2Sub1Step2: "Schritt 2 – 0,5 Liter für moderate Aktivität hinzufügen: 2,31 + 0,5 = 2,81 Liter/Tag",
+  section2Sub1Result: "Diese Person benötigt also etwa 2,8 Liter (≈ 95 Unzen) täglich. In heißem Klima oder bei täglicher Bewegung etwa 3,3 Liter/Tag.",
+  section2Sub1Result2: "Wenn die Person in einem heißen Klima lebt oder täglich trainiert, würde das Hinzufügen von 1 Liter den Gesamtbedarf auf 3,3 Liter/Tag erhöhen.",
+
+  section3Title: "Das Ergebnis verstehen",
+  section3Image: "/Water-Intake-Calculator.jpg",
+  section3ImageAlt: "Water Intake Calculator",
+  section3Text: "Ihr Ergebnis zeigt die minimale Flüssigkeitsmenge, die Ihr Körper täglich benötigt. Trinken Sie regelmäßig über den Tag verteilt. Halten Sie eine Flasche bereit, trinken Sie in kleinen Schlucken und achten Sie auf die Signale Ihres Körpers.",
+
+  section4Title: "Warum die Formel funktioniert",
+  section4Text: "Wasser macht etwa 60 % des menschlichen Körpers aus. Schon kleine Flüssigkeitsverluste verringern Konzentration, Energie und Stoffwechseleffizienz. Der Rechner verwendet wissenschaftlich anerkannte Empfehlungen, um ein präzises Hydrationsziel ohne komplizierte Nachverfolgung zu liefern. Vastcalculators.com bietet sofortige, genaue Hydrationsziele – einfach und praktisch.",
+
+  faqTitle: "Häufig gestellte Fragen",
+  faq: [
+    {
+      q: "Was macht der Wasseraufnahme-Rechner?",
+      a: "Der Wasseraufnahme-Rechner schätzt den täglichen Wasserbedarf Ihres Körpers, um hydratisiert zu bleiben. Er verwendet Ihr Gewicht, Aktivitätsniveau und Klima, um Ihren täglichen Wasserbedarf zu berechnen und hilft Ihnen, den Flüssigkeitshaushalt und das Energieniveau aufrechtzuerhalten."
+    },
+    {
+      q: "Wie funktioniert der Wasseraufnahme-Rechner?",
+      a: "Dieser Hydrationsrechner verwendet eine einfache Formel: Ihr Körpergewicht multipliziert mit einem festen Faktor (0,033). Das Ergebnis zeigt, wie viele Liter Sie täglich trinken sollten. Der Rechner passt diesen Wert dann je nach Aktivitätsniveau und Umgebungstemperatur an."
+    },
+    {
+      q: "Wie viel Wasser sollte ich täglich trinken?",
+      a: "Die meisten Menschen sollten zwischen 2 und 3 Litern Wasser täglich trinken. Die genaue Menge hängt jedoch von Körpergröße, Aktivität und Wetter ab. Der Rechner liefert eine personalisierte Empfehlung, die auf Ihren individuellen Flüssigkeitsbedarf abgestimmt ist, damit Ihr Hydrationsniveau den ganzen Tag über ausgeglichen bleibt."
+    },
+    {
+      q: "Erhöht Bewegung meinen Wasserbedarf?",
+      a: "Ja. Körperliche Aktivität erhöht Ihren Wasserbedarf, da Sie durch Schweiß Flüssigkeit verlieren. Wenn Sie regelmäßig Sport treiben, sollten Sie täglich 0,5 bis 1 Liter zusätzlich trinken."
+    },
+    {
+      q: "Zählen andere Getränke zu meinem täglichen Wasserbedarf?",
+      a: "Ja. Alle Flüssigkeiten – einschließlich Tee, Milch und Fruchtsäfte – tragen zu Ihrem täglichen Wasserbedarf bei. Auch wasserreiche Lebensmittel wie Gurken, Wassermelonen und Orangen helfen. Dennoch sollte reines Wasser Ihre Hauptquelle der Hydration bleiben."
+    },
+    {
+      q: "Was passiert, wenn ich nicht genug Wasser trinke?",
+      a: "Wenn Sie nicht genug Wasser trinken, kann dies zu Dehydrierung führen, was Müdigkeit, Kopfschmerzen und verminderte Konzentration verursachen kann. Chronischer Flüssigkeitsmangel kann auch die Verdauung und Hautgesundheit beeinträchtigen. Eine ausreichende Flüssigkeitszufuhr verbessert den Stoffwechsel, unterstützt die Organfunktionen und hilft, das Energieniveau über den Tag hinweg stabil zu halten."
+    }
+  ]
+},
     pace: {
       title: "Laufgeschwindigkeits-Rechner",
       desc: "Berechnen Sie Ihre Laufgeschwindigkeit",
@@ -336,36 +642,266 @@ bmi: {
       formulaText:
         "Erhaltung: 0,8g/kg, Muskelaufbau: 1,6–2,2g/kg, Abnahme: 1,2–1,6g/kg",
     },
-    tdee: {
-      title: "TDEE-Rechner",
-      desc: "Berechnen Sie den täglichen Energieverbrauch",
-      age: "Alter (Jahre)",
-      weight: "Gewicht (kg)",
-      height: "Größe (cm)",
-      activity: "Aktivitätsniveau",
-      result: "TDEE (Kalorien)",
-      about: "Über TDEE",
-      aboutText:
-        "TDEE ist die Gesamtzahl der Kalorien, die Ihr Körper täglich verbrennt.",
-      formula: "Formel",
-      formulaText: "Verwendet Mifflin-St Jeor-Gleichung mit Aktivitätsfaktor",
+tdee: {
+  metaTitle: "TDEE Rechner – Finde deinen täglichen Kalorienbedarf online",
+  desc: "Nutze unseren TDEE Rechner, um herauszufinden, wie viele Kalorien du täglich verbrennst. Plane deine Ernährung, Fitness oder Gewichtsziele mit genauen Kalorien- und Aktivitätserkenntnissen.",
+  age: "Alter (Jahre)",
+  weight: "Gewicht (kg)",
+  height: "Größe (cm)",
+  activity: "Aktivitätslevel",
+  result: "TDEE (Kalorien)",
+  heading: "TDEE Rechner",
+
+  tocTitle: "Inhaltsverzeichnis",
+  tocwhy: "Warum es wichtig ist, seinen TDEE zu kennen",
+  tochowitworks: "Wie der Online-TDEE-Rechner funktioniert",
+  tocwhyuse: "Warum einen TDEE Rechner verwenden",
+  tocExample: "Beispiel für eine TDEE Berechnung",
+  tochowtouse: "Wie du deinen TDEE verwendest",
+
+  section1Title: "Über den TDEE Rechner",
+  section1Content: "Der TDEE Rechner schätzt die Anzahl der Kalorien, die dein Körper täglich durch alle Aktivitäten verbrennt, vom Schlafen bis zum Training. TDEE steht für Total Daily Energy Expenditure, also den gesamten Energieverbrauch in 24 Stunden.\n\nDieser Online-TDEE-Rechner kombiniert deinen Grundumsatz (BMR) mit dem Energieverbrauch basierend auf deinem Aktivitätslevel, um deine Erhaltungskalorien zu zeigen, also die genaue Menge an Kalorien, die du benötigst, um dein aktuelles Gewicht zu halten.",
+
+  section1Sub1Title: "Warum es wichtig ist, seinen TDEE zu kennen",
+  section1Sub1Intro: "Dein TDEE ist die Grundlage einer intelligenten Ernährungsplanung. Er hilft dir:",
+  section1Sub1List: [
+    "Deinen täglichen Kalorienbedarf zu bestimmen",
+    "Ein Kaloriendefizit für Fettabbau zu schaffen",
+    "Ein Kalorienüberschuss für Muskelaufbau zu erzielen",
+    "Energie- und Leistungslevel zu erhalten"
+  ],
+  section1Sub1Text: "Indem du deine Kalorienverbrennung abschätzt, kannst du deine Ernährung anpassen, um deine Ziele zu erreichen und unnötiges Rätselraten zu vermeiden.",
+
+  section1Sub2Title: "Wie der Online-TDEE Rechner funktioniert",
+  section1Sub2Intro: "Der Rechner schätzt zuerst deinen Grundumsatz (BMR – Basal Metabolic Rate), die Kalorienanzahl, die dein Körper in Ruhe verbrennt, mithilfe der Mifflin-St.-Jeor-Formel. Dann multipliziert er diesen Wert mit einem Aktivitätsfaktor, um Bewegung und Lebensstil zu berücksichtigen. Du musst Folgendes eingeben:",
+  section1Sub2List: [
+    "Alter, Geschlecht, Größe und Gewicht",
+    "Aktivitätslevel von sitzend bis sehr aktiv",
+    "Ziel: Gewicht halten, verlieren oder zunehmen"
+  ],
+  section1Sub2Text: "In Sekunden zeigt der TDEE Rechner, wie viele Kalorien dein Körper täglich benötigt, um dein aktuelles Gewicht zu halten oder dein Ziel zu erreichen.",
+
+  section1Sub3Title: "Warum einen TDEE Rechner verwenden",
+  section1Sub3Intro: "Dieser Energieverbrauchsrechner hilft dir, präzise Ernährungsentscheidungen zu treffen. Anstatt generische Kalorienwerte zu verwenden, weißt du genau, wie viel dein Körper täglich verbrennt.",
+  section1Sub3Text: "Ideal für Sportler, Fitnessbegeisterte oder alle, die ihre Körperzusammensetzung verbessern möchten. Der TDEE Rechner bietet einen wissenschaftlich fundierten Ansatz zur Optimierung von Ernährung, Training und Gewichtserhalt.",
+
+  section2Title: "TDEE Rechner Formel",
+  section2Intro: "Der TDEE Rechner schätzt deinen täglichen Gesamtenergieverbrauch (TDEE) durch die Kombination von Grundumsatz (BMR) und Aktivitätsfaktor. Die Basisgleichung ist die Mifflin-St.-Jeor-Formel, die den Grundumsatz berechnet, also die Kalorien, die dein Körper in Ruhe verbrennt.",
+  section2Step1: "Schritt 1: Berechne den Grundumsatz (BMR)",
+  section2Step1MaleFormula: "Für Männer: BMR = 10 × Gewicht (kg) + 6,25 × Größe (cm) – 5 × Alter (Jahre) + 5",
+  section2Step1FemaleFormula: "Für Frauen: BMR = 10 × Gewicht (kg) + 6,25 × Größe (cm) – 5 × Alter (Jahre) – 161 Diese Zahl zeigt deinen Stoffwechsel, also wie viele Kalorien dein Körper in Ruhe benötigt.",
+  section2Step2: "Schritt 2: Aktivitätsfaktor anwenden",
+  section2Step2Text: "Anschließend multipliziert der Rechner deinen BMR mit einem Aktivitätsfaktor, um den Energieverbrauch während des Tages zu berücksichtigen.",
+  ActivityText: "Aktivitätslevel und Multiplikatoren",
+  section2List: [
+    "Sitzend (wenig bis keine Bewegung): Multiplikator 1,2",
+    "Leicht aktiv (leichte Bewegung 1–3 Tage/Woche): Multiplikator 1,375",
+    "Mäßig aktiv (mäßige Bewegung 3–5 Tage/Woche): Multiplikator 1,55",
+    "Sehr aktiv (intensives Training 6–7 Tage/Woche): Multiplikator 1,725",
+    "Extrem aktiv (intensives Training oder körperlich anstrengender Job): Multiplikator 1,9"
+  ],
+  resulttext: "Das Ergebnis zeigt deinen Total Daily Energy Expenditure (TDEE), also die Erhaltungskalorien.",
+  section2Step3: "Schritt 3: Zusammenfassung der Formel",
+  section2Step3Formula: "TDEE = BMR × Aktivitätsfaktor",
+  section2Step3Text: "Diese Gleichung schätzt deinen täglichen Kalorienverbrauch durch alle physischen und nicht-physischen Aktivitäten.",
+
+  section2Sub1Title: "Beispiel für eine TDEE Berechnung",
+  section2Sub1Image: "/TDEE-Calculator.jpg",
+  section2Sub1ImageAlt: "Online TDEE Calculator",
+  section2Sub1Example: "Schauen wir uns ein Beispiel zur besseren Veranschaulichung an:",
+  section2Sub1ExampleMale: "Beispiel (Männlich):",
+  section2Sub1List: [
+    "Alter: 30",
+    "Größe: 175 cm",
+    "Gewicht: 70 kg",
+    "Aktivitätslevel: Mäßig (1,55)"
+  ],
+  section2Step1Intro: "Schritt 1:",
+  section2Step1Formula: "BMR = (10 × 70) + (6,25 × 175) – (5 × 30) + 5",
+  section2Step1Formula2: "BMR = 700 + 1093,75 – 150 + 5 = 1648,75 kcal/Tag",
+  section2Step2Intro: "Schritt 2:",
+  section2Step2Formula: "TDEE = 1648,75 × 1,55 = 2555 kcal/Tag",
+  section2Step2End: "Diese Person verbrennt also etwa 2555 Kalorien pro Tag.",
+
+  section2Sub2Title: "Wie du deinen TDEE verwendest",
+  section2Sub2Intro: "Sobald du deinen TDEE kennst, kannst du deine Kalorienzufuhr je nach Ziel anpassen:",
+  section2Sub2List: [
+    "Unterhalb des TDEE essen, um Gewicht zu verlieren",
+    "Gleich dem TDEE essen, um Gewicht zu halten",
+    "Über dem TDEE essen, um Gewicht zuzunehmen"
+  ],
+  section2Sub2Extra: "Dies schafft ein klares Kaloriengleichgewicht, das deine Fitness- und Ernährungsziele unterstützt, ohne zu raten. Nutze deinen TDEE, um das ideale Makronährstoffverhältnis im",
+  section2Sub2ExtraLink: "Makro-Rechner zu berechnen.",
+
+  section2Sub3Title: "Warum diese Formel funktioniert",
+  section2Sub3Intro: "Die Mifflin-St.-Jeor-Formel ist eine der genauesten Methoden zur Schätzung des Stoffwechsels und Energieverbrauchs. Sie passt sich leicht an verschiedene Körpertypen, Aktivitätslevels und Ziele an. Der Online-TDEE Rechner liefert personalisierte Ergebnisse für Anfänger bis Athleten und unterstützt eine präzise Planung von Ernährung und Training. Der Rechner auf Vastcalculators.com bietet schnelle, zuverlässige und wissenschaftlich fundierte Berechnungen für effektives Energiemanagement und bessere Fitnessergebnisse.",
+
+  faqTitle: "Häufig gestellte Fragen",
+  faq: [
+    {
+      q: "Was bedeutet TDEE?",
+      a: "TDEE steht für Total Daily Energy Expenditure. Es zeigt, wie viele Kalorien dein Körper an einem Tag verbrennt, einschließlich aller Aktivitäten vom Ausruhen bis zum Training."
     },
-    macros: {
-      title: "Makronährstoff-Rechner",
-      desc: "Berechnen Sie Ihre Makronährstoffverteilung",
-      calories: "Tägliche Kalorien",
-      diet: "Ernährungsart",
-      balanced: "Ausgewogen",
-      lowCarb: "Kohlenhydratarm",
-      highProtein: "Proteinreich",
-      result: "Makronährstoffe",
-      about: "Über Makros",
-      aboutText:
-        "Makronährstoffe sind Proteine, Kohlenhydrate und Fette, die Ihre Ernährung bilden.",
-      formula: "Formel",
-      formulaText:
-        "Ausgewogen: 40C/30P/30F, Low Carb: 30C/35P/35F, High Protein: 35C/40P/25F",
+    {
+      q: "Wie wird TDEE berechnet?",
+      a: "Dein TDEE wird berechnet, indem dein Grundumsatz (BMR) mit deinem Aktivitätsmultiplikator multipliziert wird. So erhältst du eine tägliche Kalorienzahl, die deinem Energieverbrauch entspricht."
     },
+    {
+      q: "Warum sollte ich meinen TDEE kennen?",
+      a: "Wenn du deinen TDEE kennst, kannst du deine Ernährung und Fitnessziele planen. Du weißt genau, wie viele Kalorien du für Gewichtsverlust, -zunahme oder -erhalt benötigst."
+    },
+    {
+      q: "Was ist der Unterschied zwischen BMR und TDEE?",
+      a: "Der BMR zeigt die Kalorien, die dein Körper in Ruhe benötigt, während der TDEE die durch Bewegung, Training und Alltag verbrannten Kalorien berücksichtigt."
+    },
+    {
+      q: "Wie kann ich meinen TDEE für bessere Ergebnisse nutzen?",
+      a: "Sobald du deinen TDEE kennst, kannst du deine Kalorienzufuhr anpassen. Für Fettabbau nimmst du weniger Kalorien als dein TDEE, für Muskelaufbau mehr Kalorien als dein TDEE."
+    },
+    {
+      q: "Wie oft sollte ich meinen TDEE neu berechnen?",
+      a: "Berechne deinen TDEE alle 4–6 Wochen oder nach größeren Veränderungen in Gewicht, Aktivität oder Fitnessziel neu, um eine genaue Kalorienplanung sicherzustellen."
+    }
+  ]
+},
+macros: {
+  metaTitle: "Makro-Rechner | Berechne dein ideales Makronährstoffverhältnis",
+  desc: "Nutze unseren Makro-Rechner, um das perfekte Gleichgewicht von Protein, Kohlenhydraten und Fetten zu finden. Plane deine Ernährung mit genauen Makro-Verhältnissen für deine Fitnessziele.",
+  heading: "Makro-Rechner",
+  calories: "Tägliche Kalorien",
+  diet: "Diät-Typ",
+  balanced: "Ausgewogen",
+  lowCarb: "Low Carb",
+  highProtein: "High Protein",
+  result: "Makronährstoffe",
+
+  tocTitle: "Inhaltsverzeichnis",
+  tocwhy: "Warum Makros verfolgen wichtig ist",
+  tochowitworks: "Wie der Online-Makro-Rechner funktioniert",
+  tocwhyuse: "Warum einen Makro-Rechner verwenden",
+  tocMacro: "Beispiel für eine Makro-Berechnung",
+  tocresult: "Wie man das Ergebnis verwendet",
+  tocformula: "Warum diese Formel funktioniert",
+
+  section1Title: "Über den Makro-Rechner",
+  section1Content: "Der Makro-Rechner hilft dir, das richtige Gleichgewicht von Makronährstoffen, Protein, Kohlenhydraten und Fetten zu finden, die dein Körper täglich benötigt. Er stellt sicher, dass deine Ernährung deine Ziele unterstützt, egal ob du Fett verlieren, Muskeln aufbauen oder dein Gewicht halten möchtest. Dieser Online-Makro-Rechner verwendet Alter, Geschlecht, Größe, Gewicht und Aktivitätslevel, um deine tägliche Makroaufnahme zu schätzen. Anschließend wird deine Kalorienaufnahme in eine klare Makroverteilung aufgeteilt, die genau zeigt, wie viel Protein, Fett und Kohlenhydrate du konsumieren solltest.",
+
+  section1Sub1Title: "Warum Makros verfolgen wichtig ist",
+  section1Sub1Intro: "Makros bilden die Grundlage jedes Ernährungsplans. Jeder Makronährstoff erfüllt eine spezielle Funktion:",
+  section1Sub1List: [
+    "Protein baut Muskeln auf und repariert sie.",
+    "Kohlenhydrate liefern Energie.",
+    "Fette unterstützen Hormone und Zellfunktionen.",
+  ],
+  section1Sub1Text: "Ein ausgewogenes Verhältnis dieser Nährstoffe verbessert die Leistungsfähigkeit, steigert das Energielevel und fördert die allgemeine Gesundheit. Die Überwachung der Makroverhältnisse hilft dir zu verstehen, welche Nahrung deinem Körper am besten dient und hält deine Ernährung im Einklang mit deinen Zielen.",
+
+  section1Sub2Title: "Wie der Online-Kalorienrechner funktioniert",
+  section1Sub2Intro: "Der Rechner ermittelt zunächst deinen täglichen Kalorienbedarf und teilt diese Kalorien dann in Makronährstoffkategorien basierend auf deinem gewählten Ziel auf.",
+  section1Sub2List: [
+    "Alter, Geschlecht, Größe und Gewicht",
+    "Aktivitätslevel (sesshaft bis aktiv)",
+    "Ziel (Fettabbau, Erhaltung oder Muskelaufbau)",
+  ],
+  section1Sub2Text: "Er liefert sofort eine detaillierte Makronährstoffaufteilung, die zeigt:",
+  section1Sub2List1: [
+    "Tägliche Gramm Protein, Kohlenhydrate und Fett",
+    "Deren prozentualer Anteil an deiner Ernährung",
+    "Kalorienbeitrag jedes Nährstoffs",
+  ],
+
+  section1Sub3Title: "Warum einen Makro-Rechner verwenden",
+  section1Sub3Intro: "Im Gegensatz zu reinen Kalorienrechnern konzentriert sich dieses Tool auf die Qualität deiner Ernährung, nicht nur auf die Menge. Es sorgt für ein korrektes Verhältnis von Kalorien und Makros, unterstützt Fettabbau, Muskelaufbau oder erhöhte Energie ohne restriktive Diäten. Dieses Ernährungstool hilft dir, nachhaltige Gewohnheiten aufzubauen, indem es die richtige Nährstoffkombination für deine spezifischen Ziele zeigt. Ideal für Sportler, Fitness-Enthusiasten oder jeden, der intelligenter essen und besser performen möchte.",
+
+  section2Title: "Makro-Rechner-Formel",
+  section2Intro: "Der Makro-Rechner berechnet deine tägliche Makroaufnahme basierend auf deinem Kalorienbedarf und deinem Ernährungsziel. Er verwendet Kalorienwerte für jeden Makronährstoff und wendet zielbasierte Prozentsätze an, um eine personalisierte Makroverteilung zu erstellen.",
+  section2Intro2: "Die allgemeinen Kalorienwerte für jeden Makronährstoff sind:",
+  section2List: [
+    "Protein: 4 Kalorien pro Gramm",
+    "Kohlenhydrate: 4 Kalorien pro Gramm",
+    "Fette: 9 Kalorien pro Gramm",
+  ],
+  section2ExtraText: "Du kannst zuerst deinen gesamten Kalorienbedarf mit unserem",
+  section2ExtraLink: "Kalorienrechner",
+  section2StepsTitle: "Schritt 1: Gesamten täglichen Kalorienbedarf ermitteln",
+  section2StepsText: "Dein Gesamt-Kalorienziel ist die Grundlage für dein Makroverhältnis. Dies kann aus einem Kalorienrechner oder einem bekannten Ziel stammen wie:",
+  section2StepList1: [
+    "Fettabbau: Leichtes Kaloriendefizit",
+    "Erhaltung: Ausgeglichene Aufnahme",
+    "Muskelaufbau: Kalorienüberschuss",
+  ],
+  section2StepTextend: "Sobald deine täglichen Kalorien bekannt sind, teilt der Rechner sie in Protein, Kohlenhydrate und Fette auf, basierend auf voreingestellten Prozentsätzen für dein Fitnessziel.",
+  section2StepsTitle2: "Schritt 2: Makroverteilung nach Ziel festlegen",
+  section2StepsTitle3: "Makronährstoff-Aufteilung nach Ziel",
+  section2StepList2: [
+    "Bei Fettabbau sollte die tägliche Aufnahme idealerweise 40 % Protein, 30 % Kohlenhydrate und 30 % Fett betragen.",
+    "Für Erhaltung wird ein Verhältnis von 30 % Protein, 45 % Kohlenhydrate und 25 % Fett empfohlen.",
+    "Bei Muskelaufbau solltest du etwa 25 % Protein, 55 % Kohlenhydrate und 20 % Fett anstreben, um Muskelregeneration und -wachstum zu unterstützen.",
+  ],
+  section2StepTextend2: "Diese Bereiche gewährleisten ein korrektes Verhältnis von Kalorien und Makros und unterstützen unterschiedliche Ziele.",
+  section2StepsTitle4: "Schritt 3: Formel für jeden Makronährstoff anwenden",
+  section2StepsExample: "Die Formel für jeden Makronährstoff lautet:",
+
+  section2Macroformula: "Makronährstoff (g) = (Gesamtkalorien × Makro %) ÷ Kalorienwert pro Gramm",
+  section2StepsExample2: "Zum Beispiel für Protein:",
+  section2Proteinformula: "Protein (g) = (Kalorien × Protein %) ÷ 4",
+  section2StepTextend3: "Wiederhole dies für Kohlenhydrate und Fette unter Verwendung ihrer jeweiligen Kalorienwerte (4 für Kohlenhydrate, 9 für Fette).",
+
+  section2Sub1Title: "Beispiel einer Makro-Berechnung",
+  section2Sub1Image: "/Macro-Calculator.jpg",
+  section2Sub1ImageAlt: "Online Macro Calculator",
+  section2Sub1Example: "Beispiel:",
+  section2Sub1ExampleText: "Eine Person möchte ihr Gewicht bei 2.000 Kalorien/Tag halten. Aus der Makro-Tabelle für Erhaltung:",
+  section2Sub1List: [
+    "Protein = 30%",
+    "Kohlenhydrate = 45%",
+    "Fette = 25%",
+  ],
+  section2Sub1Calculate: "Jetzt berechnen:",
+  section2Sub1Formula1: "Protein: (2000 × 0,30) ÷ 4 = 150 g",
+  section2Sub1Formula2: "Kohlenhydrate: (2000 × 0,45) ÷ 4 = 225 g",
+  section2Sub1Formula3: "Fette: (2000 × 0,25) ÷ 9 = 55 g",
+  section2Sub1DailyText: "Die tägliche Makroaufnahme dieser Person ist also:",
+  section2Sub1DailyList: [
+    "Protein: 150 g",
+    "Kohlenhydrate: 225 g",
+    "Fette: 55 g",
+  ],
+  section2Sub1DailyEnd: "Diese Aufteilung gewährleistet ein ausgewogenes Energieverhältnis und unterstützt eine konstante Fortschrittskontrolle für Körperziele.",
+
+  section2Sub2Title: "Wie man die Ergebnisse verwendet",
+  section2Sub2Intro: "Sobald du deine Makros kennst, nutze sie zur Planung deiner Mahlzeiten und zum Makro-Tracking. Teile die Gesamtgramm auf 3–5 Mahlzeiten auf, um gleichmäßige Energie zu erhalten und die Erholung zu unterstützen. Das Verfolgen der Makros hilft, die Ernährung fein abzustimmen, sodass du genügend Energie für Workouts hast und gleichzeitig auf dein Ziel hinarbeitest.",
+
+  section2Sub3Title: "Warum diese Formel funktioniert",
+  section2Sub3Intro: "Diese Methode ist wissenschaftlich fundiert und flexibel. Sie passt sich Kalorienzielen, Trainingsintensität und Körperzusammensetzung an. Im Gegensatz zu restriktiven Diäten liegt der Fokus auf dem Gleichgewicht von Kalorien und Makronährstoffen, was Vielfalt und Nachhaltigkeit ermöglicht. Der Online-Makro-Rechner vereinfacht komplexe Ernährungsberechnungen zu schnellen und genauen Ergebnissen. Er ist ein essentielles Ernährungstool für alle, die ihre Ernährung optimieren, Leistung verbessern oder einen gesunden Lebensstil beibehalten möchten. Der Rechner auf Vastcalculators.com liefert diese Einblicke sofort, sodass das Makro-Tracking und ausgewogenes Essen für jeden einfach ist.",
+
+  faqTitle: "Häufig gestellte Fragen",
+  faq: [
+    {
+      q: "Was macht der Makro-Rechner?",
+      a: "Der Makro-Rechner hilft dir, die richtige Menge an Protein, Kohlenhydraten und Fetten zu bestimmen, die du täglich basierend auf deinem Kalorienziel und Fitnessziel essen solltest."
+    },
+    {
+      q: "Wie berechne ich meine Makros?",
+      a: "Beginne mit deinem täglichen Kalorienziel, das du mit dem TDEE-Rechner ermitteln kannst. Teile diese Kalorien dann mit Standardverhältnissen auf, z. B. 40 % Kohlenhydrate, 30 % Protein und 30 % Fett."
+    },
+    {
+      q: "Warum sind Makros notwendig?",
+      a: "Makros bestimmen, wie dein Körper Energie nutzt. Das richtige Gleichgewicht hilft beim Muskelaufbau, Fettabbau und Leistungssteigerung, während die Ernährung stabil bleibt."
+    },
+    {
+      q: "Kann ich den Makro-Rechner für Gewichtsverlust nutzen?",
+      a: "Ja. Wähle ein Kaloriendefizit (weniger essen als dein TDEE) und der Rechner gibt dir ein niedrigeres Makro-Ziel, das den Fettabbau unterstützt, ohne Muskelverlust."
+    },
+    {
+      q: "Wie kann ich den Makro-Rechner mit anderen Tools nutzen?",
+      a: "Nutze dein Kalorienziel aus dem Kalorien- oder TDEE-Rechner, um deine Makros zu planen. Plane deine Makros entsprechend deinem Kalorienziel mit unserem Kalorienrechner für die genauesten Ergebnisse."
+    },
+    {
+      q: "Wie oft sollte ich meinen Makro-Plan ändern?",
+      a: "Aktualisiere deine Makros alle 4–6 Wochen oder wenn sich Gewicht, Trainingsroutine oder Ziel ändern. Regelmäßiges Tracking hilft, die Ergebnisse im Blick zu behalten."
+    }
+  ]
+},
     bfp: {
       title: "Körperfett-Prozentsatz",
       desc: "Schätzen Sie Körperfett anhand von Messungen",

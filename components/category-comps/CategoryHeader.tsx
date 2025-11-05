@@ -8,7 +8,7 @@ interface CategoryHeaderProps {
 
 export function CategoryHeader({ locale, title, description }: CategoryHeaderProps) {
   return (
-    <div className="mb-8 text-center sm:text-left">
+    <div className="mb-8 ">
       <h1 className="text-4xl sm:text-5xl font-bold text-zinc-900 mb-3">
         {title}
       </h1>

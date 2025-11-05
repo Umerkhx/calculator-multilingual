@@ -60,7 +60,7 @@ export function CalculatorSearch({ locale }: CalculatorSearchProps) {
     category,
     calculators: category.calculators.filter(
       (calc) =>
-        getTranslation(locale, calc.titleKey).toLowerCase().includes(searchQuery.toLowerCase()) ||
+        getTranslation(locale, calc.heading).toLowerCase().includes(searchQuery.toLowerCase()) ||
         getTranslation(locale, calc.descriptionKey).toLowerCase().includes(searchQuery.toLowerCase())
     ),
   }));
@@ -220,7 +220,7 @@ export function CalculatorSearch({ locale }: CalculatorSearchProps) {
                                   >
                                     <div>
                                       <p className="font-medium">
-                                        {getTranslation(locale, calc.titleKey)}
+                                        {getTranslation(locale, calc.heading)}
                                       </p>
                                       <p className="text-sm text-muted-foreground">
                                         {getTranslation(locale, calc.descriptionKey)}
@@ -293,7 +293,7 @@ export function CalculatorSearch({ locale }: CalculatorSearchProps) {
                                 >
                                   <div>
                                     <p className="font-medium">
-                                      {getTranslation(locale, calc.titleKey)}
+                                      {getTranslation(locale, calc.heading)}
                                     </p>
                                     <p className="text-sm text-muted-foreground">
                                       {getTranslation(locale, calc.descriptionKey)}

@@ -11,7 +11,7 @@ interface PageProps {
   params: { locale: Locale };
 }
 
-const baseUrl = "https://calyx-mme.vercel.app";
+const baseUrl = "https://vastcalculators.com";
 
 export async function generateStaticParams() {
   return locales

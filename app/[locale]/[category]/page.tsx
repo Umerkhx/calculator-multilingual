@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: PageProps) {
   const title = getTranslation(validLocale, categoryData.metaTitle);
   const description = getTranslation(validLocale, categoryData.metaDescription);
 
-  const baseUrl = "https://vastcalculators.com";
+  const baseUrl = "https://calyx-mme.vercel.app";
 
   const canonical =
     validLocale === defaultLocale

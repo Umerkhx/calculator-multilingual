@@ -1,5 +1,5 @@
 export async function GET() {
-  const baseUrl = 'https://vastcalculators.com';
+  const baseUrl = 'https://calyx-mme.vercel.app';
   const lastmod = new Date().toISOString().split('T')[0];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

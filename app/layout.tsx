@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vastcalculators.com"),
+  metadataBase: new URL("https://calyx-mme.vercel.app"),
   title: {
     default: "Vast Calculators",
     template: "%s ",

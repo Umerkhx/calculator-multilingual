@@ -7,14 +7,14 @@ interface HeroProps {
 
 export function Hero({ locale }: HeroProps) {
   const t = translations[locale]
-  const symbols = ["+", "-", "×", "÷", "="]
-  const repeatedSymbols = Array(600).fill(symbols).flat()
+  // const symbols = ["+", "-", "×", "÷", "="]
+  // const repeatedSymbols = Array(600).fill(symbols).flat()
 
   const ctaHref = locale === "en" ? "/" : `/${locale}`
 
   return (
     <section className="relative overflow-hidden flex items-center justify-center py-30 bg-zinc-50">
-      <div
+      {/* <div
         className="absolute inset-0 grid w-full h-full text-[24px] md:text-[32px] text-[#2a262767] font-mono leading-none"
         style={{
           gridTemplateColumns: "repeat(auto-fill, minmax(40px, 1fr))",
@@ -27,7 +27,7 @@ export function Hero({ locale }: HeroProps) {
             {symbol}
           </span>
         ))}
-      </div>
+      </div> */}
       <div className="relative z-10 container mx-auto max-w-6xl px-4 text-center">
         <h1 className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl text-zinc-800">
           {t.hero.title}

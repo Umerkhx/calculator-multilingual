@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps) {
   const { locale } = params;
-  const baseUrl = "https://vastcalculators.com";
+  const baseUrl = "https://calyx-mme.vercel.app";
 
   const metaData = {
   en: {

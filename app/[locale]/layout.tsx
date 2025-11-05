@@ -25,15 +25,14 @@ export async function generateMetadata({
   await params
 
   return {
-    title: "Calyx - Professional Services",
-    description: "Discover our professional services tailored for your business needs",
+   
     robots: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
       nocache: false,
       googleBot: {
-        index: false,
-        follow: false,
+        index: true,
+        follow: true,
       },
     },
   }

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/admin",
     },
-    sitemap: "https://vastcalculators.com/sitemap.xml",
+    sitemap: "https://calyx-mme.vercel.app/sitemap.xml",
   }
 }

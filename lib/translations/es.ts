@@ -137,6 +137,7 @@ export const esTranslations = {
 
 
   health: {
+<<<<<<< HEAD
     bodyFat: {
       metaTitle: "Calculadora de Grasa Corporal | Estima tu Porcentaje de Grasa Corporal en Línea",
       desc: "Usa nuestra Calculadora de Grasa Corporal para conocer tu porcentaje de grasa corporal. Controla la pérdida de grasa, el aumento muscular y el progreso físico con fórmulas de medición precisas.",
@@ -148,6 +149,23 @@ export const esTranslations = {
       male: "Hombre",
       female: "Mujer",
       result: "Porcentaje de Grasa Corporal",
+=======
+bodyFat: {
+  metaTitle: "Calculadora de Grasa Corporal | Estima tu Porcentaje de Grasa Corporal en Línea",
+  desc: "Usa nuestra Calculadora de Grasa Corporal para conocer tu porcentaje de grasa corporal. Controla la pérdida de grasa, el aumento muscular y el progreso físico con fórmulas de medición precisas.",
+waist: "Cintura",
+weight: "Peso",
+neck: "Cuello",
+unit: "Seleccionar unidad",
+height: "Altura",
+hip: "Cadera",
+gender: "Género",
+male: "Hombre",
+female: "Mujer",
+result: "Porcentaje de grasa corporal",
+resultExplain: "Este número representa su porcentaje estimado de grasa corporal, es decir, la proporción de su peso total que está compuesta por grasa. Ayuda a evaluar la salud general y el nivel de condición física con mayor precisión que el IMC solo. El porcentaje de grasa corporal se calcula utilizando medidas como cintura, cuello, altura y, a veces, el género, ya que la distribución de grasa difiere entre hombres y mujeres. Por ejemplo, si un hombre obtiene un resultado del 18 %, significa que el 18 % de su peso corporal es grasa. Interpretación: Para los hombres, 6–13 % se considera atlético, 14–17 % en forma, 18–24 % promedio y 25 % o más con sobrepeso. Para las mujeres, 14–20 % atlético, 21–24 % en forma, 25–31 % promedio y 32 % o más con sobrepeso. Mantener un porcentaje saludable de grasa corporal mejora la energía, el metabolismo y el bienestar general. Para una orientación personalizada, consulte a un profesional de la salud o del fitness.",
+
+>>>>>>> bd168e476cb4ec64ba35a5bc0dcf86e4955caa17
 
       tocTitle: "Tabla de Contenidos",
       tocAbout: "¿Por qué usar una Calculadora de Grasa Corporal?",
@@ -594,6 +612,374 @@ export const esTranslations = {
         }
       ]
     },
+<<<<<<< HEAD
+=======
+    {
+      q: "¿Con qué frecuencia debo usar la calculadora?",
+      a: "Puedes usarla tan seguido como desees para hacer seguimiento a tu progreso. Muchas personas la utilizan mensualmente o después de alcanzar metas específicas de entrenamiento o pérdida de peso."
+    },
+    {
+      q: "¿Cuál es un porcentaje de grasa corporal saludable?",
+      a: "Los rangos saludables varían según edad y género. En general, para hombres está entre 10% y 20%, y para mujeres entre 20% y 30%. Sin embargo, consulta con un profesional de salud o fitness para determinar el rango más adecuado para ti."
+    }
+  ]
+},
+
+
+bmi: {
+  metaTitle: "Calculadora de IMC Gratis: Calcula Tu Índice de Masa Corporal al Instante en Línea",
+  desc: "Calcula tu Índice de Masa Corporal (IMC) para evaluar posibles riesgos de salud como la diabetes y enfermedades cardíacas. Supervisa tus objetivos de fitness con nuestra calculadora gratuita en línea.",
+  heading: "Calculadora de IMC",
+  gender: "Género",
+  male: "Hombre",
+  female: "Mujer",
+  other: "Otro",
+  weight: "Peso",
+  kg: "Kg",
+  lb: "Libras",
+  cm: "Centímetros",
+  inch: "Pulgadas",
+  ft_in: "Pies y pulgadas",
+  weightUnit: "Unidad de peso",
+  height: "Altura",
+  heightUnit: "Unidad de altura",
+  heightFeet: "Altura (pies)",
+  heightInches: "Altura (pulgadas)",
+  result: "IMC",
+  resultExplain: "Este número es su Índice de Masa Corporal (IMC), una medida de la grasa corporal basada en su altura y peso. Se calcula con la fórmula: IMC = peso (kg) ÷ (altura (m))². Ejemplo: 70 ÷ (1.75 × 1.75) = 22.86. Interpretación: Menos de 18.5 = Bajo peso, 18.5–24.9 = Normal, 25–29.9 = Sobrepeso, 30 o más = Obesidad. Un rango saludable es 18.5–24.9. Para asesoramiento personalizado, consulte a un profesional de la salud.",
+
+  tocTitle: "Tabla de Contenidos",
+  tocwhy: "Por Qué Deberías Usar una Calculadora de IMC",
+  tochowitworks: "Cómo Funciona la Calculadora de IMC en Línea",
+  tocwhybmi: "Por Qué el IMC es Importante",
+  tocUnderstanding: "Entendiendo la Fórmula del IMC",
+  tocexample: "Ejemplo de Cálculo de IMC",
+  toccategories: "Categorías e Interpretación del IMC",
+
+  section1Title: "Acerca de la Calculadora de IMC",
+  section1Content: "La Calculadora de IMC en Vast Calculators es una herramienta rápida y confiable que ayuda a los usuarios a calcular su Índice de Masa Corporal (IMC) en segundos. El IMC es una medida estándar que indica si tu peso está dentro de un rango saludable según tu altura. Esta calculadora de IMC en línea sigue fórmulas reconocidas globalmente utilizadas por profesionales médicos y organizaciones de salud.",
+  section1ExtraText: "Para comprender mejor la composición de tu cuerpo más allá del IMC, consulta tus resultados con nuestra",
+  section1ExtraLinkText: "Calculadora de Grasa Corporal",
+
+  section1Sub1Title: "Por Qué Deberías Usar una Calculadora de IMC",
+  section1Sub1Intro: "Tu puntuación de IMC te ayuda a entender tu categoría actual de salud: bajo peso, saludable, sobrepeso u obesidad. Es una de las formas más simples de monitorear el equilibrio general entre tu peso y tu altura.",
+  section1Sub1Text: "Esta calculadora de Índice de Masa Corporal es especialmente útil para personas que:",
+  section1Sub1List: [
+    "Están siguiendo su progreso físico",
+    "Están comenzando una nueva dieta o rutina de ejercicios",
+    "Monitorean posibles riesgos de salud relacionados con el peso"
+  ],
+  section1Sub1End: "El IMC ofrece una visión clara de tu estado de salud actual, ayudándote a tomar decisiones informadas hacia un estilo de vida más saludable.",
+
+  section1Sub2Title: "Cómo Funciona la Calculadora de IMC en Línea",
+  section1Sub2Intro: "Usar esta calculadora es fácil y sencillo. Solo tienes que ingresar:",
+  section1Sub2List: [
+    "Tu altura (en centímetros o pulgadas)",
+    "Tu peso (en kilogramos o libras)"
+  ],
+  section1Sub2Text: "Una vez que hagas clic en \"Calcular\", el resultado aparecerá al instante, mostrando tu valor de IMC y el estado de peso correspondiente.",
+  section1Sub2End: "A diferencia de la mayoría de las herramientas en línea, Vast Calculators ofrece una interfaz limpia, resultados instantáneos y cálculos precisos tanto en el sistema métrico como en el imperial.",
+
+  section1Sub3Title: "Por Qué el IMC es Importante",
+  section1Sub3Intro: "Tu IMC puede indicar posibles riesgos de salud. Un IMC alto puede señalar problemas como enfermedades cardíacas, diabetes o estrés en las articulaciones, mientras que un IMC muy bajo podría reflejar deficiencias nutricionales. Monitorear este número regularmente te ayuda a mantenerte dentro de un rango saludable. Para una medición más detallada de la composición corporal, consulta nuestra Calculadora de Grasa Corporal.",
+  section1Sub3End: "Vast Calculators garantiza que cada herramienta esté construida sobre algoritmos precisos y estándares actualizados, proporcionando resultados exactos y una mejor comprensión para los usuarios enfocados en la salud, el fitness o el bienestar.",
+
+  section2Title: "Fórmula de la Calculadora de IMC",
+  section2Intro: "La Calculadora de IMC en Vast Calculators utiliza la fórmula oficial del Índice de Masa Corporal reconocida por instituciones de salud globales como la Organización Mundial de la Salud (OMS) y los Centros para el Control y la Prevención de Enfermedades (CDC).",
+  section2Text: "La fórmula se mantiene consistente en todas las plataformas y se ve así:",
+  section2MetricFormula: "IMC = peso (kg) ÷ [altura (m)]²",
+  section2ImperialIntro: "Si utilizas unidades imperiales, se ajusta ligeramente para mantener la precisión:",
+  section2ImperialFormula: "IMC = 703 × peso (lbs) ÷ [altura (in)]²",
+  section2End: "Estas fórmulas permiten a los usuarios saber si su peso actual está dentro de un rango saludable.",
+
+  section2Sub1Title: "Entendiendo la Fórmula del IMC",
+  section2Sub1Image: "/BMI-calculator.jpg",
+  section2Sub1ImageAlt: "BMI Calculator - Body Mass Index Calculator",
+  section2Sub1Intro: "El IMC se basa en un principio matemático simple: compara tu peso con tu altura al cuadrado. Esta relación determina si tu peso es proporcional a tu tamaño corporal.",
+  section2Sub1Text: "Aquí tienes una breve explicación:",
+  section2Sub1Points: [
+    "El peso muestra cuánta masa tiene tu cuerpo.",
+    "La altura al cuadrado ajusta ese peso al tamaño de tu cuerpo.",
+    "El valor final da tu Índice de Masa Corporal, que ayuda a clasificar tu categoría de salud."
+  ],
+
+  section2Sub2Title: "Ejemplo de Cálculo de IMC",
+  section2Sub2Intro: "Veamos un ejemplo para mayor claridad.",
+  section2Sub2MetricLabel: "Ejemplo (Unidades Métricas):",
+  section2Sub2MetricText: "Si una persona pesa 68 kilogramos y mide 1,70 metros, el cálculo sería:",
+  section2Sub2MetricFormula: "IMC = 68 ÷ (1.70 × 1.70)  IMC = 68 ÷ 2.89 = 23.5",
+  section2Sub2MetricResult: "El valor del IMC es 23.5, lo que se clasifica como Peso Saludable.",
+  section2Sub2ImperialLabel: "Ejemplo (Unidades Imperiales):",
+  section2Sub2ImperialText: "Si una persona pesa 150 libras y mide 65 pulgadas:",
+  section2Sub2ImperialFormula: "IMC = 703 × 150 ÷ (65 × 65)  IMC = 105450 ÷ 4225 = 24.9",
+  section2Sub2ImperialResult: "El valor del IMC es 24.9, también clasificado como Peso Saludable.",
+
+  section2Sub3Title: "Categorías e Interpretación del IMC",
+  section2Sub3Intro: "El resultado calculado del IMC encaja en una de las siguientes categorías estándar:",
+  section2Sub3Image: "/BMI-calculator-table-image.jpg",
+  section2Sub3ImageAlt: "Bmi Calculated Results",
+  section2Sub3End1: "Cada rango sirve como una guía general. La salud individual también puede depender de factores como la masa muscular, la densidad ósea y la edad.",
+  section2Sub3End2: "Vast Calculators anima a los usuarios a usar su resultado de IMC como un punto de partida para mejores elecciones de estilo de vida y a consultar a profesionales de la salud para evaluaciones detalladas.",
+
+  faqTitle: "Preguntas Frecuentes (FAQs)",
+  faq: [
+    {
+      q: "¿Qué hace la Calculadora de IMC en Vast Calculators?",
+      a: "La Calculadora de IMC en Vast Calculators estima rápidamente tu Índice de Masa Corporal usando tu altura y peso. Muestra si estás bajo de peso, en un peso saludable, con sobrepeso u obeso. La herramienta sigue la fórmula oficial del IMC utilizada por organizaciones de salud globales."
+    },
+    {
+      q: "¿Cómo puedo usar la Calculadora de IMC?",
+      a: "Introduce tu altura (en centímetros o pulgadas) y tu peso (en kilogramos o libras) en los campos indicados, luego haz clic en Calcular. El resultado aparecerá al instante, mostrando tu valor de IMC y tu categoría de peso. No se requiere registro ni pasos adicionales."
+    },
+    {
+      q: "¿Cuál es la fórmula detrás del IMC?",
+      a: "La fórmula es simple y estándar: IMC = peso (kg) ÷ [altura (m)]² Para quienes prefieren unidades imperiales, la versión ajustada es: IMC = 703 × peso (lbs) ÷ [altura (in)]² Ambas versiones ofrecen resultados precisos para un análisis rápido de salud."
+    },
+    {
+      q: "¿Cuál es un rango de IMC saludable?",
+      a: "Un rango de IMC saludable suele estar entre 18.5 y 24.9. Los valores por debajo de 18.5 se consideran bajo peso, mientras que los valores por encima de 25 sugieren sobrepeso u obesidad. Este rango ayuda a determinar si tu peso es proporcional a tu altura."
+    },
+    {
+      q: "¿El IMC refleja con precisión la salud general?",
+      a: "El IMC es una herramienta de evaluación confiable, pero no un diagnóstico médico. Proporciona una indicación general de la grasa corporal basada en la altura y el peso. Sin embargo, no considera factores como la masa muscular, la edad o la composición corporal. Para un análisis más detallado, consulta la Calculadora de Grasa Corporal en Vast Calculators."
+    },
+    {
+      q: "¿Con qué frecuencia debo revisar mi IMC?",
+      a: "Es recomendable revisar tu IMC cada pocos meses, especialmente si has cambiado tu dieta, ejercicio o estilo de vida. El seguimiento regular te ayuda a monitorear tu progreso y a mantenerte consciente de los cambios en tu rango de peso con el tiempo."
+    }
+  ]
+},
+
+
+  calories: {
+  metaTitle: "Calculadora de Calorías – Calcula tus Necesidades Calóricas Diarias",
+  desc: "Usa la Calculadora de Calorías en Vastcalculators.com para saber cuántas calorías necesitas al día para mantener, perder o ganar peso según tu nivel de actividad.",
+  heading: "Calculadora de Calorías",
+  age: "Edad (años)",
+  weight: "Peso",
+  height: "Altura",
+  gender: "Género",
+  male: "Hombre",
+  female: "Mujer",
+  activity: "Nivel de actividad",
+  sedentary: "Sedentario",
+  light: "Ligero",
+  moderate: "Moderado",
+  active: "Activo",
+  veryActive: "Muy activo",
+  weightUnit: "Unidad de peso",
+  kg: "kg",
+  pounds: "libras",
+  heightUnit: "Unidad de altura",
+  cm: "cm",
+  inch: "pulgadas",
+  result: "Calorías diarias",
+  resultExplain: "Este número representa la cantidad estimada de calorías que tu cuerpo necesita para mantener su peso actual según tu nivel de actividad, edad, altura y peso. Se calcula comúnmente con la ecuación de Harris-Benedict o Mifflin-St Jeor. Por ejemplo, si tus calorías de mantenimiento son 2200, consumir esa cantidad mantiene tu peso. Comer menos (por ejemplo, 1700) crea un déficit calórico y te ayuda a perder peso, mientras que comer más (por ejemplo, 2700) causa aumento de peso. Recuerda que una libra de grasa equivale aproximadamente a 3500 calorías, por lo que un déficit diario de 500 calorías puede ayudarte a perder una libra por semana. Para obtener resultados más precisos, combina este cálculo con actividad física regular y una dieta equilibrada.",
+
+  tocTitle: "Tabla de Contenidos",
+  tocwhy: "Por Qué Importa Conocer tu Ingesta Calórica Diaria",
+  tochowitworks: "Cómo Funciona la Calculadora de Calorías en Línea",
+  tocwhymatters: "Por Qué Usar la Calculadora de Calorías de Vastcalculators.com",
+  tocactivity: "Tabla de Factor de Actividad",
+  tocunderstanding: "Entendiendo la Fórmula",
+  tocexample: "Ejemplo de Cálculo de Calorías",
+  tocresult: "Cómo Usar el Resultado",
+  tocreliable: "Por Qué Esta Fórmula es Fiable",
+
+  section1Title: "Acerca de la Calculadora de Calorías",
+  section1Content: "La Calculadora de Calorías en Vast Calculators te ayuda a estimar cuántas calorías necesita tu cuerpo cada día. Considera tu edad, género, altura, peso y nivel de actividad para calcular tu ingesta calórica diaria para mantener, perder o ganar peso. Esta calculadora de calorías en línea utiliza ecuaciones científicamente aprobadas para ofrecer resultados precisos y personalizados. Es ideal para personas que desean gestionar su dieta de forma eficaz o seguir su progreso físico sin suposiciones.",
+  section1ExtraText: "Una vez que conozcas tus necesidades calóricas, divídelas en carbohidratos, proteínas y grasas con nuestra",
+  section1ExtraLinkText: "Calculadora de Macronutrientes.",
+
+  section1Sub1Title: "Por Qué Importa Conocer tu Ingesta Calórica Diaria",
+  section1Sub1Intro: "Las calorías son las unidades de energía que tu cuerpo utiliza para realizar todas sus funciones, desde respirar hasta hacer ejercicio. Consumir más calorías de las que quemas conduce al aumento de peso, mientras que comer menos ayuda a perderlo.",
+  section1Sub1Text: "La Calculadora de Calorías proporciona la ingesta calórica diaria recomendada según tu estilo de vida y composición corporal. Esto te ayuda a planificar comidas equilibradas, mejorar los niveles de energía y mantener un peso corporal más saludable.",
+
+  section1Sub2Title: "Cómo Funciona la Calculadora de Calorías en Línea",
+  section1Sub2Intro: "El proceso es sencillo. Solo necesitas:",
+  section1Sub2List: [
+    "Ingresar tu edad, género, altura y peso.",
+    "Seleccionar tu nivel de actividad (sedentario, moderado o activo).",
+    "Elegir tu objetivo: mantener, perder o ganar peso."
+  ],
+  section1Sub2Text: "Una vez que hagas clic en Calcular, la herramienta te proporcionará instantáneamente tu requerimiento calórico diario y el desglose según tu objetivo.",
+  section1Sub2End: "Cada resultado en Vast Calculators se genera utilizando fórmulas matemáticas confiables basadas en datos de salud reales. Ya seas un entusiasta del fitness, un atleta o alguien que busca mejorar su nutrición diaria, esta calculadora hace que la planificación calórica sea simple y efectiva.",
+
+  section1Sub3Title: "Por Qué Usar la Calculadora de Calorías de Vastcalculators.com",
+  section1Sub3Intro: "A diferencia de muchas herramientas en línea, esta calculadora ofrece resultados que reflejan tus verdaderas necesidades diarias, no promedios genéricos. Te ayuda a:",
+  section1Sub3List: [
+    "Entender cuántas calorías quemas diariamente.",
+    "Ajustar las porciones de comida para cumplir tus objetivos de salud.",
+    "Mantener la consistencia a largo plazo en tu plan de alimentación."
+  ],
+  section1Sub3End: "Cada resultado es fácil de interpretar y viene con orientación clara, para que puedas tomar decisiones más inteligentes sobre tu nutrición y consumo energético.",
+
+  section2Title: "Fórmula de la Calculadora de Calorías",
+  section2Image: "/Calorie-Calculator.jpg",
+  section2ImageAlt: "Calorie Calculator",
+  section2Intro: "La Calculadora de Calorías en Vastcalculators utiliza la Ecuación de Mifflin-St Jeor, una de las fórmulas más confiables para estimar la Tasa Metabólica Basal (TMB), el número de calorías que tu cuerpo quema en reposo. Luego, esta ecuación se ajusta según el nivel de actividad para estimar el Gasto Energético Diario Total (GEDT), que representa el total de calorías que necesitas cada día.",
+  section2SubTitle: "Ecuación de Mifflin-St Jeor",
+  section2MetricFormulaMale: "Para Hombres: TMB = 10 × peso (kg) + 6.25 × altura (cm) – 5 × edad (años) + 5",
+  section2MetricFormulaFemale: "Para Mujeres: TMB = 10 × peso (kg) + 6.25 × altura (cm) – 5 × edad (años) – 161",
+  section2End: "Una vez calculada la TMB, se multiplica por un Factor de Actividad para estimar tu ingesta calórica diaria.",
+
+  section2Sub1Title: "Tabla de Factor de Actividad",
+  section2Sub1Image: "/Calories-calculator-table-image.jpg",
+  section2Sub1ImageAlt: "Activity Factor Chart",
+  section2Sub1End: "Tu Gasto Energético Diario Total (GEDT) = TMB × Factor de Actividad",
+
+  section2Sub2Title: "Entendiendo la Fórmula",
+  section2Sub2Intro: "La ecuación de Mifflin-St Jeor se utiliza porque proporciona la estimación más precisa de las necesidades calóricas tanto para hombres como para mujeres. Te ayuda a determinar cuántas calorías debes consumir para mantener tu peso actual o ajustarlo según tu objetivo. Este cálculo considera tu composición corporal, metabolismo y estilo de vida para ofrecer estimaciones calóricas realistas.",
+  section2Sub3Title: "Ejemplo de Cálculo de Calorías",
+  section2Sub3ExampleText: "Veamos un ejemplo para aclararlo:",
+  section2Sub3ExampleText2: "Ejemplo para un hombre de 30 años:",
+  section2Sub3List: [
+    "Peso: 70 kg",
+    "Altura: 175 cm",
+    "Nivel de actividad: Moderadamente activo"
+  ],
+  section2Sub3ExampleText3: "Paso 1 – Calcular TMB:",
+  section2Sub3Formula1: "TMB = 10 × 70 + 6.25 × 175 – 5 × 30 + 5",
+  section2Sub3Formula2: "TMB = 700 + 1093.75 – 150 + 5 = 1648.75 kcal/día",
+  section2Sub3ExampleText4: "Paso 2 – Ajustar según la actividad:",
+  section2Sub3Formula3: "GEDT = 1648.75 × 1.55 = 2555 kcal/día",
+  section2Sub3End: "Por lo tanto, esta persona necesita unas 2555 calorías diarias para mantener su peso. Si desea perder peso, puede consumir alrededor de 500 calorías menos (≈ 2050 kcal/día). Si desea ganar peso, puede consumir unas 500 calorías más (≈ 3050 kcal/día).",
+
+  section2Sub4Title: "Cómo Usar el Resultado",
+  section2Sub4Intro: "Una vez que conozcas tus necesidades calóricas diarias, puedes planificar tus comidas en consecuencia. Mantén tu ingesta calórica ligeramente por debajo de tu nivel de mantenimiento para perder peso o ligeramente por encima para ganar masa muscular de forma saludable.",
+  section2Sub5Title: "Por Qué Esta Fórmula es Fiable",
+  section2Sub5Intro: "La Calculadora de Calorías en Vastcalculators utiliza ecuaciones modernas reconocidas por nutricionistas y expertos en salud. Ofrece datos precisos sin complejidad innecesaria, permitiendo a los usuarios de todos los niveles comprender fácilmente su ingesta calórica diaria.",
+
+  faqTitle: "Preguntas Frecuentes (FAQs)",
+  faq: [
+    {
+      q: "¿Qué hace la Calculadora de Calorías en Vast Calculators?",
+      a: "La Calculadora de Calorías en Vastcalculators ayuda a estimar la cantidad de calorías que tu cuerpo necesita diariamente. Utiliza tu edad, género, altura, peso y nivel de actividad para calcular tu ingesta calórica diaria para mantener, perder o ganar peso. El resultado te ayuda a planificar tus comidas con mayor precisión."
+    },
+    {
+      q: "¿Cómo funciona la Calculadora de Calorías?",
+      a: "Esta calculadora de calorías en línea utiliza la ecuación de Mifflin-St Jeor para determinar tu Tasa Metabólica Basal (TMB). Luego multiplica ese número por un factor de actividad para determinar tu Gasto Energético Diario Total (GEDT), que representa el total de calorías que quemas cada día. Esto te da una visión clara de tus necesidades energéticas."
+    },
+    {
+      q: "¿Por qué debo conocer mi ingesta calórica diaria?",
+      a: "Conocer tu ingesta calórica diaria te ayuda a tomar decisiones informadas sobre tu nutrición. Te permite controlar tu peso, mejorar tu dieta y mantener niveles de energía consistentes. Ya sea que busques perder grasa, ganar músculo o mantenerte en forma, el conocimiento calórico es la base del progreso."
+    },
+    {
+      q: "¿Puede esta calculadora ayudar con la pérdida o ganancia de peso?",
+      a: "Sí. La Calculadora de Calorías te indica exactamente cuántas calorías debes consumir para mantener tu peso actual. Para perder peso, consume alrededor de 500 calorías menos por día. Para ganar peso, añade unas 500 calorías más diarias. Este ajuste constante te ayudará a alcanzar tus objetivos de forma segura y efectiva."
+    },
+    {
+      q: "¿Qué tan precisa es la Calculadora de Calorías?",
+      a: "La Calculadora de Calorías en Vastcalculators utiliza fórmulas basadas en evidencia y confiadas por profesionales del fitness y dietistas. Aunque los resultados pueden variar ligeramente según el metabolismo y la genética, la calculadora ofrece una estimación cercana que funciona bien para la mayoría de los usuarios."
+    },
+    {
+      q: "¿Qué debo hacer después de calcular mis calorías?",
+      a: "Después de conocer tus necesidades calóricas diarias, planifica comidas equilibradas que coincidan con tu objetivo. Supervisa tu ingesta de alimentos y evalúa tu progreso semanalmente."
+    }
+  ]
+},
+
+waterIntake: {
+  metaTitle: "Calculadora de Ingesta de Agua | Hidratación Diaria por VastCalculator",
+  desc: "Calcula cuánta agua necesita tu cuerpo diariamente con VastCalculator. Mantente hidratado según tu peso, actividad y estilo de vida.",
+  heading: "Calculadora de Ingesta de Agua",
+
+  age: "Edad",
+gender: "Género",
+male: "Masculino",
+female: "Femenino",
+weight: "Peso",
+activity: "Nivel de actividad",
+result: "Agua diaria recomendada (litros)",
+activityLevel: {
+  none: "Poca o ninguna actividad",
+  moderate: "Actividad moderada (30–60 min/día)",
+  high: "Alta actividad (1–2 horas/día)",
+},
+resultExplain:
+  "Este valor muestra la ingesta diaria recomendada de agua según tu edad, género, peso y nivel de actividad. Una correcta hidratación apoya la energía, la concentración, la digestión y la salud en general. Por ejemplo, un hombre de 70 kg con actividad moderada necesita aproximadamente 3,5 litros de agua al día. Los niños y personas activas pueden necesitar más, mientras que los adultos mayores pueden necesitar un poco menos. Recuerda aumentar la ingesta en climas calurosos, durante el ejercicio o cuando sientas deshidratación. Mantenerse bien hidratado mantiene tu cuerpo funcionando al máximo durante todo el día.",
+
+  tocTitle: "Tabla de Contenidos",
+  tocwhy: "Por qué las necesidades diarias de agua son importantes",
+  tochowitworks: "Cómo funciona la calculadora de ingesta de agua en línea",
+  tocwhyuse: "Por qué deberías usar una calculadora de agua",
+  tocExample: "Ejemplo de cálculo de agua",
+  tocResultUnderstanding: "Cómo entender el resultado",
+
+  section1Title: "Acerca de la Calculadora de Ingesta de Agua",
+  section1Content: "La Calculadora de Ingesta de Agua ayuda a determinar cuánta agua necesita tu cuerpo diariamente según tu peso, nivel de actividad y clima. La hidratación es esencial para la energía, la digestión, la concentración y el rendimiento general del cuerpo. Esta calculadora ofrece una estimación instantánea de tu objetivo diario de hidratación ideal.",
+  section1ExtraText: "Para una planificación precisa de la hidratación, ajusta tu consumo de agua según tu gasto energético diario utilizando la ",
+  section1Link: "Calculadora TDEE",
+
+  section1Sub1Title: "Por qué las necesidades diarias de agua son importantes",
+  section1Sub1Intro: "El agua apoya todas las funciones del cuerpo. Ayuda a transportar nutrientes, regular la temperatura y eliminar toxinas. Incluso una deshidratación leve puede afectar el estado de ánimo, la energía y el rendimiento. Al usar una calculadora de hidratación, puedes saber exactamente cuánta agua necesita tu cuerpo para funcionar al máximo. Mantenerte hidratado mejora la salud de la piel, apoya el metabolismo y previene la fatiga durante el día.",
+
+  section1Sub2Title: "Cómo funciona la Calculadora de Ingesta de Agua en Línea",
+  section1Sub2Intro: "La calculadora utiliza tu peso, nivel de actividad y clima para determinar tu ingesta de líquidos recomendada.",
+  section1Sub2List: [
+    "Introduce tu peso",
+    "Elige tu nivel de actividad (sedentario, moderado o activo)",
+    "Selecciona tu entorno (clima normal o caluroso)",
+    "Haz clic en Calcular para obtener tu objetivo diario de agua."
+  ],
+  section1Sub2Text: "El resultado muestra cuántos litros u onzas de agua debes beber cada día para mantener un nivel de hidratación saludable.",
+
+  section1Sub3Title: "Por qué deberías usar una Calculadora de Agua",
+  section1Sub3Intro: "Muchas personas subestiman sus necesidades diarias de líquidos. La calculadora de agua te ayuda a planificar una rutina de hidratación constante que se ajuste a tu estilo de vida. Ya sea que estés siguiendo tu progreso físico, mejorando la concentración o previniendo la deshidratación, esta herramienta ofrece una guía práctica basada en datos. También recuerda a los usuarios que la hidratación no solo proviene del agua; incluye todos los líquidos, como té, leche y frutas con alto contenido de agua.",
+
+  section2Title: "Fórmula de la Calculadora de Ingesta de Agua",
+  section2Intro: "La Calculadora de Ingesta de Agua utiliza pautas científicas para estimar la cantidad diaria de agua que tu cuerpo necesita. La fórmula tiene en cuenta el peso, el nivel de actividad y el clima, proporcionando una medida precisa de tus necesidades diarias de agua. La regla general recomendada por la mayoría de los expertos es:",
+  section2Formula: "Ingesta de agua (litros/día) = Peso corporal (kg) × 0.033",
+  section2end: "Esta fórmula ofrece una estimación para personas con un nivel de actividad normal en un clima moderado. Sin embargo, requiere ajustes para quienes hacen ejercicio regularmente o viven en regiones calurosas.",
+  section2AdjustmentTitle: "Ajuste según el nivel de actividad y el clima",
+  section2AdjustmentText: "Las necesidades de hidratación cambian según el estilo de vida y el entorno. Así es como puede variar tu ingesta de líquidos:",
+  section2AdjustmentImage: "/water-intake-table-image.png",
+  section2AdjustmentImageAlt: "fluid intake chart",
+
+  section2Sub1Title: "Ejemplo de Cálculo de Agua",
+  section2Sub1Intro: "Ejemplo:",
+  section2Sub1Step1: "Paso 1 – Aplica la fórmula: 70 × 0.033 = 2.31 litros/día",
+  section2Sub1Step2: "Paso 2 – Agrega 0.5 litros por actividad moderada: 2.81 litros/día",
+  section2Sub1Result: "Por lo tanto, esta persona necesita alrededor de 2.8 litros (≈ 95 onzas) diarios. En clima caluroso o con ejercicio diario: alrededor de 3.3 litros/día.",
+  section2Sub1Result2: "Si la persona viviera en un clima caluroso o hiciera ejercicio diario, al agregar 1 litro más el total sería de 3.3 litros/día.",
+
+  section3Title: "Cómo Entender el Resultado",
+  section3Image: "/Water-Intake-Calculator.jpg",
+  section3ImageAlt: "Water Intake Calculator",
+  section3Text: "Tu resultado es la cantidad mínima de líquidos que tu cuerpo necesita diariamente. Distribuye la hidratación a lo largo del día. Lleva una botella, bebe regularmente y escucha a tu cuerpo.",
+
+  section4Title: "Por qué la Fórmula Funciona",
+  section4Text: "El agua constituye alrededor del 60% del cuerpo humano. Incluso pequeñas disminuciones en los niveles de agua reducen la concentración, la energía y la eficiencia del metabolismo. La calculadora usa recomendaciones científicas estándar para ofrecer un objetivo de hidratación preciso sin necesidad de seguimiento complejo. Vastcalculators.com ofrece objetivos de hidratación instantáneos y precisos para mantener la salud de forma simple y práctica.",
+
+  faqTitle: "Preguntas Frecuentes",
+  faq: [
+    {
+      q: "¿Qué hace la Calculadora de Ingesta de Agua?",
+      a: "La Calculadora de Ingesta de Agua estima la cantidad diaria de agua que tu cuerpo necesita para mantenerse hidratado. Usa tu peso, nivel de actividad y clima para calcular tus necesidades diarias de agua, ayudándote a mantener una hidratación adecuada y equilibrar tus niveles de energía."
+    },
+    {
+      q: "¿Cómo funciona la Calculadora de Ingesta de Agua?",
+      a: "Esta calculadora de hidratación utiliza una fórmula simple: tu peso corporal multiplicado por un factor fijo (0.033). El resultado indica la cantidad de litros que debes beber diariamente. Luego, la calculadora ajusta ese número según tu nivel de actividad y la temperatura de tu entorno."
+    },
+    {
+      q: "¿Cuánta agua debo beber al día?",
+      a: "La mayoría de las personas deberían beber entre 2 y 3 litros de agua al día. Sin embargo, la cantidad exacta depende de tu tamaño corporal, nivel de actividad y condiciones climáticas. La calculadora ofrece una recomendación personalizada adaptada a tus necesidades específicas de hidratación, asegurando un equilibrio adecuado durante todo el día."
+    },
+    {
+      q: "¿El ejercicio aumenta mi necesidad de agua?",
+      a: "Sí. La actividad física aumenta tu objetivo de consumo de agua porque pierdes líquidos a través del sudor. Si haces ejercicio regularmente, debes agregar entre 0.5 y 1 litro de agua por día."
+    },
+    {
+      q: "¿Puedo contar otras bebidas en mi consumo diario de agua?",
+      a: "Sí. Todos los líquidos, incluidos el té, la leche y los jugos de frutas, contribuyen a tus necesidades diarias de agua. Los alimentos con alto contenido de agua, como el pepino, la sandía y las naranjas, también ayudan. Sin embargo, el agua pura debe seguir siendo tu principal fuente de hidratación."
+    },
+    {
+      q: "¿Qué pasa si no bebo suficiente agua?",
+      a: "No beber suficiente agua puede causar deshidratación, lo que provoca fatiga, dolores de cabeza y una menor concentración mental. La deshidratación crónica también puede afectar la digestión y la salud de la piel. Mantener una buena hidratación mejora el metabolismo, apoya el funcionamiento de los órganos y ayuda a mantener niveles de energía estables durante todo el día."
+    }
+  ]
+},
+>>>>>>> bd168e476cb4ec64ba35a5bc0dcf86e4955caa17
     pace: {
       title: "Calculadora de Ritmo de Carrera",
       desc: "Calcula tu ritmo promedio al correr",
@@ -717,6 +1103,7 @@ export const esTranslations = {
       ],
     },
 
+<<<<<<< HEAD
     tdee: {
       metaTitle: "Calculadora TDEE – Descubre Tus Necesidades Calóricas Diarias Online",
       desc: "Usa nuestra Calculadora TDEE para saber cuántas calorías quemas a diario. Planifica tu dieta, fitness o metas de peso con información precisa sobre calorías y actividad.",
@@ -733,6 +1120,47 @@ export const esTranslations = {
       tocwhyuse: "Por Qué Usar una Calculadora TDEE",
       tocExample: "Ejemplo de Cálculo TDEE",
       tochowtouse: "Cómo Usar Tu TDEE",
+=======
+tdee: {
+  metaTitle: "Calculadora TDEE – Descubre Tus Necesidades Calóricas Diarias Online",
+  desc: "Usa nuestra Calculadora TDEE para saber cuántas calorías quemas a diario. Planifica tu dieta, fitness o metas de peso con información precisa sobre calorías y actividad.",
+  heading: "Calculadora TDEE",
+
+bmrformula: "Fórmula BMR",
+mifflin: "Mifflin-St Jeor",
+harris: "Harris-Benedict",
+revisedHarris: "Harris-Benedict Revisado",
+katch: "Katch-McArdle",
+schofield: "Schofield",
+gender: "Género",
+male: "Masculino",
+female: "Femenino",
+age: "Edad",
+heightUnit: "Unidad de altura",
+height: "Altura",
+cm: "cm",
+inch: "pulgada",
+weightUnit: "Unidad de peso",
+weight: "Peso",
+kg: "kg",
+pound: "libra",
+activity: "Nivel de actividad física (PAL)",
+sedentary: "Poco/no ejercicio (estilo de vida sedentario)",
+light: "Ejercicio ligero 1-2 veces/semana",
+moderate: "Ejercicio moderado 2-3 veces/semana",
+hard: "Ejercicio intenso 4-5 veces/semana",
+veryHard: "Trabajo físico o ejercicio intenso 6-7 veces/semana",
+athlete: "Atleta profesional",
+result: "TDEE (calorías)",
+resultExplain: "Este número es tu Gasto Energético Diario Total (TDEE), que estima cuántas calorías quema tu cuerpo al día basado en tu Tasa Metabólica Basal (BMR) y nivel de actividad. Te ayuda a entender cuánta energía necesitas para mantener, perder o ganar peso. Fórmula: TDEE = BMR × Nivel de actividad. Ejemplo: si tu BMR es 1600 calorías y tu multiplicador de actividad es 1,55 (ejercicio moderado), entonces TDEE = 1600 × 1,55 = 2480 calorías/día. Interpretación: Para mantener tu peso actual, consume aproximadamente 2480 calorías al día. Para perder peso, ingiere menos calorías que tu TDEE; para ganar peso, consume más. Recuerda que el TDEE varía según edad, género y estilo de vida, úsalo como guía y consulta a un experto en nutrición para consejos personalizados.",
+
+  tocTitle: "Tabla de Contenidos",
+  tocwhy: "Por Qué es Importante Conocer Tu TDEE",
+  tochowitworks: "Cómo Funciona la Calculadora TDEE Online",
+  tocwhyuse: "Por Qué Usar una Calculadora TDEE",
+  tocExample: "Ejemplo de Cálculo TDEE",
+  tochowtouse: "Cómo Usar Tu TDEE",
+>>>>>>> bd168e476cb4ec64ba35a5bc0dcf86e4955caa17
 
       section1Title: "Acerca de la Calculadora TDEE",
       section1Content: "La Calculadora TDEE estima la cantidad de calorías que tu cuerpo quema cada día mediante todas las actividades, desde dormir hasta hacer ejercicio. TDEE significa Gasto Energético Diario Total, una medida de tu gasto energético total en 24 horas.\n\nEsta Calculadora TDEE online combina tu Tasa Metabólica Basal (BMR) con el uso energético de tu nivel de actividad para mostrar tus calorías de mantenimiento, el número exacto que necesitas para mantener tu peso actual.",
@@ -978,6 +1406,187 @@ export const esTranslations = {
         }
       ]
     },
+<<<<<<< HEAD
+=======
+    {
+      q: "¿Por qué debería conocer mi TDEE?",
+      a: "Conocer tu TDEE te ayuda a planificar tu dieta y metas de fitness. Te indica cuántas calorías consumir para perder, ganar o mantener peso de manera efectiva."
+    },
+    {
+      q: "¿Cuál es la diferencia entre BMR y TDEE?",
+      a: "El BMR muestra las calorías que tu cuerpo necesita en reposo, mientras que el TDEE incluye las calorías quemadas mediante movimiento, entrenamientos y actividades diarias."
+    },
+    {
+      q: "¿Cómo puedo usar mi TDEE para mejores resultados?",
+      a: "Una vez que sepas tu TDEE, puedes ajustar tu ingesta calórica en consecuencia. Para perder grasa, consume menos calorías que tu TDEE. Para ganar músculo, consume más calorías que tu TDEE para favorecer el crecimiento y la recuperación."
+    },
+    {
+      q: "¿Con qué frecuencia debo recalcular mi TDEE?",
+      a: "Recalcula tu TDEE cada 4–6 semanas o tras cualquier cambio importante en tu peso, nivel de actividad o meta de fitness para mantener tu plan calórico preciso."
+    }
+  ]
+},
+
+macros: {
+  metaTitle: "Calculadora de Macros | Calcula tu Proporción Ideal de Macronutrientes",
+  desc: "Usa nuestra Calculadora de Macros para encontrar el equilibrio perfecto de proteínas, carbohidratos y grasas. Planifica tu nutrición con proporciones de macronutrientes precisas para tus objetivos de fitness.",
+  heading: "Calculadora de Macros",
+
+  gender: "Género",
+  male: "Masculino",
+  female: "Femenino",
+  age: "Edad",
+  heightUnit: "Unidad de altura",
+  cm: "cm",
+  inch: "pulgada",
+  height: "Altura",
+  weightUnit: "Unidad de peso",
+  kg: "kg",
+  pounds: "libras",
+  weight: "Peso",
+  activityLevel: "Nivel de actividad",
+  activitylabel1: "Poco/no ejercicio (estilo de vida sedentario)",
+  activitylabel2: "Ejercicio ligero 1–2 veces/semana",
+  activitylabel3: "Ejercicio moderado 2–3 veces/semana",
+  activitylabel4: "Ejercicio intenso 4–5 veces/semana",
+  activitylabel5: "Trabajo físico o ejercicio intenso 6–7 veces/semana",
+  activitylabel6: "Atleta profesional",
+  goal: "Objetivo",
+  maintainweight: "Mantener peso",
+  changeweight: "Cambiar peso",
+  lowCarb: "Bajo en carbohidratos",
+  highProtein: "Alto en proteínas",
+  result: "Macronutrientes",
+  resultExplain: "Este número muestra la distribución de tus necesidades diarias de macronutrientes — proteínas, carbohidratos y grasas — basado en tu requerimiento calórico total, peso corporal, nivel de actividad y objetivo de fitness. Los macronutrientes son los principales nutrientes que tu cuerpo usa para energía y recuperación. Por ejemplo, si tu objetivo diario es 2000 kcal y tu meta es mantener el peso, una proporción equilibrada de macronutrientes podría ser 40% carbohidratos, 30% proteína y 30% grasa. Eso significa 800 kcal (200 g) de carbohidratos, 600 kcal (150 g) de proteína y 600 kcal (67 g) de grasa. Estas proporciones pueden variar según el objetivo: más proteína para ganar músculo, menos carbohidratos para perder grasa. Ajustar los macronutrientes ayuda a optimizar energía, rendimiento y composición corporal de manera efectiva.", 
+
+  tocTitle: "Tabla de Contenidos",
+  tocwhy: "Por Qué Importa Controlar los Macros",
+  tochowitworks: "Cómo Funciona la Calculadora de Macros Online",
+  tocwhyuse: "Por Qué Usar una Calculadora de Macros",
+  tocMacro: "Ejemplo de Cálculo de Macros",
+  tocresult: "Cómo Usar el Resultado",
+  tocformula: "Por Qué Funciona Esta Fórmula",
+
+  section1Title: "Acerca de la Calculadora de Macros",
+  section1Content: "La Calculadora de Macros te ayuda a encontrar el equilibrio adecuado de macronutrientes, proteínas, carbohidratos y grasas que tu cuerpo necesita cada día. Garantiza que tu nutrición apoye tus objetivos, ya sea perder grasa, ganar músculo o mantener tu peso. Esta Calculadora de Macros online utiliza tu edad, género, altura, peso y nivel de actividad para estimar tu ingesta diaria de macros. Luego divide tus calorías en una distribución clara de macros, mostrando exactamente cuánta proteína, grasa y carbohidratos debes consumir.",
+
+  section1Sub1Title: "Por Qué Importa Controlar los Macros",
+  section1Sub1Intro: "Los macros son la base de cualquier plan de comidas. Cada uno cumple un rol específico:",
+  section1Sub1List: [
+    "La proteína construye y repara el músculo.",
+    "Los carbohidratos proporcionan energía.",
+    "Las grasas apoyan las hormonas y la función celular.",
+  ],
+  section1Sub1Text: "Equilibrar estos nutrientes mejora el rendimiento, aumenta los niveles de energía y promueve la salud general. Controlar la proporción de macros te ayuda a entender qué alimenta mejor tu cuerpo y mantiene tu dieta alineada con tus objetivos.",
+
+  section1Sub2Title: "Cómo Funciona la Calculadora de Calorías Online",
+  section1Sub2Intro: "La calculadora primero determina tus necesidades calóricas diarias y luego divide esas calorías en categorías de macronutrientes según tu objetivo elegido.",
+  section1Sub2List: [
+    "Edad, género, altura y peso",
+    "Nivel de actividad (sedentario a activo).",
+    "Objetivo (pérdida de grasa, mantenimiento o aumento muscular).",
+  ],
+  section1Sub2Text: "Te proporciona instantáneamente un desglose detallado de macronutrientes mostrando:",
+  section1Sub2List1: [
+    "Gramos diarios de proteína, carbohidratos y grasa",
+    "Su porcentaje en tu dieta.",
+    "Contribución calórica total de cada nutriente.",
+  ],
+
+  section1Sub3Title: "Por Qué Usar una Calculadora de Macros",
+  section1Sub3Intro: "A diferencia de las herramientas solo de calorías, esta calculadora de nutrición se enfoca en la calidad de tu ingesta, no solo en la cantidad. Asegura un balance adecuado de calorías y macros para apoyar la pérdida de grasa, el aumento muscular o mejorar la energía sin dietas restrictivas. Esta herramienta de planificación dietética te ayuda a crear hábitos sostenibles mostrando la mezcla adecuada de nutrientes para tus objetivos específicos. Es ideal para atletas, entusiastas del fitness o cualquier persona que quiera comer de manera más inteligente y rendir mejor.",
+
+  section2Title: "Fórmula de la Calculadora de Macros",
+  section2Intro: "La Calculadora de Macros calcula tu ingesta diaria de macros según tus necesidades calóricas y objetivo nutricional. Usa los valores calóricos de cada macronutriente y aplica porcentajes basados en objetivos para crear una distribución personalizada de macros.",
+  section2Intro2: "Los valores calóricos generales de cada macronutriente son:",
+  section2List: [
+    "Proteína: 4 calorías por gramo",
+    "Carbohidratos: 4 calorías por gramo",
+    "Grasas: 9 calorías por gramo",
+  ],
+  section2ExtraText: "Primero puedes calcular tus necesidades calóricas totales usando nuestra",
+  section2ExtraLink: "calculadora de calorías",
+  section2StepsTitle: "Paso 1: Encuentra las Calorías Diarias Totales",
+  section2StepsText: "Tu objetivo calórico total es la base para tu proporción de macros. Esto puede provenir de una Calculadora de Calorías o de un objetivo conocido, como:",
+  section2StepList1: [
+    "Pérdida de grasa: Déficit calórico ligero",
+    "Mantenimiento: Ingesta equilibrada",
+    "Aumento muscular: Superávit calórico",
+  ],
+  section2StepTextend: "Una vez que se conocen tus calorías diarias, la calculadora las divide entre proteínas, carbohidratos y grasas usando porcentajes predefinidos según tu objetivo de fitness.",
+  section2StepsTitle2: "Paso 2: Establece la Distribución de Macros según tu Objetivo",
+  section2StepsTitle3: "Desglose de Macronutrientes por Objetivo",
+  section2StepList2: [
+    "Si tu objetivo es Pérdida de Grasa, tu ingesta diaria debe consistir idealmente en 40% proteína, 30% carbohidratos y 30% grasas.",
+    "Para quienes buscan Mantenimiento, el equilibrio recomendado es 30% proteína, 45% carbohidratos y 25% grasas.",
+    "Si tu objetivo es Aumento Muscular, debes apuntar aproximadamente a 25% proteína, 55% carbohidratos y 20% grasas para apoyar la recuperación y crecimiento muscular.",
+  ],
+  section2StepTextend2: "Estos rangos mantienen un balance adecuado de calorías y macros mientras apoyan diferentes objetivos.",
+  section2StepsTitle4: "Paso 3: Aplica la Fórmula para Cada Macronutriente",
+  section2StepsExample: "La fórmula para cada macronutriente es:",
+
+  section2Macroformula: " Macronutriente (g) = (Calorías Totales × % de Macro) ÷ Valor Calórico por Gramo",
+  section2StepsExample2: "Por ejemplo, para la proteína:",
+  section2Proteinformula: " Proteína (g) = (Calorías × % de Proteína) ÷ 4",
+  section2StepTextend3: "Repite esto para carbohidratos y grasas usando sus respectivos valores calóricos (4 para carbohidratos, 9 para grasas).",
+
+  section2Sub1Title: "Ejemplo de Cálculo de Macros",
+  section2Sub1Image: "/Macro-Calculator.jpg",
+  section2Sub1ImageAlt: "Online Macro Calculator",
+  section2Sub1Example: "Ejemplo:",
+  section2Sub1ExampleText: "Una persona quiere mantener su peso con 2,000 calorías/día. Según la tabla de proporciones de macros para mantenimiento",
+  section2Sub1List: [
+    "Proteína = 30%",
+    "Carbohidratos = 45%",
+    "Grasas = 25%",
+  ],
+  section2Sub1Calculate: "Ahora calcula:",
+  section2Sub1Formula1: "Proteína: (2000 × 0.30) ÷ 4 = 150 g",
+  section2Sub1Formula2: "Carbohidratos: (2000 × 0.45) ÷ 4 = 225 g",
+  section2Sub1Formula3: "Grasas: (2000 × 0.25) ÷ 9 = 55 g",
+  section2Sub1DailyText: "Entonces, la ingesta diaria de macros de este usuario es:",
+  section2Sub1DailyList: [
+    "Proteína: 150 g",
+    "Carbohidratos: 225 g",
+    "Grasas: 55 g",
+  ],
+  section2Sub1DailyEnd: "Este desglose asegura un balance energético adecuado y apoya un progreso constante hacia los objetivos corporales.",
+
+  section2Sub2Title: "Cómo Usar los Resultados",
+  section2Sub2Intro: "Una vez que conoces tus macros, úsalos para guiar la planificación de tus comidas y el seguimiento de macros. Divide tus gramos diarios totales entre 3–5 comidas para mantener energía constante y apoyar la recuperación. Controlar tus macros ayuda a ajustar tu nutrición, asegurando que comas lo suficiente para entrenar mientras permaneces alineado con tu objetivo.",
+
+  section2Sub3Title: "Por Qué Funciona Esta Fórmula",
+  section2Sub3Intro: "Este método está basado en la ciencia y es flexible. Se ajusta según los objetivos calóricos, intensidad del entrenamiento y composición corporal. A diferencia de dietas restrictivas, se enfoca en el equilibrio entre calorías y macronutrientes, permitiendo variedad y sostenibilidad. La Calculadora de Macros online simplifica cálculos nutricionales complejos en resultados rápidos y precisos. Es una herramienta esencial para cualquiera que quiera optimizar la nutrición, mejorar el rendimiento o mantener un estilo de vida saludable. La calculadora en Vastcalculators.com ofrece estos insights al instante, facilitando el seguimiento de macros y una alimentación balanceada para todos.",
+
+  faqTitle: "Preguntas Frecuentes",
+  faq: [
+    {
+      q: "¿Qué hace la Calculadora de Macros?",
+      a: "La Calculadora de Macros te ayuda a encontrar la cantidad adecuada de proteínas, carbohidratos y grasas que debes consumir cada día según tu objetivo calórico y de fitness."
+    },
+    {
+      q: "¿Cómo calculo mis macros?",
+      a: "Primero conoce tu objetivo calórico diario usando la Calculadora TDEE. Luego divide esas calorías en macros usando proporciones estándar, como 40% carbohidratos, 30% proteínas y 30% grasas."
+    },
+    {
+      q: "¿Por qué son necesarios los macros?",
+      a: "Los macros controlan cómo tu cuerpo utiliza la energía. El equilibrio adecuado te ayuda a ganar músculo, perder grasa y mejorar el rendimiento mientras mantienes tu nutrición estable."
+    },
+    {
+      q: "¿Puedo usar la Calculadora de Macros para perder peso?",
+      a: "Sí. Elige un déficit calórico (comer menos calorías que tu TDEE), y la calculadora te dará un objetivo de macros más bajo que apoye la pérdida de grasa sin perder músculo."
+    },
+    {
+      q: "¿Cómo puedo usar la Calculadora de Macros con otras herramientas?",
+      a: "Usa tu objetivo calórico de la Calculadora de Calorías o TDEE para planificar tus macros. Ajusta tus macros según tu objetivo calórico con nuestra Calculadora de Calorías para obtener los resultados más precisos."
+    },
+    {
+      q: "¿Con qué frecuencia debo cambiar mi plan de macros?",
+      a: "Actualiza tus macros cada 4–6 semanas o cuando cambie tu peso, rutina de entrenamiento u objetivo. El seguimiento regular ayuda a mantener los resultados en el objetivo."
+    }
+  ]
+},
+>>>>>>> bd168e476cb4ec64ba35a5bc0dcf86e4955caa17
     bfp: {
       title: "Porcentaje de Grasa Corporal",
       desc: "Estima la grasa corporal a partir de medidas",

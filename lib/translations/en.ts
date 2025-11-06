@@ -26,16 +26,16 @@ export const enTranslations = {
   },
   categories: {
     health: {
-      metaTitle:"Health Calculators | Accurate Online Tools for Fitness & Wellness",
+      metaTitle: "Health Calculators | Accurate Online Tools for Fitness & Wellness",
       name: "Health Calculators",
       description: "Track your wellness easily using our BMI calculator, calorie calculator, and water intake calculator. These tools are designed to support balanced living and accurate self-assessment.",
-      metaDescription:"Explore free online health calculators for BMI, calories, body fat, heart rate, and more. Track fitness and stay healthy easily."
+      metaDescription: "Explore free online health calculators for BMI, calories, body fat, heart rate, and more. Track fitness and stay healthy easily."
     },
     finance: {
-      metaTitle:"Finance Calculators | Smart Online Tools for Money & Savings",
+      metaTitle: "Finance Calculators | Smart Online Tools for Money & Savings",
       name: "Finance Calculators",
       description: "Plan your budget better using our loan calculator, EMI calculator, and compound interest calculator. Whether it's daily expenses or long-term savings, VastCalculator brings clarity to your financial decisions.",
-      metaDescription:"Use free online finance calculators for loans, ROI, savings, and investments. Make smarter financial decisions in seconds."
+      metaDescription: "Use free online finance calculators for loans, ROI, savings, and investments. Make smarter financial decisions in seconds."
     },
     all: "All Calculators",
   },
@@ -1354,7 +1354,7 @@ export const enTranslations = {
       price: "Price per Unit ($)",
       result: "Break-Even Units",
       heading: "Break Even Calculator",
-
+      resultExplain: "This is the number of units you need to sell to cover all your fixed and variable costs before making a profit.",
       tocabout: "About Break Even Calculator",
       tocwhy: "Why a Break-Even Analysis Matters",
       tochowitworks: "How the Online Break Even Calculator Works",

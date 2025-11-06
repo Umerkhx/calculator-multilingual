@@ -8,7 +8,7 @@ export const healthCalculators: Calculator[] = [
     titleKey: "health.bodyFat.metaTitle",
     category: "Health",
     descriptionKey: "health.bodyFat.desc",
-    formulaId: "bodyFat",
+    formulaId: "bodyfat",
 
     toc: [
       { id: "why-use", labelKey: "health.bodyFat.tocAbout" },
@@ -27,12 +27,27 @@ export const healthCalculators: Calculator[] = [
           { value: "female", label: "health.bodyFat.female" },
         ]
       },
+      {
+        label: "health.bodyFat.unit",
+        name: "unit",
+        type: "select",
+        options: [
+          { value: "cm", label: "Centimeters" },
+          { value: "inch", label: "Inches" },
+        ]
+      },
+
       { label: "health.bodyFat.height", name: "height", type: "number", unit: "cm" },
       { label: "health.bodyFat.weight", name: "weight", type: "number", unit: "kg" },
       { label: "health.bodyFat.waist", name: "waist", type: "number", unit: "cm" },
       { label: "health.bodyFat.neck", name: "neck", type: "number", unit: "cm" },
       { label: "health.bodyFat.hip", name: "hip", type: "number", unit: "cm" },
     ],
+
+    result: {
+      label: "health.bodyFat.result",
+      explainKey: "health.bodyFat.resultExplain",
+    },
 
     heading: "health.bodyFat.heading",
 
@@ -189,11 +204,15 @@ export const healthCalculators: Calculator[] = [
         options: [
           { value: "cm", label: "health.bmi.cm" },
           { value: "inch", label: "health.bmi.inch" },
-          { value: "ft", label: "health.bmi.ft_in" },
         ],
       },
       { label: "health.bmi.height", name: "height", type: "number" },
     ],
+
+    result: {
+      label: "health.bmi.result",
+      explainKey: "health.bmi.resultExplain",
+    },
 
     heading: "health.bmi.heading",
 
@@ -325,17 +344,51 @@ export const healthCalculators: Calculator[] = [
     ],
 
     inputs: [
-      { label: "health.calories.age", name: "age", type: "number", unit: "years" },
-      { label: "health.calories.weight", name: "weight", type: "number", unit: "kg" },
-      { label: "health.calories.height", name: "height", type: "number", unit: "cm" },
       {
-        label: "health.calories.gender", name: "gender", type: "select", options: [
+        label: "health.calories.gender", name: "gender", type: "select",
+        options: [
           { value: "male", label: "health.calories.male" },
           { value: "female", label: "health.calories.female" },
-        ]
+        ],
       },
-      { label: "health.calories.activity", name: "activity", type: "select" },
+
+      {
+        label: "health.calories.activity", name: "activity", type: "select",
+        options: [
+          { value: "1.2", label: "health.calories.sedentary" },
+          { value: "1.375", label: "health.calories.light" },
+          { value: "1.55", label: "health.calories.moderate" },
+          { value: "1.725", label: "health.calories.active" },
+          { value: "1.9", label: "health.calories.veryActive" },
+        ],
+      },
+      { label: "health.calories.age", name: "age", type: "number", unit: "years" },
+      {
+        label: "health.calories.weightUnit",
+        name: "weightUnit",
+        type: "select",
+        options: [
+          { value: "kg", label: "health.calories.kg" },
+          { value: "pounds", label: "health.calories.pounds" },
+        ],
+      },
+      { label: "health.calories.weight", name: "weight", type: "number", unit: "kg" },
+      {
+        label: "health.calories.heightUnit",
+        name: "heightUnit",
+        type: "select",
+        options: [
+          { value: "cm", label: "health.calories.cm" },
+          { value: "inch", label: "health.calories.inch" },
+        ],
+      },
+      { label: "health.calories.height", name: "height", type: "number", unit: "cm" },
     ],
+
+    result: {
+      label: "health.calories.result",
+      explainKey: "health.calories.resultExplain",
+    },
 
     heading: "health.calories.heading",
 
@@ -454,10 +507,30 @@ export const healthCalculators: Calculator[] = [
     heading: "health.waterIntake.heading",
     formulaId: "water",
 
-    inputs: [
-      { label: "health.waterIntake.weight", name: "weight", type: "number", unit: "kg" },
-      { label: "health.waterIntake.activity", name: "activity", type: "number", unit: "0-2" },
-    ],
+inputs: [
+  { label: "health.waterIntake.age", name: "age", type: "number", unit: "years" },
+  { label: "health.waterIntake.gender", name: "gender", type: "select", options: [
+      { label: "health.waterIntake.male", value: "male" },
+      { label: "health.waterIntake.female", value: "female" },
+    ] 
+  },
+{
+  label: "health.waterIntake.activity",
+  name: "activity",
+  type: "select",
+  options: [
+    { label: "health.waterIntake.activityLevel.none", value: "0" },
+    { label: "health.waterIntake.activityLevel.moderate", value: "1" },
+    { label: "health.waterIntake.activityLevel.high", value: "2" },
+  ],
+},
+],
+
+
+result: {
+  label: "health.waterIntake.result",
+  explainKey: "health.waterIntake.resultExplain",
+},
 
     toc: [
       { id: "why-use", labelKey: "health.waterIntake.tocwhy" },
@@ -570,22 +643,99 @@ export const healthCalculators: Calculator[] = [
     ],
 
     inputs: [
+      {
+        label: "health.tdee.bmrformula",
+        name: "formula",
+        type: "select",
+        options: [
+          { label: "health.tdee.mifflin", value: "mifflin" },
+          { label: "health.tdee.harris", value: "harris" },
+          { label: "health.tdee.revisedHarris", value: "revisedHarris" },
+          { label: "health.tdee.katch", value: "katch" },
+          { label: "health.tdee.schofield", value: "schofield" },
+        ],
+      },
+      {
+        label: "health.tdee.gender",
+        name: "gender",
+        type: "select",
+        options: [
+          { label: "health.tdee.male", value: "male" },
+          { label: "health.tdee.female", value: "female" },
+        ],
+      },
       { label: "health.tdee.age", name: "age", type: "number", unit: "years" },
-      { label: "health.tdee.weight", name: "weight", type: "number", unit: "kg" },
-      { label: "health.tdee.height", name: "height", type: "number", unit: "cm" },
+
+      // Height: select + input
+      {
+        label: "health.tdee.heightUnit",
+        name: "heightUnit",
+        type: "select",
+        options: [
+          { label: "health.tdee.cm", value: "cm" },
+          { label: "health.tdee.inch", value: "inch" },
+        ],
+      },
+      {
+        label: "health.tdee.height",
+        name: "height",
+        type: "number",
+      },
+
+      // Weight: select + input
+      {
+        label: "health.tdee.weightUnit",
+        name: "weightUnit",
+        type: "select",
+        options: [
+          { label: "health.tdee.kg", value: "kg" },
+          { label: "health.tdee.pound", value: "pound" },
+        ],
+      },
+      {
+        label: "health.tdee.weight",
+        name: "weight",
+        type: "number",
+      },
+
+
       {
         label: "health.tdee.activity",
         name: "activity",
         type: "select",
         options: [
-          { label: "health.tdee.sedentary", value: "sedentary" },
-          { label: "health.tdee.light", value: "light" },
-          { label: "health.tdee.moderate", value: "moderate" },
-          { label: "health.tdee.very", value: "very" },
-          { label: "health.tdee.extra", value: "extra" },
-        ]
+          {
+            label: "health.tdee.sedentary",
+            value: "1.2", // Little/no exercise
+          },
+          {
+            label: "health.tdee.light",
+            value: "1.375", // Light exercise 1–2 times/week
+          },
+          {
+            label: "health.tdee.moderate",
+            value: "1.55", // Moderate exercise 2–3 times/week
+          },
+          {
+            label: "health.tdee.hard",
+            value: "1.725", // Hard exercise 4–5 times/week
+          },
+          {
+            label: "health.tdee.veryHard",
+            value: "1.9", // Physical job / hard exercise 6–7 times/week
+          },
+          {
+            label: "health.tdee.athlete",
+            value: "2.0", // Professional athlete
+          },
+        ],
       },
     ],
+
+    result: {
+      label: "health.tdee.result",
+      explainKey: "health.tdee.resultExplain",
+    },
 
     heading: "health.tdee.heading",
 
@@ -704,15 +854,72 @@ export const healthCalculators: Calculator[] = [
     ],
 
     inputs: [
-      { label: "health.macros.calories", name: "calories", type: "number", unit: "kcal" },
       {
-        label: "health.macros.diet", name: "diet", type: "select", options: [
-          { label: "health.macros.balanced", value: "balanced" },
-          { label: "health.macros.lowCarb", value: "lowCarb" },
-          { label: "health.macros.highProtein", value: "highProtein" },
-        ]
+        label: "health.macros.gender",
+        name: "gender",
+        type: "select",
+        options: [
+          { label: "health.macros.male", value: "male" },
+          { label: "health.macros.female", value: "female" },
+        ],
+      },
+      { label: "health.macros.age", name: "age", type: "text", unit: "years" },
+
+      // Height value + unit
+      {
+        label: "health.macros.heightUnit",
+        name: "heightUnit",
+        type: "select",
+        options: [
+          { label: "health.macros.cm", value: "cm" },
+          { label: "health.macros.inch", value: "inch" },
+        ],
+      },
+      { label: "health.macros.height", name: "height", type: "text" },
+
+      // Weight value + unit
+      {
+        label: "health.macros.weightUnit",
+        name: "weightUnit",
+        type: "select",
+        options: [
+          { label: "health.macros.kg", value: "kg" },
+          { label: "health.macros.pounds", value: "pounds" },
+        ],
+      },
+      { label: "health.macros.weight", name: "weight", type: "text" },
+
+      // Activity level
+      {
+        label: "health.macros.activityLevel",
+        name: "activity",
+        type: "select",
+        options: [
+          { label: "health.macros.activitylabel1", value: "1.2" },
+          { label: "health.macros.activitylabel2", value: "1.375" },
+          { label: "health.macros.activitylabel3", value: "1.55" },
+          { label: "health.macros.activitylabel4", value: "1.725" },
+          { label: "health.macros.activitylabel5", value: "1.9" },
+          { label: "health.macros.activitylabel6", value: "2.0" },
+        ],
+      },
+
+      // Goal
+      {
+        label: "health.macros.goal",
+        name: "goal",
+        type: "select",
+        options: [
+          { label: "health.macros.maintainweight", value: "maintain" },
+          { label: "health.macros.changeweight", value: "change" },
+        ],
       },
     ],
+
+    result: {
+      label: "health.macros.result",
+      explainKey: "health.macros.resultExplain",
+    },
 
     heading: "health.macros.heading",
 

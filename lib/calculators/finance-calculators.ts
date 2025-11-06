@@ -1,7 +1,7 @@
 import type { Calculator } from "./types"
 
 export const financeCalculators: Calculator[] = [
-  
+
   {
     slug: "loan-calculator",
     metaTitleKey: "finance.loan.metaTitle",
@@ -9,11 +9,31 @@ export const financeCalculators: Calculator[] = [
     titleKey: "finance.loan.title",
     category: "Finance",
     descriptionKey: "finance.loan.desc",
+    formulaId: "loan",
     inputs: [
       { label: "finance.loan.principal", name: "principal", type: "number", unit: "$" },
+      { label: "finance.loan.downPayment", name: "downPayment", type: "number", unit: "$" },
       { label: "finance.loan.rate", name: "rate", type: "number", unit: "%" },
       { label: "finance.loan.years", name: "years", type: "number", unit: "years" },
+
+      {
+        label: "finance.loan.paybackFrequency",
+        name: "paybackFrequency",
+        type: "select",
+        options: [
+          { value: "monthly", label: "finance.loan.monthly" },
+          { value: "quarterly", label: "finance.loan.quarterly" },
+          { value: "semiAnnually", label: "finance.loan.semiAnnually" },
+          { value: "annually", label: "finance.loan.annually" }
+        ]
+      }
     ],
+
+    result: {
+      label: "finance.loan.result",
+      explainKey: "finance.loan.resultExplain",
+    },
+
     heading: "finance.loan.heading",
     toc: [
       { id: "about", labelKey: "finance.loan.tocabout" },
@@ -72,7 +92,7 @@ export const financeCalculators: Calculator[] = [
       { qKey: "finance.loan.faq.5.q", aKey: "finance.loan.faq.5.a" },
     ]
   },
- 
+
   {
     slug: "mortgage-calculator",
     metaTitleKey: "finance.mortgage.metaTitle",
@@ -85,8 +105,26 @@ export const financeCalculators: Calculator[] = [
       { label: "finance.mortgage.downPayment", name: "downPayment", type: "number", unit: "$" },
       { label: "finance.mortgage.rate", name: "rate", type: "number", unit: "%" },
       { label: "finance.mortgage.years", name: "years", type: "number", unit: "years" },
+      { label: "finance.mortgage.propertyTax", name: "propertyTax", type: "number", unit: "%" },
+      { label: "finance.mortgage.homeInsurance", name: "homeInsurance", type: "number", unit: "$/yr" },
+      { label: "finance.mortgage.hoaFees", name: "hoaFees", type: "number", unit: "$/mo" },
+      {
+        label: "finance.mortgage.downPaymentType",
+        name: "downPaymentType",
+        type: "select",
+        options: [
+          { label: "finance.mortgage.downPaymentTypePercent", value: "percent" },
+          { label: "finance.mortgage.downPaymentTypeAmount", value: "amount" }
+        ]
+      },
     ],
     formulaId: "mortgage",
+
+    result: {
+      label: "finance.mortgage.result",
+      explainKey: "finance.mortgage.resultExplain",
+    },
+
     toc: [
       { id: "why-important", labelKey: "finance.mortgage.tocwhy" },
       { id: "how-works", labelKey: "finance.mortgage.tochowmortage" },
@@ -224,8 +262,16 @@ export const financeCalculators: Calculator[] = [
     inputs: [
       { label: "finance.roi.investment", name: "investment", type: "number", unit: "$" },
       { label: "finance.roi.gain", name: "gain", type: "number", unit: "$" },
+      { label: "finance.roi.costs", name: "costs", type: "number", unit: "$" },
     ],
     formulaId: "roi",
+
+
+    result: {
+      label: "finance.roi.result",
+      explainKey: "finance.roi.resultExplain",
+    },
+
     toc: [
       { id: "about", labelKey: "finance.roi.tocabout" },
       { id: "why-matters", labelKey: "finance.roi.tocwhy" },
@@ -364,15 +410,15 @@ export const financeCalculators: Calculator[] = [
     category: "Finance",
     descriptionKey: "finance.breakeven.desc",
 
-      inputs: [
+    inputs: [
       { label: "finance.breakeven.fixedCosts", name: "fixedCosts", type: "number", unit: "$" },
       { label: "finance.breakeven.variableCost", name: "variableCost", type: "number", unit: "$" },
       { label: "finance.breakeven.price", name: "price", type: "number", unit: "$" },
     ],
 
     result: {
-      label: "finance.breakeven.result",       
-      explainKey: "finance.breakeven.resultExplain", 
+      label: "finance.breakeven.result",
+      explainKey: "finance.breakeven.resultExplain",
     },
 
     formulaId: "breakeven",
@@ -493,7 +539,7 @@ export const financeCalculators: Calculator[] = [
       { qKey: "finance.breakeven.faq.5.q", aKey: "finance.breakeven.faq.5.a" },
     ],
   },
- 
+
   {
     slug: "inflation-calculator",
     metaTitleKey: "finance.inflation.metaTitle",
@@ -505,7 +551,19 @@ export const financeCalculators: Calculator[] = [
       { label: "finance.inflation.amount", name: "amount", type: "number", unit: "$" },
       { label: "finance.inflation.years", name: "years", type: "number", unit: "years" },
       { label: "finance.inflation.rate", name: "rate", type: "number", unit: "%" },
+      {
+        label: "finance.inflation.mode", name: "mode", type: "select",
+        options: [
+          { value: "future", label: "finance.inflation.mode_future" },
+          { value: "past", label: "finance.inflation.mode_past" }
+        ]
+      },
     ],
+    result: {
+      label: "finance.inflation.result",
+      explainKey: "finance.inflation.resultExplain",
+    },
+
     formulaId: "inflation",
     toc: [
       { id: "why-matters", labelKey: "finance.inflation.tocwhy" },
@@ -639,11 +697,39 @@ export const financeCalculators: Calculator[] = [
     category: "Finance",
     descriptionKey: "finance.currency.desc",
     inputs: [
-      { label: "finance.currency.amount", name: "amount", type: "number", unit: "amount" },
-      { label: "finance.currency.fromCurrency", name: "fromCurrency", type: "text" },
-      { label: "finance.currency.toCurrency", name: "toCurrency", type: "text" },
+      { label: "finance.currency.amount", name: "amount", type: "number", unit: "$" },
+      {
+        label: "finance.currency.fromCurrency",
+        name: "fromCurrency",
+        type: "select",
+        options: [
+          { value: "USD", label: "finance.currency.usd" },
+          { value: "PKR", label: "finance.currency.pkr" },
+          { value: "EUR", label: "finance.currency.eur" },
+          { value: "GBP", label: "finance.currency.gbp" },
+          { value: "INR", label: "finance.currency.inr" },
+        ]
+      },
+      {
+        label: "finance.currency.toCurrency",
+        name: "toCurrency",
+        type: "select",
+        options: [
+          { value: "USD", label: "finance.currency.usd" },
+          { value: "PKR", label: "finance.currency.pkr" },
+          { value: "EUR", label: "finance.currency.eur" },
+          { value: "GBP", label: "finance.currency.gbp" },
+          { value: "INR", label: "finance.currency.inr" },
+        ]
+      },
     ],
     formulaId: "currency",
+
+    result: {
+      label: "finance.currency.result",
+      explainKey: "finance.currency.resultExplain",
+    },
+
     toc: [
       { id: "about", labelKey: "finance.currency.tocabout" },
       { id: "conversion", labelKey: "finance.currency.tocconversion" },
@@ -720,7 +806,7 @@ export const financeCalculators: Calculator[] = [
       { qKey: "finance.currency.faq.5.q", aKey: "finance.currency.faq.5.a" },
     ],
   },
-   // {
+  // {
   //   slug: "discount-calculator",
   //   metaTitleKey: "finance.discount.metaTitle",
   //   metaDescriptionKey: "finance.discount.desc",
@@ -773,7 +859,7 @@ export const financeCalculators: Calculator[] = [
   //     { qKey: "finance.tip.faq.5.q", aKey: "finance.tip.faq.5.a" },
   //   ],
   // },
-   // {
+  // {
   //   slug: "compound-interest-calculator",
   //   metaTitleKey: "finance.compound.metaTitle",
   //   metaDescriptionKey: "finance.compound.desc",

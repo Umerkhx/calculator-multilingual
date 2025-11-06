@@ -918,19 +918,76 @@ macros: {
 
   // Calcolatori finanziari
   finance: {
-    loan: {
-      title: "Calcolatore di Prestiti",
-      desc: "Calcola rate e interessi del prestito",
-      principal: "Importo del prestito (€)",
-      rate: "Tasso di interesse annuo (%)",
-      years: "Durata del prestito (anni)",
-      result: "Rata mensile",
-      about: "Informazioni sui prestiti",
-      aboutText:
-        "Calcola la tua rata mensile in base a importo, tasso e durata.",
-      formula: "Formula",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+loan: {
+  metaTitle: "Calcolatore di Prestiti Online – Stima i Pagamenti Mensili",
+  desc: "Usa il nostro Calcolatore di Prestiti per stimare i pagamenti mensili, i costi degli interessi e l'importo totale da rimborsare. Pianifica prestiti personali, auto o casa in modo intelligente",
+  principal: "Importo del Prestito ($)",
+  rate: "Tasso di Interesse Annuale (%)",
+  years: "Durata del Prestito (anni)",
+  result: "Pagamento Mensile",
+  heading: "Calcolatore di Prestiti",
+
+  tocTitle: "Indice",
+  tocabout: "Informazioni sul Calcolatore di Prestiti",
+  tocformula: "Formula del Calcolatore di Prestiti",
+  tocloan: "Formula del Pagamento del Prestito",
+  tocexample: "Esempio di Calcolo",
+  tocwhy: "Perché è Importante",
+
+  aboutsection: "Informazioni sul Calcolatore di Prestiti",
+  aboutcontent: "Il Calcolatore di Prestiti ti aiuta a stimare i pagamenti mensili, gli interessi totali e il costo complessivo del prestito prima di prenderlo. Che tu stia pianificando un prestito personale, auto o casa, questo strumento mostra come diversi termini di prestito, tassi di interesse e periodi di rimborso influenzano il tuo budget. Semplifica la pianificazione finanziaria aiutandoti a confrontare le opzioni di rimborso e scegliere il piano più conveniente.",
+
+  formulatitle: "Formula del Calcolatore di Prestiti",
+  formulacontent: "Il Calcolatore di Prestiti utilizza una formula standard di ammortamento del prestito per calcolare il pagamento mensile (EMI), gli interessi totali e l'importo complessivo del prestito nel tempo. Considera tre fattori principali: l'importo del prestito, il tasso di interesse e il periodo di rimborso.",
+  formulaImage: "/loan-calculator.jpg",
+  formulaImageAlt: "Loan Calculator",
+  formulaSubtitle: "Formula del Pagamento del Prestito",
+  formula1: "EMI = [P × r × (1 + r)ⁿ] ÷ [(1 + r)ⁿ – 1]",
+  formulaList: [
+    "EMI = Pagamento mensile del prestito",
+    "P = Importo principale del prestito",
+    "r = Tasso di interesse mensile (tasso annuo ÷ 12 ÷ 100)",
+    "n = Numero totale di pagamenti mensili",
+  ],
+  formulaSubtitle2: "Esempio di Calcolo",
+  formulaSubcontent2: "Se prendi un prestito di $10,000 al 8% annuo per 3 anni (36 mesi), il tuo tasso di interesse mensile sarà:",
+  formula2: "r = 0.08 ÷ 12 = 0.0067",
+  formula2endcontent: "Ora inserisci questi valori nella formula:",
+  formula3: "EMI = [10,000 × 0.0067 × (1 + 0.0067)³⁶] ÷ [(1 + 0.0067)³⁶ – 1]",
+  formula3endcontent: "Il tuo pagamento mensile sarà circa $313, e il rimborso totale circa $11,268. Ciò significa che pagherai circa $1,268 di interessi in 3 anni.",
+  formulasubtitle3: "Perché è Importante",
+  formulasubcontent3: "Capire il pagamento mensile del prestito ti aiuta a pianificare efficacemente il budget ed evitare di indebitarti troppo. Puoi sperimentare diverse combinazioni di importi, tassi di interesse e periodi di rimborso per trovare quella che meglio si adatta ai tuoi obiettivi finanziari.",
+  formulasub3extratext: "Se stai calcolando pagamenti per prestiti ipotecari o immobiliari, usa il nostro strumento per ottenere risultati precisi specifici per il mutuo",
+  formulasub3interlink: "Calcolatore Mutuo",
+
+  faqTitle: "Domande Frequenti",
+  faq: [
+    {
+      q: "Cosa fa il Calcolatore di Prestiti?",
+      a: "Il Calcolatore di Prestiti ti aiuta a stimare pagamenti mensili, interessi totali e rimborso complessivo per prestiti personali, auto o casa. Fornisce un quadro chiaro di quanto costerà il prestito nel tempo."
     },
+    {
+      q: "Come funziona il Calcolatore di Prestiti?",
+      a: "Utilizza la formula di ammortamento del prestito per calcolare il pagamento mensile. Inserisci l'importo del prestito, il tasso di interesse e la durata, e mostra immediatamente il piano dei pagamenti e il costo totale."
+    },
+    {
+      q: "Perché è importante usare un Calcolatore di Prestiti?",
+      a: "Un Calcolatore di Prestiti aiuta a prendere decisioni di prestito più intelligenti. Permette di confrontare diverse opzioni, pianificare il budget e capire come variazioni di tassi o termini influenzano i pagamenti."
+    },
+    {
+      q: "Quali fattori influenzano l'importo del mio rimborso?",
+      a: "L'importo del rimborso è influenzato da tre fattori principali: il capitale, ovvero la somma presa in prestito; il tasso di interesse, che rappresenta il costo del prestito; e la durata del prestito, ovvero il tempo per rimborsarlo. Insieme determinano quanto pagherai ogni mese e il totale alla fine del prestito."
+    },
+    {
+      q: "Posso usare questo calcolatore per diversi tipi di prestito?",
+      a: "Sì. Puoi calcolare i pagamenti per prestiti personali, educativi, auto o casa. Tutti seguono la stessa logica di calcolo, ma tassi e termini possono variare."
+    },
+    {
+      q: "Il Calcolatore di Prestiti mostra quanto pagherò di interessi?",
+      a: "Sì. Fornisce una ripartizione dettagliata degli interessi totali sul prestito. Ti aiuta a vedere quanto va verso interessi e quanto verso il capitale, permettendo di pianificare rimborsi più veloci o confrontare i prestatori."
+    }
+  ]
+},
     compound: {
       title: "Calcolatore di Interesse Composto",
       desc: "Calcola la crescita dell’interesse composto",
@@ -959,45 +1016,331 @@ macros: {
       formula: "Formula",
       formulaText: "Calcola il valore futuro con depositi regolari",
     },
-    mortgage: {
-      title: "Calcolatore del Mutuo",
-      desc: "Calcola rate del mutuo",
-      homePrice: "Prezzo casa (€)",
-      downPayment: "Acconto (€)",
-      rate: "Tasso d’interesse (%)",
-      years: "Durata del mutuo (anni)",
-      result: "Rata mensile",
-      about: "Informazioni sui mutui",
-      aboutText:
-        "Calcola la rata mensile e l’interesse totale del tuo mutuo.",
-      formula: "Formula",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+mortgage: {
+  metaTitle: "Calcolatore Mutuo: Stima Immediata delle Rate Mensili del Prestito Casa",
+  desc: "Usa il nostro Calcolatore Mutuo per stimare le tue rate mensili in base al tasso di interesse e alla durata del prestito. Pianifica facilmente il tuo budget prima dell'acquisto.",
+  homePrice: "Prezzo Casa ($)",
+  downPayment: "Acconto ($)",
+  rate: "Tasso di Interesse (%)",
+  years: "Durata del Prestito (anni)",
+  result: "Rata Mensile",
+  heading: "Calcolatore Mutuo",
+  tocTitle: "Indice",
+  tocwhy: "Perché un Calcolatore Mutuo è Importante",
+  tochowmortage: "Come Funziona il Calcolatore Mutuo Online",
+  tocwhyuse: "Perché Usare un Calcolatore Mutuo",
+  tocmortageformula: "Formula del Calcolatore Mutuo",
+  tocformulastep1: "Passo 1: Identificare i Dati Chiave",
+  tocformulastep2: "Passo 2: Esempio di Calcolo del Mutuo",
+  tocformulastep3: "Passo 3: Suddivisione Capitale e Interessi",
+  tocformulahowto: "Come Usare i Risultati",
+  tocformulawhy: "Perché Questa Formula Funziona",
+  aboutH2: "Informazioni sul Calcolatore Mutuo",
+  aboutContent: "Il Calcolatore Mutuo ti aiuta a stimare facilmente le rate mensili del tuo prestito casa. Calcola l'importo della rata mensile, comprensiva di capitale e interessi, in base all'importo del prestito, al tasso di interesse e alla durata del mutuo. Questo calcolatore online offre una chiara visione della tua capacità di rimborso prima di richiedere il prestito e mostra anche quanto tempo ci vorrà per estinguere completamente il mutuo e quanto sarà l'interesse totale pagato.",
+  whyTitle: "Perché un Calcolatore Mutuo è Importante",
+  whyIntro: "Comprendere le rate del tuo prestito aiuta a pianificare meglio ed evitare sorprese finanziarie. Con questo strumento puoi:",
+  whyList: [
+    "Stimare accuratamente le rate mensili",
+    "Confrontare offerte e tassi di prestito",
+    "Pianificare il budget per l'acquisto della casa",
+    "Visualizzare il piano di ammortamento"
+  ],
+  whyEnd: "Il calcolatore mutuo rende più facile vedere come cambiano le rate con importi o tassi di interesse differenti.",
+  howWorksTitle: "Come Funziona il Calcolatore Mutuo Online",
+  howWorksContent: "Il calcolatore utilizza l'importo del prestito, il tasso di interesse e la durata del mutuo per calcolare le rate mensili fisse. Applica la formula standard di rimborso, mostrando quanto va agli interessi e quanto riduce il capitale.",
+  howWorksInputTitle: "Dovrai inserire:",
+  howWorksInputList: [
+    "Importo del Prestito ($)",
+    "Tasso di Interesse (%)",
+    "Durata del Prestito (anni)"
+  ],
+  howWorksResulttext: "Mostra immediatamente:",
+  howWorksResultList: [
+    "Rata mensile",
+    "Totale interessi pagati",
+    "Totale importo da pagare",
+    "Tabella di ammortamento (opzionale)"
+  ],
+  howWorksEnd: "Questo ti aiuta a monitorare il piano di rimborso e gestire le finanze a lungo termine.",
+  whyUseTitle: "Perché Usare un Calcolatore Mutuo",
+  whyUseContent: "Questo strumento di finanziamento domestico ti offre il controllo sulla pianificazione del prestito. Puoi testare diverse durate e tassi di interesse per trovare l'opzione più conveniente. Modificando i dati, puoi vedere come piccole variazioni di tasso o durata influenzano il costo totale, rendendo il calcolatore un elemento cruciale per decisioni finanziarie informate. Ti aiuta a prendere un mutuo con sicurezza, sapendo esattamente come sarà il piano di rimborso fin dal primo giorno.",
+  formulaMainTitle: "Formula del Calcolatore Mutuo",
+  formulaMainIntro: "Il Calcolatore Mutuo utilizza una semplice formula di interesse composto per stimare la rata mensile. Calcola quanto devi pagare ogni mese per rimborsare completamente capitale e interessi entro la durata scelta.",
+  formulaSubIntro: "La formula principale è:",
+  formulaMain: "M = P × [ r(1 + r)ⁿ ] ÷ [ (1 + r)ⁿ – 1 ]",
+  formulaDefinitionList: [
+    "M = Rata mensile del mutuo",
+    "P = Capitale del prestito (somma presa in prestito)",
+    "r = Tasso di interesse mensile (annuale ÷ 12)",
+    "n = Numero totale di pagamenti (durata del prestito in anni × 12)"
+  ],
+  formulaEndText: "Questa formula mostra come capitale e interessi siano suddivisi nel tempo.",
+  formulaImage: "/Mortgage-Calculator.jpg",
+  formulaImageAlt: "Mortgage Calculator",
+  step1Title: "Passo 1: Identificare i Dati Chiave",
+  step1List: [
+    "Importo del Prestito (P) — somma totale presa in prestito",
+    "Tasso di Interesse (r) — tasso annuo diviso per 12",
+    "Durata del Prestito (n) — anni moltiplicati per 12 mesi"
+  ],
+  step1End: "Il calcolatore mutuo poi calcola la rata mensile fissa usando questi dati.",
+  step2Title: "Passo 2: Esempio di Calcolo del Mutuo",
+  step2ExampleList: [
+    "Importo Prestito = $250,000",
+    "Tasso di Interesse Annuale = 5%",
+    "Durata Prestito = 30 anni"
+  ],
+  step2CalcStep1: "Converti il tasso annuale in mensile: r = 5 ÷ 100 ÷ 12 = 0.004167 n = 30 × 12 = 360 mesi",
+  step2CalcStep2: "Applica la formula: M = 250,000 × [0.004167 × (1 + 0.004167)³⁶⁰] ÷ [(1 + 0.004167)³⁶⁰ – 1] M = $1,342.05 al mese",
+  step2ResultMeaning: "Significa che pagherai $1,342.05 al mese per 30 anni per rimborsare completamente il mutuo.",
+  step3Title: "Passo 3: Suddivisione Capitale e Interessi",
+  step3Content: "Ogni pagamento include capitale e interessi. All’inizio la maggior parte va agli interessi, col tempo di più al capitale. Questo è chiamato piano di ammortamento, mostrando come il saldo del prestito diminuisce mese dopo mese fino al completo rimborso.",
+  totalExampleTitle: "Esempio: Costo Totale del Prestito",
+  totalExampleList: [
+    "Rata Mensile: $1,342.05",
+    "Totale Pagamenti (360 mesi): $1,342.05 × 360 = $483,138",
+    "Totale Interessi Pagati: $483,138 – $250,000 = $233,138"
+  ],
+  totalExampleEnd: "Quindi, in 30 anni pagherai circa $233,138 di interessi su un prestito di $250,000. Ti aiuta a capire il vero costo del mutuo.",
+  howToUseTitle: "Come Usare i Risultati",
+  howToUseList: [
+    "Confronta le offerte dei prestatori",
+    "Decidi se puoi permetterti una durata più breve o più lunga",
+    "Adatta il tuo budget agli obiettivi di finanziamento casa",
+    "Pianifica un rimborso anticipato o un rifinanziamento, se possibile"
+  ],
+  howToUseEnd: "Stima le tue rate mensili più precisamente con il nostro",
+  interlink: "Loan Calculator",
+  whyWorksTitle: "Perché Questa Formula Funziona",
+  whyWorksContent: "La formula del pagamento del mutuo si basa sugli interessi composti, assicurando rate mensili costanti. È utilizzata da banche e consulenti finanziari in tutto il mondo per calcolare piani di rimborso accurati. Il calcolatore online semplifica questo complesso calcolo, permettendo di testare diverse combinazioni di tassi e durate in pochi secondi. È il modo più semplice per comprendere la tua capacità di mutuo e gli impegni finanziari a lungo termine. Lo strumento su Vastcalculators.com utilizza questa formula per fornire stime chiare, affidabili e in tempo reale per decisioni più informate.",
+  faqTitle: "Domande Frequenti",
+  faq: [
+    { q: "Cosa fa un Calcolatore Mutuo?", a: "Stima le rate mensili del prestito casa basandosi su importo, tasso di interesse e durata." },
+    { q: "Come vengono calcolate le rate del mutuo?", a: "La rata mensile è calcolata usando capitale, tasso e durata. La formula considera l’interesse composto mensilmente." },
+    { q: "Quali informazioni servono per usare il calcolatore?", a: "Importo del prestito, tasso annuo e durata in anni. Il calcolatore stimerà automaticamente la rata." },
+    { q: "Il calcolatore include tasse e assicurazioni?", a: "No. Stima solo capitale e interessi. Tasse e assicurazioni vanno aggiunte separatamente." },
+    { q: "Posso usare il calcolatore per rifinanziamenti?", a: "Sì. Inserisci il nuovo importo, durata e tasso per stimare le nuove rate e confrontarle con il mutuo attuale." },
+    { q: "Come posso ridurre la rata mensile?", a: "Puoi aumentare la durata del prestito, ridurre il tasso d'interesse o versare un acconto maggiore." }
+  ]
+},
+roi: {
+  metaTitle: "Calcolatore ROI Online | Calcola il Ritorno sull'Investimento Online",
+  desc: "Scopri rapidamente e con precisione il tuo ritorno sull'investimento (ROI). Usa il nostro calcolatore ROI per monitorare i profitti, confrontare progetti e migliorare le performance finanziarie.",
+  investment: "Investimento ($)",
+  gain: "Guadagno ($)",
+  result: "ROI %",
+  heading: "Calcolatore ROI",
+  tocabout: "Informazioni sul Calcolatore ROI",
+  tochow: "Come Funziona il Calcolatore ROI Online",
+  tocformula: "Formula del Calcolatore ROI",
+  tocwhy: "Perché il Calcolo del ROI è Importante",
+  tocexample: "Esempi di Calcolo",
+  tocresult: "Come Usare i Risultati del ROI",
+
+  aboutsection: "Informazioni sul Calcolatore ROI",
+  aboutcontent: "Il Calcolatore ROI ti aiuta a misurare quanto è redditizio un investimento rispetto al suo costo. ROI significa Ritorno sull'Investimento e mostra quanto efficientemente il denaro viene utilizzato per generare profitto. Questo calcolatore ROI online determina istantaneamente la percentuale di ritorno, permettendoti di vedere se un investimento ha avuto buone prestazioni o meno. Ideale per aziende, investitori e imprenditori per valutare costi e ritorni in modo accurato.",
+
+  whytitle: "Perché il Calcolo del ROI è Importante",
+  whycontent: "Il ROI offre una visione chiara delle performance di un investimento. Che si tratti di analizzare una campagna di marketing, un lancio di prodotto o l'espansione aziendale, il ROI mostra la percentuale di profitto o perdita rispetto al costo totale.",
+  whylist: [
+    "Valutare rapidamente le performance finanziarie",
+    "Confrontare più investimenti",
+    "Identificare i progetti con maggiori ritorni",
+    "Supportare decisioni basate sui dati"
+  ],
+  whyextratext: "Trova il tuo punto di profitto utilizzando il",
+  whyinterlink: "Calcolatore Break Even",
+
+  howworkstitle: "Come Funziona il Calcolatore ROI Online",
+  howworksIntro: "Il Calcolatore del Ritorno sull'Investimento usa una semplice formula percentuale. Ti servono solo due valori:",
+  howworkslist: [
+    "Guadagno Totale dall'Investimento ($)",
+    "Costo Totale dell'Investimento ($)"
+  ],
+  howworksresultlist: [
+    "Percentuale ROI",
+    "Profitto o perdita totale"
+  ],
+
+  whyusetitle: "Perché Usare un Calcolatore ROI",
+  whyusecontent: "Il calcolatore del ritorno sugli investimenti semplifica l'analisi finanziaria con risultati chiari. Perfetto per imprenditori, marketer e investitori che vogliono monitorare i risultati senza fare calcoli manuali. Questo strumento evidenzia da dove provengono i profitti e dove è possibile migliorare le performance, assicurando che ogni euro speso contribuisca efficacemente alla crescita a lungo termine.",
+
+  formulatitle: "Formula del Calcolatore ROI",
+  formulamain: "ROI (%) = [(Profitto Netto) ÷ (Costo dell'Investimento)] × 100",
+  formula2: "ROI (%) = [(Valore Finale – Costo Iniziale) ÷ Costo Iniziale] × 100",
+
+  stepTitle: "Passo 1: Identifica i Valori Chiave",
+  stepList: [
+    "Costo Iniziale (Investimento): la somma totale spesa",
+    "Valore Finale (Ritorno): l'importo totale guadagnato dall'investimento"
+  ],
+  stepEndText: "Sottrai il costo iniziale dal valore finale per trovare il profitto netto. Poi dividi per il costo iniziale e moltiplica per 100 per ottenere la percentuale ROI. Questo metodo offre una chiara visione del rapporto costo/ritorno ed è una delle formule di margine di profitto più utilizzate in finanza.",
+
+  formulaImage: "/ROI-Calculator.jpg",
+  formulaImageAlt: "ROI Calculator",
+
+  exampleTitle: "Esempio di Calcolo ROI",
+  exampleValues: [
+    "Costo Iniziale = $5,000",
+    "Valore Finale = $6,200"
+  ],
+  exampleStep1: "Profitto Netto = 6,200 – 5,000 = $1,200",
+  exampleStep2: "ROI (%) = (1,200 ÷ 5,000) × 100 = 24%",
+  exampleEnd: "Quindi, il tuo Ritorno sull'Investimento è 24%. Ciò significa che il progetto ha guadagnato il 24% rispetto al capitale investito.",
+
+  example2Title: "Esempio: Confronto tra Due Investimenti",
+  exampleA: [
+    "Costo = $10,000",
+    "Ritorno = $12,000",
+    "ROI = (2,000 ÷ 10,000) × 100 = 20%"
+  ],
+  exampleB: [
+    "Costo = $15,000",
+    "Ritorno = $18,750",
+    "ROI = (3,750 ÷ 15,000) × 100 = 25%"
+  ],
+  example2End: "Anche se l'Investimento B richiedeva più denaro, ha prodotto un tasso di ritorno più alto.",
+
+  resultTitle: "Come Usare i Risultati del ROI",
+  resultList: [
+    "Misurare le performance degli investimenti su diversi progetti",
+    "Valutare campagne o lanci aziendali",
+    "Identificare opportunità ad alto rendimento",
+    "Analizzare trend di redditività nel tempo"
+  ],
+
+  whysformulaTitle: "Perché Questa Formula Funziona",
+  whysformulaContent: "La formula ROI fornisce un metodo chiaro e universale per monitorare l'efficienza finanziaria. Si applica a tutti i settori, dalle operazioni aziendali al trading azionario e all'analisi marketing. È semplice, veloce e precisa, mostrando quanto profitto hai guadagnato rispetto all'investimento. Il calcolatore ROI online aiuta investitori e imprenditori a monitorare il successo finanziario senza fogli di calcolo o calcoli complessi. È uno degli strumenti più pratici per chi gestisce costi e ritorni. Il calcolatore su Vastcalculators.com fornisce risultati percentuali ROI precisi istantaneamente, rendendolo uno strumento ROI affidabile per decision-maker e professionisti.",
+
+  faqTitle: "Domande Frequenti",
+  faq: [
+    {
+      q: "Cosa fa il Calcolatore ROI?",
+      a: "Il Calcolatore ROI misura il ritorno su un investimento confrontando il profitto con l'importo iniziale speso, fornendo risultati in forma percentuale."
     },
-    roi: {
-      title: "Calcolatore ROI",
-      desc: "Calcola il ritorno sull’investimento",
-      investment: "Investimento (€)",
-      gain: "Guadagno (€)",
-      result: "ROI %",
-      about: "Informazioni sul ROI",
-      aboutText:
-        "Il ROI misura la redditività di un investimento.",
-      formula: "Formula",
-      formulaText: "ROI = (Guadagno / Investimento) × 100",
+    {
+      q: "Come funziona la formula ROI?",
+      a: "Divide il profitto netto per il costo dell'investimento e moltiplica per 100 per trovare la percentuale ROI."
     },
-    breakeven: {
-      title: "Calcolatore del Punto di Pareggio",
-      desc: "Calcola il punto di pareggio",
-      fixedCosts: "Costi fissi (€)",
-      variableCost: "Costo variabile per unità (€)",
-      price: "Prezzo per unità (€)",
-      result: "Unità per pareggio",
-      about: "Informazioni sul punto di pareggio",
-      aboutText:
-        "Il punto di pareggio si raggiunge quando i ricavi eguagliano i costi totali.",
-      formula: "Formula",
-      formulaText: "Pareggio = Costi fissi / (Prezzo - Costo variabile)",
+    {
+      q: "Qual è un buon ROI?",
+      a: "Dipende dal settore. In generale, un ROI tra il 10% e il 30% è considerato buono per la maggior parte degli investimenti."
     },
+    {
+      q: "Il ROI può essere negativo?",
+      a: "Sì. Un ROI negativo significa che l'investimento ha perso denaro rispetto a quanto speso."
+    },
+    {
+      q: "Quanto spesso dovrei calcolare il ROI?",
+      a: "Dovresti misurare il ROI dopo ogni investimento o progetto importante per monitorare le performance e migliorare."
+    },
+    {
+      q: "Qual è la differenza tra ROI e Break-Even Point?",
+      a: "Il ROI mostra profitto o perdita, mentre il Calcolatore Break-Even aiuta a trovare il punto in cui i costi totali e i ricavi totali si pareggiano, indicando quando inizia il profitto."
+    }
+  ]
+},
+breakeven: {
+  metaTitle: "Calcolatore del Punto di Pareggio – Trova il tuo punto di profitto",
+  desc: "Usa il nostro Calcolatore del Punto di Pareggio per vedere quando la tua attività copre i costi e inizia a generare profitto. Analisi semplice, veloce e accurata.",
+  fixedCosts: "Costi Fissi ($)",
+  variableCost: "Costo Variabile per Unità ($)",
+  price: "Prezzo per Unità ($)",
+  result: "Unità per Pareggio",
+  heading: "Calcolatore del Punto di Pareggio",
+
+  tocabout: "Informazioni sul Calcolatore del Punto di Pareggio",
+  tocwhy: "Perché un'Analisi del Punto di Pareggio è Importante",
+  tochowitworks: "Come Funziona il Calcolatore del Punto di Pareggio Online",
+  tocwhyuse: "Perché Usare un Calcolatore del Punto di Pareggio",
+
+  aboutTitle: "Informazioni sul Calcolatore del Punto di Pareggio",
+  aboutContent: "Il Calcolatore del Punto di Pareggio ti aiuta a trovare il punto in cui il ricavo totale è uguale ai costi totali, dove la tua attività non genera né profitto né perdita. Questo strumento utilizza costi fissi, costi variabili e prezzo di vendita per calcolare il tuo fatturato di pareggio o il volume di vendita richiesto. È un modo rapido per valutare la salute finanziaria e pianificare meglio le strategie di prezzo.",
+
+  whyTitle: "Perché un'Analisi del Punto di Pareggio è Importante",
+  whyIntro: "Un'analisi del punto di pareggio mostra quante unità devi vendere o quanto ricavo devi generare per coprire tutte le spese.",
+  whyList: [
+    "Pianificare prezzi e struttura dei costi",
+    "Identificare i punti di equilibrio tra profitto e perdita",
+    "Gestire investimenti e spese",
+    "Valutare la fattibilità e il rischio del prodotto"
+  ],
+  whyEnd: "Comprendere la soglia finanziaria assicura che le operazioni rimangano redditizie e sostenibili.",
+
+  interlinkExtraText: "Dopo aver trovato il punto di pareggio, verifica il rendimento complessivo con il nostro",
+  interlinkSlugText: "Calcolatore ROI",
+
+  howWorksTitle: "Come Funziona il Calcolatore del Punto di Pareggio Online",
+  howWorksIntro: "Il calcolatore applica il metodo di analisi costo-volume-profitto per stimare il tuo fatturato di pareggio.",
+  howWorksListTitle: "Inserirai tre dettagli principali:",
+  howWorksList: [
+    "Costi fissi – spese che non cambiano con il volume delle vendite (affitto, stipendi)",
+    "Costi variabili – spese che aumentano per unità venduta (materiali, imballaggio)",
+    "Prezzo di vendita per unità"
+  ],
+  howWorksResultTitle: "Una volta inseriti, il calcolatore mostra immediatamente:",
+  howWorksResultList: [
+    "Punto di pareggio (in unità)",
+    "Punto di pareggio (in ricavo)"
+  ],
+  howWorksEnd: "Questo ti aiuta a determinare la quantità esatta di vendite necessaria per recuperare i costi iniziali e iniziare a guadagnare profitto.",
+
+  whyUseTitle: "Perché Usare un Calcolatore del Punto di Pareggio",
+  whyUseContent: "Questo strumento di redditività aziendale offre chiarezza sulla gestione dei costi e sulle previsioni di profitto. Aiuta le aziende a valutare la fattibilità finanziaria comprendendo l'economia per unità, il potenziale di espansione e le decisioni di investimento. Il Calcolatore del Punto di Pareggio semplifica la pianificazione e fornisce informazioni affidabili per bilanciare efficacemente costi e profitti.",
+
+  formulatitle: "Formula del Calcolatore del Punto di Pareggio",
+  formulaintro: "Il Calcolatore del Punto di Pareggio utilizza una semplice formula finanziaria che confronta costi e vendite per identificare quando l'attività inizia a generare profitto.",
+  mainFormulaText: "La formula principale è:",
+  formula: "Punto di Pareggio (Unità) = Costi Fissi ÷ (Prezzo di Vendita per Unità – Costo Variabile per Unità)",
+  afterFormulaDesc: "Questa equazione mostra quante unità devi vendere per coprire tutte le spese. Ogni vendita oltre questo punto rappresenta profitto.",
+
+  step1Title: "Passo 1: Comprendere i Componenti della Formula",
+  step1List: [
+    "Costi Fissi: Spese che rimangono costanti indipendentemente dalle vendite, come affitto, stipendi e assicurazioni.",
+    "Costi Variabili: Spese che cambiano con la produzione, come materiali, imballaggio e spedizione.",
+    "Prezzo di Vendita per Unità: L'importo che addebiti per un'unità del tuo prodotto o servizio."
+  ],
+  cvpLine: "Questa formula di analisi costo-volume-profitto ti aiuta a misurare l'equilibrio tra costo, volume e profitto — un elemento chiave della gestione finanziaria.",
+
+  step2Title: "Passo 2: Formula del Ricavo di Pareggio",
+  step2Formula: "Ricavo di Pareggio = Unità per Pareggio × Prezzo di Vendita per Unità",
+  step2Desc: "Una volta noto il numero di unità, puoi calcolare il Ricavo di Pareggio utilizzando:",
+  step2Explain: "Questo mostra quanto reddito totale deve generare la tua azienda prima di raggiungere il profitto.",
+
+  imageUrl: "/Break-Even-Calculator.jpg",
+  imageAlt: "Break-Even Calculator",
+
+  exampleTitle: "Esempio di Calcolo del Punto di Pareggio",
+  exampleList: [
+    "Costi Fissi = 10.000 $",
+    "Costo Variabile per Unità = 20 $",
+    "Prezzo di Vendita per Unità = 50 $"
+  ],
+  exampleStep1: "Passo 1: Punto di Pareggio (Unità) = 10.000 ÷ (50 – 20) = 10.000 ÷ 30 = 334 unità (arrotondato)",
+  exampleStep2: "Passo 2: Ricavo di Pareggio = 334 × 50 = 16.700 $",
+  exampleExplain: "Significa che la tua azienda deve generare 16.700 $ di vendite o vendere 334 unità per coprire tutti i costi fissi e variabili. Dopo questo, ogni unità aggiuntiva contribuisce direttamente al profitto.",
+
+  interpretingTitle: "Interpretazione del Risultato",
+  interpretingList: [
+    "Vendita sotto il pareggio = perdita",
+    "Vendita al pareggio = né profitto né perdita",
+    "Vendita sopra il pareggio = profitto"
+  ],
+  interpretDesc: "Comprendere questo aiuta i titolari a gestire i prezzi, valutare i rischi e recuperare più rapidamente i costi di avvio.",
+
+  whyWorksTitle: "Perché Questa Formula Funziona",
+  whyWorksDesc: "La formula del punto di pareggio è semplice ma potente. Aiuta a visualizzare la relazione tra costi, ricavi e volume, offrendo un quadro chiaro della redditività. Questo strumento di redditività aiuta startup e aziende consolidate a gestire l'equilibrio finanziario — dove i ricavi alimentano le operazioni e il profitto sostiene la crescita. Il Calcolatore del Punto di Pareggio online applica questa formula istantaneamente, offrendo informazioni chiare per decisioni rapide e successo a lungo termine.",
+
+  faqTitle: "Domande Frequenti",
+  faq: [
+    { q: "Cosa fa un Calcolatore del Punto di Pareggio?", a: "Un Calcolatore del Punto di Pareggio ti aiuta a trovare il punto esatto in cui i tuoi ricavi totali eguagliano i tuoi costi totali, mostrando quando la tua azienda inizia a generare profitto." },
+    { q: "Come si calcola il punto di pareggio?", a: "Si calcola dividendo i costi fissi per la differenza tra il prezzo di vendita per unità e il costo variabile per unità. Il risultato indica quante unità devi vendere per raggiungere il pareggio." },
+    { q: "Perché il punto di pareggio è importante?", a: "Conoscere il punto di pareggio aiuta a capire come vendite, prezzi e costi influenzano il profitto. È un passo chiave per pianificazione, budget e strategie di prezzo." },
+    { q: "Cosa sono i costi fissi e variabili?", a: "I costi fissi sono spese che rimangono uguali ogni mese, come affitto o stipendi. I costi variabili cambiano con la produzione o il volume delle vendite, come materiali o spedizione." },
+    { q: "Il Calcolatore del Punto di Pareggio può essere usato per i servizi?", a: "Sì. Puoi usarlo per prodotti e servizi inserendo i tuoi costi fissi e variabili totali insieme al prezzo medio di vendita per unità o progetto." },
+    { q: "Quanto spesso dovrei calcolare il mio punto di pareggio?", a: "Ricalcola il tuo punto di pareggio ogni volta che cambiano costi, prezzi o strategie di vendita per garantire che la tua attività rimanga redditizia." }
+  ],
+},
     discount: {
       title: "Calcolatore di Sconto",
       desc: "Calcola sconti e prezzo finale",
@@ -1023,32 +1366,223 @@ macros: {
       formula: "Formula",
       formulaText: "Mancia = Conto × %, Per persona = Totale / Persone",
     },
-    inflation: {
-      title: "Calcolatore di Inflazione",
-      desc: "Calcola l’impatto dell’inflazione",
-      amount: "Importo (€)",
+inflation: {
+      metaTitle: "Calcolatore dell'inflazione online – Monitora il valore del denaro nel tempo",
+      desc: "Usa il nostro calcolatore dell'inflazione per misurare come l'inflazione influisce sul valore del tuo denaro e sul potere d'acquisto in diversi anni.",
+      amount: "Importo ($)",
       years: "Anni",
-      rate: "Tasso d’inflazione (%)",
+      rate: "Tasso di inflazione (%)",
       result: "Valore futuro",
-      about: "Informazioni sull’inflazione",
-      aboutText:
-        "Scopri come l’inflazione influisce sul valore del denaro nel tempo.",
-      formula: "Formula",
-      formulaText: "Valore futuro = Importo × (1 + Tasso)^Anni",
+      heading: "Calcolatore dell'inflazione",
+
+      tocwhy: "Perché è importante comprendere l'inflazione",
+      tochowitworks: "Come funziona il calcolatore dell'inflazione online",
+      tocwhyuse: "Perché usare un calcolatore dell'inflazione",
+      tocsteps1: "Passo 1: Identifica le variabili",
+      tocsteps2: "Passo 2: Calcola il tasso di inflazione",
+      tocresults: "Come utilizzare i risultati",
+      tocwhyformula: "Perché questa formula funziona",
+
+      aboutTitle: "Informazioni sul calcolatore dell'inflazione",
+      aboutDesc: "Il calcolatore dell'inflazione ti aiuta a misurare come il valore del denaro cambia nel tempo a causa dell'inflazione. Mostra quanto costerebbero oggi beni o servizi che in passato avevano un certo prezzo o viceversa. Questo calcolatore online utilizza dati storici sull'inflazione, come l'Indice dei Prezzi al Consumo (CPI), per calcolare il valore del denaro corretto per l'inflazione. Ideale per confrontare prezzi, stimare il potere d'acquisto e analizzare tendenze finanziarie a lungo termine.",
+
+      whyTitle: "Perché è importante comprendere l'inflazione",
+      whyDesc: "L'inflazione riduce il potere d'acquisto del denaro nel tempo. Ciò che potevi comprare con $100 dieci anni fa costa di più oggi. Monitorare l'inflazione aiuta individui e aziende a prendere decisioni finanziarie più intelligenti.",
+      whyPoints: [
+        "Confronta il valore reale del denaro in anni diversi",
+        "Pianifica investimenti che superino l'inflazione",
+        "Comprendi le variazioni del costo della vita",
+        "Misura i cambiamenti dei prezzi nel tempo"
+      ],
+
+      howTitle: "Come funziona il calcolatore dell'inflazione online",
+      howDesc: "Il calcolatore del tasso di inflazione utilizza dati ufficiali per stimare quanto il denaro ha guadagnato o perso valore nel tempo.",
+      howNeed: [
+        "Importo iniziale ($)",
+        "Anno di inizio",
+        "Anno di fine"
+      ],
+      howResult: [
+        "Valore equivalente attuale del denaro passato",
+        "Tasso di inflazione negli anni selezionati",
+        "Variazione percentuale del potere d'acquisto"
+      ],
+
+      whyUseTitle: "Perché usare un calcolatore dell'inflazione",
+      whyUseDesc: "Il calcolatore del valore nel tempo ti aiuta a comprendere l'impatto reale dell'inflazione sulle tue finanze. Perfetto per analizzare risparmi, investimenti, salari e valori immobiliari nel lungo periodo. Funziona anche come calcolatore di deprezzamento della valuta, mostrando quanto il denaro si è indebolito o rafforzato negli anni. Con questo calcolatore del costo della vita puoi pianificare meglio il futuro, impostare obiettivi finanziari realistici e proteggere la tua ricchezza dagli effetti dell'inflazione.",
+
+      formulatitle: "Formula del calcolatore dell'inflazione",
+      formulaintro: "Il calcolatore dell'inflazione misura quanto il valore del denaro è cambiato tra due date, utilizzando l'Indice dei Prezzi al Consumo (CPI).",
+      formula1: "Importo rettificato = Importo originale × (CPI nell'anno target ÷ CPI nell'anno base)",
+      formula1endtext: "Questo ti dà il valore corretto per l'inflazione, mostrando quanto varrebbe oggi un importo passato.",
+      formulaImage: "/Inflation-Calculator.jpg",
+      formulaImageAlt: "Inflation Calculator",
+
+      steps1title: "Passo 1: Identifica le variabili",
+      steps1intro: "Ogni parte della formula rappresenta un valore economico chiave:",
+      steps1list: [
+        "Importo originale: il valore passato o presente da rettificare.",
+        "CPI anno base: indice dei prezzi al consumo dell'anno originale.",
+        "CPI anno target: indice dei prezzi al consumo dell'anno di confronto."
+      ],
+      steps1endtext: "Il calcolatore utilizza questi dati per determinare come è cambiato il potere d'acquisto del denaro.",
+
+      steps2title: "Passo 2: Calcola il tasso di inflazione",
+      steps2intro: "Per vedere il tasso di inflazione tra due anni, usa la formula:",
+      steps2formula: "Tasso di inflazione (%) = [(CPI anno target – CPI anno base) ÷ CPI anno base] × 100",
+      steps2endtext: "Mostra l'incremento percentuale dei prezzi o il deprezzamento della valuta nel periodo.",
+
+      exampletitle: "Esempio di calcolo dell'inflazione",
+      exampleintro: "Vediamo un semplice esempio:",
+      example1list: [
+        "Importo originale = $1,000",
+        "CPI anno base (2010) = 218.1",
+        "CPI anno target (2024) = 310.0"
+      ],
+      examplestep1: "Passo 1: Applica la formula:",
+      examplelist: [
+        "Importo originale = $1,000 Importo rettificato = 1,000 × (310.0 ÷ 218.1)",
+        "Importo rettificato = 1,000 × 1.4219",
+        "Importo rettificato = $1,421.90"
+      ],
+      example2end: "$1,000 nel 2010 ha lo stesso potere d'acquisto di $1,421.90 nel 2024. I prezzi sono aumentati di circa il 42%.",
+
+      exampletitle2: "Esempio: calcolo del tasso di inflazione",
+      example2intro: "Usando la seconda formula:",
+      example2list: [
+        "Tasso di inflazione = [(310.0 – 218.1) ÷ 218.1] × 100",
+        "Tasso di inflazione = (91.9 ÷ 218.1) × 100",
+        "Tasso di inflazione = 42.15%"
+      ],
+      example2endtext: "I prezzi complessivi sono aumentati di circa il 42% tra il 2010 e il 2024.",
+
+      howtotitle: "Come usare i risultati",
+      howtointro: "Puoi usare il calcolatore del tasso di inflazione per:",
+      howtolist: [
+        "Confrontare il valore reale del denaro tra anni diversi",
+        "Misurare i cambiamenti dei prezzi di beni o servizi",
+        "Rettificare investimenti o risparmi per mantenere il potere d'acquisto",
+        "Stimare valori futuri usando le tendenze dell'inflazione"
+      ],
+      howtoendtext: "Usa i risultati degli interessi composti per pianificare risparmi a lungo termine con il nostro",
+      howtoInterLink: "ROI Calculator",
+
+      whyformulaworkstitle: "Perché questa formula funziona",
+      whyformulaworkscontent: "L'inflazione mostra come i costi di beni e servizi cambiano nel tempo. L'indice dei prezzi al consumo (CPI) è il metodo più affidabile per misurare questo cambiamento. Confrontando i valori CPI, questo strumento mostra quanto il valore reale del dollaro si è eroso o apprezzato. Il calcolatore online dell'inflazione fornisce risultati rapidi e accurati, essenziali per chi monitora tendenze finanziarie, prezzi aziendali o risparmi a lungo termine. Vastcalculators.com applica dati CPI ufficiali per fornire confronti precisi e reali.",
+
+      faqTitle: "Domande frequenti",
+      faq: [
+        {
+          q: "Cosa fa un calcolatore dell'inflazione?",
+          a: "Mostra come il valore del denaro cambia nel tempo, aiutandoti a comprendere il reale valore di importi passati o futuri."
+        },
+        {
+          q: "Come viene calcolata l'inflazione?",
+          a: "L'inflazione si calcola confrontando gli indici dei prezzi di due anni. L'indice mostra quanto i prezzi sono aumentati o diminuiti."
+        },
+        {
+          q: "Cos'è il tasso di inflazione?",
+          a: "Il tasso di inflazione è l'aumento percentuale medio dei prezzi di beni e servizi in un periodo specifico, generalmente misurato annualmente."
+        },
+        {
+          q: "Come posso trovare il valore reale del denaro nel tempo?",
+          a: "Moltiplica l'importo originale per l'indice dell'anno target e dividi per l'indice dell'anno base. Mostra quanto vale un importo di un anno in un altro anno."
+        },
+        {
+          q: "Perché l'inflazione è importante per risparmi e investimenti?",
+          a: "Riduce il valore futuro del denaro, quindi i risparmi perdono potere d'acquisto se non crescono più velocemente dell'inflazione."
+        },
+        {
+          q: "Come confrontare i rendimenti dopo l'inflazione?",
+          a: "Usa i valori corretti per l'inflazione per trovare il rendimento reale. Puoi confrontarlo facilmente usando il ROI Calculator."
+        }
+      ]
+},
+currency: {
+  metaTitle: "Calcolatore Convertitore di Valuta | Conversione Tasso di Cambio in Tempo Reale",
+  desc: "Converti qualsiasi valuta in pochi secondi con il nostro calcolatore online. Ottieni tassi di cambio precisi e in tempo reale e confronta facilmente i valori delle valute globali.",
+  amount: "Importo",
+  fromCurrency: "Valuta di partenza",
+  toCurrency: "Valuta di destinazione",
+  result: "Importo Convertito",
+  heading: "Calcolatore Convertitore di Valuta",
+
+  tocabout: "Informazioni sul nostro Calcolatore Convertitore di Valuta Online",
+  tocconversion: "Conversione in Tempo Reale per Decisioni Globali più Intelligenti",
+  tocformula: "Formula di Conversione Valutaria",
+  tocexample: "Esempio di Calcolo",
+  tocaccurateconversion: "Perché la Conversione Accurata è Importante",
+  tocresults: "Come Usare i Risultati",
+  tocwhyformula: "Perché Questa Formula Funziona",
+
+  aboutTitle: "Informazioni sul nostro Calcolatore Convertitore di Valuta Online",
+  aboutDesc: "Il Calcolatore Convertitore di Valuta di Vast Calculator rende facile vedere quanto valgono i tuoi soldi in un'altra valuta in tempo reale. Che tu stia pianificando un viaggio, confrontando prezzi internazionali o gestendo transazioni globali, questo strumento fornisce conversioni veloci e accurate utilizzando i tassi di cambio più recenti. Aiuta a mantenere consapevolezza finanziaria mostrando conversioni live per valute principali come USD, EUR, GBP, JPY e altre, aggiornate regolarmente.",
+  aboutExtratext: "Se vuoi vedere come l'inflazione influisce sul reale valore della tua valuta, usa il",
+  aboutInterLink: "Calcolatore dell'Inflazione.",
+  conversionTitle: "Conversione in Tempo Reale per Decisioni Globali più Intelligenti",
+  conversioncontent: "Il Calcolatore Convertitore di Valuta semplifica la gestione del denaro internazionale. Inserendo l'importo e scegliendo le valute, puoi convertire istantaneamente valori tra diverse valute globali. Che tu sia un viaggiatore, un imprenditore o un investitore all'estero, questo calcolatore fa risparmiare tempo e garantisce calcoli precisi.",
+  keyhighlight: "Punti Salienti:",
+  keyhighlightList: [
+    "Usa tassi di cambio live da fonti finanziarie affidabili",
+    "Funziona con oltre 160 valute in tutto il mondo.",
+    "Gratuito, veloce e ottimizzato per dispositivi mobili.",
+    "Fornisce risultati immediati ad ogni aggiornamento",
+  ],
+  keyhighlightsendtext: "È progettato per offrirti chiarezza prima di effettuare pagamenti internazionali o decisioni di viaggio, garantendo che il tuo denaro mantenga il valore oltre confine.",
+  formulatitle: "Formula di Conversione Valutaria",
+  formulasubtitle: "Come Funziona il Convertitore di Valuta",
+  formulasubintro: "Il Convertitore di Valuta utilizza una formula semplice che moltiplica la valuta di base per il tasso di cambio corrente per trovare il valore della valuta di destinazione.",
+  formula1: "Formula: Importo Convertito = Importo Base × Tasso di Cambio",
+  formula1list: [
+    "Importo Base = L'importo nella tua valuta originale",
+    "Tasso di Cambio = Il tasso corrente tra le due valute",
+    "Importo Convertito = Il valore dopo la conversione",
+  ],
+  formulaImage: "/Currency-Converter-Calculator.jpg",
+  formulaImageAlt: "Currency Converter Calculator",
+  exampletitle: "Esempio di Calcolo",
+  exampleintro: "Se hai 100 USD e il tasso di cambio USD a EUR è 0,92, allora:",
+  exampleformula: "Importo Convertito = 100 × 0,92 = 92 EUR",
+  exampleendtext: "Ciò significa che $100 equivalgono a €92 a quel tasso specifico. Poiché i tassi di cambio fluttuano quotidianamente, è consigliabile ricontrollare i valori regolarmente.",
+  accuratetitle: "Perché la Conversione Accurata è Importante",
+  accuratesubtitle: "Rimani Informato Prima di Spendere",
+  accuratesubcontent: "I tassi di cambio cambiano costantemente a causa delle tendenze di mercato, dell'inflazione e del commercio globale. Una conversione in tempo reale aiuta a prendere decisioni più intelligenti quando:",
+  accuratesublist: [
+    "Viaggi o fai acquisti internazionali.",
+    "Invii o ricevi denaro dall'estero.",
+    "Confronti i prezzi dei prodotti in diversi paesi",
+    "Gestisci investimenti in diverse valute.",
+  ],
+  accuratesubend: "Conoscendo il valore esatto prima di una transazione, puoi evitare perdite dovute a tassi di cambio obsoleti o errati.",
+
+  faqTitle: "Domande Frequenti",
+  faq: [
+    {
+      q: "Cosa fa il Calcolatore Convertitore di Valuta?",
+      a: "Converte qualsiasi importo da una valuta all'altra utilizzando tassi di cambio live, fornendo risultati precisi all'istante."
     },
-    currency: {
-      title: "Convertitore di Valuta",
-      desc: "Converti tra valute diverse",
-      amount: "Importo",
-      fromCurrency: "Da valuta",
-      toCurrency: "A valuta",
-      result: "Importo convertito",
-      about: "Informazioni sulla valuta",
-      aboutText:
-        "Converti tra diverse valute ai tassi di cambio attuali.",
-      formula: "Formula",
-      formulaText: "Usa i tassi di cambio correnti",
+    {
+      q: "I tassi di cambio vengono aggiornati automaticamente?",
+      a: "Sì. I tassi vengono aggiornati regolarmente con i dati più recenti da fonti finanziarie globali affidabili."
     },
+    {
+      q: "Posso usarlo per qualsiasi valuta?",
+      a: "Sì. Il calcolatore supporta oltre 160 valute, comprese quelle principali e minori."
+    },
+    {
+      q: "Questo strumento è gratuito?",
+      a: "Sì. Il Calcolatore Convertitore di Valuta su VastCalculator è completamente gratuito e funziona istantaneamente online."
+    },
+    {
+      q: "Perché i tassi di cambio cambiano ogni giorno?",
+      a: "I tassi cambiano a causa di domanda e offerta, inflazione, tassi di interesse e politiche economiche internazionali."
+    },
+    {
+      q: "In cosa è diverso da un calcolatore di inflazione?",
+      a: "Il Convertitore mostra il tasso di cambio attuale tra due valute, mentre il Calcolatore di Inflazione mostra come il valore del denaro cambia nel tempo."
+    },
+  ],
+},
   },
 footer: {
   subtitle: "Calcolatori Vast – Semplifica la matematica con calcolatrici online gratuite",

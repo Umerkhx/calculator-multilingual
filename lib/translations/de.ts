@@ -918,19 +918,76 @@ macros: {
   },
   // Finanzrechner
   finance: {
-    loan: {
-      title: "Kreditrechner",
-      desc: "Berechnen Sie Kreditraten und Zinsen",
-      principal: "Kreditbetrag ($)",
-      rate: "Jahreszins (%)",
-      years: "Laufzeit (Jahre)",
-      result: "Monatliche Zahlung",
-      about: "Über Kredite",
-      aboutText:
-        "Berechnen Sie Ihre monatliche Kreditrate basierend auf Betrag, Zinssatz und Laufzeit.",
-      formula: "Formel",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+loan: {
+  metaTitle: "Online-Kreditrechner – Monatliche Kreditraten schätzen",
+  desc: "Verwenden Sie unseren Kreditrechner, um Ihre monatlichen Zahlungen, Zinskosten und die Gesamtrückzahlung zu schätzen. Planen Sie persönliche, Auto- oder Wohnungsdarlehen intelligent",
+  principal: "Kreditsumme ($)",
+  rate: "Jährlicher Zinssatz (%)",
+  years: "Laufzeit (Jahre)",
+  result: "Monatliche Zahlung",
+  heading: "Kreditrechner",
+
+  tocTitle: "Inhaltsverzeichnis",
+  tocabout: "Über den Kreditrechner",
+  tocformula: "Kreditrechner-Formel",
+  tocloan: "Kreditzahlungsformel",
+  tocexample: "Beispielrechnung",
+  tocwhy: "Warum es wichtig ist",
+
+  aboutsection: "Über den Kreditrechner",
+  aboutcontent: "Der Kreditrechner hilft Ihnen, Ihre monatlichen Zahlungen, die Gesamtzinsen und die Gesamtkosten des Kredits vor der Aufnahme abzuschätzen. Egal, ob Sie einen Privatkredit, Autokredit oder Wohnkredit planen, dieses Tool zeigt, wie sich unterschiedliche Laufzeiten, Zinssätze und Rückzahlungszeiträume auf Ihr Budget auswirken. Es vereinfacht die Finanzplanung, indem Sie Rückzahlungsoptionen vergleichen und den günstigsten Plan auswählen können. Für detaillierte Wohnkredit-Schätzungen können Sie Ihre Rückzahlungsbedingungen berechnen, um fundierte Kreditentscheidungen zu treffen.",
+
+  formulatitle: "Kreditrechner-Formel",
+  formulacontent: "Der Kreditrechner verwendet eine Standard-Amortisationsformel, um Ihre monatliche Zahlung (EMI), die Gesamtzinsen und den gesamten Kreditbetrag über die Zeit zu berechnen. Es werden drei Hauptfaktoren berücksichtigt: Kreditsumme, Zinssatz und Laufzeit.",
+  formulaImage: "/loan-calculator.jpg",
+  formulaImageAlt: "Loan Calculator",
+  formulaSubtitle: "Kreditzahlungsformel",
+  formula1: "EMI = [P × r × (1 + r)ⁿ] ÷ [(1 + r)ⁿ – 1]",
+  formulaList: [
+    "EMI = Monatliche Kreditrate",
+    "P = Kreditsumme",
+    "r = Monatlicher Zinssatz (Jahreszins ÷ 12 ÷ 100)",
+    "n = Gesamtzahl der monatlichen Zahlungen"
+  ],
+  formulaSubtitle2: "Beispielrechnung",
+  formulaSubcontent2: "Wenn Sie einen Kredit von 10.000 $ mit einem Jahreszins von 8 % über 3 Jahre (36 Monate) aufnehmen, dann beträgt Ihr monatlicher Zinssatz:",
+  formula2: "r = 0,08 ÷ 12 = 0,0067",
+  formula2endcontent: "Jetzt setzen Sie diese Werte in die Formel ein:",
+  formula3: "EMI = [10.000 × 0,0067 × (1 + 0,0067)³⁶] ÷ [(1 + 0,0067)³⁶ – 1]",
+  formula3endcontent: "Ihre monatliche Zahlung beträgt etwa 313 $, und die Gesamtrückzahlung beträgt ungefähr 11.268 $. Das bedeutet, dass Sie in 3 Jahren etwa 1.268 $ an Zinsen zahlen.",
+  formulasubtitle3: "Warum es wichtig ist",
+  formulasubcontent3: "Zu wissen, wie hoch Ihre monatliche Kreditrate ist, hilft Ihnen, Ihr Budget effektiv zu planen und Überverschuldung zu vermeiden. Sie können verschiedene Kombinationen von Kreditsummen, Zinssätzen und Laufzeiten ausprobieren, um diejenige zu finden, die am besten zu Ihren finanziellen Zielen passt.",
+  formulasub3extratext: "Wenn Sie Wohnungs- oder Immobilienzahlungen berechnen, verwenden Sie unser Tool für präzise, hypothekenspezifische Rückzahlungsergebnisse mit dem",
+  formulasub3interlink: "Hypothekenrechner",
+
+  faqTitle: "Häufig gestellte Fragen",
+  faq: [
+    {
+      q: "Was macht der Kreditrechner?",
+      a: "Der Kreditrechner hilft Ihnen, monatliche Zahlungen, Gesamtzinsen und die Gesamtrückzahlung für Privat-, Auto- oder Wohnkredite abzuschätzen. Er gibt einen klaren Überblick darüber, wie viel Ihr Kredit im Laufe der Zeit kosten wird."
     },
+    {
+      q: "Wie funktioniert der Kreditrechner?",
+      a: "Er verwendet die Amortisationsformel, um Ihre monatliche Zahlung zu berechnen. Geben Sie Ihre Kreditsumme, den Zinssatz und die Laufzeit ein, und es zeigt sofort Ihren Zahlungsplan und die Gesamtkosten an."
+    },
+    {
+      q: "Warum ist die Verwendung eines Kreditrechners wichtig?",
+      a: "Ein Kreditrechner hilft Ihnen, fundierte Kreditentscheidungen zu treffen. Er ermöglicht es Ihnen, verschiedene Kreditoptionen zu vergleichen, Budgets zu planen und zu verstehen, wie unterschiedliche Zinssätze oder Laufzeiten Ihre Zahlungen beeinflussen."
+    },
+    {
+      q: "Welche Faktoren beeinflussen meine Rückzahlung?",
+      a: "Ihre Rückzahlung wird von drei Hauptfaktoren beeinflusst: der Kreditsumme, dem Zinssatz und der Laufzeit. Zusammen bestimmen diese Elemente, wie viel Sie monatlich zahlen und wie hoch die Gesamtsumme über die Laufzeit des Kredits ist."
+    },
+    {
+      q: "Kann ich diesen Rechner für verschiedene Kreditarten verwenden?",
+      a: "Ja. Sie können Zahlungen für Privat-, Bildungs-, Auto- oder Wohnkredite berechnen. Die Berechnungslogik bleibt gleich, aber Zinssätze und Laufzeiten können variieren."
+    },
+    {
+      q: "Zeigt der Kreditrechner die Gesamtzinsen an?",
+      a: "Ja. Der Kreditrechner liefert eine detaillierte Aufschlüsselung Ihrer Gesamtzinsen über die Laufzeit des Kredits. Sie sehen, wie viel Ihrer Zahlung auf Zinsen im Vergleich zum Kapital entfällt, was schnellere Rückzahlungen oder Vergleich von Anbietern erleichtert."
+    }
+  ]
+},
     compound: {
       title: "Zinseszins-Rechner",
       desc: "Berechnen Sie das Wachstum durch Zinseszins",
@@ -962,45 +1019,363 @@ macros: {
       formula: "Formel",
       formulaText: "Berechnet den zukünftigen Wert mit regelmäßigen Einzahlungen",
     },
-    mortgage: {
-      title: "Hypothekenrechner",
-      desc: "Berechnen Sie Hypothekenzahlungen",
-      homePrice: "Kaufpreis ($)",
-      downPayment: "Anzahlung ($)",
-      rate: "Zinssatz (%)",
-      years: "Laufzeit (Jahre)",
-      result: "Monatliche Zahlung",
-      about: "Über Hypotheken",
-      aboutText:
-        "Berechnen Sie Ihre monatliche Hypothekenrate und die gesamten Zinsen.",
-      formula: "Formel",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+mortgage: {
+  metaTitle: "Hypothekenrechner: Monatliche Hauskreditraten sofort berechnen",
+  desc: "Verwenden Sie unseren Hypothekenrechner, um Ihre monatlichen Hauskreditraten basierend auf Zinssatz und Laufzeit zu schätzen. Planen Sie Ihr Budget einfach vor dem Kauf.",
+  homePrice: "Hauspreis ($)",
+  downPayment: "Anzahlung ($)",
+  rate: "Zinssatz (%)",
+  years: "Kreditlaufzeit (Jahre)",
+  result: "Monatliche Rate",
+  heading: "Hypothekenrechner",
+  tocTitle: "Inhaltsverzeichnis",
+  tocwhy: "Warum ein Hypothekenrechner wichtig ist",
+  tochowmortage: "Wie der Online-Hypothekenrechner funktioniert",
+  tocwhyuse: "Warum einen Hypothekenrechner verwenden",
+  tocmortageformula: "Hypothekenrechner-Formel",
+  tocformulastep1: "Schritt 1: Wichtige Eingaben identifizieren",
+  tocformulastep2: "Schritt 2: Beispiel für Hypothekenberechnung",
+  tocformulastep3: "Schritt 3: Aufschlüsselung von Kapital und Zinsen",
+  tocformulahowto: "Wie Sie die Ergebnisse verwenden",
+  tocformulawhy: "Warum diese Formel funktioniert",
+
+  aboutH2: "Über den Hypothekenrechner",
+  aboutContent: "Der Hypothekenrechner hilft Ihnen, Ihre monatlichen Zahlungen einfach zu schätzen. Er berechnet die monatliche Rate, einschließlich Kapital und Zinsen, basierend auf Kreditsumme, Zinssatz und Laufzeit. Der Online-Rechner gibt Ihnen eine klare Übersicht über Ihre Hypothekenfähigkeit, bevor Sie einen Antrag stellen, und zeigt, wie lange es dauert, die Hypothek vollständig zurückzuzahlen, sowie die insgesamt zu zahlenden Zinsen.",
+
+  whyTitle: "Warum ein Hypothekenrechner wichtig ist",
+  whyIntro: "Das Verständnis Ihrer Kreditraten hilft Ihnen, besser zu planen und finanzielle Überraschungen zu vermeiden. Mit diesem Tool können Sie:",
+  whyList: [
+    "Monatliche Raten genau schätzen",
+    "Kreditangebote und Zinssätze vergleichen",
+    "Ihr Budget für den Hauskauf planen",
+    "Amortisationsplan visualisieren"
+  ],
+  whyEnd: "Der Hypothekenrechner erleichtert es, zu sehen, wie sich Ihre Zahlung bei unterschiedlichen Kreditbeträgen oder Zinssätzen verändert.",
+
+  howWorksTitle: "Wie der Online-Hypothekenrechner funktioniert",
+  howWorksContent: "Der Rechner verwendet Kreditsumme, Zinssatz und Laufzeit, um feste monatliche Zahlungen zu berechnen. Er wendet die Standard-Formel für Kreditrückzahlungen an und liefert eine detaillierte Aufschlüsselung, wie viel für Zinsen und wie viel zur Tilgung des Kapitals verwendet wird.",
+  howWorksInputTitle: "Sie müssen eingeben:",
+  howWorksInputList: [
+    "Kreditsumme ($)",
+    "Zinssatz (%)",
+    "Kreditlaufzeit (Jahre)"
+  ],
+  howWorksResulttext: "Es wird sofort angezeigt:",
+  howWorksResultList: [
+    "Monatliche Rate",
+    "Gesamtzins",
+    "Gesamtzahlung",
+    "Amortisationstabelle (optionale Ansicht)"
+  ],
+  howWorksEnd: "Dies hilft Ihnen, Ihren Hypothekenrückzahlungsplan zu verfolgen und langfristige Finanzen effektiv zu verwalten.",
+
+  whyUseTitle: "Warum einen Hypothekenrechner verwenden",
+  whyUseContent: "Dieses Finanzierungs-Tool gibt Ihnen die Kontrolle über Ihre Kreditplanung. Sie können verschiedene Laufzeiten und Zinssätze testen, um die günstigste Option zu finden. Durch Anpassen der Eingaben sehen Sie, wie kleine Änderungen von Zinssatz oder Laufzeit die Gesamtkosten beeinflussen, was den Hypothekenrechner zu einem unverzichtbaren Werkzeug für fundierte Finanzentscheidungen macht.",
+
+  formulaMainTitle: "Hypothekenrechner-Formel",
+  formulaMainIntro: "Der Hypothekenrechner verwendet eine einfache Zinseszinsformel, um die monatliche Rate zu schätzen. Sie berechnet, wie viel Sie jeden Monat zahlen müssen, um den Kredit inklusive Zinsen innerhalb der gewählten Laufzeit vollständig zurückzuzahlen.",
+  formulaSubIntro: "Die Hauptformel lautet:",
+  formulaMain: "M = P × [ r(1 + r)ⁿ ] ÷ [ (1 + r)ⁿ – 1 ]",
+
+  formulaDefinitionList: [
+    "M = Monatliche Hypothekenzahlung",
+    "P = Kreditsumme (geliehener Betrag)",
+    "r = Monatlicher Zinssatz (Jahreszins ÷ 12)",
+    "n = Gesamtanzahl der Zahlungen (Laufzeit in Jahren × 12)"
+  ],
+
+  formulaEndText: "Diese Formel zeigt, wie sich Kapital und Zinsen im Laufe der Zeit aufteilen.",
+  formulaImage: "/Mortgage-Calculator.jpg",
+  formulaImageAlt: "Mortgage Calculator",
+
+  step1Title: "Schritt 1: Wichtige Eingaben identifizieren",
+  step1List: [
+    "Kreditsumme (P) — Gesamter geliehener Betrag",
+    "Zinssatz (r) — Jahreszins geteilt durch 12",
+    "Laufzeit (n) — Jahre × 12 Monate"
+  ],
+  step1End: "Der Hypothekenrechner berechnet dann Ihre feste monatliche Zahlung anhand dieser Eingaben.",
+
+  step2Title: "Schritt 2: Beispiel für Hypothekenberechnung",
+  step2ExampleList: [
+    "Kreditsumme = 250.000$",
+    "Jahreszins = 5%",
+    "Laufzeit = 30 Jahre"
+  ],
+  step2CalcStep1: "Umrechnung des Jahreszinses in monatlich: r = 5 ÷ 100 ÷ 12 = 0.004167  n = 30 × 12 = 360 Monate",
+  step2CalcStep2: "Formel anwenden: M = 250,000 × [0.004167 × (1 + 0.004167)³⁶⁰] ÷ [(1 + 0.004167)³⁶⁰ – 1] M = 1,342.05$ pro Monat",
+  step2ResultMeaning: "Das bedeutet, Sie zahlen 1,342.05$ monatlich für 30 Jahre, um die Hypothek vollständig zurückzuzahlen.",
+
+  step3Title: "Schritt 3: Aufschlüsselung von Kapital und Zinsen",
+  step3Content: "Jede Zahlung enthält sowohl Zinsen als auch Kapital. Am Anfang des Kredits geht der Großteil der Zahlung in die Zinsen, im Laufe der Zeit steigt der Anteil am Kapital. Dieser Plan wird Amortisationstabelle genannt und zeigt, wie sich der Kreditmonat für Monat verringert.",
+
+  totalExampleTitle: "Beispiel: Gesamtkosten des Kredits",
+  totalExampleList: [
+    "Monatliche Zahlung: 1,342.05$",
+    "Gesamtzahlungen (360 Monate): 1,342.05$ × 360 = 483,138$",
+    "Gesamtzins: 483,138$ – 250,000$ = 233,138$"
+  ],
+  totalExampleEnd: "Über 30 Jahre zahlen Sie etwa 233,138$ an Zinsen für einen Kredit von 250,000$. Dies zeigt die realen Kosten Ihrer Hypothek und wie Zinssätze die Erschwinglichkeit beeinflussen.",
+
+  howToUseTitle: "Wie Sie die Ergebnisse verwenden",
+  howToUseList: [
+    "Kreditangebote von Banken vergleichen",
+    "Entscheiden, ob Sie eine kürzere oder längere Laufzeit wählen können",
+    "Ihr Budget an Ihre Hausfinanzierungsziele anpassen",
+    "Frühzeitige Rückzahlung oder Refinanzierung planen, falls möglich"
+  ],
+  howToUseEnd: "Schätzen Sie Ihre monatlichen Zahlungen genauer mit unserem",
+  interlink: "Kreditrechner",
+
+  whyWorksTitle: "Warum diese Formel funktioniert",
+  whyWorksContent: "Die Hypothekenformel basiert auf Zinseszins und sorgt für gleichbleibende monatliche Zahlungen über die gesamte Laufzeit. Sie wird weltweit von Banken und Finanzplanern zur genauen Berechnung von Rückzahlungsplänen verwendet. Der Online-Hypothekenrechner vereinfacht diese komplexen Berechnungen und ermöglicht es, verschiedene Zinssätze und Laufzeiten in Sekunden zu testen. Auf Vastcalculators.com wird diese Formel verwendet, um klare, zuverlässige und aktuelle Hypotheken-Schätzungen bereitzustellen.",
+
+  faqTitle: "Häufig gestellte Fragen",
+  faq: [
+    {
+      q: "Was macht ein Hypothekenrechner?",
+      a: "Ein Hypothekenrechner schätzt Ihre monatlichen Zahlungen basierend auf Kreditsumme, Zinssatz und Laufzeit."
     },
-    roi: {
-      title: "ROI-Rechner",
-      desc: "Berechnen Sie die Kapitalrendite",
-      investment: "Investition ($)",
-      gain: "Gewinn ($)",
-      result: "ROI (%)",
-      about: "Über ROI",
-      aboutText:
-        "ROI misst die Rentabilität einer Investition.",
-      formula: "Formel",
-      formulaText: "ROI = (Gewinn / Investition) × 100",
+    {
+      q: "Wie werden Hypothekenzahlungen berechnet?",
+      a: "Ihre monatliche Zahlung wird mit Kapital, Zinssatz und Laufzeit berechnet. Die Formel berücksichtigt die monatliche Verzinsung über die Rückzahlungsdauer."
     },
-    breakeven: {
-      title: "Break-even-Rechner",
-      desc: "Berechnen Sie den Gewinnschwellenpunkt",
-      fixedCosts: "Fixkosten ($)",
-      variableCost: "Variable Kosten pro Einheit ($)",
-      price: "Preis pro Einheit ($)",
-      result: "Break-even-Einheiten",
-      about: "Über Break-even",
-      aboutText:
-        "Der Break-even-Punkt ist erreicht, wenn Einnahmen und Gesamtkosten gleich sind.",
-      formula: "Formel",
-      formulaText: "Break-even = Fixkosten / (Preis - Variable Kosten)",
+    {
+      q: "Welche Informationen benötige ich zur Nutzung des Rechners?",
+      a: "Sie benötigen Kreditsumme, Jahreszins und Laufzeit in Jahren. Der Rechner schätzt Ihre monatliche Zahlung automatisch."
     },
+    {
+      q: "Beinhaltet der Rechner Steuern und Versicherung?",
+      a: "Nein. Er berechnet nur Kapital- und Zinszahlungen. Steuern, Versicherung und andere Kosten müssen separat berücksichtigt werden."
+    },
+    {
+      q: "Kann ich den Rechner für Refinanzierung verwenden?",
+      a: "Ja. Geben Sie die neue Kreditsumme, Laufzeit und Zinssatz ein, um neue Zahlungen zu schätzen und mit Ihrer aktuellen Hypothek zu vergleichen."
+    },
+    {
+      q: "Wie kann ich meine monatliche Hypothekenzahlung senken?",
+      a: "Zahlungen können durch Verlängerung der Laufzeit, Senkung des Zinssatzes oder größere Anzahlung reduziert werden."
+    }
+  ]
+},
+roi: {
+  metaTitle: "Online-ROI-Rechner | Berechnen Sie Ihre Kapitalrendite online",
+  desc: "Ermitteln Sie Ihre Kapitalrendite (ROI) schnell und genau. Nutzen Sie unseren ROI-Rechner, um Gewinn zu verfolgen, Projekte zu vergleichen und die finanzielle Leistung zu verbessern.",
+  investment: "Investition ($)",
+  gain: "Gewinn ($)",
+  result: "ROI %",
+  heading: "ROI-Rechner",
+  tocabout: "Über den ROI-Rechner",
+  tochow: "Wie der Online-ROI-Rechner funktioniert",
+  tocformula: "ROI-Rechner Formel",
+  tocwhy: "Warum die ROI-Berechnung wichtig ist",
+  tocexample: "Beispielberechnungen",
+  tocresult: "Wie man die ROI-Ergebnisse verwendet",
+
+  aboutsection: "Über den ROI-Rechner",
+  aboutcontent: "Der ROI-Rechner hilft Ihnen zu messen, wie profitabel eine Investition im Vergleich zu ihren Kosten ist. ROI steht für Return on Investment und zeigt, wie effizient Geld eingesetzt wird, um Gewinn zu erzielen. Dieser Online-ROI-Rechner ermittelt sofort Ihren Renditeprozentsatz, sodass Sie sehen können, ob eine Investition gut oder schlecht lief. Ideal für Unternehmen, Investoren und Unternehmer, die Kosten und Rendite genau bewerten möchten.",
+
+  whytitle: "Warum die ROI-Berechnung wichtig ist",
+  whycontent: "ROI bietet einen klaren Überblick darüber, wie gut eine Investition abschneidet. Ob bei der Analyse einer Marketingkampagne, Produkteinführung oder Geschäftsausweitung — ROI zeigt Gewinn- oder Verlustprozente im Verhältnis zu den Gesamtkosten.",
+  whylist: [
+    "Finanzleistung schnell bewerten",
+    "Mehrere Investitionen vergleichen",
+    "Ermitteln, welche Projekte höhere Renditen erzielen",
+    "Datenbasierte Entscheidungen unterstützen"
+  ],
+  whyextratext: "Finden Sie Ihre Gewinnschwelle mit dem",
+  whyinterlink: "Break-Even-Rechner",
+
+  howworkstitle: "Wie der Online-ROI-Rechner funktioniert",
+  howworksIntro: "Der ROI-Rechner verwendet eine einfache Prozentformel. Sie benötigen nur zwei Zahlen:",
+  howworkslist: [
+    "Gesamtgewinn aus der Investition ($)",
+    "Gesamtkosten der Investition ($)"
+  ],
+  howworksresultlist: [
+    "ROI-Prozentsatz",
+    "Gesamtgewinn oder -verlust"
+  ],
+
+  whyusetitle: "Warum einen ROI-Rechner verwenden",
+  whyusecontent: "Der ROI-Rechner vereinfacht die Finanzanalyse zu klaren Ergebnissen. Perfekt für Unternehmer, Marketer und Investoren, die Ergebnisse ohne manuelle Berechnungen verfolgen möchten. Dieses Tool zeigt, wo Gewinne entstehen und wo Leistung verbessert werden kann — so trägt jeder investierte Dollar effizient zum langfristigen Wachstum bei.",
+
+  formulatitle: "ROI-Rechner Formel",
+  formulamain: "ROI (%) = [(Nettoertrag) ÷ (Investitionskosten)] × 100",
+  formula2: "ROI (%) = [(Endwert – Anfangskosten) ÷ Anfangskosten] × 100",
+
+  stepTitle: "Schritt 1: Schlüsselwerte identifizieren",
+  stepList: [
+    "Anfangskosten (Investition): Der insgesamt ausgegebene Betrag",
+    "Endwert (Rendite): Der insgesamt aus der Investition erzielte Betrag"
+  ],
+  stepEndText: "Subtrahieren Sie die Anfangskosten vom Endwert, um den Nettogewinn zu ermitteln. Teilen Sie dann durch die Anfangskosten und multiplizieren Sie mit 100, um den ROI-Prozentsatz zu erhalten. Diese Methode zeigt klar Kosten vs. Rendite und ist eine der am häufigsten verwendeten Gewinnformeln im Finanzwesen.",
+
+  formulaImage: "/ROI-Calculator.jpg",
+  formulaImageAlt: "ROI Calculator",
+
+  exampleTitle: "Beispiel zur ROI-Berechnung",
+  exampleValues: [
+    "Anfangskosten = $5.000",
+    "Endwert = $6.200"
+  ],
+  exampleStep1: "Nettogewinn = 6.200 – 5.000 = $1.200",
+  exampleStep2: "ROI (%) = (1.200 ÷ 5.000) × 100 = 24%",
+  exampleEnd: "Ihre Kapitalrendite beträgt also 24 %. Das bedeutet, dass das Projekt 24 % Gewinn im Vergleich zu Ihrer Investition erwirtschaftet hat.",
+
+  example2Title: "Beispiel: Zwei Investitionen vergleichen",
+  exampleA: [
+    "Kosten = $10.000",
+    "Rendite = $12.000",
+    "ROI = (2.000 ÷ 10.000) × 100 = 20%"
+  ],
+  exampleB: [
+    "Kosten = $15.000",
+    "Rendite = $18.750",
+    "ROI = (3.750 ÷ 15.000) × 100 = 25%"
+  ],
+  example2End: "Obwohl Investition B mehr Geld erforderte, erzielte sie eine höhere Rendite.",
+
+  resultTitle: "Wie man die ROI-Ergebnisse verwendet",
+  resultList: [
+    "Investitionsleistung in verschiedenen Projekten messen",
+    "Geschäftskampagnen oder Einführungen bewerten",
+    "Chancen mit hoher Rendite identifizieren",
+    "Profitabilitätstrends über Zeit analysieren"
+  ],
+
+  whysformulaTitle: "Warum diese Formel funktioniert",
+  whysformulaContent: "Die ROI-Formel bietet eine klare und universelle Möglichkeit, finanzielle Effizienz zu verfolgen. Sie gilt branchenübergreifend, von Geschäftsabläufen bis hin zu Aktienhandel und Marketinganalyse. Sie ist einfach, schnell und genau und zeigt, wie viel Gewinn im Verhältnis zur Investition erzielt wurde. Der Online-ROI-Rechner hilft Investoren und Unternehmern, finanziellen Erfolg ohne Tabellen oder komplexe Mathematik zu verfolgen. Es ist eines der praktischsten Werkzeuge für alle, die Kosten und Renditen managen. Der Rechner auf Vastcalculators.com liefert sofort präzise ROI-Prozentsätze und ist ein vertrauenswürdiges Business-ROI-Tool für Entscheidungsträger und Profis.",
+
+  faqTitle: "Häufig gestellte Fragen",
+  faq: [
+    {
+      q: "Was macht der ROI-Rechner?",
+      a: "Der ROI-Rechner misst die Rendite einer Investition, indem er den Gewinn mit dem ursprünglich ausgegebenen Betrag vergleicht und das Ergebnis in Prozent angibt."
+    },
+    {
+      q: "Wie funktioniert die ROI-Formel?",
+      a: "Sie teilt den Nettogewinn durch die Investitionskosten und multipliziert ihn mit 100, um den ROI-Prozentsatz zu berechnen."
+    },
+    {
+      q: "Was ist ein guter ROI?",
+      a: "Das hängt von der Branche ab. Allgemein gilt ein ROI von 10–30 % für die meisten Investitionen als solide."
+    },
+    {
+      q: "Kann ROI negativ sein?",
+      a: "Ja. Ein negativer ROI bedeutet, dass Ihre Investition Geld verloren hat im Vergleich zu den Ausgaben."
+    },
+    {
+      q: "Wie oft sollte ich den ROI berechnen?",
+      a: "Sie sollten den ROI nach jeder größeren Investition oder jedem Projekt messen, um die laufende Leistung und Verbesserungen zu verfolgen."
+    },
+    {
+      q: "Was ist der Unterschied zwischen ROI und Break-Even-Punkt?",
+      a: "ROI zeigt Gewinn oder Verlust, während der Break-Even-Rechner den Punkt ermittelt, an dem Gesamtkosten gleich Gesamterlösen sind und Gewinn beginnt."
+    }
+  ]
+},
+breakeven: {
+  metaTitle: "Break-Even-Rechner – Finden Sie Ihren Gewinnpunkt",
+  desc: "Verwenden Sie unseren Break-Even-Rechner, um zu sehen, wann Ihr Unternehmen die Kosten deckt und mit dem Gewinn beginnt. Einfach, schnell und genau.",
+  fixedCosts: "Fixkosten ($)",
+  variableCost: "Variable Kosten pro Einheit ($)",
+  price: "Preis pro Einheit ($)",
+  result: "Break-Even-Einheiten",
+  heading: "Break-Even-Rechner",
+
+  tocabout: "Über den Break-Even-Rechner",
+  tocwhy: "Warum eine Break-Even-Analyse wichtig ist",
+  tochowitworks: "Wie der Online-Break-Even-Rechner funktioniert",
+  tocwhyuse: "Warum einen Break-Even-Rechner verwenden",
+
+  aboutTitle: "Über den Break-Even-Rechner",
+  aboutContent: "Der Break-Even-Rechner hilft Ihnen, den Punkt zu finden, an dem der Gesamtumsatz den Gesamtkosten entspricht, also weder Gewinn noch Verlust entsteht. Dieses Tool verwendet Fixkosten, variable Kosten und Verkaufspreis, um Ihren Break-Even-Umsatz oder erforderlichen Verkaufsvolumen zu berechnen. Es ist eine schnelle Möglichkeit, die finanzielle Gesundheit zu messen und bessere Preisstrategien zu planen.",
+
+  whyTitle: "Warum eine Break-Even-Analyse wichtig ist",
+  whyIntro: "Eine Break-Even-Analyse zeigt, wie viele Einheiten Sie verkaufen oder wie viel Umsatz Sie erzielen müssen, um alle Ausgaben zu decken.",
+  whyList: [
+    "Preis- und Kostenstruktur planen",
+    "Gewinn- und Verlustpunkte identifizieren",
+    "Investitionen und Ausgaben verwalten",
+    "Produktlebensfähigkeit und Risiko bewerten"
+  ],
+  whyEnd: "Das Verständnis Ihrer finanziellen Schwelle stellt sicher, dass Ihr Betrieb profitabel und nachhaltig bleibt.",
+
+  interlinkExtraText: "Nachdem Sie Ihren Break-Even-Punkt gefunden haben, überprüfen Sie Ihre Gesamtrendite mit unserem",
+  interlinkSlugText: "ROI-Rechner",
+
+  howWorksTitle: "Wie der Online-Break-Even-Rechner funktioniert",
+  howWorksIntro: "Der Rechner wendet die Kosten-Volumen-Gewinn-Analyse an, um Ihren Break-Even-Umsatz zu schätzen.",
+  howWorksListTitle: "Sie geben drei wichtige Details ein:",
+  howWorksList: [
+    "Fixkosten – Ausgaben, die sich nicht mit dem Verkaufsvolumen ändern (Miete, Gehälter)",
+    "Variable Kosten – Ausgaben, die pro verkaufter Einheit steigen (Materialien, Verpackung)",
+    "Verkaufspreis pro Einheit"
+  ],
+  howWorksResultTitle: "Nach Eingabe zeigt der Rechner sofort:",
+  howWorksResultList: [
+    "Break-Even-Punkt (in Einheiten)",
+    "Break-Even-Punkt (in Umsatz)"
+  ],
+  howWorksEnd: "Dies hilft Ihnen, die genaue Verkaufsmenge zu bestimmen, die erforderlich ist, um Ihre Startkosten zurückzugewinnen und Gewinn zu erzielen.",
+
+  whyUseTitle: "Warum einen Break-Even-Rechner verwenden",
+  whyUseContent: "Dieses Tool zur Geschäftsertragsberechnung bietet Klarheit über Kostenmanagement und Gewinnprognosen. Es hilft Unternehmen, die finanzielle Tragfähigkeit durch Verständnis der Stückkosten, Expansionsmöglichkeiten und Investitionsentscheidungen zu bewerten. Der Break-Even-Rechner vereinfacht die Planung und liefert zuverlässige Einblicke zur effektiven Balance von Kosten und Gewinn.",
+
+  formulatitle: "Break-Even-Rechner-Formel",
+  formulaintro: "Der Break-Even-Rechner verwendet eine einfache Finanzformel, die Kosten und Umsatz vergleicht, um zu erkennen, wann Ihr Unternehmen Gewinn erzielt.",
+  mainFormulaText: "Die Hauptformel lautet:",
+  formula: "Break-Even-Punkt (Einheiten) = Fixkosten ÷ (Verkaufspreis pro Einheit – Variable Kosten pro Einheit)",
+  afterFormulaDesc: "Diese Gleichung zeigt, wie viele Einheiten verkauft werden müssen, um alle Ausgaben zu decken. Jede weitere Einheit erzeugt direkten Gewinn.",
+
+  step1Title: "Schritt 1: Die Komponenten der Formel verstehen",
+  step1List: [
+    "Fixkosten: Kosten, die unabhängig vom Umsatz konstant bleiben, z. B. Miete, Gehälter und Versicherungen.",
+    "Variable Kosten: Kosten, die sich mit der Produktion ändern, z. B. Materialien, Verpackung und Versand.",
+    "Verkaufspreis pro Einheit: Der Betrag, den Sie für eine Einheit Ihres Produkts oder Ihrer Dienstleistung verlangen."
+  ],
+  cvpLine: "Diese Kosten-Volumen-Gewinn-Formel hilft Ihnen, das Gleichgewicht zwischen Kosten, Menge und Gewinn zu messen – ein zentrales Element des Finanzmanagements.",
+
+  step2Title: "Schritt 2: Break-Even-Umsatz-Formel",
+  step2Formula: "Break-Even-Umsatz = Break-Even-Einheiten × Verkaufspreis pro Einheit",
+  step2Desc: "Sobald die Anzahl der Einheiten bekannt ist, können Sie den Break-Even-Umsatz berechnen:",
+  step2Explain: "Dies zeigt, wie viel Gesamteinnahmen Ihr Unternehmen erzielen muss, bevor Gewinn entsteht.",
+
+  imageUrl: "/Break-Even-Calculator.jpg",
+  imageAlt: "Break-Even Calculator",
+
+  exampleTitle: "Beispiel für die Break-Even-Berechnung",
+  exampleList: [
+    "Fixkosten = 10.000$",
+    "Variable Kosten pro Einheit = 20$",
+    "Verkaufspreis pro Einheit = 50$"
+  ],
+  exampleStep1: "Schritt 1: Break-Even-Punkt (Einheiten) = 10.000 ÷ (50 – 20) = 10.000 ÷ 30 = 334 Einheiten (gerundet)",
+  exampleStep2: "Schritt 2: Break-Even-Umsatz = 334 × 50 = 16.700$",
+  exampleExplain: "Das bedeutet, dass Ihr Unternehmen 16.700$ Umsatz erzielen oder 334 Einheiten verkaufen muss, um alle Fix- und variablen Kosten zu decken. Jede zusätzliche Einheit trägt direkt zum Gewinn bei.",
+
+  interpretingTitle: "Interpretation des Ergebnisses",
+  interpretingList: [
+    "Verkauf unter Break-Even = Verlust",
+    "Verkauf am Break-Even = weder Gewinn noch Verlust",
+    "Verkauf über Break-Even = Gewinn"
+  ],
+  interpretDesc: "Das Verständnis dieses Ergebnisses hilft Unternehmern, Preise zu steuern, Risiken zu bewerten und die Startkosten schneller zurückzugewinnen.",
+
+  whyWorksTitle: "Warum diese Formel funktioniert",
+  whyWorksDesc: "Die Break-Even-Formel ist eines der einfachsten und dennoch mächtigsten Finanzinstrumente. Sie hilft Ihnen, die Beziehung zwischen Kosten, Umsatz und Menge zu visualisieren und bietet ein klares Bild der Rentabilität. Dieses Tool unterstützt sowohl Startups als auch etablierte Unternehmen bei der finanziellen Balance – Einnahmen treiben den Betrieb an, und Gewinn sichert das Wachstum. Der Online-Break-Even-Rechner auf Vastcalculators.com wendet diese Formel sofort an und liefert klare Einblicke für schnelle Entscheidungen und langfristigen Geschäftserfolg.",
+
+  faqTitle: "Häufig gestellte Fragen",
+  faq: [
+    { q: "Was macht ein Break-Even-Rechner?", a: "Ein Break-Even-Rechner hilft Ihnen, den genauen Punkt zu finden, an dem Ihre Gesamteinnahmen den Gesamtkosten entsprechen, und zeigt, wann Ihr Unternehmen beginnt, Gewinn zu erzielen." },
+    { q: "Wie wird der Break-Even-Punkt berechnet?", a: "Er wird berechnet, indem die Fixkosten durch die Differenz zwischen Verkaufspreis pro Einheit und variablen Kosten pro Einheit geteilt werden. Das Ergebnis zeigt, wie viele Einheiten verkauft werden müssen, um Break-Even zu erreichen." },
+    { q: "Warum ist der Break-Even-Punkt wichtig?", a: "Die Kenntnis Ihres Break-Even-Punkts hilft zu verstehen, wie sich Verkauf, Preisgestaltung und Kosten auf den Gewinn auswirken. Es ist ein wichtiger Schritt in Planung, Budgetierung und Preisstrategien." },
+    { q: "Was sind Fixkosten und variable Kosten?", a: "Fixkosten bleiben jeden Monat gleich, z. B. Miete oder Gehälter. Variable Kosten ändern sich mit der Produktions- oder Verkaufsmenge, z. B. Materialien oder Versand." },
+    { q: "Kann der Break-Even-Rechner für Dienstleistungen verwendet werden?", a: "Ja. Sie können ihn sowohl für Produkte als auch Dienstleistungen verwenden, indem Sie die gesamten Fix- und variablen Kosten sowie den durchschnittlichen Verkaufspreis pro Einheit oder Projekt eingeben." },
+    { q: "Wie oft sollte ich meinen Break-Even-Punkt berechnen?", a: "Berechnen Sie den Break-Even-Punkt immer dann neu, wenn sich Kosten, Preisgestaltung oder Verkaufsstrategien ändern, um die Rentabilität Ihres Unternehmens sicherzustellen." }
+  ]
+},
     discount: {
       title: "Rabatt-Rechner",
       desc: "Berechnen Sie Rabatt und Endpreis",
@@ -1026,32 +1401,191 @@ macros: {
       formula: "Formel",
       formulaText: "Trinkgeld = Rechnung × Trinkgeld%, pro Person = Gesamt / Personen",
     },
-    inflation: {
-      title: "Inflationsrechner",
-      desc: "Berechnen Sie den Einfluss der Inflation",
-      amount: "Betrag ($)",
-      years: "Jahre",
-      rate: "Inflationsrate (%)",
-      result: "Zukünftiger Wert",
-      about: "Über Inflation",
-      aboutText:
-        "Sehen Sie, wie sich die Inflation auf den Geldwert über die Zeit auswirkt.",
-      formula: "Formel",
-      formulaText: "Zukünftiger Wert = Betrag × (1 + Rate)^Jahre",
-    },
-    currency: {
-      title: "Währungsumrechner",
-      desc: "Währungen umrechnen",
-      amount: "Betrag",
-      fromCurrency: "Von Währung",
-      toCurrency: "In Währung",
-      result: "Umgerechneter Betrag",
-      about: "Über Währungen",
-      aboutText:
-        "Konvertieren Sie zwischen verschiedenen Währungen zu aktuellen Kursen.",
-      formula: "Formel",
-      formulaText: "Verwendet aktuelle Wechselkurse",
-    },
+inflation: {
+  metaTitle: "Online-Inflationsrechner – Verfolgen Sie den Geldwert über die Zeit",
+  desc: "Verwenden Sie unseren Inflationsrechner, um zu messen, wie sich die Inflation auf den Wert Ihres Geldes und die Kaufkraft über verschiedene Jahre auswirkt.",
+  amount: "Betrag ($)",
+  years: "Jahre",
+  rate: "Inflationsrate (%)",
+  result: "Zukunftswert",
+  heading: "Inflationsrechner",
+
+  tocwhy: "Warum das Verständnis von Inflation wichtig ist",
+  tochowitworks: "Wie der Online-Inflationsrechner funktioniert",
+  tocwhyuse: "Warum einen Inflationsrechner verwenden",
+  tocsteps1: "Schritt 1: Variablen identifizieren",
+  tocsteps2: "Schritt 2: Inflationsrate berechnen",
+  tocresults: "Wie man die Ergebnisse nutzt",
+  tocwhyformula: "Warum diese Formel funktioniert",
+
+  aboutTitle: "Über den Inflationsrechner",
+  aboutDesc: "Der Inflationsrechner hilft Ihnen zu messen, wie sich der Wert des Geldes im Laufe der Zeit aufgrund der Inflation ändert. Er zeigt, wie viel Waren oder Dienstleistungen, die in der Vergangenheit einen bestimmten Betrag kosteten, heute kosten würden oder umgekehrt. Dieser Online-Inflationsrechner verwendet historische Inflationsdaten, wie den Verbraucherpreisindex (CPI), um den inflationsbereinigten Geldwert zu berechnen. Ideal zum Vergleichen von Preisen, Schätzen der Kaufkraft und Analysieren langfristiger finanzieller Trends.",
+
+  whyTitle: "Warum das Verständnis von Inflation wichtig ist",
+  whyDesc: "Inflation verringert die Kaufkraft des Geldes im Laufe der Zeit. Was Sie vor einem Jahrzehnt mit 100$ kaufen konnten, kostet heute mehr. Die Verfolgung der Inflation hilft Einzelpersonen und Unternehmen, klügere Finanzentscheidungen zu treffen.",
+  whyPoints: [
+    "Den realen Wert von Geld über verschiedene Jahre vergleichen",
+    "Investitionen planen, die die Inflation übertreffen",
+    "Veränderungen der Lebenshaltungskosten verstehen",
+    "Preisentwicklung über die Zeit messen"
+  ],
+
+  howTitle: "Wie der Online-Inflationsrechner funktioniert",
+  howDesc: "Der Inflationsrechner wendet offizielle Inflationsdaten an, um abzuschätzen, wie stark Geld über die Jahre an Wert gewonnen oder verloren hat.",
+  howNeed: [
+    "Anfangsbetrag ($)",
+    "Startjahr",
+    "Endjahr"
+  ],
+  howResult: [
+    "Der aktuelle Gegenwert von Geld aus der Vergangenheit",
+    "Die Inflationsrate über die gewählten Jahre",
+    "Die prozentuale Veränderung der Kaufkraft"
+  ],
+
+  whyUseTitle: "Warum einen Inflationsrechner verwenden",
+  whyUseDesc: "Der Rechner für Wertentwicklung über die Zeit hilft Ihnen, den tatsächlichen Einfluss der Inflation auf Ihre Finanzen zu verstehen. Perfekt zur Analyse von Ersparnissen, Investitionen, Gehältern und Immobilienwerten über lange Zeiträume. Er fungiert auch als Rechner für Währungsabwertung und zeigt, wie stark Geld über Jahrzehnte ab- oder aufgewertet wurde. Mit diesem Lebenshaltungskostenrechner können Sie besser für die Zukunft planen, realistische Finanzziele setzen und Ihr Vermögen vor den Auswirkungen der Inflation schützen. Der Inflationsrechner ist ein praktisches Tool, um den wahren Wert des Geldes über die Zeit zu sehen.",
+
+  formulatitle: "Formel des Inflationsrechners",
+  formulaintro: "Der Inflationsrechner misst, wie stark sich der Wert des Geldes zwischen zwei Daten verändert hat. Er verwendet den Verbraucherpreisindex (CPI) – ein Standardindikator für Inflation, der Veränderungen der durchschnittlichen Preise für Waren und Dienstleistungen verfolgt.",
+  formula1: "Angepasster Betrag = Ursprünglicher Betrag × (CPI im Zieljahr ÷ CPI im Basisjahr)",
+  formula1endtext: "Dies liefert den inflationsbereinigten Wert, der zeigt, wie viel ein Betrag aus der Vergangenheit heute wert wäre (oder umgekehrt).",
+  formulaImage: "/Inflation-Calculator.jpg",
+  formulaImageAlt: "Inflation Calculator",
+
+  steps1title: "Schritt 1: Variablen identifizieren",
+  steps1intro: "Jeder Teil der Formel stellt einen wichtigen wirtschaftlichen Wert dar:",
+  steps1list: [
+    "Ursprünglicher Betrag: Der vergangene oder aktuelle Wert, den Sie anpassen möchten.",
+    "CPI im Basisjahr: Der Verbraucherpreisindex des Ausgangsjahres.",
+    "CPI im Zieljahr: Der Verbraucherpreisindex des Vergleichsjahres."
+  ],
+  steps1endtext: "Der Rechner verwendet diese Datenpunkte, um zu bestimmen, wie sich die Kaufkraft des Geldes verschoben hat.",
+
+  steps2title: "Schritt 2: Inflationsrate berechnen",
+  steps2intro: "Um die Inflationsrate zwischen zwei Jahren zu sehen, lautet die Formel:",
+  steps2formula: "Inflationsrate (%) = [(CPI im Zieljahr – CPI im Basisjahr) ÷ CPI im Basisjahr] × 100",
+  steps2endtext: "Dies zeigt die prozentuale Preissteigerung oder die Währungsabwertung im Zeitraum.",
+
+  exampletitle: "Beispiel für die Inflationsberechnung",
+  exampleintro: "Lassen Sie uns dies anhand eines einfachen Beispiels verstehen:",
+  example1list: [
+    "Ursprünglicher Betrag = 1.000$",
+    "CPI im Basisjahr (2010) = 218,1",
+    "CPI im Zieljahr (2024) = 310,0"
+  ],
+  examplestep1: "Schritt 1: Formel anwenden:",
+  examplelist: [
+    "Ursprünglicher Betrag = 1.000$ Angepasster Betrag = 1.000 × (310,0 ÷ 218,1)",
+    "Angepasster Betrag = 1.000 × 1,4219",
+    "Angepasster Betrag = 1.421,90$"
+  ],
+  example2end: "Also entspricht 1.000$ von 2010 einer Kaufkraft von 1.421,90$ in 2024, was zeigt, dass die Preise in diesem Zeitraum um etwa 42% gestiegen sind.",
+
+  exampletitle2: "Beispiel: Inflationsrate finden",
+  example2intro: "Verwendung der zweiten Formel:",
+  example2list: [
+    "Inflationsrate = [(310,0 – 218,1) ÷ 218,1] × 100",
+    "Inflationsrate = (91,9 ÷ 218,1) × 100",
+    "Inflationsrate = 42,15%"
+  ],
+  example2endtext: "Dies zeigt, dass die Preise zwischen 2010 und 2024 um etwa 42% gestiegen sind.",
+
+  howtotitle: "Wie man die Ergebnisse nutzt",
+  howtointro: "Sie können den Inflationsrechner verwenden, um:",
+  howtolist: [
+    "Den realen Wert von Geld über verschiedene Jahre vergleichen",
+    "Preisentwicklung für Waren oder Dienstleistungen über die Zeit messen",
+    "Investitionen oder Ersparnisse anpassen, um die Kaufkraft zu erhalten",
+    "Zukünftige Werte unter Verwendung von Inflationstrends schätzen"
+  ],
+  howtoendtext: "Verwenden Sie Ihre Ergebnisse zum Zinseszins, um langfristige Ersparnisse zu planen mit",
+  howtoInterLink: "ROI-Rechner",
+
+  whyformulaworkstitle: "Warum diese Formel funktioniert",
+  whyformulaworkscontent: "Inflation zeigt, wie sich die Kosten für Waren und Dienstleistungen im Laufe der Zeit verändern. Der Verbraucherpreisindex (CPI) ist das zuverlässigste Maß, um diese Veränderungen zu verfolgen. Durch den Vergleich von CPI-Werten zeigt das Tool, wie stark der reale Wert des Dollars gesunken oder gestiegen ist. Der Online-Inflationsrechner liefert schnelle, genaue und aktuelle Ergebnisse und ist unerlässlich für alle, die finanzielle Trends, Unternehmenspreise oder langfristige Ersparnisse verfolgen. Der Rechner auf Vastcalculators.com verwendet offizielle CPI-Daten für präzise, praxisnahe Vergleiche.",
+
+  faqTitle: "Häufig gestellte Fragen",
+  faq: [
+    { q: "Was macht ein Inflationsrechner?", a: "Ein Inflationsrechner zeigt, wie sich der Wert des Geldes im Laufe der Zeit ändert, indem er die Inflation berücksichtigt, sodass Sie den tatsächlichen Wert vergangener oder zukünftiger Beträge verstehen." },
+    { q: "Wie wird Inflation berechnet?", a: "Inflation wird berechnet, indem Preisindexwerte von zwei Jahren verglichen werden. Der Index zeigt, wie stark die Preise im Laufe der Zeit gestiegen oder gefallen sind." },
+    { q: "Was ist die Inflationsrate?", a: "Die Inflationsrate ist der prozentuale Anstieg des durchschnittlichen Preises von Waren und Dienstleistungen über einen bestimmten Zeitraum, normalerweise jährlich gemessen." },
+    { q: "Wie finde ich den realen Wert des Geldes über die Zeit?", a: "Multiplizieren Sie den ursprünglichen Betrag mit dem Preisindex des Zieljahres und teilen Sie ihn durch den Index des Basisjahres. So sehen Sie, wie viel ein Betrag in einem anderen Jahr wert ist." },
+    { q: "Warum ist Inflation für Ersparnisse und Investitionen wichtig?", a: "Inflation verringert den zukünftigen Wert des Geldes, was bedeutet, dass Ersparnisse ihre Kaufkraft verlieren, wenn sie nicht schneller als die Inflation wachsen." },
+    { q: "Wie vergleiche ich Erträge nach Inflation?", a: "Verwenden Sie inflationsbereinigte Werte, um die reale Rendite zu ermitteln. Dies lässt sich einfach mit dem ROI-Rechner vergleichen, um den tatsächlichen Gewinn nach Inflation zu messen." }
+  ]
+},
+currency: {
+  metaTitle: "Währungsrechner | Echtzeit-Wechselkurs Umrechnung",
+  desc: "Konvertieren Sie jede Währung in Sekunden mit unserem Online-Währungsrechner. Erhalten Sie genaue Echtzeit-Wechselkurse und vergleichen Sie leicht globale Währungswerte.",
+  amount: "Betrag",
+  fromCurrency: "Von Währung",
+  toCurrency: "Zu Währung",
+  result: "Umgerechneter Betrag",
+  heading: "Währungsrechner",
+
+  tocabout: "Über unseren Online-Währungsrechner",
+  tocconversion: "Echtzeit-Umrechnung für klügere globale Entscheidungen",
+  tocformula: "Währungsumrechnungsformel",
+  tocexample: "Beispielrechnung",
+  tocaccurateconversion: "Warum genaue Umrechnung wichtig ist",
+  tocresults: "Wie man die Ergebnisse verwendet",
+  tocwhyformula: "Warum diese Formel funktioniert",
+
+  aboutTitle: "Über unseren Online-Währungsrechner",
+  aboutDesc: "Der Währungsrechner von Vast Calculator macht es einfach, den Wert Ihres Geldes in einer anderen Währung in Echtzeit zu sehen. Egal, ob Sie eine Reise planen, internationale Preise vergleichen oder globale Transaktionen verwalten, dieses Tool liefert schnelle und genaue Umrechnungen mit den neuesten Wechselkursen. Es hilft Ihnen, finanziell informiert zu bleiben, indem es Live-Umrechnungen für wichtige Weltwährungen wie USD, EUR, GBP, JPY und mehr anzeigt, regelmäßig aktualisiert, um die aktuellsten Kurse widerzuspiegeln.",
+  aboutExtratext: "Wenn Sie sehen möchten, wie Inflation den realen Wert Ihrer Währung beeinflusst, verwenden Sie den",
+  aboutInterLink: "Inflationsrechner.",
+
+  conversionTitle: "Echtzeit-Umrechnung für klügere globale Entscheidungen",
+  conversioncontent: "Der Währungsrechner erleichtert das internationale Geldmanagement. Durch Eingabe des Betrags und Auswahl Ihrer Währungen können Sie Werte sofort zwischen verschiedenen globalen Währungen umrechnen. Ob Sie nun Reisender, Geschäftsinhaber oder im Ausland investierend sind – dieser Rechner spart Zeit und sorgt für genaue Berechnungen, sodass Sie Währungsunterschiede nie wieder raten müssen.",
+  keyhighlight: "Wichtige Punkte:",
+  keyhighlightList: [
+    "Verwendet Live-Wechselkurse von vertrauenswürdigen Finanzquellen",
+    "Funktioniert für über 160 Währungen weltweit",
+    "Kostenlos, schnell und mobilfreundlich",
+    "Bietet sofortige Ergebnisse bei jedem Update"
+  ],
+  keyhighlightsendtext: "Es wurde entwickelt, um Ihnen Klarheit zu verschaffen, bevor Sie internationale Zahlungen tätigen oder Reiseentscheidungen treffen, und stellt sicher, dass Ihr Geld grenzüberschreitend seinen Wert behält.",
+
+  formulatitle: "Währungsumrechnungsformel",
+  formulasubtitle: "Wie der Währungsrechner funktioniert",
+  formulasubintro: "Der Währungsrechner verwendet eine einfache Formel, die den Basisbetrag mit dem aktuellen Wechselkurs multipliziert, um den Zielwährungswert zu erhalten.",
+  formula1: "Formel: Umgerechneter Betrag = Basisbetrag × Wechselkurs",
+  formula1list: [
+    "Basisbetrag = Der Betrag in Ihrer ursprünglichen Währung",
+    "Wechselkurs = Der aktuelle Kurs zwischen den beiden Währungen",
+    "Umgerechneter Betrag = Wert nach der Umrechnung"
+  ],
+  formulaImage: "/Currency-Converter-Calculator.jpg",
+  formulaImageAlt: "Currency Converter Calculator",
+
+  exampletitle: "Beispielrechnung",
+  exampleintro: "Wenn Sie 100 USD haben und der Wechselkurs von USD zu EUR 0,92 beträgt:",
+  exampleformula: "Umgerechneter Betrag = 100 × 0,92 = 92 EUR",
+  exampleendtext: "Das bedeutet, 100 $ entsprechen 92 € zu diesem spezifischen Wechselkurs. Da sich Wechselkurse täglich ändern, ist es sinnvoll, die Werte regelmäßig zu überprüfen.",
+
+  accuratetitle: "Warum genaue Umrechnung wichtig ist",
+  accuratesubtitle: "Informiert bleiben, bevor Sie ausgeben",
+  accuratesubcontent: "Wechselkurse ändern sich ständig aufgrund von Markttrends, Inflation und globalem Handel. Echtzeit-Umrechnung hilft Ihnen, klügere Entscheidungen zu treffen bei:",
+  accuratesublist: [
+    "Reisen oder internationalem Einkauf",
+    "Senden oder Empfangen von Geld ins Ausland",
+    "Vergleich von Produktpreisen in verschiedenen Ländern",
+    "Verwaltung von Investitionen über Währungen hinweg"
+  ],
+  accuratesubend: "Indem Sie den genauen Wert vor einer Transaktion kennen, können Sie Verluste durch veraltete oder falsche Wechselkurse vermeiden.",
+
+  faqTitle: "Häufig gestellte Fragen",
+  faq: [
+    { q: "Was macht der Währungsrechner?", a: "Er wandelt jeden Betrag von einer Währung in eine andere unter Verwendung von Live-Wechselkursen um und liefert sofort genaue Ergebnisse." },
+    { q: "Werden die Wechselkurse automatisch aktualisiert?", a: "Ja. Die Kurse werden regelmäßig aktualisiert, um die neuesten Daten von zuverlässigen globalen Finanzquellen widerzuspiegeln." },
+    { q: "Kann ich jede Währung verwenden?", a: "Ja. Der Rechner unterstützt über 160 Währungen, einschließlich großer und kleiner." },
+    { q: "Ist das Tool kostenlos?", a: "Ja. Der Währungsrechner auf VastCalculator ist vollständig kostenlos und funktioniert sofort online." },
+    { q: "Warum sind Wechselkurse täglich unterschiedlich?", a: "Kurse ändern sich aufgrund von Angebot und Nachfrage, Inflation, Zinssätzen und internationalen Wirtschaftspolitiken." },
+    { q: "Wie unterscheidet es sich von einem Inflationsrechner?", a: "Der Währungsrechner zeigt den aktuellen Wechselkurs zwischen zwei Währungen, während der Inflationsrechner zeigt, wie sich der Wert des Geldes im Laufe der Zeit verändert." }
+  ]
+},
   },
 footer: {
   subtitle: "Vast Rechner – Vereinfachen Sie Mathematik mit kostenlosen Online-Rechnern",

@@ -17,7 +17,6 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
   const [isLoading, setIsLoading] = useState(false)
   const isPlaceholder = result === "—"
 
-  // 🌀 When result changes from placeholder → real value, show loader for 1s
   useEffect(() => {
     if (!isPlaceholder) {
       setIsLoading(true)
@@ -51,7 +50,6 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
           </div>
         )}
 
-        {/* ✅ Final result state */}
         {!isPlaceholder && !isLoading && (
           <>
             <div>

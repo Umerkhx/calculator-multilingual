@@ -363,11 +363,18 @@ export const financeCalculators: Calculator[] = [
     titleKey: "finance.breakeven.title",
     category: "Finance",
     descriptionKey: "finance.breakeven.desc",
-    inputs: [
+
+      inputs: [
       { label: "finance.breakeven.fixedCosts", name: "fixedCosts", type: "number", unit: "$" },
       { label: "finance.breakeven.variableCost", name: "variableCost", type: "number", unit: "$" },
       { label: "finance.breakeven.price", name: "price", type: "number", unit: "$" },
     ],
+
+    result: {
+      label: "finance.breakeven.result",       
+      explainKey: "finance.breakeven.resultExplain", 
+    },
+
     formulaId: "breakeven",
     toc: [
       { id: "about", labelKey: "finance.breakeven.tocabout" },

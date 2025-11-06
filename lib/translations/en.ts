@@ -1367,7 +1367,7 @@ export const enTranslations = {
       price: "Price per Unit ($)",
       result: "Break-Even Units",
       heading: "Break Even Calculator",
-
+      resultExplain: "This is the number of units you need to sell to cover all your fixed and variable costs before making a profit.",
       tocabout: "About Break Even Calculator",
       tocwhy: "Why a Break-Even Analysis Matters",
       tochowitworks: "How the Online Break Even Calculator Works",

@@ -1021,18 +1021,76 @@ macros: {
 
 
   finance: {
-    loan: {
-      title: "Calculadora de Préstamos",
-      desc: "Calcule pagos de préstamos e intereses",
-      principal: "Monto del Préstamo ($)",
-      rate: "Tasa de Interés Anual (%)",
-      years: "Plazo del Préstamo (años)",
-      result: "Pago Mensual",
-      about: "Acerca de los Préstamos",
-      aboutText: "Calcule su pago mensual de préstamo basado en principal, tasa y plazo.",
-      formula: "Fórmula",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+  loan: {
+  metaTitle: "Calculadora de Préstamos Online – Estima tus Pagos Mensuales",
+  desc: "Usa nuestra Calculadora de Préstamos para estimar tus pagos mensuales, costos de interés y el monto total a pagar. Planifica préstamos personales, de auto o hipotecarios de manera inteligente",
+  principal: "Monto del Préstamo ($)",
+  rate: "Tasa de Interés Anual (%)",
+  years: "Plazo del Préstamo (años)",
+  result: "Pago Mensual",
+  heading: "Calculadora de Préstamos",
+
+  tocTitle: "Tabla de Contenidos",
+  tocabout: "Acerca de la Calculadora de Préstamos",
+  tocformula: "Fórmula de la Calculadora de Préstamos",
+  tocloan: "Fórmula de Pago del Préstamo",
+  tocexample: "Ejemplo de Cálculo",
+  tocwhy: "Por qué es importante",
+
+  aboutsection: "Acerca de la Calculadora de Préstamos",
+  aboutcontent: "La calculadora de préstamos te ayuda a estimar tus pagos mensuales, intereses totales y el costo total del préstamo antes de pedirlo. Ya sea que planees un préstamo personal, de auto o hipotecario, esta herramienta muestra cómo diferentes plazos, tasas de interés y períodos de pago afectan tu presupuesto. Simplifica la planificación financiera al permitirte comparar opciones de pago y elegir el plan más asequible. Para estimaciones detalladas de préstamos hipotecarios, puedes calcular los términos de reembolso y tomar decisiones de préstamo más inteligentes.",
+
+  formulatitle: "Fórmula de la Calculadora de Préstamos",
+  formulacontent: "La calculadora de préstamos utiliza una fórmula estándar de amortización para calcular tu pago mensual (EMI), el interés total y el monto total del préstamo a lo largo del tiempo. Considera tres factores clave: monto del préstamo, tasa de interés y plazo de reembolso.",
+  formulaImage: "/loan-calculator.jpg",
+  formulaImageAlt: "Loan Calculator",
+  formulaSubtitle: "Fórmula de Pago del Préstamo",
+  formula1: "EMI = [P × r × (1 + r)ⁿ] ÷ [(1 + r)ⁿ – 1]",
+  formulaList: [
+    "EMI = Pago mensual del préstamo",
+    "P = Monto principal del préstamo",
+    "r = Tasa de interés mensual (tasa anual ÷ 12 ÷ 100)",
+    "n = Número total de pagos mensuales"
+  ],
+  formulaSubtitle2: "Ejemplo de Cálculo",
+  formulaSubcontent2: "Si tomas un préstamo de $10,000 con una tasa de interés anual del 8% por 3 años (36 meses), entonces tu tasa de interés mensual es:",
+  formula2: "r = 0.08 ÷ 12 = 0.0067",
+  formula2endcontent: "Ahora sustituye estos valores en la fórmula:",
+  formula3: "EMI = [10,000 × 0.0067 × (1 + 0.0067)³⁶] ÷ [(1 + 0.0067)³⁶ – 1]",
+  formula3endcontent: "Tu pago mensual será aproximadamente $313, y el pago total será alrededor de $11,268. Esto significa que pagarás unos $1,268 de interés en 3 años.",
+  formulasubtitle3: "Por qué es importante",
+  formulasubcontent3: "Comprender tu pago mensual del préstamo te ayuda a presupuestar de manera efectiva y evitar sobreendeudamiento. Puedes experimentar con diferentes combinaciones de montos, tasas de interés y plazos de reembolso para encontrar la que mejor se adapte a tus objetivos financieros.",
+  formulasub3extratext: "Si estás calculando pagos de vivienda o propiedad, utiliza nuestra herramienta para obtener resultados precisos específicos de hipoteca con la",
+  formulasub3interlink: "Calculadora Hipotecaria",
+
+  faqTitle: "Preguntas Frecuentes",
+  faq: [
+    {
+      q: "¿Qué hace la Calculadora de Préstamos?",
+      a: "La Calculadora de Préstamos te ayuda a estimar pagos mensuales, intereses totales y el pago total de préstamos personales, de auto o hipotecarios. Proporciona una visión clara de cuánto costará tu préstamo con el tiempo."
     },
+    {
+      q: "¿Cómo funciona la Calculadora de Préstamos?",
+      a: "Utiliza la fórmula de amortización del préstamo para calcular tu pago mensual. Ingresa el monto del préstamo, la tasa de interés y el plazo, y muestra instantáneamente tu cronograma de pagos y el costo total."
+    },
+    {
+      q: "¿Por qué es importante usar una Calculadora de Préstamos?",
+      a: "Una calculadora de préstamos te ayuda a tomar decisiones de préstamo más inteligentes. Te permite comparar diferentes opciones, planificar presupuestos y entender cómo varían tus pagos según la tasa o el plazo."
+    },
+    {
+      q: "¿Qué factores afectan el monto de mi reembolso?",
+      a: "El monto de tu reembolso se ve influenciado por tres factores principales: el monto principal, la tasa de interés y el plazo del préstamo. Estos determinan cuánto pagarás cada mes y el total durante la vida del préstamo."
+    },
+    {
+      q: "¿Puedo usar esta calculadora para diferentes tipos de préstamos?",
+      a: "Sí. Puedes calcular pagos para préstamos personales, educativos, de auto o hipotecarios. Todos siguen la misma lógica, aunque las tasas y plazos pueden variar."
+    },
+    {
+      q: "¿La Calculadora de Préstamos muestra cuánto pagaré en intereses?",
+      a: "Sí. La calculadora proporciona un desglose detallado de los intereses totales durante el plazo del préstamo. Te permite ver cuánto de tu pago va a intereses versus al principal, facilitando comparaciones y pagos más rápidos."
+    }
+  ]
+},
     compound: {
       title: "Calculadora de Interés Compuesto",
       desc: "Calcule el crecimiento del interés compuesto",
@@ -1059,42 +1117,366 @@ macros: {
       formula: "Fórmula",
       formulaText: "Calcula valor futuro con depósitos regulares",
     },
-    mortgage: {
-      title: "Calculadora de Hipoteca",
-      desc: "Calcule pagos de hipoteca",
-      homePrice: "Precio de la Casa ($)",
-      downPayment: "Pago Inicial ($)",
-      rate: "Tasa de Interés (%)",
-      years: "Plazo del Préstamo (años)",
-      result: "Pago Mensual",
-      about: "Acerca de las Hipotecas",
-      aboutText: "Calcule su pago mensual de hipoteca e interés total.",
-      formula: "Fórmula",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+mortgage: {
+  metaTitle: "Calculadora de Hipoteca: Estima los Pagos Mensuales de tu Préstamo de Vivienda al Instante",
+  desc: "Usa nuestra Calculadora de Hipoteca para estimar tus pagos mensuales de préstamo hipotecario según la tasa de interés y el plazo. Planifica fácilmente tu presupuesto antes de comprar.",
+  homePrice: "Precio de la Vivienda ($)",
+  downPayment: "Pago Inicial ($)",
+  rate: "Tasa de Interés (%)",
+  years: "Plazo del Préstamo (años)",
+  result: "Pago Mensual",
+  heading: "Calculadora de Hipoteca",
+  tocTitle: "Tabla de Contenidos",
+  tocwhy: "Por Qué una Calculadora de Hipoteca es Importante",
+  tochowmortage: "Cómo Funciona la Calculadora de Hipoteca en Línea",
+  tocwhyuse: "Por Qué Usar una Calculadora de Hipoteca",
+  tocmortageformula: "Fórmula de la Calculadora de Hipoteca",
+  tocformulastep1: "Paso 1: Identificar los Datos Clave",
+  tocformulastep2: "Paso 2: Ejemplo de Cálculo de Hipoteca",
+  tocformulastep3: "Paso 3: Desglose de Principal e Interés",
+  tocformulahowto: "Cómo Usar los Resultados",
+  tocformulawhy: "Por Qué Funciona Esta Fórmula",
+
+  aboutH2: "Acerca de la Calculadora de Hipoteca",
+  aboutContent: "La Calculadora de Hipoteca te ayuda a estimar tus pagos mensuales de préstamo hipotecario con facilidad. Calcula el monto del pago mensual, incluyendo tanto el principal como el interés, basado en tu monto de préstamo, tasa de interés y plazo del préstamo. Esta calculadora en línea te da una visión clara de tu capacidad de pago antes de solicitar un préstamo. También muestra cuánto tiempo tardarás en pagar tu hipoteca por completo y cuánto interés total pagarás con el tiempo.",
+
+  whyTitle: "Por Qué una Calculadora de Hipoteca es Importante",
+  whyIntro: "Comprender tus pagos de préstamo te ayuda a planificar mejor y evitar sorpresas financieras. Con esta herramienta, puedes:",
+  whyList: [
+    "Estimar tus cuotas mensuales con precisión",
+    "Comparar ofertas y tasas de préstamos",
+    "Planificar tu presupuesto para la compra de vivienda",
+    "Visualizar tu calendario de amortización"
+  ],
+  whyEnd: "La calculadora de préstamos hipotecarios facilita ver cómo cambia tu pago con diferentes montos de préstamo o tasas de interés.",
+
+  howWorksTitle: "Cómo Funciona la Calculadora de Hipoteca en Línea",
+  howWorksContent: "La calculadora usa el monto de tu préstamo, la tasa de interés y el plazo del préstamo para calcular pagos mensuales fijos. Aplica la fórmula estándar de pago de préstamos, proporcionando un desglose detallado de cuánto va a intereses y cuánto reduce el principal.",
+  howWorksInputTitle: "Necesitarás ingresar:",
+  howWorksInputList: [
+    "Monto del préstamo ($)",
+    "Tasa de interés (%)",
+    "Plazo del préstamo (años)"
+  ],
+  howWorksResulttext: "Muestra al instante:",
+  howWorksResultList: [
+    "Pago mensual",
+    "Interés total pagado",
+    "Monto total a pagar",
+    "Tabla de amortización (vista opcional)"
+  ],
+  howWorksEnd: "Esto te ayuda a seguir tu calendario de pagos hipotecarios y administrar tus finanzas a largo plazo de manera efectiva.",
+
+  whyUseTitle: "Por Qué Usar una Calculadora de Hipoteca",
+  whyUseContent: "Esta herramienta de financiamiento de vivienda te da control sobre la planificación de tu préstamo. Puedes probar diferentes plazos y tasas de interés para encontrar la opción más asequible. Al ajustar los datos ingresados, puedes ver cómo pequeños cambios en la tasa o en el plazo afectan tu costo total, haciendo de la calculadora de hipoteca una parte crucial de la toma de decisiones financieras informadas. La Calculadora de Hipoteca te ayuda a pedir prestado con confianza, sabiendo exactamente cómo será tu plan de pagos desde el primer día.",
+
+  formulaMainTitle: "Fórmula de la Calculadora de Hipoteca",
+  formulaMainIntro: "La Calculadora de Hipoteca utiliza una fórmula de interés compuesto simple para estimar tu cuota mensual. Calcula cuánto necesitas pagar cada mes para saldar por completo el principal y el interés dentro del plazo elegido.",
+  formulaSubIntro: "La fórmula principal es:",
+  formulaMain: "M = P × [ r(1 + r)ⁿ ] ÷ [ (1 + r)ⁿ – 1 ]",
+
+  formulaDefinitionList: [
+    "M = Pago hipotecario mensual",
+    "P = Principal del préstamo (monto prestado)",
+    "r = Tasa de interés mensual (tasa anual ÷ 12)",
+    "n = Número total de pagos (plazo del préstamo en años × 12)"
+  ],
+
+  formulaEndText: "Esta fórmula ayuda a determinar cómo se divide tu principal e interés a lo largo del tiempo.",
+
+  formulaImage: "/Mortgage-Calculator.jpg",
+  formulaImageAlt: "Mortgage Calculator",
+
+  step1Title: "Paso 1: Identificar los Datos Clave",
+  step1List: [
+    "Monto del préstamo (P) — cantidad total prestada",
+    "Tasa de interés (r) — tasa anual dividida por 12",
+    "Plazo del préstamo (n) — años multiplicados por 12 meses"
+  ],
+  step1End: "La calculadora de préstamos hipotecarios luego calcula tu pago mensual fijo usando estos datos.",
+
+  step2Title: "Paso 2: Ejemplo de Cálculo de Hipoteca",
+  step2ExampleList: [
+    "Monto del préstamo = $250,000",
+    "Tasa de interés anual = 5%",
+    "Plazo del préstamo = 30 años"
+  ],
+
+  step2CalcStep1: "Convierte la tasa anual a mensual: r = 5 ÷ 100 ÷ 12 = 0.004167  n = 30 × 12 = 360 meses",
+  step2CalcStep2: "Aplica la fórmula: M = 250,000 × [0.004167 × (1 + 0.004167)³⁶⁰] ÷ [(1 + 0.004167)³⁶⁰ – 1] M = $1,342.05 por mes",
+
+  step2ResultMeaning: "Esto significa que pagarás $1,342.05 mensualmente durante 30 años para saldar completamente la hipoteca.",
+
+  step3Title: "Paso 3: Desglose de Principal e Interés",
+  step3Content: "Cada pago que haces incluye tanto interés como principal. Al inicio del préstamo, la mayor parte del pago va a intereses y, con el tiempo, más va al principal. Este calendario se llama tabla de amortización. Te ayuda a ver cómo disminuye el saldo de tu préstamo mes a mes hasta ser totalmente pagado.",
+
+  totalExampleTitle: "Ejemplo: Costo Total del Préstamo",
+  totalExampleList: [
+    "Pago Mensual: $1,342.05",
+    "Pagos Totales (360 meses): $1,342.05 × 360 = $483,138",
+    "Interés Total Pagado: $483,138 – $250,000 = $233,138"
+  ],
+  totalExampleEnd: "Así, durante 30 años, pagarás alrededor de $233,138 en intereses sobre un préstamo de $250,000. Esto te ayuda a entender el costo real de tu hipoteca y cómo las tasas de interés afectan tu capacidad de pago.",
+
+  howToUseTitle: "Cómo Usar los Resultados",
+  howToUseList: [
+    "Comparar ofertas de préstamos de diferentes prestamistas",
+    "Decidir si puedes permitirte un plazo más corto o más largo",
+    "Ajustar tu presupuesto para cumplir con tus objetivos de financiamiento de vivienda",
+    "Planificar pagos anticipados o refinanciamiento si es posible"
+  ],
+  howToUseEnd: "Estima tus pagos mensuales con mayor precisión con nuestra",
+  interlink: "Calculadora de Préstamos",
+
+  whyWorksTitle: "Por Qué Funciona Esta Fórmula",
+  whyWorksContent: "La fórmula de pago hipotecario se basa en el interés compuesto, asegurando cuotas mensuales consistentes durante todo el plazo del préstamo. Es confiable y utilizada por bancos y planificadores financieros en todo el mundo para calcular cronogramas de pago precisos. La Calculadora de Hipoteca en línea simplifica esta matemática compleja, permitiéndote probar diferentes tasas y plazos en segundos. Es la manera más fácil de explorar tu capacidad de pago hipotecario y compromisos financieros a largo plazo. La herramienta en Vastcalculators.com utiliza esta fórmula exacta para proporcionar estimaciones claras, confiables y en tiempo real para decisiones de compra de vivienda más inteligentes.",
+
+  faqTitle: "Preguntas Frecuentes",
+  faq: [
+    {
+      q: "¿Qué hace una Calculadora de Hipoteca?",
+      a: "Una Calculadora de Hipoteca estima tus pagos mensuales de préstamo hipotecario basándose en el monto del préstamo, la tasa de interés y el plazo de pago."
     },
-    roi: {
-      title: "Calculadora de ROI",
-      desc: "Calcule el retorno de la inversión",
-      investment: "Inversión ($)",
-      gain: "Ganancia ($)",
-      result: "ROI %",
-      about: "Acerca del ROI",
-      aboutText: "ROI mide la rentabilidad de una inversión.",
-      formula: "Fórmula",
-      formulaText: "ROI = (Ganancia / Inversión) × 100",
+    {
+      q: "¿Cómo se calculan los pagos hipotecarios?",
+      a: "Tu pago mensual se calcula usando el principal, la tasa de interés y el plazo del préstamo. La fórmula toma en cuenta cómo se compone el interés mensualmente durante el periodo de pago."
     },
-    breakeven: {
-      title: "Calculadora de Punto de Equilibrio",
-      desc: "Calcule el punto de equilibrio",
-      fixedCosts: "Costos Fijos ($)",
-      variableCost: "Costo Variable por Unidad ($)",
-      price: "Precio por Unidad ($)",
-      result: "Unidades de Equilibrio",
-      about: "Acerca del Punto de Equilibrio",
-      aboutText: "El punto de equilibrio es cuando los ingresos igualan los costos totales.",
-      formula: "Fórmula",
-      formulaText: "Equilibrio = Costos Fijos / (Precio - Costo Variable)",
+    {
+      q: "¿Qué información necesito para usar la calculadora?",
+      a: "Necesitarás el monto de tu préstamo, la tasa de interés anual y el plazo del préstamo en años. La calculadora estimará automáticamente tu pago mensual."
     },
+    {
+      q: "¿La Calculadora de Hipoteca incluye impuestos y seguros?",
+      a: "No. Estima únicamente el pago de principal e interés de tu préstamo. Los impuestos, seguros y otros costos deben agregarse por separado para un presupuesto completo."
+    },
+    {
+      q: "¿Puedo usar la Calculadora de Hipoteca para refinanciar?",
+      a: "Sí. Ingresa tu nuevo monto de préstamo, plazo y tasa de interés para estimar los nuevos pagos y compararlos con tu hipoteca actual."
+    },
+    {
+      q: "¿Cómo puedo reducir mi pago hipotecario mensual?",
+      a: "Puedes reducir los pagos extendiendo el plazo del préstamo, disminuyendo la tasa de interés o haciendo un pago inicial mayor para pedir prestado menos."
+    }
+  ]
+},
+roi: {
+  metaTitle: "Calculadora de ROI en línea | Calcula el retorno de inversión online",
+  desc: "Encuentra tu retorno de inversión (ROI) rápida y exactamente. Utiliza nuestra Calculadora de ROI para seguir ganancias, comparar proyectos y mejorar el desempeño financiero.",
+  investment: "Inversión ($)",
+  gain: "Ganancia ($)",
+  result: "ROI %",
+  heading: "Calculadora de ROI",
+  tocabout: "Acerca de la Calculadora de ROI",
+  tochow: "Cómo funciona la Calculadora de ROI Online",
+  tocformula: "Fórmula de la Calculadora de ROI",
+  tocwhy: "Por qué es importante calcular el ROI",
+  tocexample: "Ejemplos de cálculo",
+  tocresult: "Cómo usar los resultados del ROI",
+
+  aboutsection: "Acerca de la Calculadora de ROI",
+  aboutcontent: "La Calculadora de ROI te ayuda a medir cuán rentable es una inversión en comparación con su costo. ROI significa Retorno de Inversión, mostrando qué tan eficientemente se usa el dinero para generar ganancias. Esta calculadora online determina instantáneamente tu porcentaje de retorno, permitiéndote ver si una inversión fue exitosa o no. Ideal para empresas, inversores y emprendedores que quieren evaluar costo vs retorno con precisión.",
+
+  whytitle: "Por qué es importante calcular el ROI",
+  whycontent: "El ROI proporciona una visión clara de cómo se desempeña una inversión. Ya sea al analizar una campaña de marketing, un lanzamiento de producto o la expansión de un negocio, el ROI muestra el porcentaje de ganancia o pérdida respecto al costo total.",
+  whylist: [
+    "Evaluar el desempeño financiero rápidamente",
+    "Comparar múltiples inversiones",
+    "Identificar qué proyectos generan mayores retornos",
+    "Apoyar la toma de decisiones basada en datos"
+  ],
+  whyextratext: "Encuentra tu umbral de ganancia usando la",
+  whyinterlink: "Calculadora de Punto de Equilibrio",
+
+  howworkstitle: "Cómo funciona la Calculadora de ROI Online",
+  howworksIntro: "La Calculadora de Retorno de Inversión usa una fórmula porcentual simple. Solo necesitas dos números:",
+  howworkslist: [
+    "Ganancia total de la inversión ($)",
+    "Costo total de la inversión ($)"
+  ],
+  howworksresultlist: [
+    "Porcentaje de ROI",
+    "Cantidad total de ganancia o pérdida"
+  ],
+
+  whyusetitle: "Por qué usar una Calculadora de ROI",
+  whyusecontent: "La calculadora de retorno de inversión simplifica el análisis financiero en resultados claros. Perfecta para dueños de negocios, mercadólogos e inversores que desean seguir resultados sin cálculos manuales. Esta herramienta resalta de dónde provienen las ganancias y dónde se puede mejorar el desempeño, asegurando que cada dólar invertido contribuya de manera eficiente al crecimiento a largo plazo.",
+
+  formulatitle: "Fórmula de la Calculadora de ROI",
+  formulamain: "ROI (%) = [(Beneficio Neto) ÷ (Costo de la Inversión)] × 100",
+  formula2: "ROI (%) = [(Valor Final – Costo Inicial) ÷ Costo Inicial] × 100",
+
+  stepTitle: "Paso 1: Identificar los valores clave",
+  stepList: [
+    "Costo Inicial (Inversión): El dinero total invertido",
+    "Valor Final (Retorno): El monto total ganado con esa inversión"
+  ],
+  stepEndText: "Resta el costo inicial del valor final para encontrar tu beneficio neto. Luego divide entre el costo inicial y multiplica por 100 para obtener el porcentaje de ROI. Este método ofrece una visión clara de costo vs retorno y es una de las fórmulas de margen de ganancia más usadas en finanzas.",
+
+  formulaImage: "/ROI-Calculator.jpg",
+  formulaImageAlt: "ROI Calculator",
+
+  exampleTitle: "Ejemplo de cálculo de ROI",
+  exampleValues: [
+    "Costo Inicial = $5,000",
+    "Valor Final = $6,200"
+  ],
+  exampleStep1: "Beneficio Neto = 6,200 – 5,000 = $1,200",
+  exampleStep2: "ROI (%) = (1,200 ÷ 5,000) × 100 = 24%",
+  exampleEnd: "Entonces, tu Retorno de Inversión es 24 %. Esto significa que el proyecto generó un 24 % de ganancia comparado con el dinero invertido.",
+
+  example2Title: "Ejemplo: Comparando dos inversiones",
+  exampleA: [
+    "Costo = $10,000",
+    "Retorno = $12,000",
+    "ROI = (2,000 ÷ 10,000) × 100 = 20%"
+  ],
+  exampleB: [
+    "Costo = $15,000",
+    "Retorno = $18,750",
+    "ROI = (3,750 ÷ 15,000) × 100 = 25%"
+  ],
+  example2End: "Aunque la Inversión B requirió más dinero, produjo una tasa de retorno mayor.",
+
+  resultTitle: "Cómo usar los resultados del ROI",
+  resultList: [
+    "Medir el desempeño de inversiones en diferentes proyectos",
+    "Evaluar campañas o lanzamientos de negocio",
+    "Identificar oportunidades de alta rentabilidad",
+    "Analizar tendencias de rentabilidad a lo largo del tiempo"
+  ],
+
+  whysformulaTitle: "Por qué funciona esta fórmula",
+  whysformulaContent: "La fórmula de ROI proporciona una forma clara y universal de medir la eficiencia financiera. Se aplica en todas las industrias, desde operaciones comerciales hasta trading de acciones y análisis de marketing. Es simple, rápida y precisa, mostrando cuánto beneficio obtuviste en relación con tu inversión. La Calculadora de ROI Online ayuda a inversores y dueños de negocios a seguir el éxito financiero sin hojas de cálculo o matemáticas complejas. Es una de las herramientas más prácticas para quienes gestionan costos y retornos. La calculadora en Vastcalculators.com entrega resultados precisos de ROI al instante, siendo un recurso confiable para profesionales y tomadores de decisiones.",
+
+  faqTitle: "Preguntas Frecuentes",
+  faq: [
+    {
+      q: "¿Qué hace la Calculadora de ROI?",
+      a: "La Calculadora de ROI mide el retorno de una inversión comparando la ganancia con la cantidad inicial invertida, mostrando los resultados en porcentaje."
+    },
+    {
+      q: "¿Cómo funciona la fórmula de ROI?",
+      a: "Divide tu beneficio neto entre el costo de inversión y lo multiplica por 100 para encontrar el porcentaje de ROI."
+    },
+    {
+      q: "¿Qué es un buen ROI?",
+      a: "Depende de la industria. En general, un ROI del 10–30 % se considera sólido para la mayoría de inversiones."
+    },
+    {
+      q: "¿El ROI puede ser negativo?",
+      a: "Sí. Un ROI negativo significa que tu inversión perdió dinero comparado con lo que gastaste."
+    },
+    {
+      q: "¿Con qué frecuencia debo calcular el ROI?",
+      a: "Debes medir el ROI después de cada inversión o proyecto importante para seguir el desempeño y mejoras continuas."
+    },
+    {
+      q: "¿Cuál es la diferencia entre ROI y Punto de Equilibrio?",
+      a: "ROI muestra ganancia o pérdida, mientras que la Calculadora de Punto de Equilibrio te ayuda a encontrar el punto donde los costos totales igualan los ingresos totales, indicando cuándo comienza la ganancia."
+    }
+  ]
+},
+breakeven: {
+  metaTitle: "Calculadora de Punto de Equilibrio – Descubre cuándo obtienes ganancias",
+  desc: "Usa nuestra Calculadora de Punto de Equilibrio para ver cuándo tu negocio cubre los costos y comienza a generar ganancias. Análisis simple, rápido y preciso.",
+  fixedCosts: "Costos Fijos ($)",
+  variableCost: "Costo Variable por Unidad ($)",
+  price: "Precio por Unidad ($)",
+  result: "Unidades de Equilibrio",
+  heading: "Calculadora de Punto de Equilibrio",
+
+  tocabout: "Acerca de la Calculadora de Punto de Equilibrio",
+  tocwhy: "Por qué es importante un análisis de punto de equilibrio",
+  tochowitworks: "Cómo funciona la Calculadora de Punto de Equilibrio en línea",
+  tocwhyuse: "Por qué usar una Calculadora de Punto de Equilibrio",
+
+  aboutTitle: "Acerca de la Calculadora de Punto de Equilibrio",
+  aboutContent: "La Calculadora de Punto de Equilibrio te ayuda a encontrar el punto donde los ingresos totales son iguales a los costos totales, donde tu negocio no genera ni ganancias ni pérdidas. Esta herramienta utiliza costos fijos, costos variables y el precio de venta para calcular tus ingresos de equilibrio o el volumen de ventas requerido. Es una manera rápida de medir la salud financiera y planificar mejores estrategias de precios.",
+
+  whyTitle: "Por qué es importante un análisis de punto de equilibrio",
+  whyIntro: "Un análisis de punto de equilibrio muestra cuántas unidades debes vender o cuánto ingreso debes generar para cubrir todos los gastos.",
+  whyList: [
+    "Planificar precios y estructura de costos",
+    "Identificar puntos de equilibrio entre ganancia y pérdida",
+    "Gestionar inversiones y gastos",
+    "Evaluar la viabilidad del producto y el riesgo"
+  ],
+  whyEnd: "Comprender tu umbral financiero asegura que tus operaciones sean rentables y sostenibles.",
+
+  interlinkExtraText: "Después de encontrar tu punto de equilibrio, revisa tu retorno total con nuestra",
+  interlinkSlugText: "Calculadora ROI",
+
+  howWorksTitle: "Cómo funciona la Calculadora de Punto de Equilibrio en línea",
+  howWorksIntro: "La calculadora aplica el método de análisis costo-volumen-beneficio para estimar tus ingresos de equilibrio.",
+  howWorksListTitle: "Ingresarás tres detalles clave:",
+  howWorksList: [
+    "Costos fijos – gastos que no cambian con el volumen de ventas (alquiler, salarios)",
+    "Costos variables – gastos que aumentan por unidad vendida (materiales, empaque)",
+    "Precio de venta por unidad"
+  ],
+  howWorksResultTitle: "Una vez ingresados, la calculadora muestra instantáneamente:",
+  howWorksResultList: [
+    "Punto de equilibrio (en unidades)",
+    "Punto de equilibrio (en ingresos)"
+  ],
+  howWorksEnd: "Esto te ayuda a determinar la cantidad exacta de ventas necesaria para recuperar los costos iniciales y empezar a obtener ganancias.",
+
+  whyUseTitle: "Por qué usar una Calculadora de Punto de Equilibrio",
+  whyUseContent: "Esta herramienta de rentabilidad empresarial brinda claridad sobre la gestión de costos y la proyección de ganancias. Ayuda a las empresas a evaluar la viabilidad financiera entendiendo la economía por unidad, el potencial de expansión y las decisiones de inversión. La Calculadora de Punto de Equilibrio simplifica la planificación y proporciona información confiable para equilibrar costos y ganancias de manera efectiva.",
+
+  formulatitle: "Fórmula de la Calculadora de Punto de Equilibrio",
+  formulaintro: "La Calculadora de Punto de Equilibrio usa una fórmula financiera simple que compara costos y ventas para identificar cuándo tu negocio comienza a obtener ganancias.",
+  mainFormulaText: "La fórmula principal es:",
+  formula: "Punto de Equilibrio (Unidades) = Costos Fijos ÷ (Precio de Venta por Unidad – Costo Variable por Unidad)",
+  afterFormulaDesc: "Esta ecuación muestra cuántas unidades necesitas vender para cubrir todos los gastos. Cualquier venta adicional representa ganancia.",
+
+  step1Title: "Paso 1: Comprender los componentes de la fórmula",
+  step1List: [
+    "Costos Fijos: gastos que permanecen constantes sin importar las ventas, como alquiler, salarios y seguros.",
+    "Costos Variables: gastos que cambian con la producción, como materiales, empaque y envío.",
+    "Precio de Venta por Unidad: el monto que cobras por cada unidad de tu producto o servicio."
+  ],
+  cvpLine: "Esta fórmula de análisis costo-volumen-beneficio te ayuda a medir el equilibrio entre costo, volumen y ganancia, un elemento clave de la gestión financiera.",
+
+  step2Title: "Paso 2: Fórmula de ingresos de equilibrio",
+  step2Formula: "Ingresos de Equilibrio = Unidades de Equilibrio × Precio de Venta por Unidad",
+  step2Desc: "Una vez conocido el número de unidades, puedes calcular los Ingresos de Equilibrio usando:",
+  step2Explain: "Esto muestra cuánto ingreso total debe generar tu negocio antes de alcanzar ganancias.",
+
+  imageUrl: "/Break-Even-Calculator.jpg",
+  imageAlt: "Break-Even Calculator",
+
+  exampleTitle: "Ejemplo de cálculo de punto de equilibrio",
+  exampleList: [
+    "Costos Fijos = $10,000",
+    "Costo Variable por Unidad = $20",
+    "Precio de Venta por Unidad = $50"
+  ],
+  exampleStep1: "Paso 1: Punto de Equilibrio (Unidades) = 10,000 ÷ (50 – 20) = 10,000 ÷ 30 = 334 unidades (aprox.)",
+  exampleStep2: "Paso 2: Ingresos de Equilibrio = 334 × 50 = $16,700",
+  exampleExplain: "Esto significa que tu negocio debe generar $16,700 en ventas o vender 334 unidades para cubrir todos los costos fijos y variables. Después de eso, cada unidad adicional contribuye directamente a la ganancia.",
+
+  interpretingTitle: "Interpretación del resultado",
+  interpretingList: [
+    "Vender por debajo del equilibrio = pérdida",
+    "Vender en el equilibrio = ni ganancia ni pérdida",
+    "Vender por encima del equilibrio = ganancia"
+  ],
+  interpretDesc: "Comprender esto ayuda a los dueños de negocios a gestionar precios, evaluar riesgos y recuperar los costos iniciales más rápido.",
+
+  whyWorksTitle: "Por qué funciona esta fórmula",
+  whyWorksDesc: "La fórmula de punto de equilibrio es una de las herramientas financieras más simples y poderosas. Te ayuda a visualizar la relación entre costos, ingresos y volumen, ofreciendo una visión clara de la rentabilidad. Esta herramienta es útil tanto para startups como para empresas consolidadas, gestionando el balance financiero donde los ingresos impulsan las operaciones y las ganancias sostienen el crecimiento. La Calculadora de Punto de Equilibrio en línea en Vastcalculators.com aplica esta fórmula al instante, proporcionando información clara para la toma rápida de decisiones y el éxito empresarial a largo plazo.",
+
+  faqTitle: "Preguntas Frecuentes",
+  faq: [
+    { q: "¿Qué hace una Calculadora de Punto de Equilibrio?", a: "Una Calculadora de Punto de Equilibrio te ayuda a encontrar el punto exacto donde tus ingresos totales son iguales a tus costos totales, mostrando cuándo tu negocio empieza a obtener ganancias." },
+    { q: "¿Cómo se calcula el punto de equilibrio?", a: "Se calcula dividiendo los costos fijos entre la diferencia entre el precio de venta por unidad y el costo variable por unidad. El resultado indica cuántas unidades necesitas vender para alcanzar el equilibrio." },
+    { q: "¿Por qué es importante el punto de equilibrio?", a: "Conocer tu punto de equilibrio ayuda a entender cómo las ventas, precios y costos afectan las ganancias. Es un paso clave en la planificación, presupuestos y estrategias de precios." },
+    { q: "¿Qué son costos fijos y variables?", a: "Los costos fijos son gastos que permanecen iguales cada mes, como alquiler o salarios. Los costos variables cambian según la producción o volumen de ventas, como materiales o envío." },
+    { q: "¿Se puede usar la Calculadora de Punto de Equilibrio para servicios?", a: "Sí. Se puede usar tanto para productos como servicios ingresando los costos fijos y variables totales junto con el precio promedio por unidad o proyecto." },
+    { q: "¿Con qué frecuencia debo calcular mi punto de equilibrio?", a: "Recalcula tu punto de equilibrio siempre que cambien los costos, precios o estrategias de ventas para asegurar que tu negocio siga siendo rentable." }
+  ]
+},
     discount: {
       title: "Calculadora de Descuento",
       desc: "Calcule descuentos y precio final",
@@ -1118,30 +1500,191 @@ macros: {
       formula: "Fórmula",
       formulaText: "Propina = Cuenta × Propina%, Por Persona = Total / Personas",
     },
-    inflation: {
-      title: "Calculadora de Inflación",
-      desc: "Calcule el impacto de la inflación",
-      amount: "Monto ($)",
-      years: "Años",
-      rate: "Tasa de Inflación (%)",
-      result: "Valor Futuro",
-      about: "Acerca de la Inflación",
-      aboutText: "Vea cómo la inflación afecta el valor del dinero a lo largo del tiempo.",
-      formula: "Fórmula",
-      formulaText: "Valor Futuro = Monto × (1 + Tasa)^Años",
-    },
-    currency: {
-      title: "Convertidor de Moneda",
-      desc: "Convierta entre monedas",
-      amount: "Monto",
-      fromCurrency: "De Moneda",
-      toCurrency: "A Moneda",
-      result: "Monto Convertido",
-      about: "Acerca de la Moneda",
-      aboutText: "Convierta entre diferentes monedas a tasas actuales.",
-      formula: "Fórmula",
-      formulaText: "Utiliza tasas de cambio actuales",
-    },
+inflation: {
+  metaTitle: "Calculadora de Inflación en Línea – Rastrea el Valor del Dinero con el Tiempo",
+  desc: "Usa nuestra Calculadora de Inflación para medir cómo la inflación afecta el valor de tu dinero y el poder adquisitivo a lo largo de diferentes años.",
+  amount: "Cantidad ($)",
+  years: "Años",
+  rate: "Tasa de Inflación (%)",
+  result: "Valor Futuro",
+  heading: "Calculadora de Inflación",
+
+  tocwhy: "Por qué es importante entender la inflación",
+  tochowitworks: "Cómo funciona la Calculadora de Inflación en Línea",
+  tocwhyuse: "Por qué usar una Calculadora de Inflación",
+  tocsteps1: "Paso 1: Identificar las variables",
+  tocsteps2: "Paso 2: Calcular la tasa de inflación",
+  tocresults: "Cómo usar los resultados",
+  tocwhyformula: "Por qué funciona esta fórmula",
+
+  aboutTitle: "Acerca de la Calculadora de Inflación",
+  aboutDesc: "La Calculadora de Inflación te ayuda a medir cómo cambia el valor del dinero con el tiempo debido a la inflación. Muestra cuánto costarían hoy bienes o servicios que en el pasado tenían un precio específico, o viceversa. Esta calculadora usa datos históricos de inflación, como el Índice de Precios al Consumidor (IPC), para calcular el valor ajustado por inflación del dinero. Es ideal para comparar precios, estimar poder adquisitivo y analizar tendencias financieras a largo plazo.",
+
+  whyTitle: "Por qué es importante entender la inflación",
+  whyDesc: "La inflación reduce el poder adquisitivo del dinero con el tiempo. Lo que podías comprar con $100 hace una década, hoy cuesta más. Seguir la inflación ayuda a individuos y empresas a tomar decisiones financieras más inteligentes.",
+  whyPoints: [
+    "Comparar el valor real del dinero a lo largo de los años",
+    "Planear inversiones que superen la inflación",
+    "Comprender cambios en el costo de vida",
+    "Medir cambios de precios a lo largo del tiempo"
+  ],
+
+  howTitle: "Cómo funciona la Calculadora de Inflación en Línea",
+  howDesc: "La calculadora aplica datos oficiales de inflación para estimar cuánto ha ganado o perdido valor el dinero a lo largo de los años.",
+  howNeed: [
+    "Monto inicial ($)",
+    "Año de inicio",
+    "Año final"
+  ],
+  howResult: [
+    "El valor equivalente actual del dinero pasado",
+    "La tasa de inflación durante los años seleccionados",
+    "El cambio porcentual en el poder adquisitivo"
+  ],
+
+  whyUseTitle: "Por qué usar una Calculadora de Inflación",
+  whyUseDesc: "La calculadora de valor a través del tiempo ayuda a comprender el impacto real de la inflación en tus finanzas. Es perfecta para analizar ahorros, inversiones, salarios y valores de propiedad a largo plazo. También funciona como calculadora de depreciación de moneda, mostrando cuánto se ha debilitado o fortalecido el dinero a través de las décadas. Con esta calculadora de costo de vida, puedes planificar mejor el futuro, establecer metas financieras realistas y proteger tu riqueza contra los efectos de la inflación. La Calculadora de Inflación es una herramienta práctica para comparar el verdadero valor del dinero a lo largo del tiempo.",
+
+  formulatitle: "Fórmula de la Calculadora de Inflación",
+  formulaintro: "La Calculadora de Inflación mide cuánto ha cambiado el valor del dinero entre dos fechas usando el Índice de Precios al Consumidor (IPC), un indicador estándar de inflación que rastrea cambios en el precio promedio de bienes y servicios.",
+  formula1: "Monto Ajustado = Monto Original × (IPC en el Año Objetivo ÷ IPC en el Año Base)",
+  formula1endtext: "Esto te da el valor ajustado por inflación, mostrando cuánto valdría un monto pasado hoy (o viceversa).",
+  formulaImage: "/Inflation-Calculator.jpg",
+  formulaImageAlt: "Inflation Calculator",
+
+  steps1title: "Paso 1: Identificar las variables",
+  steps1intro: "Cada parte de la fórmula representa un valor económico clave:",
+  steps1list: [
+    "Monto Original: El valor pasado o presente que deseas ajustar.",
+    "IPC en Año Base: El Índice de Precios al Consumidor del año original.",
+    "IPC en Año Objetivo: El Índice de Precios al Consumidor del año de comparación."
+  ],
+  steps1endtext: "La calculadora utiliza estos datos para determinar cómo ha cambiado el poder adquisitivo del dinero.",
+
+  steps2title: "Paso 2: Calcular la tasa de inflación",
+  steps2intro: "Para ver la tasa de inflación entre dos años, la fórmula es:",
+  steps2formula: "Tasa de Inflación (%) = [(IPC en Año Objetivo – IPC en Año Base) ÷ IPC en Año Base] × 100",
+  steps2endtext: "Esto muestra el aumento porcentual de los precios o la depreciación de la moneda durante el período.",
+
+  exampletitle: "Ejemplo de cálculo de inflación",
+  exampleintro: "Vamos a entenderlo con un ejemplo simple:",
+  example1list: [
+    "Monto Original = $1,000",
+    "IPC Año Base (2010) = 218.1",
+    "IPC Año Objetivo (2024) = 310.0"
+  ],
+  examplestep1: "Paso 1: Aplicar la fórmula:",
+  examplelist: [
+    "Monto Original = $1,000 Monto Ajustado = 1,000 × (310.0 ÷ 218.1)",
+    "Monto Ajustado = 1,000 × 1.4219",
+    "Monto Ajustado = $1,421.90"
+  ],
+  example2end: "Entonces, $1,000 en 2010 tiene el mismo poder adquisitivo que $1,421.90 en 2024, lo que significa que los precios aumentaron aproximadamente un 42% durante ese período.",
+
+  exampletitle2: "Ejemplo: Encontrando la tasa de inflación",
+  example2intro: "Usando la segunda fórmula:",
+  example2list: [
+    "Tasa de Inflación = [(310.0 – 218.1) ÷ 218.1] × 100",
+    "Tasa de Inflación = (91.9 ÷ 218.1) × 100",
+    "Tasa de Inflación = 42.15%"
+  ],
+  example2endtext: "Esto indica que los precios aumentaron aproximadamente un 42% entre 2010 y 2024.",
+
+  howtotitle: "Cómo usar los resultados",
+  howtointro: "Puedes usar la calculadora de inflación para:",
+  howtolist: [
+    "Comparar el valor real del dinero entre años",
+    "Medir cambios de precios de bienes o servicios a lo largo del tiempo",
+    "Ajustar inversiones o ahorros para mantener el poder adquisitivo",
+    "Estimar valores futuros usando tendencias de inflación"
+  ],
+  howtoendtext: "Usa tus resultados de interés compuesto para planificar ahorros a largo plazo con",
+  howtoInterLink: "Calculadora ROI",
+
+  whyformulaworkstitle: "Por qué funciona esta fórmula",
+  whyformulaworkscontent: "La inflación refleja cómo cambian los costos de bienes y servicios con el tiempo. El Índice de Precios al Consumidor (IPC) es la medida más confiable para rastrear este cambio. Comparando los valores del IPC, la herramienta muestra cuánto se ha erosionado o apreciado el valor real del dólar. La Calculadora de Inflación en línea ofrece resultados rápidos, precisos y actualizados, siendo esencial para quienes siguen tendencias financieras, precios comerciales o ahorros a largo plazo. La calculadora en Vastcalculators.com utiliza datos oficiales del IPC para proporcionar comparaciones precisas y reales.",
+
+  faqTitle: "Preguntas Frecuentes",
+  faq: [
+    { q: "¿Qué hace una Calculadora de Inflación?", a: "Una Calculadora de Inflación muestra cómo cambia el valor del dinero con el tiempo ajustando por inflación, ayudándote a comprender el valor real de cantidades pasadas o futuras." },
+    { q: "¿Cómo se calcula la inflación?", a: "La inflación se calcula comparando valores del índice de precios entre dos años. El índice muestra cuánto han aumentado o disminuido los precios con el tiempo." },
+    { q: "¿Qué es la tasa de inflación?", a: "La tasa de inflación es el aumento porcentual en el precio promedio de bienes y servicios durante un período específico, generalmente anual." },
+    { q: "¿Cómo puedo encontrar el valor real del dinero con el tiempo?", a: "Multiplica el monto original por el índice del año objetivo y divide entre el índice del año base. Esto muestra cuánto vale una cantidad en dólares de otro año." },
+    { q: "¿Por qué es importante la inflación para ahorros e inversiones?", a: "La inflación reduce el valor futuro del dinero, lo que significa que los ahorros pierden poder adquisitivo si no crecen a una tasa superior a la inflación." },
+    { q: "¿Cómo puedo comparar rendimientos después de inflación?", a: "Usa los valores ajustados por inflación para encontrar tu tasa de retorno real. Puedes compararlo fácilmente usando la Calculadora ROI para medir la ganancia real después de inflación." }
+  ]
+},
+currency: {
+  metaTitle: "Calculadora de Conversión de Moneda | Conversión de Tipo de Cambio en Tiempo Real",
+  desc: "Convierte cualquier moneda en segundos con nuestra calculadora de conversión de moneda en línea. Obtén tipos de cambio precisos en tiempo real y compara fácilmente los valores de monedas globales.",
+  amount: "Cantidad",
+  fromCurrency: "De Moneda",
+  toCurrency: "A Moneda",
+  result: "Cantidad Convertida",
+  heading: "Calculadora de Conversión de Moneda",
+
+  tocabout: "Acerca de nuestra calculadora de conversión de moneda en línea",
+  tocconversion: "Conversión en tiempo real para decisiones globales más inteligentes",
+  tocformula: "Fórmula de conversión de moneda",
+  tocexample: "Ejemplo de cálculo",
+  tocaccurateconversion: "Por qué importa la conversión precisa",
+  tocresults: "Cómo usar los resultados",
+  tocwhyformula: "Por qué funciona esta fórmula",
+
+  aboutTitle: "Acerca de nuestra calculadora de conversión de moneda en línea",
+  aboutDesc: "La Calculadora de Moneda de Vast Calculator facilita ver cuánto vale tu dinero en otra moneda en tiempo real. Ya sea que estés planeando un viaje, comparando precios internacionales o gestionando transacciones globales, esta herramienta ofrece conversiones rápidas y precisas usando las últimas tasas de cambio. Te ayuda a mantenerte informado financieramente mostrando conversiones en vivo para las principales monedas mundiales como USD, EUR, GBP, JPY y más, actualizadas regularmente para reflejar las tasas más recientes.",
+  aboutExtratext: "Si quieres ver cómo la inflación afecta el valor real de tu moneda, usa la",
+  aboutInterLink: "Calculadora de Inflación.",
+
+  conversionTitle: "Conversión en tiempo real para decisiones globales más inteligentes",
+  conversioncontent: "La Calculadora de Moneda simplifica la gestión del dinero internacional. Al ingresar la cantidad y seleccionar tus monedas, puedes convertir valores entre múltiples monedas globales al instante. Ya seas un viajero, propietario de negocio o alguien que invierte en el extranjero, esta calculadora ahorra tiempo y garantiza cálculos precisos, para que nunca tengas que adivinar las diferencias de moneda nuevamente.",
+  keyhighlight: "Aspectos Destacados:",
+  keyhighlightList: [
+    "Usa tasas de cambio en vivo de fuentes financieras confiables",
+    "Funciona para más de 160 monedas en todo el mundo",
+    "Gratis, rápido y compatible con móviles",
+    "Proporciona resultados instantáneos con cada actualización"
+  ],
+  keyhighlightsendtext: "Está diseñada para brindarte claridad antes de realizar pagos internacionales o decisiones de viaje, asegurando que tu dinero mantenga su valor a través de fronteras.",
+
+  formulatitle: "Fórmula de conversión de moneda",
+  formulasubtitle: "Cómo funciona la calculadora de moneda",
+  formulasubintro: "La calculadora de moneda utiliza una fórmula simple que multiplica la moneda base por la tasa de cambio actual para encontrar el valor de la moneda objetivo.",
+  formula1: "Fórmula: Cantidad Convertida = Cantidad Base × Tasa de Cambio",
+  formula1list: [
+    "Cantidad Base = La cantidad que tienes en tu moneda original",
+    "Tasa de Cambio = La tasa actual entre las dos monedas",
+    "Cantidad Convertida = Valor después de la conversión"
+  ],
+  formulaImage: "/Currency-Converter-Calculator.jpg",
+  formulaImageAlt: "Currency Converter Calculator",
+
+  exampletitle: "Ejemplo de cálculo",
+  exampleintro: "Si tienes 100 USD y la tasa de cambio de USD a EUR es 0.92, entonces:",
+  exampleformula: "Cantidad Convertida = 100 × 0.92 = 92 EUR",
+  exampleendtext: "Esto significa que $100 equivalen a €92 a esa tasa de cambio específica. Dado que los tipos de cambio fluctúan diariamente, es recomendable revisar los valores regularmente.",
+
+  accuratetitle: "Por qué importa la conversión precisa",
+  accuratesubtitle: "Mantente informado antes de gastar",
+  accuratesubcontent: "Las tasas de moneda cambian constantemente debido a las tendencias del mercado, la inflación y la actividad comercial global. La conversión en tiempo real te ayuda a tomar decisiones más inteligentes al:",
+  accuratesublist: [
+    "Viajar o comprar internacionalmente",
+    "Enviar o recibir dinero del extranjero",
+    "Comparar precios de productos en diferentes países",
+    "Gestionar inversiones entre distintas monedas"
+  ],
+  accuratesubend: "Al conocer el valor exacto antes de una transacción, puedes evitar pérdidas por tipos de cambio desactualizados o incorrectos.",
+
+  faqTitle: "Preguntas Frecuentes",
+  faq: [
+    { q: "¿Qué hace la calculadora de conversión de moneda?", a: "Convierte cualquier cantidad de una moneda a otra usando tasas de cambio en vivo, proporcionando resultados precisos al instante." },
+    { q: "¿Se actualizan automáticamente las tasas de cambio?", a: "Sí. Las tasas se actualizan regularmente para coincidir con los últimos datos de fuentes financieras globales confiables." },
+    { q: "¿Puedo usarla para cualquier moneda?", a: "Sí. La calculadora admite más de 160 monedas, incluidas principales y secundarias." },
+    { q: "¿Esta herramienta es gratuita?", a: "Sí. La Calculadora de Moneda en VastCalculator es completamente gratuita y funciona al instante en línea." },
+    { q: "¿Por qué las tasas de cambio son diferentes cada día?", a: "Las tasas cambian debido a la oferta y la demanda, inflación, tasas de interés y políticas económicas internacionales." },
+    { q: "¿Cómo se diferencia de una calculadora de inflación?", a: "La calculadora de moneda muestra la tasa de cambio actual entre dos monedas, mientras que la calculadora de inflación muestra cómo cambia el valor del dinero con el tiempo." }
+  ]
+},
   },
   footer: {
     subtitle: "Calculadora Vast – Simplifica las matemáticas con calculadoras en línea gratuitas",

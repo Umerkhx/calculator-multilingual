@@ -39,12 +39,17 @@ export const financeFormulas = {
     const gain = Number(inputs.gain)
     return ((gain / investment) * 100).toFixed(2)
   },
+
   breakeven: (inputs: Record<string, number | string>) => {
     const fixedCosts = Number(inputs.fixedCosts)
     const variableCost = Number(inputs.variableCost)
     const price = Number(inputs.price)
-    return Math.ceil(fixedCosts / (price - variableCost))
+
+    const result = Math.ceil(fixedCosts / (price - variableCost))
+    return result
   },
+
+  
   discount: (inputs: Record<string, number | string>) => {
     const originalPrice = Number(inputs.originalPrice)
     const discountPercent = Number(inputs.discountPercent)

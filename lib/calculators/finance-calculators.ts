@@ -724,6 +724,12 @@ export const financeCalculators: Calculator[] = [
       },
     ],
     formulaId: "currency",
+
+    result: {
+      label: "finance.currency.result",
+      explainKey: "finance.currency.resultExplain",
+    },
+
     toc: [
       { id: "about", labelKey: "finance.currency.tocabout" },
       { id: "conversion", labelKey: "finance.currency.tocconversion" },

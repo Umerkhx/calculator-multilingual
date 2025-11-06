@@ -915,18 +915,75 @@ macros: {
   },
   // Finans Hesaplayıcıları
   finance: {
-    loan: {
-      title: "Kredi Hesaplayıcı",
-      desc: "Kredi ödemelerini ve faizi hesaplayın",
+loan: {
+      metaTitle: "Çevrimiçi Kredi Hesaplayıcı – Aylık Kredi Ödemelerini Tahmin Edin",
+      desc: "Kredi Hesaplayıcımızı kullanarak aylık ödemelerinizi, faiz maliyetlerini ve toplam geri ödeme miktarını tahmin edin. Kişisel, araba veya konut kredilerini akıllıca planlayın",
       principal: "Kredi Tutarı ($)",
       rate: "Yıllık Faiz Oranı (%)",
       years: "Kredi Süresi (yıl)",
       result: "Aylık Ödeme",
-      about: "Kredi Hakkında",
-      aboutText:
-        "Ana para, faiz oranı ve süreye göre aylık kredi ödemenizi hesaplar.",
-      formula: "Formül",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+      heading: "Kredi Hesaplayıcı",
+
+      tocTitle: "İçindekiler",
+      tocabout: "Kredi Hesaplayıcı Hakkında",
+      tocformula: "Kredi Hesaplayıcı Formülü",
+      tocloan: "Kredi Ödeme Formülü",
+      tocexample: "Örnek Hesaplama",
+      tocwhy: "Neden Önemli",
+
+      aboutsection: "Kredi Hesaplayıcı Hakkında",
+      aboutcontent: "Kredi Hesaplayıcı, kredi almadan önce aylık ödemelerinizi, toplam faiz tutarını ve toplam kredi maliyetinizi tahmin etmenize yardımcı olur. Kişisel kredi, araba kredisi veya konut kredisi planlıyorsanız, bu araç farklı kredi süreleri, faiz oranları ve geri ödeme dönemlerinin bütçenizi nasıl etkilediğini gösterir. Geri ödeme seçeneklerini karşılaştırarak en uygun planı seçmenizi sağlayarak finansal planlamayı basitleştirir. Ayrıntılı konut kredisi hesaplamaları için geri ödeme koşullarınızı hesaplayarak daha bilinçli borçlanma kararları alabilirsiniz.",
+
+      formulatitle: "Kredi Hesaplayıcı Formülü",
+      formulacontent: "Kredi Hesaplayıcı, aylık ödemeyi (EMI), toplam faizi ve toplam kredi tutarını hesaplamak için standart bir kredi amortisman formülü kullanır. Üç temel faktörü dikkate alır: kredi tutarı, faiz oranı ve geri ödeme süresi.",
+      formulaImage: "/loan-calculator.jpg",
+      formulaImageAlt: "Loan Calculator",
+      formulaSubtitle: "Kredi Ödeme Formülü",
+      formula1: "EMI = [P × r × (1 + r)ⁿ] ÷ [(1 + r)ⁿ – 1]",
+      formulaList: [
+        "EMI = Aylık kredi ödemesi",
+        "P = Ana kredi tutarı",
+        "r = Aylık faiz oranı (yıllık oran ÷ 12 ÷ 100)",
+        "n = Toplam aylık ödeme sayısı",
+      ],
+      formulaSubtitle2: "Örnek Hesaplama",
+      formulaSubcontent2: "8% yıllık faiz oranı ile 3 yıl (36 ay) için 10.000 $ kredi alırsanız, aylık faiz oranınız:",
+      formula2: "r = 0.08 ÷ 12 = 0.0067",
+      formula2endcontent: "Şimdi bu değerleri formüle yerleştirin:",
+      formula3: "EMI = [10,000 × 0.0067 × (1 + 0.0067)³⁶] ÷ [(1 + 0.0067)³⁶ – 1]",
+      formula3endcontent: "Aylık ödemeniz yaklaşık 313 $ olacak ve toplam geri ödeme yaklaşık 11.268 $ olacaktır. Bu, 3 yıl boyunca yaklaşık 1.268 $ faiz ödeyeceğiniz anlamına gelir.",
+      formulasubtitle3: "Neden Önemli",
+      formulasubcontent3: "Aylık kredi ödemenizi anlamak, bütçenizi etkili bir şekilde planlamanıza ve aşırı borçlanmayı önlemenize yardımcı olur. Farklı kredi tutarları, faiz oranları ve geri ödeme süreleri ile deney yapabilir ve finansal hedeflerinize en uygun olanı bulabilirsiniz.",
+      formulasub3extratext: "Eğer konut kredisi veya mülk ödemelerini hesaplıyorsanız, kesin geri ödeme sonuçları için aracımızı kullanın:",
+      formulasub3interlink: "Mortgage Hesaplayıcı",
+
+      faqTitle: "Sıkça Sorulan Sorular",
+      faq: [
+        {
+          q: "Kredi Hesaplayıcı ne yapar?",
+          a: "Kredi Hesaplayıcı, kişisel, araç veya konut kredileri için aylık ödemeleri, toplam faiz tutarını ve toplam geri ödemeyi tahmin etmenize yardımcı olur. Kredinizin zaman içinde ne kadar maliyeti olacağını net bir şekilde gösterir."
+        },
+        {
+          q: "Kredi Hesaplayıcı nasıl çalışır?",
+          a: "Aylık ödemeyi hesaplamak için kredi amortisman formülünü kullanır. Kredi tutarınızı, faiz oranınızı ve geri ödeme sürenizi girin ve ödeme planınızı ve toplam maliyeti anında görün."
+        },
+        {
+          q: "Kredi Hesaplayıcı kullanmak neden önemlidir?",
+          a: "Kredi Hesaplayıcı, daha bilinçli borçlanma kararları almanıza yardımcı olur. Farklı kredi seçeneklerini karşılaştırabilir, bütçenizi planlayabilir ve farklı oranlar veya sürelerin ödemelerinizi nasıl etkilediğini anlayabilirsiniz."
+        },
+        {
+          q: "Kredi geri ödeme miktarımı hangi faktörler etkiler?",
+          a: "Geri ödeme miktarınız üç ana faktörden etkilenir: aldığınız ana tutar, borçlanma maliyetini temsil eden faiz oranı ve kredi süresi. Bu öğeler birlikte aylık ödemenizi ve toplam geri ödemeyi belirler."
+        },
+        {
+          q: "Bu hesaplayıcıyı farklı kredi türleri için kullanabilir miyim?",
+          a: "Evet. Kişisel, eğitim, araç veya konut kredileri için ödeme hesaplayabilirsiniz. Hepsi aynı hesaplama mantığını izler, ancak oranlar ve süreler farklı olabilir."
+        },
+        {
+          q: "Kredi Hesaplayıcı toplam ne kadar faiz ödeyeceğimi gösteriyor mu?",
+          a: "Evet. Kredi Hesaplayıcı, kredi süresi boyunca toplam faiz detaylarını gösterir. Ödemenizin ne kadarının faize, ne kadarının ana borca gittiğini görmenizi sağlar ve daha hızlı geri ödemeler planlamanıza veya kredi verenleri karşılaştırmanıza yardımcı olur."
+        }
+      ]
     },
     compound: {
       title: "Bileşik Faiz Hesaplayıcı",
@@ -955,45 +1012,331 @@ macros: {
       formula: "Formül",
       formulaText: "Düzenli ödemelerle gelecekteki değeri hesaplar",
     },
-    mortgage: {
-      title: "Konut Kredisi Hesaplayıcı",
-      desc: "Konut kredisi ödemelerini hesaplayın",
-      homePrice: "Ev Fiyatı ($)",
-      downPayment: "Peşinat ($)",
-      rate: "Faiz Oranı (%)",
-      years: "Kredi Süresi (yıl)",
-      result: "Aylık Ödeme",
-      about: "Konut Kredisi Hakkında",
-      aboutText:
-        "Aylık konut kredisi ödemelerinizi ve toplam faizi hesaplayın.",
-      formula: "Formül",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+mortgage: {
+  metaTitle: "Mortgage Hesaplayıcı: Aylık Konut Kredisi Ödemelerinizi Anında Hesaplayın",
+  desc: "Mortgage Hesaplayıcımızı kullanarak aylık konut kredisi ödemelerinizi faiz oranı ve vade süresine göre tahmin edin. Satın almadan önce bütçenizi kolayca planlayın.",
+  homePrice: "Ev Fiyatı ($)",
+  downPayment: "Peşinat ($)",
+  rate: "Faiz Oranı (%)",
+  years: "Kredi Vadesi (yıl)",
+  result: "Aylık Ödeme",
+  heading: "Mortgage Hesaplayıcı",
+  tocTitle: "İçindekiler",
+  tocwhy: "Mortgage Hesaplayıcının Önemi",
+  tochowmortage: "Online Mortgage Hesaplayıcı Nasıl Çalışır",
+  tocwhyuse: "Neden Mortgage Hesaplayıcı Kullanmalısınız",
+  tocmortageformula: "Mortgage Hesaplayıcı Formülü",
+  tocformulastep1: "Adım 1: Temel Girdileri Belirleyin",
+  tocformulastep2: "Adım 2: Mortgage Hesaplama Örneği",
+  tocformulastep3: "Adım 3: Anapara ve Faiz Dağılımı",
+  tocformulahowto: "Sonuçları Nasıl Kullanırsınız",
+  tocformulawhy: "Bu Formül Neden Çalışır",
+  aboutH2: "Mortgage Hesaplayıcı Hakkında",
+  aboutContent: "Mortgage Hesaplayıcı, aylık konut kredisi ödemelerinizi kolayca tahmin etmenizi sağlar. Kredi miktarınız, faiz oranınız ve kredi vadesi temel alınarak hem anapara hem faiz dahil aylık ödeme tutarını hesaplar. Bu online Mortgage Hesaplayıcı, kredi başvurusunda bulunmadan önce ödeme kapasitenizi net bir şekilde görmenize yardımcı olur. Ayrıca mortgage'unuzu tamamen geri ödemenizin ne kadar süreceğini ve toplamda ne kadar faiz ödeyeceğinizi gösterir.",
+  whyTitle: "Mortgage Hesaplayıcının Önemi",
+  whyIntro: "Kredi ödemelerinizi anlamak, daha iyi plan yapmanızı ve finansal sürprizlerden kaçınmanızı sağlar. Bu araç ile şunları yapabilirsiniz:",
+  whyList: [
+    "Aylık taksitlerinizi doğru bir şekilde tahmin edin",
+    "Kredi tekliflerini ve faiz oranlarını karşılaştırın",
+    "Ev satın alma bütçenizi planlayın",
+    "Amortisman tablonuzu görselleştirin"
+  ],
+  whyEnd: "Ev kredisi hesaplayıcı, farklı kredi tutarları veya faiz oranları ile ödemenizin nasıl değiştiğini görmeyi kolaylaştırır.",
+  howWorksTitle: "Online Mortgage Hesaplayıcı Nasıl Çalışır",
+  howWorksContent: "Hesaplayıcı, kredi tutarınızı, faiz oranınızı ve kredi vadenizi kullanarak sabit aylık ödemeleri hesaplar. Standart kredi geri ödeme formülünü uygular ve ne kadarının faize, ne kadarının anaparaya gittiğini detaylı şekilde gösterir.",
+  howWorksInputTitle: "Girdiğiniz bilgiler:",
+  howWorksInputList: [
+    "Kredi tutarı ($)",
+    "Faiz oranı (%)",
+    "Kredi vadesi (yıl)"
+  ],
+  howWorksResulttext: "Hemen görüntüler:",
+  howWorksResultList: [
+    "Aylık ödeme",
+    "Toplam ödenen faiz",
+    "Toplam ödeme tutarı",
+    "Amortisman tablosu (isteğe bağlı)"
+  ],
+  howWorksEnd: "Bu, mortgage geri ödeme planınızı takip etmenize ve uzun vadeli finansmanınızı etkili şekilde yönetmenize yardımcı olur.",
+  whyUseTitle: "Neden Mortgage Hesaplayıcı Kullanmalısınız",
+  whyUseContent: "Bu konut finansmanı aracı, kredi planlamanız üzerinde kontrol sağlar. Farklı kredi vadeleri ve faiz oranlarını test ederek en uygun seçeneği bulabilirsiniz. Girdileri değiştirerek, oran veya vade süresindeki küçük değişikliklerin toplam maliyetinizi nasıl etkilediğini görebilirsiniz. Mortgage Hesaplayıcı, geri ödeme planınızı baştan itibaren net bir şekilde görerek güvenle borçlanmanıza yardımcı olur.",
+  formulaMainTitle: "Mortgage Hesaplayıcı Formülü",
+  formulaMainIntro: "Mortgage Hesaplayıcı, aylık taksitlerinizi tahmin etmek için basit bir bileşik faiz formülü kullanır. Kredi anaparanızı ve faizi seçtiğiniz kredi vadesi içinde tamamen ödemek için her ay ne kadar ödemeniz gerektiğini hesaplar.",
+  formulaSubIntro: "Ana formül:",
+  formulaMain: "M = P × [ r(1 + r)ⁿ ] ÷ [ (1 + r)ⁿ – 1 ]",
+  formulaDefinitionList: [
+    "M = Aylık mortgage ödemesi",
+    "P = Kredi anaparası (alınan miktar)",
+    "r = Aylık faiz oranı (yıllık oran ÷ 12)",
+    "n = Toplam ödeme sayısı (kredi vadesi × 12)"
+  ],
+  formulaEndText: "Bu formül, anapara ve faizin zaman içindeki dağılımını belirlemenize yardımcı olur.",
+  formulaImage: "/Mortgage-Calculator.jpg",
+  formulaImageAlt: "Mortgage Calculator",
+  step1Title: "Adım 1: Temel Girdileri Belirleyin",
+  step1List: [
+    "Kredi Tutarı (P) — toplam borç miktarı",
+    "Faiz Oranı (r) — yıllık oran 12’ye bölünür",
+    "Kredi Vadesi (n) — yıl sayısı × 12 ay"
+  ],
+  step1End: "Ev kredisi hesaplayıcı bu girdileri kullanarak sabit aylık ödemeyi hesaplar.",
+  step2Title: "Adım 2: Mortgage Hesaplama Örneği",
+  step2ExampleList: [
+    "Kredi Tutarı = $250,000",
+    "Yıllık Faiz Oranı = %5",
+    "Kredi Vadesi = 30 yıl"
+  ],
+  step2CalcStep1: "Yıllık oranı aylığa çevirin: r = 5 ÷ 100 ÷ 12 = 0.004167 n = 30 × 12 = 360 ay",
+  step2CalcStep2: "Formülü uygulayın: M = 250,000 × [0.004167 × (1 + 0.004167)³⁶⁰] ÷ [(1 + 0.004167)³⁶⁰ – 1] M = $1,342.05 aylık",
+  step2ResultMeaning: "Bu, mortgage'u tamamen ödemek için 30 yıl boyunca aylık $1,342.05 ödeyeceğiniz anlamına gelir.",
+  step3Title: "Adım 3: Anapara ve Faiz Dağılımı",
+  step3Content: "Her ödemeniz hem faiz hem de anapara içerir. Kredinizin başında ödemelerin çoğu faize gider, zamanla daha fazlası anaparaya yönelir. Bu tabloya amortisman tablosu denir. Kredinizin aylık olarak nasıl azaldığını görmenizi sağlar.",
+  totalExampleTitle: "Örnek: Toplam Kredi Maliyeti",
+  totalExampleList: [
+    "Aylık Ödeme: $1,342.05",
+    "Toplam Ödemeler (360 ay): $1,342.05 × 360 = $483,138",
+    "Toplam Ödenen Faiz: $483,138 – $250,000 = $233,138"
+  ],
+  totalExampleEnd: "Böylece 30 yıl boyunca $250,000 kredi için yaklaşık $233,138 faiz ödersiniz. Bu, mortgage'un gerçek maliyetini ve faiz oranlarının ödeme kapasitenizi nasıl etkilediğini anlamanıza yardımcı olur.",
+  howToUseTitle: "Sonuçları Nasıl Kullanırsınız",
+  howToUseList: [
+    "Kredi tekliflerini karşılaştırın",
+    "Kısa veya uzun vadeyi karşılayıp karşılayamayacağınıza karar verin",
+    "Bütçenizi ev finansmanı hedeflerinize göre ayarlayın",
+    "Erken ödeme veya refinansman planlayın"
+  ],
+  howToUseEnd: "Aylık ödemelerinizi daha doğru tahmin edin",
+  interlink: "Kredi Hesaplayıcı",
+  whyWorksTitle: "Bu Formül Neden Çalışır",
+  whyWorksContent: "Mortgage ödeme formülü, bileşik faiz esasına dayanır ve kredi süresi boyunca sabit taksitler sağlar. Bankalar ve finansal planlamacılar tarafından güvenle kullanılır. Online Mortgage Hesaplayıcı bu karmaşık matematiği basitleştirir ve farklı oran ve vade sürelerini saniyeler içinde test etmenizi sağlar. Vastcalculators.com’daki araç, net, güvenilir ve gerçek zamanlı mortgage tahminleri sunar, böylece ev alımında bilinçli kararlar verebilirsiniz.",
+  faqTitle: "Sık Sorulan Sorular",
+  faq: [
+    { q: "Mortgage Hesaplayıcı ne yapar?", a: "Mortgage Hesaplayıcı, kredi tutarınız, faiz oranınız ve geri ödeme vadeniz temel alınarak aylık konut kredisi ödemelerinizi tahmin eder." },
+    { q: "Mortgage ödemeleri nasıl hesaplanır?", a: "Aylık ödemeniz anapara, faiz oranı ve kredi vadesi kullanılarak hesaplanır. Formül, faizlerin geri ödeme süresi boyunca aylık olarak nasıl biriktiğini dikkate alır." },
+    { q: "Hesaplayıcıyı kullanmak için hangi bilgilere ihtiyacım var?", a: "Kredi tutarınız, yıllık faiz oranınız ve kredi vadeniz gereklidir. Hesaplayıcı aylık ödemenizi otomatik olarak tahmin eder." },
+    { q: "Mortgage Hesaplayıcı vergiler ve sigortayı içerir mi?", a: "Hayır. Sadece kredi anapara ve faiz ödemesini tahmin eder. Tam bütçe için vergiler, sigorta ve diğer maliyetler ayrı eklenmelidir." },
+    { q: "Mortgage Hesaplayıcıyı refinansman için kullanabilir miyim?", a: "Evet. Yeni kredi tutarınızı, vadesini ve faiz oranınızı girerek yeni ödemeleri tahmin edebilir ve mevcut mortgage ile karşılaştırabilirsiniz." },
+    { q: "Aylık mortgage ödememi nasıl düşürebilirim?", a: "Ödemeleri düşürmek için kredi vadesini uzatabilir, faiz oranını azaltabilir veya daha yüksek peşinat ödeyerek daha az borç alabilirsiniz." }
+  ],
+},
+roi: {
+  metaTitle: "Çevrimiçi ROI Hesaplayıcı | Yatırım Getirinizi Online Hesaplayın",
+  desc: "Yatırım getirinizi (ROI) hızlı ve doğru bir şekilde bulun. ROI Hesaplayıcımızı kârı takip etmek, projeleri karşılaştırmak ve finansal performansı artırmak için kullanın.",
+  investment: "Yatırım ($)",
+  gain: "Kazanç ($)",
+  result: "ROI %",
+  heading: "ROI Hesaplayıcı",
+  tocabout: "ROI Hesaplayıcısı Hakkında",
+  tochow: "Çevrimiçi ROI Hesaplayıcı Nasıl Çalışır",
+  tocformula: "ROI Hesaplayıcı Formülü",
+  tocwhy: "ROI Hesaplama Neden Önemlidir",
+  tocexample: "Örnek Hesaplamalar",
+  tocresult: "ROI Sonuçlarını Nasıl Kullanılır",
+
+  aboutsection: "ROI Hesaplayıcısı Hakkında",
+  aboutcontent: "ROI Hesaplayıcısı, bir yatırımın maliyetine kıyasla ne kadar kârlı olduğunu ölçmenize yardımcı olur. ROI, Yatırım Getirisi anlamına gelir ve paranın kâr elde etmek için ne kadar verimli kullanıldığını gösterir. Bu çevrimiçi ROI Hesaplayıcı, getiriyi anında yüzde olarak belirler, böylece bir yatırımın başarılı mı yoksa düşük performans mı gösterdiğini görebilirsiniz. İşletmeler, yatırımcılar ve girişimciler için maliyet ve getiriyi doğru şekilde değerlendirmek için idealdir.",
+
+  whytitle: "ROI Hesaplama Neden Önemlidir",
+  whycontent: "ROI, bir yatırımın ne kadar iyi performans gösterdiğinin net bir özetini sağlar. İster bir pazarlama kampanyasını, bir ürün lansmanını, ister iş genişlemesini analiz edin — ROI, toplam maliyete göre kâr veya zarar yüzdesini gösterir.",
+  whylist: [
+    "Finansal performansı hızlı değerlendirin",
+    "Birden fazla yatırımı karşılaştırın",
+    "Hangi projelerin daha yüksek getiri sağladığını belirleyin",
+    "Veriye dayalı karar almayı destekleyin"
+  ],
+  whyextratext: "Kâr eşik değerini şununla bulun:",
+  whyinterlink: "Başabaş Hesaplayıcı",
+
+  howworkstitle: "Çevrimiçi ROI Hesaplayıcısı Nasıl Çalışır",
+  howworksIntro: "ROI Hesaplayıcısı basit bir yüzde formülü kullanır. Sadece iki sayıya ihtiyacınız var:",
+  howworkslist: [
+    "Yatırımdan Toplam Kazanç ($)",
+    "Yatırımın Toplam Maliyeti ($)"
+  ],
+  howworksresultlist: [
+    "ROI yüzdesi",
+    "Toplam kâr veya zarar miktarı"
+  ],
+
+  whyusetitle: "ROI Hesaplayıcıyı Neden Kullanmalısınız",
+  whyusecontent: "Yatırım getirisi hesaplayıcısı finansal analizi net sonuçlara dönüştürür. İşletme sahipleri, pazarlamacılar ve yatırımcılar için, sonuçları manuel hesaplama olmadan takip etmek mükemmeldir. Bu araç, kârın nereden geldiğini ve performansın nerede iyileştirilebileceğini gösterir — harcanan her doların uzun vadeli büyümeye etkin şekilde katkıda bulunmasını sağlar.",
+
+  formulatitle: "ROI Hesaplayıcı Formülü",
+  formulamain: "ROI (%) = [(Net Kâr) ÷ (Yatırım Maliyeti)] × 100",
+  formula2: "ROI (%) = [(Nihai Değer – Başlangıç Maliyeti) ÷ Başlangıç Maliyeti] × 100",
+
+  stepTitle: "Adım 1: Temel Değerleri Belirleyin",
+  stepList: [
+    "Başlangıç Maliyeti (Yatırım): Harcanan toplam para",
+    "Nihai Değer (Getiri): Yatırımdan kazanılan toplam miktar"
+  ],
+  stepEndText: "Net kârı bulmak için başlangıç maliyetini nihai değerden çıkarın. Ardından başlangıç maliyetine bölün ve ROI yüzdesini almak için 100 ile çarpın. Bu yöntem, maliyet ve getiri arasındaki ilişkiyi net bir şekilde gösterir ve finansal analizde en çok kullanılan kâr marjı formüllerinden biridir.",
+
+  formulaImage: "/ROI-Calculator.jpg",
+  formulaImageAlt: "ROI Calculator",
+
+  exampleTitle: "ROI Hesaplama Örneği",
+  exampleValues: [
+    "Başlangıç Maliyeti = $5,000",
+    "Nihai Değer = $6,200"
+  ],
+  exampleStep1: "Net Kâr = 6,200 – 5,000 = $1,200",
+  exampleStep2: "ROI (%) = (1,200 ÷ 5,000) × 100 = 24%",
+  exampleEnd: "Böylece, Yatırım Getiriniz %24’tür. Bu, projenin yatırılan paraya kıyasla %24 kâr elde ettiği anlamına gelir.",
+
+  example2Title: "Örnek: İki Yatırımı Karşılaştırma",
+  exampleA: [
+    "Maliyet = $10,000",
+    "Getiri = $12,000",
+    "ROI = (2,000 ÷ 10,000) × 100 = 20%"
+  ],
+  exampleB: [
+    "Maliyet = $15,000",
+    "Getiri = $18,750",
+    "ROI = (3,750 ÷ 15,000) × 100 = 25%"
+  ],
+  example2End: "Yatırım B daha fazla para gerektirmiş olsa da, daha yüksek bir getiri oranı sağlamıştır.",
+
+  resultTitle: "ROI Sonuçlarını Nasıl Kullanılır",
+  resultList: [
+    "Farklı projelerde yatırım performansını ölçün",
+    "İş kampanyalarını veya lansmanlarını değerlendirin",
+    "Yüksek getiri fırsatlarını belirleyin",
+    "Zaman içinde kârlılık trendlerini analiz edin"
+  ],
+
+  whysformulaTitle: "Bu Formül Neden Çalışır",
+  whysformulaContent: "ROI formülü, finansal verimliliği takip etmenin net ve evrensel bir yolunu sunar. İşletme operasyonlarından hisse senedi ticaretine ve pazarlama analizine kadar tüm sektörlerde uygulanabilir. Basit, hızlı ve doğru bir şekilde yatırımlarınıza göre ne kadar kâr elde ettiğinizi gösterir. Çevrimiçi ROI Hesaplayıcısı, yatırımcıların ve işletme sahiplerinin tablolar veya karmaşık hesaplamalar olmadan finansal başarıyı takip etmesine yardımcı olur. Vastcalculators.com üzerindeki hesaplayıcı, doğru ROI yüzdesi sonuçlarını anında sunarak karar vericiler ve profesyoneller için güvenilir bir iş aracı haline getirir.",
+
+  faqTitle: "Sıkça Sorulan Sorular",
+  faq: [
+    {
+      q: "ROI Hesaplayıcısı ne yapar?",
+      a: "ROI Hesaplayıcısı, kârı başlangıçta harcanan miktarla karşılaştırarak yatırım getirinizi ölçer ve sonucu yüzde olarak verir."
     },
-    roi: {
-      title: "Yatırım Getirisi (ROI) Hesaplayıcı",
-      desc: "Yatırım getirisini hesaplayın",
-      investment: "Yatırım ($)",
-      gain: "Kazanç ($)",
-      result: "ROI %",
-      about: "ROI Hakkında",
-      aboutText:
-        "ROI, bir yatırımın karlılığını ölçmek için kullanılır.",
-      formula: "Formül",
-      formulaText: "ROI = (Kazanç / Yatırım) × 100",
+    {
+      q: "ROI formülü nasıl çalışır?",
+      a: "Net kârınızı yatırım maliyetinize böler ve ROI yüzdesini bulmak için 100 ile çarpar."
     },
-    breakeven: {
-      title: "Başabaş Noktası Hesaplayıcı",
-      desc: "Başabaş noktasını hesaplayın",
-      fixedCosts: "Sabit Maliyetler ($)",
-      variableCost: "Birim Başına Değişken Maliyet ($)",
-      price: "Birim Fiyatı ($)",
-      result: "Başabaş Birimleri",
-      about: "Başabaş Noktası Hakkında",
-      aboutText:
-        "Başabaş noktası, gelirlerin toplam maliyetlere eşit olduğu noktadır.",
-      formula: "Formül",
-      formulaText: "Başabaş = Sabit Maliyet / (Fiyat - Değişken Maliyet)",
+    {
+      q: "İyi bir ROI nedir?",
+      a: "Sektöre bağlıdır. Genellikle %10–30 arası ROI, çoğu yatırım için iyi kabul edilir."
     },
+    {
+      q: "ROI negatif olabilir mi?",
+      a: "Evet. Negatif ROI, yatırımın harcanan paraya kıyasla zarar ettiğini gösterir."
+    },
+    {
+      q: "ROI ne sıklıkla hesaplanmalı?",
+      a: "Her büyük yatırım veya projeden sonra ROI hesaplamak, sürekli performans ve iyileştirmeyi takip etmek için önerilir."
+    },
+    {
+      q: "ROI ile Başabaş Noktası arasındaki fark nedir?",
+      a: "ROI kâr veya zararı gösterirken, Başabaş Hesaplayıcı toplam maliyetlerin toplam gelire eşit olduğu noktayı bulmanıza yardımcı olur ve kârın ne zaman başladığını gösterir."
+    }
+  ]
+},
+breakeven: {
+  metaTitle: "Başabaş Noktası Hesaplayıcı – Kâr Noktanızı Bulun",
+  desc: "Başabaş Noktası Hesaplayıcımızı kullanarak işletmenizin maliyetleri karşıladığı ve kâr etmeye başladığı zamanı görün. Basit, hızlı ve doğru analiz.",
+  fixedCosts: "Sabit Maliyetler ($)",
+  variableCost: "Birim Başına Değişken Maliyet ($)",
+  price: "Birim Fiyatı ($)",
+  result: "Başabaş Noktası (Birim)",
+  heading: "Başabaş Noktası Hesaplayıcı",
+
+  tocabout: "Başabaş Noktası Hesaplayıcısı Hakkında",
+  tocwhy: "Başabaş Analizi Neden Önemlidir",
+  tochowitworks: "Çevrimiçi Başabaş Hesaplayıcı Nasıl Çalışır",
+  tocwhyuse: "Başabaş Hesaplayıcı Neden Kullanılır",
+
+  aboutTitle: "Başabaş Noktası Hesaplayıcısı Hakkında",
+  aboutContent: "Başabaş Hesaplayıcısı, toplam gelirinizin toplam maliyetlerle eşitlendiği, işletmenizin ne kâr ne de zarar ettiği noktayı bulmanıza yardımcı olur. Bu araç sabit maliyetleri, değişken maliyetleri ve satış fiyatını kullanarak başabaş gelirini veya gerekli satış hacmini hesaplar. Finansal durumu hızlıca ölçmek ve fiyatlandırma stratejilerini planlamak için hızlı bir yöntemdir.",
+
+  whyTitle: "Başabaş Analizi Neden Önemlidir",
+  whyIntro: "Başabaş analizi, tüm masrafları karşılamak için kaç birim satmanız gerektiğini veya ne kadar gelir elde etmeniz gerektiğini gösterir.",
+  whyList: [
+    "Fiyatlandırma ve maliyet yapısını planlamak",
+    "Kâr ve zarar dengesi noktalarını belirlemek",
+    "Yatırımları ve giderleri yönetmek",
+    "Ürün uygunluğunu ve riski değerlendirmek"
+  ],
+  whyEnd: "Finansal eşik noktasını anlamak, operasyonlarınızın kârlı ve sürdürülebilir olmasını sağlar.",
+
+  interlinkExtraText: "Başabaş noktanızı bulduktan sonra toplam getirinizi kontrol edin",
+  interlinkSlugText: "ROI Hesaplayıcı",
+
+  howWorksTitle: "Çevrimiçi Başabaş Hesaplayıcı Nasıl Çalışır",
+  howWorksIntro: "Hesaplayıcı, başabaş gelirini tahmin etmek için maliyet-hacim-kâr analizi yöntemini uygular.",
+  howWorksListTitle: "Üç temel detayı gireceksiniz:",
+  howWorksList: [
+    "Sabit maliyetler – satış hacmiyle değişmeyen giderler (kira, maaşlar)",
+    "Değişken maliyetler – satılan her birimle artan giderler (malzeme, ambalaj)",
+    "Birim başına satış fiyatı"
+  ],
+  howWorksResultTitle: "Girildikten sonra hesaplayıcı anında gösterir:",
+  howWorksResultList: [
+    "Başabaş noktası (birim)",
+    "Başabaş noktası (gelir)"
+  ],
+  howWorksEnd: "Bu, başlangıç maliyetlerini geri kazanmak ve kâr etmeye başlamak için gereken satış miktarını belirlemenize yardımcı olur.",
+
+  whyUseTitle: "Başabaş Hesaplayıcı Neden Kullanılır",
+  whyUseContent: "Bu işletme kârlılık aracı, maliyet yönetimi ve kâr tahmini konusunda netlik sağlar. Birim ekonomisini, büyüme potansiyelini ve yatırım kararlarını anlamak için işletmelerin finansal uygunluğunu değerlendirir. Başabaş Hesaplayıcı planlamayı basitleştirir ve maliyetlerle kâr arasında güvenilir bir denge sunar.",
+
+  formulatitle: "Başabaş Hesaplayıcı Formülü",
+  formulaintro: "Başabaş Hesaplayıcı, işletmenizin kâr etmeye başladığı zamanı belirlemek için maliyetleri ve satışları karşılaştıran basit bir finansal formül kullanır.",
+  mainFormulaText: "Ana formül:",
+  formula: "Başabaş Noktası (Birim) = Sabit Maliyetler ÷ (Birim Başına Satış Fiyatı – Birim Başına Değişken Maliyet)",
+  afterFormulaDesc: "Bu denklem, tüm masrafları karşılamak için kaç birim satmanız gerektiğini gösterir. Bu noktadan sonraki satışlar doğrudan kâr sağlar.",
+
+  step1Title: "Adım 1: Formül Bileşenlerini Anlayın",
+  step1List: [
+    "Sabit Maliyetler: Satış miktarına bakılmaksızın sabit kalan giderler, örn. kira, maaş ve sigorta.",
+    "Değişken Maliyetler: Üretimle değişen giderler, örn. malzemeler, ambalaj ve nakliye.",
+    "Birim Başına Satış Fiyatı: Bir ürün veya hizmet için talep edilen fiyat."
+  ],
+  cvpLine: "Bu maliyet-hacim-kâr analizi formülü, maliyet, hacim ve kâr arasındaki dengeyi ölçmenize yardımcı olur – finansal yönetimin temel bir öğesi.",
+
+  step2Title: "Adım 2: Başabaş Gelir Formülü",
+  step2Formula: "Başabaş Geliri = Başabaş Noktası (Birim) × Birim Başına Satış Fiyatı",
+  step2Desc: "Birim sayısı belirlendikten sonra Başabaş Geliri hesaplayabilirsiniz:",
+  step2Explain: "Bu, işletmenizin kâr elde etmeden önce ne kadar toplam gelir elde etmesi gerektiğini gösterir.",
+
+  imageUrl: "/Break-Even-Calculator.jpg",
+  imageAlt: "Break-Even Calculator",
+
+  exampleTitle: "Başabaş Hesaplama Örneği",
+  exampleList: [
+    "Sabit Maliyetler = 10,000 $",
+    "Birim Başına Değişken Maliyet = 20 $",
+    "Birim Başına Satış Fiyatı = 50 $"
+  ],
+  exampleStep1: "Adım 1: Başabaş Noktası (Birim) = 10,000 ÷ (50 – 20) = 10,000 ÷ 30 = 334 birim (yuvarlanmış)",
+  exampleStep2: "Adım 2: Başabaş Geliri = 334 × 50 = 16,700 $",
+  exampleExplain: "Bu, işletmenizin tüm sabit ve değişken maliyetleri karşılamak için 16,700 $ gelir elde etmesi veya 334 birim satması gerektiği anlamına gelir. Bundan sonra her ek birim kâr sağlar.",
+
+  interpretingTitle: "Sonucun Yorumlanması",
+  interpretingList: [
+    "Başabaş noktasının altında satış = zarar",
+    "Başabaş noktasında satış = ne kâr ne zarar",
+    "Başabaş noktasının üstünde satış = kâr"
+  ],
+  interpretDesc: "Bu, işletme sahiplerinin fiyatları yönetmesine, riski değerlendirmesine ve başlangıç maliyetlerini daha hızlı geri kazanmasına yardımcı olur.",
+
+  whyWorksTitle: "Bu Formül Neden Çalışır",
+  whyWorksDesc: "Başabaş formülü, en basit ama en güçlü finansal araçlardan biridir. Maliyet, gelir ve hacim arasındaki ilişkiyi görselleştirir ve kârlılığı net şekilde gösterir. Bu araç, gelirle operasyonları sürdüren ve kârla büyümeyi destekleyen bir finansal denge sağlar. Vastcalculators.com üzerindeki çevrimiçi Başabaş Hesaplayıcı, bu formülü anında uygulayarak hızlı karar verme ve uzun vadeli başarı için net bilgiler sunar.",
+
+  faqTitle: "Sıkça Sorulan Sorular",
+  faq: [
+    { q: "Başabaş Hesaplayıcı ne yapar?", a: "Toplam gelirinizin toplam maliyetlerle eşitlendiği ve işletmenizin kâr etmeye başladığı noktayı bulmanıza yardımcı olur." },
+    { q: "Başabaş noktası nasıl hesaplanır?", a: "Sabit maliyetlerin, birim satış fiyatı ile birim değişken maliyeti arasındaki farkla bölünmesiyle hesaplanır. Sonuç, başabaş noktasına ulaşmak için kaç birim satmanız gerektiğini gösterir." },
+    { q: "Başabaş noktası neden önemlidir?", a: "Başabaş noktasını bilmek, satışların, fiyatların ve maliyetlerin kâr üzerindeki etkisini anlamaya yardımcı olur. Planlama, bütçeleme ve fiyatlandırma stratejilerinde kritik bir adımdır." },
+    { q: "Sabit ve değişken maliyetler nelerdir?", a: "Sabit maliyetler kira veya maaş gibi her ay aynı kalan giderlerdir. Değişken maliyetler üretim veya satış hacmiyle değişir, örn. malzemeler veya nakliye." },
+    { q: "Başabaş Hesaplayıcı hizmetler için kullanılabilir mi?", a: "Evet, toplam sabit ve değişken maliyetleri ve birim veya proje başına ortalama fiyatı girerek kullanılabilir." },
+    { q: "Başabaş noktasını ne sıklıkla hesaplamalıyım?", a: "Maliyetler, fiyatlar veya satış stratejileri değiştiğinde başabaş noktasını yeniden hesaplayın, böylece kârlılığınızı koruyabilirsiniz." }
+  ]
+},
     discount: {
       title: "İndirim Hesaplayıcı",
       desc: "İndirimi ve son fiyatı hesaplayın",
@@ -1020,32 +1363,222 @@ macros: {
       formula: "Formül",
       formulaText: "Bahşiş = Hesap × Bahşiş%, Kişi Başına = Toplam / Kişi",
     },
-    inflation: {
-      title: "Enflasyon Hesaplayıcı",
-      desc: "Enflasyon etkisini hesaplayın",
-      amount: "Tutar ($)",
-      years: "Yıl",
-      rate: "Enflasyon Oranı (%)",
-      result: "Gelecek Değeri",
-      about: "Enflasyon Hakkında",
-      aboutText:
-        "Zaman içinde enflasyonun paranızın değerine etkisini görün.",
-      formula: "Formül",
-      formulaText: "Gelecek Değer = Tutar × (1 + Oran)^Yıl",
+inflation: {
+  metaTitle: "Çevrimiçi Enflasyon Hesaplayıcı – Paranın Değerini Zaman İçinde Takip Edin",
+  desc: "Enflasyon Hesaplayıcımızı kullanarak paranın değeri ve satın alma gücünün farklı yıllarda nasıl etkilendiğini ölçün.",
+  amount: "Miktar ($)",
+  years: "Yıl",
+  rate: "Enflasyon Oranı (%)",
+  result: "Gelecek Değer",
+  heading: "Enflasyon Hesaplayıcı",
+
+  tocwhy: "Enflasyonu Anlamanın Önemi",
+  tochowitworks: "Çevrimiçi Enflasyon Hesaplayıcısı Nasıl Çalışır",
+  tocwhyuse: "Enflasyon Hesaplayıcı Neden Kullanılır",
+  tocsteps1: "Adım 1: Değişkenleri Belirleyin",
+  tocsteps2: "Adım 2: Enflasyon Oranını Hesaplayın",
+  tocresults: "Sonuçları Nasıl Kullanılır",
+  tocwhyformula: "Bu Formül Neden Çalışır",
+
+  aboutTitle: "Enflasyon Hesaplayıcı Hakkında",
+  aboutDesc: "Enflasyon Hesaplayıcı, paranın zaman içinde enflasyon nedeniyle değerinin nasıl değiştiğini ölçmenize yardımcı olur. Geçmişte belirli bir miktar parayla alınabilecek ürün veya hizmetlerin bugünkü maliyetini gösterir. Bu çevrimiçi Enflasyon Hesaplayıcı, Tüketici Fiyat Endeksi (TÜFE) gibi tarihsel enflasyon verilerini kullanarak paranın enflasyona göre düzeltilmiş değerini hesaplar. Fiyat karşılaştırmaları yapmak, satın alma gücünü tahmin etmek ve uzun vadeli finansal trendleri analiz etmek için idealdir.",
+
+  whyTitle: "Enflasyonu Anlamanın Önemi",
+  whyDesc: "Enflasyon, paranın satın alma gücünü zamanla azaltır. On yıl önce 100 $ ile alabileceğiniz şey, bugün daha pahalıdır. Enflasyonu takip etmek, bireylerin ve işletmelerin daha akıllıca finansal kararlar almasına yardımcı olur.",
+  whyPoints: [
+    "Farklı yıllarda paranın gerçek değerini karşılaştırın",
+    "Enflasyonu aşacak yatırımlar planlayın",
+    "Yaşam maliyetindeki değişiklikleri anlayın",
+    "Fiyat değişimini zaman içinde ölçün"
+  ],
+
+  howTitle: "Çevrimiçi Enflasyon Hesaplayıcısı Nasıl Çalışır",
+  howDesc: "Enflasyon oranı hesaplayıcı, resmi enflasyon verilerini kullanarak paranın yıllar içindeki değer kazanımı veya kaybını tahmin eder.",
+  howNeed: [
+    "Başlangıç Miktarı ($)",
+    "Başlangıç Yılı",
+    "Bitiş Yılı"
+  ],
+  howResult: [
+    "Geçmiş paranın günümüzdeki eşdeğer değeri",
+    "Seçilen yıllar boyunca enflasyon oranı",
+    "Satın alma gücündeki yüzde değişim"
+  ],
+
+  whyUseTitle: "Enflasyon Hesaplayıcı Neden Kullanılır",
+  whyUseDesc: "Zaman içinde değer hesaplayıcı, enflasyonun finansal durumunuz üzerindeki gerçek etkisini anlamanıza yardımcı olur. Tasarruf, yatırım, maaş ve mülk değerlerini uzun vadede analiz etmek için mükemmeldir. Aynı zamanda para birimi değer kaybı hesaplayıcısı olarak da çalışır ve paranın on yıllar boyunca ne kadar zayıfladığını veya güçlendiğini gösterir. Bu yaşam maliyeti hesaplayıcısı sayesinde geleceğinizi daha iyi planlayabilir, gerçekçi finansal hedefler belirleyebilir ve servetinizi enflasyonun etkilerinden koruyabilirsiniz. Enflasyon Hesaplayıcı, paranın zaman içindeki gerçek değerini görmenizi sağlayan pratik bir karşılaştırma aracıdır.",
+
+  formulatitle: "Enflasyon Hesaplayıcı Formülü",
+  formulaintro: "Enflasyon Hesaplayıcı, iki tarih arasındaki paranın değerinin ne kadar değiştiğini ölçer. Ortalama mal ve hizmet fiyatlarındaki değişiklikleri takip eden standart bir gösterge olan Tüketici Fiyat Endeksi (TÜFE) kullanır.",
+  formula1: "Düzeltilmiş Miktar = Orijinal Miktar × (Hedef Yıldaki TÜFE ÷ Temel Yıldaki TÜFE)",
+  formula1endtext: "Bu, geçmiş bir miktarın bugünkü değerini gösterir (veya tersi).",
+  formulaImage: "/Inflation-Calculator.jpg",
+  formulaImageAlt: "Inflation Calculator",
+  
+  steps1title: "Adım 1: Değişkenleri Belirleyin",
+  steps1intro: "Formülün her parçası önemli bir ekonomik değeri temsil eder:",
+  steps1list: [
+    "Orijinal Miktar: Ayarlamak istediğiniz geçmiş veya mevcut değer.",
+    "Temel Yıldaki TÜFE: Orijinal yıl için Tüketici Fiyat Endeksi.",
+    "Hedef Yıldaki TÜFE: Karşılaştırma yılı için Tüketici Fiyat Endeksi"
+  ],
+  steps1endtext: "Zaman içindeki değer hesaplayıcı, paranın satın alma gücündeki değişimi belirlemek için bu verileri kullanır.",
+  
+  steps2title: "Adım 2: Enflasyon Oranını Hesaplayın",
+  steps2intro: "İki yıl arasındaki enflasyon oranını görmek için formül:",
+  steps2formula: "Enflasyon Oranı (%) = [(Hedef Yıldaki TÜFE – Temel Yıldaki TÜFE) ÷ Temel Yıldaki TÜFE] × 100",
+  steps2endtext: "Bu, fiyat artış yüzdesini veya o dönemdeki para birimi değer kaybını gösterir.",
+
+  exampletitle: "Enflasyon Hesaplama Örneği",
+  exampleintro: "Basit bir örnekle anlayalım:",
+  example1list: [
+    "Orijinal Miktar = $1,000",
+    "Temel Yıldaki TÜFE (2010) = 218.1",
+    "Hedef Yıldaki TÜFE (2024) = 310.0"
+  ],
+  examplestep1: "Adım 1: Formülü uygulayın:",
+  examplelist: [
+    "Orijinal Miktar = $1,000 Düzeltilmiş Miktar = 1,000 × (310.0 ÷ 218.1)",
+    "Düzeltilmiş Miktar = 1,000 × 1.4219",
+    "Düzeltilmiş Miktar = $1,421.90"
+  ],
+  example2end: "$1,000 2010 yılında, 2024 yılında $1,421.90 satın alma gücüne eşittir. Bu, fiyatların yaklaşık %42 arttığını gösterir, yani enflasyon paranın gerçek değerini azaltır.",
+
+  exampletitle2: "Örnek: Enflasyon Oranını Bulma",
+  example2intro: "İkinci formülü kullanarak:",
+  example2list: [
+    "Enflasyon Oranı = [(310.0 – 218.1) ÷ 218.1] × 100",
+    "Enflasyon Oranı = (91.9 ÷ 218.1) × 100",
+    "Enflasyon Oranı = 42.15%"
+  ],
+  example2endtext: "Bu, 2010 ile 2024 arasında genel fiyatların yaklaşık %42 arttığını gösterir.",
+
+  howtotitle: "Sonuçları Nasıl Kullanılır",
+  howtointro: "Enflasyon oranı hesaplayıcısını kullanabilirsiniz:",
+  howtolist: [
+    "Farklı yıllarda paranın gerçek değerini karşılaştırın",
+    "Mal ve hizmetler için zaman içinde fiyat değişimini ölçün",
+    "Satın alma gücünü korumak için yatırımları veya tasarrufları ayarlayın",
+    "Enflasyon trendlerini kullanarak gelecekteki değerleri tahmin edin"
+  ],
+  howtoendtext: "Bileşik faiz sonuçlarınızı planlamak için kullanın",
+  howtoInterLink: "ROI Calculator",
+
+  whyformulaworkstitle: "Bu Formül Neden Çalışır",
+  whyformulaworkscontent: "Enflasyon, mal ve hizmetlerin zaman içindeki maliyet değişimini yansıtır. Tüketici Fiyat Endeksi (TÜFE), bu değişimi takip etmek için en güvenilir ölçüttür. TÜFE değerlerini karşılaştırarak, bu paranın gerçek değerinin ne kadar eridiğini veya arttığını gösterir. Çevrimiçi Enflasyon Hesaplayıcı hızlı, doğru ve güncel sonuçlar sunar, finansal trendleri, işletme fiyatlamalarını veya uzun vadeli tasarrufları takip eden herkes için gereklidir. Vastcalculators.com’daki hesaplayıcı, resmi TÜFE verilerini kullanarak hassas ve gerçek dünya karşılaştırmaları sunar, kullanıcıların enflasyonun finansal etkilerini anlamasına yardımcı olur.",
+
+  faqTitle: "Sıkça Sorulan Sorular",
+  faq: [
+    {
+      q: "Enflasyon Hesaplayıcı ne yapar?",
+      a: "Enflasyon Hesaplayıcı, paranın zaman içindeki değer değişimini gösterir ve geçmiş veya gelecekteki miktarların gerçek değerini anlamanıza yardımcı olur."
     },
-    currency: {
-      title: "Döviz Çevirici",
-      desc: "Farklı para birimleri arasında dönüştürme yapın",
-      amount: "Tutar",
-      fromCurrency: "Kaynak Para Birimi",
-      toCurrency: "Hedef Para Birimi",
-      result: "Çevrilmiş Tutar",
-      about: "Döviz Hakkında",
-      aboutText:
-        "Güncel döviz kurları üzerinden para birimleri arasında dönüştürme yapın.",
-      formula: "Formül",
-      formulaText: "Güncel döviz kurları kullanılır",
+    {
+      q: "Enflasyon nasıl hesaplanır?",
+      a: "Enflasyon, iki yılın fiyat endeksi değerleri karşılaştırılarak hesaplanır. Endeks, fiyatların zaman içinde ne kadar arttığını veya azaldığını gösterir."
     },
+    {
+      q: "Enflasyon oranı nedir?",
+      a: "Enflasyon oranı, belirli bir dönemde mal ve hizmetlerin ortalama fiyatındaki yıllık artış yüzdesidir."
+    },
+    {
+      q: "Paranın zaman içindeki gerçek değerini nasıl bulabilirim?",
+      a: "Orijinal miktarı hedef yılın fiyat endeksi ile çarpın ve temel yılın endeksine bölün. Bu, bir yılın dolar değerinin diğer yıldaki karşılığını gösterir."
+    },
+    {
+      q: "Enflasyon tasarruf ve yatırımlar için neden önemlidir?",
+      a: "Enflasyon, paranın gelecekteki değerini düşürür; yani tasarruflar, enflasyon oranından yüksek büyümezse satın alma gücünü kaybeder."
+    },
+    {
+      q: "Enflasyondan sonra getirileri nasıl karşılaştırabilirim?",
+      a: "Enflasyona göre düzeltilmiş değerleri kullanarak gerçek getirinizi bulun. Bunu ROI Calculator ile kolayca karşılaştırabilirsiniz."
+    }
+  ]
+},
+currency: {
+  metaTitle: "Döviz Dönüştürücü Hesaplayıcı | Gerçek Zamanlı Döviz Kuru Dönüşümü",
+  desc: "Online döviz dönüştürücü hesaplayıcımızla saniyeler içinde herhangi bir para birimini dönüştürün. Doğru, gerçek zamanlı döviz kurları alın ve dünya çapındaki para birimlerini kolayca karşılaştırın.",
+  amount: "Miktar",
+  fromCurrency: "Kaynak Para Birimi",
+  toCurrency: "Hedef Para Birimi",
+  result: "Dönüştürülmüş Miktar",
+  heading: "Döviz Dönüştürücü Hesaplayıcı",
+
+  tocabout: "Online Döviz Dönüştürücü Hesaplayıcımız Hakkında",
+  tocconversion: "Daha Akıllı Küresel Kararlar için Gerçek Zamanlı Dönüşüm",
+  tocformula: "Döviz Dönüşüm Formülü",
+  tocexample: "Örnek Hesaplama",
+  tocaccurateconversion: "Doğru Dönüşüm Neden Önemlidir",
+  tocresults: "Sonuçları Nasıl Kullanılır",
+  tocwhyformula: "Bu Formül Neden Çalışır",
+
+  aboutTitle: "Online Döviz Dönüştürücü Hesaplayıcımız Hakkında",
+  aboutDesc: "Vast Calculator tarafından sunulan Döviz Dönüştürücü Hesaplayıcı, paranızın başka bir para birimindeki değerini gerçek zamanlı olarak görmeyi kolaylaştırır. Seyahat planlarken, uluslararası fiyatları karşılaştırırken veya global işlemleri yönetirken bu araç hızlı ve doğru dönüşümler sağlar. USD, EUR, GBP, JPY gibi başlıca dünya para birimleri için canlı dönüşümler gösterir ve en güncel kurları yansıtır.",
+  aboutExtratext: "Para biriminizin enflasyondan nasıl etkilendiğini görmek isterseniz,",
+  aboutInterLink: "Enflasyon Hesaplayıcısını kullanın.",
+  conversionTitle: "Daha Akıllı Küresel Kararlar için Gerçek Zamanlı Dönüşüm",
+  conversioncontent: "Döviz Dönüştürücü Hesaplayıcı, uluslararası para yönetimini basitleştirir. Miktarı girip para birimlerini seçerek, değerleri anında farklı küresel para birimleri arasında dönüştürebilirsiniz. Seyahat edenler, işletme sahipleri veya yurtdışına yatırım yapanlar için zaman kazandırır ve doğru hesaplamalar sağlar.",
+  keyhighlight: "Öne Çıkan Özellikler:",
+  keyhighlightList: [
+    "Güvenilir finansal kaynaklardan alınan canlı döviz kurlarını kullanır",
+    "Dünya genelinde 160’tan fazla para birimi ile çalışır",
+    "Ücretsiz, hızlı ve mobil uyumlu",
+    "Her güncellemede anında sonuç sağlar"
+  ],
+  keyhighlightsendtext: "Uluslararası ödemeler veya seyahat kararları almadan önce netlik sağlar, paranızın değerini sınırlar arası korur.",
+  formulatitle: "Döviz Dönüşüm Formülü",
+  formulasubtitle: "Döviz Dönüştürücü Nasıl Çalışır",
+  formulasubintro: "Döviz Dönüştürücü, temel para birimini mevcut döviz kuru ile çarparak hedef para birimi değerini bulur.",
+  formula1: "Formül: Dönüştürülmüş Miktar = Temel Miktar × Döviz Kuru",
+  formula1list: [
+    "Temel Miktar = Sahip olduğunuz orijinal para birimi miktarı",
+    "Döviz Kuru = İki para birimi arasındaki mevcut oran",
+    "Dönüştürülmüş Miktar = Dönüşüm sonrası değer"
+  ],
+  formulaImage: "/Currency-Converter-Calculator.jpg",
+  formulaImageAlt: "Currency Converter Calculator",
+  exampletitle: "Örnek Hesaplama",
+  exampleintro: "100 USD’niz varsa ve USD’den EUR’ye döviz kuru 0.92 ise:",
+  exampleformula: "Dönüştürülmüş Miktar = 100 × 0.92 = 92 EUR",
+  exampleendtext: "Bu, $100’ün bu özel döviz kuru ile €92 ettiği anlamına gelir. Döviz kurları günlük olarak değiştiği için değerleri düzenli olarak kontrol etmek akıllıca olur.",
+  accuratetitle: "Doğru Dönüşüm Neden Önemlidir",
+  accuratesubtitle: "Harcamadan Önce Bilinçli Olun",
+  accuratesubcontent: "Para birimi kurları piyasa trendleri, enflasyon ve uluslararası ticaret nedeniyle sürekli değişir. Gerçek zamanlı dönüşüm size şu durumlarda akıllı kararlar almanızı sağlar:",
+  accuratesublist: [
+    "Uluslararası seyahat veya alışveriş yaparken",
+    "Yurtdışına para gönderip alırken",
+    "Farklı ülkelerdeki ürün fiyatlarını karşılaştırırken",
+    "Para birimleri arasında yatırım yönetirken"
+  ],
+  accuratesubend: "İşlem yapmadan önce doğru değeri bilmek, eski veya yanlış kurlardan kaynaklanan kayıpları önler.",
+  faqTitle: "Sıkça Sorulan Sorular",
+  faq: [
+    {
+      q: "Döviz Dönüştürücü Hesaplayıcı ne yapar?",
+      a: "Herhangi bir miktarı bir para biriminden diğerine canlı döviz kurları kullanarak dönüştürür ve doğru sonuçları anında verir."
+    },
+    {
+      q: "Döviz kurları otomatik olarak güncelleniyor mu?",
+      a: "Evet. Kurlar, güvenilir küresel finans kaynaklarından alınan en son verilerle düzenli olarak yenilenir."
+    },
+    {
+      q: "Her para birimi için kullanabilir miyim?",
+      a: "Evet. Hesaplayıcı, başlıca ve küçük olmak üzere 160’tan fazla para birimini destekler."
+    },
+    {
+      q: "Bu araç ücretsiz mi?",
+      a: "Evet. VastCalculator’daki Döviz Dönüştürücü Hesaplayıcı tamamen ücretsizdir ve anında çalışır."
+    },
+    {
+      q: "Döviz kurları neden her gün farklı?",
+      a: "Kurlar, arz ve talep, enflasyon, faiz oranları ve uluslararası ekonomik politikalar nedeniyle değişir."
+    },
+    {
+      q: "Bunun enflasyon hesaplayıcıdan farkı nedir?",
+      a: "Döviz Dönüştürücü, iki para birimi arasındaki güncel kuru gösterirken, Enflasyon Hesaplayıcı paranın zaman içindeki değer değişimini gösterir."
+    }
+  ]
+},
   },
 footer: {
   subtitle: "Vast Hesap Makinesi – Ücretsiz Çevrimiçi Hesaplayıcılarla Matematiği Basitleştirin",

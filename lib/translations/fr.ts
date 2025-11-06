@@ -902,18 +902,76 @@ macros: {
     },
   },
   finance: {
-    loan: {
-      title: "Calculatrice de Prêt",
-      desc: "Calculez les paiements de prêt et les intérêts",
-      principal: "Montant du Prêt ($)",
-      rate: "Taux d'Intérêt Annuel (%)",
-      years: "Durée du Prêt (ans)",
-      result: "Paiement Mensuel",
-      about: "À propos des Prêts",
-      aboutText: "Calculez votre paiement mensuel de prêt en fonction du principal, du taux et de la durée.",
-      formula: "Formule",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+ loan: {
+  metaTitle: "Calculatrice de Prêt en Ligne – Estimez vos Paiements Mensuels",
+  desc: "Utilisez notre calculatrice de prêt pour estimer vos paiements mensuels, les coûts d'intérêts et le montant total à rembourser. Planifiez intelligemment vos prêts personnels, auto ou immobiliers",
+  principal: "Montant du Prêt ($)",
+  rate: "Taux d'Intérêt Annuel (%)",
+  years: "Durée du Prêt (années)",
+  result: "Paiement Mensuel",
+  heading: "Calculatrice de Prêt",
+
+  tocTitle: "Table des Matières",
+  tocabout: "À propos de la Calculatrice de Prêt",
+  tocformula: "Formule de la Calculatrice de Prêt",
+  tocloan: "Formule de Paiement du Prêt",
+  tocexample: "Exemple de Calcul",
+  tocwhy: "Pourquoi c'est important",
+
+  aboutsection: "À propos de la Calculatrice de Prêt",
+  aboutcontent: "La calculatrice de prêt vous aide à estimer vos paiements mensuels, le total des intérêts et le coût global du prêt avant d'emprunter. Que vous planifiez un prêt personnel, automobile ou immobilier, cet outil montre comment différentes durées, taux d'intérêt et périodes de remboursement affectent votre budget. Il simplifie la planification financière en vous permettant de comparer les options de remboursement et de choisir le plan le plus abordable. Pour des estimations détaillées de prêts immobiliers, vous pouvez calculer vos conditions de remboursement et prendre des décisions d'emprunt plus intelligentes.",
+
+  formulatitle: "Formule de la Calculatrice de Prêt",
+  formulacontent: "La calculatrice de prêt utilise une formule standard d'amortissement pour calculer votre paiement mensuel (EMI), les intérêts totaux et le montant total du prêt dans le temps. Elle prend en compte trois facteurs clés : le montant du prêt, le taux d'intérêt et la durée de remboursement.",
+  formulaImage: "/loan-calculator.jpg",
+  formulaImageAlt: "Loan Calculator",
+  formulaSubtitle: "Formule de Paiement du Prêt",
+  formula1: "EMI = [P × r × (1 + r)ⁿ] ÷ [(1 + r)ⁿ – 1]",
+  formulaList: [
+    "EMI = Paiement mensuel du prêt",
+    "P = Montant principal du prêt",
+    "r = Taux d'intérêt mensuel (taux annuel ÷ 12 ÷ 100)",
+    "n = Nombre total de paiements mensuels"
+  ],
+  formulaSubtitle2: "Exemple de Calcul",
+  formulaSubcontent2: "Si vous prenez un prêt de 10 000 $ avec un taux d'intérêt annuel de 8 % sur 3 ans (36 mois), alors votre taux d'intérêt mensuel est :",
+  formula2: "r = 0,08 ÷ 12 = 0,0067",
+  formula2endcontent: "Maintenant, insérez ces valeurs dans la formule :",
+  formula3: "EMI = [10,000 × 0,0067 × (1 + 0,0067)³⁶] ÷ [(1 + 0,0067)³⁶ – 1]",
+  formula3endcontent: "Votre paiement mensuel sera d'environ 313 $, et le remboursement total sera d'environ 11 268 $. Cela signifie que vous paierez environ 1 268 $ d'intérêts sur 3 ans.",
+  formulasubtitle3: "Pourquoi c'est important",
+  formulasubcontent3: "Comprendre votre paiement mensuel vous aide à gérer votre budget efficacement et à éviter de trop emprunter. Vous pouvez expérimenter différentes combinaisons de montants, taux d'intérêt et durées de remboursement pour trouver celle qui correspond le mieux à vos objectifs financiers.",
+  formulasub3extratext: "Si vous calculez des paiements pour un prêt immobilier ou foncier, utilisez notre outil pour obtenir des résultats précis et spécifiques aux hypothèques avec la",
+  formulasub3interlink: "Calculatrice Hypothécaire",
+
+  faqTitle: "Questions Fréquemment Posées",
+  faq: [
+    {
+      q: "Que fait la Calculatrice de Prêt ?",
+      a: "La calculatrice de prêt vous aide à estimer les paiements mensuels, les intérêts totaux et le remboursement global pour les prêts personnels, auto ou immobiliers. Elle fournit une vision claire du coût de votre prêt dans le temps."
     },
+    {
+      q: "Comment fonctionne la Calculatrice de Prêt ?",
+      a: "Elle utilise la formule d'amortissement pour calculer votre paiement mensuel. Entrez le montant du prêt, le taux d'intérêt et la durée, et elle affiche instantanément votre calendrier de paiements et le coût total."
+    },
+    {
+      q: "Pourquoi est-il important d'utiliser une Calculatrice de Prêt ?",
+      a: "Une calculatrice de prêt vous aide à prendre de meilleures décisions d'emprunt. Elle vous permet de comparer différentes options, planifier votre budget et comprendre comment les taux ou durées affectent vos paiements."
+    },
+    {
+      q: "Quels facteurs influencent le montant de mon remboursement ?",
+      a: "Le montant de votre remboursement est influencé par trois facteurs principaux : le montant principal, le taux d'intérêt et la durée du prêt. Ensemble, ils déterminent combien vous paierez chaque mois et le montant total sur la durée du prêt."
+    },
+    {
+      q: "Puis-je utiliser cette calculatrice pour différents types de prêts ?",
+      a: "Oui. Vous pouvez calculer les paiements pour des prêts personnels, éducatifs, automobiles ou immobiliers. La logique de calcul reste la même, mais les taux et les durées peuvent varier."
+    },
+    {
+      q: "La Calculatrice de Prêt montre-t-elle le montant total des intérêts ?",
+      a: "Oui. Elle fournit une répartition détaillée de vos intérêts totaux sur la durée du prêt. Vous pouvez voir combien de votre paiement va aux intérêts par rapport au principal, facilitant les remboursements anticipés ou les comparaisons de prêteurs."
+    }
+  ]
+},
     compound: {
       title: "Calculatrice d'Intérêt Composé",
       desc: "Calculez la croissance des intérêts composés",
@@ -940,42 +998,331 @@ macros: {
       formula: "Formule",
       formulaText: "Calcule la valeur future avec dépôts réguliers",
     },
-    mortgage: {
-      title: "Calculatrice d'Hypothèque",
-      desc: "Calculez les paiements d'hypothèque",
-      homePrice: "Prix de la Maison ($)",
-      downPayment: "Acompte ($)",
-      rate: "Taux d'Intérêt (%)",
-      years: "Durée du Prêt (ans)",
-      result: "Paiement Mensuel",
-      about: "À propos des Hypothèques",
-      aboutText: "Calculez votre paiement mensuel d'hypothèque et les intérêts totaux.",
-      formula: "Formule",
-      formulaText: "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+mortgage: {
+  metaTitle: "Calculateur de Prêt Immobilier : Estimez vos Paiements Mensuels Instantanément",
+  desc: "Utilisez notre Calculateur de Prêt Immobilier pour estimer vos paiements mensuels en fonction du taux d'intérêt et de la durée. Planifiez facilement votre budget avant d'acheter.",
+  homePrice: "Prix de la maison ($)",
+  downPayment: "Acompte ($)",
+  rate: "Taux d'intérêt (%)",
+  years: "Durée du prêt (années)",
+  result: "Paiement Mensuel",
+  heading: "Calculateur de Prêt Immobilier",
+  tocTitle: "Table des Matières",
+  tocwhy: "Pourquoi un Calculateur de Prêt Immobilier est Important",
+  tochowmortage: "Comment Fonctionne le Calculateur de Prêt Immobilier en Ligne",
+  tocwhyuse: "Pourquoi Utiliser un Calculateur de Prêt Immobilier",
+  tocmortageformula: "Formule du Calculateur de Prêt Immobilier",
+  tocformulastep1: "Étape 1 : Identifier les Informations Clés",
+  tocformulastep2: "Étape 2 : Exemple de Calcul de Prêt Immobilier",
+  tocformulastep3: "Étape 3 : Répartition du Principal et des Intérêts",
+  tocformulahowto: "Comment Utiliser les Résultats",
+  tocformulawhy: "Pourquoi Cette Formule Fonctionne",
+  aboutH2: "À propos du Calculateur de Prêt Immobilier",
+  aboutContent: "Le Calculateur de Prêt Immobilier vous aide à estimer facilement vos paiements mensuels. Il calcule le montant du paiement mensuel, y compris le principal et les intérêts, en fonction du montant du prêt, du taux d'intérêt et de la durée du prêt. Ce calculateur en ligne vous offre une vue claire de votre capacité à rembourser avant de demander un prêt. Il montre également combien de temps il faudra pour rembourser votre prêt et le total des intérêts payés au fil du temps.",
+  whyTitle: "Pourquoi un Calculateur de Prêt Immobilier est Important",
+  whyIntro: "Comprendre vos paiements de prêt vous aide à mieux planifier et à éviter les surprises financières. Avec cet outil, vous pouvez :",
+  whyList: [
+    "Estimer vos mensualités avec précision",
+    "Comparer les offres et taux de prêt",
+    "Planifier votre budget d'achat immobilier",
+    "Visualiser votre tableau d'amortissement"
+  ],
+  whyEnd: "Le calculateur de prêt immobilier facilite la compréhension de l’impact des variations du montant du prêt ou du taux d’intérêt sur votre paiement.",
+  howWorksTitle: "Comment Fonctionne le Calculateur de Prêt Immobilier en Ligne",
+  howWorksContent: "Le calculateur utilise le montant du prêt, le taux d'intérêt et la durée du prêt pour calculer des paiements mensuels fixes. Il applique la formule standard de remboursement des prêts, offrant un détail de la part allant aux intérêts et celle réduisant le principal.",
+  howWorksInputTitle: "Vous devrez entrer :",
+  howWorksInputList: [
+    "Montant du prêt ($)",
+    "Taux d'intérêt (%)",
+    "Durée du prêt (années)"
+  ],
+  howWorksResulttext: "Il affiche instantanément :",
+  howWorksResultList: [
+    "Paiement mensuel",
+    "Total des intérêts payés",
+    "Montant total des paiements",
+    "Tableau d'amortissement (optionnel)"
+  ],
+  howWorksEnd: "Cela vous aide à suivre votre calendrier de remboursement et à gérer vos finances à long terme efficacement.",
+  whyUseTitle: "Pourquoi Utiliser un Calculateur de Prêt Immobilier",
+  whyUseContent: "Cet outil de financement immobilier vous donne le contrôle sur la planification de votre prêt. Vous pouvez tester différentes durées et taux pour trouver l’option la plus abordable. En ajustant les données, vous voyez comment de petits changements affectent le coût total, faisant du calculateur un outil clé pour prendre des décisions financières éclairées. Il vous aide à emprunter en toute confiance, en connaissant exactement votre plan de remboursement dès le premier jour.",
+  formulaMainTitle: "Formule du Calculateur de Prêt Immobilier",
+  formulaMainIntro: "Le calculateur utilise une formule d’intérêts composés simple pour estimer votre mensualité. Elle calcule combien vous devez payer chaque mois pour rembourser intégralement le principal et les intérêts dans le délai choisi.",
+  formulaSubIntro: "La formule principale est :",
+  formulaMain: "M = P × [ r(1 + r)ⁿ ] ÷ [ (1 + r)ⁿ – 1 ]",
+  formulaDefinitionList: [
+    "M = Paiement mensuel du prêt immobilier",
+    "P = Principal du prêt (montant emprunté)",
+    "r = Taux d'intérêt mensuel (taux annuel ÷ 12)",
+    "n = Nombre total de paiements (durée du prêt en années × 12)"
+  ],
+  formulaEndText: "Cette formule permet de déterminer la répartition du principal et des intérêts dans le temps.",
+  formulaImage: "/Mortgage-Calculator.jpg",
+  formulaImageAlt: "Mortgage Calculator",
+  step1Title: "Étape 1 : Identifier les Informations Clés",
+  step1List: [
+    "Montant du prêt (P) — montant total emprunté",
+    "Taux d'intérêt (r) — taux annuel divisé par 12",
+    "Durée du prêt (n) — années multipliées par 12 mois"
+  ],
+  step1End: "Le calculateur calcule ensuite votre remboursement mensuel fixe avec ces données.",
+  step2Title: "Étape 2 : Exemple de Calcul de Prêt Immobilier",
+  step2ExampleList: [
+    "Montant du prêt = 250 000 $",
+    "Taux d'intérêt annuel = 5 %",
+    "Durée du prêt = 30 ans"
+  ],
+  step2CalcStep1: "Convertir le taux annuel en taux mensuel : r = 5 ÷ 100 ÷ 12 = 0,004167 n = 30 × 12 = 360 mois",
+  step2CalcStep2: "Appliquer la formule : M = 250 000 × [0,004167 × (1 + 0,004167)³⁶⁰] ÷ [(1 + 0,004167)³⁶⁰ – 1] M = 1 342,05 $ par mois",
+  step2ResultMeaning: "Cela signifie que vous paierez 1 342,05 $ par mois pendant 30 ans pour rembourser intégralement le prêt.",
+  step3Title: "Étape 3 : Répartition du Principal et des Intérêts",
+  step3Content: "Chaque paiement inclut à la fois les intérêts et le principal. Au début, la majorité va aux intérêts, et avec le temps, une plus grande part va au principal. Ce calendrier s'appelle tableau d'amortissement. Il vous montre comment le solde de votre prêt diminue mois après mois jusqu'au remboursement complet.",
+  totalExampleTitle: "Exemple : Coût Total du Prêt",
+  totalExampleList: [
+    "Paiement Mensuel : 1 342,05 $",
+    "Total des paiements (360 mois) : 1 342,05 × 360 = 483 138 $",
+    "Total des intérêts payés : 483 138 – 250 000 = 233 138 $"
+  ],
+  totalExampleEnd: "Ainsi, sur 30 ans, vous paierez environ 233 138 $ d'intérêts sur un prêt de 250 000 $. Cela aide à comprendre le coût réel et l'impact des taux d'intérêt sur votre capacité à rembourser.",
+  howToUseTitle: "Comment Utiliser les Résultats",
+  howToUseList: [
+    "Comparer les offres des prêteurs",
+    "Décider si une durée plus courte ou plus longue est abordable",
+    "Adapter votre budget à vos objectifs financiers immobiliers",
+    "Planifier un remboursement anticipé ou un refinancement si possible"
+  ],
+  howToUseEnd: "Estimez vos mensualités plus précisément avec notre",
+  interlink: "Loan Calculator",
+  whyWorksTitle: "Pourquoi Cette Formule Fonctionne",
+  whyWorksContent: "La formule de paiement repose sur les intérêts composés, garantissant des mensualités constantes sur toute la durée du prêt. Elle est utilisée par les banques et conseillers financiers pour calculer des plans de remboursement précis. Le calculateur en ligne simplifie cette mathématique complexe et vous permet de tester différents taux et durées en quelques secondes. C’est la manière la plus simple d’évaluer votre capacité de remboursement et vos engagements financiers à long terme. L'outil sur Vastcalculators.com utilise cette formule exacte pour fournir des estimations claires, fiables et instantanées, pour des décisions d'achat immobilier éclairées.",
+  faqTitle: "Questions Fréquemment Posées",
+  faq: [
+    { q: "Que fait un Calculateur de Prêt Immobilier ?", a: "Un calculateur de prêt immobilier estime vos paiements mensuels en fonction du montant du prêt, du taux d'intérêt et de la durée." },
+    { q: "Comment sont calculés les paiements hypothécaires ?", a: "Votre paiement mensuel est calculé à partir du principal, du taux d'intérêt et de la durée. La formule prend en compte la capitalisation mensuelle des intérêts sur la période de remboursement." },
+    { q: "Quelles informations sont nécessaires pour utiliser le calculateur ?", a: "Vous aurez besoin du montant du prêt, du taux annuel et de la durée en années. Le calculateur estimera automatiquement votre paiement mensuel." },
+    { q: "Le Calculateur inclut-il les taxes et assurances ?", a: "Non. Il estime uniquement le paiement principal et intérêts. Les taxes, assurances et autres coûts doivent être ajoutés séparément." },
+    { q: "Puis-je utiliser le calculateur pour un refinancement ?", a: "Oui. Entrez votre nouveau montant, durée et taux pour estimer de nouveaux paiements et les comparer à votre prêt actuel." },
+    { q: "Comment réduire mon paiement hypothécaire mensuel ?", a: "Vous pouvez réduire les paiements en allongeant la durée, en diminuant le taux d'intérêt ou en augmentant l'acompte pour emprunter moins." }
+  ]
+},
+roi: {
+  metaTitle: "Calculateur de ROI en ligne | Calculez le retour sur investissement en ligne",
+  desc: "Découvrez rapidement et avec précision votre retour sur investissement (ROI). Utilisez notre calculateur de ROI pour suivre le profit, comparer des projets et améliorer la performance financière.",
+  investment: "Investissement ($)",
+  gain: "Gain ($)",
+  result: "ROI %",
+  heading: "Calculateur de ROI",
+  tocabout: "À propos du calculateur de ROI",
+  tochow: "Comment fonctionne le calculateur de ROI en ligne",
+  tocformula: "Formule du calculateur de ROI",
+  tocwhy: "Pourquoi le calcul du ROI est important",
+  tocexample: "Exemples de calculs",
+  tocresult: "Comment utiliser les résultats du ROI",
+
+  aboutsection: "À propos du calculateur de ROI",
+  aboutcontent: "Le calculateur de ROI vous aide à mesurer la rentabilité d'un investissement par rapport à son coût. ROI signifie Return on Investment, montrant l'efficacité de l'utilisation de l'argent pour générer du profit. Ce calculateur de ROI en ligne détermine instantanément votre pourcentage de retour, vous permettant de voir si un investissement a bien performé ou non. Idéal pour les entreprises, investisseurs et entrepreneurs évaluant le coût par rapport au retour avec précision.",
+
+  whytitle: "Pourquoi le calcul du ROI est important",
+  whycontent: "Le ROI fournit une vue claire de la performance d'un investissement. Que ce soit pour analyser une campagne marketing, un lancement de produit ou une expansion commerciale, le ROI montre le pourcentage de profit ou de perte par rapport au coût total.",
+  whylist: [
+    "Évaluer rapidement la performance financière",
+    "Comparer plusieurs investissements",
+    "Identifier les projets générant des rendements plus élevés",
+    "Soutenir la prise de décision basée sur les données"
+  ],
+  whyextratext: "Trouvez votre seuil de profit en utilisant le",
+  whyinterlink: "Calculateur du point mort",
+
+  howworkstitle: "Comment fonctionne le calculateur de ROI en ligne",
+  howworksIntro: "Le calculateur de ROI utilise une formule de pourcentage simple. Vous avez besoin de seulement deux chiffres :",
+  howworkslist: [
+    "Gain total de l'investissement ($)",
+    "Coût total de l'investissement ($)"
+  ],
+  howworksresultlist: [
+    "Pourcentage de ROI",
+    "Montant total du profit ou de la perte"
+  ],
+
+  whyusetitle: "Pourquoi utiliser un calculateur de ROI",
+  whyusecontent: "Le calculateur de ROI simplifie l'analyse financière en résultats clairs. Il est parfait pour les propriétaires d'entreprise, les marketeurs et les investisseurs qui souhaitent suivre les résultats sans calcul manuel. Cet outil met en évidence d'où proviennent les profits et où la performance peut s'améliorer, garantissant que chaque dollar dépensé contribue efficacement à la croissance à long terme.",
+
+  formulatitle: "Formule du calculateur de ROI",
+  formulamain: "ROI (%) = [(Profit net) ÷ (Coût de l'investissement)] × 100",
+  formula2: "ROI (%) = [(Valeur finale – Coût initial) ÷ Coût initial] × 100",
+
+  stepTitle: "Étape 1 : Identifier les valeurs clés",
+  stepList: [
+    "Coût initial (Investissement) : le montant total dépensé",
+    "Valeur finale (Retour) : le montant total gagné grâce à cet investissement"
+  ],
+  stepEndText: "Soustrayez le coût initial de la valeur finale pour trouver le profit net. Divisez ensuite par le coût initial et multipliez par 100 pour obtenir le pourcentage de ROI. Cette méthode donne une vision claire du coût par rapport au retour, ce qui en fait l'une des formules de marge bénéficiaire les plus utilisées en finance.",
+
+  formulaImage: "/ROI-Calculator.jpg",
+  formulaImageAlt: "ROI Calculator",
+
+  exampleTitle: "Exemple de calcul du ROI",
+  exampleValues: [
+    "Coût initial = $5,000",
+    "Valeur finale = $6,200"
+  ],
+  exampleStep1: "Profit net = 6,200 – 5,000 = $1,200",
+  exampleStep2: "ROI (%) = (1,200 ÷ 5,000) × 100 = 24%",
+  exampleEnd: "Ainsi, votre retour sur investissement est de 24 %. Cela signifie que le projet a généré un profit de 24 % par rapport à l'argent investi.",
+
+  example2Title: "Exemple : Comparaison de deux investissements",
+  exampleA: [
+    "Coût = $10,000",
+    "Retour = $12,000",
+    "ROI = (2,000 ÷ 10,000) × 100 = 20%"
+  ],
+  exampleB: [
+    "Coût = $15,000",
+    "Retour = $18,750",
+    "ROI = (3,750 ÷ 15,000) × 100 = 25%"
+  ],
+  example2End: "Même si l'investissement B nécessitait plus d'argent, il a produit un taux de retour plus élevé.",
+
+  resultTitle: "Comment utiliser les résultats du ROI",
+  resultList: [
+    "Mesurer la performance des investissements sur différents projets",
+    "Évaluer les campagnes ou lancements commerciaux",
+    "Identifier les opportunités à haut rendement",
+    "Analyser les tendances de rentabilité au fil du temps"
+  ],
+
+  whysformulaTitle: "Pourquoi cette formule fonctionne",
+  whysformulaContent: "La formule du ROI offre une manière claire et universelle de suivre l'efficacité financière. Elle s'applique à tous les secteurs, de l'exploitation commerciale au trading et à l'analyse marketing. Simple, rapide et précise, elle montre combien de profit vous avez gagné par rapport à votre investissement. Le calculateur de ROI en ligne aide les investisseurs et chefs d'entreprise à suivre le succès financier sans tableurs ou calculs complexes. C'est l'un des outils les plus pratiques pour quiconque gère coûts et retours. Le calculateur sur Vastcalculators.com fournit des résultats précis de ROI instantanément, en faisant un outil de confiance pour les décideurs et professionnels.",
+
+  faqTitle: "Questions fréquentes",
+  faq: [
+    {
+      q: "Que fait le calculateur de ROI ?",
+      a: "Le calculateur de ROI mesure le retour sur un investissement en comparant le profit au montant initial dépensé, donnant des résultats en pourcentage."
     },
-    roi: {
-      title: "Calculatrice de ROI",
-      desc: "Calculez le retour sur investissement",
-      investment: "Investissement ($)",
-      gain: "Gain ($)",
-      result: "ROI %",
-      about: "À propos du ROI",
-      aboutText: "Le ROI mesure la rentabilité d'un investissement.",
-      formula: "Formule",
-      formulaText: "ROI = (Gain / Investissement) × 100",
+    {
+      q: "Comment fonctionne la formule du ROI ?",
+      a: "Elle divise votre profit net par le coût de l'investissement et le multiplie par 100 pour trouver le pourcentage de ROI."
     },
-    breakeven: {
-      title: "Calculatrice de Seuil de Rentabilité",
-      desc: "Calculez le seuil de rentabilité",
-      fixedCosts: "Coûts Fixes ($)",
-      variableCost: "Coût Variable par Unité ($)",
-      price: "Prix par Unité ($)",
-      result: "Unités de Seuil",
-      about: "À propos du Seuil de Rentabilité",
-      aboutText: "Le seuil de rentabilité est quand les revenus égalent les coûts totaux.",
-      formula: "Formule",
-      formulaText: "Seuil = Coûts Fixes / (Prix - Coût Variable)",
+    {
+      q: "Quel est un bon ROI ?",
+      a: "Cela dépend du secteur. Généralement, un ROI de 10 à 30 % est considéré comme solide pour la plupart des investissements."
     },
+    {
+      q: "Le ROI peut-il être négatif ?",
+      a: "Oui. Un ROI négatif signifie que votre investissement a perdu de l'argent par rapport à ce que vous avez dépensé."
+    },
+    {
+      q: "À quelle fréquence devrais-je calculer le ROI ?",
+      a: "Vous devriez mesurer le ROI après chaque investissement ou projet majeur pour suivre la performance et l'amélioration continues."
+    },
+    {
+      q: "Quelle est la différence entre ROI et point mort ?",
+      a: "Le ROI montre le profit ou la perte, tandis que le calculateur du point mort vous aide à trouver le moment où le coût total est égal au revenu total, indiquant le début du profit."
+    }
+  ]
+},
+breakeven: {
+  metaTitle: "Calculateur de Seuil de Rentabilité – Trouvez votre point de profit",
+  desc: "Utilisez notre Calculateur de Seuil de Rentabilité pour voir quand votre entreprise couvre ses coûts et commence à générer du profit. Analyse simple, rapide et précise.",
+  fixedCosts: "Coûts Fixes ($)",
+  variableCost: "Coût Variable par Unité ($)",
+  price: "Prix par Unité ($)",
+  result: "Unités pour Rentabilité",
+  heading: "Calculateur de Seuil de Rentabilité",
+
+  tocabout: "À propos du Calculateur de Seuil de Rentabilité",
+  tocwhy: "Pourquoi une Analyse du Seuil de Rentabilité est Importante",
+  tochowitworks: "Comment Fonctionne le Calculateur de Seuil de Rentabilité en Ligne",
+  tocwhyuse: "Pourquoi Utiliser un Calculateur de Seuil de Rentabilité",
+
+  aboutTitle: "À propos du Calculateur de Seuil de Rentabilité",
+  aboutContent: "Le Calculateur de Seuil de Rentabilité vous aide à trouver le point où le revenu total égale le coût total, où votre entreprise ne fait ni profit ni perte. Cet outil utilise les coûts fixes, les coûts variables et le prix de vente pour calculer votre chiffre d'affaires de rentabilité ou le volume de ventes nécessaire. C'est un moyen rapide de mesurer la santé financière et de mieux planifier les stratégies de tarification.",
+
+  whyTitle: "Pourquoi une Analyse du Seuil de Rentabilité est Importante",
+  whyIntro: "Une analyse du seuil de rentabilité montre combien d'unités vous devez vendre ou combien de revenus vous devez générer pour couvrir toutes les dépenses.",
+  whyList: [
+    "Planifier la tarification et la structure des coûts",
+    "Identifier les points d'équilibre entre profit et perte",
+    "Gérer les investissements et les dépenses",
+    "Évaluer la viabilité et le risque du produit"
+  ],
+  whyEnd: "Comprendre votre seuil financier assure que vos opérations restent rentables et durables.",
+
+  interlinkExtraText: "Après avoir trouvé votre point de rentabilité, vérifiez votre rendement global avec notre",
+  interlinkSlugText: "Calculateur ROI",
+
+  howWorksTitle: "Comment Fonctionne le Calculateur de Seuil de Rentabilité en Ligne",
+  howWorksIntro: "Le calculateur applique la méthode d'analyse coût-volume-profit pour estimer votre chiffre d'affaires de rentabilité.",
+  howWorksListTitle: "Vous entrerez trois informations clés :",
+  howWorksList: [
+    "Coûts fixes – dépenses qui ne changent pas avec le volume des ventes (loyer, salaires)",
+    "Coûts variables – dépenses qui augmentent par unité vendue (matériaux, emballage)",
+    "Prix de vente par unité"
+  ],
+  howWorksResultTitle: "Une fois entrées, le calculateur affiche instantanément :",
+  howWorksResultList: [
+    "Point mort (en unités)",
+    "Point mort (en revenu)"
+  ],
+  howWorksEnd: "Cela vous aide à déterminer la quantité exacte de ventes nécessaire pour récupérer vos coûts initiaux et commencer à générer du profit.",
+
+  whyUseTitle: "Pourquoi Utiliser un Calculateur de Seuil de Rentabilité",
+  whyUseContent: "Cet outil de rentabilité d'entreprise offre une clarté sur la gestion des coûts et les prévisions de profit. Il aide les entreprises à évaluer la viabilité financière en comprenant l'économie par unité, le potentiel d'expansion et les décisions d'investissement. Le Calculateur de Seuil de Rentabilité simplifie la planification et fournit des informations fiables pour équilibrer efficacement coûts et profits.",
+
+  formulatitle: "Formule du Calculateur de Seuil de Rentabilité",
+  formulaintro: "Le Calculateur de Seuil de Rentabilité utilise une formule simple qui compare les coûts et les ventes pour identifier quand votre entreprise commence à générer du profit.",
+  mainFormulaText: "La formule principale est :",
+  formula: "Point Mort (Unités) = Coûts Fixes ÷ (Prix de Vente par Unité – Coût Variable par Unité)",
+  afterFormulaDesc: "Cette équation montre combien d'unités vous devez vendre pour couvrir toutes les dépenses. Toute vente au-delà représente un profit.",
+
+  step1Title: "Étape 1 : Comprendre les Composants de la Formule",
+  step1List: [
+    "Coûts Fixes : Dépenses qui restent constantes quelle que soit la vente, comme le loyer, les salaires et l'assurance.",
+    "Coûts Variables : Dépenses qui changent avec la production, comme les matériaux, l'emballage et l'expédition.",
+    "Prix de Vente par Unité : Le montant que vous facturez pour une unité de votre produit ou service."
+  ],
+  cvpLine: "Cette formule d'analyse coût-volume-profit vous aide à mesurer l'équilibre entre coût, volume et profit — un élément clé de la gestion financière.",
+
+  step2Title: "Étape 2 : Formule du Chiffre d'Affaires pour le Seuil de Rentabilité",
+  step2Formula: "Chiffre d'Affaires de Rentabilité = Unités pour Rentabilité × Prix de Vente par Unité",
+  step2Desc: "Une fois le nombre d'unités connu, vous pouvez calculer le Chiffre d'Affaires pour le Seuil de Rentabilité en utilisant :",
+  step2Explain: "Cela montre combien de revenus totaux votre entreprise doit générer avant d'atteindre le profit.",
+
+  imageUrl: "/Break-Even-Calculator.jpg",
+  imageAlt: "Break-Even Calculator",
+
+  exampleTitle: "Exemple de Calcul du Seuil de Rentabilité",
+  exampleList: [
+    "Coûts Fixes = 10 000 $",
+    "Coût Variable par Unité = 20 $",
+    "Prix de Vente par Unité = 50 $"
+  ],
+  exampleStep1: "Étape 1 : Point Mort (Unités) = 10 000 ÷ (50 – 20) = 10 000 ÷ 30 = 334 unités (arrondi)",
+  exampleStep2: "Étape 2 : Chiffre d'Affaires de Rentabilité = 334 × 50 = 16 700 $",
+  exampleExplain: "Cela signifie que votre entreprise doit générer 16 700 $ de ventes ou vendre 334 unités pour couvrir tous les coûts fixes et variables. Après cela, chaque unité supplémentaire contribue directement au profit.",
+
+  interpretingTitle: "Interprétation du Résultat",
+  interpretingList: [
+    "Vente en dessous du seuil = perte",
+    "Vente au seuil = ni profit ni perte",
+    "Vente au-dessus du seuil = profit"
+  ],
+  interpretDesc: "Comprendre cela aide les propriétaires d'entreprise à gérer la tarification, évaluer le risque et récupérer plus rapidement les coûts de démarrage.",
+
+  whyWorksTitle: "Pourquoi cette Formule Fonctionne",
+  whyWorksDesc: "La formule du seuil de rentabilité est simple mais puissante. Elle aide à visualiser la relation entre coûts, revenus et volume, offrant une image claire de la rentabilité. Cet outil de rentabilité aide startups et entreprises établies à gérer l'équilibre financier — où les revenus alimentent les opérations et le profit soutient la croissance. Le Calculateur de Seuil de Rentabilité en ligne applique cette formule instantanément, offrant des informations claires pour une prise de décision rapide et le succès à long terme.",
+
+  faqTitle: "Questions Fréquemment Posées",
+  faq: [
+    { q: "Que fait un Calculateur de Seuil de Rentabilité ?", a: "Un Calculateur de Seuil de Rentabilité vous aide à trouver le point exact où vos revenus totaux égalent vos coûts totaux, montrant quand votre entreprise commence à générer un profit." },
+    { q: "Comment le point mort est-il calculé ?", a: "Il est calculé en divisant vos coûts fixes par la différence entre le prix de vente par unité et le coût variable par unité. Le résultat indique combien d'unités vous devez vendre pour atteindre le seuil de rentabilité." },
+    { q: "Pourquoi le point mort est-il important ?", a: "Connaître votre point mort vous aide à comprendre comment les ventes, les prix et les coûts affectent le profit. C'est une étape clé pour la planification, le budget et la stratégie de tarification." },
+    { q: "Quels sont les coûts fixes et variables ?", a: "Les coûts fixes sont des dépenses qui restent les mêmes chaque mois, comme le loyer ou les salaires. Les coûts variables changent avec la production ou le volume des ventes, comme les matériaux ou l'expédition." },
+    { q: "Le Calculateur de Seuil de Rentabilité peut-il être utilisé pour des services ?", a: "Oui. Vous pouvez l'utiliser pour les produits et services en entrant vos coûts fixes et variables totaux ainsi que votre prix de vente moyen par unité ou projet." },
+    { q: "À quelle fréquence devrais-je calculer mon point mort ?", a: "Recalculez votre point mort chaque fois que vos coûts, vos prix ou vos stratégies de vente changent pour garantir que votre entreprise reste rentable." }
+  ],
+},
     discount: {
       title: "Calculatrice de Remise",
       desc: "Calculez les remises et le prix final",
@@ -999,30 +1346,191 @@ macros: {
       formula: "Formule",
       formulaText: "Pourboire = Facture × Pourboire%, Par Personne = Total / Personnes",
     },
-    inflation: {
-      title: "Calculatrice d'Inflation",
-      desc: "Calculez l'impact de l'inflation",
-      amount: "Montant ($)",
-      years: "Années",
-      rate: "Taux d'Inflation (%)",
-      result: "Valeur Future",
-      about: "À propos de l'Inflation",
-      aboutText: "Voyez comment l'inflation affecte la valeur de l'argent au fil du temps.",
-      formula: "Formule",
-      formulaText: "Valeur Future = Montant × (1 + Taux)^Années",
-    },
-    currency: {
-      title: "Convertisseur de Devises",
-      desc: "Convertissez entre les devises",
-      amount: "Montant",
-      fromCurrency: "De la Devise",
-      toCurrency: "À la Devise",
-      result: "Montant Converti",
-      about: "À propos des Devises",
-      aboutText: "Convertissez entre différentes devises aux taux actuels.",
-      formula: "Formule",
-      formulaText: "Utilise les taux de change actuels",
-    },
+inflation: {
+  metaTitle: "Calculatrice d'Inflation en Ligne – Suivez la Valeur de l'Argent au Fil du Temps",
+  desc: "Utilisez notre Calculatrice d'Inflation pour mesurer comment l'inflation affecte la valeur de votre argent et son pouvoir d'achat sur différentes années.",
+  amount: "Montant ($)",
+  years: "Années",
+  rate: "Taux d'Inflation (%)",
+  result: "Valeur Future",
+  heading: "Calculatrice d'Inflation",
+
+  tocwhy: "Pourquoi comprendre l'inflation est important",
+  tochowitworks: "Comment fonctionne la Calculatrice d'Inflation en Ligne",
+  tocwhyuse: "Pourquoi utiliser une Calculatrice d'Inflation",
+  tocsteps1: "Étape 1 : Identifier les variables",
+  tocsteps2: "Étape 2 : Calculer le taux d'inflation",
+  tocresults: "Comment utiliser les résultats",
+  tocwhyformula: "Pourquoi cette formule fonctionne",
+
+  aboutTitle: "À propos de la Calculatrice d'Inflation",
+  aboutDesc: "La Calculatrice d'Inflation vous aide à mesurer comment la valeur de l'argent change au fil du temps en raison de l'inflation. Elle montre combien coûteraient aujourd'hui des biens ou services qui coûtaient un certain montant dans le passé, ou inversement. Cette calculatrice utilise des données historiques sur l'inflation, comme l'Indice des Prix à la Consommation (IPC), pour calculer la valeur ajustée de l'argent. Idéal pour comparer les prix, estimer le pouvoir d'achat et analyser les tendances financières à long terme.",
+
+  whyTitle: "Pourquoi comprendre l'inflation est important",
+  whyDesc: "L'inflation réduit le pouvoir d'achat de l'argent au fil du temps. Ce que vous pouviez acheter avec 100 $ il y a une décennie coûte plus cher aujourd'hui. Suivre l'inflation aide les individus et les entreprises à prendre de meilleures décisions financières.",
+  whyPoints: [
+    "Comparer la valeur réelle de l'argent au fil des années",
+    "Planifier des investissements qui surpassent l'inflation",
+    "Comprendre les changements du coût de la vie",
+    "Mesurer l'évolution des prix dans le temps"
+  ],
+
+  howTitle: "Comment fonctionne la Calculatrice d'Inflation en Ligne",
+  howDesc: "La calculatrice applique des données officielles d'inflation pour estimer combien l'argent a gagné ou perdu en valeur au fil des ans.",
+  howNeed: [
+    "Montant initial ($)",
+    "Année de départ",
+    "Année de fin"
+  ],
+  howResult: [
+    "La valeur équivalente actuelle de l'argent passé",
+    "Le taux d'inflation sur les années sélectionnées",
+    "Le pourcentage de variation du pouvoir d'achat"
+  ],
+
+  whyUseTitle: "Pourquoi utiliser une Calculatrice d'Inflation",
+  whyUseDesc: "La calculatrice de la valeur dans le temps vous aide à comprendre l'impact réel de l'inflation sur vos finances. Parfaite pour analyser les économies, investissements, salaires et valeurs immobilières sur le long terme. Elle sert également de calculateur de dépréciation monétaire, montrant combien l'argent s'est affaibli ou renforcé au fil des décennies. Avec cette calculatrice du coût de la vie, vous pouvez mieux planifier l'avenir, fixer des objectifs financiers réalistes et protéger votre patrimoine des effets de l'inflation. La Calculatrice d'Inflation est un outil pratique pour visualiser la vraie valeur de l'argent au fil du temps.",
+
+  formulatitle: "Formule de la Calculatrice d'Inflation",
+  formulaintro: "La Calculatrice d'Inflation mesure combien la valeur de l'argent a changé entre deux dates en utilisant l'Indice des Prix à la Consommation (IPC), un indicateur standard de l'inflation qui suit les variations du prix moyen des biens et services.",
+  formula1: "Montant Ajusté = Montant Initial × (IPC de l'Année Cible ÷ IPC de l'Année de Base)",
+  formula1endtext: "Cela vous donne la valeur ajustée de l'inflation, montrant combien un montant passé vaudrait aujourd'hui (ou inversement).",
+  formulaImage: "/Inflation-Calculator.jpg",
+  formulaImageAlt: "Inflation Calculator",
+
+  steps1title: "Étape 1 : Identifier les variables",
+  steps1intro: "Chaque partie de la formule représente une valeur économique clé :",
+  steps1list: [
+    "Montant initial : La valeur passée ou actuelle que vous souhaitez ajuster.",
+    "IPC de l'année de base : L'Indice des Prix à la Consommation de l'année d'origine.",
+    "IPC de l'année cible : L'Indice des Prix à la Consommation de l'année de comparaison."
+  ],
+  steps1endtext: "La calculatrice utilise ces données pour déterminer comment le pouvoir d'achat de l'argent a changé.",
+
+  steps2title: "Étape 2 : Calculer le taux d'inflation",
+  steps2intro: "Pour voir le taux d'inflation entre deux années, la formule est :",
+  steps2formula: "Taux d'Inflation (%) = [(IPC Année Cible – IPC Année Base) ÷ IPC Année Base] × 100",
+  steps2endtext: "Cela montre le pourcentage d'augmentation des prix ou la dépréciation de la monnaie pendant la période.",
+
+  exampletitle: "Exemple de calcul de l'inflation",
+  exampleintro: "Comprenons-le avec un exemple simple :",
+  example1list: [
+    "Montant initial = 1 000 $",
+    "IPC Année Base (2010) = 218,1",
+    "IPC Année Cible (2024) = 310,0"
+  ],
+  examplestep1: "Étape 1 : Appliquer la formule :",
+  examplelist: [
+    "Montant initial = 1 000 $ Montant Ajusté = 1 000 × (310,0 ÷ 218,1)",
+    "Montant Ajusté = 1 000 × 1,4219",
+    "Montant Ajusté = 1 421,90 $"
+  ],
+  example2end: "Donc, 1 000 $ en 2010 a le même pouvoir d'achat que 1 421,90 $ en 2024, ce qui signifie que les prix ont augmenté d'environ 42 % sur cette période.",
+
+  exampletitle2: "Exemple : Trouver le taux d'inflation",
+  example2intro: "En utilisant la deuxième formule :",
+  example2list: [
+    "Taux d'Inflation = [(310,0 – 218,1) ÷ 218,1] × 100",
+    "Taux d'Inflation = (91,9 ÷ 218,1) × 100",
+    "Taux d'Inflation = 42,15 %"
+  ],
+  example2endtext: "Cela indique que les prix ont augmenté d'environ 42 % entre 2010 et 2024.",
+
+  howtotitle: "Comment utiliser les résultats",
+  howtointro: "Vous pouvez utiliser la calculatrice d'inflation pour :",
+  howtolist: [
+    "Comparer la valeur réelle de l'argent entre les années",
+    "Mesurer l'évolution des prix des biens ou services au fil du temps",
+    "Ajuster les investissements ou économies pour maintenir le pouvoir d'achat",
+    "Estimer les valeurs futures en utilisant les tendances d'inflation"
+  ],
+  howtoendtext: "Utilisez vos résultats d'intérêts composés pour planifier vos économies à long terme avec",
+  howtoInterLink: "Calculatrice ROI",
+
+  whyformulaworkstitle: "Pourquoi cette formule fonctionne",
+  whyformulaworkscontent: "L'inflation reflète comment le coût des biens et services change avec le temps. L'Indice des Prix à la Consommation (IPC) est la mesure la plus fiable pour suivre ce changement. En comparant les valeurs IPC, l'outil montre combien la valeur réelle du dollar a été érodée ou appréciée. La Calculatrice d'Inflation en ligne fournit des résultats rapides, précis et à jour, essentielle pour quiconque suit les tendances financières, la tarification des entreprises ou les économies à long terme. La calculatrice sur Vastcalculators.com utilise les données IPC officielles pour fournir des comparaisons précises et réelles.",
+
+  faqTitle: "Questions Fréquentes",
+  faq: [
+    { q: "Que fait une Calculatrice d'Inflation ?", a: "Une Calculatrice d'Inflation montre comment la valeur de l'argent change au fil du temps en tenant compte de l'inflation, vous aidant à comprendre la valeur réelle des montants passés ou futurs." },
+    { q: "Comment l'inflation est-elle calculée ?", a: "L'inflation est calculée en comparant les valeurs de l'indice des prix de deux années. L'indice montre combien les prix ont augmenté ou diminué avec le temps." },
+    { q: "Qu'est-ce que le taux d'inflation ?", a: "Le taux d'inflation est l'augmentation en pourcentage du prix moyen des biens et services sur une période spécifique, généralement mesurée annuellement." },
+    { q: "Comment puis-je trouver la valeur réelle de l'argent dans le temps ?", a: "Multipliez le montant original par l'indice de l'année cible et divisez par l'indice de l'année de base. Cela montre combien vaut un montant dans les dollars d'une autre année." },
+    { q: "Pourquoi l'inflation est-elle importante pour les économies et les investissements ?", a: "L'inflation réduit la valeur future de l'argent, ce qui signifie que les économies perdent leur pouvoir d'achat si elles ne croissent pas à un taux supérieur à l'inflation." },
+    { q: "Comment comparer les rendements après inflation ?", a: "Utilisez les valeurs ajustées à l'inflation pour trouver votre taux de rendement réel. Vous pouvez le comparer facilement avec la Calculatrice ROI pour mesurer le profit réel après inflation." }
+  ]
+},
+currency: {
+  metaTitle: "Calculateur de Conversion de Devise | Conversion en Temps Réel",
+  desc: "Convertissez n'importe quelle devise en quelques secondes avec notre calculateur de conversion de devises en ligne. Obtenez des taux de change précis et en temps réel et comparez facilement les valeurs des devises mondiales.",
+  amount: "Montant",
+  fromCurrency: "De la Devise",
+  toCurrency: "À la Devise",
+  result: "Montant Converti",
+  heading: "Calculateur de Conversion de Devise",
+
+  tocabout: "À propos de notre calculateur de conversion de devises en ligne",
+  tocconversion: "Conversion en temps réel pour des décisions mondiales plus intelligentes",
+  tocformula: "Formule de conversion de devise",
+  tocexample: "Exemple de calcul",
+  tocaccurateconversion: "Pourquoi la conversion précise est importante",
+  tocresults: "Comment utiliser les résultats",
+  tocwhyformula: "Pourquoi cette formule fonctionne",
+
+  aboutTitle: "À propos de notre calculateur de conversion de devises en ligne",
+  aboutDesc: "Le Calculateur de Devise de Vast Calculator facilite la visualisation de la valeur de votre argent dans une autre devise en temps réel. Que vous planifiiez un voyage, compariez des prix internationaux ou gériez des transactions mondiales, cet outil fournit des conversions rapides et précises en utilisant les derniers taux de change. Il vous aide à rester informé financièrement en affichant des conversions en direct pour les principales devises mondiales telles que USD, EUR, GBP, JPY et plus, mises à jour régulièrement pour refléter les taux les plus récents.",
+  aboutExtratext: "Si vous voulez voir comment l'inflation affecte la valeur réelle de votre devise, utilisez le",
+  aboutInterLink: "Calculateur d'Inflation.",
+
+  conversionTitle: "Conversion en temps réel pour des décisions mondiales plus intelligentes",
+  conversioncontent: "Le calculateur de devise simplifie la gestion de l'argent international. En saisissant le montant et en choisissant vos devises, vous pouvez convertir instantanément les valeurs entre plusieurs devises mondiales. Que vous soyez voyageur, propriétaire d'entreprise ou investisseur à l'étranger, ce calculateur vous fait gagner du temps et garantit des calculs précis, pour que vous n'ayez plus jamais à deviner les différences de devises.",
+  keyhighlight: "Points Clés :",
+  keyhighlightList: [
+    "Utilise des taux de change en direct provenant de sources financières fiables",
+    "Fonctionne pour plus de 160 devises dans le monde",
+    "Gratuit, rapide et compatible mobile",
+    "Fournit des résultats instantanés à chaque mise à jour"
+  ],
+  keyhighlightsendtext: "Il est conçu pour vous apporter de la clarté avant d'effectuer des paiements internationaux ou de prendre des décisions de voyage, garantissant que votre argent conserve sa valeur à l'étranger.",
+
+  formulatitle: "Formule de conversion de devise",
+  formulasubtitle: "Comment fonctionne le calculateur de devise",
+  formulasubintro: "Le calculateur de devise utilise une formule simple qui multiplie la devise de base par le taux de change actuel pour obtenir la valeur de la devise cible.",
+  formula1: "Formule : Montant Converti = Montant de Base × Taux de Change",
+  formula1list: [
+    "Montant de Base = Le montant que vous avez dans votre devise originale",
+    "Taux de Change = Le taux actuel entre les deux devises",
+    "Montant Converti = Valeur après conversion"
+  ],
+  formulaImage: "/Currency-Converter-Calculator.jpg",
+  formulaImageAlt: "Currency Converter Calculator",
+
+  exampletitle: "Exemple de calcul",
+  exampleintro: "Si vous avez 100 USD et que le taux de change USD vers EUR est de 0,92, alors :",
+  exampleformula: "Montant Converti = 100 × 0,92 = 92 EUR",
+  exampleendtext: "Cela signifie que 100 $ équivalent à 92 € à ce taux de change spécifique. Comme les taux de change fluctuent quotidiennement, il est judicieux de vérifier les valeurs régulièrement.",
+
+  accuratetitle: "Pourquoi la conversion précise est importante",
+  accuratesubtitle: "Restez informé avant de dépenser",
+  accuratesubcontent: "Les taux de change évoluent constamment en raison des tendances du marché, de l'inflation et de l'activité commerciale mondiale. Une conversion en temps réel vous aide à prendre des décisions plus intelligentes lors de :",
+  accuratesublist: [
+    "Voyager ou acheter à l'international",
+    "Envoyer ou recevoir de l'argent à l'étranger",
+    "Comparer les prix des produits dans différents pays",
+    "Gérer des investissements dans plusieurs devises"
+  ],
+  accuratesubend: "En connaissant la valeur exacte avant une transaction, vous pouvez éviter des pertes dues à des taux de change obsolètes ou incorrects.",
+
+  faqTitle: "Questions Fréquemment Posées",
+  faq: [
+    { q: "Que fait le calculateur de conversion de devise ?", a: "Il convertit n'importe quel montant d'une devise à une autre en utilisant des taux de change en direct, fournissant des résultats précis instantanément." },
+    { q: "Les taux de change sont-ils mis à jour automatiquement ?", a: "Oui. Les taux sont régulièrement mis à jour pour correspondre aux dernières données provenant de sources financières mondiales fiables." },
+    { q: "Puis-je l'utiliser pour n'importe quelle devise ?", a: "Oui. Le calculateur prend en charge plus de 160 devises, y compris majeures et mineures." },
+    { q: "Cet outil est-il gratuit ?", a: "Oui. Le calculateur de devise de VastCalculator est entièrement gratuit et fonctionne instantanément en ligne." },
+    { q: "Pourquoi les taux de change sont-ils différents chaque jour ?", a: "Les taux changent en raison de l'offre et la demande, de l'inflation, des taux d'intérêt et des politiques économiques internationales." },
+    { q: "En quoi est-ce différent d'un calculateur d'inflation ?", a: "Le calculateur de devise montre le taux de change actuel entre deux devises, tandis que le calculateur d'inflation montre comment la valeur de l'argent change dans le temps." }
+  ]
+},
   },
 footer: {
   subtitle: "Vastes calculatrices – Simplifiez les mathématiques avec des calculatrices en ligne gratuites",

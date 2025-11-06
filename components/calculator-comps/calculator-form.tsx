@@ -33,7 +33,11 @@ export function CalculatorForm({ calculator, locale, onCalculate, result }: Calc
   return (
     <Card>
       <CardHeader>
-        <CardTitle>{getTranslation(locale, calculator.heading)}</CardTitle>
+        <CardTitle>
+          <h1>
+          {getTranslation(locale, calculator.heading)}
+          </h1>
+          </CardTitle>
         <CardDescription>{getTranslation(locale, calculator.descriptionKey)}</CardDescription>
       </CardHeader>
       <CardContent>

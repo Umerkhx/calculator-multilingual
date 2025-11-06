@@ -14,11 +14,32 @@ export const healthFormulas = {
       ).toFixed(1)
     }
   },
-  bmi: (inputs: Record<string, number | string>) => {
-    const weight = Number(inputs.weight)
-    const height = Number(inputs.height) / 100
-    return (weight / (height * height)).toFixed(1)
-  },
+
+bmi: (inputs: Record<string, string | number>) => {
+  const weight = Number(inputs.weight)
+  const height = Number(inputs.height)
+  const weightUnit = inputs.weightUnit        
+  const heightUnit = inputs.heightUnit        
+  const gender = inputs.gender                
+  
+  let weightKg = weightUnit === "lb" ? weight * 0.45359237 : weight
+  let heightM: number = 0
+
+  if (heightUnit === "cm") heightM = height / 100
+  else if (heightUnit === "inch") heightM = height * 0.0254
+  else if (heightUnit === "ft_in") {
+    const feet = Number(inputs.heightFeet)
+    const inches = Number(inputs.heightInches)
+    heightM = ((feet * 12) + inches) * 0.0254
+  }
+
+  if (heightM <= 0) {
+    throw new Error("Invalid height value")
+  }
+
+  return (weightKg / (heightM * heightM)).toFixed(1)
+},
+  
   calories: (inputs: Record<string, number | string>) => {
     const age = Number(inputs.age)
     const weight = Number(inputs.weight)

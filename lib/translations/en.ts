@@ -26,16 +26,16 @@ export const enTranslations = {
   },
   categories: {
     health: {
-      metaTitle:"Health Calculators | Accurate Online Tools for Fitness & Wellness",
+      metaTitle: "Health Calculators | Accurate Online Tools for Fitness & Wellness",
       name: "Health Calculators",
       description: "Track your wellness easily using our BMI calculator, calorie calculator, and water intake calculator. These tools are designed to support balanced living and accurate self-assessment.",
-      metaDescription:"Explore free online health calculators for BMI, calories, body fat, heart rate, and more. Track fitness and stay healthy easily."
+      metaDescription: "Explore free online health calculators for BMI, calories, body fat, heart rate, and more. Track fitness and stay healthy easily."
     },
     finance: {
-      metaTitle:"Finance Calculators | Smart Online Tools for Money & Savings",
+      metaTitle: "Finance Calculators | Smart Online Tools for Money & Savings",
       name: "Finance Calculators",
       description: "Plan your budget better using our loan calculator, EMI calculator, and compound interest calculator. Whether it's daily expenses or long-term savings, VastCalculator brings clarity to your financial decisions.",
-      metaDescription:"Use free online finance calculators for loans, ROI, savings, and investments. Make smarter financial decisions in seconds."
+      metaDescription: "Use free online finance calculators for loans, ROI, savings, and investments. Make smarter financial decisions in seconds."
     },
     all: "All Calculators",
   },
@@ -286,8 +286,21 @@ export const enTranslations = {
       desc: "Calculate your Body Mass Index (BMI) to assess potential health risks like diabetes & heart disease. Track your fitness goals with our free online calculator.",
       heading: "BMI Calculator",
 
-      weight: "Weight (kg)",
-      height: "Height (cm)",
+      gender: "Gender",
+      male:"Male",
+      female:"Female",
+      other:"Other",
+      weight: "Weight",
+      kg:"Kg",
+      lb:"lbs",
+      cm:"Centimetres",
+      inch:"Inches",
+      ft_in:"Feet and Inches",
+      weightUnit: "Weight Unit",
+      height: "Height",
+      heightUnit: "Height Unit",
+      heightFeet: "Height (Feet)",
+      heightInches: "Height (Inches)",
       result: "BMI",
 
       tocTitle: "Table of Contents",

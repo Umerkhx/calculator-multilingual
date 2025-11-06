@@ -39,12 +39,16 @@ export interface Calculator {
   titleKey?: any
   category: string
   descriptionKey: string
+  result?: {
+    label?: string        // e.g., "finance.breakeven.result"
+    explainKey?: string   // e.g., "finance.breakeven.resultExplain"
+  }
 
   inputs?: CalculatorInput[]
   formulaId?: string
 
   sections?: CalculatorSection[]
-  
+
   // ✅ NEW: Highlights at top level
   highlightsTitleKey?: string
   highlights?: CalculatorHighlight[]
@@ -55,10 +59,12 @@ export interface Calculator {
   [key: string]: any
 }
 
+
+
 // CATEGORY WRAPPER
 export interface CalculatorCategory {
   id: string
-  metaTitle:string,
+  metaTitle: string,
   metaDescription: string,
   name: string
   description: string

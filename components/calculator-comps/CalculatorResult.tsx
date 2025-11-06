@@ -5,17 +5,27 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { getTranslation, type Locale } from "@/lib/i18n"
 import { Loader2 } from "lucide-react"
+import type { Calculator } from "@/lib/calculators/types"
 
 interface CalculatorResultProps {
   locale: Locale
   inputs: Record<string, number | string>
   result: string | number
   onRecalculate: () => void
+  calculator: Calculator
 }
 
-export function CalculatorResult({ locale, inputs, result, onRecalculate }: CalculatorResultProps) {
+export function CalculatorResult({ 
+  locale, 
+  inputs, 
+  result, 
+  onRecalculate,
+  calculator
+}: CalculatorResultProps) {
   const [isLoading, setIsLoading] = useState(false)
   const isPlaceholder = result === "—"
+  
+  const resultConfig = calculator.result
 
   useEffect(() => {
     if (!isPlaceholder) {
@@ -23,7 +33,7 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
       const timer = setTimeout(() => setIsLoading(false), 1000)
       return () => clearTimeout(timer)
     }
-  }, [result])
+  }, [result, isPlaceholder])
 
   return (
     <Card className="border-2 border-primary/20 shadow-lg transition-all duration-300 hover:shadow-xl">
@@ -67,9 +77,25 @@ export function CalculatorResult({ locale, inputs, result, onRecalculate }: Calc
             <Separator />
 
             <div>
-              <p className="font-medium mb-1 text-foreground">{getTranslation(locale, "result.calculateresult")}</p>
+              <p className="font-medium mb-1 text-foreground">
+                {resultConfig?.label 
+                  ? getTranslation(locale, resultConfig.label)
+                  : getTranslation(locale, "result.calculateresult")
+                }
+              </p>
               <p className="text-3xl font-bold text-primary">{result}</p>
             </div>
+
+            {resultConfig?.explainKey && (
+              <>
+                <Separator />
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    {getTranslation(locale, resultConfig.explainKey)}
+                  </p>
+                </div>
+              </>
+            )}
 
             <Separator />
 

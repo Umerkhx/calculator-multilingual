@@ -65,6 +65,7 @@ export default function CalculatorClient({ calc, locale, formulaId, category }: 
             inputs={inputs}
             result={result ?? "—"}
             onRecalculate={() => setResult(null)}
+            calculator={calc} 
           />
         </div>
 

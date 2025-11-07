@@ -1100,6 +1100,7 @@ export const zhTranslations = {
     mortgage: {
       metaTitle: "房贷计算器：即时估算每月房贷还款",
       desc: "使用我们的房贷计算器，根据利率和贷款期限估算每月房贷还款。轻松规划购房预算。",
+      result:"抵押贷款结果",
       homePrice: "房屋价格",
       downPayment: "首付款",
       rate: "利率（年）",

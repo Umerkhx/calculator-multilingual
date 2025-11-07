@@ -1212,6 +1212,7 @@ export const esTranslations = {
     mortgage: {
       metaTitle: "Calculadora de Hipoteca: Estima los Pagos Mensuales de tu Préstamo de Vivienda al Instante",
       desc: "Usa nuestra Calculadora de Hipoteca para estimar tus pagos mensuales de préstamo hipotecario según la tasa de interés y el plazo. Planifica fácilmente tu presupuesto antes de comprar.",
+      result:"Resultado hipotecario",
       homePrice: "Precio de la casa",
       downPayment: "Pago inicial",
       rate: "Tasa de interés (Anual)",

@@ -1112,6 +1112,7 @@ export const deTranslations = {
     mortgage: {
       metaTitle: "Hypothekenrechner: Monatliche Hauskreditraten sofort berechnen",
       desc: "Verwenden Sie unseren Hypothekenrechner, um Ihre monatlichen Hauskreditraten basierend auf Zinssatz und Laufzeit zu schätzen. Planen Sie Ihr Budget einfach vor dem Kauf.",
+      result:"Hypothekenergebnis",
       homePrice: "Hauspreis",
       downPayment: "Anzahlung",
       rate: "Zinssatz (Jährlich)",

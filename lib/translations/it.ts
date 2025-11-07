@@ -1116,6 +1116,7 @@ export const itTranslations = {
     mortgage: {
       metaTitle: "Calcolatore Mutuo: Stima Immediata delle Rate Mensili del Prestito Casa",
       desc: "Usa il nostro Calcolatore Mutuo per stimare le tue rate mensili in base al tasso di interesse e alla durata del prestito. Pianifica facilmente il tuo budget prima dell'acquisto.",
+      result:"Risultato mutuo",
       homePrice: "Prezzo della casa",
       downPayment: "Acconto",
       rate: "Tasso di interesse (Annuale)",

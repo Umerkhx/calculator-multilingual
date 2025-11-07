@@ -1189,6 +1189,7 @@ export const enTranslations = {
       downPaymentType: "Down Payment Type",
       downPaymentTypePercent: "Percentage (%)",
       downPaymentTypeAmount: "Fixed Amount ($)",
+      result:"Mortgage Result",
       resultExplain: "Your total monthly mortgage cost includes principal & interest based on your loan amount and interest rate, plus additional ongoing expenses like property tax, yearly insurance, and HOA fees. These extra costs provide a more realistic picture of what you actually pay every month.",
 
       heading: "Mortgage Calculator",

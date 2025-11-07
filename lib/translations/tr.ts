@@ -1105,6 +1105,7 @@ export const trTranslations = {
     mortgage: {
       metaTitle: "Mortgage Hesaplayıcı: Aylık Konut Kredisi Ödemelerinizi Anında Hesaplayın",
       desc: "Mortgage Hesaplayıcımızı kullanarak aylık konut kredisi ödemelerinizi faiz oranı ve vade süresine göre tahmin edin. Satın almadan önce bütçenizi kolayca planlayın.",
+      result:"Mortgage Sonucu",
       homePrice: "Ev Fiyatı",
       downPayment: "Peşinat",
       rate: "Faiz Oranı (Yıllık)",

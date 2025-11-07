@@ -1107,6 +1107,7 @@ export const ptTranslations = {
     mortgage: {
       metaTitle: "Calculadora de Hipoteca: Estime Pagamentos Mensais do Empréstimo Imobiliário Instantaneamente",
       desc: "Use nossa Calculadora de Hipoteca para estimar seus pagamentos mensais com base na taxa de juros e prazo. Planeje seu orçamento facilmente antes de comprar.",
+      result:"Resultado da hipoteca",
       homePrice: "Preço da casa",
       downPayment: "Entrada",
       rate: "Taxa de juros (Anual)",

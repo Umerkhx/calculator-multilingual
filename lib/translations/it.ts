@@ -70,6 +70,7 @@ export const itTranslations = {
   about: {
     tagline: "Strumenti intelligenti. Matematica semplice. Portata globale.",
     title: "Informazioni su Calcolatori Vast",
+    cta:"Esplora i calcolatori",
     subtitle: "In Calcolatori Vast rendiamo la matematica quotidiana semplice, intelligente e accessibile. Dalla salute alle finanze fino alle conversioni rapide, le nostre calcolatrici online gratuite sono progettate per risparmiare tempo e fornire risultati accurati e affidabili.",
     missiontitle: "La nostra missione: rendere i numeri facili",
     missionsub: "Crediamo che i calcoli non debbano mai rallentarti. Che tu sia uno studente, un professionista o una persona attenta alla forma fisica, Calcolatori Vast porta la precisione a portata di mano. Ogni strumento è costruito su formule verificate e modelli testati per garantire risultati affidabili ogni volta.",

@@ -67,6 +67,7 @@ export const frTranslations = {
   about: {
     tagline: "Outils intelligents. Mathématiques simples. Portée mondiale.",
     title: "À propos de Vastes calculatrices",
+    cta:"Explorer les calculatrices",
     subtitle: "Chez Vastes calculatrices, nous rendons les mathématiques quotidiennes simples, intelligentes et accessibles. Que vous suiviez vos objectifs de santé, planifiez vos finances ou fassiez des conversions rapides, nos calculatrices en ligne gratuites sont conçues pour gagner du temps et fournir des résultats précis et fiables.",
     missiontitle: "Notre mission : rendre les nombres faciles",
     missionsub: "Nous croyons que les calculs ne devraient jamais vous ralentir. Que vous soyez étudiant, professionnel ou amateur de fitness, Vastes calculatrices met la précision à portée de main. Chaque outil est construit sur des formules vérifiées et des modèles testés pour garantir des résultats fiables à chaque fois.",

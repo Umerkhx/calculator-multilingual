@@ -25,17 +25,17 @@ export default function CategoryPage({ locale, category, categoryData, calculato
   const filteredCalculators = useMemo(() => {
     return calculators
       .filter((calc) =>
-        getTranslation(locale, calc.titleKey)
+        getTranslation(locale, calc.heading)
           .toLowerCase()
           .includes(searchQuery.toLowerCase())
       )
       .filter((calc) =>
         filterLetter
-          ? getTranslation(locale, calc.titleKey).toUpperCase().startsWith(filterLetter)
+          ? getTranslation(locale, calc.heading).toUpperCase().startsWith(filterLetter)
           : true
       )
       .sort((a, b) =>
-        getTranslation(locale, a.titleKey).localeCompare(getTranslation(locale, b.titleKey))
+        getTranslation(locale, a.heading).localeCompare(getTranslation(locale, b.heading))
       )
   }, [calculators, searchQuery, filterLetter, locale])
 
@@ -62,7 +62,7 @@ export default function CategoryPage({ locale, category, categoryData, calculato
           onSearch={setSearchQuery}
           onFilterLetter={setFilterLetter}
           calculatorNames={calculators.map((calc) =>
-            getTranslation(locale, calc.titleKey)
+            getTranslation(locale, calc.heading)
           )}
         />
 

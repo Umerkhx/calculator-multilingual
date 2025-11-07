@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { type Locale, locales } from "@/lib/i18n"
+import BackToTop from "@/components/BackToTop"
 
 export const dynamic = "force-static";
 
@@ -67,6 +68,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           <Header locale={locale} />
           <main className="flex-1">{children}</main>
           <Footer locale={locale} />
+          <BackToTop />
         </div>
       </body>
     </html>

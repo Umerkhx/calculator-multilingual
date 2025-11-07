@@ -67,6 +67,7 @@ export const esTranslations = {
   about: {
     tagline: "Herramientas inteligentes. Matemáticas simples. Alcance global.",
     title: "Acerca de Calculadoras Vast",
+    cta:"Explora las calculadoras",
     subtitle: "En Calculadoras Vast, hacemos que las matemáticas diarias sean simples, inteligentes y accesibles. Desde seguir tus objetivos de salud y estado físico hasta planificar tus finanzas o convertir unidades rápidamente, nuestras calculadoras en línea gratuitas están diseñadas para ahorrar tiempo y ofrecer precisión en la que puedes confiar. Sin descargas, sin complicaciones, solo herramientas rápidas y confiables creadas para todos.",
     missiontitle: "Nuestra misión: hacer que los números sean sencillos",
     missionsub: "Creemos que los cálculos nunca deberían frenarte. Ya seas un estudiante verificando tu GPA, un profesional administrando gastos o alguien siguiendo metas de acondicionamiento físico, Calculadoras Vast te brinda precisión al alcance de tu mano. Cada herramienta está construida con fórmulas verificadas y modelos probados para garantizar resultados confiables en todo momento.",

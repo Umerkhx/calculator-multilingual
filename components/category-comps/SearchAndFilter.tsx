@@ -15,7 +15,6 @@ export function SearchAndFilter({
 }: SearchAndFilterProps) {
   const [activeLetter, setActiveLetter] = useState<string>("")
 
-  // ✅ Extract only first letters from available calculators
   const availableLetters = Array.from(
     new Set(
       calculatorNames

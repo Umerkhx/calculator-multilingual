@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Key, useState } from "react";
 import Link from "next/link";
 import { type Locale, getTranslation, translations } from "@/lib/i18n";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -23,7 +23,7 @@ export function MobileSidebar({ locale }: MobileSidebarProps) {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
+        <Button name="sidebar-menu" variant="ghost" size="icon" className="md:hidden">
           <Menu className="h-5 w-5" />
         </Button>
       </SheetTrigger>
@@ -56,6 +56,7 @@ export function MobileSidebar({ locale }: MobileSidebarProps) {
 
               <div className="flex flex-col">
                 <button
+                name="search-calculators"
                   onClick={() => setCalcOpen(!calcOpen)}
                   className="flex items-center justify-between w-full px-3 py-2 text-sm font-medium rounded-md hover:bg-accent transition-colors"
                 >
@@ -73,7 +74,7 @@ export function MobileSidebar({ locale }: MobileSidebarProps) {
                   }`}
                 >
                   <div className="flex flex-col pl-6 mt-1">
-                    {allCalculatorCategories.map((cat) => (
+                    {allCalculatorCategories.map((cat: { id: Key | null | undefined; name: string; }) => (
                       <Link
                         key={cat.id}
                          href={locale === "en" ? `/${cat.id}` : `/${locale}/${cat.id}`}

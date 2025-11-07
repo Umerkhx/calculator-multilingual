@@ -1,12 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { Locale, locales } from "@/lib/i18n";
 
@@ -84,9 +79,8 @@ const LanguageSelector = ({ locale }: LanguageSelectorProps) => {
           <DropdownMenuItem
             key={lang.code}
             onClick={() => handleChange(lang.code)}
-            className={`flex items-center gap-2 cursor-pointer ${
-              locale === lang.code ? "bg-muted font-semibold" : ""
-            }`}
+            className={`flex items-center gap-2 cursor-pointer ${locale === lang.code ? "bg-muted font-semibold" : ""
+              }`}
           >
             <Image
               src={lang.flag}

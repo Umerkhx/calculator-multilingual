@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import CalculatorClient from "@/components/calculator-comps/CalculatorClient";
 import { allCalculatorCategories, getCalculatorBySlug } from "@/lib/calculators";
 import { getTranslation, type Locale, defaultLocale, locales } from "@/lib/i18n";
@@ -31,11 +32,11 @@ export async function generateStaticParams() {
 }
 
 interface CalculatorPageProps {
-  params: { locale?: string; category: string; calculator: string };
+  params: Promise<{ locale?: string; category: string; calculator: string }>;
 }
 
 export async function generateMetadata({ params }: CalculatorPageProps): Promise<Metadata> {
-  const { locale = defaultLocale, category, calculator } = params;
+  const { locale = defaultLocale, category, calculator } = await params;
   const validLocale = (locales.includes(locale as Locale) ? locale : defaultLocale) as Locale;
   const calc = getCalculatorBySlug(category, calculator);
 
@@ -81,17 +82,12 @@ export async function generateMetadata({ params }: CalculatorPageProps): Promise
 }
 
 export default async function CalculatorPage({ params }: CalculatorPageProps) {
-  const { locale = defaultLocale, category, calculator } = params;
+  const { locale = defaultLocale, category, calculator } = await params;
   const validLocale = (locales.includes(locale as Locale) ? locale : defaultLocale) as Locale;
   const calc = getCalculatorBySlug(category, calculator);
 
   if (!calc) {
-    const translation = getTranslation(validLocale, "search.notFound");
-    return (
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold text-destructive">{translation}</h1>
-      </div>
-    );
+    notFound();
   }
 
   const enTitle = getTranslation("en", calc.heading);

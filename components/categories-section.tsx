@@ -64,29 +64,29 @@ export default function CategoriesSection({ locale }: CalculatorsGridSectionProp
               calculatorLinks.find(link => link.slug === calc.slug)?.href || "#"
 
             return (
-              <Card
-                key={calc.slug}
-                className="group flex flex-col justify-between overflow-hidden border border-border transition-all hover:shadow-lg hover:-translate-y-1"
-              >
-                <CardHeader>
-                  <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {getTranslation(locale, calc.heading)}
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground">
-                    {getTranslation(locale, calc.descriptionKey)}
-                  </CardDescription>
-                </CardHeader>
-
-                <CardContent className="mt-auto flex items-center justify-between pt-4">
-                  <Link
-                    href={calcHref}
-                    className="inline-flex items-center font-medium text-sm text-primary hover:underline"
+              <>
+                <Link key={calc.slug} href={calcHref}>
+                  <Card
+                    className="group flex flex-col justify-between overflow-hidden border border-border transition-all hover:shadow-lg hover:-translate-y-1"
                   >
-                    {getTranslation(locale, "feature.cta") || "Open Calculator"}
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </CardContent>
-              </Card>
+                    <CardHeader>
+                      <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                        {getTranslation(locale, calc.heading)}
+                      </CardTitle>
+                      <CardDescription className="text-muted-foreground">
+                        {getTranslation(locale, calc.descriptionKey)}
+                      </CardDescription>
+                    </CardHeader>
+
+                    <CardContent className="mt-auto flex items-center justify-between pt-4">
+                      <p className="inline-flex items-center font-medium text-sm text-primary hover:underline">
+                        {getTranslation(locale, "feature.cta") || "Open Calculator"}
+                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </>
             )
           })}
         </div>

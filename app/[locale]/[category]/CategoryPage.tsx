@@ -42,7 +42,7 @@ export default function CategoryPage({ locale, category, categoryData, calculato
   if (!categoryData) {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
-        <h1 className="text-2xl font-semibold text-red-500">
+        <h1 className="text-5xl font-semibold text-red-500">
           {getTranslation(locale, "search.notFound")}
         </h1>
       </div>

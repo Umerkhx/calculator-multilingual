@@ -1,9 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { notFound, redirect } from "next/navigation"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { type Locale, locales } from "@/lib/i18n"
 import BackToTop from "@/components/BackToTop"
+
 
 export const dynamic = "force-static";
 
@@ -41,6 +43,10 @@ export async function generateMetadata({
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {
   const { locale } = await params
+
+  if (!locales.includes(locale)) {
+    redirect('/')
+  }
 
   const langMap: Record<string, string> = {
     en: "en",

@@ -1094,6 +1094,7 @@ export const frTranslations = {
     mortgage: {
       metaTitle: "Calculateur de Prêt Immobilier : Estimez vos Paiements Mensuels Instantanément",
       desc: "Utilisez notre Calculateur de Prêt Immobilier pour estimer vos paiements mensuels en fonction du taux d'intérêt et de la durée. Planifiez facilement votre budget avant d'acheter.",
+      result:"Résultat hypothécaire",
       homePrice: "Prix de la maison",
       downPayment: "Acompte",
       rate: "Taux d'intérêt (Annuel)",

@@ -187,7 +187,7 @@ export function Footer({ locale }: FooterProps) {
 
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-5 md:px-20 px-5">
           <div className="flex flex-col gap-2 md:w-1/2">
-            <Image src={'/VastCalculators.com-Logo.png'} width={270} height={270} alt="logo" fetchPriority="high" />
+            <Image src={'/VastCalculators.com-Logo.png'} width={200} height={200} alt="logo" loading="lazy" />
             <p className="mt-2 md:text-base text-sm md:mb-0 mb-5">
               {t.footer.subtitle}
             </p>

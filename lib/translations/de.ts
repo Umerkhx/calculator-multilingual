@@ -70,6 +70,7 @@ export const deTranslations = {
   about: {
     tagline: "Intelligente Tools. Einfache Mathematik. Weltweite Reichweite.",
     title: "Über Vast-Rechner",
+    cta:"Rechner entdecken",
     subtitle: "Bei Vast-Rechner machen wir alltägliche Mathematik einfach, smart und zugänglich. Vom Verfolgen deiner Gesundheits- und Fitnessziele bis hin zur Finanzplanung oder schnellen Umrechnungen – unsere kostenlosen Online-Rechner sind darauf ausgelegt, Zeit zu sparen und zuverlässige Genauigkeit zu liefern. Keine Downloads, keine Komplexität – nur schnelle, verlässliche Tools für alle.",
     missiontitle: "Unsere Mission: Zahlen mühelos machen",
     missionsub: "Wir glauben, dass Berechnungen dich niemals aufhalten sollten. Ob du ein Student bist, der seinen Notendurchschnitt überprüft, ein Profi, der Ausgaben verwaltet, oder jemand, der Fitnessziele verfolgt – Vast-Rechner bringt Präzision an deine Fingerspitzen. Jedes Tool basiert auf geprüften Formeln und getesteten Modellen, um jederzeit verlässliche Ergebnisse zu gewährleisten.",

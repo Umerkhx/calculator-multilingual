@@ -70,6 +70,7 @@ export const ptTranslations = {
   about: {
     tagline: "Ferramentas inteligentes. Matemática simples. Alcance global.",
     title: "Sobre o Calculadoras Vast",
+    cta:"Explore Calculadoras",
     subtitle: "No Calculadoras Vast, tornamos a matemática do dia a dia simples, inteligente e acessível. De saúde e fitness a finanças e conversões rápidas, nossas calculadoras online gratuitas economizam tempo e garantem precisão confiável.",
     missiontitle: "Nossa missão: tornar os números fáceis",
     missionsub: "Acreditamos que cálculos nunca devem atrasar você. Seja estudante, profissional ou entusiasta de fitness, Calculadoras Vast coloca a precisão nas suas mãos. Cada ferramenta é baseada em fórmulas verificadas e modelos testados para resultados confiáveis sempre.",

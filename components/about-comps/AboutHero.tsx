@@ -55,10 +55,10 @@ const AboutHero: React.FC<AboutHeroProps> = ({ locale }) => {
           className="mt-10 flex flex-wrap justify-center gap-4"
         >
           <Link
-            href={`/${locale}`}
+           href={locale === "en" ? "/#home-calculators" : `/${locale}#home-calculators`}
             className="rounded-2xl bg-primary text-primary-foreground font-semibold px-8 py-3 text-base shadow-sm hover:opacity-90 transition"
           >
-            {t.hero.cta}
+            {t.about.cta}
           </Link>
 
           <Link

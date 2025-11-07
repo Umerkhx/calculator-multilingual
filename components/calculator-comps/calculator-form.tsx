@@ -103,7 +103,7 @@ export function CalculatorForm({ calculator, locale, onCalculate, result }: Calc
                   >
                     <SelectTrigger 
                       id={input.name}
-                      className={errors[input.name] ? "border-red-500" : ""}
+                      className={errors[input.name] ? "border-red-500" : "w-full"}
                     >
                       <SelectValue placeholder="Select..." />
                     </SelectTrigger>

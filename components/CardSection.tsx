@@ -15,7 +15,7 @@ export default function CardsSection({ locale }: CardsSectionProps) {
   }));
 
   return (
-    <section className="container px-12 mx-auto py-10">
+    <section id="categories" className="container px-12 mx-auto py-10">
       <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl text-center mb-4">
         {getTranslation(locale, "cards.title")}
       </h2>

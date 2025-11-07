@@ -66,6 +66,7 @@ export const enTranslations = {
   about: {
     tagline: "Smart Tools. Simple Math. Global Reach.",
     title: "About Vast Calculators",
+    cta:"Explore Calculators",
     subtitle: "At Vast Calculators, we make everyday math simple, smart, and accessible. From tracking your health and fitness goals to planning your finances or converting quick units, our free online calculators are designed to save time and deliver accuracy you can trust. No downloads, no complexity, just fast, reliable tools built for everyone.",
     missiontitle: "Our Mission: Making Numbers Effortless",
     missionsub: "We believe that calculations should never slow you down. Whether you’re a student checking your GPA, a professional managing expenses, or someone keeping up with fitness goals, Vast Calculators brings precision to your fingertips. Every tool is built using verified formulas and tested models to ensure dependable results, every single time.",

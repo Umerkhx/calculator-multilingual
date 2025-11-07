@@ -172,6 +172,7 @@ import Image from "next/image"
 import { getTranslation, type Locale, translations } from "@/lib/i18n"
 import { healthCalculators } from "@/lib/calculators/health-calculators"
 import { financeCalculators } from "@/lib/calculators/finance-calculators"
+import LanguageSelector from "./LanguageSelector"
 
 interface FooterProps {
   locale: Locale
@@ -184,7 +185,6 @@ export function Footer({ locale }: FooterProps) {
     <footer className="border-t border-border bg-zinc-100/20 backdrop-blur-3xl">
       <div className="container mx-auto max-w-7xl px-4 py-12">
 
-        {/* Header Row */}
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-5 md:px-20 px-5">
           <div className="flex flex-col gap-2 md:w-1/2">
             <Image src={'/VastCalculators.com-Logo.png'} width={270} height={270} alt="logo" fetchPriority="high" />
@@ -194,10 +194,8 @@ export function Footer({ locale }: FooterProps) {
           </div>
         </div>
 
-        {/* Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:px-20 px-5 my-10">
-          
-          {/* Static Links */}
+
           <div>
             <h3 className="font-semibold text-lg mb-4">{t.footer.gridtitle1}</h3>
             <ul className="space-y-2 text-base">
@@ -261,13 +259,16 @@ export function Footer({ locale }: FooterProps) {
         </div>
 
         {/* Bottom Row */}
-        <div className="border-t border-black/10 pt-10 text-center text-sm">
-          <div className="flex justify-between items-center">
-            <div className="flex gap-3">
+        <div className="border-t border-black/10 md:pt-10 pt-4 text-center md:text-base text-sm">
+          <div className="flex flex-col md:flex-row gap-6 justify-center items-center ">
+            <div className="md:hidden block ">
+              <LanguageSelector locale={locale} />
+            </div>
+            {/* <div className="flex gap-3">
               <Link href="#"><img src="/facebook.png" alt="facebook" width={40} height={40} /></Link>
               <Link href="#"><img src="/instagram.png" alt="instagram" width={40} height={40} /></Link>
               <Link href="#"><img src="/linkedin.png" alt="linkedin" width={40} height={40} /></Link>
-            </div>
+            </div> */}
 
             <p>{t.footer.copyright}</p>
           </div>

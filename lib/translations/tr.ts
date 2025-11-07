@@ -69,6 +69,7 @@ export const trTranslations = {
   about: {
     tagline: "Akıllı Araçlar. Basit Matematik. Küresel Erişim.",
     title: "Vast Hesap Makinesi Hakkında",
+    cta:"Hesap Makinelerini Keşfedin",
     subtitle: "Vast Hesap Makinesi olarak günlük matematiği basit, akıllı ve erişilebilir hale getiriyoruz. Sağlık hedeflerinizi takip etmekten finans planlamasına veya hızlı birim dönüşümlerine kadar, ücretsiz çevrimiçi hesap makinelerimiz zaman kazandırmak ve güvenilir doğruluk sunmak için tasarlandı.",
     missiontitle: "Misyonumuz: Sayıları zahmetsiz hale getirmek",
     missionsub: "Hesaplamaların sizi asla yavaşlatmaması gerektiğine inanıyoruz. Öğrenci, profesyonel veya fitness hedefi takip eden biri olun, Vast Hesap Makinesi doğruluğu parmaklarınızın ucuna getiriyor. Her araç, güvenilir sonuçlar sağlamak için test edilmiş formüllerle oluşturulmuştur.",

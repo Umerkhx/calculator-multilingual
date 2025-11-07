@@ -28,7 +28,7 @@ export default function CategoriesSection({ locale }: CalculatorsGridSectionProp
   const firstNine = calculators.slice(0, 9)
 
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20">
+    <section id="home-calculators" className="w-full py-12 md:py-16 lg:py-20">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           <div>

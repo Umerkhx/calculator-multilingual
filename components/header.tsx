@@ -81,7 +81,7 @@ export function Header({ locale }: HeaderProps) {
         <Link href={locale === "en" ? "/" : `/${locale}`} className="absolute left-1/2 -translate-x-1/2">
      
 
-          <Image src={'/VastCalculators.com-Logo.png'}width={150} height={150} alt="logo" fetchPriority="high"></Image>
+          <Image src={'/VastCalculators.com-Logo.png'}width={150} height={150} alt="logo" priority></Image>
         </Link>
 
         <div className="flex items-center gap-2 sm:gap-4">

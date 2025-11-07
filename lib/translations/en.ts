@@ -548,20 +548,20 @@ export const enTranslations = {
       metaTitle: " Water Intake Calculator | Daily Hydration by VastCalculator",
       desc: " Calculate how much water your body needs daily with VastCalculator. Stay hydrated based on your weight, activity, and lifestyle.",
       heading: "Water Intake Calculator",
-    age: "Age",
-    gender: "Gender",
-    male: "Male",
-    female: "Female",
-    weight: "Weight",
-    activity: "Activity Level",
-    result: "Daily Water (liters)",
-    activityLevel: {
-      none: "Little or no exercise",
-      moderate: "Moderate activity (30–60 min/day)",
-      high: "High activity (1–2 hours/day)",
-    },
-    resultExplain:
-      "This value shows your recommended daily water intake based on your age, gender, weight, and activity level. Proper hydration supports energy, focus, digestion, and overall health. For example, a 70 kg male with moderate activity needs about 3.5 liters of water per day. Children and active individuals may require more, while older adults may need slightly less. Remember to increase your intake in hot weather, during exercise, or when feeling dehydrated. Staying well-hydrated keeps your body functioning at its best throughout the day.",
+      age: "Age",
+      gender: "Gender",
+      male: "Male",
+      female: "Female",
+      weight: "Weight",
+      activity: "Activity Level",
+      result: "Daily Water (liters)",
+      activityLevel: {
+        none: "Little or no exercise",
+        moderate: "Moderate activity (30–60 min/day)",
+        high: "High activity (1–2 hours/day)",
+      },
+      resultExplain:
+        "This value shows your recommended daily water intake based on your age, gender, weight, and activity level. Proper hydration supports energy, focus, digestion, and overall health. For example, a 70 kg male with moderate activity needs about 3.5 liters of water per day. Children and active individuals may require more, while older adults may need slightly less. Remember to increase your intake in hot weather, during exercise, or when feeling dehydrated. Staying well-hydrated keeps your body functioning at its best throughout the day.",
 
       tocTitle: "Table of Contents",
       tocwhy: "Why Daily Water Needs Are Important",
@@ -720,7 +720,7 @@ export const enTranslations = {
     tdee: {
       metaTitle: "TDEE Calculator – Find Your Daily Calorie Needs Online",
       desc: "Use our TDEE Calculator to know how many calories you burn daily. Plan your diet, fitness, or weight goals with accurate calorie and activity insights.",
-      
+
       bmrformula: "BMR Formula",
       mifflin: "Mifflin-St Jeor",
       harris: "Harris-Benedict",
@@ -748,7 +748,7 @@ export const enTranslations = {
       athlete: "Professional athlete",
       result: "TDEE (calories)",
       resultExplain: "This number is your Total Daily Energy Expenditure (TDEE), which estimates how many calories your body burns in a day based on your Basal Metabolic Rate (BMR) and activity level. It helps you understand how much energy you need to maintain, lose, or gain weight. The formula is: TDEE = BMR × Activity Level. For example, if your BMR is 1600 calories and your activity multiplier is 1.55 (moderate exercise), your TDEE = 1600 × 1.55 = 2480 calories per day. Interpretation: To maintain your current weight, eat around 2480 calories daily. To lose weight, consume fewer calories than your TDEE; to gain weight, eat more. Remember, TDEE varies by individual factors like age, gender, and lifestyle, so use it as a guide and consult a nutrition expert for personalized advice.",
-      
+
       heading: "TDEE Calculator",
 
       tocTitle: "Table of Contents",
@@ -888,12 +888,12 @@ export const enTranslations = {
       activitylabel5: "Physical job or hard exercise 6–7 times/week",
       activitylabel6: "Professional athlete",
       goal: "Goal",
-      maintainweight:"Maintain Weight",
+      maintainweight: "Maintain Weight",
       changeweight: "Change Weight",
       lowCarb: "Low Carb",
       highProtein: "High Protein",
       result: "Macronutrients",
-resultExplain: "This number shows the breakdown of your daily macronutrient needs — proteins, carbohydrates, and fats — based on your total calorie requirement, body weight, activity level, and fitness goal. Macronutrients are the main nutrients your body uses for energy and recovery. For example, if your daily calorie target is 2,000 kcal and your goal is to maintain weight, a balanced macro ratio might be 40% carbs, 30% protein, and 30% fat. That means 800 kcal (200g) from carbs, 600 kcal (150g) from protein, and 600 kcal (67g) from fat. These ratios can vary depending on your goals: higher protein for muscle gain, lower carbs for fat loss, etc. Adjusting macros helps you optimize energy, performance, and body composition effectively.",
+      resultExplain: "This number shows the breakdown of your daily macronutrient needs — proteins, carbohydrates, and fats — based on your total calorie requirement, body weight, activity level, and fitness goal. Macronutrients are the main nutrients your body uses for energy and recovery. For example, if your daily calorie target is 2,000 kcal and your goal is to maintain weight, a balanced macro ratio might be 40% carbs, 30% protein, and 30% fat. That means 800 kcal (200g) from carbs, 600 kcal (150g) from protein, and 600 kcal (67g) from fat. These ratios can vary depending on your goals: higher protein for muscle gain, lower carbs for fat loss, etc. Adjusting macros helps you optimize energy, performance, and body composition effectively.",
 
       tocTitle: "Table of Contents",
       tocwhy: "Why Tracking Macros Matters",

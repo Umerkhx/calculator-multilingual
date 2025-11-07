@@ -141,17 +141,22 @@ export const deTranslations = {
 
   // Gesundheitsrechner
   health: {
-bodyFat: {
-  metaTitle: "Körperfett Rechner | Schätzen Sie Ihren Körperfettanteil Online",
-  desc: "Verwenden Sie unseren Körperfett-Rechner, um Ihren Körperfettanteil zu ermitteln. Verfolgen Sie Fettabbau, Muskelaufbau und Fitnessfortschritte mit präzisen Messformeln.",
-  waist: "Taille (cm)",
-  neck: "Hals (cm)",
-  height: "Größe (cm)",
-  hip: "Hüfte (cm)",
-  gender: "Geschlecht",
-  male: "Männlich",
-  female: "Weiblich",
-  result: "Körperfettanteil (%)",
+    bodyFat: {
+      metaTitle: "Körperfett Rechner | Schätzen Sie Ihren Körperfettanteil Online",
+      desc: "Verwenden Sie unseren Körperfett-Rechner, um Ihren Körperfettanteil zu ermitteln. Verfolgen Sie Fettabbau, Muskelaufbau und Fitnessfortschritte mit präzisen Messformeln.",
+
+      waist: "Taille",
+      weight: "Gewicht",
+      neck: "Hals",
+      unit: "Einheit wählen",
+      height: "Größe",
+      hip: "Hüfte",
+      gender: "Geschlecht",
+      male: "Männlich",
+      female: "Weiblich",
+      result: "Körperfettanteil",
+      resultExplain: "Diese Zahl stellt den geschätzten Körperfettanteil dar – den Anteil Ihres Körpergewichts, der aus Fett besteht. Sie hilft, die allgemeine Gesundheit und Fitness genauer einzuschätzen als der BMI allein. Der Körperfettanteil wird anhand von Messungen wie Taille, Hals, Körpergröße und manchmal dem Geschlecht berechnet, da sich die Fettverteilung bei Männern und Frauen unterscheidet. Zum Beispiel bedeutet ein Ergebnis von 18 % bei einem Mann, dass 18 % seines Körpergewichts aus Fett bestehen. Interpretation: Für Männer gelten 6–13 % als sportlich, 14–17 % als fit, 18–24 % als durchschnittlich und 25 % oder mehr als übergewichtig. Für Frauen gelten 14–20 % als sportlich, 21–24 % als fit, 25–31 % als durchschnittlich und 32 % oder mehr als übergewichtig. Ein gesunder Körperfettanteil verbessert Energie, Stoffwechsel und allgemeines Wohlbefinden. Für persönliche Beratung wenden Sie sich an einen Fitness- oder Gesundheitsfachmann.",
+
 
       tocTitle: "Inhaltsverzeichnis",
       tocAbout: "Warum einen Körperfett-Rechner verwenden?",
@@ -253,42 +258,55 @@ bodyFat: {
       formulasub5title: "Warum diese Formel zuverlässig ist",
       formulasub5content: "Die U.S. Navy Methode ist für ihre Einfachheit und Genauigkeit bekannt. Sie bietet realistische Schätzungen für Personen, die keinen Zugang zu fortgeschrittenen Körperanalyse-Tools wie DEXA-Scans haben. Dieser Körpermessungsrechner bietet schnelle, datenbasierte Einblicke in Ihre Fitness- und Gesundheitswerte und hilft Ihnen, fundierte Entscheidungen über Training und Ernährung zu treffen. Der Körperfett-Rechner auf Vast Calculators verwendet diese zuverlässigen Formeln, um sofortige und genaue Ergebnisse zu liefern, die Ihre wahre Körperzusammensetzung widerspiegeln.",
 
-  faqTitle: "Häufig gestellte Fragen",
-  faq: [
-    {
-      q: "Was ist der Körperfettanteil?",
-      a: "Der Körperfettanteil ist das Verhältnis von Fett zu Ihrem gesamten Körpergewicht. Er zeigt, wie viel Ihres Gewichts aus Fett im Vergleich zu fettfreier Masse wie Muskeln, Knochen und Organen besteht. Dies ist eine wichtige Kennzahl zur Bewertung von Gesundheit und Fitness, da sie ein klareres Bild liefert als nur das Gewicht."
+      faqTitle: "Häufig gestellte Fragen",
+      faq: [
+        {
+          q: "Was ist der Körperfettanteil?",
+          a: "Der Körperfettanteil ist das Verhältnis von Fett zu Ihrem gesamten Körpergewicht. Er zeigt, wie viel Ihres Gewichts aus Fett im Vergleich zu fettfreier Masse wie Muskeln, Knochen und Organen besteht. Dies ist eine wichtige Kennzahl zur Bewertung von Gesundheit und Fitness, da sie ein klareres Bild liefert als nur das Gewicht."
+        },
+        {
+          q: "Wie genau ist der Körperfett-Rechner?",
+          a: "Der Körperfett-Rechner liefert eine zuverlässige Schätzung auf Grundlage wissenschaftlich validierter Formeln wie der U.S. Navy Methode. Die Ergebnisse sind jedoch Schätzungen und können von präziseren Methoden wie DEXA-Scans oder hydrostatischem Wiegen abweichen."
+        },
+        {
+          q: "Kann der Körperfett-Rechner von Männern und Frauen verwendet werden?",
+          a: "Ja, der Körperfett-Rechner funktioniert für Männer und Frauen, verwendet jedoch unterschiedliche Formeln für jedes Geschlecht. Der Rechner berücksichtigt geschlechtsspezifische Unterschiede in der Körperzusammensetzung, um genauere Ergebnisse zu liefern."
+        },
+        {
+          q: "Brauche ich spezielles Equipment, um den Körperfett-Rechner zu nutzen?",
+          a: "Nein, der Körperfett-Rechner benötigt nur grundlegende Körpermaße wie Taille, Hals und (bei Frauen) Hüfte sowie Größe und Gewicht. Diese Messungen können mit einem einfachen Maßband vorgenommen werden, was den Rechner leicht und für jeden zugänglich macht."
+        },
+        {
+          q: "Wie oft sollte ich den Körperfett-Rechner verwenden?",
+          a: "Sie können den Körperfett-Rechner so oft verwenden, wie Sie möchten, um Ihre Fortschritte zu verfolgen. Viele nutzen ihn monatlich oder nach Abschluss bestimmter Fitnessziele, um Veränderungen in der Körperzusammensetzung zu beobachten."
+        },
+        {
+          q: "Was gilt als gesunder Körperfettanteil?",
+          a: "Gesunde Körperfettbereiche variieren je nach Alter und Geschlecht. Im Allgemeinen liegt der gesunde Bereich für Männer zwischen 10–20 %, für Frauen zwischen 20–30 %. Es ist jedoch ratsam, sich von einem Arzt oder Fitnessexperten beraten zu lassen, um den für Sie idealen Bereich zu bestimmen."
+        }
+      ]
     },
-    {
-      q: "Wie genau ist der Körperfett-Rechner?",
-      a: "Der Körperfett-Rechner liefert eine zuverlässige Schätzung auf Grundlage wissenschaftlich validierter Formeln wie der U.S. Navy Methode. Die Ergebnisse sind jedoch Schätzungen und können von präziseren Methoden wie DEXA-Scans oder hydrostatischem Wiegen abweichen."
-    },
-    {
-      q: "Kann der Körperfett-Rechner von Männern und Frauen verwendet werden?",
-      a: "Ja, der Körperfett-Rechner funktioniert für Männer und Frauen, verwendet jedoch unterschiedliche Formeln für jedes Geschlecht. Der Rechner berücksichtigt geschlechtsspezifische Unterschiede in der Körperzusammensetzung, um genauere Ergebnisse zu liefern."
-    },
-    {
-      q: "Brauche ich spezielles Equipment, um den Körperfett-Rechner zu nutzen?",
-      a: "Nein, der Körperfett-Rechner benötigt nur grundlegende Körpermaße wie Taille, Hals und (bei Frauen) Hüfte sowie Größe und Gewicht. Diese Messungen können mit einem einfachen Maßband vorgenommen werden, was den Rechner leicht und für jeden zugänglich macht."
-    },
-    {
-      q: "Wie oft sollte ich den Körperfett-Rechner verwenden?",
-      a: "Sie können den Körperfett-Rechner so oft verwenden, wie Sie möchten, um Ihre Fortschritte zu verfolgen. Viele nutzen ihn monatlich oder nach Abschluss bestimmter Fitnessziele, um Veränderungen in der Körperzusammensetzung zu beobachten."
-    },
-    {
-      q: "Was gilt als gesunder Körperfettanteil?",
-      a: "Gesunde Körperfettbereiche variieren je nach Alter und Geschlecht. Im Allgemeinen liegt der gesunde Bereich für Männer zwischen 10–20 %, für Frauen zwischen 20–30 %. Es ist jedoch ratsam, sich von einem Arzt oder Fitnessexperten beraten zu lassen, um den für Sie idealen Bereich zu bestimmen."
-    }
-  ]
-},
-bmi: {
-  metaTitle: "BMI-Rechner Kostenlos: Berechne Deinen Body-Mass-Index Sofort Online",
-  desc: "Berechne Deinen Body-Mass-Index (BMI), um mögliche Gesundheitsrisiken wie Diabetes und Herzkrankheiten einzuschätzen. Verfolge Deine Fitnessziele mit unserem kostenlosen Online-Rechner.",
-  heading: "BMI-Rechner",
-
-  weight: "Gewicht (kg)",
-  height: "Größe (cm)",
-  result: "BMI",
+    bmi: {
+      metaTitle: "BMI-Rechner Kostenlos: Berechne Deinen Body-Mass-Index Sofort Online",
+      desc: "Berechne Deinen Body-Mass-Index (BMI), um mögliche Gesundheitsrisiken wie Diabetes und Herzkrankheiten einzuschätzen. Verfolge Deine Fitnessziele mit unserem kostenlosen Online-Rechner.",
+      heading: "BMI-Rechner",
+      gender: "Geschlecht",
+      male: "Männlich",
+      female: "Weiblich",
+      other: "Andere",
+      weight: "Gewicht",
+      kg: "Kg",
+      lb: "Pfund",
+      cm: "Zentimeter",
+      inch: "Zoll",
+      ft_in: "Fuß und Zoll",
+      weightUnit: "Gewichtseinheit",
+      height: "Größe",
+      heightUnit: "Größeneinheit",
+      heightFeet: "Größe (Fuß)",
+      heightInches: "Größe (Zoll)",
+      result: "BMI",
+      resultExplain: "Dieser Wert ist Ihr Body-Mass-Index (BMI), ein Maß für den Körperfettanteil basierend auf Größe und Gewicht. Formel: BMI = Gewicht (kg) ÷ (Größe (m))². Beispiel: 70 kg bei 1,75 m → 70 ÷ (1,75 × 1,75) = 22,86. Interpretation: Unter 18,5 = Untergewicht, 18,5–24,9 = Normal, 25–29,9 = Übergewicht, 30+ = Fettleibig. Ein gesunder BMI liegt zwischen 18,5 und 24,9. Für individuelle Beratung wenden Sie sich an Ihren Arzt.",
 
       tocTitle: "Inhaltsverzeichnis",
       tocwhy: "Warum Du einen BMI-Rechner verwenden solltest",
@@ -397,19 +415,27 @@ bmi: {
       desc: "Verwenden Sie den Kalorienrechner auf Vastcalculators.com, um herauszufinden, wie viele Kalorien Sie täglich benötigen, um Ihr Gewicht zu halten, abzunehmen oder zuzunehmen – basierend auf Ihrem Aktivitätsniveau.",
       heading: "Kalorienrechner",
 
-  age: "Alter (Jahre)",
-  weight: "Gewicht (kg)",
-  height: "Größe (cm)",
-  gender: "Geschlecht",
-  male: "Männlich",
-  female: "Weiblich",
-  activity: "Aktivitätsniveau",
-  sedentary: "Sitzend",
-  light: "Leicht aktiv",
-  moderate: "Mäßig aktiv",
-  active: "Aktiv",
-  veryActive: "Sehr aktiv",
-  result: "Tägliche Kalorien",
+      age: "Alter (Jahre)",
+      weight: "Gewicht",
+      height: "Größe",
+      gender: "Geschlecht",
+      male: "Männlich",
+      female: "Weiblich",
+      activity: "Aktivitätsniveau",
+      sedentary: "Sitzend",
+      light: "Leicht",
+      moderate: "Mittel",
+      active: "Aktiv",
+      veryActive: "Sehr aktiv",
+      weightUnit: "Gewichtseinheit",
+      kg: "kg",
+      pounds: "Pfund",
+      heightUnit: "Höheneinheit",
+      cm: "cm",
+      inch: "Zoll",
+      result: "Tägliche Kalorien",
+      resultExplain: "Diese Zahl zeigt die geschätzte Menge an Kalorien, die dein Körper benötigt, um sein aktuelles Gewicht zu halten, basierend auf deinem Aktivitätsniveau, Alter, Größe und Gewicht. Sie wird oft mit der Harris-Benedict- oder Mifflin-St-Jeor-Gleichung berechnet. Wenn du beispielsweise 2.200 Kalorien pro Tag verbrauchst, hältst du dein Gewicht. Eine geringere Aufnahme (z. B. 1.700) führt zu einem Kaloriendefizit und Gewichtsverlust, während eine höhere Aufnahme (z. B. 2.700) zu einer Gewichtszunahme führt. Bedenke, dass 1 Pfund Fett etwa 3.500 Kalorien entspricht, daher kann ein tägliches Defizit von 500 Kalorien etwa 1 Pfund Gewichtsverlust pro Woche bewirken. Für die genauesten Ergebnisse kombiniere diese Berechnung mit regelmäßiger Bewegung und einer ausgewogenen Ernährung.",
+
 
       tocTitle: "Inhaltsverzeichnis",
       tocwhy: "Warum Ihr täglicher Kalorienbedarf wichtig ist",
@@ -485,41 +511,53 @@ bmi: {
       section2Sub5Title: "Warum diese Formel zuverlässig ist",
       section2Sub5Intro: "Der Kalorienrechner auf Vastcalculators verwendet moderne Gleichungen, die von Ernährungswissenschaftlern und Gesundheitsexperten anerkannt sind. Er liefert genaue Daten ohne unnötige Komplexität und ermöglicht es Nutzern aller Hintergründe, ihren täglichen Kalorienbedarf leicht zu verstehen.",
 
-  faqTitle: "Häufig gestellte Fragen (FAQs)",
-  faq: [
-    {
-      q: "Was macht der Kalorienrechner auf Vast Calculators?",
-      a: "Der Kalorienrechner auf Vastcalculators hilft Ihnen, die Anzahl der Kalorien zu schätzen, die Ihr Körper täglich benötigt. Er verwendet Ihr Alter, Geschlecht, Ihre Größe, Ihr Gewicht und Ihr Aktivitätsniveau, um Ihren täglichen Kalorienbedarf für das Halten, Abnehmen oder Zunehmen von Gewicht zu berechnen. Das Ergebnis hilft Ihnen, Ihre Mahlzeiten präziser zu planen."
+      faqTitle: "Häufig gestellte Fragen (FAQs)",
+      faq: [
+        {
+          q: "Was macht der Kalorienrechner auf Vast Calculators?",
+          a: "Der Kalorienrechner auf Vastcalculators hilft Ihnen, die Anzahl der Kalorien zu schätzen, die Ihr Körper täglich benötigt. Er verwendet Ihr Alter, Geschlecht, Ihre Größe, Ihr Gewicht und Ihr Aktivitätsniveau, um Ihren täglichen Kalorienbedarf für das Halten, Abnehmen oder Zunehmen von Gewicht zu berechnen. Das Ergebnis hilft Ihnen, Ihre Mahlzeiten präziser zu planen."
+        },
+        {
+          q: "Wie funktioniert der Kalorienrechner?",
+          a: "Dieser Online-Kalorienrechner verwendet die Mifflin-St-Jeor-Gleichung, um Ihren Grundumsatz (BMR) zu bestimmen. Diese Zahl wird dann mit einem Aktivitätsfaktor multipliziert, um Ihren Gesamtenergieverbrauch (TDEE) zu berechnen, also die Gesamtzahl der Kalorien, die Sie täglich verbrennen. Das ergibt ein klares Bild Ihres Energiebedarfs."
+        },
+        {
+          q: "Warum sollte ich meinen täglichen Kalorienbedarf kennen?",
+          a: "Wenn Sie Ihren täglichen Kalorienbedarf kennen, können Sie fundierte Entscheidungen über Ihre Ernährung treffen. Sie können Ihr Gewicht steuern, Ihre Ernährung verbessern und gleichmäßige Energielevels aufrechterhalten. Egal, ob Sie Fett verlieren, Muskeln aufbauen oder einfach fit bleiben möchten – Kalorienbewusstsein ist die Grundlage des Fortschritts."
+        },
+        {
+          q: "Kann dieser Rechner beim Ab- oder Zunehmen helfen?",
+          a: "Ja. Der Kalorienrechner zeigt Ihnen genau, wie viele Kalorien Sie essen sollten, um Ihr aktuelles Gewicht zu halten. Um abzunehmen, essen Sie etwa 500 Kalorien weniger pro Tag. Um zuzunehmen, fügen Sie etwa 500 zusätzliche Kalorien täglich hinzu. Diese schrittweise Anpassung hilft Ihnen, Ihre Ziele sicher und effektiv zu erreichen."
+        },
+        {
+          q: "Wie genau ist der Kalorienrechner?",
+          a: "Der Kalorienrechner auf Vastcalculators verwendet wissenschaftlich fundierte Formeln, denen Fitnessprofis und Ernährungsberater vertrauen. Obwohl die Ergebnisse je nach Stoffwechsel und Genetik leicht variieren können, liefert der Rechner eine sehr genaue Schätzung, die für die meisten Nutzer zuverlässig ist."
+        },
+        {
+          q: "Was sollte ich nach der Berechnung meiner Kalorien tun?",
+          a: "Nachdem Sie Ihren täglichen Kalorienbedarf ermittelt haben, planen Sie ausgewogene Mahlzeiten, die zu Ihrem Ziel passen. Verfolgen Sie Ihre Nahrungsaufnahme und überprüfen Sie Ihren Fortschritt wöchentlich."
+        }
+      ]
     },
-    {
-      q: "Wie funktioniert der Kalorienrechner?",
-      a: "Dieser Online-Kalorienrechner verwendet die Mifflin-St-Jeor-Gleichung, um Ihren Grundumsatz (BMR) zu bestimmen. Diese Zahl wird dann mit einem Aktivitätsfaktor multipliziert, um Ihren Gesamtenergieverbrauch (TDEE) zu berechnen, also die Gesamtzahl der Kalorien, die Sie täglich verbrennen. Das ergibt ein klares Bild Ihres Energiebedarfs."
-    },
-    {
-      q: "Warum sollte ich meinen täglichen Kalorienbedarf kennen?",
-      a: "Wenn Sie Ihren täglichen Kalorienbedarf kennen, können Sie fundierte Entscheidungen über Ihre Ernährung treffen. Sie können Ihr Gewicht steuern, Ihre Ernährung verbessern und gleichmäßige Energielevels aufrechterhalten. Egal, ob Sie Fett verlieren, Muskeln aufbauen oder einfach fit bleiben möchten – Kalorienbewusstsein ist die Grundlage des Fortschritts."
-    },
-    {
-      q: "Kann dieser Rechner beim Ab- oder Zunehmen helfen?",
-      a: "Ja. Der Kalorienrechner zeigt Ihnen genau, wie viele Kalorien Sie essen sollten, um Ihr aktuelles Gewicht zu halten. Um abzunehmen, essen Sie etwa 500 Kalorien weniger pro Tag. Um zuzunehmen, fügen Sie etwa 500 zusätzliche Kalorien täglich hinzu. Diese schrittweise Anpassung hilft Ihnen, Ihre Ziele sicher und effektiv zu erreichen."
-    },
-    {
-      q: "Wie genau ist der Kalorienrechner?",
-      a: "Der Kalorienrechner auf Vastcalculators verwendet wissenschaftlich fundierte Formeln, denen Fitnessprofis und Ernährungsberater vertrauen. Obwohl die Ergebnisse je nach Stoffwechsel und Genetik leicht variieren können, liefert der Rechner eine sehr genaue Schätzung, die für die meisten Nutzer zuverlässig ist."
-    },
-    {
-      q: "Was sollte ich nach der Berechnung meiner Kalorien tun?",
-      a: "Nachdem Sie Ihren täglichen Kalorienbedarf ermittelt haben, planen Sie ausgewogene Mahlzeiten, die zu Ihrem Ziel passen. Verfolgen Sie Ihre Nahrungsaufnahme und überprüfen Sie Ihren Fortschritt wöchentlich."
-    }
-  ]
-},
-waterIntake: {
-  metaTitle: "Wasseraufnahme-Rechner | Tägliche Hydration von VastCalculator",
-  desc: "Berechnen Sie, wie viel Wasser Ihr Körper täglich benötigt – mit VastCalculator. Bleiben Sie hydratisiert, basierend auf Ihrem Gewicht, Ihrer Aktivität und Ihrem Lebensstil.",
-  weight: "Gewicht (kg)",
-  activity: "Aktivitätsniveau (0-2)",
-  result: "Täglicher Wasserbedarf (Liter)",
-  heading: "Wasseraufnahme-Rechner",
+    waterIntake: {
+      metaTitle: "Wasseraufnahme-Rechner | Tägliche Hydration von VastCalculator",
+      desc: "Berechnen Sie, wie viel Wasser Ihr Körper täglich benötigt – mit VastCalculator. Bleiben Sie hydratisiert, basierend auf Ihrem Gewicht, Ihrer Aktivität und Ihrem Lebensstil.",
+      heading: "Wasseraufnahme-Rechner",
+      age: "Alter",
+      gender: "Geschlecht",
+      male: "Männlich",
+      female: "Weiblich",
+      weight: "Gewicht",
+      activity: "Aktivitätslevel",
+      result: "Tägliche Wasseraufnahme (Liter)",
+      activityLevel: {
+        none: "Wenig oder keine Bewegung",
+        moderate: "Moderate Aktivität (30–60 Min./Tag)",
+        high: "Hohe Aktivität (1–2 Std./Tag)",
+      },
+      resultExplain:
+        "Dieser Wert zeigt Ihre empfohlene tägliche Wasseraufnahme basierend auf Alter, Geschlecht, Gewicht und Aktivitätslevel. Eine ausreichende Flüssigkeitszufuhr unterstützt Energie, Konzentration, Verdauung und die allgemeine Gesundheit. Zum Beispiel benötigt ein 70 kg schwerer Mann mit moderater Aktivität etwa 3,5 Liter Wasser pro Tag. Kinder und aktive Personen benötigen möglicherweise mehr, während ältere Erwachsene etwas weniger benötigen. Denken Sie daran, die Aufnahme bei heißem Wetter, beim Sport oder bei Dehydrierung zu erhöhen. Gut hydriert zu bleiben hält Ihren Körper den ganzen Tag über in Bestform.",
+
 
       tocTitle: "Inhaltsverzeichnis",
       tocwhy: "Warum täglicher Wasserbedarf wichtig ist",
@@ -642,15 +680,38 @@ waterIntake: {
       formulaText:
         "Erhaltung: 0,8g/kg, Muskelaufbau: 1,6–2,2g/kg, Abnahme: 1,2–1,6g/kg",
     },
-tdee: {
-  metaTitle: "TDEE Rechner – Finde deinen täglichen Kalorienbedarf online",
-  desc: "Nutze unseren TDEE Rechner, um herauszufinden, wie viele Kalorien du täglich verbrennst. Plane deine Ernährung, Fitness oder Gewichtsziele mit genauen Kalorien- und Aktivitätserkenntnissen.",
-  age: "Alter (Jahre)",
-  weight: "Gewicht (kg)",
-  height: "Größe (cm)",
-  activity: "Aktivitätslevel",
-  result: "TDEE (Kalorien)",
-  heading: "TDEE Rechner",
+    tdee: {
+      metaTitle: "TDEE Rechner – Finde deinen täglichen Kalorienbedarf online",
+      desc: "Nutze unseren TDEE Rechner, um herauszufinden, wie viele Kalorien du täglich verbrennst. Plane deine Ernährung, Fitness oder Gewichtsziele mit genauen Kalorien- und Aktivitätserkenntnissen.",
+      heading: "TDEE Rechner",
+      bmrformula: "BMR-Formel",
+      mifflin: "Mifflin-St Jeor",
+      harris: "Harris-Benedict",
+      revisedHarris: "Überarbeitete Harris-Benedict",
+      katch: "Katch-McArdle",
+      schofield: "Schofield",
+      gender: "Geschlecht",
+      male: "Männlich",
+      female: "Weiblich",
+      age: "Alter",
+      heightUnit: "Höheinheit",
+      height: "Größe",
+      cm: "cm",
+      inch: "Zoll",
+      weightUnit: "Gewichtseinheit",
+      weight: "Gewicht",
+      kg: "kg",
+      pound: "Pfund",
+      activity: "Aktivitätslevel (PAL)",
+      sedentary: "Kaum/kein Sport (sitzt viel)",
+      light: "Leichter Sport 1-2x/Woche",
+      moderate: "Moderater Sport 2-3x/Woche",
+      hard: "Harter Sport 4-5x/Woche",
+      veryHard: "Körperlicher Job oder harter Sport 6-7x/Woche",
+      athlete: "Profisportler",
+      result: "TDEE (Kalorien)",
+      resultExplain: "Diese Zahl ist dein Gesamtenergieverbrauch pro Tag (TDEE), der schätzt, wie viele Kalorien dein Körper täglich basierend auf dem Grundumsatz (BMR) und deinem Aktivitätslevel verbrennt. Es hilft zu verstehen, wie viel Energie du zum Halten, Abnehmen oder Zunehmen benötigst. Formel: TDEE = BMR × Aktivitätslevel. Beispiel: Wenn dein BMR 1600 Kalorien beträgt und der Aktivitätsfaktor 1,55 (moderater Sport) ist, dann TDEE = 1600 × 1,55 = 2480 Kalorien/Tag. Interpretation: Um dein aktuelles Gewicht zu halten, esse ca. 2480 Kalorien täglich. Zum Abnehmen, weniger Kalorien als TDEE; zum Zunehmen, mehr essen. TDEE variiert je nach Alter, Geschlecht und Lebensstil, daher als Richtwert nutzen und für individuelle Beratung Ernährungsexperten konsultieren.",
+
 
       tocTitle: "Inhaltsverzeichnis",
       tocwhy: "Warum es wichtig ist, seinen TDEE zu kennen",
@@ -736,44 +797,65 @@ tdee: {
       section2Sub3Title: "Warum diese Formel funktioniert",
       section2Sub3Intro: "Die Mifflin-St.-Jeor-Formel ist eine der genauesten Methoden zur Schätzung des Stoffwechsels und Energieverbrauchs. Sie passt sich leicht an verschiedene Körpertypen, Aktivitätslevels und Ziele an. Der Online-TDEE Rechner liefert personalisierte Ergebnisse für Anfänger bis Athleten und unterstützt eine präzise Planung von Ernährung und Training. Der Rechner auf Vastcalculators.com bietet schnelle, zuverlässige und wissenschaftlich fundierte Berechnungen für effektives Energiemanagement und bessere Fitnessergebnisse.",
 
-  faqTitle: "Häufig gestellte Fragen",
-  faq: [
-    {
-      q: "Was bedeutet TDEE?",
-      a: "TDEE steht für Total Daily Energy Expenditure. Es zeigt, wie viele Kalorien dein Körper an einem Tag verbrennt, einschließlich aller Aktivitäten vom Ausruhen bis zum Training."
+      faqTitle: "Häufig gestellte Fragen",
+      faq: [
+        {
+          q: "Was bedeutet TDEE?",
+          a: "TDEE steht für Total Daily Energy Expenditure. Es zeigt, wie viele Kalorien dein Körper an einem Tag verbrennt, einschließlich aller Aktivitäten vom Ausruhen bis zum Training."
+        },
+        {
+          q: "Wie wird TDEE berechnet?",
+          a: "Dein TDEE wird berechnet, indem dein Grundumsatz (BMR) mit deinem Aktivitätsmultiplikator multipliziert wird. So erhältst du eine tägliche Kalorienzahl, die deinem Energieverbrauch entspricht."
+        },
+        {
+          q: "Warum sollte ich meinen TDEE kennen?",
+          a: "Wenn du deinen TDEE kennst, kannst du deine Ernährung und Fitnessziele planen. Du weißt genau, wie viele Kalorien du für Gewichtsverlust, -zunahme oder -erhalt benötigst."
+        },
+        {
+          q: "Was ist der Unterschied zwischen BMR und TDEE?",
+          a: "Der BMR zeigt die Kalorien, die dein Körper in Ruhe benötigt, während der TDEE die durch Bewegung, Training und Alltag verbrannten Kalorien berücksichtigt."
+        },
+        {
+          q: "Wie kann ich meinen TDEE für bessere Ergebnisse nutzen?",
+          a: "Sobald du deinen TDEE kennst, kannst du deine Kalorienzufuhr anpassen. Für Fettabbau nimmst du weniger Kalorien als dein TDEE, für Muskelaufbau mehr Kalorien als dein TDEE."
+        },
+        {
+          q: "Wie oft sollte ich meinen TDEE neu berechnen?",
+          a: "Berechne deinen TDEE alle 4–6 Wochen oder nach größeren Veränderungen in Gewicht, Aktivität oder Fitnessziel neu, um eine genaue Kalorienplanung sicherzustellen."
+        }
+      ]
     },
-    {
-      q: "Wie wird TDEE berechnet?",
-      a: "Dein TDEE wird berechnet, indem dein Grundumsatz (BMR) mit deinem Aktivitätsmultiplikator multipliziert wird. So erhältst du eine tägliche Kalorienzahl, die deinem Energieverbrauch entspricht."
-    },
-    {
-      q: "Warum sollte ich meinen TDEE kennen?",
-      a: "Wenn du deinen TDEE kennst, kannst du deine Ernährung und Fitnessziele planen. Du weißt genau, wie viele Kalorien du für Gewichtsverlust, -zunahme oder -erhalt benötigst."
-    },
-    {
-      q: "Was ist der Unterschied zwischen BMR und TDEE?",
-      a: "Der BMR zeigt die Kalorien, die dein Körper in Ruhe benötigt, während der TDEE die durch Bewegung, Training und Alltag verbrannten Kalorien berücksichtigt."
-    },
-    {
-      q: "Wie kann ich meinen TDEE für bessere Ergebnisse nutzen?",
-      a: "Sobald du deinen TDEE kennst, kannst du deine Kalorienzufuhr anpassen. Für Fettabbau nimmst du weniger Kalorien als dein TDEE, für Muskelaufbau mehr Kalorien als dein TDEE."
-    },
-    {
-      q: "Wie oft sollte ich meinen TDEE neu berechnen?",
-      a: "Berechne deinen TDEE alle 4–6 Wochen oder nach größeren Veränderungen in Gewicht, Aktivität oder Fitnessziel neu, um eine genaue Kalorienplanung sicherzustellen."
-    }
-  ]
-},
-macros: {
-  metaTitle: "Makro-Rechner | Berechne dein ideales Makronährstoffverhältnis",
-  desc: "Nutze unseren Makro-Rechner, um das perfekte Gleichgewicht von Protein, Kohlenhydraten und Fetten zu finden. Plane deine Ernährung mit genauen Makro-Verhältnissen für deine Fitnessziele.",
-  heading: "Makro-Rechner",
-  calories: "Tägliche Kalorien",
-  diet: "Diät-Typ",
-  balanced: "Ausgewogen",
-  lowCarb: "Low Carb",
-  highProtein: "High Protein",
-  result: "Makronährstoffe",
+    macros: {
+      metaTitle: "Makro-Rechner | Berechne dein ideales Makronährstoffverhältnis",
+      desc: "Nutze unseren Makro-Rechner, um das perfekte Gleichgewicht von Protein, Kohlenhydraten und Fetten zu finden. Plane deine Ernährung mit genauen Makro-Verhältnissen für deine Fitnessziele.",
+      heading: "Makro-Rechner",
+
+      gender: "Geschlecht",
+      male: "Männlich",
+      female: "Weiblich",
+      age: "Alter",
+      heightUnit: "Höheneinheit",
+      cm: "cm",
+      inch: "Zoll",
+      height: "Größe",
+      weightUnit: "Gewichtseinheit",
+      kg: "kg",
+      pounds: "Pfund",
+      weight: "Gewicht",
+      activityLevel: "Aktivitätslevel",
+      activitylabel1: "Kaum/keine Bewegung (sitzender Lebensstil)",
+      activitylabel2: "Leichte Übungen 1–2 Mal/Woche",
+      activitylabel3: "Moderate Übungen 2–3 Mal/Woche",
+      activitylabel4: "Anstrengende Übungen 4–5 Mal/Woche",
+      activitylabel5: "Körperlich anstrengender Job oder harte Übungen 6–7 Mal/Woche",
+      activitylabel6: "Professioneller Athlet",
+      goal: "Ziel",
+      maintainweight: "Gewicht halten",
+      changeweight: "Gewicht ändern",
+      lowCarb: "Low Carb",
+      highProtein: "Hoher Proteinanteil",
+      result: "Makronährstoffe",
+      resultExplain: "Diese Zahl zeigt die Aufschlüsselung Ihrer täglichen Makronährstoffbedürfnisse — Proteine, Kohlenhydrate und Fette — basierend auf Ihrem Gesamtenergiebedarf, Körpergewicht, Aktivitätslevel und Fitnessziel. Makronährstoffe sind die Hauptnährstoffe, die Ihr Körper für Energie und Erholung nutzt. Zum Beispiel, wenn Ihr tägliches Kalorienziel 2000 kcal beträgt und Ihr Ziel die Gewichtserhaltung ist, könnte ein ausgewogenes Makroverhältnis 40% Kohlenhydrate, 30% Protein und 30% Fett sein. Das bedeutet 800 kcal (200 g) aus Kohlenhydraten, 600 kcal (150 g) aus Protein und 600 kcal (67 g) aus Fett. Diese Verhältnisse können je nach Ziel variieren: mehr Protein für Muskelaufbau, weniger Kohlenhydrate für Fettverlust. Die Anpassung der Makros hilft, Energie, Leistung und Körperzusammensetzung effektiv zu optimieren.",
 
       tocTitle: "Inhaltsverzeichnis",
       tocwhy: "Warum Makros verfolgen wichtig ist",
